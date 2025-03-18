@@ -1,0 +1,114 @@
+/* Aula 07/03/2025 - Evoluindo com TypeScript - Código Completo e Otimizado */
+
+// 1. Classe Produto com Métodos Avançados
+class Product {
+  constructor(
+    public id: number,
+    public name: string,
+    public price: number,
+    public category: string
+  ) {}
+
+  getInfo(): string {
+    return `Produto: ${this.name} (ID: ${this.id}) - Categoria: ${this.category} - R$ ${this.price.toFixed(2)}`;
+  }
+
+  applyDiscount(discount: number): void {
+    if (discount < 0 || discount > 100) throw new Error('Desconto deve estar entre 0 e 100%');
+    this.price *= 1 - discount / 100;
+  }
+}
+
+// Criando produtos de exemplo
+const products: Product[] = [
+  new Product(1, 'Notebook', 3500.0, 'Eletrônicos'),
+  new Product(2, 'Cadeira Gamer', 800.0, 'Móveis'),
+  new Product(3, 'Smartphone', 2000.0, 'Eletrônicos'),
+  new Product(4, 'Monitor', 1200.0, 'Eletrônicos')
+];
+products.forEach((product) => console.log(product.getInfo()));
+
+// Função para aplicar desconto em todos os produtos
+products.forEach((product) => product.applyDiscount(10));
+console.log('Produtos com desconto:', products);
+
+// 2. Função Genérica para Filtragem
+function filterArray<T>(arr: T[], callback: (item: T) => boolean): T[] {
+  return arr.filter(callback);
+}
+
+const expensiveProducts = filterArray(products, (p) => p.price > 1000);
+console.log('Produtos caros:', expensiveProducts);
+
+// 3. Interfaces Avançadas e Mapeamento
+interface Person {
+  name: string;
+  age: number;
+  occupation: string;
+}
+
+const people: Person[] = [
+  { name: 'Ana', age: 25, occupation: 'Desenvolvedora' },
+  { name: 'Bruno', age: 30, occupation: 'Designer' },
+  { name: 'Carlos', age: 28, occupation: 'Analista' },
+  { name: 'Daniela', age: 32, occupation: 'Gerente' }
+];
+
+people.forEach((person) => console.log(`${person.name}, ${person.age} anos, ${person.occupation}`));
+
+// 4. Função para Calcular Imposto
+function calculateTax(price: number, tax: number): number {
+  return price * (1 + tax / 100);
+}
+
+const taxedProducts = products.map((product) => ({
+  ...product,
+  taxedPrice: calculateTax(product.price, 15),
+}));
+console.log('Produtos com imposto:', taxedProducts);
+
+// 5. Manipulação de Strings
+const names: string[] = ['Ana', 'Bruno', 'Carlos', 'Daniel'];
+const upperNames = names.map((name) => name.toUpperCase());
+console.log('Nomes em maiúsculo:', upperNames);
+
+// 6. Somatório de Números
+const numbers = Array.from({ length: 20 }, (_, i) => i + 1);
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log('Soma dos números:', sum);
+
+// 7. Buscar Produto pelo Nome
+function findProductByName(name: string): Product | undefined {
+  return products.find((product) => product.name.toLowerCase() === name.toLowerCase());
+}
+console.log('Buscar produto:', findProductByName('Smartphone'));
+
+// 8. Ordenação por Preço
+const sortedProducts = [...products].sort((a, b) => a.price - b.price);
+console.log('Produtos ordenados por preço:', sortedProducts);
+
+// 9. Filtrar Usuários Ativos
+interface User {
+  id: number;
+  name: string;
+  isActive: boolean;
+}
+
+const users: User[] = [
+  { id: 1, name: 'João', isActive: true },
+  { id: 2, name: 'Maria', isActive: false },
+  { id: 3, name: 'Pedro', isActive: true },
+  { id: 4, name: 'Carla', isActive: false }
+];
+
+const activeUsers = users.filter((user) => user.isActive);
+console.log('Usuários ativos:', activeUsers);
+
+// 10. Agrupar Produtos por Categoria
+function groupByCategory(products: Product[]): Record<string, Product[]> {
+  return products.reduce((acc, product) => {
+    (acc[product.category] = acc[product.category] || []).push(product);
+    return acc;
+  }, {} as Record<string, Product[]>);
+}
+console.log('Produtos agrupados por categoria:', groupByCategory(products));
