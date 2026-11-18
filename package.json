@@ -1,0 +1,26 @@
+{
+  "name": "clipper-gta",
+  "version": "0.1.0",
+  "description": "Automação de cortes de lives (GTA RP / GTA 6): acha os momentos engraçados, gera vídeo vertical legendado e posta no YouTube Shorts, TikTok e Instagram Reels.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "clipper": "tsx src/cli.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
+    "commander": "^15.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
