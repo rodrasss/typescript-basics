@@ -18,6 +18,10 @@ export interface AssOptions {
   /** hex RGB, ex.: "#FFE600" */
   highlightColor?: string;
   maxWords?: number;
+  /** distâncias verticais (px) — mudam conforme o layout */
+  hookMarginV?: number;
+  captionMarginV?: number;
+  creditMarginV?: number;
 }
 
 export function assTime(sec: number): string {
@@ -80,9 +84,9 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,${font},86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,4,2,70,70,560,1
-Style: Hook,${font},68,&H00000000,&H00000000,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,0,0,3,16,0,8,90,90,230,1
-Style: Credit,${font},40,&H30FFFFFF,&H30FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,2,60,60,420,1
+Style: Caption,${font},86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,4,2,70,70,${o.captionMarginV ?? 560},1
+Style: Hook,${font},68,&H00000000,&H00000000,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,0,0,3,16,0,8,90,90,${o.hookMarginV ?? 230},1
+Style: Credit,${font},40,&H30FFFFFF,&H30FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,2,60,60,${o.creditMarginV ?? 420},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

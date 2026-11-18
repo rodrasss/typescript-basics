@@ -42,6 +42,10 @@ export interface TwitchClip {
   duration: number;
   creator_name: string;
   game_id: string;
+  /** VOD de onde o clipe saiu ("" se o VOD não existe mais) */
+  video_id: string;
+  /** segundo do VOD onde o clipe começa (null se indisponível) */
+  vod_offset: number | null;
 }
 
 /** Clipes mais vistos do canal nos últimos `days` dias (a Twitch já devolve ordenado por views). */

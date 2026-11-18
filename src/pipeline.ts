@@ -1,6 +1,7 @@
 import { rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { excitementCurve, intensityProfile, loudnessPerSecond, pickPeaks } from "./analysis/loudness";
+import { frameTimes, framesFromFile, framesFromHls } from "./analysis/frames";
 import { selectClips, type Candidate, type SelectedClip } from "./analysis/select";
 import { extractAudio, shiftTranscript, transcribe, type Word } from "./analysis/transcribe";
 import { assertPermission, env, type Config, type Platform, type Streamer } from "./config";
@@ -8,7 +9,16 @@ import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { publishClip } from "./publish";
 import { renderClip } from "./render/render";
 import { getBroadcasterId, getTopClips } from "./sources/twitch";
-import { channelPages, downloadAudio, downloadSection, downloadVideo, getInfo, listRecent } from "./sources/ytdlp";
+import {
+  channelPages,
+  downloadAudio,
+  downloadSection,
+  downloadVideo,
+  getInfo,
+  listRecent,
+  lowResHlsUrl,
+  sourceKey,
+} from "./sources/ytdlp";
 import type { ClipRecord, State } from "./state";
 import { log } from "./util/log";
 import { errMsg, hms, mapLimit, shortId, slug } from "./util/misc";
@@ -39,6 +49,7 @@ async function finalizeClip(
   source: ClipRecord["source"],
   sel: SelectedClip,
   render: { input: string; offset: number; words: Word[]; workDir: string },
+  vod?: ClipRecord["vod"],
 ): Promise<ClipRecord> {
   const { cfg, state } = ctx;
   const id = shortId();
@@ -55,7 +66,8 @@ async function finalizeClip(
     words: render.words,
     hookTitle: cfg.render.hookTitle ? sel.hookTitle : undefined,
     credit: streamer.credit,
-    layout: cfg.render.layout,
+    layout: streamer.layout ?? cfg.render.layout,
+    facecam: streamer.facecam,
     zoom: cfg.render.zoom,
     captions: cfg.render.captions,
     font: cfg.render.font,
@@ -71,6 +83,7 @@ async function finalizeClip(
     streamer: streamer.name,
     credit: streamer.credit,
     source,
+    vod,
     start: sel.start,
     end: sel.end,
     score: sel.score,
@@ -114,7 +127,10 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
     if (peaks.length < 3) peaks = pickPeaks(curve, { count: cfg.clips.candidates, minScore: -Infinity });
     log.info(`${peaks.length} trechos candidatos encontrados.`);
 
-    log.step("Transcrevendo os candidatos…");
+    const framesUrl = cfg.clips.frames > 0 ? await lowResHlsUrl(info.url) : null;
+    if (cfg.clips.frames > 0 && !framesUrl) log.info("Frames indisponíveis para esta fonte (só HLS); o Claude vai usar só fala + volume.");
+
+    log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
     const transcribed = await mapLimit(peaks, 3, async (p, i) => {
       const start = Math.max(0, p.t - PRE_PEAK);
       const end = Math.min(db.length, p.t + POST_PEAK);
@@ -127,6 +143,9 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
         peakScore: p.score,
         intensity: intensityProfile(curve, start, end),
         segments: tr.segments,
+        frames: framesUrl
+          ? await framesFromHls(framesUrl, frameTimes(start, end, cfg.clips.frames, p.t), work, `c${i + 1}`).catch(() => [])
+          : undefined,
       };
       return { cand, words: tr.words };
     });
@@ -147,6 +166,11 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
 
     const out: ClipRecord[] = [];
     for (const sel of selected) {
+      const dup = state.overlaps(info.key, sel.start, sel.end);
+      if (dup) {
+        log.info(`Pulando ${hms(sel.start)}: já existe o corte ${dup.id} desse momento.`);
+        continue;
+      }
       const pad = 1;
       const dlStart = Math.max(0, sel.start - pad);
       log.step(`Baixando trecho ${hms(sel.start)}–${hms(sel.end)}…`);
@@ -163,6 +187,7 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
             words: relativeWords(wordsById.get(sel.candidateId) ?? [], sel.start, sel.end),
             workDir: work,
           },
+          { key: info.key, start: sel.start, end: sel.end },
         ),
       );
     }
@@ -188,8 +213,16 @@ export async function processTwitchClips(
 
   log.step(`Buscando clipes mais vistos de ${streamer.twitch} (últimos ${days} dias)…`);
   const broadcaster = await getBroadcasterId(streamer.twitch);
+  const vodRef = (c: { video_id: string; vod_offset: number | null; duration: number }, a = 0, b = c.duration) =>
+    c.video_id && c.vod_offset !== null
+      ? { key: sourceKey("TwitchVod", `v${c.video_id}`), start: c.vod_offset + a, end: c.vod_offset + b }
+      : undefined;
   const clips = (await getTopClips(broadcaster, days, 50))
     .filter((c) => c.duration >= 8 && !state.isDone(`twitch-clip:${c.id}`))
+    .filter((c) => {
+      const ref = vodRef(c);
+      return !ref || !state.overlaps(ref.key, ref.start, ref.end);
+    })
     .slice(0, limit * 3);
   if (clips.length === 0) {
     log.info("Nenhum clipe novo.");
@@ -210,6 +243,10 @@ export async function processTwitchClips(
         intensity: intensityProfile(curve, 0, c.duration),
         segments: tr.segments,
         note: `clipe da Twitch "${c.title}" — ${c.view_count} visualizações`,
+        frames:
+          cfg.clips.frames > 0
+            ? await framesFromFile(video, frameTimes(0, c.duration, cfg.clips.frames), work, `k${i + 1}`)
+            : undefined,
       };
       return { clip: c, video, cand, words: tr.words };
     });
@@ -237,6 +274,7 @@ export async function processTwitchClips(
           { kind: "twitch-clip", key: `twitch-clip:${p.clip.id}`, url: p.clip.url, title: p.clip.title },
           sel,
           { input: p.video, offset: sel.start, words: relativeWords(p.words, sel.start, sel.end), workDir: work },
+          vodRef(p.clip, sel.start, sel.end),
         ),
       );
     }

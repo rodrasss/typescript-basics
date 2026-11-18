@@ -97,6 +97,21 @@ async function mediaUrls(url: string, format: string): Promise<string[]> {
   return out.trim().split("\n").filter(Boolean);
 }
 
+/** URL da playlist HLS (um stream com vídeo+áudio) no formato pedido, ou null se a fonte não for HLS. */
+export async function hlsUrl(url: string, format: string): Promise<string | null> {
+  try {
+    const urls = await mediaUrls(url, format);
+    return urls.length === 1 && /\.m3u8/i.test(urls[0]) ? urls[0] : null;
+  } catch {
+    return null;
+  }
+}
+
+/** Playlist HLS em baixa resolução (para tirar frames rápido). */
+export function lowResHlsUrl(url: string): Promise<string | null> {
+  return hlsUrl(url, "worst[height>=360][protocol^=m3u8]/b[protocol^=m3u8]");
+}
+
 /**
  * Baixa só um trecho do vídeo.
  * - HLS (Twitch, Kick…): baixa direto os poucos segmentos que cobrem o trecho.
@@ -110,14 +125,10 @@ export async function downloadSection(
   dir: string,
   name: string,
 ): Promise<{ path: string; start: number }> {
-  try {
-    const urls = await mediaUrls(url, "b[height<=1080][protocol^=m3u8]");
-    if (urls.length === 1) {
-      const hls = await downloadHlsSection(urls[0], start, end, dir, name);
-      if (hls) return hls;
-    }
-  } catch {
-    // sem formato HLS combinado: segue para o método do yt-dlp
+  const playlist = await hlsUrl(url, "b[height<=1080][protocol^=m3u8]");
+  if (playlist) {
+    const hls = await downloadHlsSection(playlist, start, end, dir, name);
+    if (hls) return hls;
   }
   const path = await downloadTo(url, `${dir}/${name}.%(ext)s`, [
     "-f",

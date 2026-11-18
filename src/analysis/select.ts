@@ -3,6 +3,8 @@ import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { z } from "zod";
 import { env } from "../config";
 import { log } from "../util/log";
+import type { BetaContentBlockParam } from "@anthropic-ai/sdk/resources/beta/messages/messages";
+import { frameBase64, type Frame } from "./frames";
 import type { Segment } from "./transcribe";
 
 /**
@@ -24,6 +26,8 @@ export interface Candidate {
   segments: Segment[];
   /** informação extra (ex.: título e views do clipe da Twitch) */
   note?: string;
+  /** alguns frames do trecho (tempo na mesma base de start/end) */
+  frames?: Frame[];
 }
 
 export interface SelectedClip {
@@ -68,7 +72,7 @@ O que faz um bom corte:
 
 Evite: trechos sem graça, só setup sem desfecho, leitura de patrocínio, pedidos de sub/doação, longos silêncios, discurso de ódio, assédio, conteúdo sexual, ataques a pessoas reais e dados pessoais (telefone, endereço etc.).
 
-Você NÃO vê o vídeo. Não invente o que aconteceu na tela: se a transcrição não deixa claro que o momento é bom, dê nota baixa. Seja honesto nas notas (1 = descartável, 10 = viral certo); a maioria dos trechos não merece mais que 5.
+Quando houver, você também recebe alguns frames de cada trecho (com o tempo t de cada um). Use-os para entender a cena, o que está na tela e se é GTA mesmo, mas lembre que são poucos quadros: não invente ação que não dá para ver nem ouvir. Se a transcrição e os frames não deixam claro que o momento é bom, dê nota baixa. Seja honesto nas notas (1 = descartável, 10 = viral certo); a maioria dos trechos não merece mais que 5.
 
 Regras de saída:
 - start e end em segundos, dentro da janela do candidato, usando a mesma base de tempo dos timestamps (t=...).
@@ -109,16 +113,22 @@ export async function selectClips(input: {
   if (input.candidates.length === 0) return [];
   client ??= new Anthropic();
 
-  const user = [
+  const intro = [
     `Streamer: ${input.streamer.name}`,
     input.streamer.context ? `Contexto do streamer: ${input.streamer.context}` : null,
     `Vídeo de origem: ${input.sourceTitle}`,
     `Escolha até ${input.maxClips} cortes. Duração de cada corte: entre ${input.minSeconds} e ${input.maxSeconds} segundos.`,
-    "",
-    ...input.candidates.map(describeCandidate),
   ]
     .filter((l) => l !== null)
-    .join("\n\n");
+    .join("\n");
+  const content: BetaContentBlockParam[] = [{ type: "text", text: intro }];
+  for (const c of input.candidates) {
+    content.push({ type: "text", text: describeCandidate(c) });
+    for (const f of c.frames ?? []) {
+      content.push({ type: "text", text: `frame do candidato ${c.id} em t=${f.t.toFixed(1)}:` });
+      content.push({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: frameBase64(f) } });
+    }
+  }
 
   const response = await client.beta.messages.parse({
     model: env("CLAUDE_MODEL") ?? "claude-opus-5-5",
@@ -131,7 +141,7 @@ export async function selectClips(input: {
       format: betaZodOutputFormat(SelectionSchema),
     },
     system: SYSTEM,
-    messages: [{ role: "user", content: user }],
+    messages: [{ role: "user", content }],
   });
 
   if (response.stop_reason === "refusal") {

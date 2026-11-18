@@ -1,6 +1,6 @@
 import { readFile, stat } from "node:fs/promises";
-import { createServer } from "node:http";
 import { requireEnv } from "../config";
+import { waitForRedirect } from "./oauth";
 
 /**
  * YouTube Data API v3 (oficial). Precisa de um projeto no Google Cloud com a
@@ -94,19 +94,8 @@ export async function youtubeAuthFlow(): Promise<void> {
       prompt: "consent",
     });
 
-  console.log("\nAbra este link no navegador, logado na conta do canal:\n\n" + authUrl + "\n");
-  const code = await new Promise<string>((resolve, reject) => {
-    const server = createServer((req, res) => {
-      const url = new URL(req.url ?? "/", REDIRECT_URI);
-      const c = url.searchParams.get("code");
-      const err = url.searchParams.get("error");
-      res.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
-      res.end(c ? "Pronto! Pode fechar esta aba e voltar ao terminal." : `Erro: ${err ?? "sem código"}`);
-      server.close();
-      c ? resolve(c) : reject(new Error(err ?? "Autorização sem código"));
-    });
-    server.listen(REDIRECT_PORT, "127.0.0.1");
-  });
+  const params = await waitForRedirect(REDIRECT_URI, authUrl);
+  const code = params.get("code")!;
 
   const j = await tokenRequest({
     code,

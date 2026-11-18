@@ -21,7 +21,18 @@ const StreamerSchema = z.object({
   clipPermission: z.boolean().default(false),
   /** Contexto extra para o Claude (personagem no RP, bordões, servidor...). */
   context: z.string().optional(),
+  /** Layout só deste streamer (senão usa render.layout). */
+  layout: z.enum(["blur", "crop", "split"]).optional(),
+  /**
+   * Onde fica a câmera do streamer na tela, em frações (0 a 1) da largura/altura.
+   * Ex.: { "x": 0.75, "y": 0.0, "w": 0.25, "h": 0.3 } = canto superior direito.
+   * Use `npm run clipper -- frame <url>` para descobrir.
+   */
+  facecam: z
+    .object({ x: z.number().min(0).max(1), y: z.number().min(0).max(1), w: z.number().min(0.05).max(1), h: z.number().min(0.05).max(1) })
+    .optional(),
 });
+export type Facecam = NonNullable<Streamer["facecam"]>;
 export type Streamer = z.infer<typeof StreamerSchema>;
 
 const ConfigSchema = z.object({
@@ -37,14 +48,20 @@ const ConfigSchema = z.object({
       /** Nota mínima (1-10) que o Claude precisa dar para o corte ser renderizado. */
       minScore: z.number().min(1).max(10).default(6),
       language: z.string().default("pt"),
+      /** Quantos frames de cada trecho mandar para o Claude "ver" a cena (0 desliga). */
+      frames: z.number().int().min(0).max(6).default(3),
       /** Hashtags sempre adicionadas. */
       hashtags: z.array(z.string()).default(["#gta6", "#gtarp", "#cortes"]),
     })
     .prefault({}),
   render: z
     .object({
-      /** "blur": vídeo inteiro no meio com fundo desfocado. "crop": corta o centro em 9:16. */
-      layout: z.enum(["blur", "crop"]).default("blur"),
+      /**
+       * "blur": vídeo inteiro no meio com fundo desfocado.
+       * "crop": corta o centro em 9:16.
+       * "split": câmera do streamer em cima e jogo embaixo (precisa de streamers[].facecam).
+       */
+      layout: z.enum(["blur", "crop", "split"]).default("blur"),
       /** Zoom do vídeo no layout blur (1 = largura inteira; 1.3 corta as laterais e fica maior). */
       zoom: z.number().min(1).max(2).default(1.15),
       captions: z.boolean().default(true),
@@ -59,6 +76,12 @@ const ConfigSchema = z.object({
     .object({
       platforms: z.array(z.enum(PLATFORMS)).default(["youtube", "tiktok", "instagram"]),
       youtubePrivacy: z.enum(["private", "unlisted", "public"]).default("private"),
+      /**
+       * "inbox": o vídeo vai para a caixa de entrada/rascunhos do app do TikTok e você publica
+       * de lá (funciona sem auditoria e deixa você pôr música em alta).
+       * "direct": publica direto (sem auditoria do TikTok, só como privado).
+       */
+      tiktokMode: z.enum(["inbox", "direct"]).default("inbox"),
       tiktokPrivacy: z
         .enum(["SELF_ONLY", "MUTUAL_FOLLOW_FRIENDS", "FOLLOWER_OF_CREATOR", "PUBLIC_TO_EVERYONE"])
         .default("SELF_ONLY"),

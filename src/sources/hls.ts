@@ -81,6 +81,35 @@ async function fetchText(url: string): Promise<string> {
   return new TextDecoder().decode(await fetchBytes(url));
 }
 
+/** Carrega a media playlist (resolvendo master → maior bitrate). null se não der para usar. */
+export async function loadMediaPlaylist(playlistUrl: string): Promise<{ url: string; pl: MediaPlaylist } | null> {
+  let url = playlistUrl;
+  let text = await fetchText(url);
+  if (text.includes("#EXT-X-STREAM-INF")) {
+    const variant = pickVariant(text, url);
+    if (!variant) return null;
+    url = variant;
+    text = await fetchText(url);
+  }
+  const pl = parseMediaPlaylist(text, url);
+  if (pl.encrypted || pl.segments.length === 0) return null;
+  return { url, pl };
+}
+
+/** Baixa init + segmentos e grava concatenado (sem remux). */
+export async function writeSegments(pl: MediaPlaylist, segs: HlsSegment[], file: string): Promise<string> {
+  const parts = await mapLimit([...(pl.map ? [pl.map] : []), ...segs.map((s) => s.uri)], 4, fetchBytes);
+  const out = createWriteStream(file);
+  for (const p of parts) if (!out.write(p)) await once(out, "drain");
+  out.end();
+  await once(out, "finish");
+  return file;
+}
+
+export function isTsPlaylist(pl: MediaPlaylist): boolean {
+  return !pl.map && /\.ts(\?|$)/i.test(pl.segments[0]?.uri ?? "");
+}
+
 /**
  * @returns o arquivo .mp4 e o segundo do VOD em que ele começa,
  *          ou null se a fonte não for HLS sem criptografia (aí o chamador usa outro método).
@@ -92,26 +121,13 @@ export async function downloadHlsSection(
   dir: string,
   name: string,
 ): Promise<{ path: string; start: number } | null> {
-  let url = playlistUrl;
-  let text = await fetchText(url);
-  if (text.includes("#EXT-X-STREAM-INF")) {
-    const variant = pickVariant(text, url);
-    if (!variant) return null;
-    url = variant;
-    text = await fetchText(url);
-  }
-  const pl = parseMediaPlaylist(text, url);
-  if (pl.encrypted || pl.segments.length === 0) return null;
+  const loaded = await loadMediaPlaylist(playlistUrl);
+  if (!loaded) return null;
+  const { pl } = loaded;
   const segs = segmentsFor(pl.segments, start, end);
   if (segs.length === 0) throw new Error(`Trecho ${start}-${end}s fora do vídeo (duração ${pl.segments.at(-1)!.start}s).`);
 
-  const isTs = !pl.map && /\.ts(\?|$)/i.test(segs[0].uri);
-  const raw = join(dir, `${name}.raw.${isTs ? "ts" : "mp4"}`);
-  const parts = await mapLimit([...(pl.map ? [pl.map] : []), ...segs.map((s) => s.uri)], 4, fetchBytes);
-  const out = createWriteStream(raw);
-  for (const p of parts) if (!out.write(p)) await once(out, "drain");
-  out.end();
-  await once(out, "finish");
+  const raw = await writeSegments(pl, segs, join(dir, `${name}.raw.${isTsPlaylist(pl) ? "ts" : "mp4"}`));
 
   // Remuxa para um mp4 "normal" começando em t=0 (sem reencodar).
   const path = join(dir, `${name}.mp4`);

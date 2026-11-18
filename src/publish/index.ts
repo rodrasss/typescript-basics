@@ -1,6 +1,8 @@
 import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { env, type Config, type Platform } from "../config";
-import type { ClipRecord, State } from "../state";
+import { DATA_DIR } from "../paths";
+import type { ClipRecord, PostResult, State } from "../state";
 import { log } from "../util/log";
 import { errMsg } from "../util/misc";
 import { uploadInstagram } from "./instagram";
@@ -15,6 +17,9 @@ const REQUIRED: Record<Platform, string[][]> = {
 
 /** A plataforma está configurada se algum dos conjuntos de variáveis estiver completo. */
 export function isConfigured(p: Platform): boolean {
+  if (p === "tiktok" && env("TIKTOK_CLIENT_KEY") && env("TIKTOK_CLIENT_SECRET") && existsSync(join(DATA_DIR, "tiktok-token.json"))) {
+    return true; // login feito com auth:tiktok
+  }
   return REQUIRED[p].some((set) => set.every((k) => env(k)));
 }
 
@@ -37,7 +42,7 @@ export async function publishClip(c: ClipRecord, platforms: Platform[], cfg: Con
     }
     log.step(`Postando ${c.id} no ${p}…`);
     try {
-      const r =
+      const r: { id: string; url?: string; note?: string } =
         p === "youtube"
           ? await uploadYouTube(c.file, {
               title: c.title.includes("#") ? c.title : `${c.title} #shorts`,
@@ -46,10 +51,15 @@ export async function publishClip(c: ClipRecord, platforms: Platform[], cfg: Con
               privacy: cfg.publish.youtubePrivacy,
             })
           : p === "tiktok"
-            ? await uploadTikTok(c.file, { caption: `${c.title}\n\n${caption}`, privacy: cfg.publish.tiktokPrivacy })
+            ? await uploadTikTok(c.file, {
+                caption: `${c.title}\n\n${caption}`,
+                privacy: cfg.publish.tiktokPrivacy,
+                mode: cfg.publish.tiktokMode,
+              })
             : await uploadInstagram(c.file, { caption: `${c.title}\n\n${caption}` });
-      c.posts[p] = { at: new Date().toISOString(), id: r.id, url: r.url };
-      log.ok(`${p}: ${r.url ?? r.id}`);
+      const post: PostResult = { at: new Date().toISOString(), id: r.id, url: r.url, note: r.note };
+      c.posts[p] = post;
+      log.ok(`${p}: ${r.url ?? r.note ?? r.id}`);
     } catch (e) {
       c.posts[p] = { at: new Date().toISOString(), error: errMsg(e) };
       log.error(`${p}: ${errMsg(e)}`);

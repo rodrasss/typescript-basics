@@ -9,6 +9,7 @@ export interface PostResult {
   at: string;
   id?: string;
   url?: string;
+  note?: string;
   error?: string;
 }
 
@@ -17,6 +18,8 @@ export interface ClipRecord {
   streamer: string;
   credit: string;
   source: { kind: "vod" | "twitch-clip"; key: string; url: string; title: string };
+  /** Trecho equivalente dentro do VOD (para não repetir o mesmo momento vindo de um clipe e do VOD). */
+  vod?: { key: string; start: number; end: number };
   /** Segundos dentro do vídeo de origem. */
   start: number;
   end: number;
@@ -50,9 +53,25 @@ export class State {
   private data: StateData;
 
   constructor() {
-    this.data = existsSync(STATE_PATH)
+    this.data = State.read();
+  }
+
+  private static read(): StateData {
+    return existsSync(STATE_PATH)
       ? (JSON.parse(readFileSync(STATE_PATH, "utf8")) as StateData)
       : { sources: {}, clips: [] };
+  }
+
+  /** Relê do disco antes de gravar, para o painel e o watch não apagarem a mudança um do outro. */
+  private mutate(fn: (d: StateData) => void): void {
+    this.data = State.read();
+    fn(this.data);
+    this.save();
+  }
+
+  reload(): this {
+    this.data = State.read();
+    return this;
   }
 
   save(): void {
@@ -71,27 +90,37 @@ export class State {
   }
 
   markDone(key: string): void {
-    this.data.sources[key] = { at: new Date().toISOString(), done: true, failures: this.failures(key) };
-    this.save();
+    this.mutate((d) => {
+      d.sources[key] = { at: new Date().toISOString(), done: true, failures: d.sources[key]?.failures ?? 0 };
+    });
   }
 
   markFailed(key: string, error: string): void {
-    this.data.sources[key] = {
-      at: new Date().toISOString(),
-      done: false,
-      failures: this.failures(key) + 1,
-      lastError: error.slice(0, 500),
-    };
-    this.save();
+    this.mutate((d) => {
+      d.sources[key] = {
+        at: new Date().toISOString(),
+        done: false,
+        failures: (d.sources[key]?.failures ?? 0) + 1,
+        lastError: error.slice(0, 500),
+      };
+    });
   }
 
   addClip(c: ClipRecord): void {
-    this.data.clips.push(c);
-    this.save();
+    this.mutate((d) => d.clips.push(c));
   }
 
   clips(): ClipRecord[] {
     return this.data.clips;
+  }
+
+  /** Já existe corte (não rejeitado) cobrindo boa parte deste trecho do VOD? */
+  overlaps(vodKey: string, start: number, end: number, minShare = 0.3): ClipRecord | undefined {
+    return this.data.clips.find((c) => {
+      if (!c.vod || c.vod.key !== vodKey || c.status === "rejected") return false;
+      const inter = Math.min(end, c.vod.end) - Math.max(start, c.vod.start);
+      return inter > minShare * Math.min(end - start, c.vod.end - c.vod.start);
+    });
   }
 
   getClip(id: string): ClipRecord {
@@ -101,8 +130,9 @@ export class State {
   }
 
   update(c: ClipRecord): void {
-    const i = this.data.clips.findIndex((x) => x.id === c.id);
-    if (i >= 0) this.data.clips[i] = c;
-    this.save();
+    this.mutate((d) => {
+      const i = d.clips.findIndex((x) => x.id === c.id);
+      if (i >= 0) d.clips[i] = c;
+    });
   }
 }
