@@ -162,6 +162,7 @@ src/
   config.ts               config + validação
   state.ts                fila de cortes e o que já foi processado (data/state.json)
   sources/ytdlp.ts        listar, baixar áudio e baixar só trechos
+  sources/hls.ts          baixa só os segmentos HLS do trecho (Twitch/Kick), em segundos
   sources/twitch.ts       API Helix (clipes populares)
   analysis/loudness.ts    detecção de picos de reação pelo volume
   analysis/transcribe.ts  Whisper com timestamps por palavra

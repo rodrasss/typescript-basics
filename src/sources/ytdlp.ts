@@ -1,5 +1,6 @@
 import { env } from "../config";
 import { run } from "../util/exec";
+import { downloadHlsSection } from "./hls";
 
 /** Argumentos extras: cookies (lives só para inscritos, YouTube pedindo login) e o que mais vier em YTDLP_ARGS. */
 function baseArgs(): string[] {
@@ -90,9 +91,35 @@ export function downloadAudio(url: string, dir: string): Promise<string> {
   return downloadTo(url, `${dir}/audio.%(ext)s`, ["-f", "ba/worst"]);
 }
 
-/** Baixa só um trecho do vídeo (com corte preciso nos keyframes). */
-export function downloadSection(url: string, start: number, end: number, dir: string, name: string): Promise<string> {
-  return downloadTo(url, `${dir}/${name}.%(ext)s`, [
+/** URL direta da mídia escolhida pelo yt-dlp (uma por stream). */
+async function mediaUrls(url: string, format: string): Promise<string[]> {
+  const out = await run("yt-dlp", [...baseArgs(), "-f", format, "--get-url", url]);
+  return out.trim().split("\n").filter(Boolean);
+}
+
+/**
+ * Baixa só um trecho do vídeo.
+ * - HLS (Twitch, Kick…): baixa direto os poucos segmentos que cobrem o trecho.
+ * - Outros (YouTube…): usa o --download-sections do yt-dlp.
+ * @returns o arquivo e o segundo do vídeo original em que ele começa.
+ */
+export async function downloadSection(
+  url: string,
+  start: number,
+  end: number,
+  dir: string,
+  name: string,
+): Promise<{ path: string; start: number }> {
+  try {
+    const urls = await mediaUrls(url, "b[height<=1080][protocol^=m3u8]");
+    if (urls.length === 1) {
+      const hls = await downloadHlsSection(urls[0], start, end, dir, name);
+      if (hls) return hls;
+    }
+  } catch {
+    // sem formato HLS combinado: segue para o método do yt-dlp
+  }
+  const path = await downloadTo(url, `${dir}/${name}.%(ext)s`, [
     "-f",
     "bv*[height<=1080]+ba/b[height<=1080]/b",
     "--merge-output-format",
@@ -101,6 +128,7 @@ export function downloadSection(url: string, start: number, end: number, dir: st
     `*${start.toFixed(2)}-${end.toFixed(2)}`,
     "--force-keyframes-at-cuts",
   ]);
+  return { path, start };
 }
 
 export function downloadVideo(url: string, dir: string, name: string): Promise<string> {

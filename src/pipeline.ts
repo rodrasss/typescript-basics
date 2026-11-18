@@ -150,7 +150,7 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
       const pad = 1;
       const dlStart = Math.max(0, sel.start - pad);
       log.step(`Baixando trecho ${hms(sel.start)}–${hms(sel.end)}…`);
-      const video = await downloadSection(info.url, dlStart, sel.end + pad, work, `trecho-${sel.candidateId}`);
+      const section = await downloadSection(info.url, dlStart, sel.end + pad, work, `trecho-${sel.candidateId}`);
       out.push(
         await finalizeClip(
           ctx,
@@ -158,8 +158,8 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
           { kind: "vod", key: info.key, url: info.url, title: info.title },
           sel,
           {
-            input: video,
-            offset: sel.start - dlStart,
+            input: section.path,
+            offset: sel.start - section.start,
             words: relativeWords(wordsById.get(sel.candidateId) ?? [], sel.start, sel.end),
             workDir: work,
           },
