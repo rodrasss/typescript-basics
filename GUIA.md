@@ -9,7 +9,7 @@ Faça na ordem. A **Fase 1** leva cerca de 30 minutos e já gera cortes de verda
 
 **Fase 1: primeiro corte**
 - [ ] Instalar Node, ffmpeg, yt-dlp e Git
-- [ ] Baixar o projeto e rodar `npm install`
+- [ ] Baixar o projeto e rodar `npm install` + `npm run setup`
 - [ ] Chave do Claude
 - [ ] Chave do Groq
 - [ ] Cadastrar o streamer no `clipper.config.json`
@@ -67,25 +67,23 @@ Links, caso prefira instalar manualmente:
 - yt-dlp: https://github.com/yt-dlp/yt-dlp#installation
 - Git: https://git-scm.com/downloads
 
-### 2. Baixar o projeto
+### 2. Baixar o projeto e preparar
+No terminal (PowerShell no Windows, Terminal no Mac), rode:
 ```bash
 git clone https://github.com/rodrasss/typescript-basics.git clipper
 cd clipper
-git checkout claude/vibrant-ritchie-3wqk6r   # só enquanto o PR #1 não for mergeado na main
 npm install
+npm run setup
 ```
+O `npm run setup` faz quatro coisas:
+- cria o arquivo `.env`;
+- confere se ffmpeg, yt-dlp e as chaves estão ok;
+- gera um corte de exemplo em `output/smoke/` (não precisa de chave);
+- diz o que falta fazer.
 
-Depois crie o seu `.env`:
-- Windows: `copy .env.example .env`
-- Mac/Linux: `cp .env.example .env`
+Se ele disser que falta algum programa, instale com o comando que ele mostrar e rode `npm run setup` de novo.
 
-Abra o `.env` num editor (por exemplo, o Bloco de Notas ou o VS Code: https://code.visualstudio.com). **Nunca envie esse arquivo para ninguém**, porque ele guarda as suas senhas de API.
-
-Teste se está tudo certo:
-```bash
-npm run clipper -- doctor
-npm run smoke        # gera um corte de exemplo em output/smoke/ (não precisa de chave)
-```
+O `.env` guarda as suas senhas de API. Abra com um editor (Bloco de Notas, ou o VS Code: https://code.visualstudio.com) e **nunca envie esse arquivo para ninguém**.
 
 ### 3. Chave do Claude (escolhe os momentos e escreve título/legenda)
 1. Crie a conta em https://platform.claude.com.

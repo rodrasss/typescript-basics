@@ -26,6 +26,7 @@ Também existe o modo **clipes populares da Twitch**. Nele o programa pega os cl
 ## Comandos
 
 ```bash
+npm run setup                                     # primeira vez: cria o .env, confere tudo e roda o teste offline
 npm run clipper -- doctor                         # confere instalação, chaves e logins
 npm run smoke                                     # teste offline (gera cortes de exemplo)
 
