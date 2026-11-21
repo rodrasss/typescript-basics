@@ -35,7 +35,7 @@ const missing = [
   !has("yt-dlp", "--version") && "yt-dlp",
 ].filter(Boolean) as string[];
 
-title("3/3 Teste offline (gera um corte de exemplo)");
+title("3/3 Teste técnico offline (vídeo sintético de barras coloridas, não é live de verdade)");
 let smokeOk = false;
 if (missing.length) {
   console.log(`Pulei o teste: falta instalar ${missing.join(", ")}.`);
@@ -53,7 +53,7 @@ if (missing.length) {
         : "sudo apt install ffmpeg pipx && pipx install yt-dlp";
   console.log(`✖ Instale o que falta e rode "npm run setup" de novo:\n    ${how}`);
 } else if (smokeOk) {
-  console.log("✔ Instalação OK! Veja os cortes de exemplo em output/smoke/");
+  console.log("✔ Instalação OK! (o teste usa barras coloridas de propósito; os cortes reais vão para output/<streamer>/)");
 } else {
   console.log("✖ O teste offline falhou — veja a mensagem acima.");
 }

@@ -41,7 +41,7 @@ Também existe o modo **clipes populares da Twitch**. Nele o programa pega os cl
 ```bash
 npm run setup                                     # primeira vez: cria o .env, confere tudo e roda o teste offline
 npm run clipper -- doctor                         # confere instalação, chaves e logins
-npm run smoke                                     # teste offline (gera cortes de exemplo)
+npm run smoke                                     # teste técnico com vídeo sintético (barras coloridas)
 
 npm run clipper -- vod "<link do VOD>" --streamer "Nome"          # processa um VOD
 npm run clipper -- twitch-clips --streamer "Nome" --days 3        # clipes mais vistos da Twitch

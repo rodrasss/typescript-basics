@@ -1,7 +1,8 @@
 /**
- * Teste de fumaça sem internet e sem chaves: gera um "VOD" sintético com
- * duas explosões de volume, confere se a análise acha os picos e renderiza
- * um corte vertical legendado em output/smoke/.
+ * TESTE TÉCNICO sem internet e sem chaves: gera um vídeo FALSO (barras coloridas
+ * do ffmpeg) com duas explosões de volume, confere se a análise acha os picos e
+ * se a montagem do vídeo vertical funciona. Não usa nenhuma live de verdade —
+ * os cortes reais ficam em output/<streamer>/.
  *
  *   npm run smoke
  */
@@ -13,7 +14,7 @@ import { OUTPUT_DIR, ensureDir } from "../src/paths";
 import { renderClip } from "../src/render/render";
 import { run } from "../src/util/exec";
 
-const dir = ensureDir(join(OUTPUT_DIR, "smoke"));
+const dir = ensureDir(join(OUTPUT_DIR, "teste-tecnico-sintetico"));
 const vod = join(dir, "vod-sintetico.mp4");
 
 console.log("1/5 gerando VOD sintético de 6 min (picos em 2:00 e 4:30)…");
@@ -43,7 +44,7 @@ const out = await renderClip({
   offset: 110,
   duration: 20,
   words,
-  hookTitle: "ELE ROUBOU A VIATURA DO PRÓPRIO CHEFE",
+  hookTitle: "TESTE TÉCNICO (VÍDEO SINTÉTICO)",
   credit: "twitch.tv/exemplo",
   layout: "blur",
   zoom: 1.15,
@@ -69,7 +70,7 @@ const split = await renderClip({
   offset: 110,
   duration: 8,
   words,
-  hookTitle: "LAYOUT COM FACECAM",
+  hookTitle: "TESTE TÉCNICO: LAYOUT CÂMERA",
   credit: "twitch.tv/exemplo",
   layout: "split",
   facecam: { x: 0.7, y: 0, w: 0.3, h: 0.35 },
@@ -102,7 +103,7 @@ const edited = await renderClip({
   words,
   emphasis: ["viatura"],
   emphasisColor: "#4DFF6A",
-  hookTitle: "EDIÇÃO DA IA",
+  hookTitle: "TESTE TÉCNICO: CORTES E ZOOM",
   credit: "twitch.tv/exemplo",
   layout: "blur",
   zoom: 1.15,
@@ -121,4 +122,7 @@ assert.ok(Math.abs(Number(ed.format.duration) - 17) < 0.5, `duração editada ${
 assert.ok(ed.streams.some((x) => x.codec_type === "audio"), "corte editado sem áudio");
 await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", "10.5", "-i", edited, "-frames:v", "1", join(dir, "frame-zoom.png")]);
 
-console.log(`\nOK! Cortes: ${out}, ${split} e ${edited}\nFrames de exemplo: ${join(dir, "frame.png")}, ${join(dir, "frame-split.png")} e ${join(dir, "frame-zoom.png")}`);
+console.log(
+  `\nOK! Teste técnico passou (vídeos de barras coloridas em ${dir} — não é live de verdade).` +
+    `\nOs cortes reais aparecem em output/<streamer>/ depois de rodar vod/watch com as chaves.`,
+);

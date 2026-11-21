@@ -79,7 +79,7 @@ npm run setup
 O `npm run setup` faz quatro coisas:
 - cria o arquivo `.env`;
 - confere se ffmpeg, yt-dlp e as chaves estão ok;
-- gera um corte de exemplo em `output/smoke/` (não precisa de chave);
+- faz um teste técnico com um vídeo sintético de barras coloridas (não é live de verdade, não precisa de chave);
 - diz o que falta fazer.
 
 Se ele disser que falta algum programa, instale com o comando que ele mostrar e rode `npm run setup` de novo.
