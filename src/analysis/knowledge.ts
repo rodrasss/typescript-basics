@@ -83,6 +83,8 @@ export function looksPortuguese(title: string): boolean {
 /** Exemplo bom o bastante para virar referência: views relevantes e em português (Shorts/TikTok). */
 export function isUseful(e: KnowledgeExample): boolean {
   if (!e.title || e.duration <= 0) return false;
+  // propaganda/publi não é referência de corte (mesmo quando tem muitas views)
+  if (/\b(publi|publicidade|cupom|desconto|patroc\w*|parceria|link na bio)\b/i.test(`${e.title} ${e.transcript ?? ""}`)) return false;
   if (e.source === "twitch") return e.views >= 300;
   return e.views >= 1000 && looksPortuguese(e.title);
 }

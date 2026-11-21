@@ -32,6 +32,7 @@ test("filtra exemplos fracos ou em outro idioma", async () => {
   assert.equal(isUseful(ex({ source: "youtube", views: 50, title: "ALANZOKA NO GTA 6" })), false);
   assert.equal(isUseful(ex({ source: "youtube", views: 5000, title: "ALANZOKA NO GTA 6" })), true);
   assert.equal(isUseful(ex({ source: "twitch", views: 800, title: "aa" })), true);
+  assert.equal(isUseful(ex({ source: "twitch", views: 26000, title: "GTA 6 no Kabum", transcript: "tem GTA com desconto" })), false);
 });
 
 test("monta a base com exemplos do streamer primeiro e o gosto do editor", () => {
