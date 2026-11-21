@@ -52,6 +52,8 @@ export async function getInfo(url: string): Promise<VideoInfo> {
 
 export interface ListedVideo {
   key: string;
+  /** quando o vídeo foi publicado/começou (epoch em segundos), se o site informar */
+  timestamp?: number;
   id: string;
   url: string;
   title: string;
@@ -73,6 +75,7 @@ export async function listRecent(pageUrl: string, limit: number): Promise<Listed
     .filter((e) => e.id && (e.url || e.webpage_url))
     .map((e) => ({
       key: sourceKey(String(e.ie_key ?? "video"), String(e.id)),
+      timestamp: typeof e.timestamp === "number" ? e.timestamp : undefined,
       id: String(e.id),
       url: String(e.webpage_url ?? e.url),
       title: String(e.title ?? e.id),
@@ -181,4 +184,24 @@ export function channelPages(s: { twitch?: string; youtube?: string; kick?: stri
     pages.push(`https://www.youtube.com/${handle}/streams`);
   }
   return pages;
+}
+
+/** Canais de um streamer onde dá para acompanhar a live (Twitch e Kick). */
+export function liveChannels(s: { twitch?: string; kick?: string }): Array<{ platform: "twitch" | "kick"; live: string; videos: string }> {
+  const out: Array<{ platform: "twitch" | "kick"; live: string; videos: string }> = [];
+  if (s.twitch) out.push({ platform: "twitch", live: `https://www.twitch.tv/${s.twitch}`, videos: channelPages({ twitch: s.twitch })[0] });
+  if (s.kick) out.push({ platform: "kick", live: `https://kick.com/${s.kick}`, videos: channelPages({ kick: s.kick })[0] });
+  return out;
+}
+
+/** Se o canal está ao vivo agora: título e categoria da live; null se offline. */
+export async function liveInfo(channelUrl: string): Promise<{ title: string; categories: string[] } | null> {
+  try {
+    const out = await run("yt-dlp", ["--dump-single-json", "--skip-download", "--no-warnings", channelUrl]);
+    const j = JSON.parse(out) as Record<string, unknown> | null;
+    if (!j || !(j.is_live === true || j.live_status === "is_live")) return null;
+    return { title: String(j.title ?? j.description ?? ""), categories: ((j.categories as unknown[] | null) ?? []).map(String) };
+  } catch {
+    return null; // offline (o yt-dlp responde com erro quando o canal não está ao vivo)
+  }
 }

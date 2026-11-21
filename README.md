@@ -27,6 +27,8 @@ As duas etapas da IA recebem uma base de conhecimento, guardada em cache entre a
   - O comando `aprender` atualiza a base no seu PC, inclusive com perfis do TikTok e canais de cortes que você indicar.
 - **O seu gosto:** o que você aprovou, rejeitou e como reescreveu os títulos e legendas no painel. Quanto mais você revisa, mais a IA acerta o seu estilo.
 
+Também existe o **modo ao vivo**: enquanto o streamer joga GTA, a cada 15 minutos o programa analisa só o trecho novo da live (Twitch ou Kick) e solta os cortes na hora, antes de qualquer outro canal. Quando a live acaba, o processamento normal do VOD pula a parte que o modo ao vivo já analisou.
+
 Também existe o modo **clipes populares da Twitch**. Nele o programa pega os clipes mais vistos do canal (a própria audiência já marcou o momento bom), e o Claude escolhe, apara e escreve o título. O programa evita postar duas vezes o mesmo momento quando ele aparece tanto num clipe quanto no VOD.
 
 ## ⚠️ Direitos autorais e monetização
@@ -46,6 +48,8 @@ npm run smoke                                     # teste técnico com vídeo si
 npm run clipper -- vod "<link do VOD>" --streamer "Nome"          # processa um VOD
 npm run clipper -- twitch-clips --streamer "Nome" --days 3        # clipes mais vistos da Twitch
 npm run clipper -- watch [--publish] [--every 3]                  # rodada automática (ou loop a cada 3 h)
+npm run clipper -- ao-vivo [--publish] [--every 15]               # cortes DURANTE as lives (a cada 15 min)
+npm run clipper -- watch --ao-vivo --publish --every 0.25         # tudo junto: lives em andamento + VODs, a cada 15 min
 npm run clipper -- aprender                       # atualiza a base de conhecimento da IA
 
 npm run clipper -- painel                         # http://127.0.0.1:4310: assistir, editar, aprovar, postar
@@ -87,6 +91,7 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `publish.autoApproveMinScore` | Aprovação automática por nota (`null` = sempre revisar). |
 | `publish.perRun` | Quantos cortes postar por rodada. |
 | `watch.*` | Quantos VODs e clipes processar por rodada. |
+| `live.*` | Modo ao vivo: de quantos em quantos minutos olhar (`intervalMinutes`), quanto voltar na primeira olhada (`lookbackMinutes`), o mínimo de live nova para analisar (`minChunkMinutes`) e o máximo de cortes por olhada (`perChunk`). |
 
 ## Custos
 

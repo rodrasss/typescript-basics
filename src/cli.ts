@@ -85,16 +85,17 @@ program
   .description("Rodada automática para todos os streamers autorizados")
   .option("--publish", "posta os aprovados no final de cada rodada")
   .option("--every <horas>", "fica rodando e repete a cada N horas (alternativa ao cron/Agendador)")
+  .option("--ao-vivo", "também corta as lives que estão acontecendo agora (use com --every 0.25 = a cada 15 min)")
   .option("--keep", "mantém os arquivos temporários")
   .action(
-    action(async (o: { publish?: boolean; keep?: boolean; every?: string }) => {
+    action(async (o: { publish?: boolean; keep?: boolean; every?: string; aoVivo?: boolean }) => {
       const hours = o.every ? Number(o.every) : 0;
       if (o.every && !(hours > 0)) throw new Error("--every precisa de um número de horas, ex.: --every 3");
       for (;;) {
         try {
           const c = ctx(o);
           await refreshKnowledgeIfOld(c.cfg);
-          const clips = await watchAll(c);
+          const clips = await watchAll(c, { live: o.aoVivo });
           log.ok(`Rodada concluída: ${clips.length} corte(s) novo(s).`);
           if (o.publish) await publishApproved(c, { platforms: c.cfg.publish.platforms, limit: c.cfg.publish.perRun });
         } catch (e) {
@@ -125,6 +126,34 @@ async function refreshKnowledgeIfOld(cfg: ReturnType<typeof loadConfig>): Promis
     rmSync(work, { recursive: true, force: true });
   }
 }
+
+program
+  .command("ao-vivo")
+  .description("Cortes DURANTE as lives: a cada N minutos analisa o trecho novo de quem estiver jogando GTA agora")
+  .option("--every <minutos>", "intervalo entre as olhadas (padrão: live.intervalMinutes do config)")
+  .option("--uma-vez", "olha uma vez só e sai")
+  .option("--publish", "posta os aprovados depois de cada olhada")
+  .option("--keep", "mantém os arquivos temporários")
+  .action(
+    action(async (o: { every?: string; umaVez?: boolean; publish?: boolean; keep?: boolean }) => {
+      for (;;) {
+        const c = ctx(o);
+        const minutes = o.every ? Number(o.every) : c.cfg.live.intervalMinutes;
+        if (!(minutes > 0)) throw new Error("--every precisa de um número de minutos, ex.: --every 15");
+        try {
+          const clips = await watchAll(c, { onlyLive: true });
+          log.ok(`Olhada ao vivo concluída: ${clips.length} corte(s) novo(s).`);
+          if (o.publish) await publishApproved(c, { platforms: c.cfg.publish.platforms, limit: c.cfg.publish.perRun });
+        } catch (e) {
+          if (o.umaVez) throw e;
+          log.error(`Olhada ao vivo falhou: ${errMsg(e)}`);
+        }
+        if (o.umaVez) break;
+        log.info(`Próxima olhada em ${minutes} min.`);
+        await sleep(minutes * 60_000);
+      }
+    }),
+  );
 
 program
   .command("aprender")

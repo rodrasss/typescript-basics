@@ -161,6 +161,19 @@ const ConfigSchema = z.object({
       autoRefreshDays: z.number().min(0).default(7),
     })
     .prefault({}),
+  /** Modo ao vivo: cortes durante a live (comando ao-vivo ou watch --ao-vivo). */
+  live: z
+    .object({
+      /** De quantos em quantos minutos olhar as lives. */
+      intervalMinutes: z.number().positive().default(15),
+      /** Na primeira olhada de uma live, quantos minutos para trás analisar. */
+      lookbackMinutes: z.number().positive().default(45),
+      /** Só analisa quando tiver pelo menos esse tanto de live nova (min). */
+      minChunkMinutes: z.number().positive().default(8),
+      /** Máximo de cortes por olhada. */
+      perChunk: z.number().int().positive().default(2),
+    })
+    .prefault({}),
   watch: z
     .object({
       /** Quantos vídeos novos por streamer processar a cada execução do watch. */

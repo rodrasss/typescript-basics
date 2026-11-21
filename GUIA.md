@@ -279,20 +279,26 @@ O fluxo do dia a dia:
 
 **Jeito mais simples (qualquer sistema):** deixe um terminal aberto rodando
 ```bash
-npm run clipper -- watch --publish --every 3
+npm run clipper -- watch --ao-vivo --publish --every 0.25
 ```
-Isso faz uma rodada a cada 3 horas. O computador precisa ficar ligado e não pode entrar em suspensão.
+A cada 15 minutos, ele faz duas coisas:
+- corta as lives de GTA que estão **acontecendo agora** (modo ao vivo), olhando só o trecho novo;
+- processa os VODs de lives que já terminaram, pulando o que o modo ao vivo já analisou.
+
+Os cortes quentes saem enquanto a live ainda está no ar, antes dos outros canais de cortes. O computador precisa ficar ligado e não pode entrar em suspensão.
+
+Se quiser só o modo ao vivo: `npm run clipper -- ao-vivo --publish`.
 
 **Windows: Agendador de Tarefas**
 1. Abra o Agendador de Tarefas e clique em **Criar Tarefa Básica**.
-2. Escolha **Diariamente** e, nas propriedades, marque **repetir a cada 3 horas**.
+2. Escolha **Diariamente** e, nas propriedades, marque **repetir a cada 15 minutos**.
 3. Em ação, escolha **Iniciar um programa**:
    - **Programa:** `cmd.exe`
-   - **Argumentos:** `/c cd /d C:\caminho\clipper && npm run clipper -- watch --publish >> data\watch.log 2>&1`
+   - **Argumentos:** `/c cd /d C:\caminho\clipper && npm run clipper -- watch --ao-vivo --publish >> data\watch.log 2>&1`
 
 **macOS/Linux: cron.** Rode `crontab -e` e adicione:
 ```
-0 */3 * * * cd /caminho/clipper && npm run clipper -- watch --publish >> data/watch.log 2>&1
+*/15 * * * * cd /caminho/clipper && npm run clipper -- watch --ao-vivo --publish >> data/watch.log 2>&1
 ```
 
 **Sem revisão (100% automático):** só quando confiar nas notas do Claude, coloque `"autoApproveMinScore": 8` no config.
