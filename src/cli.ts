@@ -9,7 +9,7 @@ import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { processTwitchClips, processVod, publishApproved, watchAll, type Ctx } from "./pipeline";
 import { isConfigured } from "./publish";
 import { instagramAuthFlow } from "./publish/instagram";
-import { tiktokAuthFlow, tiktokRefreshDaysLeft } from "./publish/tiktok";
+import { tiktokAuthFinish, tiktokAuthFlow, tiktokAuthLink, tiktokRefreshDaysLeft } from "./publish/tiktok";
 import { youtubeAuthFlow } from "./publish/youtube";
 import { gridFrame } from "./render/render";
 import { downloadSection, getInfo } from "./sources/ytdlp";
@@ -85,16 +85,17 @@ program
   .description("Rodada automática para todos os streamers autorizados")
   .option("--publish", "posta os aprovados no final de cada rodada")
   .option("--every <horas>", "fica rodando e repete a cada N horas (alternativa ao cron/Agendador)")
+  .option("--ao-vivo", "também corta as lives que estão acontecendo agora (use com --every 0.25 = a cada 15 min)")
   .option("--keep", "mantém os arquivos temporários")
   .action(
-    action(async (o: { publish?: boolean; keep?: boolean; every?: string }) => {
+    action(async (o: { publish?: boolean; keep?: boolean; every?: string; aoVivo?: boolean }) => {
       const hours = o.every ? Number(o.every) : 0;
       if (o.every && !(hours > 0)) throw new Error("--every precisa de um número de horas, ex.: --every 3");
       for (;;) {
         try {
           const c = ctx(o);
           await refreshKnowledgeIfOld(c.cfg);
-          const clips = await watchAll(c);
+          const clips = await watchAll(c, { live: o.aoVivo });
           log.ok(`Rodada concluída: ${clips.length} corte(s) novo(s).`);
           if (o.publish) await publishApproved(c, { platforms: c.cfg.publish.platforms, limit: c.cfg.publish.perRun });
         } catch (e) {
@@ -125,6 +126,34 @@ async function refreshKnowledgeIfOld(cfg: ReturnType<typeof loadConfig>): Promis
     rmSync(work, { recursive: true, force: true });
   }
 }
+
+program
+  .command("ao-vivo")
+  .description("Cortes DURANTE as lives: a cada N minutos analisa o trecho novo de quem estiver jogando GTA agora")
+  .option("--every <minutos>", "intervalo entre as olhadas (padrão: live.intervalMinutes do config)")
+  .option("--uma-vez", "olha uma vez só e sai")
+  .option("--publish", "posta os aprovados depois de cada olhada")
+  .option("--keep", "mantém os arquivos temporários")
+  .action(
+    action(async (o: { every?: string; umaVez?: boolean; publish?: boolean; keep?: boolean }) => {
+      for (;;) {
+        const c = ctx(o);
+        const minutes = o.every ? Number(o.every) : c.cfg.live.intervalMinutes;
+        if (!(minutes > 0)) throw new Error("--every precisa de um número de minutos, ex.: --every 15");
+        try {
+          const clips = await watchAll(c, { onlyLive: true });
+          log.ok(`Olhada ao vivo concluída: ${clips.length} corte(s) novo(s).`);
+          if (o.publish) await publishApproved(c, { platforms: c.cfg.publish.platforms, limit: c.cfg.publish.perRun });
+        } catch (e) {
+          if (o.umaVez) throw e;
+          log.error(`Olhada ao vivo falhou: ${errMsg(e)}`);
+        }
+        if (o.umaVez) break;
+        log.info(`Próxima olhada em ${minutes} min.`);
+        await sleep(minutes * 60_000);
+      }
+    }),
+  );
 
 program
   .command("aprender")
@@ -262,7 +291,19 @@ program
 program
   .command("auth:tiktok")
   .description("Faz o login do TikTok (Login Kit) e salva os tokens em data/tiktok-token.json")
-  .action(action(tiktokAuthFlow));
+  .option("--link", "só gera o link de login (para abrir em outro aparelho, ex.: celular)")
+  .option("--url <url>", "termina o login com a URL para onde o TikTok redirecionou")
+  .action(
+    action(async (o: { link?: boolean; url?: string }) => {
+      if (o.url) return tiktokAuthFinish(o.url);
+      if (o.link) {
+        console.log(`\nAbra no celular (logado na conta do TikTok que vai postar):\n\n${tiktokAuthLink()}\n`);
+        console.log('Depois de autorizar, copie a URL da página que abrir (ela não carrega, é normal) e rode:\n  npm run clipper -- auth:tiktok --url "COLE_A_URL_AQUI"\n');
+        return;
+      }
+      return tiktokAuthFlow();
+    }),
+  );
 
 program
   .command("auth:instagram")

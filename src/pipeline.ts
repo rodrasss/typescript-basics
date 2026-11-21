@@ -12,13 +12,17 @@ import { publishClip } from "./publish";
 import { renderClip } from "./render/render";
 import { keepRanges, remapRanges, remapWords, shiftRanges, totalLength, type Range } from "./render/timeline";
 import { getBroadcasterId, getGameIds, getTopClips } from "./sources/twitch";
+import { isTsPlaylist, loadMediaPlaylist, segmentsFor, writeSegments } from "./sources/hls";
 import {
   channelPages,
   downloadAudio,
   downloadSection,
   downloadVideo,
   getInfo,
+  hlsUrl,
   listRecent,
+  liveChannels,
+  liveInfo,
   lowResHlsUrl,
   sourceKey,
 } from "./sources/ytdlp";
@@ -45,6 +49,23 @@ export function gameRanges(
   if (!games.length || !chapters.length) return null;
   const wanted = games.map((g) => g.toLowerCase());
   return chapters.filter((c) => wanted.includes(c.title.toLowerCase())).map((c) => ({ start: c.start, end: c.end }));
+}
+
+/**
+ * Sem capítulos por jogo (Kick, YouTube): a live entra se a categoria for um dos jogos
+ * ou se o título tiver uma das palavras-chave. Lista de jogos vazia = sempre entra.
+ */
+export function matchesGame(
+  info: { title: string; categories: string[] },
+  games: string[],
+  keywords: string[],
+): boolean {
+  if (!games.length) return true;
+  const wanted = games.map((g) => g.toLowerCase());
+  if (info.categories.some((c) => wanted.includes(c.toLowerCase()))) return true;
+  // palavras-chave no título e também na categoria (a Kick usa "Grand Theft Auto VI (GTA)")
+  const title = `${info.title} ${info.categories.join(" ")}`.toLowerCase();
+  return keywords.some((k) => new RegExp(`(^|[^\\p{L}\\p{N}])${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^\\p{L}\\p{N}]|$)`, "u").test(title));
 }
 
 /** Limites por streamer (para postar menos de alguém, por exemplo). */
@@ -171,7 +192,13 @@ async function finalizeClip(
 }
 
 /** VOD/vídeo inteiro: áudio → picos de volume → transcrição → Claude escolhe → baixa só os trechos → renderiza. */
-export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Promise<ClipRecord[]> {
+export async function processVod(
+  url: string,
+  streamer: Streamer,
+  ctx: Ctx,
+  /** título visto na lista do canal (a Kick às vezes devolve as informações do VOD incompletas) */
+  hint: { title?: string } = {},
+): Promise<ClipRecord[]> {
   assertPermission(streamer);
   const { cfg, state } = ctx;
   log.step(`Lendo ${url}`);
@@ -187,96 +214,43 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
     state.markDone(info.key);
     return [];
   }
+  const titleForGame = `${info.title} ${hint.title ?? ""}`;
+  if (!ranges && !matchesGame({ title: titleForGame, categories: info.categories }, cfg.clips.games, cfg.clips.gameKeywords)) {
+    log.info(`Pulando "${info.title}": categoria (${info.categories.join(", ") || "?"}) e título não indicam ${cfg.clips.games.join(" / ")}.`);
+    state.markDone(info.key);
+    return [];
+  }
   const { perVideo, minScore } = limitsFor(cfg, streamer);
   if (perVideo === 0) return [];
+
+  // o que o modo ao vivo já analisou não é analisado de novo
+  const liveUntil = state.liveUntil(info.key);
+  let allowed = ranges;
+  if (liveUntil !== undefined) {
+    const rest = { start: liveUntil, end: Number.POSITIVE_INFINITY };
+    allowed = (ranges ?? [rest]).map((r) => ({ start: Math.max(r.start, rest.start), end: r.end })).filter((r) => r.end > r.start);
+    log.info(`O modo ao vivo já analisou até ${hms(liveUntil)}; vou olhar só o resto.`);
+    if (!allowed.length) {
+      state.markDone(info.key);
+      return [];
+    }
+  }
 
   const work = ensureDir(join(WORK_DIR, slug(info.key)));
   try {
     log.step(`Baixando o áudio de "${info.title}" (${hms(info.duration)})…`);
     const audio = await downloadAudio(info.url, work);
-
-    log.step("Procurando picos de reação no áudio…");
-    const db = await loudnessPerSecond(audio);
-    const curve = excitementCurve(db);
-    // só procura picos dentro dos trechos do jogo
-    const inGame = ranges ? curve.map((v, t) => (ranges.some((r) => t >= r.start && t < r.end) ? v : -Infinity)) : curve;
-    if (ranges) log.info(`Analisando só os trechos de jogo: ${ranges.map((r) => `${hms(r.start)}–${hms(r.end)}`).join(", ")}`);
-    let peaks = pickPeaks(inGame, { count: cfg.clips.candidates, minScore: 2 });
-    if (peaks.length < 3) peaks = pickPeaks(inGame, { count: cfg.clips.candidates, minScore: -1e9 });
-    log.info(`${peaks.length} trechos candidatos encontrados.`);
-
     const framesUrl = cfg.clips.frames > 0 ? await lowResHlsUrl(info.url) : null;
     if (cfg.clips.frames > 0 && !framesUrl) log.info("Frames indisponíveis para esta fonte (só HLS); o Claude vai usar só fala + volume.");
-
-    log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
-    const transcribed = await mapLimit(peaks, 3, async (p, i) => {
-      const start = Math.max(0, p.t - cfg.clips.windowBefore);
-      const end = Math.min(db.length, p.t + cfg.clips.windowAfter);
-      const mp3 = await extractAudio(audio, start, end - start, join(work, `cand-${i + 1}.mp3`));
-      const tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
-      const cand: Candidate = {
-        id: `c${i + 1}`,
-        start,
-        end,
-        peakScore: p.score,
-        intensity: intensityProfile(curve, start, end),
-        segments: tr.segments,
-        frames: framesUrl
-          ? await framesFromHls(framesUrl, frameTimes(start, end, cfg.clips.frames, p.t), work, `c${i + 1}`).catch(() => [])
-          : undefined,
-      };
-      return { cand, words: tr.words };
+    const out = await clipsFromAudio(ctx, streamer, { key: info.key, url: info.url, title: info.title }, {
+      file: audio,
+      offset: 0,
+      allowed,
+      framesUrl,
+      work,
+      perVideo,
+      minScore,
     });
-    const wordsById = new Map(transcribed.map((t) => [t.cand.id, t.words]));
-    const candById = new Map(transcribed.map((t) => [t.cand.id, t.cand]));
-    const knowledge = knowledgeFor(ctx, streamer);
-
-    log.step("Claude escolhendo os melhores momentos…");
-    const selected = (
-      await selectClips({
-        streamer,
-        knowledge,
-        sourceTitle: info.title,
-        candidates: transcribed.map((t) => t.cand),
-        maxClips: perVideo,
-        minSeconds: cfg.clips.minSeconds,
-        maxSeconds: cfg.clips.maxSeconds,
-      })
-    ).filter((s) => s.score >= minScore);
-    log.info(`${selected.length} corte(s) com nota >= ${minScore}.`);
-
-    const out: ClipRecord[] = [];
-    for (const sel of selected) {
-      const dup = state.overlaps(info.key, sel.start, sel.end);
-      if (dup) {
-        log.info(`Pulando ${hms(sel.start)}: já existe o corte ${dup.id} desse momento.`);
-        continue;
-      }
-      const cand = candById.get(sel.candidateId)!;
-      const words = wordsById.get(sel.candidateId) ?? [];
-      const dec = await refine(ctx, streamer, knowledge, info.title, sel, {
-        window: { start: cand.start, end: cand.end },
-        words,
-        curve,
-        frames: async () =>
-          framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
-      });
-      if (!dec || dec.score < minScore) continue;
-
-      const pad = 1;
-      log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
-      const section = await downloadSection(info.url, Math.max(0, dec.start - pad), dec.end + pad, work, `trecho-${cand.id}`);
-      out.push(
-        await finalizeClip(
-          ctx,
-          streamer,
-          { kind: "vod", key: info.key, url: info.url, title: info.title },
-          dec,
-          { input: section.path, inputStart: section.start, words, workDir: work },
-          { key: info.key, start: dec.start, end: dec.end },
-        ),
-      );
-    }
     state.markDone(info.key);
     return out;
   } catch (e) {
@@ -285,6 +259,185 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
   } finally {
     if (!ctx.keepWork) rmSync(work, { recursive: true, force: true });
   }
+}
+
+/**
+ * Do áudio aos cortes: picos de reação → transcrição + frames → triagem → editor → render.
+ * `audio.offset` = segundo do vídeo de origem em que o arquivo de áudio começa (o modo ao vivo
+ * analisa só um pedaço); `allowed` = trechos (tempo absoluto) onde pode haver pico.
+ */
+async function clipsFromAudio(
+  ctx: Ctx,
+  streamer: Streamer,
+  src: { key: string; url: string; title: string },
+  audio: {
+    file: string;
+    offset: number;
+    allowed: Range[] | null;
+    framesUrl: string | null;
+    work: string;
+    perVideo: number;
+    minScore: number;
+  },
+): Promise<ClipRecord[]> {
+  const { cfg, state } = ctx;
+  const { file, offset, allowed, framesUrl, work, perVideo, minScore } = audio;
+
+  log.step("Procurando picos de reação no áudio…");
+  const db = await loudnessPerSecond(file);
+  // curva indexada pelo segundo ABSOLUTO do vídeo (antes do offset fica vazio)
+  const rel = excitementCurve(db);
+  const curve = [...new Array<number>(Math.floor(offset)).fill(0), ...rel];
+  const audioEnd = offset + db.length;
+  const inAllowed = curve.map((v, t) =>
+    t < offset ? -Infinity : !allowed || allowed.some((r) => t >= r.start && t < r.end) ? v : -Infinity,
+  );
+  if (allowed) log.info(`Analisando: ${allowed.map((r) => `${hms(r.start)}–${Number.isFinite(r.end) ? hms(r.end) : "fim"}`).join(", ")}`);
+  let peaks = pickPeaks(inAllowed, { count: cfg.clips.candidates, minScore: 2 });
+  if (peaks.length < 3) peaks = pickPeaks(inAllowed, { count: cfg.clips.candidates, minScore: -1e9 });
+  log.info(`${peaks.length} trechos candidatos encontrados.`);
+  if (!peaks.length) return [];
+
+  log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
+  const transcribed = await mapLimit(peaks, 3, async (p, i) => {
+    const start = Math.max(offset, p.t - cfg.clips.windowBefore);
+    const end = Math.min(audioEnd, p.t + cfg.clips.windowAfter);
+    const mp3 = await extractAudio(file, start - offset, end - start, join(work, `cand-${i + 1}.mp3`));
+    const tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
+    const cand: Candidate = {
+      id: `c${i + 1}`,
+      start,
+      end,
+      peakScore: p.score,
+      intensity: intensityProfile(curve, start, end),
+      segments: tr.segments,
+      frames: framesUrl
+        ? await framesFromHls(framesUrl, frameTimes(start, end, cfg.clips.frames, p.t), work, `c${i + 1}`).catch(() => [])
+        : undefined,
+    };
+    return { cand, words: tr.words };
+  });
+  const wordsById = new Map(transcribed.map((t) => [t.cand.id, t.words]));
+  const candById = new Map(transcribed.map((t) => [t.cand.id, t.cand]));
+  const knowledge = knowledgeFor(ctx, streamer);
+
+  log.step("Claude escolhendo os melhores momentos…");
+  const selected = (
+    await selectClips({
+      streamer,
+      knowledge,
+      sourceTitle: src.title,
+      candidates: transcribed.map((t) => t.cand),
+      maxClips: perVideo,
+      minSeconds: cfg.clips.minSeconds,
+      maxSeconds: cfg.clips.maxSeconds,
+    })
+  ).filter((s) => s.score >= minScore);
+  log.info(`${selected.length} corte(s) com nota >= ${minScore}.`);
+
+  const out: ClipRecord[] = [];
+  for (const sel of selected) {
+    const dup = state.overlaps(src.key, sel.start, sel.end);
+    if (dup) {
+      log.info(`Pulando ${hms(sel.start)}: já existe o corte ${dup.id} desse momento.`);
+      continue;
+    }
+    const cand = candById.get(sel.candidateId)!;
+    const words = wordsById.get(sel.candidateId) ?? [];
+    const dec = await refine(ctx, streamer, knowledge, src.title, sel, {
+      window: { start: cand.start, end: cand.end },
+      words,
+      curve,
+      frames: async () =>
+        framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
+    });
+    if (!dec || dec.score < minScore) continue;
+
+    const pad = 1;
+    log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
+    const section = await downloadSection(src.url, Math.max(0, dec.start - pad), dec.end + pad, work, `trecho-${cand.id}`);
+    out.push(
+      await finalizeClip(
+        ctx,
+        streamer,
+        { kind: "vod", key: src.key, url: src.url, title: src.title },
+        dec,
+        { input: section.path, inputStart: section.start, words, workDir: work },
+        { key: src.key, start: dec.start, end: dec.end },
+      ),
+    );
+  }
+  return out;
+}
+
+/**
+ * Modo ao vivo: se o streamer está jogando GTA agora, analisa o trecho novo da live
+ * (desde a última olhada) e gera os cortes na hora. Usa o vídeo em andamento da
+ * Twitch/Kick, que já pode ser lido desde o começo da live.
+ */
+export async function processLive(streamer: Streamer, ctx: Ctx): Promise<ClipRecord[]> {
+  assertPermission(streamer);
+  const { cfg, state } = ctx;
+  const lim = limitsFor(cfg, streamer);
+  const perVideo = Math.min(lim.perVideo, cfg.live.perChunk);
+  if (perVideo === 0) return [];
+  const out: ClipRecord[] = [];
+
+  for (const ch of liveChannels(streamer)) {
+    const live = await liveInfo(ch.live);
+    if (!live) continue;
+    if (!matchesGame(live, cfg.clips.games, cfg.clips.gameKeywords)) {
+      log.info(`${streamer.name} está ao vivo na ${ch.platform}, mas não em GTA (${live.categories.join(", ") || live.title}).`);
+      continue;
+    }
+    // vídeo em andamento: a Kick marca com duração 0; na Twitch é o arquivo mais recente (de hoje)
+    const vids = await listRecent(ch.videos, 3);
+    const recent = (v: { timestamp?: number }) => !v.timestamp || Date.now() / 1000 - v.timestamp < 2 * 86_400;
+    const vod = vids.find((v) => v.isLive) ?? (ch.platform === "twitch" && vids[0] && recent(vids[0]) ? vids[0] : undefined);
+    if (!vod) {
+      log.warn(`${streamer.name} está ao vivo na ${ch.platform}, mas não achei o vídeo da live em andamento (VODs desativados?).`);
+      continue;
+    }
+    const audioUrl = await hlsUrl(vod.url, "worst[protocol^=m3u8]/b[protocol^=m3u8]");
+    const loaded = audioUrl ? await loadMediaPlaylist(audioUrl) : null;
+    if (!loaded) {
+      log.warn(`${streamer.name}: não consegui ler a live em andamento.`);
+      continue;
+    }
+    const last = loaded.pl.segments.at(-1)!;
+    const total = last.start + last.duration;
+    const from = state.liveUntil(vod.key) ?? Math.max(0, total - cfg.live.lookbackMinutes * 60);
+    const to = total - 30;
+    if (to - from < cfg.live.minChunkMinutes * 60) {
+      log.info(`${streamer.name}: ${Math.max(0, (to - from) / 60).toFixed(0)} min novos de live; espero juntar ${cfg.live.minChunkMinutes}.`);
+      continue;
+    }
+
+    log.step(`AO VIVO — ${streamer.name} (${ch.platform}): analisando ${hms(from)}–${hms(to)} de "${live.title}"`);
+    const work = ensureDir(join(WORK_DIR, `live-${slug(vod.key)}`));
+    try {
+      const segs = segmentsFor(loaded.pl.segments, Math.max(0, from - cfg.clips.windowBefore), to);
+      const file = await writeSegments(loaded.pl, segs, join(work, `audio.${isTsPlaylist(loaded.pl) ? "ts" : "mp4"}`));
+      const framesUrl = cfg.clips.frames > 0 ? await lowResHlsUrl(vod.url) : null;
+      out.push(
+        ...(await clipsFromAudio(ctx, streamer, { key: vod.key, url: vod.url, title: live.title }, {
+          file,
+          offset: segs[0].start,
+          allowed: [{ start: from, end: to }],
+          framesUrl,
+          work,
+          perVideo,
+          minScore: lim.minScore,
+        })),
+      );
+      state.setLiveUntil(vod.key, to);
+    } catch (e) {
+      log.error(`Ao vivo ${streamer.name}: ${errMsg(e)}`);
+    } finally {
+      if (!ctx.keepWork) rmSync(work, { recursive: true, force: true });
+    }
+  }
+  return out;
 }
 
 /** Clipes mais vistos da Twitch: a própria audiência já marcou o momento; o Claude refina, titula e legenda. */
@@ -388,7 +541,7 @@ export async function processTwitchClips(
 }
 
 /** Uma rodada de automação: para cada streamer autorizado, processa VODs novos e clipes populares. */
-export async function watchAll(ctx: Ctx): Promise<ClipRecord[]> {
+export async function watchAll(ctx: Ctx, opts: { live?: boolean; onlyLive?: boolean } = {}): Promise<ClipRecord[]> {
   const { cfg, state } = ctx;
   const all: ClipRecord[] = [];
   const allowed = cfg.streamers.filter((s) => s.clipPermission);
@@ -396,6 +549,14 @@ export async function watchAll(ctx: Ctx): Promise<ClipRecord[]> {
 
   for (const s of allowed) {
     log.info(`=== ${s.name} ===`);
+    if (opts.live || opts.onlyLive) {
+      try {
+        all.push(...(await processLive(s, ctx)));
+      } catch (e) {
+        log.error(`Ao vivo ${s.name}: ${errMsg(e)}`);
+      }
+      if (opts.onlyLive) continue;
+    }
     for (const page of channelPages(s)) {
       try {
         const fresh = (await listRecent(page, 6)).filter(
@@ -403,7 +564,7 @@ export async function watchAll(ctx: Ctx): Promise<ClipRecord[]> {
         );
         for (const v of fresh.slice(0, cfg.watch.videosPerRun)) {
           try {
-            all.push(...(await processVod(v.url, s, ctx)));
+            all.push(...(await processVod(v.url, s, ctx, { title: v.title })));
           } catch (e) {
             log.error(`Falha em ${v.url}: ${errMsg(e)}`);
           }

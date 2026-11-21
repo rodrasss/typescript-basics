@@ -18,7 +18,7 @@ import { extractAudio, transcribe } from "./transcribe";
  */
 
 export interface KnowledgeExample {
-  source: "twitch" | "youtube" | "tiktok";
+  source: "twitch" | "kick" | "youtube" | "tiktok";
   /** login do streamer ou nome do canal */
   author: string;
   title: string;
@@ -85,7 +85,7 @@ export function isUseful(e: KnowledgeExample): boolean {
   if (!e.title || e.duration <= 0) return false;
   // propaganda/publi não é referência de corte (mesmo quando tem muitas views)
   if (/\b(publi|publicidade|cupom|desconto|patroc\w*|parceria|link na bio)\b/i.test(`${e.title} ${e.transcript ?? ""}`)) return false;
-  if (e.source === "twitch") return e.views >= 300;
+  if (e.source === "twitch" || e.source === "kick") return e.views >= 300;
   return e.views >= 1000 && looksPortuguese(e.title);
 }
 
@@ -106,7 +106,7 @@ export function knowledgeStats(examples: KnowledgeExample[]): KnowledgeStats {
   const durs = top.map((e) => e.duration).filter((d) => d > 0);
   const peaks = top.map((e) => e.peakAt).filter((p): p is number => typeof p === "number");
   // títulos de clipe da Twitch são dados por quem clipou (sem cuidado); estilo de título vem dos Shorts/TikTok editados
-  const edited = top.filter((e) => e.source !== "twitch");
+  const edited = top.filter((e) => e.source !== "twitch" && e.source !== "kick");
   const titles = (edited.length >= 5 ? edited : top).map((e) => e.title);
   const isCaps = (t: string) => {
     const letters = t.replace(/[^\p{L}]/gu, "");
@@ -130,7 +130,7 @@ export function fmtViews(n: number): string {
   return String(n);
 }
 
-const SOURCE_NAME = { twitch: "Twitch", youtube: "YouTube", tiktok: "TikTok" } as const;
+const SOURCE_NAME = { twitch: "Twitch", kick: "Kick", youtube: "YouTube", tiktok: "TikTok" } as const;
 
 export function exampleLine(e: KnowledgeExample, withTranscript: boolean): string {
   const meta = [SOURCE_NAME[e.source], e.author, `${fmtViews(e.views)} views`, `${Math.round(e.duration)}s`];
@@ -195,7 +195,7 @@ export function buildKnowledge(opts: {
         `- ${st.count} exemplos. Duração dos mais vistos: mediana ${st.durMedian}s (metade entre ${st.durP25}s e ${st.durP75}s) — referência, não regra: a duração certa é a do momento.`,
         st.peakMedian !== null ? `- A reação mais alta acontece, em mediana, aos ${st.peakMedian}s do início.` : null,
         `- Títulos dos Shorts/TikToks editados: mediana de ${st.titleLenMedian} caracteres; ${pct(st.capsShare)} em caixa alta; ${pct(st.laughShare)} com risada/emoji de risada.`,
-        "- Nos clipes da Twitch o título é dado por quem clipou (às vezes sem sentido): aproveite a fala, a duração e o pico; o estilo de título vem dos Shorts/TikToks.",
+        "- Nos clipes da Twitch/Kick o título é dado por quem clipou (às vezes sem sentido): aproveite a fala, a duração e o pico; o estilo de título vem dos Shorts/TikToks.",
       ]
         .filter(Boolean)
         .join("\n"),
@@ -280,6 +280,8 @@ export async function learn(
     await collect(`Twitch ${login}`, `https://www.twitch.tv/${login}/clips?filter=clips&range=${k.clipsRange}`, k.clipsPerChannel, "twitch", login);
   }
   for (const q of k.youtubeSearches) await collect(`YouTube "${q}"`, `ytsearch${k.perSource * 2}:${q}`, k.perSource * 2, "youtube", "YouTube");
+  const kicks = [...new Set([...cfg.streamers.map((s) => s.kick).filter(Boolean), ...k.kick].map((l) => l!.toLowerCase()))];
+  for (const slug of kicks) await collect(`Kick ${slug}`, `https://kick.com/${slug}/clips`, k.clipsPerChannel, "kick", slug);
   for (const h of k.youtubeChannels) {
     const handle = h.startsWith("@") ? h : `@${h}`;
     await collect(`YouTube ${handle}`, `https://www.youtube.com/${handle}/shorts`, k.perSource, "youtube", handle);

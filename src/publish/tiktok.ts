@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { env, requireEnv } from "../config";
@@ -97,38 +97,62 @@ async function accessToken(): Promise<string> {
   throw new Error("TikTok sem login. Rode: npm run clipper -- auth:tiktok");
 }
 
-export async function tiktokAuthFlow(): Promise<void> {
+const PENDING = join(DATA_DIR, "tiktok-login-pendente.json");
+
+function redirectUri(): string {
+  return env("TIKTOK_REDIRECT_URI") ?? DEFAULT_REDIRECT;
+}
+
+/** Passo 1 do login: gera o link de autorização (e guarda o PKCE para o passo 2). */
+export function tiktokAuthLink(): string {
   const clientKey = requireEnv("TIKTOK_CLIENT_KEY");
-  const clientSecret = requireEnv("TIKTOK_CLIENT_SECRET");
-  const redirectUri = env("TIKTOK_REDIRECT_URI") ?? DEFAULT_REDIRECT;
   const { verifier, challenge } = tiktokPkce();
   const state = randomState();
-  const authUrl =
+  ensureDir(DATA_DIR);
+  writeFileSync(PENDING, JSON.stringify({ verifier, state, redirectUri: redirectUri(), at: Date.now() }));
+  return (
     "https://www.tiktok.com/v2/auth/authorize/?" +
     new URLSearchParams({
       client_key: clientKey,
       response_type: "code",
       scope: env("TIKTOK_SCOPES") ?? SCOPES,
-      redirect_uri: redirectUri,
+      redirect_uri: redirectUri(),
       state,
       code_challenge: challenge,
       code_challenge_method: "S256",
-    });
+    })
+  );
+}
 
-  console.log(`\nRedirect URI usado (precisa estar cadastrado no app do TikTok, igualzinho): ${redirectUri}`);
-  const params = await waitForRedirect(redirectUri, authUrl);
-  if (params.get("state") !== state) throw new Error("state não confere — tente de novo.");
+/** Passo 2 do login: recebe a URL para onde o TikTok redirecionou e troca o código pelos tokens. */
+export async function tiktokAuthFinish(callback: string | URLSearchParams): Promise<void> {
+  if (!existsSync(PENDING)) throw new Error("Nenhum login pendente. Gere o link de novo: npm run clipper -- auth:tiktok --link");
+  const pending = JSON.parse(readFileSync(PENDING, "utf8")) as { verifier: string; state: string; redirectUri: string };
+  const params = typeof callback === "string" ? new URL(callback.trim().replace(/#.*$/, "")).searchParams : callback;
+  if (params.get("error")) throw new Error(`O TikTok recusou: ${params.get("error_description") ?? params.get("error")}`);
+  const code = params.get("code");
+  if (!code) throw new Error("Essa URL não tem o parâmetro code.");
+  if (params.get("state") !== pending.state) throw new Error("state não confere (link antigo?). Gere o link de novo com --link.");
   const j = await tokenRequest({
-    client_key: clientKey,
-    client_secret: clientSecret,
-    code: decodeURIComponent(params.get("code")!),
+    client_key: requireEnv("TIKTOK_CLIENT_KEY"),
+    client_secret: requireEnv("TIKTOK_CLIENT_SECRET"),
+    code,
     grant_type: "authorization_code",
-    redirect_uri: redirectUri,
-    code_verifier: verifier,
+    redirect_uri: pending.redirectUri,
+    code_verifier: pending.verifier,
   });
   saveCache(j);
+  rmSync(PENDING, { force: true });
   console.log(`\nLogin do TikTok salvo em ${TOKEN_CACHE} (escopos: ${j.scope}).`);
   console.log("O programa renova o acesso sozinho. Não apague esse arquivo (o refresh token muda a cada renovação).\n");
+}
+
+/** Login completo no mesmo terminal (abre o link e espera o retorno). */
+export async function tiktokAuthFlow(): Promise<void> {
+  const url = tiktokAuthLink();
+  console.log(`\nRedirect URI usado (precisa estar cadastrado no app do TikTok, igualzinho): ${redirectUri()}`);
+  const params = await waitForRedirect(redirectUri(), url);
+  await tiktokAuthFinish(params);
 }
 
 async function call<T>(token: string, path: string, body: unknown): Promise<T> {

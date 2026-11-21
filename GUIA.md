@@ -129,6 +129,8 @@ E a parte mais importante: **revise no painel**. Tudo o que você aprova, rejeit
 ### 6. Streamers
 Já vêm cadastrados: **Alanzoka, TCK, Coringa e Cellbit**. O Cellbit está com `"perVideo": 1, "minScore": 8`, ou seja, no máximo 1 corte por live e só os muito bons.
 
+**Kick:** para pegar as lives de um streamer na Kick, coloque `"kick": "nome_do_canal"` no bloco dele (o nome que aparece em kick.com/nome_do_canal). Não precisa de conta nem de chave. Na Kick, a live entra quando a categoria ou o título indicam GTA ("GTA", "Vice City", "RP", configurável em `clips.gameKeywords`).
+
 O programa só analisa os trechos das lives em que o streamer está jogando GTA (`clips.games`). Se a live for de outro jogo, como Valorant, ela é pulada sozinha e não gasta nada.
 
 Para adicionar outro streamer, copie um bloco e ajuste. Exemplo:
@@ -136,6 +138,7 @@ Para adicionar outro streamer, copie um bloco e ajuste. Exemplo:
 {
   "name": "Nome do Streamer",
   "twitch": "login_dele_na_twitch",
+  "kick": "canal_dele_na_kick",
   "youtube": "@handle_dele",
   "credit": "twitch.tv/login_dele_na_twitch",
   "clipPermission": true,
@@ -215,7 +218,7 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
    - A cota padrão permite cerca de 6 uploads por dia.
 
 ### 10. TikTok
-1. Entre em https://developers.tiktok.com e abra **Manage apps** (https://developers.tiktok.com/apps). Crie um app.
+1. Crie a conta do TikTok que vai postar os cortes (https://www.tiktok.com/signup). Depois, com essa conta, entre em https://developers.tiktok.com, abra **Manage apps** (https://developers.tiktok.com/apps) e crie um app.
 2. Preencha nome, ícone, descrição e categoria. O TikTok **exige** links de **Termos de Uso** e **Política de Privacidade**: pode ser uma página simples sua (Google Sites, Notion, GitHub Pages).
 3. Em **Platforms**, marque **Desktop**.
 4. Adicione os produtos:
@@ -276,20 +279,26 @@ O fluxo do dia a dia:
 
 **Jeito mais simples (qualquer sistema):** deixe um terminal aberto rodando
 ```bash
-npm run clipper -- watch --publish --every 3
+npm run clipper -- watch --ao-vivo --publish --every 0.25
 ```
-Isso faz uma rodada a cada 3 horas. O computador precisa ficar ligado e não pode entrar em suspensão.
+A cada 15 minutos, ele faz duas coisas:
+- corta as lives de GTA que estão **acontecendo agora** (modo ao vivo), olhando só o trecho novo;
+- processa os VODs de lives que já terminaram, pulando o que o modo ao vivo já analisou.
+
+Os cortes quentes saem enquanto a live ainda está no ar, antes dos outros canais de cortes. O computador precisa ficar ligado e não pode entrar em suspensão.
+
+Se quiser só o modo ao vivo: `npm run clipper -- ao-vivo --publish`.
 
 **Windows: Agendador de Tarefas**
 1. Abra o Agendador de Tarefas e clique em **Criar Tarefa Básica**.
-2. Escolha **Diariamente** e, nas propriedades, marque **repetir a cada 3 horas**.
+2. Escolha **Diariamente** e, nas propriedades, marque **repetir a cada 15 minutos**.
 3. Em ação, escolha **Iniciar um programa**:
    - **Programa:** `cmd.exe`
-   - **Argumentos:** `/c cd /d C:\caminho\clipper && npm run clipper -- watch --publish >> data\watch.log 2>&1`
+   - **Argumentos:** `/c cd /d C:\caminho\clipper && npm run clipper -- watch --ao-vivo --publish >> data\watch.log 2>&1`
 
 **macOS/Linux: cron.** Rode `crontab -e` e adicione:
 ```
-0 */3 * * * cd /caminho/clipper && npm run clipper -- watch --publish >> data/watch.log 2>&1
+*/15 * * * * cd /caminho/clipper && npm run clipper -- watch --ao-vivo --publish >> data/watch.log 2>&1
 ```
 
 **Sem revisão (100% automático):** só quando confiar nas notas do Claude, coloque `"autoApproveMinScore": 8` no config.

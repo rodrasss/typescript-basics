@@ -1,6 +1,6 @@
 # Clipper GTA: cortes automáticos de lives
 
-Esta automação pega as lives dos streamers (GTA RP, GTA V e, agora, GTA 6), acha os momentos engraçados e transforma cada um num vídeo vertical legendado. Depois posta no **YouTube Shorts**, no **TikTok** e no **Instagram Reels**.
+Esta automação pega as lives dos streamers na Twitch, na Kick e no YouTube (GTA RP, GTA V e, agora, GTA 6), acha os momentos engraçados e transforma cada um num vídeo vertical legendado. Depois posta no **YouTube Shorts**, no **TikTok** e no **Instagram Reels**.
 
 > 👉 **Começando agora? Siga o [GUIA.md](GUIA.md)**, que tem o passo a passo de instalação, chaves e contas, com todos os links.
 
@@ -27,6 +27,8 @@ As duas etapas da IA recebem uma base de conhecimento, guardada em cache entre a
   - O comando `aprender` atualiza a base no seu PC, inclusive com perfis do TikTok e canais de cortes que você indicar.
 - **O seu gosto:** o que você aprovou, rejeitou e como reescreveu os títulos e legendas no painel. Quanto mais você revisa, mais a IA acerta o seu estilo.
 
+Também existe o **modo ao vivo**: enquanto o streamer joga GTA, a cada 15 minutos o programa analisa só o trecho novo da live (Twitch ou Kick) e solta os cortes na hora, antes de qualquer outro canal. Quando a live acaba, o processamento normal do VOD pula a parte que o modo ao vivo já analisou.
+
 Também existe o modo **clipes populares da Twitch**. Nele o programa pega os clipes mais vistos do canal (a própria audiência já marcou o momento bom), e o Claude escolhe, apara e escreve o título. O programa evita postar duas vezes o mesmo momento quando ele aparece tanto num clipe quanto no VOD.
 
 ## ⚠️ Direitos autorais e monetização
@@ -46,6 +48,8 @@ npm run smoke                                     # teste técnico com vídeo si
 npm run clipper -- vod "<link do VOD>" --streamer "Nome"          # processa um VOD
 npm run clipper -- twitch-clips --streamer "Nome" --days 3        # clipes mais vistos da Twitch
 npm run clipper -- watch [--publish] [--every 3]                  # rodada automática (ou loop a cada 3 h)
+npm run clipper -- ao-vivo [--publish] [--every 15]               # cortes DURANTE as lives (a cada 15 min)
+npm run clipper -- watch --ao-vivo --publish --every 0.25         # tudo junto: lives em andamento + VODs, a cada 15 min
 npm run clipper -- aprender                       # atualiza a base de conhecimento da IA
 
 npm run clipper -- painel                         # http://127.0.0.1:4310: assistir, editar, aprovar, postar
@@ -64,6 +68,7 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | Campo | O que faz |
 |---|---|
 | `streamers[].clipPermission` | Só processa o streamer quando for `true`. |
+| `streamers[].twitch` / `kick` / `youtube` | Onde buscar as lives: Twitch, Kick (kick.com/canal) e/ou YouTube. |
 | `streamers[].credit` | Crédito queimado no vídeo e colocado na legenda. |
 | `streamers[].context` | Contexto para o Claude: personagem no RP, servidor, bordões. Melhora bastante os títulos. |
 | `streamers[].layout` / `facecam` | `"split"` + posição da câmera (frações 0–1) para usar câmera em cima e jogo embaixo. |
@@ -71,7 +76,7 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `clips.perVideo` / `candidates` | Máximo de cortes por VOD e quantos picos o Claude avalia. |
 | `clips.minSeconds` / `maxSeconds` | Só limites técnicos (5 s e 180 s, o máximo dos Shorts/Reels). A duração de cada corte é a do momento, do começo ao fim da situação. |
 | `clips.windowBefore` / `windowAfter` | Quanto da live antes/depois de cada pico a IA enxerga (para pegar a situação inteira). |
-| `clips.games` | Só analisa os trechos da live com estes jogos (categoria da Twitch). Padrão: GTA VI e GTA V. Lives de outros jogos são puladas. |
+| `clips.games` / `gameKeywords` | Só analisa GTA: na Twitch, pelos trechos de cada jogo; na Kick/YouTube, pela categoria ou por palavras no título ("GTA", "Vice City", "RP"). Lives de outros jogos são puladas. |
 | `clips.minScore` | Nota mínima (1–10) para renderizar. |
 | `clips.frames` | Frames de cada trecho enviados ao Claude (0 desliga). Funciona em fontes HLS (Twitch/Kick) e nos clipes. |
 | `clips.hashtags` | Hashtags sempre adicionadas. |
@@ -86,6 +91,7 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `publish.autoApproveMinScore` | Aprovação automática por nota (`null` = sempre revisar). |
 | `publish.perRun` | Quantos cortes postar por rodada. |
 | `watch.*` | Quantos VODs e clipes processar por rodada. |
+| `live.*` | Modo ao vivo: de quantos em quantos minutos olhar (`intervalMinutes`), quanto voltar na primeira olhada (`lookbackMinutes`), o mínimo de live nova para analisar (`minChunkMinutes`) e o máximo de cortes por olhada (`perChunk`). |
 
 ## Custos
 

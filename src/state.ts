@@ -48,6 +48,8 @@ interface SourceState {
   done: boolean;
   failures: number;
   lastError?: string;
+  /** até que segundo o modo ao vivo já analisou este VOD */
+  liveUntil?: number;
 }
 
 interface StateData {
@@ -99,7 +101,18 @@ export class State {
 
   markDone(key: string): void {
     this.mutate((d) => {
-      d.sources[key] = { at: new Date().toISOString(), done: true, failures: d.sources[key]?.failures ?? 0 };
+      d.sources[key] = { ...d.sources[key], at: new Date().toISOString(), done: true, failures: d.sources[key]?.failures ?? 0 };
+    });
+  }
+
+  liveUntil(key: string): number | undefined {
+    return this.data.sources[key]?.liveUntil;
+  }
+
+  setLiveUntil(key: string, t: number): void {
+    this.mutate((d) => {
+      const prev = d.sources[key];
+      d.sources[key] = { at: new Date().toISOString(), done: false, failures: prev?.failures ?? 0, liveUntil: t };
     });
   }
 
