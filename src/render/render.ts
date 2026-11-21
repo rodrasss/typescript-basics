@@ -6,6 +6,7 @@ import { FONTS_DIR, ensureDir } from "../paths";
 import { run } from "../util/exec";
 import { log } from "../util/log";
 import { H, W, buildAss } from "./captions";
+import { totalLength, type Range } from "./timeline";
 
 export type Layout = "blur" | "crop" | "split";
 
@@ -17,6 +18,8 @@ export interface RenderOptions {
   /** palavras com tempo relativo ao início do corte */
   words: Word[];
   hookTitle?: string;
+  /** texto curto embaixo do vídeo */
+  bottomText?: string;
   credit?: string;
   layout: Layout;
   /** obrigatório no layout "split" */
@@ -25,6 +28,16 @@ export interface RenderOptions {
   captions: boolean;
   font: string;
   highlightColor: string;
+  /** palavras-chave destacadas e a cor delas */
+  emphasis?: string[];
+  emphasisColor?: string;
+  /**
+   * Trechos que ficam, em segundos relativos ao início do corte (0 = `offset`).
+   * Sem isso, usa o corte inteiro. Com vários, o tempo morto entre eles é removido.
+   */
+  segments?: Range[];
+  /** zoom rápido de reação, no tempo do vídeo final */
+  zooms?: Range[];
   preset: string;
   output: string;
   /** pasta temporária para o arquivo .ass */
@@ -34,38 +47,114 @@ export interface RenderOptions {
 /** Altura da faixa da câmera no layout split (o resto é o jogo). */
 export const CAM_H = 640;
 
-/** Posições do título, legenda e crédito para cada layout (px a partir do topo/fundo). */
-export function marginsFor(layout: Layout): { hookMarginV: number; captionMarginV: number; creditMarginV: number } {
-  return layout === "split"
-    ? { hookMarginV: CAM_H - 50, captionMarginV: 560, creditMarginV: 420 }
-    : { hookMarginV: 230, captionMarginV: 560, creditMarginV: 420 };
+/** Altura do vídeo do meio no layout blur (mesma conta do videoGraph). */
+export function blurVideoHeight(zoom: number, srcW?: number, srcH?: number): number {
+  const fgW = Math.round((W * zoom) / 2) * 2;
+  const ratio = srcW && srcH ? srcH / srcW : 9 / 16;
+  return Math.round((ratio * fgW) / 2) * 2;
 }
 
-async function hasAudio(file: string): Promise<boolean> {
-  const out = await run("ffprobe", ["-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", file]);
-  return out.trim() !== "";
+export interface Margins {
+  hookMarginV: number;
+  captionMarginV: number;
+  captionAlign: 2 | 8;
+  footerMarginV: number;
+  footerAlign: 2 | 8;
+  creditMarginV: number;
+}
+
+/**
+ * Onde fica cada texto, sem cobrir o meio do vídeo:
+ * gancho em cima; legenda falada, rodapé e crédito embaixo (acima da área da interface do TikTok/Reels).
+ */
+export function marginsFor(layout: Layout, videoH?: number): Margins {
+  if (layout === "blur") {
+    const h = videoH ?? blurVideoHeight(1.15);
+    const bottom = Math.round((H + h) / 2); // onde o vídeo termina
+    return {
+      hookMarginV: Math.max(120, Math.min(230, Math.round((H - h) / 2) - 200)),
+      captionMarginV: bottom + 24,
+      captionAlign: 8,
+      footerMarginV: bottom + 144,
+      footerAlign: 8,
+      creditMarginV: 330,
+    };
+  }
+  return {
+    hookMarginV: layout === "split" ? 70 : 230,
+    captionMarginV: 470,
+    captionAlign: 2,
+    footerMarginV: 395,
+    footerAlign: 2,
+    creditMarginV: 330,
+  };
+}
+
+async function probe(file: string): Promise<{ audio: boolean; width: number; height: number }> {
+  const out = await run("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type,width,height", "-of", "json", file]);
+  const streams = (JSON.parse(out) as { streams: Array<{ codec_type: string; width?: number; height?: number }> }).streams;
+  const v = streams.find((x) => x.codec_type === "video");
+  return { audio: streams.some((x) => x.codec_type === "audio"), width: v?.width ?? 0, height: v?.height ?? 0 };
+}
+
+/** Fator do zoom de reação: perceptível sem ser exagerado. */
+export const PUNCH = 1.18;
+
+/** Filtro de zoom rápido nas janelas dadas (tempo do vídeo final). Saída w×h fixa, 30 fps. */
+export function punchFilter(zooms: Range[], w: number, h: number): string {
+  if (!zooms.length) return "";
+  const cond = zooms.map((z) => `between(it,${z.start.toFixed(2)},${z.end.toFixed(2)})`).join("+");
+  return `,fps=30,zoompan=z='if(${cond},${PUNCH},1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=${w}x${h}:fps=30,setsar=1`;
+}
+
+/** Junta os trechos mantidos (trim + concat) e devolve os rótulos de vídeo/áudio resultantes. */
+export function segmentsGraph(segments: Range[] | undefined, audio: boolean): { graph: string; v: string; a: string } {
+  if (!segments || segments.length <= 1) return { graph: "", v: "[0:v]", a: "[0:a]" };
+  const parts: string[] = [];
+  const inputs: string[] = [];
+  segments.forEach((r, i) => {
+    const a = r.start.toFixed(3);
+    const b = r.end.toFixed(3);
+    parts.push(`[0:v]trim=start=${a}:end=${b},setpts=PTS-STARTPTS[sv${i}]`);
+    if (audio) parts.push(`[0:a]atrim=start=${a}:end=${b},asetpts=PTS-STARTPTS[sa${i}]`);
+    inputs.push(audio ? `[sv${i}][sa${i}]` : `[sv${i}]`);
+  });
+  parts.push(`${inputs.join("")}concat=n=${segments.length}:v=1:a=${audio ? 1 : 0}[cv]${audio ? "[ca]" : ""}`);
+  return { graph: parts.join(";"), v: "[cv]", a: "[ca]" };
 }
 
 const f = (n: number) => n.toFixed(4);
 
 /** Monta o filtergraph de vídeo que termina em [base] (1080x1920). */
-export function videoGraph(layout: Layout, zoom: number, facecam?: Facecam): string {
-  if (layout === "crop") return `[0:v]scale=-2:${H},crop=${W}:${H},setsar=1[base]`;
+export function videoGraph(
+  layout: Layout,
+  zoom: number,
+  facecam?: Facecam,
+  extra: { input?: string; zooms?: Range[]; srcW?: number; srcH?: number } = {},
+): string {
+  const input = extra.input ?? "[0:v]";
+  const zooms = extra.zooms ?? [];
+  if (layout === "crop") return `${input}scale=-2:${H},crop=${W}:${H},setsar=1${punchFilter(zooms, W, H)}[base]`;
   if (layout === "split" && facecam) {
     const gameH = H - CAM_H;
     return [
-      `[0:v]split=2[camsrc][gamesrc]`,
+      `${input}split=2[camsrc][gamesrc]`,
       `[camsrc]crop=iw*${f(facecam.w)}:ih*${f(facecam.h)}:iw*${f(facecam.x)}:ih*${f(facecam.y)},` +
         `scale=${W}:${CAM_H}:force_original_aspect_ratio=increase,crop=${W}:${CAM_H},setsar=1[cam]`,
-      `[gamesrc]scale=-2:${gameH},crop=${W}:${gameH},setsar=1[game]`,
+      `[gamesrc]scale=-2:${gameH},crop=${W}:${gameH},setsar=1${punchFilter(zooms, W, gameH)}[game]`,
       `[cam][game]vstack=inputs=2[base]`,
     ].join(";");
   }
   const fgW = Math.round((W * zoom) / 2) * 2;
+  // altura do vídeo do meio: precisa ser conhecida para o zoom de reação ter tamanho fixo
+  const fgH = extra.srcW && extra.srcH ? Math.round((extra.srcH * fgW) / extra.srcW / 2) * 2 : 0;
+  const fg = fgH
+    ? `[fgsrc]scale=${fgW}:${fgH},crop=${W}:${fgH}${punchFilter(zooms, W, fgH)}[fg]`
+    : `[fgsrc]scale=${fgW}:-2,crop=${W}:ih[fg]`;
   return [
-    `[0:v]split=2[bgsrc][fgsrc]`,
+    `${input}split=2[bgsrc][fgsrc]`,
     `[bgsrc]scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},boxblur=luma_radius=40:luma_power=2,eq=brightness=-0.12[bg]`,
-    `[fgsrc]scale=${fgW}:-2,crop=${W}:ih[fg]`,
+    fg,
     `[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1[base]`,
   ].join(";");
 }
@@ -80,18 +169,24 @@ export async function renderClip(o: RenderOptions): Promise<string> {
     layout = "blur";
   }
 
+  const src = await probe(o.input);
+  const margins = marginsFor(layout, layout === "blur" ? blurVideoHeight(o.zoom, src.width, src.height) : undefined);
+
   let subsFilter = "null";
-  if (o.captions || o.hookTitle || o.credit) {
+  if (o.captions || o.hookTitle || o.credit || o.bottomText) {
     writeFileSync(
       join(o.workDir, "captions.ass"),
       buildAss({
         words: o.captions ? o.words : [],
-        duration: o.duration,
+        duration: o.segments && o.segments.length > 1 ? totalLength(o.segments) : o.duration,
         hookTitle: o.hookTitle,
+        bottomText: o.bottomText,
         credit: o.credit,
         font: o.font,
         highlightColor: o.highlightColor,
-        ...marginsFor(layout),
+        emphasis: o.emphasis,
+        emphasisColor: o.emphasisColor,
+        ...margins,
       }),
     );
     // Caminhos relativos (rodando o ffmpeg dentro do workDir) evitam problemas de escape no filtergraph.
@@ -99,9 +194,11 @@ export async function renderClip(o: RenderOptions): Promise<string> {
     subsFilter = `ass=captions.ass${fonts}`;
   }
 
-  const audio = await hasAudio(o.input);
-  let graph = `${videoGraph(layout, o.zoom, o.facecam)};[base]${subsFilter}[v]`;
-  if (audio) graph += `;[0:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]`;
+  const audio = src.audio;
+  const seg = segmentsGraph(o.segments, audio);
+  const vg = videoGraph(layout, o.zoom, o.facecam, { input: seg.v, zooms: o.zooms, srcW: src.width, srcH: src.height });
+  let graph = `${seg.graph ? `${seg.graph};` : ""}${vg};[base]${subsFilter}[v]`;
+  if (audio) graph += `;${seg.a}loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]`;
 
   await run(
     "ffmpeg",

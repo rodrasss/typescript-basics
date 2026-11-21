@@ -11,7 +11,8 @@ import { waitForRedirect } from "./oauth";
  * privados. Para publicar como público é preciso pedir a auditoria da API.
  */
 
-const SCOPE = "https://www.googleapis.com/auth/youtube.upload";
+// force-ssl permite enviar E apagar vídeos (o comando `remover` usa para tirar um corte do ar).
+const SCOPE = "https://www.googleapis.com/auth/youtube.force-ssl";
 const REDIRECT_PORT = 53682;
 const REDIRECT_URI = `http://127.0.0.1:${REDIRECT_PORT}/callback`;
 
@@ -77,6 +78,20 @@ export async function uploadYouTube(
   if (!put.ok) throw new Error(`YouTube upload falhou (${put.status}): ${await put.text()}`);
   const j = (await put.json()) as { id: string };
   return { id: j.id, url: `https://www.youtube.com/shorts/${j.id}` };
+}
+
+/** Apaga um vídeo do canal (usado pelo comando `remover`). */
+export async function deleteYouTube(videoId: string): Promise<void> {
+  const token = await accessToken();
+  const res = await fetch(`https://www.googleapis.com/youtube/v3/videos?id=${encodeURIComponent(videoId)}`, {
+    method: "DELETE",
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (res.status === 404) return; // já não existe
+  if (res.status === 403) {
+    throw new Error(`YouTube recusou apagar (${await res.text()}). Se o login é antigo, rode de novo: npm run clipper -- auth:youtube`);
+  }
+  if (!res.ok) throw new Error(`YouTube delete falhou (${res.status}): ${await res.text()}`);
 }
 
 /** Fluxo OAuth local: abre um servidorzinho em 127.0.0.1 e imprime o refresh token. */

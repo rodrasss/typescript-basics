@@ -25,6 +25,8 @@ export interface VideoInfo {
   duration: number;
   url: string;
   isLive: boolean;
+  /** trechos por jogo/categoria (Twitch), quando disponível */
+  chapters: Array<{ title: string; start: number; end: number }>;
 }
 
 export async function getInfo(url: string): Promise<VideoInfo> {
@@ -37,6 +39,11 @@ export async function getInfo(url: string): Promise<VideoInfo> {
     duration: Number(j.duration ?? 0),
     url: String(j.webpage_url ?? url),
     isLive: j.is_live === true || j.live_status === "is_live",
+    chapters: ((j.chapters as Array<Record<string, unknown>> | null) ?? []).map((c) => ({
+      title: String(c.title ?? ""),
+      start: Number(c.start_time ?? 0),
+      end: Number(c.end_time ?? j.duration ?? 0),
+    })),
   };
 }
 
@@ -68,6 +75,16 @@ export async function listRecent(pageUrl: string, limit: number): Promise<Listed
       title: String(e.title ?? e.id),
       isLive: e.live_status === "is_live" || e.is_live === true,
     }));
+}
+
+/** Lista "achatada" (sem baixar) de uma página/busca: devolve os campos crus do yt-dlp. */
+export async function flatList(target: string, limit: number): Promise<Array<Record<string, unknown>>> {
+  const args = ["--flat-playlist", "--dump-single-json", "--playlist-end", String(limit), "--no-warnings"];
+  const cookies = env("YTDLP_COOKIES");
+  if (cookies) args.push("--cookies", cookies);
+  const out = await run("yt-dlp", [...args, target]);
+  const j = JSON.parse(out) as { entries?: Array<Record<string, unknown>> };
+  return j.entries ?? [];
 }
 
 async function downloadTo(url: string, outTemplate: string, extra: string[]): Promise<string> {

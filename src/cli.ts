@@ -2,7 +2,9 @@ import { Command } from "commander";
 import { existsSync } from "node:fs";
 import { CONFIG_PATH, PLATFORMS, env, findStreamer, loadConfig, loadEnv, type Platform } from "./config";
 import { join } from "node:path";
+import { learn, loadExamples, LEARNED_PATH, SEED_PATH } from "./analysis/knowledge";
 import { startPanel } from "./panel";
+import { removeClips } from "./remove";
 import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { processTwitchClips, processVod, publishApproved, watchAll, type Ctx } from "./pipeline";
 import { isConfigured } from "./publish";
@@ -91,6 +93,7 @@ program
       for (;;) {
         try {
           const c = ctx(o);
+          await refreshKnowledgeIfOld(c.cfg);
           const clips = await watchAll(c);
           log.ok(`Rodada concluída: ${clips.length} corte(s) novo(s).`);
           if (o.publish) await publishApproved(c, { platforms: c.cfg.publish.platforms, limit: c.cfg.publish.perRun });
@@ -101,6 +104,43 @@ program
         if (!hours) break;
         log.info(`Próxima rodada em ${hours} h (${new Date(Date.now() + hours * 3_600_000).toLocaleString("pt-BR")}).`);
         await sleep(hours * 3_600_000);
+      }
+    }),
+  );
+
+/** Atualiza a base de conhecimento quando ela estiver velha (usado pelo watch). */
+async function refreshKnowledgeIfOld(cfg: ReturnType<typeof loadConfig>): Promise<void> {
+  const days = cfg.knowledge.autoRefreshDays;
+  if (!days) return;
+  const { statSync, rmSync } = await import("node:fs");
+  const age = existsSync(LEARNED_PATH) ? (Date.now() - statSync(LEARNED_PATH).mtimeMs) / 86_400_000 : Infinity;
+  if (age < days) return;
+  log.step("Atualizando a base de conhecimento da IA (aprender)…");
+  const work = ensureDir(join(WORK_DIR, `aprender-${Date.now()}`));
+  try {
+    await learn(cfg, { workDir: work, transcriber: env("TRANSCRIBE_API_KEY") ? undefined : null });
+  } catch (e) {
+    log.warn(`Não consegui atualizar a base: ${errMsg(e)}`);
+  } finally {
+    rmSync(work, { recursive: true, force: true });
+  }
+}
+
+program
+  .command("aprender")
+  .description("Atualiza a base de conhecimento da IA com os clipes e Shorts mais vistos (config: knowledge)")
+  .option("--sem-transcricao", "só títulos/views/duração, sem transcrever")
+  .option("--keep", "mantém os arquivos temporários")
+  .action(
+    action(async (o: { semTranscricao?: boolean; keep?: boolean }) => {
+      const cfg = loadConfig();
+      const work = ensureDir(join(WORK_DIR, `aprender-${Date.now()}`));
+      try {
+        const hasKey = !!env("TRANSCRIBE_API_KEY");
+        if (!o.semTranscricao && !hasKey) log.warn("Sem TRANSCRIBE_API_KEY: vou coletar só títulos, views e duração.");
+        await learn(cfg, { workDir: work, transcriber: o.semTranscricao || !hasKey ? null : undefined });
+      } finally {
+        if (!o.keep) (await import("node:fs")).rmSync(work, { recursive: true, force: true });
       }
     }),
   );
@@ -184,6 +224,20 @@ for (const [cmd, status] of [
 }
 
 program
+  .command("remover")
+  .description("Tira cortes do ar (ex.: um streamer reclamou): apaga do YouTube, lista os links do TikTok/Instagram e apaga os arquivos")
+  .argument("[ids...]", "ids dos cortes (veja com list)")
+  .option("-s, --streamer <nome>", "remove TODOS os cortes desse streamer")
+  .option("--bloquear", "com --streamer: também para de gerar cortes dele (clipPermission=false)")
+  .option("--motivo <texto>", "anotação do motivo")
+  .action(
+    action(async (ids: string[], o: { streamer?: string; bloquear?: boolean; motivo?: string }) => {
+      if (!ids.length && !o.streamer) throw new Error("Informe ids ou --streamer. Ex.: npm run clipper -- remover --streamer \"Nome\" --bloquear");
+      await removeClips(loadConfig(), new State(), { ids, streamer: o.streamer, reason: o.motivo, block: o.bloquear });
+    }),
+  );
+
+program
   .command("publish")
   .description("Posta os cortes aprovados (ou os ids informados)")
   .argument("[ids...]")
@@ -243,6 +297,13 @@ program
       if (ttDays !== null) {
         check(ttDays > 14, `Login do TikTok vale por mais ${ttDays} dia(s)`, "rode npm run clipper -- auth:tiktok de novo");
       }
+      const ex = loadExamples();
+      check(
+        ex.length > 0,
+        `Base de conhecimento: ${ex.length} exemplo(s) (${ex.filter((e) => e.transcript).length} com fala)` +
+          `${existsSync(LEARNED_PATH) ? "" : " — só a base inicial"}`,
+        `rode npm run clipper -- aprender (base inicial: ${SEED_PATH})`,
+      );
       check(existsSync(CONFIG_PATH), `Config ${CONFIG_PATH}`);
       if (existsSync(CONFIG_PATH)) {
         const cfg = loadConfig();

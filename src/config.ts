@@ -21,6 +21,10 @@ const StreamerSchema = z.object({
   clipPermission: z.boolean().default(false),
   /** Contexto extra para o Claude (personagem no RP, bordões, servidor...). */
   context: z.string().optional(),
+  /** Máximo de cortes por vídeo só deste streamer (ex.: 1 para quem você quer postar menos). */
+  perVideo: z.number().int().min(0).optional(),
+  /** Nota mínima só deste streamer (ex.: 8 = só os melhores). */
+  minScore: z.number().min(1).max(10).optional(),
   /** Layout só deste streamer (senão usa render.layout). */
   layout: z.enum(["blur", "crop", "split"]).optional(),
   /**
@@ -43,8 +47,20 @@ const ConfigSchema = z.object({
       perVideo: z.number().int().positive().default(5),
       /** Quantos picos de áudio viram candidatos para o Claude avaliar. */
       candidates: z.number().int().positive().default(15),
-      minSeconds: z.number().positive().default(15),
-      maxSeconds: z.number().positive().default(60),
+      /**
+       * Limites de segurança. A duração de cada corte é decidida pelo conteúdo
+       * (do começo ao fim da situação); 180 s é o limite dos Shorts/Reels.
+       */
+      minSeconds: z.number().positive().default(5),
+      maxSeconds: z.number().positive().default(180),
+      /** Quanto da live antes/depois de cada pico de reação a IA enxerga (para pegar a situação inteira). */
+      windowBefore: z.number().positive().default(90),
+      windowAfter: z.number().positive().default(45),
+      /**
+       * Só analisa os trechos da live com estes jogos (nomes da categoria na Twitch).
+       * Lista vazia = qualquer jogo. Vídeos sem essa informação (YouTube) são analisados inteiros.
+       */
+      games: z.array(z.string()).default(["Grand Theft Auto VI", "Grand Theft Auto V"]),
       /** Nota mínima (1-10) que o Claude precisa dar para o corte ser renderizado. */
       minScore: z.number().min(1).max(10).default(6),
       language: z.string().default("pt"),
@@ -52,6 +68,10 @@ const ConfigSchema = z.object({
       frames: z.number().int().min(0).max(6).default(3),
       /** Hashtags sempre adicionadas. */
       hashtags: z.array(z.string()).default(["#gta6", "#gtarp", "#cortes"]),
+      /** 2ª etapa da IA: um "editor" refina cada corte (início/fim exatos, cortes internos, zoom, destaques). */
+      editPass: z.boolean().default(true),
+      /** Quantos frames o editor vê de cada corte. */
+      editFrames: z.number().int().min(0).max(10).default(6),
     })
     .prefault({}),
   render: z
@@ -69,6 +89,14 @@ const ConfigSchema = z.object({
       font: z.string().default("Arial"),
       /** Cor de destaque da palavra falada, em hex RGB. */
       highlightColor: z.string().default("#FFE600"),
+      /** Cor das palavras-chave destacadas pelo editor de IA. */
+      emphasisColor: z.string().default("#4DFF6A"),
+      /** Permite o editor de IA remover tempo morto dentro do corte. */
+      allowCuts: z.boolean().default(true),
+      /** Permite o zoom rápido na reação. */
+      punchZoom: z.boolean().default(true),
+      /** Texto curto embaixo do vídeo escrito pela IA (ex.: "ESPERA O FINAL"), quando ela achar que ajuda. */
+      bottomText: z.boolean().default(true),
       preset: z.string().default("veryfast"),
     })
     .prefault({}),
@@ -89,6 +117,39 @@ const ConfigSchema = z.object({
       autoApproveMinScore: z.number().min(1).max(10).nullable().default(null),
       /** Quantos cortes o comando publish posta por execução. */
       perRun: z.number().int().positive().default(3),
+    })
+    .prefault({}),
+  /** Base de conhecimento da IA (comando `aprender`). */
+  knowledge: z
+    .object({
+      /** Canais da Twitch de referência (além dos streamers cadastrados) para pegar os clipes mais vistos. */
+      twitch: z.array(z.string()).default(["alanzoka", "cellbit"]),
+      /** Período dos clipes da Twitch: 24hr, 7d, 30d ou all. */
+      clipsRange: z.enum(["24hr", "7d", "30d", "all"]).default("7d"),
+      clipsPerChannel: z.number().int().positive().default(20),
+      /** Buscas no YouTube (Shorts de canais de cortes). */
+      youtubeSearches: z
+        .array(z.string())
+        .default([
+          "gta 6 engraçado #shorts",
+          "cortes gta 6 #shorts",
+          "gta rp engraçado #shorts",
+          "cortes gta rp #shorts",
+          "alanzoka gta 6 #shorts",
+        ]),
+      /** Canais do YouTube de cortes (ex.: "@canaldecortes"): pega os Shorts mais recentes. */
+      youtubeChannels: z.array(z.string()).default([]),
+      /** Perfis do TikTok de cortes (ex.: "@perfil"). Funciona quando o yt-dlp consegue ler o perfil (às vezes pede cookies). */
+      tiktokProfiles: z.array(z.string()).default([]),
+      perSource: z.number().int().positive().default(15),
+      /** Só considera vídeos até essa duração (formato curto). */
+      maxSeconds: z.number().positive().default(90),
+      /** Quantos dos mais vistos transcrever (para a IA ver como é a fala de um corte que viralizou). */
+      transcribeTop: z.number().int().min(0).default(20),
+      /** Quantos exemplos entram no contexto da IA. */
+      maxExamples: z.number().int().positive().default(40),
+      /** O `watch` roda o `aprender` sozinho quando a base tiver mais de N dias (0 desliga). */
+      autoRefreshDays: z.number().min(0).default(7),
     })
     .prefault({}),
   watch: z

@@ -26,10 +26,18 @@ export interface ClipRecord {
   score: number;
   reason: string;
   hookTitle: string;
+  /** texto curto embaixo do vídeo */
+  bottomText?: string;
   title: string;
   caption: string;
   hashtags: string[];
   file: string;
+  /** O que a IA sugeriu originalmente (para aprender com as suas edições no painel). */
+  ai?: { hookTitle: string; title: string; caption: string };
+  /** Apagado a pedido (não volta a ser gerado nem postado). */
+  removed?: { at: string; reason?: string };
+  /** Decisões do editor de IA aplicadas no vídeo. */
+  edit?: { cuts: Array<{ start: number; end: number }>; zooms: Array<{ start: number; end: number }>; emphasis: string[] };
   createdAt: string;
   status: ClipStatus;
   posts: Partial<Record<Platform, PostResult>>;

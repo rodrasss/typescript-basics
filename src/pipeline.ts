@@ -1,14 +1,17 @@
 import { rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { excitementCurve, intensityProfile, loudnessPerSecond, pickPeaks } from "./analysis/loudness";
-import { frameTimes, framesFromFile, framesFromHls } from "./analysis/frames";
+import { editClip, fromSelection, type EditDecision } from "./analysis/edit";
+import { frameTimes, framesFromFile, framesFromHls, type Frame } from "./analysis/frames";
+import { buildKnowledge } from "./analysis/knowledge";
 import { selectClips, type Candidate, type SelectedClip } from "./analysis/select";
 import { extractAudio, shiftTranscript, transcribe, type Word } from "./analysis/transcribe";
 import { assertPermission, env, type Config, type Platform, type Streamer } from "./config";
 import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { publishClip } from "./publish";
 import { renderClip } from "./render/render";
-import { getBroadcasterId, getTopClips } from "./sources/twitch";
+import { keepRanges, remapRanges, remapWords, shiftRanges, totalLength, type Range } from "./render/timeline";
+import { getBroadcasterId, getGameIds, getTopClips } from "./sources/twitch";
 import {
   channelPages,
   downloadAudio,
@@ -32,39 +35,100 @@ export interface Ctx {
   force?: boolean;
 }
 
-/** Quanto antes/depois do pico de volume entra na janela candidata (o setup vem antes da reação). */
-const PRE_PEAK = 50;
-const POST_PEAK = 25;
 const MAX_FAILURES = 3;
 
-function relativeWords(words: Word[], start: number, end: number): Word[] {
-  return words
-    .filter((w) => w.end > start && w.start < end)
-    .map((w) => ({ text: w.text, start: w.start - start, end: w.end - start }));
+/** Trechos da live com os jogos desejados (pelos capítulos da Twitch). null = sem filtro. */
+export function gameRanges(
+  chapters: Array<{ title: string; start: number; end: number }>,
+  games: string[],
+): Array<{ start: number; end: number }> | null {
+  if (!games.length || !chapters.length) return null;
+  const wanted = games.map((g) => g.toLowerCase());
+  return chapters.filter((c) => wanted.includes(c.title.toLowerCase())).map((c) => ({ start: c.start, end: c.end }));
+}
+
+/** Limites por streamer (para postar menos de alguém, por exemplo). */
+function limitsFor(cfg: Config, s: Streamer): { perVideo: number; minScore: number } {
+  return { perVideo: s.perVideo ?? cfg.clips.perVideo, minScore: s.minScore ?? cfg.clips.minScore };
+}
+
+/** Base de conhecimento para este streamer (manual + exemplos reais + suas decisões no painel). */
+function knowledgeFor(ctx: Ctx, streamer: Streamer): string {
+  return buildKnowledge({ streamer, clips: ctx.state.clips(), maxExamples: ctx.cfg.knowledge.maxExamples });
+}
+
+/** 2ª etapa (editor de IA). Se falhar, segue com a sugestão da triagem; se o editor descartar, devolve null. */
+async function refine(
+  ctx: Ctx,
+  streamer: Streamer,
+  knowledge: string,
+  sourceTitle: string,
+  sel: SelectedClip,
+  data: { window: Range; words: Word[]; curve: number[]; frames: () => Promise<Frame[]>; minSeconds?: number },
+): Promise<EditDecision | null> {
+  const { cfg } = ctx;
+  if (!cfg.clips.editPass) return fromSelection(sel);
+  try {
+    const frames = cfg.clips.editFrames > 0 ? await data.frames().catch(() => []) : [];
+    const a = Math.max(0, Math.floor(data.window.start));
+    const intensity = data.curve.slice(a, Math.ceil(data.window.end)).map((v) => Math.round(v));
+    log.step(`Editor de IA refinando "${sel.title}"…`);
+    const dec = await editClip({
+      streamer,
+      sourceTitle,
+      knowledge,
+      suggestion: sel,
+      window: data.window,
+      words: data.words,
+      intensity,
+      frames,
+      minSeconds: data.minSeconds ?? cfg.clips.minSeconds,
+      maxSeconds: cfg.clips.maxSeconds,
+      allowCuts: cfg.render.allowCuts,
+      punchZoom: cfg.render.punchZoom,
+      bottomText: cfg.render.bottomText,
+    });
+    if (!dec) log.info(`O editor descartou "${sel.title}".`);
+    return dec;
+  } catch (e) {
+    log.warn(`Editor de IA falhou (${errMsg(e).split("\n")[0]}); usando a sugestão da triagem.`);
+    return fromSelection(sel);
+  }
 }
 
 async function finalizeClip(
   ctx: Ctx,
   streamer: Streamer,
   source: ClipRecord["source"],
-  sel: SelectedClip,
-  render: { input: string; offset: number; words: Word[]; workDir: string },
+  dec: EditDecision,
+  /** `inputStart` = segundo do vídeo de origem em que o arquivo `input` começa; `words` em tempo absoluto */
+  render: { input: string; inputStart: number; words: Word[]; workDir: string },
   vod?: ClipRecord["vod"],
 ): Promise<ClipRecord> {
   const { cfg, state } = ctx;
   const id = shortId();
   const day = new Date().toISOString().slice(0, 10);
-  const base = join(OUTPUT_DIR, slug(streamer.name), `${day}_${id}_${slug(sel.title).slice(0, 40)}`);
+  const base = join(OUTPUT_DIR, slug(streamer.name), `${day}_${id}_${slug(dec.title).slice(0, 40)}`);
   const file = `${base}.mp4`;
-  const duration = sel.end - sel.start;
+  const keeps = keepRanges(dec.start, dec.end, dec.cuts);
+  const finalLen = totalLength(keeps);
 
-  log.step(`Renderizando ${id} (${duration.toFixed(0)}s, nota ${sel.score}): ${sel.title}`);
+  const extras = [
+    dec.cuts.length ? `${dec.cuts.length} corte(s) de tempo morto` : null,
+    dec.zooms.length ? `${dec.zooms.length} zoom(s)` : null,
+  ].filter(Boolean);
+  log.step(`Renderizando ${id} (${finalLen.toFixed(0)}s, nota ${dec.score}${extras.length ? `, ${extras.join(", ")}` : ""}): ${dec.title}`);
   await renderClip({
     input: render.input,
-    offset: render.offset,
-    duration,
-    words: render.words,
-    hookTitle: cfg.render.hookTitle ? sel.hookTitle : undefined,
+    offset: dec.start - render.inputStart,
+    duration: dec.end - dec.start,
+    segments: dec.cuts.length ? shiftRanges(keeps, dec.start) : undefined,
+    zooms: remapRanges(dec.zooms, keeps),
+    words: remapWords(render.words, keeps),
+    emphasis: dec.emphasis,
+    emphasisColor: cfg.render.emphasisColor,
+    hookTitle: cfg.render.hookTitle ? dec.hookTitle : undefined,
+    bottomText: dec.bottomText,
     credit: streamer.credit,
     layout: streamer.layout ?? cfg.render.layout,
     facecam: streamer.facecam,
@@ -84,17 +148,20 @@ async function finalizeClip(
     credit: streamer.credit,
     source,
     vod,
-    start: sel.start,
-    end: sel.end,
-    score: sel.score,
-    reason: sel.reason,
-    hookTitle: sel.hookTitle,
-    title: sel.title,
-    caption: sel.caption,
-    hashtags: sel.hashtags,
+    start: dec.start,
+    end: dec.end,
+    score: dec.score,
+    reason: dec.reason,
+    hookTitle: dec.hookTitle,
+    bottomText: dec.bottomText,
+    title: dec.title,
+    caption: dec.caption,
+    hashtags: dec.hashtags,
     file,
+    ai: { hookTitle: dec.hookTitle, title: dec.title, caption: dec.caption },
+    edit: { cuts: dec.cuts, zooms: dec.zooms, emphasis: dec.emphasis },
     createdAt: new Date().toISOString(),
-    status: auto !== null && sel.score >= auto ? "approved" : "pending",
+    status: auto !== null && dec.score >= auto ? "approved" : "pending",
     posts: {},
   };
   writeFileSync(`${base}.json`, JSON.stringify(rec, null, 2));
@@ -114,6 +181,14 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
     log.info(`Já processado antes: ${info.title} (use --force para refazer)`);
     return [];
   }
+  const ranges = gameRanges(info.chapters, cfg.clips.games);
+  if (ranges && ranges.length === 0) {
+    log.info(`Pulando "${info.title}": nenhum trecho de ${cfg.clips.games.join(" / ")} (jogos: ${info.chapters.map((c) => c.title).join(", ")}).`);
+    state.markDone(info.key);
+    return [];
+  }
+  const { perVideo, minScore } = limitsFor(cfg, streamer);
+  if (perVideo === 0) return [];
 
   const work = ensureDir(join(WORK_DIR, slug(info.key)));
   try {
@@ -123,8 +198,11 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
     log.step("Procurando picos de reação no áudio…");
     const db = await loudnessPerSecond(audio);
     const curve = excitementCurve(db);
-    let peaks = pickPeaks(curve, { count: cfg.clips.candidates, minScore: 2 });
-    if (peaks.length < 3) peaks = pickPeaks(curve, { count: cfg.clips.candidates, minScore: -Infinity });
+    // só procura picos dentro dos trechos do jogo
+    const inGame = ranges ? curve.map((v, t) => (ranges.some((r) => t >= r.start && t < r.end) ? v : -Infinity)) : curve;
+    if (ranges) log.info(`Analisando só os trechos de jogo: ${ranges.map((r) => `${hms(r.start)}–${hms(r.end)}`).join(", ")}`);
+    let peaks = pickPeaks(inGame, { count: cfg.clips.candidates, minScore: 2 });
+    if (peaks.length < 3) peaks = pickPeaks(inGame, { count: cfg.clips.candidates, minScore: -1e9 });
     log.info(`${peaks.length} trechos candidatos encontrados.`);
 
     const framesUrl = cfg.clips.frames > 0 ? await lowResHlsUrl(info.url) : null;
@@ -132,8 +210,8 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
 
     log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
     const transcribed = await mapLimit(peaks, 3, async (p, i) => {
-      const start = Math.max(0, p.t - PRE_PEAK);
-      const end = Math.min(db.length, p.t + POST_PEAK);
+      const start = Math.max(0, p.t - cfg.clips.windowBefore);
+      const end = Math.min(db.length, p.t + cfg.clips.windowAfter);
       const mp3 = await extractAudio(audio, start, end - start, join(work, `cand-${i + 1}.mp3`));
       const tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
       const cand: Candidate = {
@@ -150,19 +228,22 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
       return { cand, words: tr.words };
     });
     const wordsById = new Map(transcribed.map((t) => [t.cand.id, t.words]));
+    const candById = new Map(transcribed.map((t) => [t.cand.id, t.cand]));
+    const knowledge = knowledgeFor(ctx, streamer);
 
     log.step("Claude escolhendo os melhores momentos…");
     const selected = (
       await selectClips({
         streamer,
+        knowledge,
         sourceTitle: info.title,
         candidates: transcribed.map((t) => t.cand),
-        maxClips: cfg.clips.perVideo,
+        maxClips: perVideo,
         minSeconds: cfg.clips.minSeconds,
         maxSeconds: cfg.clips.maxSeconds,
       })
-    ).filter((s) => s.score >= cfg.clips.minScore);
-    log.info(`${selected.length} corte(s) com nota >= ${cfg.clips.minScore}.`);
+    ).filter((s) => s.score >= minScore);
+    log.info(`${selected.length} corte(s) com nota >= ${minScore}.`);
 
     const out: ClipRecord[] = [];
     for (const sel of selected) {
@@ -171,23 +252,28 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
         log.info(`Pulando ${hms(sel.start)}: já existe o corte ${dup.id} desse momento.`);
         continue;
       }
+      const cand = candById.get(sel.candidateId)!;
+      const words = wordsById.get(sel.candidateId) ?? [];
+      const dec = await refine(ctx, streamer, knowledge, info.title, sel, {
+        window: { start: cand.start, end: cand.end },
+        words,
+        curve,
+        frames: async () =>
+          framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
+      });
+      if (!dec || dec.score < minScore) continue;
+
       const pad = 1;
-      const dlStart = Math.max(0, sel.start - pad);
-      log.step(`Baixando trecho ${hms(sel.start)}–${hms(sel.end)}…`);
-      const section = await downloadSection(info.url, dlStart, sel.end + pad, work, `trecho-${sel.candidateId}`);
+      log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
+      const section = await downloadSection(info.url, Math.max(0, dec.start - pad), dec.end + pad, work, `trecho-${cand.id}`);
       out.push(
         await finalizeClip(
           ctx,
           streamer,
           { kind: "vod", key: info.key, url: info.url, title: info.title },
-          sel,
-          {
-            input: section.path,
-            offset: sel.start - section.start,
-            words: relativeWords(wordsById.get(sel.candidateId) ?? [], sel.start, sel.end),
-            workDir: work,
-          },
-          { key: info.key, start: sel.start, end: sel.end },
+          dec,
+          { input: section.path, inputStart: section.start, words, workDir: work },
+          { key: info.key, start: dec.start, end: dec.end },
         ),
       );
     }
@@ -210,6 +296,9 @@ export async function processTwitchClips(
   assertPermission(streamer);
   if (!streamer.twitch) throw new Error(`"${streamer.name}" não tem login da Twitch no config.`);
   const { cfg, state } = ctx;
+  const lim = limitsFor(cfg, streamer);
+  limit = Math.min(limit, lim.perVideo);
+  if (limit <= 0) return [];
 
   log.step(`Buscando clipes mais vistos de ${streamer.twitch} (últimos ${days} dias)…`);
   const broadcaster = await getBroadcasterId(streamer.twitch);
@@ -217,7 +306,9 @@ export async function processTwitchClips(
     c.video_id && c.vod_offset !== null
       ? { key: sourceKey("TwitchVod", `v${c.video_id}`), start: c.vod_offset + a, end: c.vod_offset + b }
       : undefined;
+  const gameIds = cfg.clips.games.length ? await getGameIds(cfg.clips.games) : [];
   const clips = (await getTopClips(broadcaster, days, 50))
+    .filter((c) => !gameIds.length || gameIds.includes(c.game_id))
     .filter((c) => c.duration >= 8 && !state.isDone(`twitch-clip:${c.id}`))
     .filter((c) => {
       const ref = vodRef(c);
@@ -248,33 +339,43 @@ export async function processTwitchClips(
             ? await framesFromFile(video, frameTimes(0, c.duration, cfg.clips.frames), work, `k${i + 1}`)
             : undefined,
       };
-      return { clip: c, video, cand, words: tr.words };
+      return { clip: c, video, cand, words: tr.words, curve };
     });
     const byId = new Map(prepared.map((p) => [p.cand.id, p]));
+    const knowledge = knowledgeFor(ctx, streamer);
 
     log.step("Claude avaliando os clipes…");
     const selected = (
       await selectClips({
         streamer,
+        knowledge,
         sourceTitle: `clipes mais vistos da Twitch de ${streamer.name}`,
         candidates: prepared.map((p) => p.cand),
         maxClips: limit,
         minSeconds: Math.min(cfg.clips.minSeconds, 8),
         maxSeconds: cfg.clips.maxSeconds,
       })
-    ).filter((s) => s.score >= cfg.clips.minScore);
+    ).filter((s) => s.score >= lim.minScore);
 
     const out: ClipRecord[] = [];
     for (const sel of selected) {
       const p = byId.get(sel.candidateId)!;
+      const dec = await refine(ctx, streamer, knowledge, `clipe da Twitch "${p.clip.title}"`, sel, {
+        window: { start: 0, end: p.clip.duration },
+        words: p.words,
+        curve: p.curve,
+        frames: async () => framesFromFile(p.video, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${p.cand.id}`),
+        minSeconds: Math.min(cfg.clips.minSeconds, 8),
+      });
+      if (!dec || dec.score < lim.minScore) continue;
       out.push(
         await finalizeClip(
           ctx,
           streamer,
           { kind: "twitch-clip", key: `twitch-clip:${p.clip.id}`, url: p.clip.url, title: p.clip.title },
-          sel,
-          { input: p.video, offset: sel.start, words: relativeWords(p.words, sel.start, sel.end), workDir: work },
-          vodRef(p.clip, sel.start, sel.end),
+          dec,
+          { input: p.video, inputStart: 0, words: p.words, workDir: work },
+          vodRef(p.clip, dec.start, dec.end),
         ),
       );
     }
@@ -342,7 +443,7 @@ export async function publishApproved(
     return;
   }
   for (const c of queue) {
-    if (c.status === "rejected") {
+    if (c.status === "rejected" || c.removed) {
       log.warn(`${c.id} está rejeitado, pulando.`);
       continue;
     }

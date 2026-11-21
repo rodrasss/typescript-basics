@@ -86,6 +86,7 @@ export function startPanel(cfg: Config, port: number): Promise<void> {
         const body = await readBody(req);
 
         if (parts[3] === "publish") {
+          if (c.removed) return json(res, 409, { error: "este corte foi removido" });
           if (busy.has(c.id)) return json(res, 409, { error: "já está postando" });
           const wanted = Array.isArray(body.platforms) ? (body.platforms as string[]) : cfg.publish.platforms;
           const platforms = wanted.filter((p): p is Platform => (PLATFORMS as readonly string[]).includes(p));
@@ -211,6 +212,11 @@ function render() {
       '<div class="body">' +
         '<div class="row"><span class="badge ' + c.status + '">' + (LABEL[c.status] || c.status) + '</span><span class="meta">nota ' + c.score + " · " + fmt(c.end - c.start) + " · " + esc(c.streamer) + "</span></div>" +
         '<div class="meta">' + esc(c.reason) + "</div>" +
+        (c.edit ? '<div class="meta">Edição da IA: ' + [
+          c.edit.cuts.length ? c.edit.cuts.length + " corte(s) de tempo morto" : "sem cortes internos",
+          c.edit.zooms.length ? c.edit.zooms.length + " zoom(s) de reação" : null,
+          c.edit.emphasis.length ? "destaques: " + esc(c.edit.emphasis.join(", ")) : null,
+        ].filter(Boolean).join(" · ") + "</div>" : "") +
         '<label>Título</label><input data-f="title" value="' + esc(c.title) + '">' +
         '<label>Legenda</label><textarea data-f="caption">' + esc(c.caption) + "</textarea>" +
         '<label>Hashtags</label><input data-f="hashtags" value="' + esc((c.hashtags || []).join(" ")) + '">' +

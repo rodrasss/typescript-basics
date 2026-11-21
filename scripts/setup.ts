@@ -35,7 +35,7 @@ const missing = [
   !has("yt-dlp", "--version") && "yt-dlp",
 ].filter(Boolean) as string[];
 
-title("3/3 Teste offline (gera um corte de exemplo)");
+title("3/3 Teste técnico offline (vídeo sintético de barras coloridas, não é live de verdade)");
 let smokeOk = false;
 if (missing.length) {
   console.log(`Pulei o teste: falta instalar ${missing.join(", ")}.`);
@@ -53,16 +53,18 @@ if (missing.length) {
         : "sudo apt install ffmpeg pipx && pipx install yt-dlp";
   console.log(`✖ Instale o que falta e rode "npm run setup" de novo:\n    ${how}`);
 } else if (smokeOk) {
-  console.log("✔ Instalação OK! Veja os cortes de exemplo em output/smoke/");
+  console.log("✔ Instalação OK! (o teste usa barras coloridas de propósito; os cortes reais vão para output/<streamer>/)");
 } else {
   console.log("✖ O teste offline falhou — veja a mensagem acima.");
 }
 console.log(`
-Próximos passos (GUIA.md, passos 3 a 6):
+Próximos passos (GUIA.md, passos 3 a 7):
   1. Chave do Claude:  https://platform.claude.com/settings/keys   → ANTHROPIC_API_KEY no .env
   2. Chave do Groq:    https://console.groq.com/keys               → TRANSCRIBE_API_KEY no .env
-  3. Cadastre o streamer autorizado no clipper.config.json ("clipPermission": true)
-  4. npm run clipper -- vod "<link do VOD>" --streamer "Nome"
-  5. npm run clipper -- painel      → http://127.0.0.1:4310
+  3. npm run clipper -- aprender    → atualiza a base de conhecimento da IA
+  4. Streamers já cadastrados no clipper.config.json: Alanzoka, TCK, Coringa e Cellbit
+  5. npm run clipper -- watch       → pega a última live de GTA de cada um
+     (ou: npm run clipper -- vod "<link do VOD>" --streamer "Alanzoka")
+  6. npm run clipper -- painel      → http://127.0.0.1:4310
 `);
 process.exitCode = missing.length || !smokeOk ? 1 : 0;
