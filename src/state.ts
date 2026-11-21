@@ -34,6 +34,8 @@ export interface ClipRecord {
   file: string;
   /** O que a IA sugeriu originalmente (para aprender com as suas edições no painel). */
   ai?: { hookTitle: string; title: string; caption: string };
+  /** Gerado pelo modo ao vivo (corte "quente": posta na hora). */
+  live?: boolean;
   /** Apagado a pedido (não volta a ser gerado nem postado). */
   removed?: { at: string; reason?: string };
   /** Decisões do editor de IA aplicadas no vídeo. */

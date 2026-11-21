@@ -124,6 +124,21 @@ const ConfigSchema = z.object({
       autoApproveMinScore: z.number().min(1).max(10).nullable().default(null),
       /** Quantos cortes o comando publish posta por execução. */
       perRun: z.number().int().positive().default(3),
+      /** Máximo de posts por dia (protege a conta de ser marcada como spam). */
+      maxPerDay: z.number().int().positive().default(8),
+      /** Intervalo mínimo entre dois posts (minutos). */
+      minGapMinutes: z.number().min(0).default(45),
+      /**
+       * Janelas de postagem (hora local do computador) para cortes de lives que já acabaram.
+       * Cortes do modo ao vivo saem na hora (liveAnytime). Lista vazia = qualquer horário.
+       */
+      windows: z
+        .object({
+          weekdays: z.array(z.string()).default(["12:00-14:00", "18:00-22:30"]),
+          weekend: z.array(z.string()).default(["09:00-13:00", "18:00-22:30"]),
+        })
+        .prefault({}),
+      liveAnytime: z.boolean().default(true),
     })
     .prefault({}),
   /** Base de conhecimento da IA (comando `aprender`). */

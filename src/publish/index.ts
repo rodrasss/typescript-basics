@@ -25,8 +25,9 @@ export function isConfigured(p: Platform): boolean {
 
 export function postText(c: ClipRecord, cfg: Config): { caption: string; description: string; tags: string[] } {
   const tags = [...new Set([...c.hashtags, ...cfg.clips.hashtags].map((t) => t.toLowerCase()))].slice(0, 8);
-  const caption = `${c.caption}\n\n🎥 ${c.credit}\n${tags.join(" ")}`;
-  const description = `${c.caption}\n\nCrédito: ${c.credit}\nCorte da live: ${c.source.title}\n\n${tags.join(" ")}`;
+  // os créditos do streamer vão SEMPRE, mesmo se a legenda for editada no painel
+  const caption = `${c.caption}\n\n🎥 Créditos: ${c.credit}\n${tags.join(" ")}`;
+  const description = `${c.caption}\n\n🎥 Créditos: ${c.credit}\nCorte da live: ${c.source.title}\n\n${tags.join(" ")}`;
   return { caption, description, tags };
 }
 

@@ -87,7 +87,9 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `render.zoom` / `font` / `highlightColor` | Aparência. Fontes `.ttf` próprias vão em `assets/fonts/`. |
 | `publish.platforms` | Redes onde postar. |
 | `publish.youtubePrivacy` | Privacidade no YouTube (`private` / `unlisted` / `public`). |
-| `publish.tiktokMode` | `inbox`: vai para os rascunhos do app do TikTok, e funciona sem auditoria. `direct`: publica direto. |
+| `publish.tiktokMode` | `direct` (padrão): tenta publicar direto e público; se o app ainda não tiver a aprovação do TikTok, manda para a caixa de entrada do app (você só toca em publicar). `inbox`: sempre caixa de entrada. |
+| `publish.maxPerDay` / `minGapMinutes` | Ritmo seguro: no máximo N posts por dia e um intervalo mínimo entre eles. |
+| `publish.windows` / `liveAnytime` | Janelas de horário para os cortes de lives encerradas (padrão: 12h–14h e 18h–22h30; fim de semana 9h–13h e 18h–22h30). Cortes do modo ao vivo saem na hora. |
 | `publish.autoApproveMinScore` | Aprovação automática por nota (`null` = sempre revisar). |
 | `publish.perRun` | Quantos cortes postar por rodada. |
 | `watch.*` | Quantos VODs e clipes processar por rodada. |

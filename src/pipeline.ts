@@ -9,6 +9,7 @@ import { extractAudio, shiftTranscript, transcribe, type Word } from "./analysis
 import { assertPermission, env, type Config, type Platform, type Streamer } from "./config";
 import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { publishClip } from "./publish";
+import { canPostNow, postTimes } from "./publish/schedule";
 import { renderClip } from "./render/render";
 import { keepRanges, remapRanges, remapWords, shiftRanges, totalLength, type Range } from "./render/timeline";
 import { getBroadcasterId, getGameIds, getTopClips } from "./sources/twitch";
@@ -125,6 +126,7 @@ async function finalizeClip(
   /** `inputStart` = segundo do vídeo de origem em que o arquivo `input` começa; `words` em tempo absoluto */
   render: { input: string; inputStart: number; words: Word[]; workDir: string },
   vod?: ClipRecord["vod"],
+  extra: { live?: boolean } = {},
 ): Promise<ClipRecord> {
   const { cfg, state } = ctx;
   const id = shortId();
@@ -183,6 +185,7 @@ async function finalizeClip(
     edit: { cuts: dec.cuts, zooms: dec.zooms, emphasis: dec.emphasis },
     createdAt: new Date().toISOString(),
     status: auto !== null && dec.score >= auto ? "approved" : "pending",
+    live: extra.live || undefined,
     posts: {},
   };
   writeFileSync(`${base}.json`, JSON.stringify(rec, null, 2));
@@ -278,6 +281,7 @@ async function clipsFromAudio(
     work: string;
     perVideo: number;
     minScore: number;
+    live?: boolean;
   },
 ): Promise<ClipRecord[]> {
   const { cfg, state } = ctx;
@@ -364,6 +368,7 @@ async function clipsFromAudio(
         dec,
         { input: section.path, inputStart: section.start, words, workDir: work },
         { key: src.key, start: dec.start, end: dec.end },
+        { live: audio.live },
       ),
     );
   }
@@ -428,6 +433,7 @@ export async function processLive(streamer: Streamer, ctx: Ctx): Promise<ClipRec
           work,
           perVideo,
           minScore: lim.minScore,
+          live: true,
         })),
       );
       state.setLiveUntil(vod.key, to);
@@ -592,22 +598,40 @@ export async function publishApproved(
   { platforms, limit, ids }: { platforms: Platform[]; limit: number; ids?: string[] },
 ): Promise<void> {
   const { cfg, state } = ctx;
-  const queue = ids?.length
-    ? ids.map((id) => state.getClip(id))
-    : state
-        .clips()
-        .filter((c) => c.status === "approved")
-        .sort((a, b) => a.createdAt.localeCompare(b.createdAt))
-        .slice(0, limit);
+  // ids informados à mão: posta já, sem esperar horário
+  if (ids?.length) {
+    for (const c of ids.map((id) => state.getClip(id))) {
+      if (c.status === "rejected" || c.removed) {
+        log.warn(`${c.id} está rejeitado/removido, pulando.`);
+        continue;
+      }
+      await publishClip(c, platforms, cfg, state);
+    }
+    return;
+  }
+  // fila: cortes do ao vivo primeiro (mais novos primeiro), depois os de maior nota
+  const queue = state
+    .clips()
+    .filter((c) => c.status === "approved" && !c.removed)
+    .sort((a, b) =>
+      a.live !== b.live ? (a.live ? -1 : 1) : a.live ? b.createdAt.localeCompare(a.createdAt) : b.score - a.score || a.createdAt.localeCompare(b.createdAt),
+    );
   if (queue.length === 0) {
     log.info("Nada aprovado para postar. Use `approve <id>` ou configure publish.autoApproveMinScore.");
     return;
   }
+  const history = postTimes(state.clips());
+  let posted = 0;
   for (const c of queue) {
-    if (c.status === "rejected" || c.removed) {
-      log.warn(`${c.id} está rejeitado, pulando.`);
+    if (posted >= limit) break;
+    const check = canPostNow(new Date(), cfg.publish, history, !!c.live);
+    if (!check.ok) {
+      log.info(`Segurando ${c.id}: ${check.reason}.`);
+      if (check.stop) break;
       continue;
     }
     await publishClip(c, platforms, cfg, state);
+    history.push(Date.now());
+    posted++;
   }
 }

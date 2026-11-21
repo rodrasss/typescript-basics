@@ -236,7 +236,7 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
    npm run clipper -- auth:tiktok
    ```
    O login fica salvo em `data/tiktok-token.json` e se renova sozinho. **Não apague esse arquivo.**
-9. **Como os posts saem:** por padrão (`"tiktokMode": "inbox"`), o vídeo vai para a **caixa de entrada do app do TikTok**. Você recebe uma notificação, abre o app, coloca uma **música em alta** (ajuda muito no alcance) e publica.
+9. **Como os posts saem:** a IA escreve título, legenda e hashtags, e os **créditos do streamer** ("🎥 Créditos: twitch.tv/...") vão sempre na legenda. O programa tenta **postar direto e público** (`"tiktokMode": "direct"`); enquanto o app não tiver a aprovação do TikTok, ele manda para a **caixa de entrada do app do TikTok**. Você recebe uma notificação, abre o app, coloca uma **música em alta** (ajuda muito no alcance) e publica.
    - Para publicar direto, use `"tiktokMode": "direct"`. Mas sem a auditoria da Content Posting API (https://developers.tiktok.com/application/content-posting-api), os posts diretos só saem como **privados**.
 
 ### 11. Instagram Reels
