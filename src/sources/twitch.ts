@@ -59,3 +59,15 @@ export async function getTopClips(broadcasterId: string, days: number, first = 2
   });
   return j.data;
 }
+
+/** IDs das categorias (jogos) da Twitch pelo nome, ex.: "Grand Theft Auto VI". */
+export async function getGameIds(names: string[]): Promise<string[]> {
+  if (!names.length) return [];
+  const params = new URLSearchParams();
+  for (const n of names) params.append("name", n);
+  const res = await fetch(`https://api.twitch.tv/helix/games?${params}`, {
+    headers: { "Client-Id": requireEnv("TWITCH_CLIENT_ID"), Authorization: `Bearer ${await appToken()}` },
+  });
+  if (!res.ok) throw new Error(`Twitch games falhou (${res.status}): ${await res.text()}`);
+  return ((await res.json()) as { data: Array<{ id: string }> }).data.map((g) => g.id);
+}

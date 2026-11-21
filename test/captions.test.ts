@@ -36,3 +36,11 @@ test("gera um evento por palavra com destaque, mais título e crédito", () => {
   assert.ok(!ass.includes("{POLÍCIA}") && ass.includes("(POLÍCIA)"));
   assert.ok(dialogues.some((l) => l.includes("{\\c&H00E6FF&\\fscx112\\fscy112}CORRE{\\r}")));
 });
+
+test("texto da tela sai sem emoji (o libass não desenha emoji)", () => {
+  const ass = buildAss({ words: [], duration: 3, hookTitle: "SUSTO INSANO 😱😂", bottomText: "ESPERA O FINAL 😳" });
+  assert.match(ass, /\}SUSTO INSANO$/m);
+  assert.match(ass, /Dialogue: 1,0:00:00\.00,0:00:03\.00,Footer,,0,0,0,,\{\\fad\(150,200\)\}ESPERA O FINAL$/m);
+  const long = buildAss({ words: [], duration: 40, bottomText: "ESPERA O FINAL" });
+  assert.match(long, /0:00:30\.00,Footer/);
+});

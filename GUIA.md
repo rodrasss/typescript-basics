@@ -101,6 +101,13 @@ O `.env` guarda as suas senhas de API. Abra com um editor (Bloco de Notas, ou o 
    TRANSCRIBE_API_KEY=gsk_...
    ```
 
+> **Quer que o Claude rode o teste na nuvem, sem usar o seu PC?** Em vez do `.env`, cadastre as duas chaves no ambiente de nuvem do Claude Code:
+> 1. No menu do ambiente (no título da sessão), clique em **Editar**.
+> 2. Em **Variáveis de ambiente**, adicione `ANTHROPIC_API_KEY=...` e `TRANSCRIBE_API_KEY=...`.
+> 3. Abra uma sessão nova e peça: "roda o primeiro teste do clipper com a Alanzoka".
+>
+> O ambiente é pessoal, mas qualquer sessão sua nele consegue ler essas variáveis.
+
 ### 5. Base de conhecimento da IA (recomendado)
 O projeto já vem com exemplos reais de clipes e Shorts de GTA 6. Para atualizar com os mais vistos desta semana, rode:
 ```bash
@@ -119,8 +126,12 @@ Também dá para mexer no **manual de edição** em `knowledge/playbook.md`. É 
 
 E a parte mais importante: **revise no painel**. Tudo o que você aprova, rejeita ou reescreve (título e legenda) vira referência do seu gosto para os próximos cortes.
 
-### 6. Cadastrar o streamer
-Edite o `clipper.config.json`:
+### 6. Streamers
+Já vêm cadastrados: **Alanzoka, TCK, Coringa e Cellbit**. O Cellbit está com `"perVideo": 1, "minScore": 8`, ou seja, no máximo 1 corte por live e só os muito bons.
+
+O programa só analisa os trechos das lives em que o streamer está jogando GTA (`clips.games`). Se a live for de outro jogo, como Valorant, ela é pulada sozinha e não gasta nada.
+
+Para adicionar outro streamer, copie um bloco e ajuste. Exemplo:
 ```json
 {
   "name": "Nome do Streamer",
@@ -133,7 +144,7 @@ Edite o `clipper.config.json`:
 ```
 Quanto mais `context`, melhores os títulos.
 
-**Câmera do streamer em cima e jogo embaixo (layout "split"):**
+**Câmera do streamer em cima e jogo embaixo (layout "split"):** a Alanzoka já tem a posição da câmera configurada. Para usar, troque `"layout": "blur"` por `"layout": "split"` no bloco dela. Para outro streamer:
 1. Gere um frame com uma grade de 10% por cima, usando o link de um VOD dele:
    ```bash
    npm run clipper -- frame "https://www.twitch.tv/videos/123456789" --at 600
@@ -284,6 +295,18 @@ Isso faz uma rodada a cada 3 horas. O computador precisa ficar ligado e não pod
 **Sem revisão (100% automático):** só quando confiar nas notas do Claude, coloque `"autoApproveMinScore": 8` no config.
 
 ---
+
+## Se um streamer reclamar
+```bash
+npm run clipper -- remover --streamer "Nome" --bloquear
+```
+O comando faz quatro coisas:
+- apaga os vídeos dele do **YouTube** pela API;
+- mostra os links do **TikTok** e do **Instagram** para você apagar no app, porque essas APIs não permitem apagar;
+- apaga os arquivos locais;
+- para de gerar cortes dele.
+
+Para tirar um corte só, use `npm run clipper -- remover ID` (veja o ID no painel ou com `list`).
 
 ## Custos por mês (estimativa)
 

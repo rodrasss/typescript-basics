@@ -12,6 +12,7 @@ const raw = (over: Partial<Parameters<typeof sanitizeEdit>[0]> = {}) => ({
   zooms: [] as Array<{ at: number; duration: number }>,
   emphasis: [] as string[],
   hook_title: "ELE FUGIU DE BICICLETA",
+  bottom_text: "",
   title: "Fuga de bicicleta",
   caption: "Você teria fugido?",
   hashtags: ["gta6", "#gtarp"],

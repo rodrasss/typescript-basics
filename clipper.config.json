@@ -1,26 +1,54 @@
 {
   "streamers": [
     {
-      "name": "Streamer Exemplo",
-      "twitch": "login_na_twitch",
-      "youtube": "@handle_no_youtube",
-      "credit": "twitch.tv/login_na_twitch",
-      "clipPermission": false,
-      "context": "Joga GTA RP no servidor X como o personagem Y. Bordões: ...",
+      "name": "Alanzoka",
+      "twitch": "alanzoka",
+      "credit": "twitch.tv/alanzoka",
+      "clipPermission": true,
+      "context": "Um dos maiores streamers do Brasil. Jogando GTA 6 (Vice City).",
       "layout": "blur",
       "facecam": {
-        "x": 0.75,
-        "y": 0.0,
-        "w": 0.25,
-        "h": 0.3
+        "x": 0.776,
+        "y": 0.25,
+        "w": 0.218,
+        "h": 0.235
       }
+    },
+    {
+      "name": "TCK",
+      "twitch": "tck10",
+      "credit": "twitch.tv/tck10",
+      "clipPermission": true,
+      "context": "Faz muita transmissão de campeonato; só vira corte quando estiver jogando GTA (o filtro de jogo cuida disso)."
+    },
+    {
+      "name": "Coringa",
+      "twitch": "coringa",
+      "credit": "twitch.tv/coringa",
+      "clipPermission": true,
+      "context": "Joga GTA RP."
+    },
+    {
+      "name": "Cellbit",
+      "twitch": "cellbit",
+      "credit": "twitch.tv/cellbit",
+      "clipPermission": true,
+      "perVideo": 1,
+      "minScore": 8,
+      "context": "Jogando GTA 6. Postar pouco dele: só os melhores momentos."
     }
   ],
   "clips": {
     "perVideo": 5,
     "candidates": 15,
-    "minSeconds": 15,
-    "maxSeconds": 60,
+    "minSeconds": 5,
+    "maxSeconds": 180,
+    "windowBefore": 90,
+    "windowAfter": 45,
+    "games": [
+      "Grand Theft Auto VI",
+      "Grand Theft Auto V"
+    ],
     "minScore": 6,
     "language": "pt",
     "hashtags": [
@@ -42,7 +70,8 @@
     "preset": "veryfast",
     "emphasisColor": "#4DFF6A",
     "allowCuts": true,
-    "punchZoom": true
+    "punchZoom": true,
+    "bottomText": true
   },
   "publish": {
     "platforms": [
@@ -58,8 +87,7 @@
   },
   "knowledge": {
     "twitch": [
-      "alanzoka",
-      "cellbit"
+      "paulinholokobr"
     ],
     "clipsRange": "7d",
     "clipsPerChannel": 20,

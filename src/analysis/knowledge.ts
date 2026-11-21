@@ -148,7 +148,8 @@ function matchesStreamer(e: KnowledgeExample, s: { name: string; twitch?: string
 
 /** Decisões do editor humano no painel: o que aprovou, como reescreveu e o que rejeitou. */
 export function feedbackBlock(clips: ClipRecord[], limit = 10): string {
-  const recent = [...clips].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  // cortes removidos a pedido do streamer não dizem nada sobre qualidade
+  const recent = [...clips].filter((c) => !c.removed).sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   const liked = recent.filter((c) => c.status === "approved" || c.status === "published").slice(0, limit);
   const edited = recent.filter((c) => c.ai && (c.ai.title !== c.title || c.ai.caption !== c.caption)).slice(0, limit);
   const rejected = recent.filter((c) => c.status === "rejected").slice(0, limit);
@@ -191,7 +192,7 @@ export function buildKnowledge(opts: {
     parts.push(
       "## O que já viralizou (dados reais de clipes e Shorts)",
       [
-        `- ${st.count} exemplos. Duração dos mais vistos: mediana ${st.durMedian}s (metade entre ${st.durP25}s e ${st.durP75}s).`,
+        `- ${st.count} exemplos. Duração dos mais vistos: mediana ${st.durMedian}s (metade entre ${st.durP25}s e ${st.durP75}s) — referência, não regra: a duração certa é a do momento.`,
         st.peakMedian !== null ? `- A reação mais alta acontece, em mediana, aos ${st.peakMedian}s do início.` : null,
         `- Títulos dos Shorts/TikToks editados: mediana de ${st.titleLenMedian} caracteres; ${pct(st.capsShare)} em caixa alta; ${pct(st.laughShare)} com risada/emoji de risada.`,
         "- Nos clipes da Twitch o título é dado por quem clipou (às vezes sem sentido): aproveite a fala, a duração e o pico; o estilo de título vem dos Shorts/TikToks.",

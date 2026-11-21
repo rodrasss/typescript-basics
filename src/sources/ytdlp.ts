@@ -25,6 +25,8 @@ export interface VideoInfo {
   duration: number;
   url: string;
   isLive: boolean;
+  /** trechos por jogo/categoria (Twitch), quando disponível */
+  chapters: Array<{ title: string; start: number; end: number }>;
 }
 
 export async function getInfo(url: string): Promise<VideoInfo> {
@@ -37,6 +39,11 @@ export async function getInfo(url: string): Promise<VideoInfo> {
     duration: Number(j.duration ?? 0),
     url: String(j.webpage_url ?? url),
     isLive: j.is_live === true || j.live_status === "is_live",
+    chapters: ((j.chapters as Array<Record<string, unknown>> | null) ?? []).map((c) => ({
+      title: String(c.title ?? ""),
+      start: Number(c.start_time ?? 0),
+      end: Number(c.end_time ?? j.duration ?? 0),
+    })),
   };
 }
 

@@ -11,7 +11,7 @@ import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { publishClip } from "./publish";
 import { renderClip } from "./render/render";
 import { keepRanges, remapRanges, remapWords, shiftRanges, totalLength, type Range } from "./render/timeline";
-import { getBroadcasterId, getTopClips } from "./sources/twitch";
+import { getBroadcasterId, getGameIds, getTopClips } from "./sources/twitch";
 import {
   channelPages,
   downloadAudio,
@@ -35,10 +35,22 @@ export interface Ctx {
   force?: boolean;
 }
 
-/** Quanto antes/depois do pico de volume entra na janela candidata (o setup vem antes da reação). */
-const PRE_PEAK = 50;
-const POST_PEAK = 25;
 const MAX_FAILURES = 3;
+
+/** Trechos da live com os jogos desejados (pelos capítulos da Twitch). null = sem filtro. */
+export function gameRanges(
+  chapters: Array<{ title: string; start: number; end: number }>,
+  games: string[],
+): Array<{ start: number; end: number }> | null {
+  if (!games.length || !chapters.length) return null;
+  const wanted = games.map((g) => g.toLowerCase());
+  return chapters.filter((c) => wanted.includes(c.title.toLowerCase())).map((c) => ({ start: c.start, end: c.end }));
+}
+
+/** Limites por streamer (para postar menos de alguém, por exemplo). */
+function limitsFor(cfg: Config, s: Streamer): { perVideo: number; minScore: number } {
+  return { perVideo: s.perVideo ?? cfg.clips.perVideo, minScore: s.minScore ?? cfg.clips.minScore };
+}
 
 /** Base de conhecimento para este streamer (manual + exemplos reais + suas decisões no painel). */
 function knowledgeFor(ctx: Ctx, streamer: Streamer): string {
@@ -74,6 +86,7 @@ async function refine(
       maxSeconds: cfg.clips.maxSeconds,
       allowCuts: cfg.render.allowCuts,
       punchZoom: cfg.render.punchZoom,
+      bottomText: cfg.render.bottomText,
     });
     if (!dec) log.info(`O editor descartou "${sel.title}".`);
     return dec;
@@ -115,6 +128,7 @@ async function finalizeClip(
     emphasis: dec.emphasis,
     emphasisColor: cfg.render.emphasisColor,
     hookTitle: cfg.render.hookTitle ? dec.hookTitle : undefined,
+    bottomText: dec.bottomText,
     credit: streamer.credit,
     layout: streamer.layout ?? cfg.render.layout,
     facecam: streamer.facecam,
@@ -139,6 +153,7 @@ async function finalizeClip(
     score: dec.score,
     reason: dec.reason,
     hookTitle: dec.hookTitle,
+    bottomText: dec.bottomText,
     title: dec.title,
     caption: dec.caption,
     hashtags: dec.hashtags,
@@ -166,6 +181,14 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
     log.info(`Já processado antes: ${info.title} (use --force para refazer)`);
     return [];
   }
+  const ranges = gameRanges(info.chapters, cfg.clips.games);
+  if (ranges && ranges.length === 0) {
+    log.info(`Pulando "${info.title}": nenhum trecho de ${cfg.clips.games.join(" / ")} (jogos: ${info.chapters.map((c) => c.title).join(", ")}).`);
+    state.markDone(info.key);
+    return [];
+  }
+  const { perVideo, minScore } = limitsFor(cfg, streamer);
+  if (perVideo === 0) return [];
 
   const work = ensureDir(join(WORK_DIR, slug(info.key)));
   try {
@@ -175,8 +198,11 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
     log.step("Procurando picos de reação no áudio…");
     const db = await loudnessPerSecond(audio);
     const curve = excitementCurve(db);
-    let peaks = pickPeaks(curve, { count: cfg.clips.candidates, minScore: 2 });
-    if (peaks.length < 3) peaks = pickPeaks(curve, { count: cfg.clips.candidates, minScore: -Infinity });
+    // só procura picos dentro dos trechos do jogo
+    const inGame = ranges ? curve.map((v, t) => (ranges.some((r) => t >= r.start && t < r.end) ? v : -Infinity)) : curve;
+    if (ranges) log.info(`Analisando só os trechos de jogo: ${ranges.map((r) => `${hms(r.start)}–${hms(r.end)}`).join(", ")}`);
+    let peaks = pickPeaks(inGame, { count: cfg.clips.candidates, minScore: 2 });
+    if (peaks.length < 3) peaks = pickPeaks(inGame, { count: cfg.clips.candidates, minScore: -1e9 });
     log.info(`${peaks.length} trechos candidatos encontrados.`);
 
     const framesUrl = cfg.clips.frames > 0 ? await lowResHlsUrl(info.url) : null;
@@ -184,8 +210,8 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
 
     log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
     const transcribed = await mapLimit(peaks, 3, async (p, i) => {
-      const start = Math.max(0, p.t - PRE_PEAK);
-      const end = Math.min(db.length, p.t + POST_PEAK);
+      const start = Math.max(0, p.t - cfg.clips.windowBefore);
+      const end = Math.min(db.length, p.t + cfg.clips.windowAfter);
       const mp3 = await extractAudio(audio, start, end - start, join(work, `cand-${i + 1}.mp3`));
       const tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
       const cand: Candidate = {
@@ -212,12 +238,12 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
         knowledge,
         sourceTitle: info.title,
         candidates: transcribed.map((t) => t.cand),
-        maxClips: cfg.clips.perVideo,
+        maxClips: perVideo,
         minSeconds: cfg.clips.minSeconds,
         maxSeconds: cfg.clips.maxSeconds,
       })
-    ).filter((s) => s.score >= cfg.clips.minScore);
-    log.info(`${selected.length} corte(s) com nota >= ${cfg.clips.minScore}.`);
+    ).filter((s) => s.score >= minScore);
+    log.info(`${selected.length} corte(s) com nota >= ${minScore}.`);
 
     const out: ClipRecord[] = [];
     for (const sel of selected) {
@@ -235,7 +261,7 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
         frames: async () =>
           framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
       });
-      if (!dec || dec.score < cfg.clips.minScore) continue;
+      if (!dec || dec.score < minScore) continue;
 
       const pad = 1;
       log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
@@ -270,6 +296,9 @@ export async function processTwitchClips(
   assertPermission(streamer);
   if (!streamer.twitch) throw new Error(`"${streamer.name}" não tem login da Twitch no config.`);
   const { cfg, state } = ctx;
+  const lim = limitsFor(cfg, streamer);
+  limit = Math.min(limit, lim.perVideo);
+  if (limit <= 0) return [];
 
   log.step(`Buscando clipes mais vistos de ${streamer.twitch} (últimos ${days} dias)…`);
   const broadcaster = await getBroadcasterId(streamer.twitch);
@@ -277,7 +306,9 @@ export async function processTwitchClips(
     c.video_id && c.vod_offset !== null
       ? { key: sourceKey("TwitchVod", `v${c.video_id}`), start: c.vod_offset + a, end: c.vod_offset + b }
       : undefined;
+  const gameIds = cfg.clips.games.length ? await getGameIds(cfg.clips.games) : [];
   const clips = (await getTopClips(broadcaster, days, 50))
+    .filter((c) => !gameIds.length || gameIds.includes(c.game_id))
     .filter((c) => c.duration >= 8 && !state.isDone(`twitch-clip:${c.id}`))
     .filter((c) => {
       const ref = vodRef(c);
@@ -324,7 +355,7 @@ export async function processTwitchClips(
         minSeconds: Math.min(cfg.clips.minSeconds, 8),
         maxSeconds: cfg.clips.maxSeconds,
       })
-    ).filter((s) => s.score >= cfg.clips.minScore);
+    ).filter((s) => s.score >= lim.minScore);
 
     const out: ClipRecord[] = [];
     for (const sel of selected) {
@@ -336,7 +367,7 @@ export async function processTwitchClips(
         frames: async () => framesFromFile(p.video, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${p.cand.id}`),
         minSeconds: Math.min(cfg.clips.minSeconds, 8),
       });
-      if (!dec || dec.score < cfg.clips.minScore) continue;
+      if (!dec || dec.score < lim.minScore) continue;
       out.push(
         await finalizeClip(
           ctx,
@@ -412,7 +443,7 @@ export async function publishApproved(
     return;
   }
   for (const c of queue) {
-    if (c.status === "rejected") {
+    if (c.status === "rejected" || c.removed) {
       log.warn(`${c.id} está rejeitado, pulando.`);
       continue;
     }

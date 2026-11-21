@@ -4,6 +4,7 @@ import { CONFIG_PATH, PLATFORMS, env, findStreamer, loadConfig, loadEnv, type Pl
 import { join } from "node:path";
 import { learn, loadExamples, LEARNED_PATH, SEED_PATH } from "./analysis/knowledge";
 import { startPanel } from "./panel";
+import { removeClips } from "./remove";
 import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { processTwitchClips, processVod, publishApproved, watchAll, type Ctx } from "./pipeline";
 import { isConfigured } from "./publish";
@@ -221,6 +222,20 @@ for (const [cmd, status] of [
       }),
     );
 }
+
+program
+  .command("remover")
+  .description("Tira cortes do ar (ex.: um streamer reclamou): apaga do YouTube, lista os links do TikTok/Instagram e apaga os arquivos")
+  .argument("[ids...]", "ids dos cortes (veja com list)")
+  .option("-s, --streamer <nome>", "remove TODOS os cortes desse streamer")
+  .option("--bloquear", "com --streamer: também para de gerar cortes dele (clipPermission=false)")
+  .option("--motivo <texto>", "anotação do motivo")
+  .action(
+    action(async (ids: string[], o: { streamer?: string; bloquear?: boolean; motivo?: string }) => {
+      if (!ids.length && !o.streamer) throw new Error("Informe ids ou --streamer. Ex.: npm run clipper -- remover --streamer \"Nome\" --bloquear");
+      await removeClips(loadConfig(), new State(), { ids, streamer: o.streamer, reason: o.motivo, block: o.bloquear });
+    }),
+  );
 
 program
   .command("publish")

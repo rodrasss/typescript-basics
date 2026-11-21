@@ -18,6 +18,8 @@ export interface RenderOptions {
   /** palavras com tempo relativo ao início do corte */
   words: Word[];
   hookTitle?: string;
+  /** texto curto embaixo do vídeo */
+  bottomText?: string;
   credit?: string;
   layout: Layout;
   /** obrigatório no layout "split" */
@@ -45,11 +47,47 @@ export interface RenderOptions {
 /** Altura da faixa da câmera no layout split (o resto é o jogo). */
 export const CAM_H = 640;
 
-/** Posições do título, legenda e crédito para cada layout (px a partir do topo/fundo). */
-export function marginsFor(layout: Layout): { hookMarginV: number; captionMarginV: number; creditMarginV: number } {
-  return layout === "split"
-    ? { hookMarginV: CAM_H - 50, captionMarginV: 560, creditMarginV: 420 }
-    : { hookMarginV: 230, captionMarginV: 560, creditMarginV: 420 };
+/** Altura do vídeo do meio no layout blur (mesma conta do videoGraph). */
+export function blurVideoHeight(zoom: number, srcW?: number, srcH?: number): number {
+  const fgW = Math.round((W * zoom) / 2) * 2;
+  const ratio = srcW && srcH ? srcH / srcW : 9 / 16;
+  return Math.round((ratio * fgW) / 2) * 2;
+}
+
+export interface Margins {
+  hookMarginV: number;
+  captionMarginV: number;
+  captionAlign: 2 | 8;
+  footerMarginV: number;
+  footerAlign: 2 | 8;
+  creditMarginV: number;
+}
+
+/**
+ * Onde fica cada texto, sem cobrir o meio do vídeo:
+ * gancho em cima; legenda falada, rodapé e crédito embaixo (acima da área da interface do TikTok/Reels).
+ */
+export function marginsFor(layout: Layout, videoH?: number): Margins {
+  if (layout === "blur") {
+    const h = videoH ?? blurVideoHeight(1.15);
+    const bottom = Math.round((H + h) / 2); // onde o vídeo termina
+    return {
+      hookMarginV: Math.max(120, Math.min(230, Math.round((H - h) / 2) - 200)),
+      captionMarginV: bottom + 24,
+      captionAlign: 8,
+      footerMarginV: bottom + 144,
+      footerAlign: 8,
+      creditMarginV: 330,
+    };
+  }
+  return {
+    hookMarginV: layout === "split" ? 70 : 230,
+    captionMarginV: 470,
+    captionAlign: 2,
+    footerMarginV: 395,
+    footerAlign: 2,
+    creditMarginV: 330,
+  };
 }
 
 async function probe(file: string): Promise<{ audio: boolean; width: number; height: number }> {
@@ -131,20 +169,24 @@ export async function renderClip(o: RenderOptions): Promise<string> {
     layout = "blur";
   }
 
+  const src = await probe(o.input);
+  const margins = marginsFor(layout, layout === "blur" ? blurVideoHeight(o.zoom, src.width, src.height) : undefined);
+
   let subsFilter = "null";
-  if (o.captions || o.hookTitle || o.credit) {
+  if (o.captions || o.hookTitle || o.credit || o.bottomText) {
     writeFileSync(
       join(o.workDir, "captions.ass"),
       buildAss({
         words: o.captions ? o.words : [],
         duration: o.segments && o.segments.length > 1 ? totalLength(o.segments) : o.duration,
         hookTitle: o.hookTitle,
+        bottomText: o.bottomText,
         credit: o.credit,
         font: o.font,
         highlightColor: o.highlightColor,
         emphasis: o.emphasis,
         emphasisColor: o.emphasisColor,
-        ...marginsFor(layout),
+        ...margins,
       }),
     );
     // Caminhos relativos (rodando o ffmpeg dentro do workDir) evitam problemas de escape no filtergraph.
@@ -152,7 +194,6 @@ export async function renderClip(o: RenderOptions): Promise<string> {
     subsFilter = `ass=captions.ass${fonts}`;
   }
 
-  const src = await probe(o.input);
   const audio = src.audio;
   const seg = segmentsGraph(o.segments, audio);
   const vg = videoGraph(layout, o.zoom, o.facecam, { input: seg.v, zooms: o.zooms, srcW: src.width, srcH: src.height });

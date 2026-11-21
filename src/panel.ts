@@ -86,6 +86,7 @@ export function startPanel(cfg: Config, port: number): Promise<void> {
         const body = await readBody(req);
 
         if (parts[3] === "publish") {
+          if (c.removed) return json(res, 409, { error: "este corte foi removido" });
           if (busy.has(c.id)) return json(res, 409, { error: "já está postando" });
           const wanted = Array.isArray(body.platforms) ? (body.platforms as string[]) : cfg.publish.platforms;
           const platforms = wanted.filter((p): p is Platform => (PLATFORMS as readonly string[]).includes(p));

@@ -67,7 +67,7 @@ O que faz um bom corte:
 - engraçado, absurdo, caótico ou surpreendente, com uma reação forte;
 - dá para entender sem ter visto o resto da live;
 - os primeiros 2 segundos já prendem (comece logo antes da situação, não no meio de um papo morto);
-- termina logo depois da piada/reação, sem enrolação.
+- a duração é a do momento: do início da situação legal até o fim dela (sem cortar o final da história e sem enrolação).
 
 Evite: trechos sem graça, só setup sem desfecho, leitura de patrocínio, pedidos de sub/doação, longos silêncios, discurso de ódio, assédio, conteúdo sexual, ataques a pessoas reais e dados pessoais (telefone, endereço etc.).
 
@@ -75,10 +75,10 @@ Quando houver, você também recebe alguns frames de cada trecho (com o tempo t 
 
 Regras de saída:
 - start e end em segundos, dentro da janela do candidato, usando a mesma base de tempo dos timestamps (t=...).
-- A duração (end - start) deve respeitar o mínimo e o máximo pedidos.
+- A duração (end - start) é a do momento; só não pode passar dos limites técnicos informados.
 - No máximo um corte por candidato.
-- hook_title: texto curto (até 50 caracteres) que aparece no topo do vídeo. Português do Brasil, linguagem de internet, pode usar caixa alta com moderação. Sem mentir sobre o conteúdo.
-- title: título do post (até 80 caracteres), chamativo e fiel ao que acontece.
+- hook_title: texto curto (até ~50 caracteres, caixa alta) no topo do vídeo. É o que segura a pessoa: pode exagerar (superlativo, curiosidade, hipérbole), linguagem de internet BR. Só não prometa algo que não acontece.
+- title: título do post (até 80 caracteres), bem chamativo (pode exagerar), sem prometer o que não tem.
 - caption: legenda do post em 1 ou 2 frases curtas, com uma chamada para comentar. Sem hashtags aqui.
 - hashtags: de 3 a 6 hashtags relevantes, cada uma começando com #.
 - reason: uma frase explicando por que o momento funciona.
@@ -115,7 +115,7 @@ export async function selectClips(input: {
     `Streamer: ${input.streamer.name}`,
     input.streamer.context ? `Contexto do streamer: ${input.streamer.context}` : null,
     `Vídeo de origem: ${input.sourceTitle}`,
-    `Escolha até ${input.maxClips} cortes. Duração de cada corte: entre ${input.minSeconds} e ${input.maxSeconds} segundos.`,
+    `Escolha até ${input.maxClips} cortes. Limites técnicos de duração: ${input.minSeconds} a ${input.maxSeconds} s; dentro disso, a duração é a do momento.`,
   ]
     .filter((l) => l !== null)
     .join("\n");

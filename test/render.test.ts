@@ -7,7 +7,7 @@ test("layout split empilha câmera e jogo", () => {
   const g = videoGraph("split", 1, { x: 0.75, y: 0, w: 0.25, h: 0.3 });
   assert.ok(g.includes("crop=iw*0.2500:ih*0.3000:iw*0.7500:ih*0.0000"));
   assert.ok(g.includes("vstack=inputs=2[base]"));
-  assert.ok(marginsFor("split").hookMarginV > marginsFor("blur").hookMarginV);
+  assert.ok(marginsFor("split").hookMarginV <= 100, "no split o gancho fica no topo");
 });
 
 test("layout split sem facecam cai no blur", () => {
@@ -53,4 +53,18 @@ test("palavras-chave ganham a cor de destaque", () => {
   });
   assert.match(ass, /\{\\c&H6AFF4D&\}POLÍCIA!\{\\r\}/);
   assert.match(ass, /\{\\c&H6AFF4D&\\fscx122\\fscy122\}POLÍCIA!/);
+});
+
+import { blurVideoHeight } from "../src/render/render";
+
+test("nenhum texto no meio do vídeo (layout blur)", () => {
+  const h = blurVideoHeight(1.15, 1920, 1080); // 698
+  const top = (1920 - h) / 2;
+  const bottom = top + h;
+  const m = marginsFor("blur", h);
+  assert.ok(m.hookMarginV + 110 <= top, "gancho acima do vídeo");
+  assert.equal(m.captionAlign, 8);
+  assert.ok(m.captionMarginV >= bottom, "legenda abaixo do vídeo");
+  assert.ok(m.footerMarginV > m.captionMarginV, "rodapé abaixo da legenda");
+  assert.ok(1920 - m.creditMarginV > m.footerMarginV + 50, "crédito por último");
 });

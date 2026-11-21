@@ -31,6 +31,7 @@ Também existe o modo **clipes populares da Twitch**. Nele o programa pega os cl
 
 ## ⚠️ Direitos autorais e monetização
 
+- **Se um streamer reclamar:** `npm run clipper -- remover --streamer "Nome" --bloquear` apaga os vídeos dele do YouTube, lista os links do TikTok e do Instagram para apagar no app e para de gerar cortes dele.
 - **A live pertence ao streamer.** Repostar sem permissão pode gerar strike, remoção do vídeo e até banimento. O YouTube desmonetiza "conteúdo reutilizado" e o TikTok reduz o alcance de "conteúdo não original".
 - **O jeito que dá dinheiro:** programas de clipadores (o streamer paga por visualização ou libera a monetização) ou autorização direta. O programa só processa streamers com `"clipPermission": true`.
 - Por padrão, nada é postado sem você aprovar no painel.
@@ -50,6 +51,8 @@ npm run clipper -- aprender                       # atualiza a base de conhecime
 npm run clipper -- painel                         # http://127.0.0.1:4310: assistir, editar, aprovar, postar
 npm run clipper -- list [--status pending]        # mesma fila, no terminal
 npm run clipper -- approve <id...> | reject <id...>
+npm run clipper -- remover <id...>                # tira um corte do ar (YouTube pela API; TikTok/Instagram mostra o link)
+npm run clipper -- remover --streamer "Nome" --bloquear   # tira TUDO de um streamer e para de gerar
 npm run clipper -- publish [id...] [--platforms youtube,tiktok]
 
 npm run clipper -- frame "<link>" --at 600 [--facecam x,y,w,h]   # acha a posição da câmera
@@ -64,12 +67,16 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `streamers[].credit` | Crédito queimado no vídeo e colocado na legenda. |
 | `streamers[].context` | Contexto para o Claude: personagem no RP, servidor, bordões. Melhora bastante os títulos. |
 | `streamers[].layout` / `facecam` | `"split"` + posição da câmera (frações 0–1) para usar câmera em cima e jogo embaixo. |
+| `streamers[].perVideo` / `minScore` | Limites só desse streamer (ex.: `perVideo: 1, minScore: 8` para postar pouco e só o melhor). |
 | `clips.perVideo` / `candidates` | Máximo de cortes por VOD e quantos picos o Claude avalia. |
-| `clips.minSeconds` / `maxSeconds` / `minScore` | Duração dos cortes e nota mínima (1–10) para renderizar. |
+| `clips.minSeconds` / `maxSeconds` | Só limites técnicos (5 s e 180 s, o máximo dos Shorts/Reels). A duração de cada corte é a do momento, do começo ao fim da situação. |
+| `clips.windowBefore` / `windowAfter` | Quanto da live antes/depois de cada pico a IA enxerga (para pegar a situação inteira). |
+| `clips.games` | Só analisa os trechos da live com estes jogos (categoria da Twitch). Padrão: GTA VI e GTA V. Lives de outros jogos são puladas. |
+| `clips.minScore` | Nota mínima (1–10) para renderizar. |
 | `clips.frames` | Frames de cada trecho enviados ao Claude (0 desliga). Funciona em fontes HLS (Twitch/Kick) e nos clipes. |
 | `clips.hashtags` | Hashtags sempre adicionadas. |
 | `clips.editPass` / `editFrames` | Etapa do editor de IA (liga/desliga) e quantos frames ele vê de cada corte. |
-| `render.allowCuts` / `punchZoom` / `emphasisColor` | O que o editor de IA pode usar: cortar tempo morto, zoom de reação e cor das palavras-chave. |
+| `render.allowCuts` / `punchZoom` / `emphasisColor` / `bottomText` | O que o editor de IA pode usar: cortar tempo morto, zoom de reação, cor das palavras-chave e um rodapé curto embaixo do vídeo ("ESPERA O FINAL"). |
 | `knowledge.*` | Fontes do `aprender`: canais da Twitch, buscas e canais do YouTube, perfis do TikTok, quantos transcrever e quantos exemplos entram no contexto. |
 | `render.layout` | Layout padrão: `blur` (vídeo inteiro com fundo desfocado), `crop` (corta o centro) ou `split`. |
 | `render.zoom` / `font` / `highlightColor` | Aparência. Fontes `.ttf` próprias vão em `assets/fonts/`. |

@@ -21,6 +21,8 @@ export interface EditDecision extends SelectedClip {
   zooms: Range[];
   /** palavras-chave destacadas na legenda */
   emphasis: string[];
+  /** texto curto embaixo do vídeo (opcional) */
+  bottomText?: string;
 }
 
 const EditSchema = z.object({
@@ -32,6 +34,7 @@ const EditSchema = z.object({
   zooms: z.array(z.object({ at: z.number(), duration: z.number() })),
   emphasis: z.array(z.string()),
   hook_title: z.string(),
+  bottom_text: z.string(),
   title: z.string(),
   caption: z.string(),
   hashtags: z.array(z.string()),
@@ -48,16 +51,18 @@ Você recebe:
 - alguns frames do trecho, com o tempo de cada um.
 
 Decida:
-- start / end: o início e o fim exatos. Comece já dentro da ação ou da fala que arma a piada (sem "e aí chat", silêncio ou menu) e termine logo depois da reação ou da frase final. Respeite a janela disponível.
+- start / end: o início e o fim exatos. A duração é a do MOMENTO: comece onde a situação começa (a fala ou ação que arma a piada, sem "e aí chat", silêncio ou menu) e termine quando ela acaba (depois da reação ou da frase que fecha). Não encurte o final da história nem estique para caber num tempo. Respeite a janela disponível.
 - cuts: trechos de TEMPO MORTO para remover de dentro do corte (silêncio sem ação, menu, loading, enrolação). Use as pausas marcadas. Nunca corte no meio de uma frase e nunca corte o silêncio que faz parte da piada (tensão antes de susto, pausa cômica, algo acontecendo na tela). Cada corte com pelo menos 0,5 s. No máximo 3. Lista vazia se o ritmo já está bom (é o mais comum).
 - zooms: o zoom rápido de reação. "at" = o instante em que a reação mais forte começa; "duration" entre 0,8 e 2 s. Normalmente 1; no máximo 2; lista vazia se não houver uma reação forte.
 - emphasis: até 6 palavras-chave da piada, escritas exatamente como aparecem na transcrição.
-- hook_title (texto do topo, até 45 caracteres, caixa alta), title (até 70), caption (1 ou 2 frases, terminando com um convite a comentar, sem hashtags) e hashtags (3 a 6, começando com #).
+- hook_title: o texto do topo, até ~50 caracteres, caixa alta, sem emoji. É o que faz a pessoa parar e ficar até o fim, então PODE e DEVE chamar atenção: exagero, superlativo, curiosidade ("O SUSTO MAIS INSANO DO GTA 6", "ELE NÃO ESPERAVA ISSO…"). Só não prometa algo que não acontece no vídeo.
+- bottom_text: opcional, até 30 caracteres, embaixo do vídeo, para segurar a pessoa até o fim ("ESPERA O FINAL", "OLHA A REAÇÃO DELE"), sem emoji. Deixe vazio se não ajudar ou se repetir o gancho.
+- title (até 70 caracteres, também pode exagerar), caption (1 ou 2 frases, terminando com um convite a comentar, sem hashtags) e hashtags (3 a 6, começando com #).
 - score: 1 a 10, honesto (8+ = eu compartilharia).
 - keep: false se, olhando de perto, o momento não se sustenta.
 - reason: uma frase sobre por que funciona (ou não).
 
-A duração FINAL (end − start − cortes) deve ficar entre o mínimo e o máximo informados.`;
+A duração FINAL (end − start − cortes) é a do momento; só não pode passar dos limites técnicos informados.`;
 
 /** Transcrição em linhas curtas com tempo, marcando as pausas (ajuda a decidir os cortes). */
 export function wordLines(words: Word[], start: number, end: number): string {
@@ -87,7 +92,7 @@ export function sanitizeEdit(
   win: Range,
   minLen: number,
   maxLen: number,
-  opts: { allowCuts: boolean; punchZoom: boolean; maxZooms?: number },
+  opts: { allowCuts: boolean; punchZoom: boolean; bottomText?: boolean; maxZooms?: number },
 ): EditDecision | null {
   if (!raw.keep) return null;
   let s = Math.max(win.start, Math.min(raw.start, win.end));
@@ -138,6 +143,7 @@ export function sanitizeEdit(
   }
 
   const emphasis = [...new Set(raw.emphasis.map((w) => w.trim()).filter((w) => normWord(w)))].slice(0, 6);
+  const bottom = (raw.bottom_text ?? "").trim().slice(0, 40);
   const r1 = (n: number) => Math.round(n * 100) / 100;
   return {
     candidateId: "",
@@ -146,6 +152,7 @@ export function sanitizeEdit(
     cuts: cuts.map((c) => ({ start: r1(c.start), end: r1(c.end) })),
     zooms: zooms.map((z) => ({ start: r1(z.start), end: r1(z.end) })),
     emphasis,
+    bottomText: opts.bottomText !== false && bottom ? bottom : undefined,
     score: raw.score,
     hookTitle: raw.hook_title.trim(),
     title: raw.title.trim(),
@@ -170,6 +177,7 @@ export async function editClip(input: {
   maxSeconds: number;
   allowCuts: boolean;
   punchZoom: boolean;
+  bottomText: boolean;
 }): Promise<EditDecision | null> {
   const s = input.suggestion;
   const text = [
@@ -177,9 +185,10 @@ export async function editClip(input: {
     input.streamer.context ? `Contexto do streamer: ${input.streamer.context}` : null,
     `Vídeo de origem: ${input.sourceTitle}`,
     `Sugestão da triagem: t=${s.start.toFixed(1)} até t=${s.end.toFixed(1)} · nota ${s.score} · gancho "${s.hookTitle}" · título "${s.title}" · motivo: ${s.reason}`,
-    `Janela disponível: t=${input.window.start.toFixed(1)} até t=${input.window.end.toFixed(1)}. Duração FINAL: entre ${input.minSeconds} e ${input.maxSeconds} s.`,
+    `Janela disponível: t=${input.window.start.toFixed(1)} até t=${input.window.end.toFixed(1)}. Limites técnicos da duração final: ${input.minSeconds} a ${input.maxSeconds} s (dentro disso, a duração é a do momento).`,
     input.allowCuts ? null : "Cortes internos estão desligados: devolva cuts vazio.",
     input.punchZoom ? null : "Zoom de reação está desligado: devolva zooms vazio.",
+    input.bottomText ? null : "Rodapé desligado: devolva bottom_text vazio.",
     "",
     "Transcrição palavra por palavra:",
     wordLines(input.words, input.window.start, input.window.end),
@@ -207,6 +216,7 @@ export async function editClip(input: {
   const dec = sanitizeEdit(raw, input.window, input.minSeconds, input.maxSeconds, {
     allowCuts: input.allowCuts,
     punchZoom: input.punchZoom,
+    bottomText: input.bottomText,
   });
   return dec ? { ...dec, candidateId: s.candidateId } : null;
 }

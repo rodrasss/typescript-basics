@@ -22,9 +22,14 @@ export interface AssOptions {
   emphasis?: string[];
   /** hex RGB da cor de destaque */
   emphasisColor?: string;
-  /** distâncias verticais (px) — mudam conforme o layout */
+  /** texto curto embaixo do vídeo (ex.: "ESPERA O FINAL") */
+  bottomText?: string;
+  /** distâncias verticais (px) e âncoras — mudam conforme o layout (2 = medido de baixo, 8 = de cima) */
   hookMarginV?: number;
   captionMarginV?: number;
+  captionAlign?: 2 | 8;
+  footerMarginV?: number;
+  footerAlign?: 2 | 8;
   creditMarginV?: number;
 }
 
@@ -59,8 +64,16 @@ export function normWord(s: string): string {
     .replace(/[^\p{L}\p{N}]/gu, "");
 }
 
+/** Texto seguro para a tela: sem tags ASS e sem emoji (o libass não desenha emoji colorido → viraria um quadrado). */
 function escapeText(s: string): string {
-  return s.replace(/\\/g, "/").replace(/\{/g, "(").replace(/\}/g, ")").replace(/\r?\n/g, " ");
+  return s
+    .replace(/[\p{Extended_Pictographic}\u{FE0F}\u{200D}\u{20E3}]/gu, "")
+    .replace(/\\/g, "/")
+    .replace(/\{/g, "(")
+    .replace(/\}/g, ")")
+    .replace(/\r?\n/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
 /** Agrupa palavras em blocos curtos, quebrando em pausas e pontuação. */
@@ -99,9 +112,10 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,${font},86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,4,2,70,70,${o.captionMarginV ?? 560},1
+Style: Caption,${font},86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,4,${o.captionAlign ?? 2},70,70,${o.captionMarginV ?? 470},1
 Style: Hook,${font},68,&H00000000,&H00000000,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,0,0,3,16,0,8,90,90,${o.hookMarginV ?? 230},1
-Style: Credit,${font},40,&H30FFFFFF,&H30FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,2,60,60,${o.creditMarginV ?? 420},1
+Style: Footer,${font},50,&H00FFFFFF,&H00FFFFFF,&H50000000,&H00000000,-1,0,0,0,100,100,0,0,3,12,0,${o.footerAlign ?? 2},90,90,${o.footerMarginV ?? 395},1
+Style: Credit,${font},40,&H30FFFFFF,&H30FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,2,60,60,${o.creditMarginV ?? 330},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -110,6 +124,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
   const end = assTime(o.duration);
   if (o.hookTitle) {
     events.push(`Dialogue: 1,${assTime(0)},${end},Hook,,0,0,0,,{\\fad(150,0)}${escapeText(o.hookTitle)}`);
+  }
+  if (o.bottomText) {
+    // o rodapé ("ESPERA O FINAL") some no último quarto, quando o final chega
+    const footerEnd = assTime(Math.max(Math.min(3, o.duration), o.duration * 0.75));
+    events.push(`Dialogue: 1,${assTime(0)},${footerEnd},Footer,,0,0,0,,{\\fad(150,200)}${escapeText(o.bottomText)}`);
   }
   if (o.credit) {
     events.push(`Dialogue: 1,${assTime(0)},${end},Credit,,0,0,0,,${escapeText(o.credit)}`);

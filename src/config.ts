@@ -21,6 +21,10 @@ const StreamerSchema = z.object({
   clipPermission: z.boolean().default(false),
   /** Contexto extra para o Claude (personagem no RP, bordões, servidor...). */
   context: z.string().optional(),
+  /** Máximo de cortes por vídeo só deste streamer (ex.: 1 para quem você quer postar menos). */
+  perVideo: z.number().int().min(0).optional(),
+  /** Nota mínima só deste streamer (ex.: 8 = só os melhores). */
+  minScore: z.number().min(1).max(10).optional(),
   /** Layout só deste streamer (senão usa render.layout). */
   layout: z.enum(["blur", "crop", "split"]).optional(),
   /**
@@ -43,8 +47,20 @@ const ConfigSchema = z.object({
       perVideo: z.number().int().positive().default(5),
       /** Quantos picos de áudio viram candidatos para o Claude avaliar. */
       candidates: z.number().int().positive().default(15),
-      minSeconds: z.number().positive().default(15),
-      maxSeconds: z.number().positive().default(60),
+      /**
+       * Limites de segurança. A duração de cada corte é decidida pelo conteúdo
+       * (do começo ao fim da situação); 180 s é o limite dos Shorts/Reels.
+       */
+      minSeconds: z.number().positive().default(5),
+      maxSeconds: z.number().positive().default(180),
+      /** Quanto da live antes/depois de cada pico de reação a IA enxerga (para pegar a situação inteira). */
+      windowBefore: z.number().positive().default(90),
+      windowAfter: z.number().positive().default(45),
+      /**
+       * Só analisa os trechos da live com estes jogos (nomes da categoria na Twitch).
+       * Lista vazia = qualquer jogo. Vídeos sem essa informação (YouTube) são analisados inteiros.
+       */
+      games: z.array(z.string()).default(["Grand Theft Auto VI", "Grand Theft Auto V"]),
       /** Nota mínima (1-10) que o Claude precisa dar para o corte ser renderizado. */
       minScore: z.number().min(1).max(10).default(6),
       language: z.string().default("pt"),
@@ -79,6 +95,8 @@ const ConfigSchema = z.object({
       allowCuts: z.boolean().default(true),
       /** Permite o zoom rápido na reação. */
       punchZoom: z.boolean().default(true),
+      /** Texto curto embaixo do vídeo escrito pela IA (ex.: "ESPERA O FINAL"), quando ela achar que ajuda. */
+      bottomText: z.boolean().default(true),
       preset: z.string().default("veryfast"),
     })
     .prefault({}),
