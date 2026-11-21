@@ -74,7 +74,8 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `streamers[].context` | Contexto para o Claude: personagem no RP, servidor, bordões. Melhora bastante os títulos. |
 | `streamers[].layout` / `facecam` | `"split"` + posição da câmera (frações 0–1) para usar câmera em cima e jogo embaixo. |
 | `streamers[].perVideo` / `minScore` | Limites só desse streamer (ex.: `perVideo: 1, minScore: 8` para postar pouco e só o melhor). |
-| `clips.perVideo` / `candidates` | Máximo de cortes por VOD e quantos picos o Claude avalia. |
+| `clips.perVideo` / `candidates` | Cortes por VOD (mínimo) e quantos picos o Claude avalia. |
+| `clips.perHour` / `maxPerVideo` | Lives longas rendem mais cortes: até 1,5 por hora de GTA (uma live de 6 h dá até 9), com teto de 12. `perHour: 0` desliga. |
 | `clips.minSeconds` / `maxSeconds` | Só limites técnicos (5 s e 180 s, o máximo dos Shorts/Reels). A duração de cada corte é a do momento, do começo ao fim da situação. |
 | `clips.windowBefore` / `windowAfter` | Quanto da live antes/depois de cada pico a IA enxerga (para pegar a situação inteira). |
 | `clips.games` / `gameKeywords` | Só analisa GTA: na Twitch, pelos trechos de cada jogo; na Kick/YouTube, pela categoria ou por palavras no título ("GTA", "Vice City", "RP"). Lives de outros jogos são puladas. |

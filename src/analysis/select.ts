@@ -1,7 +1,7 @@
 import type { BetaContentBlockParam } from "@anthropic-ai/sdk/resources/beta/messages/messages";
 import { z } from "zod";
 import { askClaude, effort } from "./claude";
-import { frameBase64, type Frame } from "./frames";
+import { existingFrames, frameBase64, type Frame } from "./frames";
 import type { Segment } from "./transcribe";
 
 /**
@@ -122,7 +122,7 @@ export async function selectClips(input: {
   const content: BetaContentBlockParam[] = [{ type: "text", text: intro }];
   for (const c of input.candidates) {
     content.push({ type: "text", text: describeCandidate(c) });
-    for (const f of c.frames ?? []) {
+    for (const f of existingFrames(c.frames ?? [])) {
       content.push({ type: "text", text: `frame do candidato ${c.id} em t=${f.t.toFixed(1)}:` });
       content.push({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: frameBase64(f) } });
     }

@@ -74,6 +74,18 @@ function limitsFor(cfg: Config, s: Streamer): { perVideo: number; minScore: numb
   return { perVideo: s.perVideo ?? cfg.clips.perVideo, minScore: s.minScore ?? cfg.clips.minScore };
 }
 
+/** Segundos de live que serão analisados (dentro dos trechos permitidos). */
+export function analyzedSeconds(allowed: Range[] | null, start: number, end: number): number {
+  if (!allowed) return Math.max(0, end - start);
+  return allowed.reduce((s, r) => s + Math.max(0, Math.min(r.end, end) - Math.max(r.start, start)), 0);
+}
+
+/** Lives longas rendem mais cortes: perHour por hora, entre perVideo e maxPerVideo. */
+export function scaledPerVideo(cfg: Config, perVideo: number, seconds: number): number {
+  if (cfg.clips.perHour <= 0) return perVideo;
+  return Math.max(perVideo, Math.min(cfg.clips.maxPerVideo, Math.ceil((seconds / 3600) * cfg.clips.perHour)));
+}
+
 /** Base de conhecimento para este streamer (manual + exemplos reais + suas decisões no painel). */
 function knowledgeFor(ctx: Ctx, streamer: Streamer): string {
   return buildKnowledge({ streamer, clips: ctx.state.clips(), maxExamples: ctx.cfg.knowledge.maxExamples });
@@ -254,6 +266,7 @@ export async function processVod(
       work,
       perVideo,
       minScore,
+      scale: streamer.perVideo === undefined,
     });
     state.markDone(info.key);
     return out;
@@ -283,6 +296,8 @@ async function clipsFromAudio(
     perVideo: number;
     minScore: number;
     live?: boolean;
+    /** aumenta o limite de cortes conforme a duração analisada */
+    scale?: boolean;
   },
 ): Promise<ClipRecord[]> {
   const { cfg, state } = ctx;
@@ -298,8 +313,11 @@ async function clipsFromAudio(
     t < offset ? -Infinity : !allowed || allowed.some((r) => t >= r.start && t < r.end) ? v : -Infinity,
   );
   if (allowed) log.info(`Analisando: ${allowed.map((r) => `${hms(r.start)}–${Number.isFinite(r.end) ? hms(r.end) : "fim"}`).join(", ")}`);
-  let peaks = pickPeaks(inAllowed, { count: cfg.clips.candidates, minScore: 2 });
-  if (peaks.length < 3) peaks = pickPeaks(inAllowed, { count: cfg.clips.candidates, minScore: -1e9 });
+  const maxClips = audio.scale ? scaledPerVideo(cfg, perVideo, analyzedSeconds(allowed, offset, audioEnd)) : perVideo;
+  const nCand = Math.min(45, Math.max(cfg.clips.candidates, maxClips * 3));
+  if (maxClips > perVideo) log.info(`Live longa: até ${maxClips} cortes (${nCand} candidatos).`);
+  let peaks = pickPeaks(inAllowed, { count: nCand, minScore: 2 });
+  if (peaks.length < 3) peaks = pickPeaks(inAllowed, { count: nCand, minScore: -1e9 });
   log.info(`${peaks.length} trechos candidatos encontrados.`);
   if (!peaks.length) return [];
 
@@ -333,7 +351,7 @@ async function clipsFromAudio(
       knowledge,
       sourceTitle: src.title,
       candidates: transcribed.map((t) => t.cand),
-      maxClips: perVideo,
+      maxClips,
       minSeconds: cfg.clips.minSeconds,
       maxSeconds: cfg.clips.maxSeconds,
     })

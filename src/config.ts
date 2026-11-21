@@ -45,9 +45,16 @@ const ConfigSchema = z.object({
   streamers: z.array(StreamerSchema).default([]),
   clips: z
     .object({
-      /** Máximo de cortes gerados por vídeo/lote. */
+      /** Mínimo de cortes por vídeo (lives longas podem render mais, veja perHour). */
       perVideo: z.number().int().positive().default(5),
-      /** Quantos picos de áudio viram candidatos para o Claude avaliar. */
+      /**
+       * Lives longas rendem mais cortes: até `perHour` cortes por hora de GTA analisada
+       * (ex.: 6 h × 1,5 = 9), limitado a `maxPerVideo`. 0 desliga. Não vale para quem
+       * tem `perVideo` próprio no streamer (ex.: Cellbit).
+       */
+      perHour: z.number().min(0).default(1.5),
+      maxPerVideo: z.number().int().positive().default(12),
+      /** Quantos picos de áudio viram candidatos para o Claude avaliar (sobe sozinho em lives longas). */
       candidates: z.number().int().positive().default(15),
       /**
        * Limites de segurança. A duração de cada corte é decidida pelo conteúdo
