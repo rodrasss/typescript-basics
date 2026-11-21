@@ -250,6 +250,7 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
      - num arquivo `.legenda-tiktok.txt` ao lado do vídeo;
      - no painel, com o botão **Copiar legenda**.
    - **Pelo celular:** no PC, rode `npm run clipper -- painel --celular`. Aponte a câmera do celular para o QR code que aparece; o celular precisa estar no mesmo Wi-Fi. Se o Windows perguntar sobre o firewall, permita em **redes privadas**.
+   - O TikTok aceita no máximo **5 vídeos esperando** na caixa de entrada. Quando chega nisso, o programa para de mandar e deixa os próximos na fila; eles vão na rodada seguinte, depois que você publicar os que estão lá.
    - Na aba **Publicados**, toque em **Copiar legenda**. Depois, no app do TikTok, abra a notificação do vídeo, cole a legenda, coloque uma **música em alta** (ajuda muito no alcance) e publique.
    - Para postar 100% sozinho e público, peça a auditoria da Content Posting API (https://developers.tiktok.com/application/content-posting-api). Quando ela for aprovada, troque no `.env` as chaves do Sandbox pelas de Production e refaça o `auth:tiktok`. A partir daí o programa posta direto, já com a legenda.
 
