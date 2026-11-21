@@ -35,7 +35,14 @@ export async function withRetry<T>(
     tries = 4,
     baseMs = 2000,
     shouldRetry = () => true,
-  }: { tries?: number; baseMs?: number; shouldRetry?: (e: unknown) => boolean } = {},
+    delayFor,
+  }: {
+    tries?: number;
+    baseMs?: number;
+    shouldRetry?: (e: unknown) => boolean;
+    /** espera sugerida pelo servidor (ms), ex.: "try again in 3s" */
+    delayFor?: (e: unknown) => number | undefined;
+  } = {},
 ): Promise<T> {
   let last: unknown;
   for (let i = 0; i < tries; i++) {
@@ -44,7 +51,7 @@ export async function withRetry<T>(
     } catch (e) {
       last = e;
       if (i === tries - 1 || !shouldRetry(e)) break;
-      await sleep(baseMs * 2 ** i);
+      await sleep(delayFor?.(e) ?? baseMs * 2 ** i);
     }
   }
   throw last;

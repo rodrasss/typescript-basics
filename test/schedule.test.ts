@@ -33,3 +33,14 @@ test("créditos do streamer sempre na legenda do post", () => {
   assert.match(t.caption, /🎥 Créditos: twitch\.tv\/alanzoka/);
   assert.match(t.description, /🎥 Créditos: twitch\.tv\/alanzoka/);
 });
+
+test("lives longas rendem mais cortes, com limite", async () => {
+  const { analyzedSeconds, scaledPerVideo } = await import("../src/pipeline");
+  const cfg = loadConfig();
+  assert.equal(scaledPerVideo(cfg, 5, 2 * 3600), 5); // 2 h → fica no mínimo
+  assert.equal(scaledPerVideo(cfg, 5, 6.5 * 3600), 10); // 6,5 h × 1,5
+  assert.equal(scaledPerVideo(cfg, 5, 20 * 3600), 12); // teto
+  assert.equal(scaledPerVideo({ ...cfg, clips: { ...cfg.clips, perHour: 0 } }, 5, 8 * 3600), 5);
+  assert.equal(analyzedSeconds([{ start: 100, end: 200 }, { start: 500, end: Infinity }], 0, 1000), 600);
+  assert.equal(analyzedSeconds(null, 50, 1000), 950);
+});
