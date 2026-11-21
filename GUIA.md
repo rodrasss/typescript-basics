@@ -237,7 +237,7 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
    ```
    O login fica salvo em `data/tiktok-token.json` e se renova sozinho. **Não apague esse arquivo.**
 9. **Como os posts saem:** a IA escreve título, legenda e hashtags, e os **créditos do streamer** ("🎥 Créditos: twitch.tv/...") vão sempre na legenda. O programa tenta **postar direto e público** (`"tiktokMode": "direct"`); enquanto o app não tiver a aprovação do TikTok, ele manda para a **caixa de entrada do app do TikTok**. Você recebe uma notificação, abre o app, coloca uma **música em alta** (ajuda muito no alcance) e publica.
-   - Para publicar direto, use `"tiktokMode": "direct"`. Mas sem a auditoria da Content Posting API (https://developers.tiktok.com/application/content-posting-api), os posts diretos só saem como **privados**.
+   - Para postar 100% sozinho e público, peça a auditoria da Content Posting API (https://developers.tiktok.com/application/content-posting-api). Quando ela for aprovada, o programa passa a postar direto sem você mudar nada.
 
 ### 11. Instagram Reels
 1. **Conta Profissional.** No app do Instagram: **Configurações → Tipo de conta e ferramentas → Mudar para conta profissional** (Criador serve).
@@ -331,6 +331,6 @@ Para tirar um corte só, use `npm run clipper -- remover ID` (veja o ID no paine
 - **"Sign in to confirm you're not a bot" (YouTube).** Exporte os cookies do navegador logado (veja https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp) e coloque `YTDLP_COOKIES=./cookies.txt` no `.env`.
 - **yt-dlp dando erro do nada.** Atualize: `winget upgrade yt-dlp.yt-dlp`, `brew upgrade yt-dlp` ou `pipx upgrade yt-dlp`.
 - **YouTube pede login de novo toda semana.** Falta **Publicar app** na tela de consentimento (passo 9.3).
-- **TikTok: `unaudited_client_can_only_post_to_private_accounts`.** Use `"tiktokMode": "inbox"` (o padrão).
+- **TikTok: `unaudited_client_can_only_post_to_private_accounts`.** O app ainda não tem a aprovação do TikTok. O programa já manda para a caixa de entrada sozinho; para postar público direto, peça a auditoria (passo 10.9).
 - **Instagram: "Nenhuma Página com conta do Instagram ligada".** Refaça o passo 11.2.
 - **Fonte da legenda.** Baixe uma fonte grossa (ex.: Montserrat em https://fonts.google.com/specimen/Montserrat), coloque o `.ttf` em `assets/fonts/` e use `"font": "Montserrat ExtraBold"` em `render`.
