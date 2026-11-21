@@ -322,11 +322,18 @@ async function clipsFromAudio(
   if (!peaks.length) return [];
 
   log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
-  const transcribed = await mapLimit(peaks, 3, async (p, i) => {
+  const results = await mapLimit(peaks, 3, async (p, i) => {
     const start = Math.max(offset, p.t - cfg.clips.windowBefore);
     const end = Math.min(audioEnd, p.t + cfg.clips.windowAfter);
     const mp3 = await extractAudio(file, start - offset, end - start, join(work, `cand-${i + 1}.mp3`));
-    const tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
+    let tr;
+    try {
+      tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
+    } catch (e) {
+      // um candidato sem transcrição fica de fora; os outros seguem
+      log.warn(`Candidato em ${hms(p.t)} ficou de fora: ${errMsg(e).slice(0, 160)}`);
+      return null;
+    }
     const cand: Candidate = {
       id: `c${i + 1}`,
       start,
@@ -340,6 +347,8 @@ async function clipsFromAudio(
     };
     return { cand, words: tr.words };
   });
+  const transcribed = results.filter((r) => r !== null);
+  if (!transcribed.length) throw new Error("Nenhum candidato foi transcrito (veja os avisos acima).");
   const wordsById = new Map(transcribed.map((t) => [t.cand.id, t.words]));
   const candById = new Map(transcribed.map((t) => [t.cand.id, t.cand]));
   const knowledge = knowledgeFor(ctx, streamer);

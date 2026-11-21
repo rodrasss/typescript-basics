@@ -1,7 +1,8 @@
-import { openAsBlob } from "node:fs";
+import { openAsBlob, statSync } from "node:fs";
 import { basename } from "node:path";
 import { env, requireEnv } from "../config";
 import { run } from "../util/exec";
+import { log } from "../util/log";
 import { sleep, withRetry } from "../util/misc";
 
 /**
@@ -60,18 +61,39 @@ export function retryAfterMs(header: string | null, body: string): number | unde
   return undefined;
 }
 
-// O plano grátis do Groq aceita 20 transcrições por minuto: segura o ritmo aqui
-// em vez de tomar erro 429 (lives longas têm 30+ candidatos).
+// O plano grátis do Groq aceita 20 transcrições por minuto e 2 h de áudio por hora.
+// Segura o ritmo aqui em vez de tomar erro 429 (lives longas têm 30+ candidatos).
+// No plano pago (Dev Tier) os limites são bem maiores: TRANSCRIBE_RPM / TRANSCRIBE_ASPH (0 = sem limite).
 const recent: number[] = [];
-async function rateGate(): Promise<void> {
+const recentAudio: Array<{ at: number; seconds: number }> = [];
+let warnedAt = 0;
+async function rateGate(seconds: number): Promise<void> {
   const rpm = Number(env("TRANSCRIBE_RPM") ?? 18);
+  const asph = Number(env("TRANSCRIBE_ASPH") ?? 7200) * 0.97;
   for (;;) {
     const now = Date.now();
     while (recent.length && now - recent[0]! > 60_000) recent.shift();
-    if (recent.length < rpm) break;
-    await sleep(60_000 - (now - recent[0]!) + 200);
+    while (recentAudio.length && now - recentAudio[0]!.at > 3_600_000) recentAudio.shift();
+    const used = recentAudio.reduce((s, x) => s + x.seconds, 0);
+    let wait = 0;
+    if (rpm > 0 && recent.length >= rpm) wait = 60_000 - (now - recent[0]!) + 200;
+    if (asph > 0 && recentAudio.length && used + seconds > asph) {
+      wait = Math.max(wait, 3_600_000 - (now - recentAudio[0]!.at) + 1000);
+      if (now - warnedAt > 300_000) {
+        warnedAt = now;
+        log.info(`Limite do Groq (${Math.round(asph / 0.97 / 60)} min de áudio por hora): esperando ${Math.ceil(wait / 60_000)} min…`);
+      }
+    }
+    if (wait <= 0) break;
+    await sleep(wait);
   }
   recent.push(Date.now());
+  recentAudio.push({ at: Date.now(), seconds });
+}
+
+/** Duração do mp3 gerado por extractAudio (48 kbps constante). */
+function mp3Seconds(file: string): number {
+  return (statSync(file).size * 8) / 48_000;
 }
 
 export async function transcribe(file: string, language: string): Promise<Transcript> {
@@ -88,7 +110,7 @@ export async function transcribe(file: string, language: string): Promise<Transc
       form.append("response_format", "verbose_json");
       form.append("timestamp_granularities[]", "word");
       form.append("timestamp_granularities[]", "segment");
-      await rateGate();
+      await rateGate(mp3Seconds(file));
       const res = await fetch(`${baseUrl}/audio/transcriptions`, {
         method: "POST",
         headers: { Authorization: `Bearer ${key}` },
@@ -105,9 +127,10 @@ export async function transcribe(file: string, language: string): Promise<Transc
       };
     },
     {
-      tries: 6,
+      tries: 10,
       shouldRetry: (e) => !(e instanceof HttpError) || e.status === 429 || e.status >= 500,
-      delayFor: (e) => (e instanceof HttpError && e.retryAfterMs !== undefined ? Math.min(e.retryAfterMs + 500, 90_000) : undefined),
+      // o limite por hora pode pedir vários minutos de espera
+      delayFor: (e) => (e instanceof HttpError && e.retryAfterMs !== undefined ? Math.min(e.retryAfterMs + 1000, 600_000) : undefined),
     },
   );
 
