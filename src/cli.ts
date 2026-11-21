@@ -9,7 +9,7 @@ import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { processTwitchClips, processVod, publishApproved, watchAll, type Ctx } from "./pipeline";
 import { isConfigured } from "./publish";
 import { instagramAuthFlow } from "./publish/instagram";
-import { tiktokAuthFlow, tiktokRefreshDaysLeft } from "./publish/tiktok";
+import { tiktokAuthFinish, tiktokAuthFlow, tiktokAuthLink, tiktokRefreshDaysLeft } from "./publish/tiktok";
 import { youtubeAuthFlow } from "./publish/youtube";
 import { gridFrame } from "./render/render";
 import { downloadSection, getInfo } from "./sources/ytdlp";
@@ -291,7 +291,19 @@ program
 program
   .command("auth:tiktok")
   .description("Faz o login do TikTok (Login Kit) e salva os tokens em data/tiktok-token.json")
-  .action(action(tiktokAuthFlow));
+  .option("--link", "só gera o link de login (para abrir em outro aparelho, ex.: celular)")
+  .option("--url <url>", "termina o login com a URL para onde o TikTok redirecionou")
+  .action(
+    action(async (o: { link?: boolean; url?: string }) => {
+      if (o.url) return tiktokAuthFinish(o.url);
+      if (o.link) {
+        console.log(`\nAbra no celular (logado na conta do TikTok que vai postar):\n\n${tiktokAuthLink()}\n`);
+        console.log('Depois de autorizar, copie a URL da página que abrir (ela não carrega, é normal) e rode:\n  npm run clipper -- auth:tiktok --url "COLE_A_URL_AQUI"\n');
+        return;
+      }
+      return tiktokAuthFlow();
+    }),
+  );
 
 program
   .command("auth:instagram")
