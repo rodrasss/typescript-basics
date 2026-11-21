@@ -67,7 +67,10 @@ export function retryAfterMs(header: string | null, body: string): number | unde
 const recent: number[] = [];
 const recentAudio: Array<{ at: number; seconds: number }> = [];
 let warnedAt = 0;
+/** Depois de um 429, todos os pedidos esperam juntos (senão os outros pegam a cota liberada antes). */
+let pauseUntil = 0;
 async function rateGate(seconds: number): Promise<void> {
+  if (pauseUntil > Date.now()) await sleep(pauseUntil - Date.now());
   const rpm = Number(env("TRANSCRIBE_RPM") ?? 18);
   const asph = Number(env("TRANSCRIBE_ASPH") ?? 7200) * 0.97;
   for (;;) {
@@ -123,7 +126,9 @@ export async function transcribe(file: string, language: string): Promise<Transc
       if (res.status !== 429) countAudio(mp3Seconds(file));
       if (!res.ok) {
         const body = await res.text();
-        throw new HttpError(res.status, `Transcrição falhou (${res.status}): ${body}`, retryAfterMs(res.headers.get("retry-after"), body));
+        const wait = retryAfterMs(res.headers.get("retry-after"), body);
+        if (res.status === 429 && wait !== undefined) pauseUntil = Math.max(pauseUntil, Date.now() + wait + 1000);
+        throw new HttpError(res.status, `Transcrição falhou (${res.status}): ${body}`, wait);
       }
       return (await res.json()) as {
         text?: string;
@@ -132,7 +137,8 @@ export async function transcribe(file: string, language: string): Promise<Transc
       };
     },
     {
-      tries: 10,
+      // no limite por hora, a espera total fica em torno de 1 h no pior caso
+      tries: 25,
       shouldRetry: (e) => !(e instanceof HttpError) || e.status === 429 || e.status >= 500,
       // o limite por hora pode pedir vários minutos de espera
       delayFor: (e) => (e instanceof HttpError && e.retryAfterMs !== undefined ? Math.min(e.retryAfterMs + 1000, 600_000) : undefined),

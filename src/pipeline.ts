@@ -83,7 +83,7 @@ export function analyzedSeconds(allowed: Range[] | null, start: number, end: num
 /** Junta janelas que se sobrepõem (em ordem de tempo) em grupos de no máximo `maxLen` segundos. */
 export function groupWindows<T extends { start: number; end: number }>(
   windows: T[],
-  maxLen = 600,
+  maxLen = 360,
 ): Array<{ start: number; end: number; members: T[] }> {
   const groups: Array<{ start: number; end: number; members: T[] }> = [];
   for (const w of [...windows].sort((a, b) => a.start - b.start)) {
