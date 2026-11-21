@@ -10,6 +10,8 @@ export interface PostResult {
   id?: string;
   url?: string;
   note?: string;
+  /** Legenda pronta para colar (quando o TikTok manda para a caixa de entrada sem texto). */
+  text?: string;
   error?: string;
 }
 

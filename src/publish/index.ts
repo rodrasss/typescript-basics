@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs";
+import { existsSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { env, type Config, type Platform } from "../config";
 import { DATA_DIR } from "../paths";
@@ -43,7 +43,7 @@ export async function publishClip(c: ClipRecord, platforms: Platform[], cfg: Con
     }
     log.step(`Postando ${c.id} no ${p}…`);
     try {
-      const r: { id: string; url?: string; note?: string } =
+      const r: { id: string; url?: string; note?: string; inbox?: boolean } =
         p === "youtube"
           ? await uploadYouTube(c.file, {
               title: c.title.includes("#") ? c.title : `${c.title} #shorts`,
@@ -59,6 +59,13 @@ export async function publishClip(c: ClipRecord, platforms: Platform[], cfg: Con
               })
             : await uploadInstagram(c.file, { caption: `${c.title}\n\n${caption}` });
       const post: PostResult = { at: new Date().toISOString(), id: r.id, url: r.url, note: r.note };
+      if (r.inbox) {
+        // a caixa de entrada do TikTok não recebe texto: guarda a legenda (com os créditos) pronta para colar
+        post.text = `${c.title}\n\n${caption}`;
+        const txt = c.file.replace(/\.mp4$/i, "") + ".legenda-tiktok.txt";
+        writeFileSync(txt, post.text + "\n");
+        log.info(`Legenda para colar no TikTok (também em ${txt}):\n${post.text}`);
+      }
       c.posts[p] = post;
       log.ok(`${p}: ${r.url ?? r.note ?? r.id}`);
     } catch (e) {

@@ -181,7 +181,7 @@ export function chunkPlan(size: number, chunk = 10_000_000): { chunkSize: number
 export async function uploadTikTok(
   file: string,
   meta: { caption: string; privacy: string; mode: "inbox" | "direct" },
-): Promise<{ id: string; url?: string; note?: string }> {
+): Promise<{ id: string; url?: string; note?: string; inbox?: boolean }> {
   const token = await accessToken();
   const data = await readFile(file);
   const size = data.length;
@@ -242,7 +242,7 @@ export async function uploadTikTok(
       { publish_id: init.publish_id },
     );
     if (st.status === "SEND_TO_USER_INBOX") {
-      return { id: init.publish_id, note: "Na caixa de entrada do app do TikTok: abra o app, finalize e publique." };
+      return { id: init.publish_id, inbox: true, note: "Na caixa de entrada do app do TikTok: abra o app, cole a legenda e publique." };
     }
     if (st.status === "PUBLISH_COMPLETE") {
       const postId = st.publicaly_available_post_id?.[0];
