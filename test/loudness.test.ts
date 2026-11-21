@@ -35,3 +35,31 @@ test("perfil de intensidade tem um valor a cada 2 s", () => {
   assert.equal(prof.length, 10);
   assert.equal(prof[5], 9);
 });
+
+test("janelas sobrepostas são transcritas juntas", async () => {
+  const { groupWindows } = await import("../src/pipeline");
+  const g = groupWindows([
+    { start: 0, end: 135 },
+    { start: 80, end: 215 },
+    { start: 400, end: 535 },
+  ]);
+  assert.equal(g.length, 2);
+  assert.deepEqual([g[0]!.start, g[0]!.end, g[0]!.members.length], [0, 215, 2]);
+  // não passa do tamanho máximo
+  assert.equal(groupWindows([{ start: 0, end: 135 }, { start: 100, end: 235 }], 200).length, 2);
+});
+
+test("recorta a transcrição do grupo para cada candidato", async () => {
+  const { sliceTranscript } = await import("../src/analysis/transcribe");
+  const t = sliceTranscript(
+    {
+      text: "",
+      segments: [{ start: 0, end: 5, text: "a" }, { start: 6, end: 10, text: "b" }, { start: 20, end: 25, text: "c" }],
+      words: [{ text: "a", start: 1, end: 2 }, { text: "b", start: 7, end: 8 }, { text: "c", start: 21, end: 22 }],
+    },
+    5.5,
+    15,
+  );
+  assert.deepEqual(t.segments.map((s) => s.text), ["b"]);
+  assert.deepEqual(t.words.map((w) => w.text), ["b"]);
+});

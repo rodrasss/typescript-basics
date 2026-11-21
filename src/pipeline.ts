@@ -5,7 +5,7 @@ import { editClip, fromSelection, type EditDecision } from "./analysis/edit";
 import { frameTimes, framesFromFile, framesFromHls, type Frame } from "./analysis/frames";
 import { buildKnowledge } from "./analysis/knowledge";
 import { selectClips, type Candidate, type SelectedClip } from "./analysis/select";
-import { extractAudio, shiftTranscript, transcribe, type Word } from "./analysis/transcribe";
+import { extractAudio, shiftTranscript, sliceTranscript, transcribe, type Transcript, type Word } from "./analysis/transcribe";
 import { assertPermission, creditFor, env, type Config, type Platform, type Streamer } from "./config";
 import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { publishClip } from "./publish";
@@ -78,6 +78,22 @@ function limitsFor(cfg: Config, s: Streamer): { perVideo: number; minScore: numb
 export function analyzedSeconds(allowed: Range[] | null, start: number, end: number): number {
   if (!allowed) return Math.max(0, end - start);
   return allowed.reduce((s, r) => s + Math.max(0, Math.min(r.end, end) - Math.max(r.start, start)), 0);
+}
+
+/** Junta janelas que se sobrepõem (em ordem de tempo) em grupos de no máximo `maxLen` segundos. */
+export function groupWindows<T extends { start: number; end: number }>(
+  windows: T[],
+  maxLen = 600,
+): Array<{ start: number; end: number; members: T[] }> {
+  const groups: Array<{ start: number; end: number; members: T[] }> = [];
+  for (const w of [...windows].sort((a, b) => a.start - b.start)) {
+    const g = groups.at(-1);
+    if (g && w.start <= g.end && Math.max(g.end, w.end) - g.start <= maxLen) {
+      g.end = Math.max(g.end, w.end);
+      g.members.push(w);
+    } else groups.push({ start: w.start, end: w.end, members: [w] });
+  }
+  return groups;
 }
 
 /** Lives longas rendem mais cortes: perHour por hora, entre perVideo e maxPerVideo. */
@@ -322,18 +338,32 @@ async function clipsFromAudio(
   if (!peaks.length) return [];
 
   log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
-  const results = await mapLimit(peaks, 3, async (p, i) => {
-    const start = Math.max(offset, p.t - cfg.clips.windowBefore);
-    const end = Math.min(audioEnd, p.t + cfg.clips.windowAfter);
-    const mp3 = await extractAudio(file, start - offset, end - start, join(work, `cand-${i + 1}.mp3`));
-    let tr;
+  // janelas que se sobrepõem são transcritas juntas (economiza o limite de áudio/hora do Groq)
+  const windows = peaks.map((p, i) => ({
+    i,
+    p,
+    start: Math.max(offset, p.t - cfg.clips.windowBefore),
+    end: Math.min(audioEnd, p.t + cfg.clips.windowAfter),
+  }));
+  const groups = groupWindows(windows);
+  const groupTr = await mapLimit(groups, 3, async (g, gi) => {
+    const mp3 = await extractAudio(file, g.start - offset, g.end - g.start, join(work, `grupo-${gi + 1}.mp3`));
     try {
-      tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
+      return shiftTranscript(await transcribe(mp3, cfg.clips.language), g.start);
     } catch (e) {
-      // um candidato sem transcrição fica de fora; os outros seguem
-      log.warn(`Candidato em ${hms(p.t)} ficou de fora: ${errMsg(e).slice(0, 160)}`);
+      // candidatos sem transcrição ficam de fora; os outros seguem
+      log.warn(`Trecho ${hms(g.start)}–${hms(g.end)} ficou de fora: ${errMsg(e).slice(0, 160)}`);
       return null;
     }
+  });
+  const trOf = new Map<number, Transcript>();
+  groups.forEach((g, gi) => {
+    const tr = groupTr[gi];
+    if (tr) for (const w of g.members) trOf.set(w.i, sliceTranscript(tr, w.start, w.end));
+  });
+  const results = await mapLimit(windows, 3, async ({ i, p, start, end }) => {
+    const tr = trOf.get(i);
+    if (!tr) return null;
     const cand: Candidate = {
       id: `c${i + 1}`,
       start,

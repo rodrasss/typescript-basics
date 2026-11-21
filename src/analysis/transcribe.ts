@@ -88,6 +88,10 @@ async function rateGate(seconds: number): Promise<void> {
     await sleep(wait);
   }
   recent.push(Date.now());
+}
+
+/** Registra o áudio que o servidor aceitou (pedido recusado com 429 não gasta a cota). */
+function countAudio(seconds: number): void {
   recentAudio.push({ at: Date.now(), seconds });
 }
 
@@ -116,6 +120,7 @@ export async function transcribe(file: string, language: string): Promise<Transc
         headers: { Authorization: `Bearer ${key}` },
         body: form,
       });
+      if (res.status !== 429) countAudio(mp3Seconds(file));
       if (!res.ok) {
         const body = await res.text();
         throw new HttpError(res.status, `Transcrição falhou (${res.status}): ${body}`, retryAfterMs(res.headers.get("retry-after"), body));
@@ -159,6 +164,16 @@ export function wordsFromSegments(segments: Segment[]): Word[] {
 }
 
 /** Desloca todos os tempos (para converter de "dentro do trecho" para "dentro da live"). */
+/** Só a parte da transcrição dentro de [start, end] (tempos absolutos). */
+export function sliceTranscript(t: Transcript, start: number, end: number): Transcript {
+  const segments = t.segments.filter((s) => s.end > start && s.start < end);
+  return {
+    text: segments.map((s) => s.text).join(" "),
+    segments,
+    words: t.words.filter((w) => w.end > start && w.start < end),
+  };
+}
+
 export function shiftTranscript(t: Transcript, offset: number): Transcript {
   return {
     text: t.text,
