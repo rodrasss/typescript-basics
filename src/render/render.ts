@@ -108,16 +108,29 @@ export function punchFilter(zooms: Range[], w: number, h: number): string {
 }
 
 /**
- * Junta os trechos mantidos e devolve os rótulos de vídeo/áudio resultantes.
- * Usa select/aselect num fluxo só: com trim + concat o ffmpeg guarda na memória
- * todos os quadros do trecho seguinte (um corte de 78 s em 1080p60 passou de 13 GB).
+ * Entradas do ffmpeg e grafo que junta os trechos mantidos.
+ * Cada trecho vira uma entrada própria (-ss/-t) e o concat junta: não depende da
+ * versão do ffmpeg e não guarda quadros na memória (usar trim várias vezes na mesma
+ * entrada fazia o ffmpeg guardar o trecho seguinte inteiro: 13 GB num corte de 78 s).
  */
-export function segmentsGraph(segments: Range[] | undefined, audio: boolean): { graph: string; v: string; a: string } {
-  if (!segments || segments.length <= 1) return { graph: "", v: "[0:v]", a: "[0:a]" };
-  const expr = segments.map((r) => `between(t,${r.start.toFixed(3)},${r.end.toFixed(3)})`).join("+");
-  const parts = [`[0:v]fps=30,select='${expr}',setpts=N/FRAME_RATE/TB[cv]`];
-  if (audio) parts.push(`[0:a]aselect='${expr}',asetpts=N/SR/TB[ca]`);
-  return { graph: parts.join(";"), v: "[cv]", a: "[ca]" };
+export function segmentInputs(
+  input: string,
+  offset: number,
+  duration: number,
+  segments: Range[] | undefined,
+  audio: boolean,
+): { args: string[]; graph: string; v: string; a: string } {
+  if (!segments || segments.length <= 1) {
+    return { args: ["-ss", offset.toFixed(3), "-t", duration.toFixed(3), "-i", input], graph: "", v: "[0:v]", a: "[0:a]" };
+  }
+  const args = segments.flatMap((r) => ["-ss", (offset + r.start).toFixed(3), "-t", (r.end - r.start).toFixed(3), "-i", input]);
+  const ins = segments.map((_, i) => (audio ? `[${i}:v][${i}:a]` : `[${i}:v]`)).join("");
+  return {
+    args,
+    graph: `${ins}concat=n=${segments.length}:v=1:a=${audio ? 1 : 0}[cv]${audio ? "[ca]" : ""}`,
+    v: "[cv]",
+    a: "[ca]",
+  };
 }
 
 const f = (n: number) => n.toFixed(4);
@@ -192,7 +205,7 @@ export async function renderClip(o: RenderOptions): Promise<string> {
   }
 
   const audio = src.audio;
-  const seg = segmentsGraph(o.segments, audio);
+  const seg = segmentInputs(o.input, o.offset, o.duration, o.segments, audio);
   const vg = videoGraph(layout, o.zoom, o.facecam, { input: seg.v, zooms: o.zooms, srcW: src.width, srcH: src.height });
   let graph = `${seg.graph ? `${seg.graph};` : ""}${vg};[base]${subsFilter}[v]`;
   if (audio) graph += `;${seg.a}loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]`;
@@ -201,7 +214,7 @@ export async function renderClip(o: RenderOptions): Promise<string> {
     "ffmpeg",
     [
       "-hide_banner", "-loglevel", "error", "-y",
-      "-ss", o.offset.toFixed(3), "-t", o.duration.toFixed(3), "-i", o.input,
+      ...seg.args,
       "-filter_complex", graph,
       "-map", "[v]",
       ...(audio ? ["-map", "[a]", "-c:a", "aac", "-b:a", "160k"] : []),
