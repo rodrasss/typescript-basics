@@ -174,7 +174,9 @@ async function call<T>(token: string, path: string, body: unknown): Promise<T> {
  * total_chunk_count = floor(tamanho / chunk_size). Até 10 MB vai num pedaço só.
  */
 export function chunkPlan(size: number, chunk = 10_000_000): { chunkSize: number; count: number } {
-  if (size <= chunk) return { chunkSize: size, count: 1 };
+  // até 64 MB vai num pedaço só, do tamanho do arquivo: com 1 pedaço o TikTok exige
+  // chunk_size = video_size ("The chunk size is invalid" num arquivo de 19 MB com pedaço de 10 MB)
+  if (size <= 64_000_000) return { chunkSize: size, count: 1 };
   return { chunkSize: chunk, count: Math.floor(size / chunk) };
 }
 
