@@ -19,3 +19,11 @@ test("PKCE do TikTok usa SHA256 em hex", () => {
   assert.match(verifier, /^[A-Za-z0-9\-._~]{43,128}$/);
   assert.match(challenge, /^[0-9a-f]{64}$/);
 });
+
+test("crédito aponta para a plataforma de onde veio a live", async () => {
+  const { creditFor } = await import("../src/config");
+  const s = { name: "TCK", twitch: "tck10", kick: "tck10", credit: "twitch.tv/tck10", clipPermission: true };
+  assert.equal(creditFor(s, "https://kick.com/tck10/videos/abc"), "kick.com/tck10");
+  assert.equal(creditFor(s, "https://www.twitch.tv/videos/123"), "twitch.tv/tck10");
+  assert.equal(creditFor({ ...s, kick: undefined }, "https://kick.com/x/videos/abc"), "twitch.tv/tck10");
+});

@@ -239,6 +239,14 @@ export function findStreamer(cfg: Config, key: string): Streamer {
   return s;
 }
 
+/** Crédito apontando para onde a live aconteceu (ex.: corte da Kick credita kick.com/canal). */
+export function creditFor(s: Streamer, sourceUrl: string): string {
+  if (/kick\.com/i.test(sourceUrl) && s.kick) return `kick.com/${s.kick}`;
+  if (/twitch\.tv/i.test(sourceUrl) && s.twitch) return `twitch.tv/${s.twitch}`;
+  if (/youtube\.com|youtu\.be/i.test(sourceUrl) && s.youtube) return `youtube.com/${s.youtube}`;
+  return s.credit;
+}
+
 export function assertPermission(s: Streamer): void {
   if (!s.clipPermission) {
     throw new Error(

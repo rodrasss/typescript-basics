@@ -6,7 +6,7 @@ import { frameTimes, framesFromFile, framesFromHls, type Frame } from "./analysi
 import { buildKnowledge } from "./analysis/knowledge";
 import { selectClips, type Candidate, type SelectedClip } from "./analysis/select";
 import { extractAudio, shiftTranscript, transcribe, type Word } from "./analysis/transcribe";
-import { assertPermission, env, type Config, type Platform, type Streamer } from "./config";
+import { assertPermission, creditFor, env, type Config, type Platform, type Streamer } from "./config";
 import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { publishClip } from "./publish";
 import { canPostNow, postTimes } from "./publish/schedule";
@@ -130,6 +130,7 @@ async function finalizeClip(
 ): Promise<ClipRecord> {
   const { cfg, state } = ctx;
   const id = shortId();
+  const credit = creditFor(streamer, source.url);
   const day = new Date().toISOString().slice(0, 10);
   const base = join(OUTPUT_DIR, slug(streamer.name), `${day}_${id}_${slug(dec.title).slice(0, 40)}`);
   const file = `${base}.mp4`;
@@ -152,7 +153,7 @@ async function finalizeClip(
     emphasisColor: cfg.render.emphasisColor,
     hookTitle: cfg.render.hookTitle ? dec.hookTitle : undefined,
     bottomText: dec.bottomText,
-    credit: streamer.credit,
+    credit,
     layout: streamer.layout ?? cfg.render.layout,
     facecam: streamer.facecam,
     zoom: cfg.render.zoom,
@@ -168,7 +169,7 @@ async function finalizeClip(
   const rec: ClipRecord = {
     id,
     streamer: streamer.name,
-    credit: streamer.credit,
+    credit,
     source,
     vod,
     start: dec.start,
