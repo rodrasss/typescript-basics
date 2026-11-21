@@ -24,11 +24,12 @@ test("frames ficam dentro do trecho e perto do pico", () => {
 import { buildAss } from "../src/render/captions";
 import { punchFilter, segmentsGraph } from "../src/render/render";
 
-test("cortes internos viram trim + concat", () => {
+test("cortes internos viram select/aselect num fluxo só (sem estourar a memória)", () => {
   const g = segmentsGraph([{ start: 0, end: 4 }, { start: 7, end: 12 }], true);
   assert.equal(g.v, "[cv]");
-  assert.match(g.graph, /\[0:v\]trim=start=7\.000:end=12\.000,setpts=PTS-STARTPTS\[sv1\]/);
-  assert.match(g.graph, /concat=n=2:v=1:a=1\[cv\]\[ca\]/);
+  assert.match(g.graph, /\[0:v\]fps=30,select='between\(t,0\.000,4\.000\)\+between\(t,7\.000,12\.000\)',setpts=N\/FRAME_RATE\/TB\[cv\]/);
+  assert.match(g.graph, /aselect='.*',asetpts=N\/SR\/TB\[ca\]/);
+  assert.doesNotMatch(g.graph, /concat/);
   assert.equal(segmentsGraph(undefined, true).v, "[0:v]");
 });
 

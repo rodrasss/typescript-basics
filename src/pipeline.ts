@@ -359,38 +359,46 @@ async function clipsFromAudio(
   log.info(`${selected.length} corte(s) com nota >= ${minScore}.`);
 
   const out: ClipRecord[] = [];
+  let lastError: unknown = null;
   for (const sel of selected) {
     const dup = state.overlaps(src.key, sel.start, sel.end);
     if (dup) {
       log.info(`Pulando ${hms(sel.start)}: já existe o corte ${dup.id} desse momento.`);
       continue;
     }
-    const cand = candById.get(sel.candidateId)!;
-    const words = wordsById.get(sel.candidateId) ?? [];
-    const dec = await refine(ctx, streamer, knowledge, src.title, sel, {
-      window: { start: cand.start, end: cand.end },
-      words,
-      curve,
-      frames: async () =>
-        framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
-    });
-    if (!dec || dec.score < minScore) continue;
+    // um corte que falhar (download, render) não derruba os outros da mesma live
+    try {
+      const cand = candById.get(sel.candidateId)!;
+      const words = wordsById.get(sel.candidateId) ?? [];
+      const dec = await refine(ctx, streamer, knowledge, src.title, sel, {
+        window: { start: cand.start, end: cand.end },
+        words,
+        curve,
+        frames: async () =>
+          framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
+      });
+      if (!dec || dec.score < minScore) continue;
 
-    const pad = 1;
-    log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
-    const section = await downloadSection(src.url, Math.max(0, dec.start - pad), dec.end + pad, work, `trecho-${cand.id}`);
-    out.push(
-      await finalizeClip(
-        ctx,
-        streamer,
-        { kind: "vod", key: src.key, url: src.url, title: src.title },
-        dec,
-        { input: section.path, inputStart: section.start, words, workDir: work },
-        { key: src.key, start: dec.start, end: dec.end },
-        { live: audio.live },
-      ),
-    );
+      const pad = 1;
+      log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
+      const section = await downloadSection(src.url, Math.max(0, dec.start - pad), dec.end + pad, work, `trecho-${cand.id}`);
+      out.push(
+        await finalizeClip(
+          ctx,
+          streamer,
+          { kind: "vod", key: src.key, url: src.url, title: src.title },
+          dec,
+          { input: section.path, inputStart: section.start, words, workDir: work },
+          { key: src.key, start: dec.start, end: dec.end },
+          { live: audio.live },
+        ),
+      );
+    } catch (e) {
+      lastError = e;
+      log.error(`Corte de ${hms(sel.start)} falhou, seguindo com os outros: ${errMsg(e)}`);
+    }
   }
+  if (!out.length && lastError) throw lastError;
   return out;
 }
 

@@ -107,19 +107,16 @@ export function punchFilter(zooms: Range[], w: number, h: number): string {
   return `,fps=30,zoompan=z='if(${cond},${PUNCH},1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=${w}x${h}:fps=30,setsar=1`;
 }
 
-/** Junta os trechos mantidos (trim + concat) e devolve os rótulos de vídeo/áudio resultantes. */
+/**
+ * Junta os trechos mantidos e devolve os rótulos de vídeo/áudio resultantes.
+ * Usa select/aselect num fluxo só: com trim + concat o ffmpeg guarda na memória
+ * todos os quadros do trecho seguinte (um corte de 78 s em 1080p60 passou de 13 GB).
+ */
 export function segmentsGraph(segments: Range[] | undefined, audio: boolean): { graph: string; v: string; a: string } {
   if (!segments || segments.length <= 1) return { graph: "", v: "[0:v]", a: "[0:a]" };
-  const parts: string[] = [];
-  const inputs: string[] = [];
-  segments.forEach((r, i) => {
-    const a = r.start.toFixed(3);
-    const b = r.end.toFixed(3);
-    parts.push(`[0:v]trim=start=${a}:end=${b},setpts=PTS-STARTPTS[sv${i}]`);
-    if (audio) parts.push(`[0:a]atrim=start=${a}:end=${b},asetpts=PTS-STARTPTS[sa${i}]`);
-    inputs.push(audio ? `[sv${i}][sa${i}]` : `[sv${i}]`);
-  });
-  parts.push(`${inputs.join("")}concat=n=${segments.length}:v=1:a=${audio ? 1 : 0}[cv]${audio ? "[ca]" : ""}`);
+  const expr = segments.map((r) => `between(t,${r.start.toFixed(3)},${r.end.toFixed(3)})`).join("+");
+  const parts = [`[0:v]fps=30,select='${expr}',setpts=N/FRAME_RATE/TB[cv]`];
+  if (audio) parts.push(`[0:a]aselect='${expr}',asetpts=N/SR/TB[ca]`);
   return { graph: parts.join(";"), v: "[cv]", a: "[ca]" };
 }
 

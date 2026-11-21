@@ -2,7 +2,7 @@ import { openAsBlob } from "node:fs";
 import { basename } from "node:path";
 import { env, requireEnv } from "../config";
 import { run } from "../util/exec";
-import { withRetry } from "../util/misc";
+import { sleep, withRetry } from "../util/misc";
 
 /**
  * Transcrição com timestamps por palavra usando qualquer API compatível com
@@ -45,9 +45,33 @@ class HttpError extends Error {
   constructor(
     public status: number,
     message: string,
+    /** espera pedida pelo servidor, em ms */
+    public retryAfterMs?: number,
   ) {
     super(message);
   }
+}
+
+/** Quanto esperar num 429: header retry-after ou "try again in 3.5s" / "in 1m2s" na mensagem. */
+export function retryAfterMs(header: string | null, body: string): number | undefined {
+  if (header && Number.isFinite(Number(header))) return Number(header) * 1000;
+  const m = /try again in (?:(\d+)m)?([\d.]+)s/i.exec(body);
+  if (m) return (Number(m[1] ?? 0) * 60 + Number(m[2])) * 1000;
+  return undefined;
+}
+
+// O plano grátis do Groq aceita 20 transcrições por minuto: segura o ritmo aqui
+// em vez de tomar erro 429 (lives longas têm 30+ candidatos).
+const recent: number[] = [];
+async function rateGate(): Promise<void> {
+  const rpm = Number(env("TRANSCRIBE_RPM") ?? 18);
+  for (;;) {
+    const now = Date.now();
+    while (recent.length && now - recent[0]! > 60_000) recent.shift();
+    if (recent.length < rpm) break;
+    await sleep(60_000 - (now - recent[0]!) + 200);
+  }
+  recent.push(Date.now());
 }
 
 export async function transcribe(file: string, language: string): Promise<Transcript> {
@@ -64,19 +88,27 @@ export async function transcribe(file: string, language: string): Promise<Transc
       form.append("response_format", "verbose_json");
       form.append("timestamp_granularities[]", "word");
       form.append("timestamp_granularities[]", "segment");
+      await rateGate();
       const res = await fetch(`${baseUrl}/audio/transcriptions`, {
         method: "POST",
         headers: { Authorization: `Bearer ${key}` },
         body: form,
       });
-      if (!res.ok) throw new HttpError(res.status, `Transcrição falhou (${res.status}): ${await res.text()}`);
+      if (!res.ok) {
+        const body = await res.text();
+        throw new HttpError(res.status, `Transcrição falhou (${res.status}): ${body}`, retryAfterMs(res.headers.get("retry-after"), body));
+      }
       return (await res.json()) as {
         text?: string;
         segments?: Array<{ start: number; end: number; text: string }>;
         words?: Array<{ word: string; start: number; end: number }>;
       };
     },
-    { shouldRetry: (e) => !(e instanceof HttpError) || e.status === 429 || e.status >= 500 },
+    {
+      tries: 6,
+      shouldRetry: (e) => !(e instanceof HttpError) || e.status === 429 || e.status >= 500,
+      delayFor: (e) => (e instanceof HttpError && e.retryAfterMs !== undefined ? Math.min(e.retryAfterMs + 500, 90_000) : undefined),
+    },
   );
 
   const segments = (json.segments ?? []).map((s) => ({ start: s.start, end: s.end, text: s.text.trim() }));
