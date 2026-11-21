@@ -12,6 +12,7 @@ Faça na ordem. A **Fase 1** leva cerca de 30 minutos e já gera cortes de verda
 - [ ] Baixar o projeto e rodar `npm install` + `npm run setup`
 - [ ] Chave do Claude
 - [ ] Chave do Groq
+- [ ] Rodar `npm run clipper -- aprender` (base de conhecimento)
 - [ ] Cadastrar o streamer no `clipper.config.json`
 - [ ] Rodar o primeiro `vod` e revisar no `painel`
 
@@ -87,7 +88,7 @@ O `.env` guarda as suas senhas de API. Abra com um editor (Bloco de Notas, ou o 
 
 ### 3. Chave do Claude (escolhe os momentos e escreve título/legenda)
 1. Crie a conta em https://platform.claude.com.
-2. Em **Billing**, adicione créditos. US$ 5 já dá para dezenas de lives; cada VOD custa por volta de US$ 0,10 a 0,30.
+2. Em **Billing**, adicione créditos. US$ 10 dá para umas 15 a 30 lives; cada VOD custa por volta de US$ 0,30 a 0,80.
 3. Em https://platform.claude.com/settings/keys, clique em **Create Key**, copie a chave e cole no `.env`:
    ```
    ANTHROPIC_API_KEY=sk-ant-...
@@ -100,7 +101,25 @@ O `.env` guarda as suas senhas de API. Abra com um editor (Bloco de Notas, ou o 
    TRANSCRIBE_API_KEY=gsk_...
    ```
 
-### 5. Cadastrar o streamer
+### 5. Base de conhecimento da IA (recomendado)
+O projeto já vem com exemplos reais de clipes e Shorts de GTA 6. Para atualizar com os mais vistos desta semana, rode:
+```bash
+npm run clipper -- aprender
+```
+Com a chave do Groq configurada, ele também transcreve os mais vistos. Assim a IA aprende como soa um corte que viralizou.
+
+Para deixar a IA com o estilo dos canais que você admira, coloque em `clipper.config.json → knowledge`:
+- `youtubeChannels`: canais de cortes do YouTube, por exemplo `["@canaldecortes"]`.
+- `tiktokProfiles`: perfis de cortes do TikTok, por exemplo `["@perfil"]`. Funciona quando o yt-dlp consegue ler o perfil; às vezes o TikTok pede cookies (veja "Problemas comuns").
+- `twitch`: mais streamers de referência.
+
+Depois rode `aprender` de novo. O `watch` já roda o `aprender` sozinho uma vez por semana (`knowledge.autoRefreshDays`).
+
+Também dá para mexer no **manual de edição** em `knowledge/playbook.md`. É texto simples, e a IA segue o que estiver lá.
+
+E a parte mais importante: **revise no painel**. Tudo o que você aprova, rejeita ou reescreve (título e legenda) vira referência do seu gosto para os próximos cortes.
+
+### 6. Cadastrar o streamer
 Edite o `clipper.config.json`:
 ```json
 {
@@ -129,20 +148,20 @@ Quanto mais `context`, melhores os títulos.
    "layout": "split", "facecam": { "x": 0.75, "y": 0, "w": 0.25, "h": 0.3 }
    ```
 
-### 6. Primeiro teste de verdade
+### 7. Primeiro teste de verdade
 ```bash
 npm run clipper -- vod "https://www.twitch.tv/videos/123456789" --streamer "Nome do Streamer"
 npm run clipper -- painel
 ```
 Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajusta título e legenda, aprova ou rejeita.
 
-> Se o Claude escolher mal, melhore o `context` do streamer ou suba `clips.candidates` (por exemplo, para 25).
+> Se a IA escolher mal, melhore o `context` do streamer, rode o `aprender`, rejeite os cortes ruins no painel (ela aprende com isso) ou suba `clips.candidates` (por exemplo, para 25).
 
 ---
 
 ## Fase 2: Redes sociais (comece cedo, as aprovações demoram)
 
-### 7. Twitch API (opcional: pega os clipes mais vistos)
+### 8. Twitch API (opcional: pega os clipes mais vistos)
 1. Ative a verificação em duas etapas na sua conta da Twitch. A Twitch exige isso para criar apps.
 2. Em https://dev.twitch.tv/console/apps/create, preencha:
    - **Nome:** qualquer um
@@ -159,7 +178,7 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
    npm run clipper -- twitch-clips --streamer "Nome do Streamer"
    ```
 
-### 8. YouTube Shorts
+### 9. YouTube Shorts
 1. **Crie o projeto** em https://console.cloud.google.com/projectcreate.
 2. **Ative a API** em https://console.cloud.google.com/apis/library/youtube.googleapis.com, botão **Ativar**.
 3. **Configure a tela de consentimento** em https://console.cloud.google.com/auth/overview:
@@ -184,7 +203,7 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
    - A aprovação demora semanas. Enquanto isso, suba os `.mp4` de `output/` manualmente pelo YouTube Studio.
    - A cota padrão permite cerca de 6 uploads por dia.
 
-### 9. TikTok
+### 10. TikTok
 1. Entre em https://developers.tiktok.com e abra **Manage apps** (https://developers.tiktok.com/apps). Crie um app.
 2. Preencha nome, ícone, descrição e categoria. O TikTok **exige** links de **Termos de Uso** e **Política de Privacidade**: pode ser uma página simples sua (Google Sites, Notion, GitHub Pages).
 3. Em **Platforms**, marque **Desktop**.
@@ -206,7 +225,7 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
 9. **Como os posts saem:** por padrão (`"tiktokMode": "inbox"`), o vídeo vai para a **caixa de entrada do app do TikTok**. Você recebe uma notificação, abre o app, coloca uma **música em alta** (ajuda muito no alcance) e publica.
    - Para publicar direto, use `"tiktokMode": "direct"`. Mas sem a auditoria da Content Posting API (https://developers.tiktok.com/application/content-posting-api), os posts diretos só saem como **privados**.
 
-### 10. Instagram Reels
+### 11. Instagram Reels
 1. **Conta Profissional.** No app do Instagram: **Configurações → Tipo de conta e ferramentas → Mudar para conta profissional** (Criador serve).
 2. **Ligue a uma Página do Facebook.**
    - Crie a Página em https://www.facebook.com/pages/create, se ainda não tiver.
@@ -270,7 +289,7 @@ Isso faz uma rodada a cada 3 horas. O computador precisa ficar ligado e não pod
 
 | Item | Custo |
 |---|---|
-| Claude | ~US$ 0,10–0,30 por VOD |
+| Claude | ~US$ 0,30–0,80 por VOD (triagem + editor de cada corte) |
 | Groq (transcrição) | centavos (tem plano grátis) |
 | Twitch, YouTube, TikTok, Meta API | grátis |
 | Seu PC ligado | luz 🙂 |
@@ -279,7 +298,7 @@ Isso faz uma rodada a cada 3 horas. O computador precisa ficar ligado e não pod
 
 - **"Sign in to confirm you're not a bot" (YouTube).** Exporte os cookies do navegador logado (veja https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp) e coloque `YTDLP_COOKIES=./cookies.txt` no `.env`.
 - **yt-dlp dando erro do nada.** Atualize: `winget upgrade yt-dlp.yt-dlp`, `brew upgrade yt-dlp` ou `pipx upgrade yt-dlp`.
-- **YouTube pede login de novo toda semana.** Falta **Publicar app** na tela de consentimento (passo 8.3).
+- **YouTube pede login de novo toda semana.** Falta **Publicar app** na tela de consentimento (passo 9.3).
 - **TikTok: `unaudited_client_can_only_post_to_private_accounts`.** Use `"tiktokMode": "inbox"` (o padrão).
-- **Instagram: "Nenhuma Página com conta do Instagram ligada".** Refaça o passo 10.2.
+- **Instagram: "Nenhuma Página com conta do Instagram ligada".** Refaça o passo 11.2.
 - **Fonte da legenda.** Baixe uma fonte grossa (ex.: Montserrat em https://fonts.google.com/specimen/Montserrat), coloque o `.ttf` em `assets/fonts/` e use `"font": "Montserrat ExtraBold"` em `render`.

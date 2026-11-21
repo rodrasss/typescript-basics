@@ -1,9 +1,6 @@
-import Anthropic from "@anthropic-ai/sdk";
-import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
-import { z } from "zod";
-import { env } from "../config";
-import { log } from "../util/log";
 import type { BetaContentBlockParam } from "@anthropic-ai/sdk/resources/beta/messages/messages";
+import { z } from "zod";
+import { askClaude, effort } from "./claude";
 import { frameBase64, type Frame } from "./frames";
 import type { Segment } from "./transcribe";
 
@@ -58,7 +55,9 @@ const SelectionSchema = z.object({
   ),
 });
 
-const SYSTEM = `Você é editor de cortes virais de lives para TikTok, Instagram Reels e YouTube Shorts, especialista no público brasileiro de GTA (GTA RP, GTA V e o hype do GTA 6).
+const SYSTEM = `Você é editor de cortes virais de lives para TikTok, Instagram Reels e YouTube Shorts, especialista no público brasileiro de GTA (GTA RP, GTA V e o hype do GTA 6). Esta é a 1ª etapa (triagem): escolher QUAIS momentos viram corte. Depois, um editor refina cada corte escolhido.
+
+No fim deste prompt está a sua base de conhecimento: o manual de edição, dados e exemplos reais do que já viralizou (do próprio streamer e de canais de cortes) e as decisões do editor humano (o que ele aprovou, reescreveu e rejeitou). Use tudo isso como referência de gosto, de duração e de estilo de título.
 
 Você recebe trechos candidatos de uma live. Cada trecho tem a transcrição com timestamps em segundos (t=...) e um perfil de intensidade do áudio: quantos dB o volume ficou acima do normal, a cada 2 segundos. Picos costumam ser risadas, gritos, sustos ou bagunça no RP.
 
@@ -100,10 +99,10 @@ function describeCandidate(c: Candidate): string {
   return [...header, ...(lines.length ? lines : ["(sem fala detectada)"])].join("\n");
 }
 
-let client: Anthropic | null = null;
-
 export async function selectClips(input: {
   streamer: { name: string; context?: string };
+  /** base de conhecimento (manual + exemplos + gosto do editor) */
+  knowledge?: string;
   sourceTitle: string;
   candidates: Candidate[];
   maxClips: number;
@@ -111,7 +110,6 @@ export async function selectClips(input: {
   maxSeconds: number;
 }): Promise<SelectedClip[]> {
   if (input.candidates.length === 0) return [];
-  client ??= new Anthropic();
 
   const intro = [
     `Streamer: ${input.streamer.name}`,
@@ -130,29 +128,15 @@ export async function selectClips(input: {
     }
   }
 
-  const response = await client.beta.messages.parse({
-    model: env("CLAUDE_MODEL") ?? "claude-opus-5-5",
-    max_tokens: 16000,
-    // Se o modelo recusar por política, a API tenta de novo num modelo substituto padrão.
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
-    output_config: {
-      effort: (env("CLAUDE_EFFORT") ?? "medium") as "low" | "medium" | "high" | "xhigh" | "max",
-      format: betaZodOutputFormat(SelectionSchema),
-    },
-    system: SYSTEM,
-    messages: [{ role: "user", content }],
+  const parsed = await askClaude({
+    schema: SelectionSchema,
+    instructions: SYSTEM,
+    knowledge: input.knowledge,
+    content,
+    effort: effort("CLAUDE_EFFORT", "high"),
+    label: `triagem de "${input.sourceTitle.slice(0, 40)}"`,
   });
-
-  if (response.stop_reason === "refusal") {
-    log.warn(`Claude recusou avaliar "${input.sourceTitle}" (${response.stop_details?.category ?? "sem categoria"}).`);
-    return [];
-  }
-  if (response.stop_reason === "max_tokens") {
-    throw new Error("Resposta do Claude cortada por max_tokens; reduza clips.candidates.");
-  }
-  const parsed = response.parsed_output;
-  if (!parsed) throw new Error("Claude não devolveu um JSON válido para a seleção de cortes.");
+  if (!parsed) return [];
 
   const byId = new Map(input.candidates.map((c) => [c.id, c]));
   const used = new Set<string>();

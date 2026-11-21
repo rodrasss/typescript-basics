@@ -58,11 +58,12 @@ if (missing.length) {
   console.log("✖ O teste offline falhou — veja a mensagem acima.");
 }
 console.log(`
-Próximos passos (GUIA.md, passos 3 a 6):
+Próximos passos (GUIA.md, passos 3 a 7):
   1. Chave do Claude:  https://platform.claude.com/settings/keys   → ANTHROPIC_API_KEY no .env
   2. Chave do Groq:    https://console.groq.com/keys               → TRANSCRIBE_API_KEY no .env
-  3. Cadastre o streamer autorizado no clipper.config.json ("clipPermission": true)
-  4. npm run clipper -- vod "<link do VOD>" --streamer "Nome"
-  5. npm run clipper -- painel      → http://127.0.0.1:4310
+  3. npm run clipper -- aprender    → atualiza a base de conhecimento da IA
+  4. Cadastre o streamer autorizado no clipper.config.json ("clipPermission": true)
+  5. npm run clipper -- vod "<link do VOD>" --streamer "Nome"
+  6. npm run clipper -- painel      → http://127.0.0.1:4310
 `);
 process.exitCode = missing.length || !smokeOk ? 1 : 0;

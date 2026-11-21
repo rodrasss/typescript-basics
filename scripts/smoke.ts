@@ -16,7 +16,7 @@ import { run } from "../src/util/exec";
 const dir = ensureDir(join(OUTPUT_DIR, "smoke"));
 const vod = join(dir, "vod-sintetico.mp4");
 
-console.log("1/4 gerando VOD sintético de 6 min (picos em 2:00 e 4:30)…");
+console.log("1/5 gerando VOD sintético de 6 min (picos em 2:00 e 4:30)…");
 await run("ffmpeg", [
   "-hide_banner", "-loglevel", "error", "-y",
   "-f", "lavfi", "-i", "testsrc2=size=1280x720:rate=30:duration=360",
@@ -25,14 +25,14 @@ await run("ffmpeg", [
   "-c:v", "libx264", "-preset", "ultrafast", "-crf", "30", "-c:a", "aac", "-shortest", vod,
 ]);
 
-console.log("2/4 analisando o áudio…");
+console.log("2/5 analisando o áudio…");
 const db = await loudnessPerSecond(vod);
 const peaks = pickPeaks(excitementCurve(db), { count: 5, minScore: 2 });
 console.log("   picos:", peaks.map((p) => `${p.t}s (+${p.score.toFixed(1)} dB)`).join(", "));
 assert.equal(peaks.length, 2, "esperava 2 picos");
 assert.ok(Math.abs(peaks[0].t - 123) <= 4 && Math.abs(peaks[1].t - 272) <= 4, "picos fora do lugar");
 
-console.log("3/4 renderizando corte vertical com legenda…");
+console.log("3/5 renderizando corte vertical com legenda…");
 const words = "NÃO ACREDITO que ele fez isso com a viatura mano olha isso KKKKK".split(" ").map((text, i) => ({
   text,
   start: 1 + i * 0.45,
@@ -63,7 +63,7 @@ assert.ok(Math.abs(Number(info.format.duration) - 20) < 0.5, `duração ${info.f
 
 await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", "3", "-i", out, "-frames:v", "1", join(dir, "frame.png")]);
 
-console.log("4/4 layout com facecam (split) e frames para o Claude…");
+console.log("4/5 layout com facecam (split) e frames para o Claude…");
 const split = await renderClip({
   input: vod,
   offset: 110,
@@ -89,4 +89,36 @@ await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", "3", "-i
 const frames = await framesFromFile(vod, frameTimes(100, 175, 3, 123), dir, "cand");
 assert.equal(frames.length, 3, "esperava 3 frames");
 
-console.log(`\nOK! Cortes: ${out} e ${split}\nFrames de exemplo: ${join(dir, "frame.png")} e ${join(dir, "frame-split.png")}`);
+console.log("5/5 edição da IA: corte de tempo morto, zoom de reação e palavra em destaque…");
+const edited = await renderClip({
+  input: vod,
+  offset: 110,
+  duration: 20,
+  segments: [
+    { start: 0, end: 6 },
+    { start: 9, end: 20 },
+  ],
+  zooms: [{ start: 10, end: 11.5 }],
+  words,
+  emphasis: ["viatura"],
+  emphasisColor: "#4DFF6A",
+  hookTitle: "EDIÇÃO DA IA",
+  credit: "twitch.tv/exemplo",
+  layout: "blur",
+  zoom: 1.15,
+  captions: true,
+  font: "Arial",
+  highlightColor: "#FFE600",
+  preset: "veryfast",
+  output: join(dir, "corte-editado.mp4"),
+  workDir: join(dir, "work-edit"),
+});
+const ed = JSON.parse(await run("ffprobe", ["-v", "error", "-show_entries", "format=duration:stream=codec_type,width,height", "-of", "json", edited])) as {
+  streams: Array<{ codec_type: string; width?: number; height?: number }>;
+  format: { duration: string };
+};
+assert.ok(Math.abs(Number(ed.format.duration) - 17) < 0.5, `duração editada ${ed.format.duration} (esperado 17s)`);
+assert.ok(ed.streams.some((x) => x.codec_type === "audio"), "corte editado sem áudio");
+await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", "10.5", "-i", edited, "-frames:v", "1", join(dir, "frame-zoom.png")]);
+
+console.log(`\nOK! Cortes: ${out}, ${split} e ${edited}\nFrames de exemplo: ${join(dir, "frame.png")}, ${join(dir, "frame-split.png")} e ${join(dir, "frame-zoom.png")}`);

@@ -18,6 +18,10 @@ export interface AssOptions {
   /** hex RGB, ex.: "#FFE600" */
   highlightColor?: string;
   maxWords?: number;
+  /** palavras-chave da piada (destacadas com outra cor) */
+  emphasis?: string[];
+  /** hex RGB da cor de destaque */
+  emphasisColor?: string;
   /** distâncias verticais (px) — mudam conforme o layout */
   hookMarginV?: number;
   captionMarginV?: number;
@@ -44,6 +48,15 @@ export function assColor(hex: string, alpha = 0): string {
 /** "#RRGGBB" -> "&HBBGGRR&" (formato da tag inline \\c) */
 export function inlineColor(hex: string): string {
   return `&H${assColor(hex).slice(4)}&`;
+}
+
+/** Normaliza uma palavra para comparar ("Polícia!" → "policia"). */
+export function normWord(s: string): string {
+  return s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^\p{L}\p{N}]/gu, "");
 }
 
 function escapeText(s: string): string {
@@ -75,6 +88,8 @@ export function chunkWords(words: Word[], maxWords = 3, maxChars = 16, maxGap = 
 export function buildAss(o: AssOptions): string {
   const font = o.font ?? "Arial";
   const hl = inlineColor(o.highlightColor ?? "#FFE600");
+  const em = inlineColor(o.emphasisColor ?? "#4DFF6A");
+  const emphasis = new Set((o.emphasis ?? []).map(normWord).filter(Boolean));
   const header = `[Script Info]
 ScriptType: v4.00+
 PlayResX: ${W}
@@ -108,12 +123,19 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     const nextStart = chunks[ci + 1]?.[0]?.start ?? o.duration;
     const chunkEnd = Math.min(nextStart, chunk[chunk.length - 1].end + 0.35, o.duration);
     const texts = chunk.map((w) => escapeText(w.text.toUpperCase()));
+    const isEm = chunk.map((w) => emphasis.has(normWord(w.text)));
     chunk.forEach((w, wi) => {
       const s = w.start;
       const e = wi < chunk.length - 1 ? chunk[wi + 1].start : chunkEnd;
       if (e - s < 0.04) return;
       const line = texts
-        .map((t, ti) => (ti === wi ? `{\\c${hl}\\fscx112\\fscy112}${t}{\\r}` : t))
+        .map((t, ti) =>
+          ti === wi
+            ? `{\\c${isEm[ti] ? em : hl}\\fscx${isEm[ti] ? 122 : 112}\\fscy${isEm[ti] ? 122 : 112}}${t}{\\r}`
+            : isEm[ti]
+              ? `{\\c${em}}${t}{\\r}`
+              : t,
+        )
         .join(" ");
       events.push(`Dialogue: 0,${assTime(s)},${assTime(e)},Caption,,0,0,0,,${line}`);
     });

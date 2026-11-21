@@ -70,6 +70,16 @@ export async function listRecent(pageUrl: string, limit: number): Promise<Listed
     }));
 }
 
+/** Lista "achatada" (sem baixar) de uma página/busca: devolve os campos crus do yt-dlp. */
+export async function flatList(target: string, limit: number): Promise<Array<Record<string, unknown>>> {
+  const args = ["--flat-playlist", "--dump-single-json", "--playlist-end", String(limit), "--no-warnings"];
+  const cookies = env("YTDLP_COOKIES");
+  if (cookies) args.push("--cookies", cookies);
+  const out = await run("yt-dlp", [...args, target]);
+  const j = JSON.parse(out) as { entries?: Array<Record<string, unknown>> };
+  return j.entries ?? [];
+}
+
 async function downloadTo(url: string, outTemplate: string, extra: string[]): Promise<string> {
   const out = await run("yt-dlp", [
     ...baseArgs(),
