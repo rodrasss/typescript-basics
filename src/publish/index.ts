@@ -31,12 +31,21 @@ export function postText(c: ClipRecord, cfg: Config): { caption: string; descrip
   return { caption, description, tags };
 }
 
+/**
+ * O TikTok aceita no máximo 5 vídeos esperando na caixa de entrada (não publicados).
+ * Ao bater nesse limite, para de mandar para o TikTok nesta rodada; os cortes ficam
+ * na fila e vão quando você publicar os que estão lá.
+ */
+let tiktokInboxFull = false;
+const INBOX_FULL = /too_many_pending_share/i;
+
 export async function publishClip(c: ClipRecord, platforms: Platform[], cfg: Config, state: State): Promise<void> {
   if (!existsSync(c.file)) throw new Error(`Arquivo do corte não existe mais: ${c.file}`);
   const { caption, description, tags } = postText(c, cfg);
 
   for (const p of platforms) {
     if (c.posts[p]?.id) continue; // já postado
+    if (p === "tiktok" && tiktokInboxFull) continue;
     if (!isConfigured(p)) {
       log.warn(`${p}: credenciais não configuradas, pulando.`);
       continue;
@@ -69,6 +78,14 @@ export async function publishClip(c: ClipRecord, platforms: Platform[], cfg: Con
       c.posts[p] = post;
       log.ok(`${p}: ${r.url ?? r.note ?? r.id}`);
     } catch (e) {
+      if (p === "tiktok" && INBOX_FULL.test(errMsg(e))) {
+        tiktokInboxFull = true;
+        log.warn(
+          "TikTok: já há 5 vídeos esperando na caixa de entrada do app (limite do TikTok). " +
+            "Publique esses no app; os próximos cortes vão na próxima rodada.",
+        );
+        continue;
+      }
       c.posts[p] = { at: new Date().toISOString(), error: errMsg(e) };
       log.error(`${p}: ${errMsg(e)}`);
     }

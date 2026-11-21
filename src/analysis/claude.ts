@@ -6,6 +6,7 @@ import { env } from "../config";
 import { log } from "../util/log";
 
 export type Effort = "low" | "medium" | "high" | "xhigh" | "max";
+const EFFORTS: Effort[] = ["low", "medium", "high", "xhigh", "max"];
 
 let client: Anthropic | null = null;
 
@@ -27,16 +28,34 @@ export async function askClaude<S extends z.ZodType>(opts: {
   const system: BetaTextBlockParam[] = [{ type: "text", text: opts.instructions }];
   if (opts.knowledge) system.push({ type: "text", text: opts.knowledge, cache_control: { type: "ephemeral" } });
 
-  const response = await client.beta.messages.parse({
-    model: env("CLAUDE_MODEL") ?? "claude-opus-5-5",
-    max_tokens: 16000,
-    // Se o modelo recusar por política, a API tenta de novo num modelo substituto padrão.
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
-    output_config: { effort: opts.effort, format: betaZodOutputFormat(opts.schema) },
-    system,
-    messages: [{ role: "user", content: opts.content }],
-  });
+  const call = (effort: Effort) =>
+    client!.beta.messages.parse(
+      {
+        model: env("CLAUDE_MODEL") ?? "claude-opus-5-5",
+        // o raciocínio também conta aqui: com 30+ candidatos, 16k não bastava e o JSON vinha cortado
+        max_tokens: 32000,
+        // Se o modelo recusar por política, a API tenta de novo num modelo substituto padrão.
+        betas: ["server-side-fallback-2026-07-01"],
+        fallbacks: "default",
+        output_config: { effort, format: betaZodOutputFormat(opts.schema) },
+        system,
+        messages: [{ role: "user", content: opts.content }],
+      },
+      // tempo explícito: sem ele o SDK exige streaming para max_tokens acima de ~21k
+      { timeout: 20 * 60 * 1000 },
+    );
+
+  let response;
+  try {
+    response = await call(opts.effort);
+  } catch (e) {
+    // JSON cortado (o SDK falha ao ler antes de devolver a resposta): tenta de novo pensando menos
+    const truncated = e instanceof Anthropic.AnthropicError && !(e instanceof Anthropic.APIError) && /Failed to parse structured output/.test(e.message);
+    if (!truncated) throw e;
+    const lower = EFFORTS[Math.max(0, EFFORTS.indexOf(opts.effort) - 1)]!;
+    log.warn(`Resposta do Claude veio incompleta (${opts.label}); tentando de novo com esforço ${lower}.`);
+    response = await call(lower);
+  }
 
   if (response.stop_reason === "refusal") {
     log.warn(`Claude recusou (${opts.label}): ${response.stop_details?.category ?? "sem categoria"}.`);

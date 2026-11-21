@@ -133,15 +133,16 @@ program
   .option("--every <minutos>", "intervalo entre as olhadas (padrão: live.intervalMinutes do config)")
   .option("--uma-vez", "olha uma vez só e sai")
   .option("--publish", "posta os aprovados depois de cada olhada")
+  .option("-s, --streamer <nome>", "só este streamer")
   .option("--keep", "mantém os arquivos temporários")
   .action(
-    action(async (o: { every?: string; umaVez?: boolean; publish?: boolean; keep?: boolean }) => {
+    action(async (o: { every?: string; umaVez?: boolean; publish?: boolean; streamer?: string; keep?: boolean }) => {
       for (;;) {
         const c = ctx(o);
         const minutes = o.every ? Number(o.every) : c.cfg.live.intervalMinutes;
         if (!(minutes > 0)) throw new Error("--every precisa de um número de minutos, ex.: --every 15");
         try {
-          const clips = await watchAll(c, { onlyLive: true });
+          const clips = await watchAll(c, { onlyLive: true, streamer: o.streamer });
           log.ok(`Olhada ao vivo concluída: ${clips.length} corte(s) novo(s).`);
           if (o.publish) await publishApproved(c, { platforms: c.cfg.publish.platforms, limit: c.cfg.publish.perRun });
         } catch (e) {

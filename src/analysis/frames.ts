@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { isTsPlaylist, loadMediaPlaylist, segmentsFor, writeSegments } from "../sources/hls";
 import { run } from "../util/exec";
@@ -20,12 +20,24 @@ export function frameTimes(start: number, end: number, n: number, peak?: number)
   return Array.from({ length: n }, (_, i) => Math.round((lo + ((hi - lo) * i) / (n - 1)) * 10) / 10);
 }
 
+const hasFile = (p: string) => existsSync(p) && statSync(p).size > 0;
+
 async function grab(file: string, at: number, out: string): Promise<string> {
-  await run("ffmpeg", [
-    "-hide_banner", "-loglevel", "error", "-y",
-    "-ss", Math.max(0, at).toFixed(2), "-i", file, "-frames:v", "1", "-vf", "scale=512:-2", "-q:v", "6", out,
-  ]);
-  return out;
+  // perto do fim do arquivo o ffmpeg às vezes não acha frame e sai "com sucesso" sem gravar nada:
+  // tenta um pouco antes e, se ainda assim não sair, o frame fica de fora
+  for (const back of [0, 1.5, 4]) {
+    await run("ffmpeg", [
+      "-hide_banner", "-loglevel", "error", "-y",
+      "-ss", Math.max(0, at - back).toFixed(2), "-i", file, "-frames:v", "1", "-vf", "scale=512:-2", "-q:v", "6", out,
+    ]);
+    if (hasFile(out)) return out;
+  }
+  throw new Error(`sem frame em ${at.toFixed(1)}s`);
+}
+
+/** Só os frames que realmente existem no disco. */
+export function existingFrames(frames: Frame[]): Frame[] {
+  return frames.filter((f) => hasFile(f.path));
 }
 
 /** Frames de um arquivo local; `offset` = segundo do vídeo de origem onde o arquivo começa. */

@@ -1,8 +1,9 @@
-import { openAsBlob } from "node:fs";
+import { openAsBlob, statSync } from "node:fs";
 import { basename } from "node:path";
 import { env, requireEnv } from "../config";
 import { run } from "../util/exec";
-import { withRetry } from "../util/misc";
+import { log } from "../util/log";
+import { sleep, withRetry } from "../util/misc";
 
 /**
  * Transcrição com timestamps por palavra usando qualquer API compatível com
@@ -45,9 +46,61 @@ class HttpError extends Error {
   constructor(
     public status: number,
     message: string,
+    /** espera pedida pelo servidor, em ms */
+    public retryAfterMs?: number,
   ) {
     super(message);
   }
+}
+
+/** Quanto esperar num 429: header retry-after ou "try again in 3.5s" / "in 1m2s" na mensagem. */
+export function retryAfterMs(header: string | null, body: string): number | undefined {
+  if (header && Number.isFinite(Number(header))) return Number(header) * 1000;
+  const m = /try again in (?:(\d+)m)?([\d.]+)s/i.exec(body);
+  if (m) return (Number(m[1] ?? 0) * 60 + Number(m[2])) * 1000;
+  return undefined;
+}
+
+// O plano grátis do Groq aceita 20 transcrições por minuto e 2 h de áudio por hora.
+// Segura o ritmo aqui em vez de tomar erro 429 (lives longas têm 30+ candidatos).
+// No plano pago (Dev Tier) os limites são bem maiores: TRANSCRIBE_RPM / TRANSCRIBE_ASPH (0 = sem limite).
+const recent: number[] = [];
+const recentAudio: Array<{ at: number; seconds: number }> = [];
+let warnedAt = 0;
+/** Depois de um 429, todos os pedidos esperam juntos (senão os outros pegam a cota liberada antes). */
+let pauseUntil = 0;
+async function rateGate(seconds: number): Promise<void> {
+  if (pauseUntil > Date.now()) await sleep(pauseUntil - Date.now());
+  const rpm = Number(env("TRANSCRIBE_RPM") ?? 18);
+  const asph = Number(env("TRANSCRIBE_ASPH") ?? 7200) * 0.97;
+  for (;;) {
+    const now = Date.now();
+    while (recent.length && now - recent[0]! > 60_000) recent.shift();
+    while (recentAudio.length && now - recentAudio[0]!.at > 3_600_000) recentAudio.shift();
+    const used = recentAudio.reduce((s, x) => s + x.seconds, 0);
+    let wait = 0;
+    if (rpm > 0 && recent.length >= rpm) wait = 60_000 - (now - recent[0]!) + 200;
+    if (asph > 0 && recentAudio.length && used + seconds > asph) {
+      wait = Math.max(wait, 3_600_000 - (now - recentAudio[0]!.at) + 1000);
+      if (now - warnedAt > 300_000) {
+        warnedAt = now;
+        log.info(`Limite do Groq (${Math.round(asph / 0.97 / 60)} min de áudio por hora): esperando ${Math.ceil(wait / 60_000)} min…`);
+      }
+    }
+    if (wait <= 0) break;
+    await sleep(wait);
+  }
+  recent.push(Date.now());
+}
+
+/** Registra o áudio que o servidor aceitou (pedido recusado com 429 não gasta a cota). */
+function countAudio(seconds: number): void {
+  recentAudio.push({ at: Date.now(), seconds });
+}
+
+/** Duração do mp3 gerado por extractAudio (48 kbps constante). */
+function mp3Seconds(file: string): number {
+  return (statSync(file).size * 8) / 48_000;
 }
 
 export async function transcribe(file: string, language: string): Promise<Transcript> {
@@ -64,19 +117,32 @@ export async function transcribe(file: string, language: string): Promise<Transc
       form.append("response_format", "verbose_json");
       form.append("timestamp_granularities[]", "word");
       form.append("timestamp_granularities[]", "segment");
+      await rateGate(mp3Seconds(file));
       const res = await fetch(`${baseUrl}/audio/transcriptions`, {
         method: "POST",
         headers: { Authorization: `Bearer ${key}` },
         body: form,
       });
-      if (!res.ok) throw new HttpError(res.status, `Transcrição falhou (${res.status}): ${await res.text()}`);
+      if (res.status !== 429) countAudio(mp3Seconds(file));
+      if (!res.ok) {
+        const body = await res.text();
+        const wait = retryAfterMs(res.headers.get("retry-after"), body);
+        if (res.status === 429 && wait !== undefined) pauseUntil = Math.max(pauseUntil, Date.now() + wait + 1000);
+        throw new HttpError(res.status, `Transcrição falhou (${res.status}): ${body}`, wait);
+      }
       return (await res.json()) as {
         text?: string;
         segments?: Array<{ start: number; end: number; text: string }>;
         words?: Array<{ word: string; start: number; end: number }>;
       };
     },
-    { shouldRetry: (e) => !(e instanceof HttpError) || e.status === 429 || e.status >= 500 },
+    {
+      // no limite por hora, a espera total fica em torno de 1 h no pior caso
+      tries: 25,
+      shouldRetry: (e) => !(e instanceof HttpError) || e.status === 429 || e.status >= 500,
+      // o limite por hora pode pedir vários minutos de espera
+      delayFor: (e) => (e instanceof HttpError && e.retryAfterMs !== undefined ? Math.min(e.retryAfterMs + 1000, 600_000) : undefined),
+    },
   );
 
   const segments = (json.segments ?? []).map((s) => ({ start: s.start, end: s.end, text: s.text.trim() }));
@@ -104,6 +170,16 @@ export function wordsFromSegments(segments: Segment[]): Word[] {
 }
 
 /** Desloca todos os tempos (para converter de "dentro do trecho" para "dentro da live"). */
+/** Só a parte da transcrição dentro de [start, end] (tempos absolutos). */
+export function sliceTranscript(t: Transcript, start: number, end: number): Transcript {
+  const segments = t.segments.filter((s) => s.end > start && s.start < end);
+  return {
+    text: segments.map((s) => s.text).join(" "),
+    segments,
+    words: t.words.filter((w) => w.end > start && w.start < end),
+  };
+}
+
 export function shiftTranscript(t: Transcript, offset: number): Transcript {
   return {
     text: t.text,

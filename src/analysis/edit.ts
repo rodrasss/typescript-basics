@@ -3,7 +3,7 @@ import { z } from "zod";
 import { normWord } from "../render/captions";
 import { totalLength, keepRanges, type Range } from "../render/timeline";
 import { askClaude, effort } from "./claude";
-import { frameBase64, type Frame } from "./frames";
+import { existingFrames, frameBase64, type Frame } from "./frames";
 import { fitToWindow, normalizeTag, type SelectedClip } from "./select";
 import type { Word } from "./transcribe";
 
@@ -199,7 +199,7 @@ export async function editClip(input: {
     .join("\n");
 
   const content: BetaContentBlockParam[] = [{ type: "text", text }];
-  for (const f of input.frames) {
+  for (const f of existingFrames(input.frames)) {
     content.push({ type: "text", text: `frame em t=${f.t.toFixed(1)}:` });
     content.push({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: frameBase64(f) } });
   }

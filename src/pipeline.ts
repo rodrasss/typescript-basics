@@ -5,8 +5,8 @@ import { editClip, fromSelection, type EditDecision } from "./analysis/edit";
 import { frameTimes, framesFromFile, framesFromHls, type Frame } from "./analysis/frames";
 import { buildKnowledge } from "./analysis/knowledge";
 import { selectClips, type Candidate, type SelectedClip } from "./analysis/select";
-import { extractAudio, shiftTranscript, transcribe, type Word } from "./analysis/transcribe";
-import { assertPermission, env, type Config, type Platform, type Streamer } from "./config";
+import { extractAudio, shiftTranscript, sliceTranscript, transcribe, type Transcript, type Word } from "./analysis/transcribe";
+import { assertPermission, creditFor, env, type Config, type Platform, type Streamer } from "./config";
 import { OUTPUT_DIR, WORK_DIR, ensureDir } from "./paths";
 import { publishClip } from "./publish";
 import { canPostNow, postTimes } from "./publish/schedule";
@@ -74,6 +74,34 @@ function limitsFor(cfg: Config, s: Streamer): { perVideo: number; minScore: numb
   return { perVideo: s.perVideo ?? cfg.clips.perVideo, minScore: s.minScore ?? cfg.clips.minScore };
 }
 
+/** Segundos de live que serão analisados (dentro dos trechos permitidos). */
+export function analyzedSeconds(allowed: Range[] | null, start: number, end: number): number {
+  if (!allowed) return Math.max(0, end - start);
+  return allowed.reduce((s, r) => s + Math.max(0, Math.min(r.end, end) - Math.max(r.start, start)), 0);
+}
+
+/** Junta janelas que se sobrepõem (em ordem de tempo) em grupos de no máximo `maxLen` segundos. */
+export function groupWindows<T extends { start: number; end: number }>(
+  windows: T[],
+  maxLen = 360,
+): Array<{ start: number; end: number; members: T[] }> {
+  const groups: Array<{ start: number; end: number; members: T[] }> = [];
+  for (const w of [...windows].sort((a, b) => a.start - b.start)) {
+    const g = groups.at(-1);
+    if (g && w.start <= g.end && Math.max(g.end, w.end) - g.start <= maxLen) {
+      g.end = Math.max(g.end, w.end);
+      g.members.push(w);
+    } else groups.push({ start: w.start, end: w.end, members: [w] });
+  }
+  return groups;
+}
+
+/** Lives longas rendem mais cortes: perHour por hora, entre perVideo e maxPerVideo. */
+export function scaledPerVideo(cfg: Config, perVideo: number, seconds: number): number {
+  if (cfg.clips.perHour <= 0) return perVideo;
+  return Math.max(perVideo, Math.min(cfg.clips.maxPerVideo, Math.ceil((seconds / 3600) * cfg.clips.perHour)));
+}
+
 /** Base de conhecimento para este streamer (manual + exemplos reais + suas decisões no painel). */
 function knowledgeFor(ctx: Ctx, streamer: Streamer): string {
   return buildKnowledge({ streamer, clips: ctx.state.clips(), maxExamples: ctx.cfg.knowledge.maxExamples });
@@ -130,6 +158,7 @@ async function finalizeClip(
 ): Promise<ClipRecord> {
   const { cfg, state } = ctx;
   const id = shortId();
+  const credit = creditFor(streamer, source.url);
   const day = new Date().toISOString().slice(0, 10);
   const base = join(OUTPUT_DIR, slug(streamer.name), `${day}_${id}_${slug(dec.title).slice(0, 40)}`);
   const file = `${base}.mp4`;
@@ -152,7 +181,7 @@ async function finalizeClip(
     emphasisColor: cfg.render.emphasisColor,
     hookTitle: cfg.render.hookTitle ? dec.hookTitle : undefined,
     bottomText: dec.bottomText,
-    credit: streamer.credit,
+    credit,
     layout: streamer.layout ?? cfg.render.layout,
     facecam: streamer.facecam,
     zoom: cfg.render.zoom,
@@ -168,7 +197,7 @@ async function finalizeClip(
   const rec: ClipRecord = {
     id,
     streamer: streamer.name,
-    credit: streamer.credit,
+    credit,
     source,
     vod,
     start: dec.start,
@@ -253,6 +282,7 @@ export async function processVod(
       work,
       perVideo,
       minScore,
+      scale: streamer.perVideo === undefined,
     });
     state.markDone(info.key);
     return out;
@@ -282,6 +312,8 @@ async function clipsFromAudio(
     perVideo: number;
     minScore: number;
     live?: boolean;
+    /** aumenta o limite de cortes conforme a duração analisada */
+    scale?: boolean;
   },
 ): Promise<ClipRecord[]> {
   const { cfg, state } = ctx;
@@ -297,17 +329,41 @@ async function clipsFromAudio(
     t < offset ? -Infinity : !allowed || allowed.some((r) => t >= r.start && t < r.end) ? v : -Infinity,
   );
   if (allowed) log.info(`Analisando: ${allowed.map((r) => `${hms(r.start)}–${Number.isFinite(r.end) ? hms(r.end) : "fim"}`).join(", ")}`);
-  let peaks = pickPeaks(inAllowed, { count: cfg.clips.candidates, minScore: 2 });
-  if (peaks.length < 3) peaks = pickPeaks(inAllowed, { count: cfg.clips.candidates, minScore: -1e9 });
+  const maxClips = audio.scale ? scaledPerVideo(cfg, perVideo, analyzedSeconds(allowed, offset, audioEnd)) : perVideo;
+  const nCand = Math.min(45, Math.max(cfg.clips.candidates, maxClips * 3));
+  if (maxClips > perVideo) log.info(`Live longa: até ${maxClips} cortes (${nCand} candidatos).`);
+  let peaks = pickPeaks(inAllowed, { count: nCand, minScore: 2 });
+  if (peaks.length < 3) peaks = pickPeaks(inAllowed, { count: nCand, minScore: -1e9 });
   log.info(`${peaks.length} trechos candidatos encontrados.`);
   if (!peaks.length) return [];
 
   log.step(framesUrl ? "Transcrevendo os candidatos e tirando frames…" : "Transcrevendo os candidatos…");
-  const transcribed = await mapLimit(peaks, 3, async (p, i) => {
-    const start = Math.max(offset, p.t - cfg.clips.windowBefore);
-    const end = Math.min(audioEnd, p.t + cfg.clips.windowAfter);
-    const mp3 = await extractAudio(file, start - offset, end - start, join(work, `cand-${i + 1}.mp3`));
-    const tr = shiftTranscript(await transcribe(mp3, cfg.clips.language), start);
+  // janelas que se sobrepõem são transcritas juntas (economiza o limite de áudio/hora do Groq)
+  const windows = peaks.map((p, i) => ({
+    i,
+    p,
+    start: Math.max(offset, p.t - cfg.clips.windowBefore),
+    end: Math.min(audioEnd, p.t + cfg.clips.windowAfter),
+  }));
+  const groups = groupWindows(windows);
+  const groupTr = await mapLimit(groups, 3, async (g, gi) => {
+    const mp3 = await extractAudio(file, g.start - offset, g.end - g.start, join(work, `grupo-${gi + 1}.mp3`));
+    try {
+      return shiftTranscript(await transcribe(mp3, cfg.clips.language), g.start);
+    } catch (e) {
+      // candidatos sem transcrição ficam de fora; os outros seguem
+      log.warn(`Trecho ${hms(g.start)}–${hms(g.end)} ficou de fora: ${errMsg(e).slice(0, 160)}`);
+      return null;
+    }
+  });
+  const trOf = new Map<number, Transcript>();
+  groups.forEach((g, gi) => {
+    const tr = groupTr[gi];
+    if (tr) for (const w of g.members) trOf.set(w.i, sliceTranscript(tr, w.start, w.end));
+  });
+  const results = await mapLimit(windows, 3, async ({ i, p, start, end }) => {
+    const tr = trOf.get(i);
+    if (!tr) return null;
     const cand: Candidate = {
       id: `c${i + 1}`,
       start,
@@ -321,6 +377,8 @@ async function clipsFromAudio(
     };
     return { cand, words: tr.words };
   });
+  const transcribed = results.filter((r) => r !== null);
+  if (!transcribed.length) throw new Error("Nenhum candidato foi transcrito (veja os avisos acima).");
   const wordsById = new Map(transcribed.map((t) => [t.cand.id, t.words]));
   const candById = new Map(transcribed.map((t) => [t.cand.id, t.cand]));
   const knowledge = knowledgeFor(ctx, streamer);
@@ -332,7 +390,7 @@ async function clipsFromAudio(
       knowledge,
       sourceTitle: src.title,
       candidates: transcribed.map((t) => t.cand),
-      maxClips: perVideo,
+      maxClips,
       minSeconds: cfg.clips.minSeconds,
       maxSeconds: cfg.clips.maxSeconds,
     })
@@ -340,38 +398,46 @@ async function clipsFromAudio(
   log.info(`${selected.length} corte(s) com nota >= ${minScore}.`);
 
   const out: ClipRecord[] = [];
+  let lastError: unknown = null;
   for (const sel of selected) {
     const dup = state.overlaps(src.key, sel.start, sel.end);
     if (dup) {
       log.info(`Pulando ${hms(sel.start)}: já existe o corte ${dup.id} desse momento.`);
       continue;
     }
-    const cand = candById.get(sel.candidateId)!;
-    const words = wordsById.get(sel.candidateId) ?? [];
-    const dec = await refine(ctx, streamer, knowledge, src.title, sel, {
-      window: { start: cand.start, end: cand.end },
-      words,
-      curve,
-      frames: async () =>
-        framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
-    });
-    if (!dec || dec.score < minScore) continue;
+    // um corte que falhar (download, render) não derruba os outros da mesma live
+    try {
+      const cand = candById.get(sel.candidateId)!;
+      const words = wordsById.get(sel.candidateId) ?? [];
+      const dec = await refine(ctx, streamer, knowledge, src.title, sel, {
+        window: { start: cand.start, end: cand.end },
+        words,
+        curve,
+        frames: async () =>
+          framesUrl ? framesFromHls(framesUrl, frameTimes(sel.start, sel.end, cfg.clips.editFrames), work, `e-${cand.id}`) : [],
+      });
+      if (!dec || dec.score < minScore) continue;
 
-    const pad = 1;
-    log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
-    const section = await downloadSection(src.url, Math.max(0, dec.start - pad), dec.end + pad, work, `trecho-${cand.id}`);
-    out.push(
-      await finalizeClip(
-        ctx,
-        streamer,
-        { kind: "vod", key: src.key, url: src.url, title: src.title },
-        dec,
-        { input: section.path, inputStart: section.start, words, workDir: work },
-        { key: src.key, start: dec.start, end: dec.end },
-        { live: audio.live },
-      ),
-    );
+      const pad = 1;
+      log.step(`Baixando trecho ${hms(dec.start)}–${hms(dec.end)}…`);
+      const section = await downloadSection(src.url, Math.max(0, dec.start - pad), dec.end + pad, work, `trecho-${cand.id}`);
+      out.push(
+        await finalizeClip(
+          ctx,
+          streamer,
+          { kind: "vod", key: src.key, url: src.url, title: src.title },
+          dec,
+          { input: section.path, inputStart: section.start, words, workDir: work },
+          { key: src.key, start: dec.start, end: dec.end },
+          { live: audio.live },
+        ),
+      );
+    } catch (e) {
+      lastError = e;
+      log.error(`Corte de ${hms(sel.start)} falhou, seguindo com os outros: ${errMsg(e)}`);
+    }
   }
+  if (!out.length && lastError) throw lastError;
   return out;
 }
 
@@ -547,10 +613,16 @@ export async function processTwitchClips(
 }
 
 /** Uma rodada de automação: para cada streamer autorizado, processa VODs novos e clipes populares. */
-export async function watchAll(ctx: Ctx, opts: { live?: boolean; onlyLive?: boolean } = {}): Promise<ClipRecord[]> {
+export async function watchAll(
+  ctx: Ctx,
+  opts: { live?: boolean; onlyLive?: boolean; streamer?: string } = {},
+): Promise<ClipRecord[]> {
   const { cfg, state } = ctx;
   const all: ClipRecord[] = [];
-  const allowed = cfg.streamers.filter((s) => s.clipPermission);
+  const allowed = cfg.streamers.filter(
+    (s) => s.clipPermission && (!opts.streamer || s.name.toLowerCase() === opts.streamer.toLowerCase()),
+  );
+  if (opts.streamer && !allowed.length) throw new Error(`Streamer "${opts.streamer}" não está no config (ou sem clipPermission).`);
   if (allowed.length === 0) log.warn("Nenhum streamer com clipPermission=true no config.");
 
   for (const s of allowed) {

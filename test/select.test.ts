@@ -20,3 +20,11 @@ test("normaliza hashtags", () => {
   assert.equal(normalizeTag("#ação"), "#ação");
   assert.equal(normalizeTag("#"), "");
 });
+
+test("espera do 429 vem do header ou da mensagem do Groq", async () => {
+  const { retryAfterMs } = await import("../src/analysis/transcribe");
+  assert.equal(retryAfterMs("7", ""), 7000);
+  assert.equal(retryAfterMs(null, "Please try again in 3s. Need more tokens?"), 3000);
+  assert.equal(retryAfterMs(null, "try again in 1m2.5s"), 62500);
+  assert.equal(retryAfterMs(null, "outro erro"), undefined);
+});

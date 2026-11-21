@@ -22,14 +22,17 @@ test("frames ficam dentro do trecho e perto do pico", () => {
 });
 
 import { buildAss } from "../src/render/captions";
-import { punchFilter, segmentsGraph } from "../src/render/render";
+import { punchFilter, segmentInputs } from "../src/render/render";
 
-test("cortes internos viram trim + concat", () => {
-  const g = segmentsGraph([{ start: 0, end: 4 }, { start: 7, end: 12 }], true);
+test("cada trecho mantido vira uma entrada e o concat junta", () => {
+  const g = segmentInputs("in.mp4", 100, 12, [{ start: 0, end: 4 }, { start: 7, end: 12 }], true);
+  assert.deepEqual(g.args, ["-ss", "100.000", "-t", "4.000", "-i", "in.mp4", "-ss", "107.000", "-t", "5.000", "-i", "in.mp4"]);
+  assert.equal(g.graph, "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[cv][ca]");
   assert.equal(g.v, "[cv]");
-  assert.match(g.graph, /\[0:v\]trim=start=7\.000:end=12\.000,setpts=PTS-STARTPTS\[sv1\]/);
-  assert.match(g.graph, /concat=n=2:v=1:a=1\[cv\]\[ca\]/);
-  assert.equal(segmentsGraph(undefined, true).v, "[0:v]");
+  const one = segmentInputs("in.mp4", 100, 12, undefined, true);
+  assert.deepEqual(one.args, ["-ss", "100.000", "-t", "12.000", "-i", "in.mp4"]);
+  assert.equal(one.v, "[0:v]");
+  assert.equal(segmentInputs("in.mp4", 0, 5, [{ start: 0, end: 2 }, { start: 3, end: 5 }], false).graph, "[0:v][1:v]concat=n=2:v=1:a=0[cv]");
 });
 
 test("zoom de reação usa zoompan com tamanho fixo", () => {
