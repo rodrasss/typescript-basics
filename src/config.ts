@@ -12,6 +12,8 @@ const StreamerSchema = z.object({
   twitch: z.string().optional(),
   /** Handle do YouTube (ex.: "@fulano"). */
   youtube: z.string().optional(),
+  /** Canal da Kick (ex.: "fulano" de kick.com/fulano). */
+  kick: z.string().optional(),
   /** Texto de crédito queimado no vídeo e colocado na legenda do post. */
   credit: z.string(),
   /**
@@ -61,6 +63,11 @@ const ConfigSchema = z.object({
        * Lista vazia = qualquer jogo. Vídeos sem essa informação (YouTube) são analisados inteiros.
        */
       games: z.array(z.string()).default(["Grand Theft Auto VI", "Grand Theft Auto V"]),
+      /**
+       * Quando a plataforma não informa o jogo por trecho (Kick, YouTube), a live entra se a
+       * categoria for um dos `games` OU se o título tiver uma destas palavras.
+       */
+      gameKeywords: z.array(z.string()).default(["gta", "vice city", "grand theft auto", "rp", "gtarp"]),
       /** Nota mínima (1-10) que o Claude precisa dar para o corte ser renderizado. */
       minScore: z.number().min(1).max(10).default(6),
       language: z.string().default("pt"),
@@ -124,6 +131,8 @@ const ConfigSchema = z.object({
     .object({
       /** Canais da Twitch de referência (além dos streamers cadastrados) para pegar os clipes mais vistos. */
       twitch: z.array(z.string()).default(["alanzoka", "cellbit"]),
+      /** Canais da Kick de referência (além dos streamers cadastrados). */
+      kick: z.array(z.string()).default([]),
       /** Período dos clipes da Twitch: 24hr, 7d, 30d ou all. */
       clipsRange: z.enum(["24hr", "7d", "30d", "all"]).default("7d"),
       clipsPerChannel: z.number().int().positive().default(20),

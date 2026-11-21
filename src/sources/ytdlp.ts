@@ -27,6 +27,8 @@ export interface VideoInfo {
   isLive: boolean;
   /** trechos por jogo/categoria (Twitch), quando disponível */
   chapters: Array<{ title: string; start: number; end: number }>;
+  /** categorias do vídeo (Kick/YouTube), quando disponível */
+  categories: string[];
 }
 
 export async function getInfo(url: string): Promise<VideoInfo> {
@@ -44,6 +46,7 @@ export async function getInfo(url: string): Promise<VideoInfo> {
       start: Number(c.start_time ?? 0),
       end: Number(c.end_time ?? j.duration ?? 0),
     })),
+    categories: ((j.categories as unknown[] | null) ?? []).map(String),
   };
 }
 
@@ -73,7 +76,8 @@ export async function listRecent(pageUrl: string, limit: number): Promise<Listed
       id: String(e.id),
       url: String(e.webpage_url ?? e.url),
       title: String(e.title ?? e.id),
-      isLive: e.live_status === "is_live" || e.is_live === true,
+      // na Kick, o VOD da live que ainda está no ar aparece com duração 0
+      isLive: e.live_status === "is_live" || e.is_live === true || (String(e.ie_key ?? "").startsWith("Kick") && !Number(e.duration)),
     }));
 }
 
@@ -168,9 +172,10 @@ export function downloadVideo(url: string, dir: string, name: string): Promise<s
   ]);
 }
 
-export function channelPages(s: { twitch?: string; youtube?: string }): string[] {
+export function channelPages(s: { twitch?: string; youtube?: string; kick?: string }): string[] {
   const pages: string[] = [];
   if (s.twitch) pages.push(`https://www.twitch.tv/${s.twitch}/videos?filter=archives&sort=time`);
+  if (s.kick) pages.push(`https://kick.com/${s.kick}/videos`);
   if (s.youtube) {
     const handle = s.youtube.startsWith("@") ? s.youtube : `@${s.youtube}`;
     pages.push(`https://www.youtube.com/${handle}/streams`);

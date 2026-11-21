@@ -1,6 +1,6 @@
 # Clipper GTA: cortes automáticos de lives
 
-Esta automação pega as lives dos streamers (GTA RP, GTA V e, agora, GTA 6), acha os momentos engraçados e transforma cada um num vídeo vertical legendado. Depois posta no **YouTube Shorts**, no **TikTok** e no **Instagram Reels**.
+Esta automação pega as lives dos streamers na Twitch, na Kick e no YouTube (GTA RP, GTA V e, agora, GTA 6), acha os momentos engraçados e transforma cada um num vídeo vertical legendado. Depois posta no **YouTube Shorts**, no **TikTok** e no **Instagram Reels**.
 
 > 👉 **Começando agora? Siga o [GUIA.md](GUIA.md)**, que tem o passo a passo de instalação, chaves e contas, com todos os links.
 
@@ -64,6 +64,7 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | Campo | O que faz |
 |---|---|
 | `streamers[].clipPermission` | Só processa o streamer quando for `true`. |
+| `streamers[].twitch` / `kick` / `youtube` | Onde buscar as lives: Twitch, Kick (kick.com/canal) e/ou YouTube. |
 | `streamers[].credit` | Crédito queimado no vídeo e colocado na legenda. |
 | `streamers[].context` | Contexto para o Claude: personagem no RP, servidor, bordões. Melhora bastante os títulos. |
 | `streamers[].layout` / `facecam` | `"split"` + posição da câmera (frações 0–1) para usar câmera em cima e jogo embaixo. |
@@ -71,7 +72,7 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `clips.perVideo` / `candidates` | Máximo de cortes por VOD e quantos picos o Claude avalia. |
 | `clips.minSeconds` / `maxSeconds` | Só limites técnicos (5 s e 180 s, o máximo dos Shorts/Reels). A duração de cada corte é a do momento, do começo ao fim da situação. |
 | `clips.windowBefore` / `windowAfter` | Quanto da live antes/depois de cada pico a IA enxerga (para pegar a situação inteira). |
-| `clips.games` | Só analisa os trechos da live com estes jogos (categoria da Twitch). Padrão: GTA VI e GTA V. Lives de outros jogos são puladas. |
+| `clips.games` / `gameKeywords` | Só analisa GTA: na Twitch, pelos trechos de cada jogo; na Kick/YouTube, pela categoria ou por palavras no título ("GTA", "Vice City", "RP"). Lives de outros jogos são puladas. |
 | `clips.minScore` | Nota mínima (1–10) para renderizar. |
 | `clips.frames` | Frames de cada trecho enviados ao Claude (0 desliga). Funciona em fontes HLS (Twitch/Kick) e nos clipes. |
 | `clips.hashtags` | Hashtags sempre adicionadas. |

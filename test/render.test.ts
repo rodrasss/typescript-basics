@@ -68,3 +68,17 @@ test("nenhum texto no meio do vídeo (layout blur)", () => {
   assert.ok(m.footerMarginV > m.captionMarginV, "rodapé abaixo da legenda");
   assert.ok(1920 - m.creditMarginV > m.footerMarginV + 50, "crédito por último");
 });
+
+import { matchesGame } from "../src/pipeline";
+
+test("filtro de jogo pela categoria ou título (Kick/YouTube)", () => {
+  const games = ["Grand Theft Auto VI", "Grand Theft Auto V"];
+  const kw = ["gta", "vice city", "grand theft auto", "rp", "gtarp"];
+  assert.equal(matchesGame({ title: "🥥60 FPS GTA 6🥥LIVE", categories: ["Just Chatting"] }, games, kw), true);
+  assert.equal(matchesGame({ title: "VICE CITY BABYYYY", categories: [] }, games, kw), true);
+  assert.equal(matchesGame({ title: "CIDADE ALTA RP - POLICIAL", categories: [] }, games, kw), true);
+  assert.equal(matchesGame({ title: "jogando RPG novo", categories: [] }, games, kw), false);
+  assert.equal(matchesGame({ title: "VALORANT CHAMPIONS", categories: ["VALORANT"] }, games, kw), false);
+  assert.equal(matchesGame({ title: "qualquer coisa", categories: ["Grand Theft Auto V"] }, games, kw), true);
+  assert.equal(matchesGame({ title: "qualquer coisa", categories: [] }, [], kw), true);
+});

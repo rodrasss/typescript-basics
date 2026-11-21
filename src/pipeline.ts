@@ -47,6 +47,22 @@ export function gameRanges(
   return chapters.filter((c) => wanted.includes(c.title.toLowerCase())).map((c) => ({ start: c.start, end: c.end }));
 }
 
+/**
+ * Sem capítulos por jogo (Kick, YouTube): a live entra se a categoria for um dos jogos
+ * ou se o título tiver uma das palavras-chave. Lista de jogos vazia = sempre entra.
+ */
+export function matchesGame(
+  info: { title: string; categories: string[] },
+  games: string[],
+  keywords: string[],
+): boolean {
+  if (!games.length) return true;
+  const wanted = games.map((g) => g.toLowerCase());
+  if (info.categories.some((c) => wanted.includes(c.toLowerCase()))) return true;
+  const title = info.title.toLowerCase();
+  return keywords.some((k) => new RegExp(`(^|[^\\p{L}\\p{N}])${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^\\p{L}\\p{N}]|$)`, "u").test(title));
+}
+
 /** Limites por streamer (para postar menos de alguém, por exemplo). */
 function limitsFor(cfg: Config, s: Streamer): { perVideo: number; minScore: number } {
   return { perVideo: s.perVideo ?? cfg.clips.perVideo, minScore: s.minScore ?? cfg.clips.minScore };
@@ -171,7 +187,13 @@ async function finalizeClip(
 }
 
 /** VOD/vídeo inteiro: áudio → picos de volume → transcrição → Claude escolhe → baixa só os trechos → renderiza. */
-export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Promise<ClipRecord[]> {
+export async function processVod(
+  url: string,
+  streamer: Streamer,
+  ctx: Ctx,
+  /** título visto na lista do canal (a Kick às vezes devolve as informações do VOD incompletas) */
+  hint: { title?: string } = {},
+): Promise<ClipRecord[]> {
   assertPermission(streamer);
   const { cfg, state } = ctx;
   log.step(`Lendo ${url}`);
@@ -184,6 +206,12 @@ export async function processVod(url: string, streamer: Streamer, ctx: Ctx): Pro
   const ranges = gameRanges(info.chapters, cfg.clips.games);
   if (ranges && ranges.length === 0) {
     log.info(`Pulando "${info.title}": nenhum trecho de ${cfg.clips.games.join(" / ")} (jogos: ${info.chapters.map((c) => c.title).join(", ")}).`);
+    state.markDone(info.key);
+    return [];
+  }
+  const titleForGame = `${info.title} ${hint.title ?? ""}`;
+  if (!ranges && !matchesGame({ title: titleForGame, categories: info.categories }, cfg.clips.games, cfg.clips.gameKeywords)) {
+    log.info(`Pulando "${info.title}": categoria (${info.categories.join(", ") || "?"}) e título não indicam ${cfg.clips.games.join(" / ")}.`);
     state.markDone(info.key);
     return [];
   }
@@ -403,7 +431,7 @@ export async function watchAll(ctx: Ctx): Promise<ClipRecord[]> {
         );
         for (const v of fresh.slice(0, cfg.watch.videosPerRun)) {
           try {
-            all.push(...(await processVod(v.url, s, ctx)));
+            all.push(...(await processVod(v.url, s, ctx, { title: v.title })));
           } catch (e) {
             log.error(`Falha em ${v.url}: ${errMsg(e)}`);
           }
