@@ -613,10 +613,16 @@ export async function processTwitchClips(
 }
 
 /** Uma rodada de automação: para cada streamer autorizado, processa VODs novos e clipes populares. */
-export async function watchAll(ctx: Ctx, opts: { live?: boolean; onlyLive?: boolean } = {}): Promise<ClipRecord[]> {
+export async function watchAll(
+  ctx: Ctx,
+  opts: { live?: boolean; onlyLive?: boolean; streamer?: string } = {},
+): Promise<ClipRecord[]> {
   const { cfg, state } = ctx;
   const all: ClipRecord[] = [];
-  const allowed = cfg.streamers.filter((s) => s.clipPermission);
+  const allowed = cfg.streamers.filter(
+    (s) => s.clipPermission && (!opts.streamer || s.name.toLowerCase() === opts.streamer.toLowerCase()),
+  );
+  if (opts.streamer && !allowed.length) throw new Error(`Streamer "${opts.streamer}" não está no config (ou sem clipPermission).`);
   if (allowed.length === 0) log.warn("Nenhum streamer com clipPermission=true no config.");
 
   for (const s of allowed) {
