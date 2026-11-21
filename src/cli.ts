@@ -178,9 +178,10 @@ program
   .command("painel")
   .description("Abre o painel no navegador para assistir, editar, aprovar e postar os cortes")
   .option("--port <porta>", "porta local", "4310")
+  .option("--celular", "abre também no celular pela rede Wi-Fi (link com chave + QR code)")
   .action(
-    action(async (o: { port: string }) => {
-      await startPanel(loadConfig(), Number(o.port));
+    action(async (o: { port: string; celular?: boolean }) => {
+      await startPanel(loadConfig(), Number(o.port), { lan: o.celular });
       await new Promise(() => {}); // fica aberto até Ctrl+C
     }),
   );

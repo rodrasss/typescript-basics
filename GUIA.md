@@ -225,8 +225,14 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
    - **Login Kit**, com redirect URI exatamente `http://localhost:53683/callback/`
    - **Content Posting API**
 5. Peça os escopos `user.info.basic`, `video.upload` e `video.publish`. Para publicar direto, ative também **Direct Post** na Content Posting API.
-6. Use o **Sandbox** para testar com a sua conta, adicionando-a como usuário de teste. Para uso normal, envie o app para revisão (**Submit for review**).
-7. Copie o **Client key** e o **Client secret** para o `.env`:
+6. **Sandbox** (para usar antes da aprovação do TikTok): no topo do app, abra **Sandbox** → **Create Sandbox** e preencha igual ao app:
+   - **Web/Desktop URL:** o site do app, por exemplo `https://github.com/rodrasss/typescript-basics`. Não use o endereço do login aqui.
+   - **Login Kit → Redirect URI:** toque na aba **Desktop**, não na Web, e coloque `http://localhost:53683/callback/`.
+   - **Content Posting API:** **Direct Post** ligado. O **Verify domains** não é necessário, porque o programa envia o arquivo direto.
+   - **Target users:** adicione a conta de cortes.
+   - No fim, toque em **Apply changes**. Enquanto aparecer "form has unsaved changes", as mudanças ainda não foram salvas.
+   - Para uso normal, envie o app de **Production** para revisão (**Submit for review**).
+7. Copie o **Client key** e o **Client secret** para o `.env`. Enquanto o app não for aprovado, use os do **Sandbox** (o Client key começa com `sb`):
    ```
    TIKTOK_CLIENT_KEY=...
    TIKTOK_CLIENT_SECRET=...
@@ -235,9 +241,17 @@ Abra **http://127.0.0.1:4310** no navegador. Lá você assiste aos cortes, ajust
    ```bash
    npm run clipper -- auth:tiktok
    ```
-   O login fica salvo em `data/tiktok-token.json` e se renova sozinho. **Não apague esse arquivo.**
-9. **Como os posts saem:** por padrão (`"tiktokMode": "inbox"`), o vídeo vai para a **caixa de entrada do app do TikTok**. Você recebe uma notificação, abre o app, coloca uma **música em alta** (ajuda muito no alcance) e publica.
-   - Para publicar direto, use `"tiktokMode": "direct"`. Mas sem a auditoria da Content Posting API (https://developers.tiktok.com/application/content-posting-api), os posts diretos só saem como **privados**.
+   - O navegador abre. Entre com a conta de cortes e toque em **Autorizar**.
+   - O login fica salvo em `data/tiktok-token.json` e se renova sozinho. **Não apague esse arquivo.**
+   - Para logar pelo celular: `auth:tiktok --link` mostra o link. Depois de autorizar, copie o endereço da página que não carrega e rode `auth:tiktok --url "<endereço>"`.
+9. **Como os posts saem:** a IA escreve título, legenda e hashtags, e os **créditos do streamer** ("🎥 Créditos: twitch.tv/...") vão sempre na legenda. O programa tenta **postar direto e público** (`"tiktokMode": "direct"`). Enquanto o app não tiver a aprovação do TikTok, o vídeo vai para a **caixa de entrada do app do TikTok**.
+   - **Na caixa de entrada o TikTok não recebe texto.** O programa guarda a legenda pronta, com os créditos:
+     - no terminal;
+     - num arquivo `.legenda-tiktok.txt` ao lado do vídeo;
+     - no painel, com o botão **Copiar legenda**.
+   - **Pelo celular:** no PC, rode `npm run clipper -- painel --celular`. Aponte a câmera do celular para o QR code que aparece; o celular precisa estar no mesmo Wi-Fi. Se o Windows perguntar sobre o firewall, permita em **redes privadas**.
+   - Na aba **Publicados**, toque em **Copiar legenda**. Depois, no app do TikTok, abra a notificação do vídeo, cole a legenda, coloque uma **música em alta** (ajuda muito no alcance) e publique.
+   - Para postar 100% sozinho e público, peça a auditoria da Content Posting API (https://developers.tiktok.com/application/content-posting-api). Quando ela for aprovada, troque no `.env` as chaves do Sandbox pelas de Production e refaça o `auth:tiktok`. A partir daí o programa posta direto, já com a legenda.
 
 ### 11. Instagram Reels
 1. **Conta Profissional.** No app do Instagram: **Configurações → Tipo de conta e ferramentas → Mudar para conta profissional** (Criador serve).
@@ -331,6 +345,6 @@ Para tirar um corte só, use `npm run clipper -- remover ID` (veja o ID no paine
 - **"Sign in to confirm you're not a bot" (YouTube).** Exporte os cookies do navegador logado (veja https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp) e coloque `YTDLP_COOKIES=./cookies.txt` no `.env`.
 - **yt-dlp dando erro do nada.** Atualize: `winget upgrade yt-dlp.yt-dlp`, `brew upgrade yt-dlp` ou `pipx upgrade yt-dlp`.
 - **YouTube pede login de novo toda semana.** Falta **Publicar app** na tela de consentimento (passo 9.3).
-- **TikTok: `unaudited_client_can_only_post_to_private_accounts`.** Use `"tiktokMode": "inbox"` (o padrão).
+- **TikTok: `unaudited_client_can_only_post_to_private_accounts`.** O app ainda não tem a aprovação do TikTok. O programa já manda para a caixa de entrada sozinho; para postar público direto, peça a auditoria (passo 10.9).
 - **Instagram: "Nenhuma Página com conta do Instagram ligada".** Refaça o passo 11.2.
 - **Fonte da legenda.** Baixe uma fonte grossa (ex.: Montserrat em https://fonts.google.com/specimen/Montserrat), coloque o `.ttf` em `assets/fonts/` e use `"font": "Montserrat ExtraBold"` em `render`.

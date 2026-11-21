@@ -75,15 +75,26 @@
   },
   "publish": {
     "platforms": [
-      "youtube",
-      "tiktok",
-      "instagram"
+      "tiktok"
     ],
     "youtubePrivacy": "private",
-    "tiktokMode": "inbox",
-    "tiktokPrivacy": "SELF_ONLY",
-    "autoApproveMinScore": null,
-    "perRun": 3
+    "tiktokMode": "direct",
+    "tiktokPrivacy": "PUBLIC_TO_EVERYONE",
+    "autoApproveMinScore": 6,
+    "perRun": 3,
+    "maxPerDay": 8,
+    "minGapMinutes": 45,
+    "windows": {
+      "weekdays": [
+        "12:00-14:00",
+        "18:00-22:30"
+      ],
+      "weekend": [
+        "09:00-13:00",
+        "18:00-22:30"
+      ]
+    },
+    "liveAnytime": true
   },
   "knowledge": {
     "twitch": [

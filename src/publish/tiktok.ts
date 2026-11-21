@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { env, requireEnv } from "../config";
 import { DATA_DIR, ensureDir } from "../paths";
+import { log } from "../util/log";
 import { sleep } from "../util/misc";
 import { randomState, tiktokPkce, waitForRedirect } from "./oauth";
 
@@ -180,32 +181,43 @@ export function chunkPlan(size: number, chunk = 10_000_000): { chunkSize: number
 export async function uploadTikTok(
   file: string,
   meta: { caption: string; privacy: string; mode: "inbox" | "direct" },
-): Promise<{ id: string; url?: string; note?: string }> {
+): Promise<{ id: string; url?: string; note?: string; inbox?: boolean }> {
   const token = await accessToken();
   const data = await readFile(file);
   const size = data.length;
   const { chunkSize, count } = chunkPlan(size);
   const source_info = { source: "FILE_UPLOAD", video_size: size, chunk_size: chunkSize, total_chunk_count: count };
 
-  let init: { publish_id: string; upload_url: string };
-  if (meta.mode === "inbox") {
-    init = await call(token, "/v2/post/publish/inbox/video/init/", { source_info });
-  } else {
-    const creator = await call<{ privacy_level_options: string[] }>(token, "/v2/post/publish/creator_info/query/", {});
-    const options = creator.privacy_level_options ?? [];
-    const privacy = options.includes(meta.privacy) ? meta.privacy : options.includes("SELF_ONLY") ? "SELF_ONLY" : options[0];
-    init = await call(token, "/v2/post/publish/video/init/", {
-      post_info: {
-        title: meta.caption.slice(0, 2200),
-        privacy_level: privacy,
-        disable_duet: false,
-        disable_comment: false,
-        disable_stitch: false,
-        video_cover_timestamp_ms: 1000,
-      },
-      source_info,
-    });
+  let init: { publish_id: string; upload_url: string } | null = null;
+  let mode = meta.mode;
+  if (mode === "direct") {
+    try {
+      const creator = await call<{ privacy_level_options: string[] }>(token, "/v2/post/publish/creator_info/query/", {});
+      const options = creator.privacy_level_options ?? [];
+      if (!options.includes(meta.privacy)) {
+        throw new Error(`unaudited: privacidade ${meta.privacy} indisponível (opções: ${options.join(", ") || "nenhuma"})`);
+      }
+      init = await call(token, "/v2/post/publish/video/init/", {
+        post_info: {
+          title: meta.caption.slice(0, 2200),
+          privacy_level: meta.privacy,
+          disable_duet: false,
+          disable_comment: false,
+          disable_stitch: false,
+          video_cover_timestamp_ms: 1000,
+        },
+        source_info,
+      });
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
+      // sem a aprovação do TikTok, post direto só sai privado → manda para a caixa de entrada (público ao tocar em publicar)
+      if (!/unaudited|privacy|private|scope_not_authorized|spam_risk/i.test(msg)) throw e;
+      log.warn(`TikTok: post direto público ainda não liberado (${msg.slice(0, 120)}); mandando para a caixa de entrada.`);
+      mode = "inbox";
+    }
   }
+  if (mode === "inbox") init = await call(token, "/v2/post/publish/inbox/video/init/", { source_info });
+  if (!init) throw new Error("TikTok não iniciou o envio.");
 
   for (let i = 0; i < count; i++) {
     const from = i * chunkSize;
@@ -230,7 +242,7 @@ export async function uploadTikTok(
       { publish_id: init.publish_id },
     );
     if (st.status === "SEND_TO_USER_INBOX") {
-      return { id: init.publish_id, note: "Na caixa de entrada do app do TikTok: abra o app, finalize e publique." };
+      return { id: init.publish_id, inbox: true, note: "Na caixa de entrada do app do TikTok: abra o app, cole a legenda e publique." };
     }
     if (st.status === "PUBLISH_COMPLETE") {
       const postId = st.publicaly_available_post_id?.[0];

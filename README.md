@@ -53,6 +53,7 @@ npm run clipper -- watch --ao-vivo --publish --every 0.25         # tudo junto: 
 npm run clipper -- aprender                       # atualiza a base de conhecimento da IA
 
 npm run clipper -- painel                         # http://127.0.0.1:4310: assistir, editar, aprovar, postar
+npm run clipper -- painel --celular               # o mesmo painel no celular (mesmo Wi-Fi, QR code): copiar legenda para o TikTok
 npm run clipper -- list [--status pending]        # mesma fila, no terminal
 npm run clipper -- approve <id...> | reject <id...>
 npm run clipper -- remover <id...>                # tira um corte do ar (YouTube pela API; TikTok/Instagram mostra o link)
@@ -87,7 +88,9 @@ npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das r
 | `render.zoom` / `font` / `highlightColor` | Aparência. Fontes `.ttf` próprias vão em `assets/fonts/`. |
 | `publish.platforms` | Redes onde postar. |
 | `publish.youtubePrivacy` | Privacidade no YouTube (`private` / `unlisted` / `public`). |
-| `publish.tiktokMode` | `inbox`: vai para os rascunhos do app do TikTok, e funciona sem auditoria. `direct`: publica direto. |
+| `publish.tiktokMode` | `direct` (padrão): tenta publicar direto e público. Se o app ainda não tiver a aprovação do TikTok, manda para a caixa de entrada do app; como ali o TikTok não recebe texto, a legenda pronta (com créditos) fica no painel, com o botão Copiar. `inbox`: sempre caixa de entrada. |
+| `publish.maxPerDay` / `minGapMinutes` | Ritmo seguro: no máximo N posts por dia e um intervalo mínimo entre eles. |
+| `publish.windows` / `liveAnytime` | Janelas de horário para os cortes de lives encerradas (padrão: 12h–14h e 18h–22h30; fim de semana 9h–13h e 18h–22h30). Cortes do modo ao vivo saem na hora. |
 | `publish.autoApproveMinScore` | Aprovação automática por nota (`null` = sempre revisar). |
 | `publish.perRun` | Quantos cortes postar por rodada. |
 | `watch.*` | Quantos VODs e clipes processar por rodada. |

@@ -1,5 +1,8 @@
+import { randomBytes } from "node:crypto";
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
+import { networkInterfaces } from "node:os";
+import qr from "qrcode-terminal";
 import { PLATFORMS, type Config, type Platform } from "./config";
 import { isConfigured, publishClip } from "./publish";
 import { State, type ClipRecord, type ClipStatus } from "./state";
@@ -47,19 +50,45 @@ function publicClip(c: ClipRecord) {
   return { ...c, file: undefined, fileName: c.file.split(/[\\/]/).pop(), exists: existsSync(c.file) };
 }
 
-export function startPanel(cfg: Config, port: number): Promise<void> {
+/** IPs do computador na rede local (Wi-Fi/cabo), para abrir o painel no celular. */
+export function lanAddresses(): string[] {
+  return Object.values(networkInterfaces())
+    .flat()
+    .filter((n) => n && n.family === "IPv4" && !n.internal)
+    .map((n) => n!.address);
+}
+
+const isLoopback = (a?: string) => !a || a === "::1" || a.startsWith("127.") || a.startsWith("::ffff:127.");
+
+export function startPanel(cfg: Config, port: number, opts: { lan?: boolean } = {}): Promise<void> {
   const origin = `http://127.0.0.1:${port}`;
   const busy = new Set<string>();
+  // modo celular: escuta na rede local, mas só responde a quem abriu o link com a chave
+  const key = opts.lan ? randomBytes(6).toString("base64url") : "";
+  const lanUrls = opts.lan ? lanAddresses().map((ip) => `http://${ip}:${port}`) : [];
+  const allowedOrigins = new Set([origin, `http://localhost:${port}`, ...lanUrls]);
 
   const server = createServer(async (req, res) => {
     try {
       const url = new URL(req.url ?? "/", origin);
       const parts = url.pathname.split("/").filter(Boolean);
 
+      if (opts.lan && !isLoopback(req.socket.remoteAddress)) {
+        if (url.searchParams.get("k") === key) {
+          res.writeHead(302, { "Set-Cookie": `k=${key}; HttpOnly; SameSite=Strict; Path=/; Max-Age=2592000`, Location: "/" });
+          return res.end();
+        }
+        const cookie = /(?:^|;\s*)k=([^;]+)/.exec(req.headers.cookie ?? "")?.[1];
+        if (cookie !== key) {
+          res.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });
+          return res.end("Abra o link (ou o QR code) que apareceu no terminal do computador.");
+        }
+      }
+
       if (req.method === "POST") {
         // proteção simples contra outra aba/site mandando comandos para o painel
         const o = req.headers.origin;
-        if (o && o !== origin && o !== `http://localhost:${port}`) return json(res, 403, { error: "origem não permitida" });
+        if (o && !allowedOrigins.has(o)) return json(res, 403, { error: "origem não permitida" });
       }
 
       if (req.method === "GET" && url.pathname === "/") {
@@ -118,8 +147,14 @@ export function startPanel(cfg: Config, port: number): Promise<void> {
 
   return new Promise((resolve, reject) => {
     server.on("error", reject);
-    server.listen(port, "127.0.0.1", () => {
+    server.listen(port, opts.lan ? "0.0.0.0" : "127.0.0.1", () => {
       log.ok(`Painel aberto em ${origin}  (Ctrl+C para fechar)`);
+      if (opts.lan) {
+        if (!lanUrls.length) log.warn("Não achei o IP deste computador na rede local; o painel só abre aqui.");
+        for (const u of lanUrls) log.ok(`No celular (mesmo Wi-Fi): ${u}/?k=${key}`);
+        if (lanUrls[0]) qr.generate(`${lanUrls[0]}/?k=${key}`, { small: true });
+        log.info("Aponte a câmera do celular para o QR code. Se o Windows perguntar sobre o firewall, permita em redes privadas.");
+      }
       resolve();
     });
   });
@@ -141,7 +176,9 @@ const PAGE = /* html */ `<!doctype html>
   .tabs button { background:none; border:1px solid var(--line); color:var(--muted); padding:6px 12px; border-radius:999px; cursor:pointer; }
   .tabs button.on { color:var(--text); border-color:var(--accent); }
   .plat { color:var(--muted); font-size:13px; margin-left:auto; }
-  main { padding:16px; display:grid; gap:16px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  main { padding:16px; display:grid; gap:16px; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); }
+  .copybox { margin-top:6px; padding:10px; border:1px dashed var(--accent); border-radius:10px; display:flex; flex-direction:column; gap:6px; }
+  .copybox textarea { min-height:110px; font-size:13px; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; }
   video { width:100%; aspect-ratio:9/16; max-height:62vh; background:#000; display:block; }
   .body { padding:12px; display:flex; flex-direction:column; gap:8px; }
@@ -197,7 +234,16 @@ function renderTabs() {
 function postsHtml(c) {
   return Object.entries(c.posts || {}).map(([p, r]) =>
     r.error ? '<div class="err">' + p + ": " + esc(r.error) + "</div>"
-    : "<div>" + p + ": " + (r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">abrir</a>' : esc(r.note || r.id)) + "</div>").join("");
+    : "<div>" + p + ": " + (r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">abrir</a>' : esc(r.note || r.id)) + "</div>" +
+      (r.text ? '<div class="copybox"><label>Legenda pronta para colar no ' + p + ' (já com os créditos)</label><textarea readonly>' + esc(r.text) + '</textarea><div class="btns"><button class="b-pub" data-act="copy">Copiar legenda</button></div></div>' : "")).join("");
+}
+function copyText(ta, btn) {
+  const done = () => { btn.textContent = "Copiado ✓"; setTimeout(() => (btn.textContent = "Copiar legenda"), 2000); };
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(ta.value).then(done);
+  // celular pela rede local (http): copia selecionando o texto
+  ta.readOnly = false; ta.focus(); ta.setSelectionRange(0, ta.value.length);
+  const ok = document.execCommand("copy"); ta.readOnly = true; ta.blur();
+  if (ok) done(); else alert("Segure o dedo no texto e toque em Copiar.");
 }
 function render() {
   renderTabs();
@@ -239,6 +285,7 @@ document.addEventListener("click", async (e) => {
   const t = e.target;
   if (t.dataset.tab) { tab = t.dataset.tab; render(); return; }
   const act = t.dataset.act; if (!act) return;
+  if (act === "copy") { copyText(t.closest(".copybox").querySelector("textarea"), t); return; }
   const card = t.closest(".card"); const id = card.dataset.id;
   t.disabled = true;
   try {
