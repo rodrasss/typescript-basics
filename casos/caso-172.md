@@ -75,6 +75,7 @@ O Tiriba Advisory FIF Incentivado em Infraestrutura RF é gerido pela Ancoradour
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 10/03/2026 é o 7º dia útil de março (o mês tem 22 dias úteis) e o 46º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

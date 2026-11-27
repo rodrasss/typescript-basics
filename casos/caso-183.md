@@ -76,6 +76,7 @@ Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em c
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 28/01/2026 é o 19º dia útil de janeiro (o mês tem 21 dias úteis) e o 19º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 
@@ -87,7 +88,7 @@ Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em c
 | EVSA12 | ANBIMA — PU pela taxa indicativa de D | 1.059,819196 |  |
 | ATRI21 | ANBIMA | sem taxa indicativa divulgada para o ativo |  |
 | ATRI21 | Comitê de precificação (ata de 29/11/2025) | 1.079,062764 |  |
-| ATRI21 | B3 — último negócio no secundário (26/01/2026) | 1.041,962383 | volume de R$ 4.000.000,00 |
+| ATRI21 | B3 — último negócio no secundário (26/01/2026) | 1.041,962383 | volume de R$ 14.429.000,00 |
 
 ## 4. Comunicações recebidas hoje
 

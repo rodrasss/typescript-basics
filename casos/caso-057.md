@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Quaresmeira Total Fiagro — Direitos Creditórios é gerido pela Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA), em São Paulo/SP. Criado em 05/02/2020, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Juliana. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o administrador revisa o manual de precificação uma vez por ano. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. Já entrou dinheiro na conta do fundo sem identificação do remetente. A base de cálculo das taxas é um ponto sensível da parametrização. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (23/04/2026) o fundo tinha PL de R$ 599.618.350,67, cota de 84,68958756 e 7.080.189,75979266 cotas. Hoje, sexta-feira, 24/04/2026, é a data-base da validação.
+Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Quaresmeira Total Fiagro — Direitos Creditórios: a casa é uma especialista em crédito estruturado (FIDC e CRA). Criado em 05/02/2020, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Juliana. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o administrador revisa o manual de precificação uma vez por ano. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (23/04/2026) o fundo tinha PL de R$ 599.618.350,67, cota de 84,68958756 e 7.080.189,75979266 cotas. Hoje, sexta-feira, 24/04/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -79,6 +79,7 @@ O Quaresmeira Total Fiagro — Direitos Creditórios é gerido pela Quaresmeira 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 24/04/2026 é o 16º dia útil de abril (o mês tem 20 dias úteis) e o 16º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 
@@ -90,7 +91,7 @@ O Quaresmeira Total Fiagro — Direitos Creditórios é gerido pela Quaresmeira 
 
 ## 4. Comunicações recebidas hoje
 
-- **13:44** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (27/04/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **11:41** — *Banco — tesouraria* — **Débito em duplicidade na conta do fundo**: O banco confirmou dois débitos de R$ 8.733,52 referentes à NF 5688; o estorno do segundo foi solicitado.
 
 ## 5. Batimento Alfa × Beta
 
@@ -103,7 +104,7 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | Cota de fechamento | 84,71657851 | 84,71534500 | -0,00123351 |
 | Quantidade final de cotas | 7.080.189,75979266 | 7.080.189,75979266 | 0,00000000 |
 | PL final | R$ 599.809.451,65 | R$ 599.800.718,17 | R$ -8.733,48 |
-| Caixa | R$ 23.368.986,15 | R$ 23.500.252,63 | R$ 131.266,48 |
+| Caixa | R$ 23.368.986,15 | R$ 23.404.252,63 | R$ 35.266,48 |
 | Total de provisões | R$ 450.243,75 | R$ 450.243,75 | R$ 0,00 |
 
 ### 5.2 Carteira
@@ -124,8 +125,8 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | Saldo inicial (D−1) | 23.377.719,67 | 23.377.719,67 |
 | Pagamento — despesa de registro/cartório (NF 5688) | -8.733,52 | -8.733,52 |
 | Pagamento — despesa de registro/cartório (NF 5688) | — | -8.733,52 |
-| TED recebida — remetente não identificado (CPF/CNPJ sem cadastro de cotista) | — | 140.000,00 |
-| **Saldo final** | 23.368.986,15 | 23.500.252,63 |
+| TED recebida — remetente não identificado (CPF/CNPJ sem cadastro de cotista) | — | 44.000,00 |
+| **Saldo final** | 23.368.986,15 | 23.404.252,63 |
 
 ### 5.4 Valores a receber
 
@@ -135,7 +136,7 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| RECURSOS A IDENTIFICAR — Créditos recebidos sem identificação (a identificar/devolver) | — | 140.000,00 |
+| RECURSOS A IDENTIFICAR — Créditos recebidos sem identificação (a identificar/devolver) | — | 44.000,00 |
 
 ### 5.6 Provisões
 
@@ -169,9 +170,9 @@ Nenhum movimento de passivo no dia.
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
 | Total de ativos | 576.890.709,31 | 576.890.709,31 | 0,00 |
-| Caixa | 23.368.986,15 | 23.500.252,63 | 131.266,48 |
+| Caixa | 23.368.986,15 | 23.404.252,63 | 35.266,48 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 140.000,00 | 140.000,00 |
+| Valores a pagar | 0,00 | 44.000,00 | 44.000,00 |
 | Provisões | 450.243,75 | 450.243,75 | 0,00 |
 | PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 599.834.871,24 | 599.826.137,72 | -8.733,52 |
 | PL base da cota | 599.809.451,71 | 599.800.718,19 | -8.733,52 |
@@ -202,7 +203,7 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 | Dimensão | Medida | Limite | Veredito |
 |---|---|---|---|
 | Cota | 103,09 cotas equivalentes (quantidade 0,00; PL 103,09) | 250 cotas | dentro |
-| Caixa | R$ 131.266,48 | sem tolerância | ACIMA |
+| Caixa | R$ 35.266,48 | sem tolerância | ACIMA |
 | Provisões | maior diferença R$ 0,00; total R$ 0,00 | R$ 100,00 por provisão e no total | dentro |
 
 ### Achado 1: Pagamento da NF 5688 debitado duas vezes
@@ -215,20 +216,20 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
   1. O caixa do Beta está R$ 8.733,52 abaixo do do Alfa. A diferença é um segundo lançamento com histórico idêntico (mesma NF, mesmo valor).
   2. A mesma nota fiscal não se paga duas vezes. O segundo débito é erro operacional, mas o dinheiro saiu de fato.
   3. O Alfa está economicamente certa (uma despesa), mas o caixa dela não reflete o que aconteceu na conta. O Beta reflete a conta, mas jogou a duplicidade no resultado e reduziu o PL.
-  4. Régua v1 (provisória) — caixa: diferença de R$ 131.266,48; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
+  4. Régua v1 (provisória) — caixa: diferença de R$ 35.266,48; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
 - **Ação:** Solicitar ao Beta o estorno imediato do débito duplicado. Até lá, registrar R$ 8.733,52 como "estorno a receber" (sem efeito no PL) e alinhar o caixa do Alfa ao real.
 
 ### Achado 2: TED sem identificação na conta do fundo
 
 - **Gravidade:** pendencia · **Dimensões:** caixa
 - **Lado correto:** indeterminado · **Quem ajusta:** Passivo/distribuidor (identificação) e Alfa (registro)
-- **Causa raiz:** Entrou uma TED de R$ 140.000,00 de remetente sem cadastro de cotista. O Beta registrou como "recursos a identificar"; o Alfa não registrou. A natureza do crédito é desconhecida.
+- **Causa raiz:** Entrou uma TED de R$ 44.000,00 de remetente sem cadastro de cotista. O Beta registrou como "recursos a identificar"; o Alfa não registrou. A natureza do crédito é desconhecida.
 - **Onde olhar:** Caixa — lançamentos; Valores a pagar — recursos a identificar; Movimentações de passivo (nenhuma boleta correspondente)
 - **Raciocínio do analista:**
-  1. Caixa do Beta R$ 140.000,00 maior que o do Alfa; PL igual, porque o Beta pôs o valor em uma conta transitória do passivo.
+  1. Caixa do Beta R$ 44.000,00 maior que o do Alfa; PL igual, porque o Beta pôs o valor em uma conta transitória do passivo.
   2. Não há boleta de aplicação com esse valor nem cotista com esse documento. Pode ser aplicação sem boleta, devolução de algum prestador ou erro de terceiro.
   3. O tratamento do Beta (transitória, sem efeito no PL) é prudente. Converter em cotas ou reconhecer como receita sem saber a origem seria erro.
-  4. Régua v1 (provisória) — caixa: diferença de R$ 131.266,48; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
+  4. Régua v1 (provisória) — caixa: diferença de R$ 35.266,48; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
 - **Ação:** Acionar passivo/distribuidor para identificar o remetente. Se ninguém reclamar no prazo, devolver ao remetente. O Alfa deve registrar a transitória. O caixa fica pendente até a identificação.
 
 ### Quem está correto em cada dimensão (derivado dos números)

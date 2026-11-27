@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Angico Institucional FIF RF Crédito Privado LP é gerido pela Alvorada Sul Gestão, gestora gaúcha conservadora, focada em crédito privado de emissores de primeira linha, em Porto Alegre/RS. Criado em 20/09/2021, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: público geral. Hoje seus cotistas são family offices e alguns fundos de fundos de terceiros. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Henrique, e quem cuida da validação do fundo é Thiago. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. A taxa de gestão é escalonada por faixa de patrimônio. No fechamento de ontem (09/07/2026) o fundo tinha PL de R$ 1.308.420.644,01, cota de 3,77139354 e 346.932.937,83001450 cotas. Hoje, sexta-feira, 10/07/2026, é a data-base da validação.
+O Angico Institucional FIF RF Crédito Privado LP é gerido pela Alvorada Sul Gestão, gestora gaúcha conservadora, focada em crédito privado de emissores de primeira linha, em Porto Alegre/RS. Criado em 20/09/2021, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: público geral. Hoje seus cotistas são family offices e alguns fundos de fundos de terceiros. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Henrique, e quem cuida da validação do fundo é Thiago. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. No fechamento de ontem (09/07/2026) o fundo tinha PL de R$ 1.308.420.644,01, cota de 3,77139354 e 346.932.937,83001450 cotas. Hoje, sexta-feira, 10/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -86,6 +86,7 @@ O Angico Institucional FIF RF Crédito Privado LP é gerido pela Alvorada Sul Ge
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 10/07/2026 é o 8º dia útil de julho (o mês tem 23 dias úteis) e o 8º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 
@@ -103,7 +104,8 @@ O Angico Institucional FIF RF Crédito Privado LP é gerido pela Alvorada Sul Ge
 
 ## 4. Comunicações recebidas hoje
 
-- **11:39** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (13/07/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **09:58** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **11:11** — *Banco — tesouraria* — **Débito em duplicidade na conta do fundo**: O banco confirmou dois débitos de R$ 4.731,61 referentes à NF 9296; o estorno do segundo foi solicitado.
 
 ## 5. Batimento Alfa × Beta
 

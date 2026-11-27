@@ -85,6 +85,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 06/01/2026 é o 3º dia útil de janeiro (o mês tem 21 dias úteis) e o 3º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 06/01/2026: compra 5,3615 / venda 5,3621; PTAX de venda de 05/01/2026: 5,3226
 
 **Referências de preço**

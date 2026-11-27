@@ -26,7 +26,9 @@ Assim, uma diferença de preço, de PL ou de passivo vira um número de cotas, c
 
 **Provisões.** A maior diferença de saldo em **uma** provisão e a diferença do **total** das provisões. As duas precisam estar em até R$ 100 para ficar dentro da régua. Diferenças que se compensam entre provisões não escondem o erro: cada provisão é medida separadamente.
 
-**Medida do caso.** Para pegar o caso em que Alfa e Beta estão iguais e errados, cada medida é o máximo entre Alfa × Beta e cada lado contra o valor que o analista recalculou pelo regulamento.
+**Líquido, não soma de módulos.** `diferenca_caixa` e `diferenca_total_provisoes` são líquidos: a diferença entre o saldo final (ou a soma dos saldos de provisões) do Alfa e o do Beta, em módulo. A compensação entre provisões não esconde o erro porque **cada provisão também é medida sozinha** (a maior diferença numa provisão conta). A PDD é redutora de ativo e aparece na carteira, então conta na dimensão cota.
+
+**Medida do caso.** Num caso com mais de uma causa, a medida é o efeito total observado; a gravidade de cada achado é indicativa, e um item pequeno que ajuda a estourar o total entra no parecer. Para pegar o caso em que Alfa e Beta estão iguais e errados, cada medida é o máximo entre Alfa × Beta e cada lado contra o valor que o analista recalculou pelo regulamento.
 
 ## O caixa: conciliar as movimentações completas
 
@@ -52,6 +54,14 @@ Recalcule cada provisão com o que o regulamento do fundo diz: percentual, base 
 | Depende de decisão ou informação externa | **PENDENTE** |
 
 Com mais de um achado vale o mais grave (reprovado > pendente > aprovado com ressalva).
+
+## O que a régua não decide sozinha
+
+- **Fronteira.** Se uma medida ficar a menos de 10% do limite (225 a 275 cotas equivalentes; R$ 90 a R$ 110), o agente avisa ao analista que o caso está na fronteira. Esses casos são os que mais ensinam onde o limite deve ficar.
+- **Decisão de terceiro prevalece.** Se a causa depende de comitê de precificação, identificação de remetente ou estorno, o parecer é PENDENTE mesmo com a medida acima da régua; a medida é registrada.
+- **Caixa com lançamento só de um lado e sem extrato.** O agente escolhe o lado pela evidência (valor, data de liquidação, regulamento, comunicações) e pede confirmação no extrato; se a evidência não decide, `indeterminado`. Se o banco ou uma comunicação confirma que o dinheiro saiu de fato duas vezes, `nenhum` e PENDENTE de estorno.
+- **Negócio relevante no secundário** (critério provisório, como a régua): volume de pelo menos 5% da posição do fundo no papel ou 0,5% do PL.
+- **Qualquer diferença é divergência.** Mesmo 1e-8 é divergência: dentro da régua, aprova com ressalva. Só é aprovado sem ressalva quando nada diverge.
 
 ## Exemplos
 

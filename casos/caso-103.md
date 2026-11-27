@@ -80,6 +80,7 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Uirapuru II FIF Mu
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 16/03/2026 é o 11º dia útil de março (o mês tem 22 dias úteis) e o 50º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

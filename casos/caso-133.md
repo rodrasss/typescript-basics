@@ -79,6 +79,7 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Aroeira Fiagro �
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 26/05/2026 é o 17º dia útil de maio (o mês tem 20 dias úteis) e o 37º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

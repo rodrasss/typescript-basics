@@ -77,6 +77,7 @@ Sob a gestão da Marola Asset, gestora jovem de ações, muito ativa em eventos 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 20/01/2026 é o 13º dia útil de janeiro (o mês tem 21 dias úteis) e o 13º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

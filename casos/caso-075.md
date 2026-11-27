@@ -75,6 +75,7 @@ O Buriti Família FIF RF Referenciado DI é gerido pela Cumeeira Capital, boutiq
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 28/08/2026 é o 20º dia útil de agosto (o mês tem 21 dias úteis) e o 43º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

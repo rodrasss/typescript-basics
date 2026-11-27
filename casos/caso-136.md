@@ -79,6 +79,7 @@ Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com port
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 12/03/2026 é o 9º dia útil de março (o mês tem 22 dias úteis) e o 48º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

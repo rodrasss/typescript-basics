@@ -75,6 +75,7 @@ O Canjerana Institucional FIF Incentivado em Infraestrutura RF é gerido pela It
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 30/01/2026 é o 21º dia útil de janeiro (o mês tem 21 dias úteis) e o 21º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

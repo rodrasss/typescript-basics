@@ -78,6 +78,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 17/08/2026 é o 11º dia útil de agosto (o mês tem 21 dias úteis) e o 34º dia útil do trimestre (o trimestre tem 65).
 - PTAX de 17/08/2026: compra 5,6131 / venda 5,6137; PTAX de venda de 14/08/2026: 5,6472
 
 **Referências de preço**

@@ -80,6 +80,7 @@ O Bem-te-vi Plus FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora c
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 27/11/2026 é o 18º dia útil de novembro (o mês tem 19 dias úteis) e o 39º dia útil do trimestre (o trimestre tem 62).
 - Prazo médio da carteira em 27/11/2026: 1.236 dias (informado pelo administrador)
 - PTAX de 27/11/2026: compra 5,3815 / venda 5,3821; PTAX de venda de 26/11/2026: 5,4427
 

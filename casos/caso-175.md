@@ -74,6 +74,7 @@ O Capivara FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora de f
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 21/05/2026 é o 14º dia útil de maio (o mês tem 20 dias úteis) e o 34º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

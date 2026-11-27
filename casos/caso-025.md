@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Sucupira Prime Fiagro — Direitos Creditórios é um dos fundos que mais exigem atenção na rotina de validação. Criado em 23/11/2010, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Murilo, e quem cuida da validação do fundo é Renata. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. O contrato de administração foi aditado recentemente. No fechamento de ontem (24/09/2026) o fundo tinha PL de R$ 290.049.407,40, cota de 43,39153916 e 6.684.469,20792407 cotas. Hoje, sexta-feira, 25/09/2026, é a data-base da validação.
+Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Sucupira Prime Fiagro — Direitos Creditórios é um dos fundos que mais exigem atenção na rotina de validação. Criado em 23/11/2010, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Murilo, e quem cuida da validação do fundo é Renata. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. No fechamento de ontem (24/09/2026) o fundo tinha PL de R$ 290.049.407,40, cota de 43,39153916 e 6.684.469,20792407 cotas. Hoje, sexta-feira, 25/09/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -22,7 +22,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 
 **Taxas**
 
-- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 72.500,00 (apropriado por dia útil do mês).
+- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 72.500,00: a apropriação diária é o maior entre o percentual sobre o PL e o mínimo mensal ÷ dias úteis do mês.
 - Taxa de gestão: 0,790% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
@@ -83,6 +83,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 25/09/2026 é o 18º dia útil de setembro (o mês tem 21 dias úteis) e o 62º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 
@@ -94,7 +95,8 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 
 ## 4. Comunicações recebidas hoje
 
-- **16:06** — *Distribuidor* — **Material de divulgação**: Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.
+- **10:28** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **12:07** — *Banco — tesouraria* — **Débito em duplicidade na conta do fundo**: O banco confirmou dois débitos de R$ 11.303,84 referentes à NF 1052; o estorno do segundo foi solicitado.
 
 ## 5. Batimento Alfa × Beta
 
@@ -104,11 +106,11 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 43,41837816 | 43,41646334 | -0,00191482 |
+| Cota de fechamento | 43,41815440 | 43,41668710 | -0,00146730 |
 | Quantidade final de cotas | 6.684.469,20792407 | 6.684.469,20792407 | 0,00000000 |
-| PL final | R$ 290.228.811,87 | R$ 290.216.012,31 | R$ -12.799,56 |
+| PL final | R$ 290.227.316,15 | R$ 290.217.508,03 | R$ -9.808,12 |
 | Caixa | R$ 14.482.325,57 | R$ 14.471.021,73 | R$ -11.303,84 |
-| Total de provisões | R$ 242.186,91 | R$ 243.682,61 | R$ 1.495,70 |
+| Total de provisões | R$ 243.682,61 | R$ 242.186,91 | R$ -1.495,70 |
 
 ### 5.2 Carteira
 
@@ -142,14 +144,14 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 33.135,98 | 33.135,98 | 1.956,68 | 3.452,38 | 0,00 | 0,00 | 35.092,66 | 36.588,36 | 1.495,70 |
+| TXADM — Taxa de administração a pagar | 33.135,98 | 33.135,98 | 3.452,38 | 1.956,68 | 0,00 | 0,00 | 36.588,36 | 35.092,66 | -1.495,70 |
 | TXGES — Taxa de gestão a pagar | 150.341,64 | 150.341,64 | 9.092,82 | 9.092,82 | 0,00 | 0,00 | 159.434,46 | 159.434,46 | 0,00 |
 | TXCUS — Taxa máxima de custódia a pagar | 3.832,46 | 3.832,46 | 230,20 | 230,20 | 0,00 | 0,00 | 4.062,66 | 4.062,66 | 0,00 |
 | AUDIT — Auditoria independente a pagar | 28.476,19 | 28.476,19 | 309,52 | 309,52 | 0,00 | 0,00 | 28.785,71 | 28.785,71 | 0,00 |
 | ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 485,71 | 485,71 | 28,57 | 28,57 | 0,00 | 0,00 | 514,28 | 514,28 | 0,00 |
 | ESCRIT — Escrituração de cotas a pagar | 6.476,19 | 6.476,19 | 380,95 | 380,95 | 0,00 | 0,00 | 6.857,14 | 6.857,14 | 0,00 |
 | CVM — Taxa de fiscalização CVM a pagar | 7.320,00 | 7.320,00 | 120,00 | 120,00 | 0,00 | 0,00 | 7.440,00 | 7.440,00 | 0,00 |
-| **Total** |  |  |  |  |  |  | 242.186,91 | 243.682,61 | 1.495,70 |
+| **Total** |  |  |  |  |  |  | 243.682,61 | 242.186,91 | -1.495,70 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
@@ -165,10 +167,10 @@ Nenhum movimento de passivo no dia.
 | Caixa | 14.482.325,57 | 14.471.021,73 | -11.303,84 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 242.186,91 | 243.682,61 | 1.495,70 |
+| Provisões | 243.682,61 | 242.186,91 | -1.495,70 |
 | PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 290.240.930,63 | 290.229.626,79 | -11.303,84 |
-| PL base da cota | 290.228.811,89 | 290.216.012,35 | -12.799,54 |
-| Cota (8 casas) | 43,41837816 | 43,41646334 | -0,00191482 |
+| PL base da cota | 290.227.316,19 | 290.217.508,05 | -9.808,14 |
+| Cota (8 casas) | 43,41815440 | 43,41668710 | -0,00146730 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
@@ -176,7 +178,7 @@ Nenhum movimento de passivo no dia.
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 6.684.469,20792407 | 6.684.469,20792407 | 0,00000000 |
-| PL final | 290.228.811,87 | 290.216.012,31 | -12.799,56 |
+| PL final | 290.227.316,15 | 290.217.508,03 | -9.808,12 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -194,23 +196,22 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 | Dimensão | Medida | Limite | Veredito |
 |---|---|---|---|
-| Cota | 294,80 cotas equivalentes (quantidade 0,00; PL 294,80) | 250 cotas | ACIMA |
+| Cota | 225,90 cotas equivalentes (quantidade 0,00; PL 225,90) | 250 cotas | dentro |
 | Caixa | R$ 11.303,84 | sem tolerância | ACIMA |
 | Provisões | maior diferença R$ 1.495,70; total R$ 1.495,70 | R$ 100,00 por provisão e no total | ACIMA |
 
 ### Achado 1: Taxa de administração sem o mínimo mensal
 
-- **Gravidade:** erro · **Dimensões:** provisoes, cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa apropriou só o percentual sobre o PL e ignorou o mínimo mensal de R$ 72.500,00, que passou a valer hoje e prevalece porque o percentual rende menos que o mínimo diário.
+- **Gravidade:** erro · **Dimensões:** provisoes
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta apropriou só o percentual sobre o PL e ignorou o mínimo mensal de R$ 72.500,00, que passou a valer hoje e prevalece porque o percentual rende menos que o mínimo diário.
 - **Onde olhar:** Provisões — TXADM; Regulamento — taxa de administração (mínimo mensal) e alterações recentes
 - **Raciocínio do analista:**
   1. A apropriação de taxa de administração difere entre os lados; o saldo anterior bate (até D−1 não havia mínimo).
   2. Pelo percentual, a taxa diária fica abaixo de R$ 72.500,00 ÷ 21 dias úteis do mês = R$ 3.452,38. O regulamento manda cobrar o maior dos dois, então vale o mínimo.
-  3. O aditivo vale a partir de hoje (inclusive). O Beta aplicou o mínimo; o Alfa não.
-  4. Efeito derivado do mesmo erro: a diferença também aparece em cota.
-  5. Régua v1 (provisória) — cota: diferença de 294,80 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 294,80 cotas de PL), contra o limite de 250: ACIMA; provisões: maior diferença numa provisão de R$ 1.495,70 e diferença total de R$ 1.495,70, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
-- **Ação:** Alfa deve parametrizar o mínimo mensal na taxa de administração a partir de hoje e reprocessar. Acima da régua: reprovar até o lado errado reprocessar.
+  3. O aditivo vale a partir de hoje (inclusive). O Alfa aplicou o mínimo; o Beta não.
+  4. Régua v1 (provisória) — provisões: maior diferença numa provisão de R$ 1.495,70 e diferença total de R$ 1.495,70, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
+- **Ação:** Beta deve parametrizar o mínimo mensal na taxa de administração a partir de hoje e reprocessar. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Achado 2: Pagamento da NF 1052 debitado duas vezes
 
@@ -229,9 +230,9 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | nenhum |
+| cota | Alfa |
 | caixa | Beta |
-| provisoes | Beta |
+| provisoes | Alfa |
 
 ### Valores corretos após os ajustes
 

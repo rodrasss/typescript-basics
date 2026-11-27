@@ -79,6 +79,7 @@ O Sanhaço II FII Responsabilidade Limitada é gerido pela Siriema Investimentos
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 17/09/2026 é o 12º dia útil de setembro (o mês tem 21 dias úteis) e o 56º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

@@ -76,6 +76,7 @@ O Tiriba Total FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora cam
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 17/07/2026 é o 13º dia útil de julho (o mês tem 23 dias úteis) e o 13º dia útil do trimestre (o trimestre tem 65).
 - PTAX de 17/07/2026: compra 5,1050 / venda 5,1056; PTAX de venda de 16/07/2026: 5,1620
 
 **Referências de preço**

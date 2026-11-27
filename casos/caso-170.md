@@ -80,6 +80,7 @@ Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação m
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 12/05/2026 é o 7º dia útil de maio (o mês tem 20 dias úteis) e o 27º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 12/05/2026: compra 5,3046 / venda 5,3052; PTAX de venda de 11/05/2026: 5,3141
 
 **Referências de preço**

@@ -22,7 +22,7 @@ O Uirapuru Família FIF Multimercado é gerido pela Coivara Partners, gestora mu
 
 **Taxas**
 
-- Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 8.300,00 (apropriado por dia útil do mês).
+- Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 8.300,00: a apropriação diária é o maior entre o percentual sobre o PL e o mínimo mensal ÷ dias úteis do mês.
 - Taxa de gestão: 0,940% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
@@ -91,6 +91,7 @@ O Uirapuru Família FIF Multimercado é gerido pela Coivara Partners, gestora mu
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 07/04/2026 é o 4º dia útil de abril (o mês tem 20 dias úteis) e o 4º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

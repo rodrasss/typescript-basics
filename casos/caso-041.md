@@ -85,6 +85,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 19/10/2026 é o 12º dia útil de outubro (o mês tem 21 dias úteis) e o 12º dia útil do trimestre (o trimestre tem 62).
 - PTAX de 19/10/2026: compra 5,4132 / venda 5,4138; PTAX de venda de 16/10/2026: 5,4695
 
 **Referências de preço**

@@ -75,6 +75,7 @@ Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Paineira Plus FIF Inc
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 20/10/2026 é o 13º dia útil de outubro (o mês tem 21 dias úteis) e o 13º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

@@ -76,6 +76,7 @@ O Imbuia FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora cambial e
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 02/06/2026 é o 2º dia útil de junho (o mês tem 21 dias úteis) e o 42º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 02/06/2026: compra 5,7064 / venda 5,7070; PTAX de venda de 01/06/2026: 5,7213
 
 **Referências de preço**

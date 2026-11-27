@@ -76,6 +76,7 @@ O Cerejeira do Mato Advisory FIF RF Crédito Privado LP é gerido pela Alvorada 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 24/07/2026 é o 18º dia útil de julho (o mês tem 23 dias úteis) e o 18º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

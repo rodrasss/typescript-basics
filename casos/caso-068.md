@@ -85,6 +85,7 @@ Quem acompanha a Garoa Investimentos (São Paulo/SP) conhece o Tuiuiú Advisory 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 27/11/2025 é o 18º dia útil de novembro (o mês tem 19 dias úteis) e o 41º dia útil do trimestre (o trimestre tem 64).
 - Prazo médio da carteira em 27/11/2025: 209 dias (informado pelo administrador)
 
 **Referências de preço**

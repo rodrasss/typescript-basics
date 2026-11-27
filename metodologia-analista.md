@@ -72,6 +72,13 @@ A régua de materialidade (veja `regua-materialidade.md`) diz o que é pequeno d
 
 Com mais de um achado vale o mais grave (reprovado > pendente > aprovado com ressalva). Um efeito derivado do mesmo erro (por exemplo, a provisão de performance acompanhando a cota bruta) conta: se ele estoura a régua, reprova. Devolva as **medidas** no campo `regua` da resposta: elas alimentam a calibração.
 
+- **Líquido:** `diferenca_caixa` e o total de provisões são líquidos (saldo de um lado menos o do outro, em módulo); cada provisão também é medida sozinha. A PDD é redutora de ativo e conta na dimensão cota.
+- **Fronteira:** a menos de 10% do limite (225 a 275 cotas equivalentes; R$ 90 a R$ 110), avise o analista de que o caso está na fronteira.
+- **Decisão de terceiro prevalece** sobre a régua (comitê, remetente não identificado, estorno): PENDENTE, com a medida registrada.
+- **Caixa com lançamento só de um lado e sem extrato:** escolha o lado pela evidência (valor, data, regulamento, comunicações) e peça confirmação no extrato; sem evidência que decida, `indeterminado`. Dinheiro que o banco confirma ter saído duas vezes: `nenhum`, PENDENTE de estorno.
+- **Negócio relevante no secundário** (provisório): pelo menos 5% da posição do fundo no papel ou 0,5% do PL.
+- **Qualquer diferença é divergência**, mesmo de 1e-8: dentro da régua = APROVADO com ressalva.
+
 ### 8. Formular a ação
 Quem ajusta, o que ajustar, com qual valor/fonte, e o que o analista do fundo deve saber (inclusive o que **não** precisa fazer). Se for um problema recorrente, sugerir a correção na origem (parametrização, cadastro, rotina).
 

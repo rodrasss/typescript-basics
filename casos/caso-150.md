@@ -78,6 +78,7 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Araucária T
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 10/11/2026 é o 6º dia útil de novembro (o mês tem 19 dias úteis) e o 27º dia útil do trimestre (o trimestre tem 62).
 - PTAX de 10/11/2026: compra 5,6156 / venda 5,6162; PTAX de venda de 09/11/2026: 5,6545
 
 **Referências de preço**

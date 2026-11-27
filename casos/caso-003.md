@@ -76,10 +76,12 @@ O Aroeira II FIF Multimercado Crédito Privado — Classe Exclusiva é gerido pe
 **Regras específicas deste fundo**
 
 - Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
+- Títulos classificados como mantidos até o vencimento (declaração escrita do cotista, anexa ao regulamento): NTN-B 15/08/2030.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 22/05/2026 é o 15º dia útil de maio (o mês tem 20 dias úteis) e o 35º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

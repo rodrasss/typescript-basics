@@ -75,6 +75,7 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Pau-Brasil Pri
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 13/08/2026 é o 9º dia útil de agosto (o mês tem 21 dias úteis) e o 32º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

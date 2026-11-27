@@ -2,8 +2,8 @@
 
 import type { Caso } from './gerar.ts';
 import type { Ativo, Posicao, Resultado, MovPassivo } from './modelo.ts';
-import { textoTaxa, gravidadeEfetiva } from './caso.ts';
-import { fmtR, fmtN, fmtPct, fmtData } from './util.ts';
+import { textoTaxa, gravidadeEfetiva, duTrimestre, duDecorridosTrimestre } from './caso.ts';
+import { fmtR, fmtN, fmtPct, fmtData, diasUteisNoMes, diasUteisDecorridosNoMes } from './util.ts';
 import { REGUA } from './regua.ts';
 
 const NA = '—';
@@ -81,6 +81,8 @@ function secaoMercado(c: Caso): string {
   const m = c.mercado;
   const L: string[] = ['## 3. Informações de mercado do dia', ''];
   L.push(`- CDI: ${fmtPct(m.cdiAA, 2)} a.a.`);
+  const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+  L.push(`- Calendário: ${fmtData(c.data)} é o ${diasUteisDecorridosNoMes(c.data)}º dia útil de ${MESES[Number(c.data.slice(5, 7)) - 1]} (o mês tem ${diasUteisNoMes(c.data)} dias úteis) e o ${duDecorridosTrimestre(c.data)}º dia útil do trimestre (o trimestre tem ${duTrimestre(c.data)}).`);
   if (m.prazoMedioCarteira !== undefined) L.push(`- Prazo médio da carteira em ${fmtData(c.data)}: ${fmtN(m.prazoMedioCarteira, 0)} dias (informado pelo administrador)`);
   if (m.ptax) L.push(`- PTAX de ${fmtData(c.data)}: compra ${fmtN(m.ptax.compraD, 4)} / venda ${fmtN(m.ptax.vendaD, 4)}; PTAX de venda de ${fmtData(c.dAnterior)}: ${fmtN(m.ptax.vendaD1, 4)}`);
   L.push('');

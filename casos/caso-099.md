@@ -78,6 +78,7 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Jequitibá I
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 13/04/2026 é o 8º dia útil de abril (o mês tem 20 dias úteis) e o 8º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 13/04/2026: compra 5,7940 / venda 5,7946; PTAX de venda de 10/04/2026: 5,7534
 
 **Referências de preço**

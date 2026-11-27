@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Maritaca Institucional FIF RF Referenciado DI é gerido pela Farol do Norte Capital, gestora de renda fixa líquida para plataformas digitais, em São Paulo/SP. Criado em 13/11/2010, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são cerca de 48 mil cotistas pessoa física vindos de plataformas digitais. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. A equipe da gestora é considerada muito organizada. No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 103.854.827,90, cota de 3,69658614 e 28.094.794,41015311 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
+O Maritaca Institucional FIF RF Referenciado DI é gerido pela Farol do Norte Capital, gestora de renda fixa líquida para plataformas digitais, em São Paulo/SP. Criado em 13/11/2010, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são cerca de 48 mil cotistas pessoa física vindos de plataformas digitais. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. Vencimentos de títulos bancários dependem de baixa manual em alguns sistemas. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. O fundo recebe aplicações perto do horário de corte quase todo dia. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 103.854.827,90, cota de 3,69658614 e 28.094.794,41015311 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -75,6 +75,7 @@ O Maritaca Institucional FIF RF Referenciado DI é gerido pela Farol do Norte Ca
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 31/08/2026 é o 21º dia útil de agosto (o mês tem 21 dias úteis) e o 44º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 
@@ -90,7 +91,8 @@ O Maritaca Institucional FIF RF Referenciado DI é gerido pela Farol do Norte Ca
 
 ## 4. Comunicações recebidas hoje
 
-- **15:00** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+- **14:40** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+- **15:12** — *Banco — tesouraria* — **Débito em duplicidade na conta do fundo**: O banco confirmou dois débitos de R$ 13.989,61 referentes à NF 9241; o estorno do segundo foi solicitado.
 
 ## 5. Batimento Alfa × Beta
 

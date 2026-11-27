@@ -533,6 +533,7 @@ const C12: Cenario = {
     c.mercado.referencias = c.mercado.referencias.filter((r) => r.ativo !== a.codigo);
     c.mercado.referencias.push({ ativo: a.codigo, fonte: 'ANBIMA — PU pela taxa indicativa de D (referência de mercado)', valor: fmtN(mtm, 6) });
     c.mercado.referencias.push({ ativo: a.codigo, fonte: 'PU na curva da taxa de aquisição (6,12% a.a.) — cálculo do custodiante', valor: fmtN(a.preco, 6) });
+    c.reg.especificos.push(`Títulos classificados como mantidos até o vencimento (declaração escrita do cotista, anexa ao regulamento): ${a.codigo}.`);
     c.usados.add(`mtm:${a.codigo}:${mtm}`);
   },
   aplicar: (c) => {
@@ -818,7 +819,7 @@ const C22: Cenario = {
     c.mercado.referencias.push({ ativo: a.codigo, fonte: 'ANBIMA', valor: 'sem taxa indicativa divulgada para o ativo' });
     c.mercado.referencias.push({ ativo: a.codigo, fonte: `Comitê de precificação (ata de ${fmtData(dataComite)})`, valor: fmtN(a.preco, 6) });
     const dn = somaDiasUteis(c.data, -inteiro(c.rng, 1, 4));
-    c.mercado.referencias.push({ ativo: a.codigo, fonte: `B3 — último negócio no secundário (${fmtData(dn)})`, valor: fmtN(pn, 6), obs: `volume de R$ ${fmtN(inteiro(c.rng, 2, 40) * 100000, 2)}` });
+    c.mercado.referencias.push({ ativo: a.codigo, fonte: `B3 — último negócio no secundário (${fmtData(dn)})`, valor: fmtN(pn, 6), obs: `volume de R$ ${fmtN(Math.round((a.valor * entre(c.rng, 0.06, 0.2)) / 1000) * 1000, 2)}` });
     c.usados.add(`iliq:${a.codigo}:${pn}:${dataComite}`);
   },
   aplicar: (c) => {
@@ -954,6 +955,7 @@ const K04: Cenario = {
     const h = `Pagamento — despesa de registro/cartório (NF ${nf})`;
     c.base.caixa.lancamentos.push({ historico: h, valor: -x }, { historico: h, valor: -x });
     c.base.aReceber.push({ codigo: 'ESTORNO A RECEBER', descricao: 'Débito em duplicidade a estornar', valor: x });
+    com(c, hora(c, 10, 15), 'Banco — tesouraria', 'Débito em duplicidade na conta do fundo', `O banco confirmou dois débitos de ${fmtR(x)} referentes à NF ${nf}; o estorno do segundo foi solicitado.`);
     c.usados.add(`dup:${x}:${nf}`);
   },
   aplicar: (c) => {

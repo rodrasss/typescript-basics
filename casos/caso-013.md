@@ -79,6 +79,7 @@ O Socó Estratégia Fiagro — Direitos Creditórios é gerido pela Quaresmeira 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 04/11/2026 é o 2º dia útil de novembro (o mês tem 19 dias úteis) e o 23º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

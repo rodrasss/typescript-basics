@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Garoa Investimentos, gestora de fundos de fundos (alocação) com comitê mensal de seleção (São Paulo/SP), o Ingá Estratégia FIC FIF Multimercado é um dos fundos que mais exigem atenção na rotina de validação. Criado em 23/05/2013, aloca em outros fundos multimercado e rebalanceia a carteira todo mês. Público-alvo: investidores qualificados. Hoje seus cotistas são carteiras administradas e clientes private com perfil moderado. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e reduziu o prazo de cotização em 2024 para competir em plataformas. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Marina. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. Os resgates são pagos alguns dias depois da cotização, e o valor depende da cota certa. A equipe da gestora é considerada muito organizada. No fechamento de ontem (05/03/2026) o fundo tinha PL de R$ 175.756.249,54, cota de 5,74041605 e 30.617.336,44530627 cotas. Hoje, sexta-feira, 06/03/2026, é a data-base da validação.
+O Ingá Estratégia FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora de fundos de fundos (alocação) com comitê mensal de seleção, em São Paulo/SP. Criado em 23/05/2013, aloca em outros fundos multimercado e rebalanceia a carteira todo mês. Público-alvo: investidores qualificados. Hoje seus cotistas são carteiras administradas e clientes private com perfil moderado. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e reduziu o prazo de cotização em 2024 para competir em plataformas. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Marina. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. A virada de semestre costuma ser delicada para a performance. A equipe da gestora é considerada muito organizada. No fechamento de ontem (05/03/2026) o fundo tinha PL de R$ 175.756.249,54, cota de 5,74041605 e 30.617.336,44530627 cotas. Hoje, sexta-feira, 06/03/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -74,23 +74,24 @@ Sob a gestão da Garoa Investimentos, gestora de fundos de fundos (alocação) c
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 06/03/2026 é o 5º dia útil de março (o mês tem 22 dias úteis) e o 44º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| COTA TIÊ | Cota de D divulgada pelo administrador do investido | 6,87476326 | divulgada às 19:41 |
-| COTA SABIÁ | Cota de D divulgada pelo administrador do investido | 5,67840216 | divulgada às 19:57 |
+| COTA TIÊ | Cota de D divulgada pelo administrador do investido | 6,87476326 | divulgada às 17:35 |
+| COTA SABIÁ | Cota de D divulgada pelo administrador do investido | 5,67840216 | divulgada às 19:46 |
 | COTA CARAVELA | Cota de D divulgada pelo administrador do investido | 2,91148871 | divulgada às 17:50 |
 | COTA CARDEAL | Cota de D divulgada pelo administrador do investido | 8,26666352 | divulgada às 17:15 |
 | COTA POROROCA | Cota de D divulgada pelo administrador do investido | 8,55207850 | divulgada às 17:38 |
-| COTA TIÊ | Cota de D−1 do investido | 6,83504656 |  |
+| COTA SABIÁ | Cota de D−1 do investido | 5,70155108 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **09:05** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
-- **11:49** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (09/03/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
-- **19:41** — *Administrador do fundo investido* — **Cota de 06/03/2026 publicada**: A cota de 06/03/2026 do Tiê Crédito FIF RF CP foi publicada às 19:41: 6,87476326.
+- **11:20** — *Banco — tesouraria* — **Débito em duplicidade na conta do fundo**: O banco confirmou dois débitos de R$ 2.308,88 referentes à NF 3859; o estorno do segundo foi solicitado.
+- **16:49** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+- **19:46** — *Administrador do fundo investido* — **Cota de 06/03/2026 publicada**: A cota de 06/03/2026 do Sabiá Macro FIF Multimercado foi publicada às 19:46: 5,67840216.
 
 ## 5. Batimento Alfa × Beta
 
@@ -100,9 +101,9 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 5,71467079 | 5,72101386 | 0,00634307 |
-| Quantidade final de cotas | 30.767.629,13084520 | 30.767.462,49656530 | -166,63427990 |
-| PL final | R$ 175.826.871,47 | R$ 176.021.079,38 | R$ 194.207,91 |
+| Cota de fechamento | 5,72097232 | 5,72546053 | 0,00448821 |
+| Quantidade final de cotas | 30.767.463,58663108 | 30.767.345,90140149 | -117,68522959 |
+| PL final | R$ 176.019.807,54 | R$ 176.157.224,57 | R$ 137.417,03 |
 | Caixa | R$ 2.631.934,66 | R$ 2.633.206,26 | R$ 1.271,60 |
 | Total de provisões | R$ 178.536,44 | R$ 178.536,44 | R$ 0,00 |
 
@@ -111,12 +112,12 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
 | COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 11.020 | 11.020 | 814,015543 | 814,015543 | 8.970.451,28 | 8.970.451,28 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| COTA TIÊ — Cotas do Tiê Crédito FIF RF CP | 4.857.808,20799602 | 4.857.808,20799602 | 6,83504656 | 6,87476326 | 33.203.345,28 | 33.396.281,39 | 192.936,11 | Alfa: Última cota disponível no fechamento do processamento / Beta: Cota divulgada pelo administrador do fundo investido (D) |
-| COTA SABIÁ — Cotas do Sabiá Macro FIF Multimercado | 5.881.281,46817581 | 5.881.281,46817581 | 5,67840216 | 5,67840216 | 33.396.281,39 | 33.396.281,39 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA TIÊ — Cotas do Tiê Crédito FIF RF CP | 4.857.808,20799602 | 4.857.808,20799602 | 6,87476326 | 6,87476326 | 33.396.281,39 | 33.396.281,39 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA SABIÁ — Cotas do Sabiá Macro FIF Multimercado | 5.881.281,46817581 | 5.881.281,46817581 | 5,67840216 | 5,70155108 | 33.396.281,39 | 33.532.426,71 | 136.145,32 | Alfa: Cota divulgada pelo administrador do fundo investido (D) / Beta: Última cota disponível no fechamento do processamento |
 | COTA CARAVELA — Cotas do Caravela Long Short FIF Multimercado | 10.651.194,56416085 | 10.651.194,56416085 | 2,91148871 | 2,91148871 | 31.010.832,72 | 31.010.832,72 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
 | COTA CARDEAL — Cotas do Cardeal Global FIC FIF IE | 2.597.062,04154399 | 2.597.062,04154399 | 8,26666352 | 8,26666352 | 21.469.038,04 | 21.469.038,04 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
 | COTA POROROCA — Cotas do Pororoca Ações FIF | 5.299.708,69033845 | 5.299.708,69033845 | 8,55207850 | 8,55207850 | 45.323.524,75 | 45.323.524,75 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
-| **Total** |  |  |  |  | 173.373.473,46 | 173.566.409,57 | 192.936,11 |  |
+| **Total** |  |  |  |  | 173.566.409,57 | 173.702.554,89 | 136.145,32 |  |
 
 ### 5.3 Caixa
 
@@ -175,22 +176,22 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 173.373.473,46 | 173.566.409,57 | 192.936,11 |
+| Total de ativos | 173.566.409,57 | 173.702.554,89 | 136.145,32 |
 | Caixa | 2.631.934,66 | 2.633.206,26 | 1.271,60 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 858.873,22 | 858.873,22 | 0,00 |
 | Provisões | 178.536,44 | 178.536,44 | 0,00 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 174.974.973,24 | 175.169.180,95 | 194.207,71 |
-| PL base da cota | 174.967.998,46 | 175.162.206,17 | 194.207,71 |
-| Cota (8 casas) | 5,71467079 | 5,72101386 | 0,00634307 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 175.167.909,35 | 175.305.326,27 | 137.416,92 |
+| PL base da cota | 175.160.934,57 | 175.298.351,49 | 137.416,92 |
+| Cota (8 casas) | 5,72097232 | 5,72546053 | 0,00448821 |
 | Aplicações convertidas | 858.873,22 | 858.873,22 | 0,00 |
-| Cotas emitidas | 150.292,68553893 | 150.126,05125903 | -166,63427990 |
+| Cotas emitidas | 150.127,14132481 | 150.009,45609522 | -117,68522959 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 30.767.629,13084520 | 30.767.462,49656530 | -166,63427990 |
-| PL final | 175.826.871,47 | 176.021.079,38 | 194.207,91 |
+| Quantidade final de cotas | 30.767.463,58663108 | 30.767.345,90140149 | -117,68522959 |
+| PL final | 176.019.807,54 | 176.157.224,57 | 137.417,03 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -200,7 +201,7 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Resgate de Cotista 5818 pago a menor; Pagamento da NF 3859 debitado duas vezes; Cota do investido COTA TIÊ de D−1.
+**Resumo:** Reprovar até o ajuste: Resgate de Cotista 5818 pago a menor; Pagamento da NF 3859 debitado duas vezes; Cota do investido COTA SABIÁ de D−1.
 
 **Dificuldade:** dificil · **Cenários:** resgate_pago_com_cota_errada, debito_em_duplicidade, cota_investido_d1
 
@@ -208,7 +209,7 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 | Dimensão | Medida | Limite | Veredito |
 |---|---|---|---|
-| Cota | 33.965,21 cotas equivalentes (quantidade 166,63; PL 33.965,21) | 250 cotas | ACIMA |
+| Cota | 24.010,44 cotas equivalentes (quantidade 117,69; PL 24.010,44) | 250 cotas | ACIMA |
 | Caixa | R$ 1.271,60 | sem tolerância | ACIMA |
 | Provisões | maior diferença R$ 0,00; total R$ 0,00 | R$ 100,00 por provisão e no total | dentro |
 
@@ -222,7 +223,7 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
   1. O Alfa projetou o pagamento de R$ 571.698,89 e o Beta mostra R$ 568.118,41 pagos. Diferença: R$ 3.580,48.
   2. Recalculei: 99.591,89171683 cotas × cota da data de cotização (05/03/2026) 5,74041605 = R$ 571.698,89. O valor pago corresponde a uma cota menor, a da data do pedido, que o regulamento não usa.
   3. O dinheiro a menos ficou no fundo e o Beta zerou a obrigação, então o PL dele fica inflado. O cotista tem direito ao complemento.
-  4. Régua v1 (provisória) — cota: diferença de 33.965,21 cotas equivalentes (a maior entre 166,63 cotas de quantidade e 33.965,21 cotas de PL), contra o limite de 250: ACIMA; caixa: diferença de R$ 1.271,60; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
+  4. Régua v1 (provisória) — cota: diferença de 24.010,44 cotas equivalentes (a maior entre 117,69 cotas de quantidade e 24.010,44 cotas de PL), contra o limite de 250: ACIMA; caixa: diferença de R$ 1.271,60; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
 - **Ação:** Pagar o complemento de R$ 3.580,48 ao cotista. Até lá, os dois lados registram "complemento de resgate a pagar". O Alfa ajusta o caixa ao valor efetivamente pago. Apurar se outros resgates do dia tiveram o mesmo problema. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Achado 2: Pagamento da NF 3859 debitado duas vezes
@@ -238,23 +239,23 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
   4. Régua v1 (provisória) — caixa: diferença de R$ 1.271,60; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
 - **Ação:** Solicitar ao Beta o estorno imediato do débito duplicado. Até lá, registrar R$ 2.308,88 como "estorno a receber" (sem efeito no PL) e alinhar o caixa do Alfa ao real.
 
-### Achado 3: Cota do investido COTA TIÊ de D−1
+### Achado 3: Cota do investido COTA SABIÁ de D−1
 
 - **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa fechou o processamento antes da publicação da cota de D do investido (19:41) e usou a cota de D−1.
-- **Onde olhar:** Carteira — linha COTA TIÊ; Informações de mercado — cotas do investido; Comunicações — publicação da cota; Regulamento — precificação de cotas de fundos
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta fechou o processamento antes da publicação da cota de D do investido (19:46) e usou a cota de D−1.
+- **Onde olhar:** Carteira — linha COTA SABIÁ; Informações de mercado — cotas do investido; Comunicações — publicação da cota; Regulamento — precificação de cotas de fundos
 - **Raciocínio do analista:**
-  1. A divergência está em COTA TIÊ: 6,87476326 (Beta) contra 6,83504656 (Alfa). 6,83504656 é a cota de D−1 do investido.
-  2. O regulamento só aceita a última cota disponível se a de D não sair até 20h. Ela saiu às 19:41, então tem que ser usada a cota de D.
-  3. Régua v1 (provisória) — cota: diferença de 33.965,21 cotas equivalentes (a maior entre 166,63 cotas de quantidade e 33.965,21 cotas de PL), contra o limite de 250: ACIMA.
-- **Ação:** Alfa deve atualizar a cota de COTA TIÊ para 6,87476326 e reprocessar a cota do FIC. Acima da régua: reprovar até o lado errado reprocessar.
+  1. A divergência está em COTA SABIÁ: 5,67840216 (Alfa) contra 5,70155108 (Beta). 5,70155108 é a cota de D−1 do investido.
+  2. O regulamento só aceita a última cota disponível se a de D não sair até 20h. Ela saiu às 19:46, então tem que ser usada a cota de D.
+  3. Régua v1 (provisória) — cota: diferença de 24.010,44 cotas equivalentes (a maior entre 117,69 cotas de quantidade e 24.010,44 cotas de PL), contra o limite de 250: ACIMA.
+- **Ação:** Beta deve atualizar a cota de COTA SABIÁ para 5,67840216 e reprocessar a cota do FIC. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | nenhum |
+| cota | Alfa |
 | caixa | Beta |
 | provisoes | ambos |
 

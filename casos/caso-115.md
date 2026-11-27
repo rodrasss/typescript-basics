@@ -76,6 +76,7 @@ O Aroeira II FIF RF Crédito Privado LP é gerido pela Alvorada Sul Gestão, ges
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 27/07/2026 é o 19º dia útil de julho (o mês tem 23 dias úteis) e o 19º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

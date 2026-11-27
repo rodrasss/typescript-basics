@@ -75,6 +75,7 @@ Sob a gestão da Ancoradouro Capital, gestora com foco em infraestrutura e debê
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 03/08/2026 é o 1º dia útil de agosto (o mês tem 21 dias úteis) e o 24º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

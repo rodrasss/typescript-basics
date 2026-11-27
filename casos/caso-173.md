@@ -87,6 +87,7 @@ O Corrupião Institucional FIF Multimercado Long Short é gerido pela Marola Ass
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 03/11/2026 é o 1º dia útil de novembro (o mês tem 19 dias úteis) e o 22º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

@@ -85,6 +85,7 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Carcará III
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 20/08/2026 é o 14º dia útil de agosto (o mês tem 21 dias úteis) e o 37º dia útil do trimestre (o trimestre tem 65).
 - PTAX de 20/08/2026: compra 5,4771 / venda 5,4777; PTAX de venda de 19/08/2026: 5,5152
 
 **Referências de preço**

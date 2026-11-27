@@ -79,6 +79,7 @@ O Cajueiro III FIP Multiestratégia é gerido pela Coivara Partners, gestora mul
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 27/05/2026 é o 18º dia útil de maio (o mês tem 20 dias úteis) e o 38º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

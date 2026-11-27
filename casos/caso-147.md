@@ -87,6 +87,7 @@ Sob a gestão da Coivara Partners, gestora multiestratégia criada por ex-sócio
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 27/01/2026 é o 18º dia útil de janeiro (o mês tem 21 dias úteis) e o 18º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

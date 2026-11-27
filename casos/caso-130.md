@@ -76,6 +76,7 @@ Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Juazeiro Estratégia F
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 29/05/2026 é o 20º dia útil de maio (o mês tem 20 dias úteis) e o 40º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 29/05/2026: compra 5,7995 / venda 5,8001; PTAX de venda de 28/05/2026: 5,7908
 
 **Referências de preço**

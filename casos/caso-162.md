@@ -22,7 +22,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 
 **Taxas**
 
-- Taxa de administração: 0,240% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 6.000,00 (apropriado por dia útil do mês).
+- Taxa de administração: 0,240% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 6.000,00: a apropriação diária é o maior entre o percentual sobre o PL e o mínimo mensal ÷ dias úteis do mês.
 - Taxa de gestão: 0,670% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,050% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
@@ -80,6 +80,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 24/02/2026 é o 15º dia útil de fevereiro (o mês tem 18 dias úteis) e o 36º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

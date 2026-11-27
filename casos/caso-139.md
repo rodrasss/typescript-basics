@@ -79,6 +79,7 @@ Quem acompanha a Cumeeira Capital (São Paulo/SP) conhece o Tangará FIF RF Refe
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 18/05/2026 é o 11º dia útil de maio (o mês tem 20 dias úteis) e o 31º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

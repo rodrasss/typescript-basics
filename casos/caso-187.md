@@ -75,6 +75,7 @@ Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Umbuzeiro Total FIF I
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 09/06/2026 é o 6º dia útil de junho (o mês tem 21 dias úteis) e o 46º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

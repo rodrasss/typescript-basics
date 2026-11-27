@@ -76,10 +76,12 @@ O Tucano Família FIF Multimercado Crédito Privado — Classe Exclusiva é geri
 **Regras específicas deste fundo**
 
 - Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
+- Títulos classificados como mantidos até o vencimento (declaração escrita do cotista, anexa ao regulamento): NTN-B 15/08/2030.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 04/11/2026 é o 2º dia útil de novembro (o mês tem 19 dias úteis) e o 23º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

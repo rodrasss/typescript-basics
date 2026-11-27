@@ -76,6 +76,7 @@ O Pirarucu Total FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora c
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 25/05/2026 é o 16º dia útil de maio (o mês tem 20 dias úteis) e o 36º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 25/05/2026: compra 5,4713 / venda 5,4719; PTAX de venda de 22/05/2026: 5,4543
 
 **Referências de preço**

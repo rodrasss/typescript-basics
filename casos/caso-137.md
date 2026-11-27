@@ -76,6 +76,7 @@ Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação m
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 26/10/2026 é o 17º dia útil de outubro (o mês tem 21 dias úteis) e o 17º dia útil do trimestre (o trimestre tem 62).
 - PTAX de 26/10/2026: compra 5,7560 / venda 5,7566; PTAX de venda de 23/10/2026: 5,7830
 
 **Referências de preço**

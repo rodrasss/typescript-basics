@@ -79,6 +79,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Gavião Real FI
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 22/06/2026 é o 15º dia útil de junho (o mês tem 21 dias úteis) e o 55º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

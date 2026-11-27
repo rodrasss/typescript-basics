@@ -75,6 +75,7 @@ O Araucária Plus FIF RF Referenciado DI é gerido pela Farol do Norte Capital, 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 06/11/2026 é o 4º dia útil de novembro (o mês tem 19 dias úteis) e o 25º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

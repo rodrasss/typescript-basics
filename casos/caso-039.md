@@ -76,6 +76,7 @@ O Corrupião Advisory FIF Cambial Dólar é gerido pela Serra do Mar Asset, gest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 12/06/2026 é o 9º dia útil de junho (o mês tem 21 dias úteis) e o 49º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 12/06/2026: compra 5,3696 / venda 5,3702; PTAX de venda de 11/06/2026: 5,3546
 
 **Referências de preço**

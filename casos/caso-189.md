@@ -85,6 +85,7 @@ O Guará Plus FIF Ações é gerido pela Marola Asset, gestora jovem de ações,
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 11/11/2026 é o 7º dia útil de novembro (o mês tem 19 dias úteis) e o 28º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

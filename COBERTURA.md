@@ -12,9 +12,9 @@
 
 | Item | Casos |
 |---|---|
-| media | 124 |
-| dificil | 41 |
-| facil | 35 |
+| media | 126 |
+| dificil | 40 |
+| facil | 34 |
 
 ## Tipo de fundo
 
@@ -51,6 +51,7 @@
 | aplicacao_nao_convertida | 7 |
 | resgate_cotizado_antecipadamente | 7 |
 | taxa_cvm_faixa_errada | 7 |
+| pagamento_taxa_nao_registrado | 6 |
 | taxa_sobre_pl_do_dia | 6 |
 | amortizacao_nao_registrada | 5 |
 | aplicacao_apos_corte_convertida | 5 |
@@ -59,8 +60,6 @@
 | dividendo_recebido_nao_baixado | 5 |
 | juros_credito_nao_registrados | 5 |
 | metodo_exponencial_vs_linear | 5 |
-| minimo_mensal_ignorado | 5 |
-| pagamento_taxa_nao_registrado | 5 |
 | preco_acao_d1 | 5 |
 | preco_credito_fonte_errada | 5 |
 | reg_cota_dentro | 5 |
@@ -74,6 +73,7 @@
 | despesa_nao_prevista | 4 |
 | laudo_fip_nao_atualizado | 4 |
 | margem_lancada_como_despesa | 4 |
+| minimo_mensal_ignorado | 4 |
 | provisao_nao_baixada_apos_pagamento | 4 |
 | resgate_pago_com_cota_errada | 4 |
 | ajuste_futuros_errado | 3 |
@@ -104,22 +104,22 @@
 
 | Item | Casos |
 |---|---|
-| cota: correto = Alfa | 95 |
+| cota: correto = Alfa | 97 |
 | caixa: correto = Beta | 56 |
 | cota: correto = Beta | 52 |
 | provisoes: correto = Alfa | 50 |
 | provisoes: correto = Beta | 48 |
-| cota: correto = nenhum | 20 |
+| cota: correto = nenhum | 18 |
 | caixa: correto = Alfa | 14 |
 | provisoes: correto = nenhum | 9 |
-| caixa: correto = nenhum | 5 |
+| caixa: correto = nenhum | 6 |
 
 ## Número de achados por caso
 
 | Item | Casos |
 |---|---|
-| 1 | 109 |
-| 2 | 59 |
-| 3 | 20 |
+| 1 | 108 |
+| 2 | 61 |
+| 3 | 19 |
 | 0 | 12 |
 

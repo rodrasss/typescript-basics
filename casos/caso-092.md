@@ -79,6 +79,7 @@ Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Imbuia Prime Fiagro
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 08/05/2026 é o 5º dia útil de maio (o mês tem 20 dias úteis) e o 25º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

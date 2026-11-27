@@ -75,6 +75,7 @@ O Jatobá FIF RF Referenciado DI é gerido pela Cumeeira Capital, boutique funda
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 06/02/2026 é o 5º dia útil de fevereiro (o mês tem 18 dias úteis) e o 26º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

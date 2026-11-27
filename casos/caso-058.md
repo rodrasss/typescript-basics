@@ -76,6 +76,7 @@ O Pintassilgo Estratégia FIF Cambial Dólar é gerido pela Serra do Mar Asset, 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 03/06/2026 é o 3º dia útil de junho (o mês tem 21 dias úteis) e o 43º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 03/06/2026: compra 5,1123 / venda 5,1129; PTAX de venda de 02/06/2026: 5,0637
 
 **Referências de preço**

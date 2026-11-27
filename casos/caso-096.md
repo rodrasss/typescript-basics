@@ -87,6 +87,7 @@ Sob a gestão da Barlavento Investimentos, gestora macro com equipe enxuta e for
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 07/08/2026 é o 5º dia útil de agosto (o mês tem 21 dias úteis) e o 28º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

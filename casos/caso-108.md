@@ -80,6 +80,7 @@ O Jacarandá III FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora c
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 27/11/2025 é o 18º dia útil de novembro (o mês tem 19 dias úteis) e o 41º dia útil do trimestre (o trimestre tem 64).
 - Prazo médio da carteira em 27/11/2025: 110 dias (informado pelo administrador)
 - PTAX de 27/11/2025: compra 5,6755 / venda 5,6761; PTAX de venda de 26/11/2025: 5,6457
 

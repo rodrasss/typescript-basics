@@ -79,6 +79,7 @@ O Ipê Roxo FIP Multiestratégia é gerido pela Coivara Partners, gestora multie
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 29/04/2026 é o 19º dia útil de abril (o mês tem 20 dias úteis) e o 19º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

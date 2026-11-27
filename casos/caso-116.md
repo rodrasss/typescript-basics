@@ -87,6 +87,7 @@ Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Bem-te-vi Prime FIF 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 16/07/2026 é o 12º dia útil de julho (o mês tem 23 dias úteis) e o 12º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

@@ -76,6 +76,7 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Guará FIF RF Crédito 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 19/05/2026 é o 12º dia útil de maio (o mês tem 20 dias úteis) e o 32º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

@@ -87,6 +87,7 @@ O Jabuticaba Prime FIF Multimercado Long Short é gerido pela Marola Asset, gest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 17/08/2026 é o 11º dia útil de agosto (o mês tem 21 dias úteis) e o 34º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

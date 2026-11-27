@@ -86,6 +86,7 @@ Quem acompanha a Remanso Asset (Curitiba/PR) conhece o Biguá III FIE FIF Previd
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 07/04/2026 é o 4º dia útil de abril (o mês tem 20 dias úteis) e o 4º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

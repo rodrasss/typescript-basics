@@ -27,10 +27,9 @@
       "o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes"
     ],
     "pistas": [
-      "A classificação do saldo em compromissada já gerou ressalva de auditoria.",
-      "O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade."
+      "A classificação do saldo em compromissada já gerou ressalva de auditoria."
     ],
-    "historia": "Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação muito sistematizada (Santos/SP), o Arara Azul II FIF Multimercado é um dos fundos que mais exigem atenção na rotina de validação. Criado em 24/07/2020, toma posições direcionais em juros, câmbio e bolsa, e a equipe trata o caixa como ferramenta de trabalho. Público-alvo: público geral. Hoje seus cotistas são investidores qualificados via assessorias de investimento. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Henrique, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. A classificação do saldo em compromissada já gerou ressalva de auditoria. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. Uma vez, em 2024, o fundo ficou três dias com a cota segurada por causa de uma divergência de caixa que acabou sendo só de classificação. No fechamento de ontem (11/08/2026) o fundo tinha PL de R$ 366.613.847,72, cota de 3,81047155 e 96.212.199,17433561 cotas. Hoje, quarta-feira, 12/08/2026, é a data-base da validação."
+    "historia": "Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Arara Azul II FIF Multimercado: a casa é uma gestora cambial e de juros com operação muito sistematizada. Criado em 24/07/2020, toma posições direcionais em juros, câmbio e bolsa, e a equipe trata o caixa como ferramenta de trabalho. Público-alvo: público geral. Hoje seus cotistas são investidores qualificados via assessorias de investimento. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Henrique, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. A classificação do saldo em compromissada já gerou ressalva de auditoria. No fechamento de ontem (11/08/2026) o fundo tinha PL de R$ 366.613.847,72, cota de 3,81047155 e 96.212.199,17433561 cotas. Hoje, quarta-feira, 12/08/2026, é a data-base da validação."
   },
   "data": "2026-08-12",
   "dAnterior": "2026-08-11",
@@ -211,7 +210,26 @@
       "Fator acumulado do 100% do CDI de 30/06/2026 até 12/08/2026: 1,01641356"
     ]
   },
-  "comunicacoes": [],
+  "comunicacoes": [
+    {
+      "hora": "10:04",
+      "de": "Área de risco",
+      "assunto": "Relatório mensal",
+      "texto": "O relatório mensal de risco do fundo já está disponível na pasta compartilhada."
+    },
+    {
+      "hora": "10:16",
+      "de": "Banco — tesouraria",
+      "assunto": "Débito em duplicidade na conta do fundo",
+      "texto": "O banco confirmou dois débitos de R$ 10.583,15 referentes à NF 2910; o estorno do segundo foi solicitado."
+    },
+    {
+      "hora": "12:40",
+      "de": "Gestora — mesa",
+      "assunto": "Operação para o próximo pregão",
+      "texto": "No próximo dia útil (13/08/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta."
+    }
+  ],
   "memoriaDisponivel": true,
   "lados": {
     "Alfa": {
@@ -243,6 +261,15 @@
             "preco": 4436.252885,
             "valor": 22234499.46,
             "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "COMPROMISSADA OVER",
+            "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
+            "classe": "Compromissada",
+            "quantidade": 70265,
+            "preco": 791.141828,
+            "valor": 55589580.54,
+            "fonte": "PU de ida + remuneração pactuada (taxa over)"
           },
           {
             "codigo": "QPLN3",
@@ -286,13 +313,9 @@
             {
               "historico": "Pagamento — despesa de registro/cartório (NF 2910)",
               "valor": -10583.15
-            },
-            {
-              "historico": "Saldo aplicado em compromissada over (classificado em disponibilidades)",
-              "valor": 55589580.54
             }
           ],
-          "saldoFinal": 59949888.35
+          "saldoFinal": 4360307.81
         },
         "aReceber": [],
         "aPagar": [
@@ -473,8 +496,8 @@
         }
       },
       "resultado": {
-        "totalAtivos": 307581517.99,
-        "caixa": 59949888.35,
+        "totalAtivos": 363171098.53,
+        "caixa": 4360307.81,
         "totalReceber": 0,
         "totalPagar": 1337377.18,
         "totalProvisoes": 1388973.33,
@@ -524,15 +547,6 @@
             "fonte": "ANBIMA — taxa indicativa D"
           },
           {
-            "codigo": "COMPROMISSADA OVER",
-            "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
-            "classe": "Compromissada",
-            "quantidade": 70265,
-            "preco": 791.141828,
-            "valor": 55589580.54,
-            "fonte": "PU de ida + remuneração pactuada (taxa over)"
-          },
-          {
             "codigo": "QPLN3",
             "descricao": "Quiplan Saúde S.A. ON",
             "classe": "Ação",
@@ -578,9 +592,13 @@
             {
               "historico": "Pagamento — despesa de registro/cartório (NF 2910)",
               "valor": -10583.15
+            },
+            {
+              "historico": "Saldo aplicado em compromissada over (classificado em disponibilidades)",
+              "valor": 55589580.54
             }
           ],
-          "saldoFinal": 4349724.66
+          "saldoFinal": 59939305.2
         },
         "aReceber": [],
         "aPagar": [
@@ -761,8 +779,8 @@
         }
       },
       "resultado": {
-        "totalAtivos": 363171098.53,
-        "caixa": 4349724.66,
+        "totalAtivos": 307581517.99,
+        "caixa": 59939305.2,
         "totalReceber": 0,
         "totalPagar": 1337377.18,
         "totalProvisoes": 1386856.7,
@@ -800,20 +818,20 @@
           "provisoes"
         ],
         "titulo": "Compromissada over dentro do caixa",
-        "ladoCorreto": "Beta",
-        "ajustePor": "Alfa",
-        "causaRaiz": "Alfa classificou a compromissada over (R$ 55.589.580,54) como disponibilidade em vez de ativo.",
+        "ladoCorreto": "Alfa",
+        "ajustePor": "Beta",
+        "causaRaiz": "Beta classificou a compromissada over (R$ 55.589.580,54) como disponibilidade em vez de ativo.",
         "evidencias": [
           "Caixa",
           "Carteira — compromissada"
         ],
         "raciocinio": [
-          "O caixa do Alfa está R$ 55.589.580,54 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.",
+          "O caixa do Beta está R$ 55.589.580,54 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.",
           "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.",
           "Efeito derivado do mesmo erro: a diferença também aparece em cota e provisoes.",
-          "Régua v1 (provisória) — cota: diferença de 2.232,95 cotas equivalentes (a maior entre 7,89 cotas de quantidade e 2.232,95 cotas de PL), contra o limite de 250: ACIMA; caixa: diferença de R$ 55.600.163,69; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA; provisões: maior diferença numa provisão de R$ 2.116,63 e diferença total de R$ 2.116,63, contra o limite de R$ 100,00 por provisão e no total: ACIMA."
+          "Régua v1 (provisória) — cota: diferença de 2.232,95 cotas equivalentes (a maior entre 7,89 cotas de quantidade e 2.232,95 cotas de PL), contra o limite de 250: ACIMA; caixa: diferença de R$ 55.589.580,54; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA; provisões: maior diferença numa provisão de R$ 2.116,63 e diferença total de R$ 2.116,63, contra o limite de R$ 100,00 por provisão e no total: ACIMA."
         ],
-        "acao": "Alfa deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.",
+        "acao": "Beta deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.",
         "dimensoesDerivadas": [
           "cota",
           "provisoes"
@@ -837,7 +855,7 @@
           "O caixa do Beta está R$ 10.583,15 abaixo do do Alfa. A diferença é um segundo lançamento com histórico idêntico (mesma NF, mesmo valor).",
           "A mesma nota fiscal não se paga duas vezes. O segundo débito é erro operacional, mas o dinheiro saiu de fato.",
           "O Alfa está economicamente certa (uma despesa), mas o caixa dela não reflete o que aconteceu na conta. O Beta reflete a conta, mas jogou a duplicidade no resultado e reduziu o PL.",
-          "Régua v1 (provisória) — caixa: diferença de R$ 55.600.163,69; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
+          "Régua v1 (provisória) — caixa: diferença de R$ 55.589.580,54; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
         "acao": "Solicitar ao Beta o estorno imediato do débito duplicado. Até lá, registrar R$ 10.583,15 como \"estorno a receber\" (sem efeito no PL) e alinhar o caixa do Alfa ao real.",
         "gravidade": "pendencia"
@@ -848,7 +866,7 @@
       "difQtdCotas": 7.89246729,
       "difPlEmCotas": 2232.95140552,
       "difCotasEquivalentes": 2232.95140552,
-      "difCaixa": 55600163.69,
+      "difCaixa": 55589580.54,
       "maiorDifProvisao": 2116.63,
       "difTotalProvisoes": 2116.63,
       "cota": {
@@ -883,7 +901,7 @@
     },
     "corretoPorDimensao": {
       "cota": "Alfa",
-      "caixa": "Beta",
+      "caixa": "nenhum",
       "provisoes": "Alfa"
     },
     "diferencas": {
@@ -891,7 +909,7 @@
       "qtdFinal": 7.89246729,
       "plFinal": -8420.76,
       "plBase": -8466.52,
-      "caixa": -55600163.69,
+      "caixa": 55578997.39,
       "provisoes": -2116.63
     },
     "armadilhas": [

@@ -19,7 +19,7 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-013](casos/caso-013.md) | Socó Estratégia Fiagro — Direitos Creditórios | FIAGRO | 2026-11-04 | taxa_cvm_faixa_errada | APROVADO (c/ ressalva) | media |
 | [caso-014](casos/caso-014.md) | Angico Advisory FIF RF Crédito Privado LP | RF_CP | 2026-06-18 | juros_credito_nao_registrados | REPROVADO | facil |
 | [caso-015](casos/caso-015.md) | Pequi Prime FIP Multiestratégia | FIP | 2026-11-17 | tarifa_bancaria_indevida | PENDENTE | media |
-| [caso-016](casos/caso-016.md) | Paineira Plus FIE FIF Previdenciário Multimercado | PREV | 2026-01-14 | dividendo_ex_nao_provisionado | REPROVADO | facil |
+| [caso-016](casos/caso-016.md) | Jatobá Prime FIE FIF Previdenciário Multimercado | PREV | 2026-01-14 | dividendo_ex_nao_provisionado, debito_em_duplicidade | REPROVADO | media |
 | [caso-017](casos/caso-017.md) | Guapuruvu Prime FIF Multimercado | FIM_MACRO | 2026-07-06 | margem_lancada_como_despesa, dividendo_recebido_nao_baixado | REPROVADO | dificil |
 | [caso-018](casos/caso-018.md) | Paineira II FIF Multimercado Long Short | FIM_LS | 2026-02-06 | resgate_cotizado_antecipadamente | REPROVADO | facil |
 | [caso-019](casos/caso-019.md) | Graúna Família FII Responsabilidade Limitada | FII | 2026-02-10 | rendimento_nao_provisionado, taxa_escalonada_ignorada | REPROVADO | media |
@@ -63,7 +63,7 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-057](casos/caso-057.md) | Quaresmeira Total Fiagro — Direitos Creditórios | FIAGRO | 2026-04-24 | debito_em_duplicidade, credito_nao_identificado | PENDENTE | media |
 | [caso-058](casos/caso-058.md) | Pintassilgo Estratégia FIF Cambial Dólar | CAMBIAL | 2026-06-03 | pagamento_taxa_nao_registrado, aplicacao_apos_corte_convertida | REPROVADO | media |
 | [caso-059](casos/caso-059.md) | Araucária FIF RF Referenciado DI | RF_DI | 2026-05-22 | tudo_bate_com_ruido | APROVADO | media |
-| [caso-060](casos/caso-060.md) | Sabiá II Fiagro — Direitos Creditórios | FIAGRO | 2026-09-04 | rendimento_nao_provisionado, debito_em_duplicidade, minimo_mensal_ignorado | REPROVADO | dificil |
+| [caso-060](casos/caso-060.md) | Pequi Estratégia Fiagro — Direitos Creditórios | FIAGRO | 2026-09-04 | rendimento_nao_provisionado, pagamento_taxa_nao_registrado | REPROVADO | media |
 | [caso-061](casos/caso-061.md) | Cumaru Advisory FIF Multimercado | FIM_MACRO | 2026-04-20 | dividendo_recebido_nao_baixado, taxa_reduzida_nao_aplicada | REPROVADO | media |
 | [caso-062](casos/caso-062.md) | Aroeira Advisory FIDC Responsabilidade Limitada | FIDC | 2026-05-07 | pdd_aging_desatualizado | APROVADO (c/ ressalva) | media |
 | [caso-063](casos/caso-063.md) | Embaúba Estratégia FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-04-17 | taxa_reduzida_nao_aplicada, auditoria_contrato_novo, taxa_cvm_faixa_errada | REPROVADO | dificil |

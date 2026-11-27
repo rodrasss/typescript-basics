@@ -79,6 +79,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Ingá FII Respo
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 26/01/2026 é o 17º dia útil de janeiro (o mês tem 21 dias úteis) e o 17º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

@@ -79,6 +79,7 @@ O Buriti Institucional FIP Multiestratégia é gerido pela Coivara Partners, ges
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 17/03/2026 é o 12º dia útil de março (o mês tem 22 dias úteis) e o 51º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

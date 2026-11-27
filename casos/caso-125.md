@@ -76,6 +76,7 @@ Quem acompanha a Remanso Asset (Curitiba/PR) conhece o Imbuia II FIE FIF Previde
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 22/05/2026 é o 15º dia útil de maio (o mês tem 20 dias úteis) e o 35º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

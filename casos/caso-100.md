@@ -78,6 +78,7 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Saíra Famí
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 31/08/2026 é o 21º dia útil de agosto (o mês tem 21 dias úteis) e o 44º dia útil do trimestre (o trimestre tem 65).
 - PTAX de 31/08/2026: compra 5,4161 / venda 5,4167; PTAX de venda de 28/08/2026: 5,4764
 
 **Referências de preço**

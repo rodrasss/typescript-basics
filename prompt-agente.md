@@ -39,6 +39,15 @@ Há divergências pequenas e normais. A régua diz o que é pequeno demais para 
 
 **Provisões.** Recalcule cada provisão com as regras do fundo no regulamento: percentual, base de cálculo (PL do dia útil anterior), método (1/252 linear ou exponencial), mínimo mensal, faixas de PL, vigência e alterações recentes, performance (linha d'água, benchmark, data-base), despesas fixas, taxa de fiscalização por faixa e o que é ou não é encargo. Variações pequenas são normais; até R$ 100 em cada provisão e no total ficam dentro da régua. Diferenças que se compensam entre provisões não valem: cada provisão é medida separadamente.
 
+**Como preencher as medidas.** `diferenca_caixa` = |saldo final do Alfa − saldo final do Beta| (líquido). `diferenca_total_provisoes` = |soma dos saldos de provisões do Alfa − soma dos do Beta| (líquido) e `maior_diferenca_provisao` = a maior diferença numa provisão; as duas contam (por isso uma compensação entre provisões não esconde o erro). A PDD é redutora de ativo e aparece na carteira: conta na dimensão `cota`. Num caso com mais de uma causa, a medida é o efeito total observado; a gravidade de cada achado é indicativa, e um item pequeno que ajuda a estourar o total entra no parecer.
+
+**Casos que a régua não decide sozinha.**
+- **Fronteira:** se uma medida ficar a menos de 10% do limite (de 225 a 275 cotas equivalentes; de R$ 90 a R$ 110), avise na `mensagem_para_o_analista` que o caso está na fronteira da régua. Isso alimenta a calibração.
+- **Decisão de terceiro prevalece:** se a causa depende de decisão externa (comitê de precificação, remetente não identificado, estorno), o parecer é PENDENTE mesmo que a medida passe da régua; registre a medida.
+- **Caixa com lançamento só de um lado, sem extrato:** escolha o lado pela evidência (valor, data de liquidação, regulamento, comunicações) e peça confirmação no extrato; se a evidência não decide, `indeterminado`. Se o banco ou uma comunicação confirma que o dinheiro de fato saiu duas vezes, `nenhum` e PENDENTE de estorno.
+- **Negócio relevante no secundário** (critério provisório, como a régua): volume de pelo menos 5% da posição do fundo no papel ou 0,5% do PL.
+- **Qualquer diferença é divergência**, mesmo de 1e-8: dentro da régua, APROVADO com ressalva. Só é APROVADO sem ressalva quando nada diverge.
+
 ## Parecer
 - **APROVADO:** nada diverge, ou todas as divergências estão **dentro da régua** (nesse caso, `ressalva: true` e cada item entra como achado de gravidade `ressalva`). A marca `ressalva` só vale quando o parecer é APROVADO.
 - **REPROVADO:** alguma dimensão está **acima da régua** (cota a partir de 250 cotas equivalentes; qualquer diferença de caixa; provisão acima de R$ 100) e a correção está clara; ou o caixa não bate e a causa não foi localizada. O lado errado reprocessa antes da divulgação.

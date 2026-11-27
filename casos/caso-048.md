@@ -85,6 +85,7 @@ O Baobá FIC FIF Ações Investimento no Exterior é gerido pela Lume Gestão de
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 21/01/2026 é o 14º dia útil de janeiro (o mês tem 21 dias úteis) e o 14º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 21/01/2026: compra 5,6995 / venda 5,7001; PTAX de venda de 20/01/2026: 5,7160
 
 **Referências de preço**

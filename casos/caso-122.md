@@ -79,6 +79,7 @@ O Sucupira III Fiagro — Direitos Creditórios é gerido pela Quaresmeira Capit
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 21/10/2026 é o 14º dia útil de outubro (o mês tem 21 dias úteis) e o 14º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

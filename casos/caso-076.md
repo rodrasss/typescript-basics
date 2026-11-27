@@ -75,6 +75,7 @@ O Corrupião Família FIF Incentivado em Infraestrutura RF é gerido pela Ancora
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 09/02/2026 é o 6º dia útil de fevereiro (o mês tem 18 dias úteis) e o 27º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

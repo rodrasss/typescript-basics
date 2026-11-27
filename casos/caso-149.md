@@ -86,6 +86,7 @@ O Buriti II FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset, g
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 30/09/2026 é o 21º dia útil de setembro (o mês tem 21 dias úteis) e o 65º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

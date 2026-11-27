@@ -150,7 +150,7 @@ export function textoTaxa(t: TaxaReg): string {
     : 'apropriada diariamente à razão de 1/365 por dia corrido';
   let r = `${t.nome}: ${s}, calculada sobre o PL do dia útil anterior, ${met}; paga ${t.pagamento}.`;
   if (p.faixas && p.faixas.length && p.metodo === 'exponencial_252') r += ' Com faixas, o percentual efetivo é a média ponderada das faixas sobre o PL, aplicada no fator exponencial.';
-  if (p.minimoMensal) r += ` Valor mínimo mensal de ${fmtR(p.minimoMensal)} (apropriado por dia útil do mês).`;
+  if (p.minimoMensal) r += ` Valor mínimo mensal de ${fmtR(p.minimoMensal)}: a apropriação diária é o maior entre o percentual sobre o PL e o mínimo mensal ÷ dias úteis do mês.`;
   return r;
 }
 

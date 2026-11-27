@@ -80,6 +80,7 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Tamanduá Plus FI
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 09/11/2026 é o 5º dia útil de novembro (o mês tem 19 dias úteis) e o 26º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

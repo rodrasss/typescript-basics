@@ -87,6 +87,7 @@ O Baobá Família FIF Multimercado Long Short é gerido pela Maré Alta Investim
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 19/06/2026 é o 14º dia útil de junho (o mês tem 21 dias úteis) e o 54º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

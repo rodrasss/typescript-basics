@@ -76,6 +76,7 @@ Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação m
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 17/06/2026 é o 12º dia útil de junho (o mês tem 21 dias úteis) e o 52º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 17/06/2026: compra 5,8396 / venda 5,8402; PTAX de venda de 16/06/2026: 5,8909
 
 **Referências de preço**

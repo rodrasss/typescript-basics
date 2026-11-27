@@ -75,6 +75,7 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Tangará Prime
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 21/07/2026 é o 15º dia útil de julho (o mês tem 23 dias úteis) e o 15º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

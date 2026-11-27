@@ -79,6 +79,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Guapuruvu Advisor
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 08/04/2026 é o 5º dia útil de abril (o mês tem 20 dias úteis) e o 5º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

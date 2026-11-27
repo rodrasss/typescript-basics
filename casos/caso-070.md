@@ -87,6 +87,7 @@ O Biguá II FIF Multimercado é gerido pela Serra do Mar Asset, gestora cambial 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 03/02/2026 é o 2º dia útil de fevereiro (o mês tem 18 dias úteis) e o 23º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

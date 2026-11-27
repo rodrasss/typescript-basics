@@ -80,6 +80,7 @@ Sob a gestão da Varanda Capital, gestora de private equity com participações 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 10/07/2026 é o 8º dia útil de julho (o mês tem 23 dias úteis) e o 8º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

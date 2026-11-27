@@ -85,6 +85,7 @@ Sob a gestão da Marola Asset, gestora jovem de ações, muito ativa em eventos 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 10/11/2026 é o 6º dia útil de novembro (o mês tem 19 dias úteis) e o 27º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

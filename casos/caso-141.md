@@ -75,6 +75,7 @@ Quem acompanha a Cumeeira Capital (São Paulo/SP) conhece o Uirapuru Família FI
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 02/10/2026 é o 2º dia útil de outubro (o mês tem 21 dias úteis) e o 2º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

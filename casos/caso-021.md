@@ -75,6 +75,7 @@ O Sanhaço FIF Incentivado em Infraestrutura RF é gerido pela Ancoradouro Capit
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 08/07/2026 é o 6º dia útil de julho (o mês tem 23 dias úteis) e o 6º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 
@@ -87,7 +88,7 @@ O Sanhaço FIF Incentivado em Infraestrutura RF é gerido pela Ancoradouro Capit
 | LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.267,566338 |  |
 | EVSE11 | ANBIMA | sem taxa indicativa divulgada para o ativo |  |
 | EVSE11 | Comitê de precificação (ata de 23/05/2026) | 1.103,387664 |  |
-| EVSE11 | B3 — último negócio no secundário (03/07/2026) | 1.061,526144 | volume de R$ 1.800.000,00 |
+| EVSE11 | B3 — último negócio no secundário (03/07/2026) | 1.061,526144 | volume de R$ 2.982.000,00 |
 
 ## 4. Comunicações recebidas hoje
 

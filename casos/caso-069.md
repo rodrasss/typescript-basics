@@ -76,6 +76,7 @@ Sob a gestão da Remanso Asset, gestora de previdência ligada a uma seguradora 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 23/06/2026 é o 16º dia útil de junho (o mês tem 21 dias úteis) e o 56º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

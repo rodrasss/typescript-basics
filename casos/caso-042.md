@@ -79,6 +79,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Seriguela FIP Mul
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 01/10/2026 é o 1º dia útil de outubro (o mês tem 21 dias úteis) e o 1º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

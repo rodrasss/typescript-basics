@@ -79,6 +79,7 @@ O Pitanga II FIP Multiestratégia é gerido pela Coivara Partners, gestora multi
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 13/03/2026 é o 10º dia útil de março (o mês tem 22 dias úteis) e o 49º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

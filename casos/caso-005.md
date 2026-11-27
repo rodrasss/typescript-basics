@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação muito sistematizada (Santos/SP), o Arara Azul II FIF Multimercado é um dos fundos que mais exigem atenção na rotina de validação. Criado em 24/07/2020, toma posições direcionais em juros, câmbio e bolsa, e a equipe trata o caixa como ferramenta de trabalho. Público-alvo: público geral. Hoje seus cotistas são investidores qualificados via assessorias de investimento. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Henrique, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. A classificação do saldo em compromissada já gerou ressalva de auditoria. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. Uma vez, em 2024, o fundo ficou três dias com a cota segurada por causa de uma divergência de caixa que acabou sendo só de classificação. No fechamento de ontem (11/08/2026) o fundo tinha PL de R$ 366.613.847,72, cota de 3,81047155 e 96.212.199,17433561 cotas. Hoje, quarta-feira, 12/08/2026, é a data-base da validação.
+Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Arara Azul II FIF Multimercado: a casa é uma gestora cambial e de juros com operação muito sistematizada. Criado em 24/07/2020, toma posições direcionais em juros, câmbio e bolsa, e a equipe trata o caixa como ferramenta de trabalho. Público-alvo: público geral. Hoje seus cotistas são investidores qualificados via assessorias de investimento. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Henrique, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. A classificação do saldo em compromissada já gerou ressalva de auditoria. No fechamento de ontem (11/08/2026) o fundo tinha PL de R$ 366.613.847,72, cota de 3,81047155 e 96.212.199,17433561 cotas. Hoje, quarta-feira, 12/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -87,6 +87,7 @@ Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação m
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 12/08/2026 é o 8º dia útil de agosto (o mês tem 21 dias úteis) e o 31º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 
@@ -112,8 +113,9 @@ Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação m
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **10:04** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **10:16** — *Banco — tesouraria* — **Débito em duplicidade na conta do fundo**: O banco confirmou dois débitos de R$ 10.583,15 referentes à NF 2910; o estorno do segundo foi solicitado.
+- **12:40** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (13/08/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
 
 ## 5. Batimento Alfa × Beta
 
@@ -126,7 +128,7 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | Cota de fechamento | 3,79167152 | 3,79158352 | -0,00008800 |
 | Quantidade final de cotas | 96.030.546,03306103 | 96.030.553,92552832 | 7,89246729 |
 | PL final | R$ 364.116.286,44 | R$ 364.107.865,68 | R$ -8.420,76 |
-| Caixa | R$ 59.949.888,35 | R$ 4.349.724,66 | R$ -55.600.163,69 |
+| Caixa | R$ 4.360.307,81 | R$ 59.939.305,20 | R$ 55.578.997,39 |
 | Total de provisões | R$ 1.388.973,33 | R$ 1.386.856,70 | R$ -2.116,63 |
 
 ### 5.2 Carteira
@@ -136,11 +138,11 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 9.099 | 9.099 | 18.327,880133 | 18.327,880133 | 166.765.381,33 | 166.765.381,33 | 0,00 | ANBIMA — taxa indicativa D |
 | LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 4.054 | 4.054 | 18.280,735828 | 18.280,735828 | 74.110.103,05 | 74.110.103,05 | 0,00 | ANBIMA — taxa indicativa D |
 | NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 5.012 | 5.012 | 4.436,252885 | 4.436,252885 | 22.234.499,46 | 22.234.499,46 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 70.265 | — | 791,141828 | — | 55.589.580,54 | — | -55.589.580,54 | PU de ida + remuneração pactuada (taxa over) |
 | QPLN3 — Quiplan Saúde S.A. ON | 190.049 | 190.049 | 78,00 | 78,00 | 14.823.822,00 | 14.823.822,00 | 0,00 | B3 — preço de fechamento D |
 | KQSA3 — Kaquissá Saneamento S.A. ON | 159.208 | 159.208 | 93,11 | 93,11 | 14.823.856,88 | 14.823.856,88 | 0,00 | B3 — preço de fechamento D |
 | ZMBV3 — Zimbro Varejo S.A. ON | 202.263 | 202.263 | 73,29 | 73,29 | 14.823.855,27 | 14.823.855,27 | 0,00 | B3 — preço de fechamento D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | — | 70.265 | — | 791,141828 | — | 55.589.580,54 | 55.589.580,54 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 307.581.517,99 | 363.171.098,53 | 55.589.580,54 |  |
+| **Total** |  |  |  |  | 363.171.098,53 | 307.581.517,99 | -55.589.580,54 |  |
 
 ### 5.3 Caixa
 
@@ -150,9 +152,9 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | TED recebida — aplicação [APL-1] Cotista 3633 (12:49) | 1.289.381,55 | 1.289.381,55 |
 | Liquidação B3 — ajuste de futuros de 11/08/2026 | 964.551,42 | 964.551,42 |
 | Pagamento — despesa de registro/cartório (NF 2910) | -10.583,15 | -10.583,15 |
-| Saldo aplicado em compromissada over (classificado em disponibilidades) | 55.589.580,54 | — |
 | Pagamento — despesa de registro/cartório (NF 2910) | — | -10.583,15 |
-| **Saldo final** | 59.949.888,35 | 4.349.724,66 |
+| Saldo aplicado em compromissada over (classificado em disponibilidades) | — | 55.589.580,54 |
+| **Saldo final** | 4.360.307,81 | 59.939.305,20 |
 
 ### 5.4 Valores a receber
 
@@ -204,8 +206,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 307.581.517,99 | 363.171.098,53 | 55.589.580,54 |
-| Caixa | 59.949.888,35 | 4.349.724,66 | -55.600.163,69 |
+| Total de ativos | 363.171.098,53 | 307.581.517,99 | -55.589.580,54 |
+| Caixa | 4.360.307,81 | 59.939.305,20 | 55.578.997,39 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 1.337.377,18 | 1.337.377,18 | 0,00 |
 | Provisões | 1.388.973,33 | 1.386.856,70 | -2.116,63 |
@@ -238,21 +240,21 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 | Dimensão | Medida | Limite | Veredito |
 |---|---|---|---|
 | Cota | 2.232,95 cotas equivalentes (quantidade 7,89; PL 2.232,95) | 250 cotas | ACIMA |
-| Caixa | R$ 55.600.163,69 | sem tolerância | ACIMA |
+| Caixa | R$ 55.589.580,54 | sem tolerância | ACIMA |
 | Provisões | maior diferença R$ 2.116,63; total R$ 2.116,63 | R$ 100,00 por provisão e no total | ACIMA |
 
 ### Achado 1: Compromissada over dentro do caixa
 
 - **Gravidade:** erro · **Dimensões:** caixa, cota, provisoes
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa classificou a compromissada over (R$ 55.589.580,54) como disponibilidade em vez de ativo.
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta classificou a compromissada over (R$ 55.589.580,54) como disponibilidade em vez de ativo.
 - **Onde olhar:** Caixa; Carteira — compromissada
 - **Raciocínio do analista:**
-  1. O caixa do Alfa está R$ 55.589.580,54 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.
+  1. O caixa do Beta está R$ 55.589.580,54 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.
   2. Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.
   3. Efeito derivado do mesmo erro: a diferença também aparece em cota e provisoes.
-  4. Régua v1 (provisória) — cota: diferença de 2.232,95 cotas equivalentes (a maior entre 7,89 cotas de quantidade e 2.232,95 cotas de PL), contra o limite de 250: ACIMA; caixa: diferença de R$ 55.600.163,69; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA; provisões: maior diferença numa provisão de R$ 2.116,63 e diferença total de R$ 2.116,63, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
-- **Ação:** Alfa deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.
+  4. Régua v1 (provisória) — cota: diferença de 2.232,95 cotas equivalentes (a maior entre 7,89 cotas de quantidade e 2.232,95 cotas de PL), contra o limite de 250: ACIMA; caixa: diferença de R$ 55.589.580,54; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA; provisões: maior diferença numa provisão de R$ 2.116,63 e diferença total de R$ 2.116,63, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
+- **Ação:** Beta deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Achado 2: Pagamento da NF 2910 debitado duas vezes
 
@@ -264,7 +266,7 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
   1. O caixa do Beta está R$ 10.583,15 abaixo do do Alfa. A diferença é um segundo lançamento com histórico idêntico (mesma NF, mesmo valor).
   2. A mesma nota fiscal não se paga duas vezes. O segundo débito é erro operacional, mas o dinheiro saiu de fato.
   3. O Alfa está economicamente certa (uma despesa), mas o caixa dela não reflete o que aconteceu na conta. O Beta reflete a conta, mas jogou a duplicidade no resultado e reduziu o PL.
-  4. Régua v1 (provisória) — caixa: diferença de R$ 55.600.163,69; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
+  4. Régua v1 (provisória) — caixa: diferença de R$ 55.589.580,54; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
 - **Ação:** Solicitar ao Beta o estorno imediato do débito duplicado. Até lá, registrar R$ 10.583,15 como "estorno a receber" (sem efeito no PL) e alinhar o caixa do Alfa ao real.
 
 ### Quem está correto em cada dimensão (derivado dos números)
@@ -272,7 +274,7 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | Alfa |
-| caixa | Beta |
+| caixa | nenhum |
 | provisoes | Alfa |
 
 ### Valores corretos após os ajustes

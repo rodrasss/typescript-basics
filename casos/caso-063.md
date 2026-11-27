@@ -84,6 +84,7 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Embaúba Estratég
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 17/04/2026 é o 12º dia útil de abril (o mês tem 20 dias úteis) e o 12º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

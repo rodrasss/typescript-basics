@@ -80,6 +80,7 @@ O Jequitibá FIF Multimercado Crédito Privado — Classe Exclusiva é gerido pe
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 24/08/2026 é o 16º dia útil de agosto (o mês tem 21 dias úteis) e o 39º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

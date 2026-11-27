@@ -22,7 +22,7 @@ O Mandacaru Total FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capi
 
 **Taxas**
 
-- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 18.000,00 (apropriado por dia útil do mês).
+- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 18.000,00: a apropriação diária é o maior entre o percentual sobre o PL e o mínimo mensal ÷ dias úteis do mês.
 - Taxa de gestão: 1,500% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,050% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
@@ -80,6 +80,7 @@ O Mandacaru Total FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capi
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 04/08/2026 é o 2º dia útil de agosto (o mês tem 21 dias úteis) e o 25º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

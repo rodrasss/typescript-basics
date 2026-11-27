@@ -76,10 +76,12 @@ Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos 
 **Regras específicas deste fundo**
 
 - Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
+- Títulos classificados como mantidos até o vencimento (declaração escrita do cotista, anexa ao regulamento): NTN-B 15/08/2030.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 24/09/2026 é o 17º dia útil de setembro (o mês tem 21 dias úteis) e o 61º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

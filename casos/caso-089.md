@@ -22,7 +22,7 @@ Quem acompanha a Garoa Investimentos (São Paulo/SP) conhece o Baobá FIC FIF Mu
 
 **Taxas**
 
-- Taxa de administração: 0,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 43.100,00 (apropriado por dia útil do mês).
+- Taxa de administração: 0,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 43.100,00: a apropriação diária é o maior entre o percentual sobre o PL e o mínimo mensal ÷ dias úteis do mês.
 - Taxa de gestão: 0,540% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
@@ -78,6 +78,7 @@ Quem acompanha a Garoa Investimentos (São Paulo/SP) conhece o Baobá FIC FIF Mu
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 29/01/2026 é o 20º dia útil de janeiro (o mês tem 21 dias úteis) e o 20º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

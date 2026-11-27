@@ -76,6 +76,7 @@ O Tuiuiú Institucional FIF RF Crédito Privado LP é gerido pela Itapuã Gestã
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 25/02/2026 é o 16º dia útil de fevereiro (o mês tem 18 dias úteis) e o 37º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 
@@ -87,7 +88,7 @@ O Tuiuiú Institucional FIF RF Crédito Privado LP é gerido pela Itapuã Gestã
 | HBVI12 | ANBIMA — PU pela taxa indicativa de D | 1.095,404272 |  |
 | PASU12 | ANBIMA | sem taxa indicativa divulgada para o ativo |  |
 | PASU12 | Comitê de precificação (ata de 05/01/2026) | 1.079,236666 |  |
-| PASU12 | B3 — último negócio no secundário (20/02/2026) | 1.047,857740 | volume de R$ 3.300.000,00 |
+| PASU12 | B3 — último negócio no secundário (20/02/2026) | 1.047,857740 | volume de R$ 3.667.000,00 |
 
 ## 4. Comunicações recebidas hoje
 

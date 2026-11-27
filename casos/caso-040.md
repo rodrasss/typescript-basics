@@ -85,6 +85,7 @@ Sob a gestão da Marola Asset, gestora jovem de ações, muito ativa em eventos 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 18/09/2026 é o 13º dia útil de setembro (o mês tem 21 dias úteis) e o 57º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

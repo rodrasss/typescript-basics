@@ -86,6 +86,7 @@ O Angico Advisory FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, ges
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 18/06/2026 é o 13º dia útil de junho (o mês tem 21 dias úteis) e o 53º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

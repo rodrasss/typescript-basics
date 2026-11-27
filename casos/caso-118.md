@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Juazeiro III FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 02/06/2019, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo fez uma nova emissão de cotas em 2024 para comprar mais um ativo e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; o administrador revisa o manual de precificação uma vez por ano. A conta do fundo já teve cobrança de tarifa que não era do fundo. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. A gestora costuma pedir que despesas dela sejam lançadas no fundo. No fechamento de ontem (20/02/2026) o fundo tinha PL de R$ 192.725.083,43, cota de 86,16627060 e 2.236.665,02064046 cotas. Hoje, segunda-feira, 23/02/2026, é a data-base da validação.
+Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Juazeiro III FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 02/06/2019, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo fez uma nova emissão de cotas em 2024 para comprar mais um ativo e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; o administrador revisa o manual de precificação uma vez por ano. O fundo mudou de sistema e a parametrização de casas decimais foi revisada. Uma vez, em 2024, o fundo ficou três dias com a cota segurada por causa de uma divergência de caixa que acabou sendo só de classificação. No fechamento de ontem (20/02/2026) o fundo tinha PL de R$ 192.725.083,43, cota de 86,16627060 e 2.236.665,02064046 cotas. Hoje, segunda-feira, 23/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -79,6 +79,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Juazeiro III FI
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 23/02/2026 é o 14º dia útil de fevereiro (o mês tem 18 dias úteis) e o 35º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 
@@ -88,8 +89,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Juazeiro III FI
 
 ## 4. Comunicações recebidas hoje
 
-- **10:23** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
-- **14:23** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+- **11:55** — *Banco — tesouraria* — **Débito em duplicidade na conta do fundo**: O banco confirmou dois débitos de R$ 7.622,02 referentes à NF 5016; o estorno do segundo foi solicitado.
 
 ## 5. Batimento Alfa × Beta
 

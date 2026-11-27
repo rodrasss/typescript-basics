@@ -75,6 +75,7 @@ O Tiriba Estratégia FIF Ações é gerido pela Marola Asset, gestora jovem de a
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 11/08/2026 é o 7º dia útil de agosto (o mês tem 21 dias úteis) e o 30º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

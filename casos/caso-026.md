@@ -80,6 +80,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 15/05/2026 é o 10º dia útil de maio (o mês tem 20 dias úteis) e o 30º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

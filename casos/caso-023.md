@@ -76,6 +76,7 @@ O Tangará Prime FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, gest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 24/02/2026 é o 15º dia útil de fevereiro (o mês tem 18 dias úteis) e o 36º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

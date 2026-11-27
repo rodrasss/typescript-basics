@@ -80,6 +80,7 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Jandaia Plus FIDC
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 28/04/2026 é o 18º dia útil de abril (o mês tem 20 dias úteis) e o 18º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

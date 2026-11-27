@@ -84,6 +84,7 @@ O Guará Estratégia FIC FIF Multimercado é gerido pela Garoa Investimentos, ge
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 01/07/2026 é o 1º dia útil de julho (o mês tem 23 dias úteis) e o 1º dia útil do trimestre (o trimestre tem 65).
 
 **Referências de preço**
 

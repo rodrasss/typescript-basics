@@ -87,6 +87,7 @@ Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Bem-te-vi Plus FIF M
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 07/01/2026 é o 4º dia útil de janeiro (o mês tem 21 dias úteis) e o 4º dia útil do trimestre (o trimestre tem 61).
 
 **Referências de preço**
 

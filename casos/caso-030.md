@@ -76,6 +76,7 @@ Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Garça Moura Instituci
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 30/04/2026 é o 20º dia útil de abril (o mês tem 20 dias úteis) e o 20º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 30/04/2026: compra 5,7537 / venda 5,7543; PTAX de venda de 29/04/2026: 5,7754
 
 **Referências de preço**

@@ -22,7 +22,7 @@ O Saíra Plus FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capital,
 
 **Taxas**
 
-- Taxa de administração: 0,150% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 16.000,00 (apropriado por dia útil do mês).
+- Taxa de administração: 0,150% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 16.000,00: a apropriação diária é o maior entre o percentual sobre o PL e o mínimo mensal ÷ dias úteis do mês.
 - Taxa de gestão: 0,650% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
@@ -84,6 +84,7 @@ O Saíra Plus FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capital,
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 19/10/2026 é o 12º dia útil de outubro (o mês tem 21 dias úteis) e o 12º dia útil do trimestre (o trimestre tem 62).
 
 **Referências de preço**
 

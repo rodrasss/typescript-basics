@@ -78,6 +78,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- Calendário: 06/04/2026 é o 3º dia útil de abril (o mês tem 20 dias úteis) e o 3º dia útil do trimestre (o trimestre tem 61).
 - PTAX de 06/04/2026: compra 5,2155 / venda 5,2161; PTAX de venda de 02/04/2026: 5,1745
 
 **Referências de preço**
