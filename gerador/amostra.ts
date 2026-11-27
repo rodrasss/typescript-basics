@@ -3,7 +3,8 @@
 
 import { mkdirSync, writeFileSync, rmSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
-import { gerarTodos } from './gerar.ts';
+import { gerarTodos, gerarSessaoComeCotas } from './gerar.ts';
+import { CENARIOS_CC } from './cenarios-come-cotas.ts';
 import { renderEntrada, renderCompleto } from './render.ts';
 import { CENARIOS } from './cenarios.ts';
 import { criarRng, embaralhar } from './util.ts';
@@ -15,7 +16,8 @@ function arg(nome: string, padrao: string): string {
 
 const dir = resolve(arg('dir', 'avaliacao/trabalho'));
 const nGrupos = Number(arg('grupos', '8'));
-const casos = gerarTodos(200, 2026);
+const sessao = arg('sessao', ''); // vazio = dataset geral; 'come-cotas' = sessão de come-cotas
+const casos = sessao === 'come-cotas' ? gerarSessaoComeCotas(33, 2026) : gerarTodos(200, 2026);
 
 const max = Number(arg('max', '0'));
 // amostra enxuta: prioriza os mecanismos mais sensíveis (passivo, vigência de regras, performance, ambiguidade)
@@ -28,11 +30,12 @@ const PRIORIDADE = [
 ];
 const escolhidos = new Map<string, (typeof casos)[number]>();
 if (max > 0) {
-  for (const id of PRIORIDADE) {
+  for (const id of sessao === 'come-cotas' ? CENARIOS_CC.map((c) => c.id) : PRIORIDADE) {
     const c = casos.find((x) => x.gabarito.cenarios[0] === id && !escolhidos.has(x.id));
     if (c && escolhidos.size < max) escolhidos.set(c.id, c);
   }
   for (const c of casos.filter((x) => x.gabarito.achados.length >= 3)) if (escolhidos.size < max) escolhidos.set(c.id, c);
+  if (sessao === 'come-cotas') for (const c of casos) if (escolhidos.size < max) escolhidos.set(c.id, c);
 }
 for (const cen of max > 0 ? [] : CENARIOS) {
   const c = casos.find((x) => x.gabarito.cenarios[0] === cen.id && !escolhidos.has(x.id));
