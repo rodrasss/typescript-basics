@@ -14,8 +14,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
-      - run: npm run smoke
+      # o dataset versionado tem que ser exatamente o que o gerador produz
+      - run: npm run gerar
+      - run: git diff --exit-code -- casos dataset.jsonl INDICE.md COBERTURA.md

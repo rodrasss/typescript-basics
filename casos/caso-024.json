@@ -1,0 +1,812 @@
+{
+  "id": "caso-024",
+  "seed": 2208137,
+  "fundo": {
+    "codigo": "FND-0024",
+    "nome": "Baobá Advisory FIF Incentivado em Infraestrutura RF",
+    "tipo": "INFRA",
+    "rotulo": "Infraestrutura (debêntures incentivadas)",
+    "classe": "Classe de Renda Fixa — Infraestrutura (Lei 12.431)",
+    "condominio": "aberto",
+    "publico": "Público geral",
+    "gestora": {
+      "nome": "Itapuã Gestão",
+      "perfil": "gestora baiana de crédito privado e infraestrutura regional",
+      "cidade": "Salvador/BA"
+    },
+    "gestorResponsavel": "Rodrigo",
+    "analistaResponsavel": "Felipe",
+    "inicio": "2012-02-03",
+    "cotistas": "clientes de varejo alta renda e um FoF incentivado",
+    "marcos": [
+      "trocou de gestor responsável em 2023 depois da saída do fundador",
+      "reduziu o prazo de cotização em 2024 para competir em plataformas"
+    ],
+    "particularidades": [
+      "as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês",
+      "o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa"
+    ],
+    "pistas": [
+      "Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado.",
+      "A taxa de gestão é escalonada por faixa de patrimônio."
+    ],
+    "historia": "O Baobá Advisory FIF Incentivado em Infraestrutura RF é gerido pela Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional, em Salvador/BA. Criado em 03/02/2012, compra debêntures de infraestrutura e entrega rendimento isento de IR ao cotista pessoa física. Público-alvo: público geral. Hoje seus cotistas são clientes de varejo alta renda e um FoF incentivado. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e reduziu o prazo de cotização em 2024 para competir em plataformas. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Felipe. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. A taxa de gestão é escalonada por faixa de patrimônio. No fechamento de ontem (08/05/2026) o fundo tinha PL de R$ 64.307.570,19, cota de 1,54437038 e 41.639.991,95171146 cotas. Hoje, segunda-feira, 11/05/2026, é a data-base da validação."
+  },
+  "data": "2026-05-11",
+  "dAnterior": "2026-05-08",
+  "diaSemana": "segunda-feira",
+  "anterior": {
+    "pl": 64307570.19,
+    "cota": 1.54437038,
+    "qtdCotas": 41639991.95171146
+  },
+  "regulamento": {
+    "vigencia": "01/03/2025 (adaptado à Resolução CVM 175)",
+    "taxas": [
+      {
+        "codigo": "TXADM",
+        "nome": "Taxa de administração",
+        "param": {
+          "pct": 0.0012,
+          "metodo": "exponencial_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXGES",
+        "nome": "Taxa de gestão",
+        "param": {
+          "pct": 0.0082,
+          "metodo": "exponencial_252",
+          "faixas": [
+            {
+              "ate": 30000000,
+              "pct": 0.0082
+            },
+            {
+              "ate": null,
+              "pct": 0.0053
+            }
+          ]
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXCUS",
+        "nome": "Taxa máxima de custódia",
+        "param": {
+          "pct": 0.0002,
+          "metodo": "exponencial_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      }
+    ],
+    "despesasFixas": [
+      {
+        "codigo": "AUDIT",
+        "nome": "Auditoria independente",
+        "valor": 58000,
+        "periodo": "anual",
+        "observacao": "contrato anual; provisão diária por 1/252"
+      },
+      {
+        "codigo": "ANBIMA",
+        "nome": "Taxa ANBIMA (convênio de autorregulação)",
+        "valor": 1000,
+        "periodo": "mensal"
+      },
+      {
+        "codigo": "SELIC",
+        "nome": "Custódia SELIC/B3 (estimativa mensal)",
+        "valor": 5800,
+        "periodo": "mensal"
+      }
+    ],
+    "tabelaCVM": [
+      {
+        "ate": 20000000,
+        "valor": 2100
+      },
+      {
+        "ate": 50000000,
+        "valor": 3600
+      },
+      {
+        "ate": 100000000,
+        "valor": 5400
+      },
+      {
+        "ate": 300000000,
+        "valor": 7800
+      },
+      {
+        "ate": 1000000000,
+        "valor": 10800
+      },
+      {
+        "ate": null,
+        "valor": 14400
+      }
+    ],
+    "plReferenciaCVM": 64122246.62,
+    "encargos": [
+      "taxas de administração, gestão, custódia e performance previstas neste regulamento",
+      "taxa de fiscalização da CVM",
+      "honorários e despesas do auditor independente",
+      "custos de corretagem, emolumentos e registro de operações",
+      "despesas com custódia e liquidação de ativos (SELIC/B3)",
+      "contribuição anual à ANBIMA",
+      "honorários advocatícios e custas em defesa dos interesses da classe, quando aprovados pelo administrador e documentados"
+    ],
+    "naoEncargos": [
+      "tarifas bancárias de manutenção de conta e pacotes de serviços (suportadas pelo administrador)",
+      "despesas de marketing, eventos e relacionamento da gestora ou do distribuidor",
+      "despesas não previstas expressamente como encargo"
+    ],
+    "cotizacao": [
+      "Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.",
+      "Resgate: cotização D+30 corridos (liquidação D+1 útil)."
+    ],
+    "cota": "Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.",
+    "precificacao": [
+      "Manual de marcação a mercado do administrador (versão simulada vigente).",
+      "Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.",
+      "Operações compromissadas: PU de ida acrescido da remuneração pactuada.",
+      "Debêntures incentivadas: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê)."
+    ],
+    "tributacao": "Incentivado (Lei 12.431): isento para PF, sem come-cotas",
+    "especificos": [],
+    "alteracoes": [],
+    "horarioCorte": "14:00"
+  },
+  "mercado": {
+    "cdiAA": 0.1415,
+    "referencias": [
+      {
+        "ativo": "TSGE14",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "1.040,298291"
+      },
+      {
+        "ativo": "GASM13",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "1.097,069688"
+      },
+      {
+        "ativo": "EVSE11",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "1.094,556887"
+      },
+      {
+        "ativo": "SOLC12",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "1.145,176589"
+      },
+      {
+        "ativo": "FERR21",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "1.126,557328"
+      },
+      {
+        "ativo": "LFT 01/03/2029",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "18.305,072031"
+      },
+      {
+        "ativo": "EVSE11",
+        "fonte": "PU par (curva da taxa de emissão) — informativo",
+        "valor": "1.101,107520"
+      }
+    ],
+    "futuros": [],
+    "eventos": [],
+    "benchmarks": []
+  },
+  "comunicacoes": [
+    {
+      "hora": "10:12",
+      "de": "Gestora — mesa",
+      "assunto": "Operação para amanhã",
+      "texto": "Amanhã (12/05) vamos reduzir um pouco a posição mais líquida da carteira. Hoje não há boleta."
+    }
+  ],
+  "memoriaDisponivel": true,
+  "lados": {
+    "Alfa": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "TSGE14",
+            "descricao": "Debênture Transmissora Serra Geral S.A. — IPCA + 6,55% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 11505,
+            "preco": 1040.298291,
+            "valor": 11968631.84,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "GASM13",
+            "descricao": "Debênture Gasodutos do Médio Norte S.A. — IPCA + 6,80% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 11591,
+            "preco": 1097.069688,
+            "valor": 12716134.75,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "EVSE11",
+            "descricao": "Debênture Eólica Ventos do Sertão S.A. — IPCA + 7,35% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 8201,
+            "preco": 1094.556887,
+            "valor": 8976461.03,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "SOLC12",
+            "descricao": "Debênture Solar Chapada S.A. — IPCA + 7,60% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 7838,
+            "preco": 1145.176589,
+            "valor": 8975894.1,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "FERR21",
+            "descricao": "Debênture Ferrovia Planalto Central S.A. — IPCA + 7,20% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 11288,
+            "preco": 1126.557328,
+            "valor": 12716579.12,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 327,
+            "preco": 18305.072031,
+            "valor": 5985758.55,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "COMPROMISSADA OVER",
+            "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
+            "classe": "Compromissada",
+            "quantidade": 3696,
+            "preco": 809.519805,
+            "valor": 2991985.2,
+            "fonte": "PU de ida + remuneração pactuada (taxa over)"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 196860.42,
+          "lancamentos": [
+            {
+              "historico": "TED recebida — aplicação Cotista 0945 (13:16)",
+              "valor": 55160.05
+            },
+            {
+              "historico": "Pagamento de resgate — Cotista 0952 (cotizado em 07/05/2026)",
+              "valor": -75936.42
+            }
+          ],
+          "saldoFinal": 176084.05
+        },
+        "aReceber": [],
+        "aPagar": [
+          {
+            "codigo": "APLIC A CONVERTER",
+            "descricao": "Aplicações recebidas no dia, a converter em cotas",
+            "valor": 55160.05
+          },
+          {
+            "codigo": "RESGATES A PAGAR",
+            "descricao": "Resgates cotizados em dias anteriores, a liquidar",
+            "valor": 89811.41
+          }
+        ],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 1512.13,
+            "apropriacao": 306.04,
+            "pagamento": 0,
+            "saldoAtual": 1818.17,
+            "memoria": "[base: PL do dia útil anterior] 0,12% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 306,04",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0012,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 8404.98,
+            "apropriacao": 1692.14,
+            "pagamento": 0,
+            "saldoAtual": 10097.12,
+            "memoria": "[base: PL do dia útil anterior] escalonada (0,82% sobre R$ 30.000.000,00 + 0,53% sobre R$ 34.307.570,19) fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.692,14",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0082,
+                "metodo": "exponencial_252",
+                "faixas": [
+                  {
+                    "ate": 30000000,
+                    "pct": 0.0082
+                  },
+                  {
+                    "ate": null,
+                    "pct": 0.0053
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 248.47,
+            "apropriacao": 51.03,
+            "pagamento": 0,
+            "saldoAtual": 299.5,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 51,03",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0002,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 40968.25,
+            "apropriacao": 230.16,
+            "pagamento": 0,
+            "saldoAtual": 41198.41,
+            "memoria": "R$ 58.000,00 (anual) ÷ 252 d.u. = R$ 230,16",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 58000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 250,
+            "apropriacao": 50,
+            "pagamento": 0,
+            "saldoAtual": 300,
+            "memoria": "R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 1000,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "SELIC",
+            "descricao": "Custódia SELIC/B3 (estimativa mensal) a pagar",
+            "saldoAnterior": 1450,
+            "apropriacao": 290,
+            "pagamento": 0,
+            "saldoAtual": 1740,
+            "memoria": "R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 5800,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 2213.11,
+            "apropriacao": 88.52,
+            "pagamento": 0,
+            "saldoAtual": 2301.63,
+            "memoria": "R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 5400,
+              "periodo": "trimestral",
+              "diasPeriodo": 61
+            }
+          }
+        ],
+        "qtdCotasBase": 41639991.95171146,
+        "arredondamento": "truncamento",
+        "movs": [
+          {
+            "id": "APL-1",
+            "tipo": "aplicacao",
+            "cotista": "Cotista 0945",
+            "valor": 55160.05,
+            "recebidoAs": "13:16",
+            "solicitadoEm": "2026-05-11",
+            "cotizacao": "2026-05-11",
+            "liquidacao": "2026-05-11",
+            "converterHoje": true
+          },
+          {
+            "id": "LIQ-1",
+            "tipo": "resgate",
+            "cotista": "Cotista 0952",
+            "cotas": 49095.76351671,
+            "valor": 75936.42,
+            "solicitadoEm": "2026-04-19",
+            "cotizacao": "2026-05-07",
+            "liquidacao": "2026-05-11",
+            "converterHoje": false,
+            "observacao": "cotizado em 07/05/2026 pela cota de 1,54670000; liquidação financeira hoje"
+          }
+        ]
+      },
+      "resultado": {
+        "totalAtivos": 64331444.59,
+        "caixa": 176084.05,
+        "totalReceber": 0,
+        "totalPagar": 144971.46,
+        "totalProvisoes": 57754.83,
+        "plBase": 64304802.35,
+        "cota": 1.5443039,
+        "aplicacoesConvertidas": 55160.05,
+        "cotasEmitidas": 35718.3906613,
+        "cotasResgatadas": 0,
+        "valorResgates": 0,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "qtdFinal": 41675710.34237276,
+        "plFinal": 64359962.02
+      }
+    },
+    "Beta": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "TSGE14",
+            "descricao": "Debênture Transmissora Serra Geral S.A. — IPCA + 6,55% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 11505,
+            "preco": 1040.298291,
+            "valor": 11968631.84,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "GASM13",
+            "descricao": "Debênture Gasodutos do Médio Norte S.A. — IPCA + 6,80% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 11591,
+            "preco": 1097.069688,
+            "valor": 12716134.75,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "EVSE11",
+            "descricao": "Debênture Eólica Ventos do Sertão S.A. — IPCA + 7,35% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 8201,
+            "preco": 1101.10752,
+            "valor": 9030182.77,
+            "fonte": "Curva — taxa de emissão"
+          },
+          {
+            "codigo": "SOLC12",
+            "descricao": "Debênture Solar Chapada S.A. — IPCA + 7,60% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 7838,
+            "preco": 1145.176589,
+            "valor": 8975894.1,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "FERR21",
+            "descricao": "Debênture Ferrovia Planalto Central S.A. — IPCA + 7,20% (incentivada Lei 12.431)",
+            "classe": "Debênture",
+            "quantidade": 11288,
+            "preco": 1126.557328,
+            "valor": 12716579.12,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 327,
+            "preco": 18305.072031,
+            "valor": 5985758.55,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "COMPROMISSADA OVER",
+            "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
+            "classe": "Compromissada",
+            "quantidade": 3696,
+            "preco": 809.519805,
+            "valor": 2991985.2,
+            "fonte": "PU de ida + remuneração pactuada (taxa over)"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 196860.42,
+          "lancamentos": [
+            {
+              "historico": "TED recebida — aplicação Cotista 0945 (13:16)",
+              "valor": 55160.05
+            },
+            {
+              "historico": "Pagamento de resgate — Cotista 0952 (cotizado em 07/05/2026)",
+              "valor": -75936.42
+            }
+          ],
+          "saldoFinal": 176084.05
+        },
+        "aReceber": [],
+        "aPagar": [
+          {
+            "codigo": "APLIC A CONVERTER",
+            "descricao": "Aplicações recebidas no dia, a converter em cotas",
+            "valor": 55160.05
+          },
+          {
+            "codigo": "RESGATES A PAGAR",
+            "descricao": "Resgates cotizados em dias anteriores, a liquidar",
+            "valor": 89811.41
+          }
+        ],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 1512.13,
+            "apropriacao": 306.04,
+            "pagamento": 0,
+            "saldoAtual": 1818.17,
+            "memoria": "[base: PL do dia útil anterior] 0,12% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 306,04",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0012,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 8404.98,
+            "apropriacao": 2084.05,
+            "pagamento": 0,
+            "saldoAtual": 10489.03,
+            "memoria": "[base: PL do dia útil anterior] 0,82% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.084,05",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0082,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 248.47,
+            "apropriacao": 51.03,
+            "pagamento": 0,
+            "saldoAtual": 299.5,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 51,03",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0002,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 40968.25,
+            "apropriacao": 230.16,
+            "pagamento": 0,
+            "saldoAtual": 41198.41,
+            "memoria": "R$ 58.000,00 (anual) ÷ 252 d.u. = R$ 230,16",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 58000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 250,
+            "apropriacao": 50,
+            "pagamento": 0,
+            "saldoAtual": 300,
+            "memoria": "R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 1000,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "SELIC",
+            "descricao": "Custódia SELIC/B3 (estimativa mensal) a pagar",
+            "saldoAnterior": 1450,
+            "apropriacao": 290,
+            "pagamento": 0,
+            "saldoAtual": 1740,
+            "memoria": "R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 5800,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 2213.11,
+            "apropriacao": 88.52,
+            "pagamento": 0,
+            "saldoAtual": 2301.63,
+            "memoria": "R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 5400,
+              "periodo": "trimestral",
+              "diasPeriodo": 61
+            }
+          }
+        ],
+        "qtdCotasBase": 41639991.95171146,
+        "arredondamento": "truncamento",
+        "movs": [
+          {
+            "id": "APL-1",
+            "tipo": "aplicacao",
+            "cotista": "Cotista 0945",
+            "valor": 55160.05,
+            "recebidoAs": "13:16",
+            "solicitadoEm": "2026-05-11",
+            "cotizacao": "2026-05-11",
+            "liquidacao": "2026-05-11",
+            "converterHoje": true
+          },
+          {
+            "id": "LIQ-1",
+            "tipo": "resgate",
+            "cotista": "Cotista 0952",
+            "cotas": 49095.76351671,
+            "valor": 75936.42,
+            "solicitadoEm": "2026-04-19",
+            "cotizacao": "2026-05-07",
+            "liquidacao": "2026-05-11",
+            "converterHoje": false,
+            "observacao": "cotizado em 07/05/2026 pela cota de 1,54670000; liquidação financeira hoje"
+          }
+        ]
+      },
+      "resultado": {
+        "totalAtivos": 64385166.33,
+        "caixa": 176084.05,
+        "totalReceber": 0,
+        "totalPagar": 144971.46,
+        "totalProvisoes": 58146.74,
+        "plBase": 64358132.18,
+        "cota": 1.54558464,
+        "aplicacoesConvertidas": 55160.05,
+        "cotasEmitidas": 35688.79281823,
+        "cotasResgatadas": 0,
+        "valorResgates": 0,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "qtdFinal": 41675680.74452969,
+        "plFinal": 64413292.02
+      }
+    }
+  },
+  "gabarito": {
+    "cenarios": [
+      "preco_credito_fonte_errada",
+      "taxa_escalonada_ignorada"
+    ],
+    "parecer": "REPROVADO",
+    "ressalva": true,
+    "resumo": "Reprovar até o ajuste: PU de EVSE11 divergente; Taxa de gestão escalonada aplicada como taxa cheia.",
+    "dificuldade": "media",
+    "achados": [
+      {
+        "cenario": "preco_credito_fonte_errada",
+        "dimensoes": [
+          "cota"
+        ],
+        "titulo": "PU de EVSE11 divergente",
+        "ladoCorreto": "Alfa",
+        "ajustePor": "Beta",
+        "causaRaiz": "Beta precificou EVSE11 pela curva de emissão (PU par), e não pela taxa indicativa ANBIMA de D.",
+        "evidencias": [
+          "Carteira — linha EVSE11",
+          "Informações de mercado — referências ANBIMA",
+          "Regulamento — precificação"
+        ],
+        "raciocinio": [
+          "A diferença de ativos está concentrada em EVSE11: mesma quantidade (8.201) nos dois lados, mas PU 1.094,556887 no Alfa contra 1.101,107520 no Beta, o que dá R$ 53.721,74 de diferença de valor.",
+          "A referência ANBIMA de D é 1.094,556887, igual ao Alfa. O PU do Beta coincide com o PU par (curva de emissão).",
+          "O regulamento manda precificar pela taxa indicativa ANBIMA do próprio dia, então o lado correto é o que usou a referência de D."
+        ],
+        "acao": "Pedir ao Beta que reprecifique EVSE11 pela taxa indicativa ANBIMA de D (PU 1.094,556887) e recalcule a cota antes da divulgação."
+      },
+      {
+        "cenario": "taxa_escalonada_ignorada",
+        "dimensoes": [
+          "provisoes"
+        ],
+        "titulo": "Taxa de gestão escalonada aplicada como taxa cheia",
+        "ladoCorreto": "Alfa",
+        "ajustePor": "Beta",
+        "causaRaiz": "Beta aplicou 0,820% sobre todo o PL, ignorando a taxa menor (0,530%) sobre a parcela acima de R$ 30.000.000,00.",
+        "evidencias": [
+          "Provisões — TXGES",
+          "Regulamento — taxa de gestão escalonada"
+        ],
+        "raciocinio": [
+          "A apropriação de taxa de gestão do Beta é maior.",
+          "O regulamento escalona a taxa: Taxa de gestão: 0,820% a.a. sobre a parcela do PL até R$ 30.000.000,00; 0,530% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Com PL de D−1 de R$ 64.307.570,19, parte do PL está na segunda faixa.",
+          "O Alfa fez a conta por faixas; o Beta aplicou a taxa cheia em tudo."
+        ],
+        "acao": "Beta deve parametrizar as faixas da taxa de gestão e reprocessar."
+      }
+    ],
+    "valoresCorretos": {
+      "totalAtivos": 64331444.59,
+      "caixa": 176084.05,
+      "totalReceber": 0,
+      "totalPagar": 144971.46,
+      "totalProvisoes": 57754.83,
+      "plBase": 64304802.35,
+      "cota": 1.5443039,
+      "aplicacoesConvertidas": 55160.05,
+      "cotasEmitidas": 35718.3906613,
+      "cotasResgatadas": 0,
+      "valorResgates": 0,
+      "irComeCotas": 0,
+      "cotasComeCotas": 0,
+      "qtdFinal": 41675710.34237276,
+      "plFinal": 64359962.02
+    },
+    "corretoPorDimensao": {
+      "cota": "Alfa",
+      "caixa": "ambos",
+      "provisoes": "Alfa"
+    },
+    "diferencas": {
+      "cota": 0.00128074,
+      "qtdFinal": -29.59784307,
+      "plFinal": 53330,
+      "plBase": 53329.83,
+      "caixa": 0,
+      "provisoes": 391.91
+    },
+    "armadilhas": [
+      "Descobrir qual lado está certo comparando com a referência de D, não com o D−1 nem com a curva de emissão."
+    ]
+  }
+}
