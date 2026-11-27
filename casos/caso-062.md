@@ -1,35 +1,37 @@
-# Caso caso-062 — Aroeira Advisory FIC FIF Ações Investimento no Exterior
+# Caso caso-062 — Aroeira Advisory FIDC Responsabilidade Limitada
 
-> **Data-base (D):** 12/06/2026 (sexta-feira) · **D−1:** 11/06/2026 · **Fundo:** FND-0062
+> **Data-base (D):** 07/05/2026 (quinta-feira) · **D−1:** 06/05/2026 · **Fundo:** FND-0062
 
 ## 1. O fundo
 
-Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Aroeira Advisory FIC FIF Ações Investimento no Exterior: a casa é uma gestora de ações globais que investe via fundos offshore. Criado em 12/12/2016, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: público geral. Hoje seus cotistas são clientes private com perfil arrojado e um FoF global. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Murilo, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. No fechamento de ontem (11/06/2026) o fundo tinha PL de R$ 89.137.781,88, cota de 3,38036607 e 26.369.268,82303936 cotas. Hoje, sexta-feira, 12/06/2026, é a data-base da validação.
+Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Aroeira Advisory FIDC Responsabilidade Limitada: a casa é uma especialista em crédito estruturado (FIDC e CRA). Criado em 12/12/2016, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Murilo, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. A forma de apropriar as taxas muda de fundo para fundo. A equipe da gestora é considerada muito organizada. No fechamento de ontem (06/05/2026) o fundo tinha PL de R$ 78.215.840,18, cota de 1.117,81800608 e 69.971,89144777 cotas. Hoje, quinta-feira, 07/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Investimento no Exterior (ações globais) |
-| Classe | Classe de Ações — Investimento no Exterior |
-| Condomínio | aberto |
-| Gestora | Lume Gestão de Recursos (São Paulo/SP) |
-| PL em D−1 | R$ 89.137.781,88 |
-| Cota em D−1 | 3,38036607 |
-| Quantidade de cotas em D−1 | 26.369.268,82303936 |
+| Tipo | FIDC (direitos creditórios) |
+| Classe | Classe de FIDC — subclasse única (monocota) |
+| Condomínio | fechado |
+| Gestora | Quaresmeira Capital (São Paulo/SP) |
+| PL em D−1 | R$ 78.215.840,18 |
+| Cota em D−1 | 1.117,81800608 |
+| Quantidade de cotas em D−1 | 69.971,89144777 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/01/2026 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,120% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,140% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,200% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 18.000,00 (apropriado por dia útil do mês).
+- Taxa de gestão: 1,200% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 42.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
+- Auditoria independente: R$ 99.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
+- Agente de cobrança: R$ 17.000,00 (mensal)
+- Agência de classificação de risco (rating): R$ 56.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -39,7 +41,7 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Aroeira Advi
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 80.234.663,06. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 79.607.472,60. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -59,41 +61,35 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Aroeira Advi
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+5 dias úteis após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
+- Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
 - Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
-- Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
+- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Cotas de fundos no exterior: NAV oficial mais recente disponível até 18h de D, convertido pela PTAX de venda de D.
+- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
 
 **Regras específicas deste fundo**
 
-- Ativos no exterior: NAV oficial mais recente disponível até 18h de D (em regra, o NAV de D−1), convertido pela PTAX de VENDA de D. NAV estimado ou indicativo não é aceito.
+- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
+- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
-- PTAX de 12/06/2026: compra 5,5840 / venda 5,5846; PTAX de venda de 11/06/2026: 5,6476
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| OFFSHORE BOREAL | NAV oficial de 11/06/2026 (último disponível) | USD 209,0287 |  |
-| OFFSHORE MERIDIAN | NAV oficial de 11/06/2026 (último disponível) | USD 236,8467 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.104,954312 |  |
-| PTAX | BCB — PTAX de 12/06/2026 | compra 5,5840 / venda 5,5846 |  |
-| PTAX | BCB — PTAX de 11/06/2026 | venda 5,6476 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.249,776845 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **07:55** — *Custodiante — relatório de aging* — **Aging de 07/05/2026**: Mudanças de faixa hoje: sacado Comercial Boa Safra Ltda. — R$ 690.857,35 passaram de 90 para 91 dias de atraso (faixa 61–90 → 91–180).
 
 ## 5. Batimento Alfa × Beta
 
@@ -103,31 +99,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 3,34052381 | 3,34052381 | 0,00000000 |
-| Quantidade final de cotas | 26.373.478,84163932 | 26.373.478,84163932 | 0,00000000 |
-| PL final | R$ 88.101.234,02 | R$ 88.101.234,02 | R$ 0,00 |
-| Caixa | R$ 96.899,06 | R$ 96.899,06 | R$ 0,00 |
-| Total de provisões | R$ 80.983,53 | R$ 80.983,53 | R$ 0,00 |
+| Cota de fechamento | 1.115,16418558 | 1.118,12619226 | 2,96200668 |
+| Quantidade final de cotas | 69.971,89144777 | 69.971,89144777 | 0,00000000 |
+| PL final | R$ 78.030.147,34 | R$ 78.237.404,55 | R$ 207.257,21 |
+| Caixa | R$ 3.745.928,71 | R$ 3.745.928,71 | R$ 0,00 |
+| Total de provisões | R$ 232.016,78 | R$ 232.016,78 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| OFFSHORE BOREAL — Cotas do Boreal Global Equity Fund — Class I (USD) | 41.632,686435 | 41.632,686435 | USD 209,0287 × 5,5846 | USD 209,0287 × 5,5846 | 48.599.570,04 | 48.599.570,04 | 0,00 | NAV oficial mais recente × PTAX venda D |
-| OFFSHORE MERIDIAN — Cotas do Meridian Tech Leaders Fund — Inst. (USD) | 23.381,823180 | 23.381,823180 | USD 236,8467 × 5,5846 | USD 236,8467 × 5,5846 | 30.926.999,12 | 30.926.999,12 | 0,00 | NAV oficial mais recente × PTAX venda D |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 342 | 342 | 18.104,954312 | 18.104,954312 | 6.191.894,37 | 6.191.894,37 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 3.271 | 3.271 | 810,342882 | 810,342882 | 2.650.631,57 | 2.650.631,57 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 88.369.095,10 | 88.369.095,10 | 0,00 |  |
+| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 53.233.645,08 | 53.233.645,08 | 1,00 | 1,00 | 53.233.645,08 | 53.233.645,08 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
+| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 3.802.403,22 | 3.802.403,22 | 1,00 | 1,00 | 3.802.403,22 | 3.802.403,22 | 0,00 | Valor presente (custodiante) |
+| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 1.520.961,29 | 1.520.961,29 | 1,00 | 1,00 | 1.520.961,29 | 1.520.961,29 | 0,00 | Valor presente (custodiante) |
+| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 221.719,42 | 912.576,77 | 1,00 | 1,00 | 221.719,42 | 912.576,77 | 690.857,35 | Valor presente (custodiante) |
+| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 1.299.241,87 | 608.384,52 | 1,00 | 1,00 | 1.299.241,87 | 608.384,52 | -690.857,35 | Valor presente (custodiante) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 625 | 625 | 18.249,776845 | 18.249,776845 | 11.406.110,53 | 11.406.110,53 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 5.635 | 5.635 | 809,697875 | 809,697875 | 4.562.647,53 | 4.562.647,53 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -1.530.493,53 | -1.323.236,32 | -1.530.493,53 | -1.323.236,32 | 207.257,21 | Cálculo pelo aging do custodiante |
+| **Total** |  |  |  |  | 74.516.235,41 | 74.723.492,62 | 207.257,21 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 342.604,24 | 342.604,24 |
-| TED recebida — aplicação [APL-1] Cotista 5929 (09:29) | 189.189,03 | 189.189,03 |
-| Pagamento de resgate [LIQ-1] — Cotista 5943 (cotizado em 10/06/2026) | -187.218,16 | -187.218,16 |
-| Pagamento de resgate [LIQ-2] — Cotista 5950 (cotizado em 10/06/2026) | -247.676,05 | -247.676,05 |
-| **Saldo final** | 96.899,06 | 96.899,06 |
+| Saldo inicial (D−1) | 3.745.928,71 | 3.745.928,71 |
+| **Saldo final** | 3.745.928,71 | 3.745.928,71 |
 
 ### 5.4 Valores a receber
 
@@ -135,57 +132,48 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 189.189,03 | 189.189,03 |
-| RESGATES A PAGAR — Resgates já cotizados e ainda não liquidados | 108.651,11 | 108.651,11 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 3.417,23 | 3.417,23 | 424,21 | 424,21 | 0,00 | 0,00 | 3.841,44 | 3.841,44 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 32.217,80 | 32.217,80 | 4.009,70 | 4.009,70 | 0,00 | 0,00 | 36.227,50 | 36.227,50 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 577,58 | 577,58 | 70,74 | 70,74 | 0,00 | 0,00 | 648,32 | 648,32 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 35.333,33 | 35.333,33 | 166,67 | 166,67 | 0,00 | 0,00 | 35.500,00 | 35.500,00 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 380,95 | 380,95 | 47,62 | 47,62 | 0,00 | 0,00 | 428,57 | 428,57 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 4.249,18 | 4.249,18 | 88,52 | 88,52 | 0,00 | 0,00 | 4.337,70 | 4.337,70 | 0,00 |
-| **Total** |  |  |  |  |  |  | 80.983,53 | 80.983,53 | 0,00 |
+| TXADM — Taxa de administração a pagar | 20.908,98 | 20.908,98 | 900,00 | 900,00 | 0,00 | 0,00 | 21.808,98 | 21.808,98 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 87.558,22 | 87.558,22 | 3.702,48 | 3.702,48 | 0,00 | 0,00 | 91.260,70 | 91.260,70 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 2.152,90 | 2.152,90 | 93,10 | 93,10 | 0,00 | 0,00 | 2.246,00 | 2.246,00 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 70.321,43 | 70.321,43 | 392,86 | 392,86 | 0,00 | 0,00 | 70.714,29 | 70.714,29 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 180,00 | 180,00 | 60,00 | 60,00 | 0,00 | 0,00 | 240,00 | 240,00 | 0,00 |
+| COBRANCA — Agente de cobrança a pagar | 2.550,00 | 2.550,00 | 850,00 | 850,00 | 0,00 | 0,00 | 3.400,00 | 3.400,00 | 0,00 |
+| RATING — Agência de classificação de risco (rating) a pagar | 40.000,00 | 40.000,00 | 222,22 | 222,22 | 0,00 | 0,00 | 40.222,22 | 40.222,22 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 2.036,07 | 2.036,07 | 88,52 | 88,52 | 0,00 | 0,00 | 2.124,59 | 2.124,59 | 0,00 |
+| **Total** |  |  |  |  |  |  | 232.016,78 | 232.016,78 | 0,00 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
-
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 5929 | R$ 189.189,03 | 09:29 | 12/06/2026 | 12/06/2026 | 12/06/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 5936 | 52.424,52159809 cotas |  | 05/06/2026 | 12/06/2026 | 16/06/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 5943 | 55.563,98279644 cotas (R$ 187.218,16) |  | 02/06/2026 | 10/06/2026 | 12/06/2026 | não | não | cotizado em 10/06/2026 pela cota de 3,36941569; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 5950 | 73.507,12086713 cotas (R$ 247.676,05) |  | 02/06/2026 | 10/06/2026 | 12/06/2026 | não | não | cotizado em 10/06/2026 pela cota de 3,36941569; liquidação financeira hoje |
-| PEN-1 | resgate | Cotista 5957 | 32.141,81725596 cotas (R$ 108.651,11) |  | 03/06/2026 | 11/06/2026 | 15/06/2026 | não | não | cotizado em 11/06/2026 pela cota de 3,38036607; liquidação em 15/06/2026 (ainda a pagar) |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 88.369.095,10 | 88.369.095,10 | 0,00 |
-| Caixa | 96.899,06 | 96.899,06 | 0,00 |
+| Total de ativos | 74.516.235,41 | 74.723.492,62 | 207.257,21 |
+| Caixa | 3.745.928,71 | 3.745.928,71 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 297.840,14 | 297.840,14 | 0,00 |
-| Provisões | 80.983,53 | 80.983,53 | 0,00 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 88.091.977,95 | 88.091.977,95 | 0,00 |
-| PL base da cota | 88.087.170,49 | 88.087.170,49 | 0,00 |
-| Cota (8 casas) | 3,34052381 | 3,34052381 | 0,00000000 |
-| Aplicações convertidas | 189.189,03 | 189.189,03 | 0,00 |
-| Cotas emitidas | 56.634,54019805 | 56.634,54019805 | 0,00000000 |
-| Cotas resgatadas | 52.424,52159809 | 52.424,52159809 | 0,00000000 |
-| Valor dos resgates cotizados | 175.125,36 | 175.125,36 | 0,00 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 232.016,78 | 232.016,78 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 78.036.456,52 | 78.243.713,73 | 207.257,21 |
+| PL base da cota | 78.030.147,34 | 78.237.404,55 | 207.257,21 |
+| Cota (8 casas) | 1.115,16418558 | 1.118,12619226 | 2,96200668 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 26.373.478,84163932 | 26.373.478,84163932 | 0,00000000 |
-| PL final | 88.101.234,02 | 88.101.234,02 | 0,00 |
+| Quantidade final de cotas | 69.971,89144777 | 69.971,89144777 | 0,00000000 |
+| PL final | 78.030.147,34 | 78.237.404,55 | 207.257,21 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -193,19 +181,38 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO
+**Parecer:** APROVADO (com ressalva)
 
-**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
+**Resumo:** Aprovar com ressalva (dentro da régua): PDD calculada com aging de D−1.
 
-**Dificuldade:** facil · **Cenários:** tudo_bate
+**Dificuldade:** media · **Cenários:** pdd_aging_desatualizado
 
-Sem achados.
+### Régua v1 (provisória) — medidas deste caso
+
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 185,61 cotas equivalentes (quantidade 0,00; PL 185,61) | 250 cotas | dentro |
+| Caixa | R$ 0,00 | sem tolerância | bate |
+| Provisões | maior diferença R$ 0,00; total R$ 0,00 | R$ 100,00 por provisão e no total | dentro |
+
+### Achado 1: PDD calculada com aging de D−1
+
+- **Gravidade:** ressalva · **Dimensões:** cota
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta não migrou R$ 690.857,35 da faixa 61–90 para 91–180 dias, como mostra o aging de D, e calculou a PDD com 30% em vez de 60% sobre esse valor.
+- **Onde olhar:** Carteira — faixas de direitos creditórios e linha de PDD; Comunicações — relatório de aging; Regulamento — política de perdas
+- **Raciocínio do analista:**
+  1. O total de direitos creditórios é igual nos dois lados, mas a distribuição por faixa não: o Beta tem R$ 690.857,35 a mais em 61–90 e a menos em 91–180.
+  2. O aging do custodiante de D mostra que esse valor passou para 91 dias hoje. Pela política, a PDD sobe de 30% para 60% sobre ele: R$ 207.257,21 a mais de provisão.
+  3. O Beta está com PL maior do que deveria. Num FIDC, PDD a menor é o erro mais sensível, porque superavalia a classe.
+  4. Régua v1 (provisória) — cota: diferença de 185,61 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 185,61 cotas de PL), contra o limite de 250: dentro.
+- **Ação:** Beta deve reprocessar com o aging de D e recalcular a PDD antes da divulgação. Dentro da régua: aprovar com ressalva e corrigir na origem, para a diferença não se acumular.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | ambos |
+| cota | Alfa |
 | caixa | ambos |
 | provisoes | ambos |
 
@@ -213,12 +220,8 @@ Sem achados.
 
 | Item | Valor |
 |---|---|
-| Cota | 3,34052381 |
-| Quantidade final de cotas | 26.373.478,84163932 |
-| PL final | R$ 88.101.234,02 |
-| Caixa | R$ 96.899,06 |
-| Total de provisões | R$ 80.983,53 |
-
-### Armadilhas deste caso
-
-- Não inventar problema: quando tudo bate e as apropriações conferem com o regulamento, a resposta certa é aprovar.
+| Cota | 1.115,16418558 |
+| Quantidade final de cotas | 69.971,89144777 |
+| PL final | R$ 78.030.147,34 |
+| Caixa | R$ 3.745.928,71 |
+| Total de provisões | R$ 232.016,78 |

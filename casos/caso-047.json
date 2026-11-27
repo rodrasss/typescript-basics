@@ -562,7 +562,8 @@
       {
         "cenario": "taxa_gestao_sem_apropriacao",
         "dimensoes": [
-          "provisoes"
+          "provisoes",
+          "cota"
         ],
         "titulo": "Taxa de gestão não apropriada hoje",
         "ladoCorreto": "Beta",
@@ -574,11 +575,35 @@
         ],
         "raciocinio": [
           "A provisão de taxa de gestão do Alfa ficou com o mesmo saldo de ontem: apropriação zero.",
-          "Pelo regulamento, a taxa de gestão é apropriada todo dia útil. O valor do Beta confere com o recálculo."
+          "Pelo regulamento, a taxa de gestão é apropriada todo dia útil. O valor do Beta confere com o recálculo.",
+          "Efeito derivado do mesmo erro: a diferença também aparece em cota.",
+          "Régua v1 (provisória) — cota: diferença de 396,61 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 396,61 cotas de PL), contra o limite de 250: ACIMA; provisões: maior diferença numa provisão de R$ 39.698,38 e diferença total de R$ 39.698,38, contra o limite de R$ 100,00 por provisão e no total: ACIMA."
         ],
-        "acao": "Alfa deve rodar a apropriação de taxa de gestão do dia e reprocessar. Verificar se outros fundos da mesma rotina foram afetados."
+        "acao": "Alfa deve rodar a apropriação de taxa de gestão do dia e reprocessar. Verificar se outros fundos da mesma rotina foram afetados. Acima da régua: reprovar até o lado errado reprocessar.",
+        "dimensoesDerivadas": [
+          "cota"
+        ],
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 0,
+      "difPlEmCotas": 396.60502541,
+      "difCotasEquivalentes": 396.60502541,
+      "difCaixa": 0,
+      "maiorDifProvisao": 39698.38,
+      "difTotalProvisoes": 39698.38,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": true
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 1207704864.74,
       "caixa": 18612516.1,

@@ -819,11 +819,31 @@
         ],
         "raciocinio": [
           "O IR é o mesmo nos dois lados (R$ 2.567.123,32), mas as cotas retiradas diferem: 292.729,45435622 no Beta e 292.191,31168382 no Alfa.",
-          "Pelo regulamento, cotas retiradas = IR ÷ cota de fechamento de D. Com a cota de D (8,78576199) o resultado é o do Alfa; dividir pela cota de D−1 (8,76961058), que é menor, retira cotas a mais."
+          "Pelo regulamento, cotas retiradas = IR ÷ cota de fechamento de D. Com a cota de D (8,78576199) o resultado é o do Alfa; dividir pela cota de D−1 (8,76961058), que é menor, retira cotas a mais.",
+          "Régua v1 (provisória) — cota: diferença de 538,14 cotas equivalentes (a maior entre 538,14 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve refazer a conversão pela cota de D e devolver 538,14267240 cotas aos cotistas."
+        "acao": "Beta deve refazer a conversão pela cota de D e devolver 538,14267240 cotas aos cotistas. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 538.1426724,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 538.1426724,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 189087760.39,
       "caixa": 1206487.51,

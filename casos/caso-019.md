@@ -1,10 +1,10 @@
-# Caso caso-019 — Cajueiro Plus FII Responsabilidade Limitada
+# Caso caso-019 — Graúna Família FII Responsabilidade Limitada
 
-> **Data-base (D):** 27/02/2026 (sexta-feira) · **D−1:** 26/02/2026 · **Fundo:** FND-0019
+> **Data-base (D):** 10/02/2026 (terça-feira) · **D−1:** 09/02/2026 · **Fundo:** FND-0019
 
 ## 1. O fundo
 
-O Cajueiro Plus FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 05/05/2016, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Lívia, e quem cuida da validação do fundo é Lucas. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Uma vez, em 2024, o fundo ficou três dias com a cota segurada por causa de uma divergência de caixa que acabou sendo só de classificação. No fechamento de ontem (26/02/2026) o fundo tinha PL de R$ 116.740.084,22, cota de 115,97393591 e 1.006.606,21112047 cotas. Hoje, sexta-feira, 27/02/2026, é a data-base da validação.
+Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes (São Paulo/SP), o Graúna Família FII Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 17/05/2021, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Sofia, e quem cuida da validação do fundo é Rafael. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A equipe da gestora é considerada muito organizada. No fechamento de ontem (09/02/2026) o fundo tinha PL de R$ 440.578.531,10, cota de 86,38083077 e 5.100.420,16413274 cotas. Hoje, terça-feira, 10/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,25 +12,25 @@ O Cajueiro Plus FII Responsabilidade Limitada é gerido pela Siriema Investiment
 | Classe | Classe de FII — Tijolo |
 | Condomínio | fechado |
 | Gestora | Siriema Investimentos (São Paulo/SP) |
-| PL em D−1 | R$ 116.740.084,22 |
-| Cota em D−1 | 115,97393591 |
-| Quantidade de cotas em D−1 | 1.006.606,21112047 |
+| PL em D−1 | R$ 440.578.531,10 |
+| Cota em D−1 | 86,38083077 |
+| Quantidade de cotas em D−1 | 5.100.420,16413274 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,620% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,150% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,740% a.a. sobre a parcela do PL até R$ 190.000.000,00; 0,490% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 135.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
-- Escrituração de cotas: R$ 11.000,00 (mensal)
+- Auditoria independente: R$ 96.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 700,00 (mensal)
+- Escrituração de cotas: R$ 6.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ O Cajueiro Plus FII Responsabilidade Limitada é gerido pela Siriema Investiment
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 116.120.103,53. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 443.524.302,59. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -84,12 +84,11 @@ O Cajueiro Plus FII Responsabilidade Limitada é gerido pela Siriema Investiment
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.389,909065 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.426,391215 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **11:49** — *Área de risco* — **Lembrete**: Lembrete: o fundo teve apontamento de auditoria em 2025 sobre conciliação de caixa. Atenção redobrada.
-- **14:04** — *Gestora — operacional* — **Dúvida sobre taxa**: Vocês conseguem confirmar se a taxa de gestão está sendo apropriada pelo PL do dia anterior? Só para checar.
+- **18:05** — *Administrador — aviso aos cotistas* — **Anúncio de rendimentos**: Rendimento de R$ 0,78 por cota; data-com 10/02/2026; pagamento em 26/02/2026.
 
 ## 5. Batimento Alfa × Beta
 
@@ -99,29 +98,29 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 115,94824348 | 115,94824348 | 0,00000000 |
-| Quantidade final de cotas | 1.006.606,21112047 | 1.006.606,21112047 | 0,00000000 |
-| PL final | R$ 116.714.222,06 | R$ 116.714.222,06 | R$ 0,00 |
-| Caixa | R$ 4.896.194,12 | R$ 4.896.194,12 | R$ 0,00 |
-| Total de provisões | R$ 182.105,87 | R$ 182.105,87 | R$ 0,00 |
+| Cota de fechamento | 85,63473756 | 86,41425017 | 0,77951261 |
+| Quantidade final de cotas | 5.100.420,16413274 | 5.100.420,16413274 | 0,00000000 |
+| PL final | R$ 436.773.142,20 | R$ 440.748.984,04 | R$ 3.975.841,84 |
+| Caixa | R$ 12.932.992,00 | R$ 12.932.992,00 | R$ 0,00 |
+| Total de provisões | R$ 119.016,40 | R$ 121.502,29 | R$ 2.485,89 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| IMOVEL GLP-CAJAMAR — Galpão logístico em Cajamar (SP) — módulos A a D | 44.803.511,87 | 44.803.511,87 | 1,00 | 1,00 | 44.803.511,87 | 44.803.511,87 | 0,00 | Laudo de avaliação anual (valor justo) |
-| IMOVEL LAJES-JQB — Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP) | 33.602.633,91 | 33.602.633,91 | 1,00 | 1,00 | 33.602.633,91 | 33.602.633,91 | 0,00 | Laudo de avaliação anual (valor justo) |
-| IMOVEL GLP-EXTREMA — Galpão logístico em Extrema (MG) | 20.161.580,34 | 20.161.580,34 | 1,00 | 1,00 | 20.161.580,34 | 20.161.580,34 | 0,00 | Laudo de avaliação anual (valor justo) |
-| LCI TARUMA 2027 — LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027 | 6.174 | 6.174 | 1.088,450094 | 1.088,450094 | 6.720.090,88 | 6.720.090,88 | 0,00 | Curva do papel |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 365 | 365 | 18.389,909065 | 18.389,909065 | 6.712.316,81 | 6.712.316,81 | 0,00 | ANBIMA — taxa indicativa D |
-| **Total** |  |  |  |  | 112.000.133,81 | 112.000.133,81 | 0,00 |  |
+| IMOVEL GLP-CAJAMAR — Galpão logístico em Cajamar (SP) — módulos A a D | 171.178.657,85 | 171.178.657,85 | 1,00 | 1,00 | 171.178.657,85 | 171.178.657,85 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL LAJES-JQB — Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP) | 128.383.993,39 | 128.383.993,39 | 1,00 | 1,00 | 128.383.993,39 | 128.383.993,39 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL GLP-EXTREMA — Galpão logístico em Extrema (MG) | 77.030.396,03 | 77.030.396,03 | 1,00 | 1,00 | 77.030.396,03 | 77.030.396,03 | 0,00 | Laudo de avaliação anual (valor justo) |
+| LCI TARUMA 2027 — LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027 | 23.079 | 23.079 | 1.112,547517 | 1.112,547517 | 25.676.484,14 | 25.676.484,14 | 0,00 | Curva do papel |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.393 | 1.393 | 18.426,391215 | 18.426,391215 | 25.667.962,96 | 25.667.962,96 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 427.937.494,37 | 427.937.494,37 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 4.896.194,12 | 4.896.194,12 |
-| **Saldo final** | 4.896.194,12 | 4.896.194,12 |
+| Saldo inicial (D−1) | 12.932.992,00 | 12.932.992,00 |
+| **Saldo final** | 12.932.992,00 | 12.932.992,00 |
 
 ### 5.4 Valores a receber
 
@@ -129,20 +128,22 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-Nenhum item.
+| Item | Alfa | Beta |
+|---|---|---|
+| RENDIMENTOS A DISTRIBUIR — Rendimentos anunciados (R$ 0,78/cota) | 3.978.327,73 | — |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 8.108,31 | 8.108,31 | 463,25 | 463,25 | 0,00 | 0,00 | 8.571,56 | 8.571,56 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 48.428,18 | 48.428,18 | 2.872,18 | 2.872,18 | 0,00 | 0,00 | 51.300,36 | 51.300,36 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.561,56 | 1.561,56 | 92,65 | 92,65 | 0,00 | 0,00 | 1.654,21 | 1.654,21 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 102.857,14 | 102.857,14 | 535,71 | 535,71 | 0,00 | 0,00 | 103.392,85 | 103.392,85 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 1.133,33 | 1.133,33 | 66,67 | 66,67 | 0,00 | 0,00 | 1.200,00 | 1.200,00 | 0,00 |
-| ESCRIT — Escrituração de cotas a pagar | 10.388,89 | 10.388,89 | 611,11 | 611,11 | 0,00 | 0,00 | 11.000,00 | 11.000,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 4.859,02 | 4.859,02 | 127,87 | 127,87 | 0,00 | 0,00 | 4.986,89 | 4.986,89 | 0,00 |
-| **Total** |  |  |  |  |  |  | 182.105,87 | 182.105,87 | 0,00 |
+| TXADM — Taxa de administração a pagar | 16.016,65 | 16.016,65 | 2.622,49 | 2.622,49 | 0,00 | 0,00 | 18.639,14 | 18.639,14 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 63.552,29 | 63.552,29 | 10.451,73 | 12.937,62 | 0,00 | 0,00 | 74.004,02 | 76.489,91 | 2.485,89 |
+| TXCUS — Taxa máxima de custódia a pagar | 2.079,69 | 2.079,69 | 349,67 | 349,67 | 0,00 | 0,00 | 2.429,36 | 2.429,36 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 16.000,00 | 16.000,00 | 380,95 | 380,95 | 0,00 | 0,00 | 16.380,95 | 16.380,95 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 233,33 | 233,33 | 38,89 | 38,89 | 0,00 | 0,00 | 272,22 | 272,22 | 0,00 |
+| ESCRIT — Escrituração de cotas a pagar | 2.000,00 | 2.000,00 | 333,33 | 333,33 | 0,00 | 0,00 | 2.333,33 | 2.333,33 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.780,33 | 4.780,33 | 177,05 | 177,05 | 0,00 | 0,00 | 4.957,38 | 4.957,38 | 0,00 |
+| **Total** |  |  |  |  |  |  | 119.016,40 | 121.502,29 | 2.485,89 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
@@ -154,22 +155,22 @@ Nenhum movimento de passivo no dia.
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 112.000.133,81 | 112.000.133,81 | 0,00 |
-| Caixa | 4.896.194,12 | 4.896.194,12 | 0,00 |
+| Total de ativos | 427.937.494,37 | 427.937.494,37 | 0,00 |
+| Caixa | 12.932.992,00 | 12.932.992,00 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 182.105,87 | 182.105,87 | 0,00 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 116.718.991,50 | 116.718.991,50 | 0,00 |
-| PL base da cota | 116.714.222,06 | 116.714.222,06 | 0,00 |
-| Cota (8 casas) | 115,94824348 | 115,94824348 | 0,00000000 |
+| Valores a pagar | 3.978.327,73 | 0,00 | -3.978.327,73 |
+| Provisões | 119.016,40 | 121.502,29 | 2.485,89 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 436.787.496,35 | 440.765.824,08 | 3.978.327,73 |
+| PL base da cota | 436.773.142,24 | 440.748.984,08 | 3.975.841,84 |
+| Cota (8 casas) | 85,63473756 | 86,41425017 | 0,77951261 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 1.006.606,21112047 | 1.006.606,21112047 | 0,00000000 |
-| PL final | 116.714.222,06 | 116.714.222,06 | 0,00 |
+| Quantidade final de cotas | 5.100.420,16413274 | 5.100.420,16413274 | 0,00000000 |
+| PL final | 436.773.142,20 | 440.748.984,04 | 3.975.841,84 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -177,41 +178,59 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO
+**Parecer:** REPROVADO
 
-**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
+**Resumo:** Reprovar até o ajuste: Rendimentos anunciados fora do passivo; Taxa de gestão escalonada aplicada como taxa cheia.
 
-**Dificuldade:** media · **Cenários:** tudo_bate_com_ruido
+**Dificuldade:** media · **Cenários:** rendimento_nao_provisionado, taxa_escalonada_ignorada
 
-### Achado 1: Comunicações do dia não afetam a cota de D
+### Régua v1 (provisória) — medidas deste caso
 
-- **Gravidade:** informativo · **Dimensões:** nenhuma
-- **Lado correto:** nenhum · **Quem ajusta:** ninguém
-- **Causa raiz:** Não há divergência; as mensagens recebidas tratam de eventos futuros, de ativos fora da carteira ou são lembretes.
-- **Onde olhar:** Comunicações recebidas; Carteira dos dois lados
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 46.217,56 cotas equivalentes (quantidade 0,00; PL 46.217,56) | 250 cotas | ACIMA |
+| Caixa | R$ 0,00 | sem tolerância | bate |
+| Provisões | maior diferença R$ 2.485,89; total R$ 2.485,89 | R$ 100,00 por provisão e no total | ACIMA |
+
+### Achado 1: Rendimentos anunciados fora do passivo
+
+- **Gravidade:** erro · **Dimensões:** provisoes, cota
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta não reconheceu os rendimentos anunciados hoje (R$ 0,78/cota, R$ 3.978.327,73).
+- **Onde olhar:** Valores a pagar; Comunicações — aviso de rendimentos; Regulamento — política de distribuição
 - **Raciocínio do analista:**
-  1. Li as comunicações do dia e conferi se alguma delas exigia reflexo em D: nenhuma se refere a operação ou evento com efeito na data-base (são eventos futuros, ativos que o fundo não tem, ou dúvidas/lembretes).
-  2. Como os dois lados batem linha a linha e as apropriações conferem com o regulamento, não há motivo para segurar a cota.
-- **Ação:** Nenhuma ação sobre a cota. Responder ao remetente, se for o caso.
+  1. O Alfa tem R$ 3.978.327,73 de "rendimentos a distribuir" que o Beta não tem. O valor corresponde ao rendimento de R$ 0,78 por cota anunciado no aviso.
+  2. O regulamento manda reconhecer o rendimento anunciado no passivo na data-com, que é hoje (aviso das 18:05). É fato de D e entra na cota de D.
+  3. Régua v1 (provisória) — cota: diferença de 46.217,56 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 46.217,56 cotas de PL), contra o limite de 250: ACIMA; provisões: maior diferença numa provisão de R$ 2.485,89 e diferença total de R$ 2.485,89, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
+- **Ação:** Beta deve registrar os rendimentos a distribuir e reprocessar a cota patrimonial. Acima da régua: reprovar até o lado errado reprocessar.
+
+### Achado 2: Taxa de gestão escalonada aplicada como taxa cheia
+
+- **Gravidade:** erro · **Dimensões:** provisoes
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta aplicou 0,740% sobre todo o PL, ignorando a taxa menor (0,490%) sobre a parcela acima de R$ 190.000.000,00.
+- **Onde olhar:** Provisões — TXGES; Regulamento — taxa de gestão escalonada
+- **Raciocínio do analista:**
+  1. A apropriação de taxa de gestão do Beta é maior.
+  2. O regulamento escalona a taxa: Taxa de gestão: 0,740% a.a. sobre a parcela do PL até R$ 190.000.000,00; 0,490% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Com PL de D−1 de R$ 440.578.531,10, parte do PL está na segunda faixa.
+  3. O Alfa fez a conta por faixas; o Beta aplicou a taxa cheia em tudo.
+  4. Régua v1 (provisória) — provisões: maior diferença numa provisão de R$ 2.485,89 e diferença total de R$ 2.485,89, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
+- **Ação:** Beta deve parametrizar as faixas da taxa de gestão e reprocessar. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | ambos |
+| cota | Alfa |
 | caixa | ambos |
-| provisoes | ambos |
+| provisoes | Alfa |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 115,94824348 |
-| Quantidade final de cotas | 1.006.606,21112047 |
-| PL final | R$ 116.714.222,06 |
-| Caixa | R$ 4.896.194,12 |
-| Total de provisões | R$ 182.105,87 |
-
-### Armadilhas deste caso
-
-- Comunicações alarmantes nem sempre afetam a data-base: separar o que tem efeito em D do que é evento futuro, ativo que o fundo não tem ou lembrete.
+| Cota | 85,63473756 |
+| Quantidade final de cotas | 5.100.420,16413274 |
+| PL final | R$ 436.773.142,20 |
+| Caixa | R$ 12.932.992,00 |
+| Total de provisões | R$ 119.016,40 |

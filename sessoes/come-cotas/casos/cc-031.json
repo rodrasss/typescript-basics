@@ -1089,11 +1089,31 @@
         "raciocinio": [
           "Só a posição CT-02 diverge: IR de R$ 3.642.823,31 no Alfa contra R$ 1.925.149,15 no Beta; as demais posições batem.",
           "A referência de CT-02 é uma aplicação de 25/08/2026, feita depois do último come-cotas. Pelo regulamento, vale a cota da aplicação (3,02452129, como no Beta); o Alfa usou 2,92710012, que é a referência do último come-cotas (a mesma das posições sem aplicação recente) e é menor, o que aumenta o ganho tributado.",
-          "Recalculei CT-02 (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 3,13370980)): R$ 1.925.149,15 de IR e 614.335,49143574 cotas retiradas. O Alfa retirou 548.128,02385211 cotas a mais do cotista."
+          "Recalculei CT-02 (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 3,13370980)): R$ 1.925.149,15 de IR e 614.335,49143574 cotas retiradas. O Alfa retirou 548.128,02385211 cotas a mais do cotista.",
+          "Régua v1 (provisória) — cota: diferença de 548.128,02 cotas equivalentes (a maior entre 548.128,02 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Alfa deve corrigir a cota de referência de CT-02 para 3,02452129 e devolver 548.128,02385211 cotas ao cotista."
+        "acao": "Alfa deve corrigir a cota de referência de CT-02 para 3,02452129 e devolver 548.128,02385211 cotas ao cotista. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 548128.02385211,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 548128.02385211,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 1335812131.63,
       "caixa": 16475593.32,

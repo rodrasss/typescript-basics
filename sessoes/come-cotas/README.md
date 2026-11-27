@@ -53,7 +53,7 @@ cotas retiradas = IR ÷ cota de D                   (truncadas na 8ª casa)
 
 Cerca de 30% dos casos de erro trazem um segundo achado, sempre de caixa ou de registro (que não mexe na cota), para a conta do come-cotas continuar exata e o dia continuar parecendo um dia real. Os 6 casos corretos não têm combinação.
 
-O parecer esperado é **reprovado** em todo erro de come-cotas (muda a quantidade de cotas e o PL final) e **aprovado** nos casos corretos.
+O parecer esperado é **reprovado** em todo erro de come-cotas e **aprovado** nos casos corretos. Os erros desta sessão foram gerados já acima da [régua de materialidade v1](../../regua-materialidade.md) (provisória): retirar cotas a mais ou a menos de cotistas passa de 250 cotas equivalentes. Diferenças de come-cotas abaixo da régua não fazem parte desta sessão.
 
 ## Validação com agentes
 

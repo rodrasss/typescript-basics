@@ -837,9 +837,11 @@
         "raciocinio": [
           "A posição CT-01 está marcada como \"isento\" e o Alfa não reteve nada dela; o Beta reteve R$ 710.863,60 (281.778,73776576 cotas). As outras posições batem.",
           "O regulamento diz que cotistas isentos ou imunes não sofrem retenção.",
-          "Total de IR: R$ 2.498.641,84 no Beta contra R$ 1.787.778,24 no Alfa; a diferença é exatamente o IR de CT-01."
+          "Total de IR: R$ 2.498.641,84 no Beta contra R$ 1.787.778,24 no Alfa; a diferença é exatamente o IR de CT-01.",
+          "Régua v1 (provisória) — cota: diferença de 281.778,74 cotas equivalentes (a maior entre 281.778,74 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve estornar a retenção de CT-01 (devolver 281.778,73776576 cotas) e corrigir o cadastro tributário do cotista."
+        "acao": "Beta deve estornar a retenção de CT-01 (devolver 281.778,73776576 cotas) e corrigir o cadastro tributário do cotista. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       },
       {
         "cenario": "compromissada_como_caixa",
@@ -856,11 +858,31 @@
         ],
         "raciocinio": [
           "O caixa do Beta está R$ 37.417.624,27 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.",
-          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário."
+          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 37.417.624,27; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
-        "acao": "Beta deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva."
+        "acao": "Beta deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 281778.73776576,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 281778.73776576,
+      "difCaixa": 37417624.27,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 249442064.99,
       "caixa": 3641593.67,

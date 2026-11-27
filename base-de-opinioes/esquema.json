@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Opinião de analista sobre uma dimensão de um caso (uma linha do JSONL)",
+  "type": "object",
+  "required": ["caso", "dimensao", "diferenca", "parecerIA", "parecerAnalista"],
+  "properties": {
+    "caso": { "type": "string", "description": "Identificador do fundo e do dia" },
+    "data": { "type": "string", "description": "Data-base (AAAA-MM-DD)" },
+    "dimensao": { "enum": ["cota", "caixa", "provisoes"] },
+    "diferenca": { "type": "number", "minimum": 0, "description": "cota: cotas equivalentes; caixa e provisões: reais" },
+    "parecerIA": { "enum": ["APROVADO", "REPROVADO", "PENDENTE"] },
+    "parecerAnalista": { "enum": ["APROVADO", "REPROVADO", "PENDENTE"] },
+    "reguaVersao": { "type": "string", "description": "Versão da régua usada pela IA, por exemplo v1" },
+    "comentario": { "type": "string", "description": "Motivo do analista, nas palavras dele" }
+  },
+  "additionalProperties": false
+}

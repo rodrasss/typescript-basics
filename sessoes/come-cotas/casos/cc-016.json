@@ -949,9 +949,11 @@
         ],
         "raciocinio": [
           "O IR é o mesmo nos dois lados (R$ 2.590.108,05), mas as cotas retiradas diferem: 726.400,91299454 no Beta e 733.210,56352573 no Alfa.",
-          "Pelo regulamento, cotas retiradas = IR ÷ cota de fechamento de D. Com a cota de D (3,53255692) o resultado é o do Alfa; dividir pela cota de D−1 (3,56567290), que é menor, retira cotas a mais."
+          "Pelo regulamento, cotas retiradas = IR ÷ cota de fechamento de D. Com a cota de D (3,53255692) o resultado é o do Alfa; dividir pela cota de D−1 (3,56567290), que é menor, retira cotas a mais.",
+          "Régua v1 (provisória) — cota: diferença de 6.809,65 cotas equivalentes (a maior entre 6.809,65 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve refazer a conversão pela cota de D e devolver -6.809,65053119 cotas aos cotistas."
+        "acao": "Beta deve refazer a conversão pela cota de D e devolver -6.809,65053119 cotas aos cotistas. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       },
       {
         "cenario": "ajuste_liquidado_nao_baixado",
@@ -968,11 +970,31 @@
         ],
         "raciocinio": [
           "O caixa difere em R$ 1.221.722,02, e o Alfa tem um \"ajuste de D−1\" pendente no mesmo valor. PL e cota iguais.",
-          "O ajuste de D−1 liquida em D. É questão de baixa, sem efeito no PL."
+          "O ajuste de D−1 liquida em D. É questão de baixa, sem efeito no PL.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 1.221.722,02; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
-        "acao": "Alfa deve baixar o ajuste de D−1 contra o caixa. Sem impacto na cota."
+        "acao": "Alfa deve baixar o ajuste de D−1 contra o caixa. Sem impacto na cota. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 6809.6505312,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 6809.6505312,
+      "difCaixa": 1221722.02,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 625386233.64,
       "caixa": 6896296.28,

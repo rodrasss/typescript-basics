@@ -812,11 +812,31 @@
         "raciocinio": [
           "O Alfa não processou o come-cotas hoje (quantidade de cotas 118.950,00903255 maior que a do Beta), e o aviso das operações dele diz que está agendado para 30/11/2026.",
           "O regulamento fixa o penúltimo dia útil de novembro, que é hoje (27/11/2026); o último dia útil é 30/11/2026. O agendamento está um dia depois do devido.",
-          "Recalculei o come-cotas (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 4,12075202)): R$ 490.163,49 de IR e 118.950,00903255 cotas retiradas, como no Beta."
+          "Recalculei o come-cotas (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 4,12075202)): R$ 490.163,49 de IR e 118.950,00903255 cotas retiradas, como no Beta.",
+          "Régua v1 (provisória) — cota: diferença de 118.950,01 cotas equivalentes (a maior entre 118.950,01 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Alfa deve corrigir o calendário do fundo (penúltimo dia útil de maio e de novembro) e processar o come-cotas de hoje antes de fechar o passivo. Verificar os outros fundos com a mesma parametrização."
+        "acao": "Alfa deve corrigir o calendário do fundo (penúltimo dia útil de maio e de novembro) e processar o come-cotas de hoje antes de fechar o passivo. Verificar os outros fundos com a mesma parametrização. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 118950.00903255,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 118950.00903255,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 87739453.14,
       "caixa": 211216.61,

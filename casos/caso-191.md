@@ -1,36 +1,37 @@
-# Caso caso-191 — Umbuzeiro FIF Multimercado Crédito Privado — Classe Exclusiva
+# Caso caso-191 — Biguá Total FIDC Responsabilidade Limitada
 
-> **Data-base (D):** 16/01/2026 (sexta-feira) · **D−1:** 15/01/2026 · **Fundo:** FND-0191
+> **Data-base (D):** 23/03/2026 (segunda-feira) · **D−1:** 20/03/2026 · **Fundo:** FND-0191
 
 ## 1. O fundo
 
-O Umbuzeiro FIF Multimercado Crédito Privado — Classe Exclusiva é gerido pela Pedra Branca Gestão, multi-family office que estrutura fundos exclusivos para famílias do agro, em Goiânia/GO. Criado em 26/06/2009, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são uma família de produtores de soja de Sorriso (MT). Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Otávio, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. As taxas do fundo foram alteradas recentemente em assembleia. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (15/01/2026) o fundo tinha PL de R$ 257.316.733,79, cota de 4,66043873 e 55.212.984,90321401 cotas. Hoje, sexta-feira, 16/01/2026, é a data-base da validação.
+Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Biguá Total FIDC Responsabilidade Limitada: a casa é uma especialista em crédito estruturado (FIDC e CRA). Criado em 12/08/2009, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Lívia, e quem cuida da validação do fundo é Rafael. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. O cronograma de amortização do fundo é conhecido e comunicado com antecedência. A equipe da gestora é considerada muito organizada. No fechamento de ontem (20/03/2026) o fundo tinha PL de R$ 225.041.754,05, cota de 1.148,12789774 e 196.007,56543965 cotas. Hoje, segunda-feira, 23/03/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Fundo exclusivo (família/empresa) |
-| Classe | Classe Multimercado — Exclusiva para investidor profissional |
-| Condomínio | aberto |
-| Gestora | Pedra Branca Gestão (Goiânia/GO) |
-| PL em D−1 | R$ 257.316.733,79 |
-| Cota em D−1 | 4,66043873 |
-| Quantidade de cotas em D−1 | 55.212.984,90321401 |
+| Tipo | FIDC (direitos creditórios) |
+| Classe | Classe de FIDC — subclasse única (monocota) |
+| Condomínio | fechado |
+| Gestora | Quaresmeira Capital (São Paulo/SP) |
+| PL em D−1 | R$ 225.041.754,05 |
+| Cota em D−1 | 1.148,12789774 |
+| Quantidade de cotas em D−1 | 196.007,56543965 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,580% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,190% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,630% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,040% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 51.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 300,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 3.000,00 (mensal)
+- Auditoria independente: R$ 77.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
+- Agente de cobrança: R$ 21.000,00 (mensal)
+- Agência de classificação de risco (rating): R$ 68.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +41,7 @@ O Umbuzeiro FIF Multimercado Crédito Privado — Classe Exclusiva é gerido pel
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 264.272.536,17. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 220.550.677,18. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,22 +61,21 @@ O Umbuzeiro FIF Multimercado Crédito Privado — Classe Exclusiva é gerido pel
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
+- Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
 - Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
-- Tributação: Classe exclusiva: tributação periódica semestral (come-cotas), no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
+- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Títulos classificados como "mantidos até o vencimento": curva da taxa de aquisição.
-- Demais títulos e debêntures: taxa indicativa ANBIMA de D.
+- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
 
 **Regras específicas deste fundo**
 
-- Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
+- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
+- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
 
 ## 3. Informações de mercado do dia
 
@@ -85,15 +85,11 @@ O Umbuzeiro FIF Multimercado Crédito Privado — Classe Exclusiva é gerido pel
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.163,913703 |  |
-| TFSU13 | ANBIMA — PU pela taxa indicativa de D | 1.109,485251 |  |
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (referência de mercado) | 4.227,017588 |  |
-| NTN-B 15/08/2030 | PU na curva da taxa de aquisição (6,12% a.a.) — cálculo do custodiante | 4.331,938320 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.458,165599 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **12:15** — *Auditoria independente* — **Proposta de renovação**: Segue a proposta de renovação do contrato de auditoria: R$ 187.000,00/ano, com vigência a partir de janeiro do próximo ano, se aprovada. Ainda não assinada.
 
 ## 5. Batimento Alfa × Beta
 
@@ -103,29 +99,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 4,66087734 | 4,62706927 | -0,03380807 |
-| Quantidade final de cotas | 55.055.879,98447662 | 55.055.879,98447662 | 0,00000000 |
-| PL final | R$ 256.608.703,45 | R$ 254.747.370,41 | R$ -1.861.333,04 |
-| Caixa | R$ 550.264,61 | R$ 550.264,61 | R$ 0,00 |
-| Total de provisões | R$ 107.578,08 | R$ 107.578,08 | R$ 0,00 |
+| Cota de fechamento | 1.148,52611007 | 1.148,52611002 | -0,00000005 |
+| Quantidade final de cotas | 196.007,56543965 | 196.007,56543965 | 0,00000000 |
+| PL final | R$ 225.119.806,68 | R$ 225.119.806,67 | R$ -0,01 |
+| Caixa | R$ 5.171.655,26 | R$ 5.171.655,26 | R$ 0,00 |
+| Total de provisões | R$ 226.410,67 | R$ 226.847,17 | R$ 436,50 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 17.791 | 17.791 | 4.331,938320 | 4.227,017588 | 77.069.514,65 | 75.202.869,91 | -1.866.644,74 | Alfa: Curva — taxa de aquisição (título classificado como mantido até o vencimento) / Beta: ANBIMA — taxa indicativa D |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.243 | 4.243 | 18.163,913703 | 18.163,913703 | 77.069.485,84 | 77.069.485,84 | 0,00 | ANBIMA — taxa indicativa D |
-| CDB YBYTU 2027 — CDB Banco Ybytu S.A. — 115% do CDI — venc. 2027 | 33.179 | 33.179 | 1.161,416875 | 1.161,416875 | 38.534.650,50 | 38.534.650,50 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 34.732 | 34.732 | 1.109,485251 | 1.109,485251 | 38.534.641,74 | 38.534.641,74 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 32.392 | 32.392 | 793,096179 | 793,096179 | 25.689.971,43 | 25.689.971,43 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 256.898.264,16 | 255.031.619,42 | -1.866.644,74 |  |
+| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 156.850.274,73 | 156.850.274,73 | 1,00 | 1,00 | 156.850.274,73 | 156.850.274,73 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
+| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 11.203.591,05 | 11.203.591,05 | 1,00 | 1,00 | 11.203.591,05 | 11.203.591,05 | 0,00 | Valor presente (custodiante) |
+| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 4.481.436,42 | 4.481.436,42 | 1,00 | 1,00 | 4.481.436,42 | 4.481.436,42 | 0,00 | Valor presente (custodiante) |
+| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 2.688.861,85 | 2.688.861,85 | 1,00 | 1,00 | 2.688.861,85 | 2.688.861,85 | 0,00 | Valor presente (custodiante) |
+| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 1.792.574,57 | 1.792.574,57 | 1,00 | 1,00 | 1.792.574,57 | 1.792.574,57 | 0,00 | Valor presente (custodiante) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.821 | 1.821 | 18.458,165599 | 18.458,405302 | 33.612.319,56 | 33.612.756,05 | 436,49 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 16.661 | 16.661 | 806,935574 | 806,935574 | 13.444.353,60 | 13.444.353,60 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -3.898.849,69 | -3.898.849,69 | -3.898.849,69 | -3.898.849,69 | 0,00 | Cálculo pelo aging do custodiante |
+| **Total** |  |  |  |  | 220.174.562,09 | 220.174.998,58 | 436,49 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 550.264,61 | 550.264,61 |
-| **Saldo final** | 550.264,61 | 550.264,61 |
+| Saldo inicial (D−1) | 5.171.655,26 | 5.171.655,26 |
+| **Saldo final** | 5.171.655,26 | 5.171.655,26 |
 
 ### 5.4 Valores a receber
 
@@ -139,53 +138,42 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 10.023,43 | 10.023,43 | 1.021,10 | 1.021,10 | 0,00 | 0,00 | 11.044,53 | 11.044,53 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 58.944,11 | 58.944,11 | 5.922,37 | 5.922,37 | 0,00 | 0,00 | 64.866,48 | 64.866,48 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 2.018,19 | 2.018,19 | 204,22 | 204,22 | 0,00 | 0,00 | 2.222,41 | 2.222,41 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 26.107,14 | 26.107,14 | 202,38 | 202,38 | 0,00 | 0,00 | 26.309,52 | 26.309,52 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 142,86 | 142,86 | 14,29 | 14,29 | 0,00 | 0,00 | 157,15 | 157,15 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.428,57 | 1.428,57 | 142,86 | 142,86 | 0,00 | 0,00 | 1.571,43 | 1.571,43 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 1.278,69 | 1.278,69 | 127,87 | 127,87 | 0,00 | 0,00 | 1.406,56 | 1.406,56 | 0,00 |
-| **Total** |  |  |  |  |  |  | 107.578,08 | 107.578,08 | 0,00 |
+| TXADM — Taxa de administração a pagar | 25.253,49 | 25.253,49 | 1.696,74 | 1.696,74 | 0,00 | 0,00 | 26.950,23 | 26.950,23 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 83.847,75 | 83.847,75 | 5.626,04 | 5.626,04 | 0,00 | 0,00 | 89.473,79 | 89.473,79 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 5.357,25 | 5.357,25 | 357,21 | 357,21 | 0,00 | 0,00 | 5.714,46 | 5.714,46 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 43.083,33 | 43.083,33 | 305,56 | 742,06 | 0,00 | 0,00 | 43.388,89 | 43.825,39 | 436,50 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 750,00 | 750,00 | 50,00 | 50,00 | 0,00 | 0,00 | 800,00 | 800,00 | 0,00 |
+| COBRANCA — Agente de cobrança a pagar | 14.318,18 | 14.318,18 | 954,55 | 954,55 | 0,00 | 0,00 | 15.272,73 | 15.272,73 | 0,00 |
+| RATING — Agência de classificação de risco (rating) a pagar | 37.507,94 | 37.507,94 | 269,84 | 269,84 | 0,00 | 0,00 | 37.777,78 | 37.777,78 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 6.904,92 | 6.904,92 | 127,87 | 127,87 | 0,00 | 0,00 | 7.032,79 | 7.032,79 | 0,00 |
+| **Total** |  |  |  |  |  |  | 226.410,67 | 226.847,17 | 436,50 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 257.316.733,79 ÷ 252 (linear, dias úteis) = R$ 1.021,10 · Beta: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 257.316.733,79 ÷ 252 (linear, dias úteis) = R$ 1.021,10
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,58% a.a. sobre R$ 257.316.733,79 ÷ 252 (linear, dias úteis) = R$ 5.922,37 · Beta: [base: PL do dia útil anterior] 0,58% a.a. sobre R$ 257.316.733,79 ÷ 252 (linear, dias úteis) = R$ 5.922,37
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 257.316.733,79 ÷ 252 (linear, dias úteis) = R$ 204,22 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 257.316.733,79 ÷ 252 (linear, dias úteis) = R$ 204,22
-- **AUDIT** — Alfa: R$ 51.000,00 (anual) ÷ 252 d.u. = R$ 202,38 · Beta: R$ 51.000,00 (anual) ÷ 252 d.u. = R$ 202,38
-- **ANBIMA** — Alfa: R$ 300,00 (mensal) ÷ 21 d.u. = R$ 14,29 · Beta: R$ 300,00 (mensal) ÷ 21 d.u. = R$ 14,29
-- **SELIC** — Alfa: R$ 3.000,00 (mensal) ÷ 21 d.u. = R$ 142,86 · Beta: R$ 3.000,00 (mensal) ÷ 21 d.u. = R$ 142,86
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
-
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| RSG-1 | resgate | Cotista único | 157.104,91873739 cotas |  | 15/01/2026 | 16/01/2026 | 19/01/2026 | sim | sim |  |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 256.898.264,16 | 255.031.619,42 | -1.866.644,74 |
-| Caixa | 550.264,61 | 550.264,61 | 0,00 |
+| Total de ativos | 220.174.562,09 | 220.174.998,58 | 436,49 |
+| Caixa | 5.171.655,26 | 5.171.655,26 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 107.578,08 | 107.578,08 | 0,00 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 257.348.585,78 | 255.481.941,04 | -1.866.644,74 |
-| PL base da cota | 257.340.950,69 | 255.474.305,95 | -1.866.644,74 |
-| Cota (8 casas) | 4,66087734 | 4,62706927 | -0,03380807 |
+| Provisões | 226.410,67 | 226.847,17 | 436,50 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 225.129.194,49 | 225.129.630,98 | 436,49 |
+| PL base da cota | 225.119.806,68 | 225.119.806,67 | -0,01 |
+| Cota (8 casas) | 1.148,52611007 | 1.148,52611002 | -0,00000005 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Cotas resgatadas | 157.104,91873739 | 157.104,91873739 | 0,00000000 |
-| Valor dos resgates cotizados | 732.246,76 | 726.935,34 | -5.311,42 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 55.055.879,98447662 | 55.055.879,98447662 | 0,00000000 |
-| PL final | 256.608.703,45 | 254.747.370,41 | -1.861.333,04 |
+| Quantidade final de cotas | 196.007,56543965 | 196.007,56543965 | 0,00000000 |
+| PL final | 225.119.806,68 | 225.119.806,67 | -0,01 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -195,21 +183,41 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: NTN-B 15/08/2030 marcado a mercado em vez da curva.
+**Resumo:** Reprovar até o ajuste: Provisão de auditoria com valor de proposta não assinada; PU de LFT 01/03/2029 diferente da referência.
 
-**Dificuldade:** facil · **Cenários:** curva_vs_mercado_exclusivo
+**Dificuldade:** dificil · **Cenários:** erros_que_se_compensam
 
-### Achado 1: NTN-B 15/08/2030 marcado a mercado em vez da curva
+### Régua v1 (provisória) — medidas deste caso
 
-- **Gravidade:** erro · **Dimensões:** cota
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 0,00 cotas equivalentes (quantidade 0,00; PL 0,00) | 250 cotas | dentro |
+| Caixa | R$ 0,00 | sem tolerância | bate |
+| Provisões | maior diferença R$ 436,50; total R$ 436,50 | R$ 100,00 por provisão e no total | ACIMA |
+
+### Achado 1: Provisão de auditoria com valor de proposta não assinada
+
+- **Gravidade:** erro · **Dimensões:** provisoes
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta aplicou a regra geral (ANBIMA) a um título que o regulamento classifica como "mantido até o vencimento".
-- **Onde olhar:** Carteira — NTN-B 15/08/2030; Regulamento — classe exclusiva / títulos mantidos até o vencimento; Informações de mercado — PU ANBIMA e PU curva
+- **Causa raiz:** Beta passou a provisionar a auditoria por R$ 187.000,00/ano (proposta ainda não assinada, para o ano que vem) em vez de R$ 77.000,00.
+- **Onde olhar:** Provisões — auditoria; Regulamento/contrato — despesas fixas; Comunicações — proposta da auditoria
 - **Raciocínio do analista:**
-  1. NTN-B 15/08/2030: PU 4.331,938320 (Alfa) contra 4.227,017588 (Beta).
-  2. O PU do Beta é o ANBIMA de D, o que à primeira vista parece "o certo". Mas o regulamento desta classe exclusiva classifica o título como mantido até o vencimento, com marcação na curva da taxa de aquisição.
-  3. O PU de curva informado (4.331,938320) bate com o Alfa. A referência ANBIMA aqui serve só como informação.
-- **Ação:** Beta deve voltar NTN-B 15/08/2030 para a curva de aquisição e reprocessar. Rever a parametrização do ativo como "mantido até o vencimento" para que o erro não se repita.
+  1. A cota bate (ou quase), então seria fácil aprovar direto. Mas comparando linha a linha, a apropriação de auditoria do Beta é R$ 742,06/dia contra R$ 305,56/dia do Alfa.
+  2. O contrato vigente é de R$ 77.000,00/ano. O valor novo vem de uma proposta não assinada, válida só para o ano que vem.
+  3. Régua v1 (provisória) — provisões: maior diferença numa provisão de R$ 436,50 e diferença total de R$ 436,50, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
+- **Ação:** Beta deve voltar a apropriação de auditoria para R$ 77.000,00/ano. Acima da régua: reprovar até o lado errado reprocessar.
+
+### Achado 2: PU de LFT 01/03/2029 diferente da referência
+
+- **Gravidade:** ressalva · **Dimensões:** cota
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta usou PU 18.458,405302 para LFT 01/03/2029; a referência de D é 18.458,165599.
+- **Onde olhar:** Carteira — LFT 01/03/2029; Informações de mercado — referências
+- **Raciocínio do analista:**
+  1. Em LFT 01/03/2029, o Beta tem R$ 436,49 a mais de valor, praticamente o mesmo montante da provisão a maior (R$ 436,50). Por isso a cota parece bater.
+  2. São dois erros independentes que se anulam hoje. Amanhã a provisão continua acumulando e o preço pode não compensar mais. Componente errado não se aprova, mesmo com a cota igual.
+  3. Régua v1 (provisória) — cota: diferença de 0,00 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: dentro.
+- **Ação:** Beta deve reprecificar LFT 01/03/2029 pela referência de D (18.458,165599), corrigir a provisão e reenviar a posição antes da divulgação. Dentro da régua: aprovar com ressalva e corrigir na origem, para a diferença não se acumular.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -217,18 +225,18 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 |---|---|
 | cota | Alfa |
 | caixa | ambos |
-| provisoes | ambos |
+| provisoes | Alfa |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 4,66087734 |
-| Quantidade final de cotas | 55.055.879,98447662 |
-| PL final | R$ 256.608.703,45 |
-| Caixa | R$ 550.264,61 |
-| Total de provisões | R$ 107.578,08 |
+| Cota | 1.148,52611007 |
+| Quantidade final de cotas | 196.007,56543965 |
+| PL final | R$ 225.119.806,68 |
+| Caixa | R$ 5.171.655,26 |
+| Total de provisões | R$ 226.410,67 |
 
 ### Armadilhas deste caso
 
-- O lado que usou o preço de mercado parece o "certo"; o regulamento deste fundo manda marcar na curva.
+- Cota igual não prova que está certa: dois erros podem se anular hoje. Conferir componente por componente.

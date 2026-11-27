@@ -19,6 +19,8 @@ Cada caso é um **fundo-persona**: tem história, gestora, cotistas, regulamento
 | `dataset.jsonl` | Uma linha por caso: `entrada` (markdown), `gabarito` (markdown), `parecer`, `dificuldade`, `cenarios` |
 | `INDICE.md` / `COBERTURA.md` | Lista dos casos e estatísticas de cobertura |
 | `sessoes/come-cotas/` | **Sessão de come-cotas:** 33 casos em dia de come-cotas (posição por cotista), com README próprio |
+| `regua-materialidade.md` / `regua.json` | **Régua de materialidade v1 (provisória):** limites de cota, caixa e provisões, e como medir |
+| `base-de-opinioes/` | Formato para guardar as opiniões dos analistas e calibrar a régua (`npm run calibrar`) |
 | `metodologia-analista.md` | **O método do analista**, em forma de roteiro, para o agente |
 | `prompt-agente.md` | **Rascunho do prompt do agente**, com o formato JSON da resposta |
 | `gerador/` | Código que gera, confere e avalia os casos (TypeScript) |
@@ -46,7 +48,7 @@ Tudo é determinístico (semente 2026): rodar de novo gera os mesmos 200 casos.
 
 ## O que os casos cobrem
 
-53 tipos de situação, em 15 tipos de fundo (renda fixa DI e crédito privado, multimercado macro e long & short, ações, FIC, previdência, FIDC, FII, FIP, cambial, investimento no exterior, exclusivo, Fiagro e infraestrutura). Dos 200 casos, 40 (20%) estão limpos, para o agente aprender a **não inventar problema**; 89 (45%) têm mais de um achado. O parecer esperado é aprovado em 62, reprovado em 121 e pendente em 17. A dificuldade vai de 35 casos fáceis a 42 difíceis.
+57 situações de divergência (incluindo casos de fronteira da régua) em 15 tipos de fundo (renda fixa DI e crédito privado, multimercado macro e long & short, ações, FIC, previdência, FIDC, FII, FIP, cambial, investimento no exterior, exclusivo, Fiagro e infraestrutura). Dos 200 casos, 24 (12%) estão limpos, para o agente aprender a **não inventar problema**; 79 (40%) têm mais de um achado. O parecer esperado, **pela régua v1**, é aprovado em 44 (24 limpos e 20 com ressalva, isto é, divergência dentro da régua), reprovado em 142 e pendente em 14. A dificuldade vai de 35 casos fáceis a 41 difíceis.
 
 - **Cota, carteira e passivo:** preço de crédito com fonte errada, ação com fechamento de D−1, cota de fundo investido de D−1, desdobramento não refletido, dividendo com data "ex" não provisionado, aplicação não convertida ou convertida após o corte, resgate cotizado antes do prazo, PTAX errada, NAV estimado em feriado nos EUA, ajuste de futuros errado, título vencido não baixado, título mantido até o vencimento marcado a mercado, come-cotas não aplicado, arredondamento × truncamento, PDD com aging desatualizado, amortização, rendimento anunciado, laudo de FIP, integralização, ativo ilíquido sem referência, boleta tardia.
 - **Caixa:** resgate liquidado e não baixado, tarifa bancária indevida, débito em duplicidade, dividendo/juros recebidos, ajuste liquidado, compromissada como caixa, pagamento de taxa, crédito não identificado, liquidação antecipada de compra, resgate pago com cota errada, margem tratada como despesa.
@@ -77,8 +79,8 @@ Para o agente:
 
 Os casos usam regras **plausíveis**, mas simuladas. Alinhe com o processo real antes de treinar de verdade:
 
-1. **Parecer:** `APROVADO` / `REPROVADO` / `PENDENTE`, mais uma marca de `ressalva`. Se o seu processo tem outros estados ou critérios, ajuste `metodologia-analista.md` e `prompt-agente.md`.
-   **Sem tolerância de materialidade:** qualquer diferença na cota (8 casas), no PL, na quantidade de cotas ou numa provisão reprova, por menor que seja. Se o seu processo aceita uma tolerância (por exemplo, abaixo de X bps), defina-a e ajuste a regra em `gerador/caso.ts` (`gravidadeEfetiva`) e nos dois documentos.
+1. **Parecer:** `APROVADO` / `REPROVADO` / `PENDENTE`, mais uma marca de `ressalva` (aprovado com divergências dentro da régua). Se o seu processo tem outros estados ou critérios, ajuste `metodologia-analista.md` e `prompt-agente.md`.
+   **Régua de materialidade v1, provisória** ([`regua-materialidade.md`](regua-materialidade.md)): cota, 250 cotas equivalentes; caixa, sem tolerância (conciliar as movimentações completas do Alfa e do Beta; sem causa localizada, recomendar reprovação); provisões, R$ 100 em cada provisão e no total. **Esses números vão mudar** conforme os casos de uso e as opiniões dos analistas, que você guarda em [`base-de-opinioes/`](base-de-opinioes/README.md) e que `npm run calibrar` usa para sugerir novos limites. Os números vêm de um único lugar (`gerador/regua.ts`, exportado em `regua.json`).
 2. **Dimensão "cota"** inclui cota, quantidade final de cotas e PL (o passivo). Caixa e provisões são validados à parte.
 3. **Regulamento:** taxas calculadas sobre o PL do dia útil anterior; base 252; cota truncada em 8 casas; come-cotas simplificado (cota de referência única). Taxa CVM, tributação e calendário de feriados são simplificações.
 4. **Hierarquia de evidência** (regulamento > manual de precificação > referência oficial de D > comunicação formal > informal) é uma proposta.

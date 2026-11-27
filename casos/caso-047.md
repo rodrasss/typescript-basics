@@ -182,16 +182,26 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 **Dificuldade:** media · **Cenários:** taxa_gestao_sem_apropriacao
 
+### Régua v1 (provisória) — medidas deste caso
+
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 396,61 cotas equivalentes (quantidade 0,00; PL 396,61) | 250 cotas | ACIMA |
+| Caixa | R$ 0,00 | sem tolerância | bate |
+| Provisões | maior diferença R$ 39.698,38; total R$ 39.698,38 | R$ 100,00 por provisão e no total | ACIMA |
+
 ### Achado 1: Taxa de gestão não apropriada hoje
 
-- **Gravidade:** erro · **Dimensões:** provisoes
+- **Gravidade:** erro · **Dimensões:** provisoes, cota
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
 - **Causa raiz:** Alfa não apropriou a taxa de gestão de hoje (parâmetro desativado/rotina não executada).
 - **Onde olhar:** Provisões — TXGES (apropriação zero); Regulamento — taxa de gestão
 - **Raciocínio do analista:**
   1. A provisão de taxa de gestão do Alfa ficou com o mesmo saldo de ontem: apropriação zero.
   2. Pelo regulamento, a taxa de gestão é apropriada todo dia útil. O valor do Beta confere com o recálculo.
-- **Ação:** Alfa deve rodar a apropriação de taxa de gestão do dia e reprocessar. Verificar se outros fundos da mesma rotina foram afetados.
+  3. Efeito derivado do mesmo erro: a diferença também aparece em cota.
+  4. Régua v1 (provisória) — cota: diferença de 396,61 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 396,61 cotas de PL), contra o limite de 250: ACIMA; provisões: maior diferença numa provisão de R$ 39.698,38 e diferença total de R$ 39.698,38, contra o limite de R$ 100,00 por provisão e no total: ACIMA.
+- **Ação:** Alfa deve rodar a apropriação de taxa de gestão do dia e reprocessar. Verificar se outros fundos da mesma rotina foram afetados. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 

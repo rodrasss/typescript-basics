@@ -1,36 +1,36 @@
-# Caso caso-118 — Juazeiro III FIF RF Referenciado DI
+# Caso caso-118 — Juazeiro III FII Responsabilidade Limitada
 
-> **Data-base (D):** 27/11/2025 (quinta-feira) · **D−1:** 26/11/2025 · **Fundo:** FND-0118
+> **Data-base (D):** 23/02/2026 (segunda-feira) · **D−1:** 20/02/2026 · **Fundo:** FND-0118
 
 ## 1. O fundo
 
-Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Juazeiro III FIF RF Referenciado DI: a casa é uma gestora de renda fixa líquida para plataformas digitais. Criado em 02/06/2019, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são tesourarias de empresas médias que usam o fundo como caixa. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. O contrato com a auditoria foi renegociado recentemente. No fechamento de ontem (26/11/2025) o fundo tinha PL de R$ 566.674.255,81, cota de 3,19096416 e 177.587.157,79692966 cotas. Hoje, quinta-feira, 27/11/2025, é a data-base da validação.
+Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Juazeiro III FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 02/06/2019, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo fez uma nova emissão de cotas em 2024 para comprar mais um ativo e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; o administrador revisa o manual de precificação uma vez por ano. A conta do fundo já teve cobrança de tarifa que não era do fundo. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. A gestora costuma pedir que despesas dela sejam lançadas no fundo. No fechamento de ontem (20/02/2026) o fundo tinha PL de R$ 192.725.083,43, cota de 86,16627060 e 2.236.665,02064046 cotas. Hoje, segunda-feira, 23/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Renda Fixa Referenciado DI |
-| Classe | Classe de Renda Fixa — Referenciada DI |
-| Condomínio | aberto |
-| Gestora | Farol do Norte Capital (São Paulo/SP) |
-| PL em D−1 | R$ 566.674.255,81 |
-| Cota em D−1 | 3,19096416 |
-| Quantidade de cotas em D−1 | 177.587.157,79692966 |
+| Tipo | FII (imobiliário) |
+| Classe | Classe de FII — Tijolo |
+| Condomínio | fechado |
+| Gestora | Siriema Investimentos (São Paulo/SP) |
+| PL em D−1 | R$ 192.725.083,43 |
+| Cota em D−1 | 86,16627060 |
+| Quantidade de cotas em D−1 | 2.236.665,02064046 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,270% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,750% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 41.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 3.200,00 (mensal)
+- Auditoria independente: R$ 90.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 800,00 (mensal)
+- Escrituração de cotas: R$ 11.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Juazeiro III F
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 579.738.289,89. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 182.320.471,16. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,39 +60,36 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Juazeiro III F
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização no próprio dia do pedido, pela cota de fechamento desse dia; liquidação financeira no mesmo dia da cotização.
+- Condomínio fechado: sem resgate; liquidez via B3.
 - Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
-- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
+- Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- CDB: curva do papel ajustada por spread de crédito do emissor.
+- Imóveis: valor justo do laudo de avaliação vigente.
+- LCI: curva do papel.
 
 **Regras específicas deste fundo**
 
-- Come-cotas: ocorre no penúltimo dia útil de maio e de novembro e incide sobre as cotas existentes ao fim do dia, depois das conversões e cotizações de D. Para cada cotista tributado: ganho = max(0; (cota de fechamento de D − cota de referência) × quantidade de cotas); IR = alíquota × ganho, em reais e centavos; cotas retiradas = IR ÷ cota de fechamento de D, truncadas na 8ª casa. A cota de referência é a do último come-cotas ou a da aplicação, a mais recente; depois da incidência, a referência passa a ser a cota de D. Alíquota: 15% se o prazo médio da carteira em D for superior a 365 dias; 20% se for de até 365 dias (prazo médio informado pelo administrador). Cotistas isentos ou imunes não sofrem retenção. Posição com cota abaixo da referência não gera retenção nem devolução de cotas.
+- Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como "rendimentos a distribuir" (passivo) na data do anúncio (data-com), reduzindo o PL.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
-- Prazo médio da carteira em 27/11/2025: 164 dias (informado pelo administrador)
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.201,281561 |  |
-| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.236,132995 |  |
-| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 804,140113 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.146,120786 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **15:29** — *Distribuidor* — **Material de divulgação**: Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.
-- **18:08** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+- **10:23** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **14:23** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
 
 ## 5. Batimento Alfa × Beta
 
@@ -102,29 +99,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 3,19248739 | 3,19248739 | 0,00000000 |
-| Quantidade final de cotas | 177.587.157,79692966 | 175.204.953,92235148 | -2.382.203,87457818 |
-| PL final | R$ 566.944.761,89 | R$ 559.339.606,06 | R$ -7.605.155,83 |
-| Caixa | R$ 1.953.065,82 | R$ 1.953.065,82 | R$ 0,00 |
-| Total de provisões | R$ 176.003,02 | R$ 176.003,02 | R$ 0,00 |
+| Cota de fechamento | 86,15139665 | 86,14791180 | -0,00348485 |
+| Quantidade final de cotas | 2.236.665,02064046 | 2.236.665,02064046 | 0,00000000 |
+| PL final | R$ 192.691.815,37 | R$ 192.684.020,92 | R$ -7.794,45 |
+| Caixa | R$ 6.886.014,76 | R$ 6.878.220,33 | R$ -7.794,43 |
+| Total de provisões | R$ 137.350,79 | R$ 137.350,79 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 13.973 | 13.973 | 18.201,281561 | 18.201,281561 | 254.326.507,25 | 254.326.507,25 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 6.198 | 6.198 | 18.236,132995 | 18.236,132995 | 113.027.552,30 | 113.027.552,30 | 0,00 | ANBIMA — taxa indicativa D |
-| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 35.142 | 35.142 | 804,140113 | 804,140113 | 28.259.091,85 | 28.259.091,85 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 174.335 | 174.335 | 810,482499 | 810,482499 | 141.295.466,46 | 141.295.466,46 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB TARUMÃ 2027 — CDB Banco Tarumã S.A. — 109% do CDI — venc. 2027 | 26.617 | 26.617 | 1.061,692961 | 1.061,692961 | 28.259.081,54 | 28.259.081,54 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| **Total** |  |  |  |  | 565.167.699,40 | 565.167.699,40 | 0,00 |  |
+| IMOVEL GLP-CAJAMAR — Galpão logístico em Cajamar (SP) — módulos A a D | 74.375.716,60 | 74.375.716,60 | 1,00 | 1,00 | 74.375.716,60 | 74.375.716,60 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL LAJES-JQB — Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP) | 55.781.787,45 | 55.781.787,45 | 1,00 | 1,00 | 55.781.787,45 | 55.781.787,45 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL GLP-EXTREMA — Galpão logístico em Extrema (MG) | 33.469.072,47 | 33.469.072,47 | 1,00 | 1,00 | 33.469.072,47 | 33.469.072,47 | 0,00 | Laudo de avaliação anual (valor justo) |
+| LCI TARUMA 2027 — LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027 | 10.465 | 10.465 | 1.066,097525 | 1.066,097525 | 11.156.710,60 | 11.156.710,60 | 0,00 | Curva do papel |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 615 | 615 | 18.146,120786 | 18.146,120786 | 11.159.864,28 | 11.159.864,28 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 185.943.151,40 | 185.943.151,40 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 1.953.065,82 | 1.953.065,82 |
-| **Saldo final** | 1.953.065,82 | 1.953.065,82 |
+| Saldo inicial (D−1) | 6.893.636,78 | 6.893.636,78 |
+| Pagamento — despesa de registro/cartório (NF 5016) | -7.622,02 | -7.622,02 |
+| Débito de tarifa — pacote de serviços PJ | — | -172,41 |
+| Pagamento — despesa de registro/cartório (NF 5016) | — | -7.622,02 |
+| **Saldo final** | 6.886.014,76 | 6.878.220,33 |
 
 ### 5.4 Valores a receber
 
@@ -138,16 +138,24 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 33.812,70 | 33.812,70 | 2.023,84 | 2.023,84 | 0,00 | 0,00 | 35.836,54 | 35.836,54 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 104.699,55 | 104.699,55 | 6.071,51 | 6.071,51 | 0,00 | 0,00 | 110.771,06 | 110.771,06 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 7.472,58 | 7.472,58 | 449,74 | 449,74 | 0,00 | 0,00 | 7.922,32 | 7.922,32 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 10.412,70 | 10.412,70 | 162,70 | 162,70 | 0,00 | 0,00 | 10.575,40 | 10.575,40 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 894,74 | 894,74 | 52,63 | 52,63 | 0,00 | 0,00 | 947,37 | 947,37 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 2.863,16 | 2.863,16 | 168,42 | 168,42 | 0,00 | 0,00 | 3.031,58 | 3.031,58 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 6.750,00 | 6.750,00 | 168,75 | 168,75 | 0,00 | 0,00 | 6.918,75 | 6.918,75 | 0,00 |
-| **Total** |  |  |  |  |  |  | 176.003,02 | 176.003,02 | 0,00 |
+| TXADM — Taxa de administração a pagar | 16.066,19 | 16.066,19 | 1.223,65 | 1.223,65 | 0,00 | 0,00 | 17.289,84 | 17.289,84 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 76.340,80 | 76.340,80 | 5.735,87 | 5.735,87 | 0,00 | 0,00 | 82.076,67 | 82.076,67 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 2.035,29 | 2.035,29 | 152,96 | 152,96 | 0,00 | 0,00 | 2.188,25 | 2.188,25 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 21.785,71 | 21.785,71 | 357,14 | 357,14 | 0,00 | 0,00 | 22.142,85 | 22.142,85 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 577,78 | 577,78 | 44,44 | 44,44 | 0,00 | 0,00 | 622,22 | 622,22 | 0,00 |
+| ESCRIT — Escrituração de cotas a pagar | 7.944,44 | 7.944,44 | 611,11 | 611,11 | 0,00 | 0,00 | 8.555,55 | 8.555,55 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.347,54 | 4.347,54 | 127,87 | 127,87 | 0,00 | 0,00 | 4.475,41 | 4.475,41 | 0,00 |
+| **Total** |  |  |  |  |  |  | 137.350,79 | 137.350,79 | 0,00 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 192.725.083,43 ÷ 252 (linear, dias úteis) = R$ 1.223,65 · Beta: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 192.725.083,43 ÷ 252 (linear, dias úteis) = R$ 1.223,65
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,75% a.a. sobre R$ 192.725.083,43 ÷ 252 (linear, dias úteis) = R$ 5.735,87 · Beta: [base: PL do dia útil anterior] 0,75% a.a. sobre R$ 192.725.083,43 ÷ 252 (linear, dias úteis) = R$ 5.735,87
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 192.725.083,43 ÷ 252 (linear, dias úteis) = R$ 152,96 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 192.725.083,43 ÷ 252 (linear, dias úteis) = R$ 152,96
+- **AUDIT** — Alfa: R$ 90.000,00 (anual) ÷ 252 d.u. = R$ 357,14 · Beta: R$ 90.000,00 (anual) ÷ 252 d.u. = R$ 357,14
+- **ANBIMA** — Alfa: R$ 800,00 (mensal) ÷ 18 d.u. = R$ 44,44 · Beta: R$ 800,00 (mensal) ÷ 18 d.u. = R$ 44,44
+- **ESCRIT** — Alfa: R$ 11.000,00 (mensal) ÷ 18 d.u. = R$ 611,11 · Beta: R$ 11.000,00 (mensal) ÷ 18 d.u. = R$ 611,11
+- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
@@ -157,74 +165,89 @@ Nenhum movimento de passivo no dia.
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 565.167.699,40 | 565.167.699,40 | 0,00 |
-| Caixa | 1.953.065,82 | 1.953.065,82 | 0,00 |
+| Total de ativos | 185.943.151,40 | 185.943.151,40 | 0,00 |
+| Caixa | 6.886.014,76 | 6.878.220,33 | -7.794,43 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 176.003,02 | 176.003,02 | 0,00 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 566.953.859,79 | 566.953.859,79 | 0,00 |
-| PL base da cota | 566.944.762,20 | 566.944.762,20 | 0,00 |
-| Cota (8 casas) | 3,19248739 | 3,19248739 | 0,00000000 |
+| Provisões | 137.350,79 | 137.350,79 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 192.700.068,41 | 192.692.273,98 | -7.794,43 |
+| PL base da cota | 192.691.815,37 | 192.684.020,94 | -7.794,43 |
+| Cota (8 casas) | 86,15139665 | 86,14791180 | -0,00348485 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
-| IR de come-cotas | 0,00 | 7.605.155,83 | 7.605.155,83 |
-| Cotas retiradas (come-cotas) | 0,00000000 | 2.382.203,87457817 | 2.382.203,87457817 |
-| Quantidade final de cotas | 177.587.157,79692966 | 175.204.953,92235148 | -2.382.203,87457818 |
-| PL final | 566.944.761,89 | 559.339.606,06 | -7.605.155,83 |
+| IR de come-cotas | 0,00 | 0,00 | 0,00 |
+| Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
+| Quantidade final de cotas | 2.236.665,02064046 | 2.236.665,02064046 | 0,00000000 |
+| PL final | 192.691.815,37 | 192.684.020,92 | -7.794,45 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
-
-### 5.9 Come-cotas (hoje é dia de come-cotas)
-
-| Posição | Cotista | Tratamento | Referência | Qtd de cotas Alfa | Qtd de cotas Beta | Cota de referência Alfa | Cota de referência Beta | IR Alfa | IR Beta | Cotas retiradas Alfa | Cotas retiradas Beta |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| CT-01 | Cotista 3053 | tributado | último come-cotas em 29/05/2025 | não processado | 58.230.829,04161324 | 2,97836279 | 2,97836279 | não processado | 2.493.730,60 | não processado | 781.124,65152133 |
-| CT-02 | Cotista 4169 | tributado | último come-cotas em 29/05/2025 | não processado | 79.203.872,37743063 | 2,97836279 | 2,97836279 | não processado | 3.391.899,50 | não processado | 1.062.462,92800548 |
-| CT-03 | Cotista 2509 | tributado | último come-cotas em 29/05/2025 | não processado | 40.152.456,37788579 | 2,97836279 | 2,97836279 | não processado | 1.719.525,73 | não processado | 538.616,29505136 |
-| **Total** |  |  |  |  |  |  |  | 0,00 | 7.605.155,83 | 0,00000000 | 2.382.203,87457817 |
-
-_As posições agrupam todos os cotistas do fundo por situação tributária e por cota de referência, e somam a quantidade de cotas existente ao fim do dia; os identificadores não são os da seção 5.7. Quem estava no fundo no último come-cotas tem a mesma cota de referência (a cota daquele dia). A posição CT-HJ, quando existe, reúne as cotas emitidas hoje: referência igual à cota de D, sem ganho._
-
-_Memória do come-cotas: não disponível neste caso. Recalcular a partir do regulamento._
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO
+**Parecer:** PENDENTE
 
-**Resumo:** Reprovar até o ajuste: Come-cotas não processado.
+**Resumo:** Deixar pendente e escalar: Tarifa de pacote PJ debitada do fundo; Pagamento da NF 5016 debitado duas vezes.
 
-**Dificuldade:** media · **Cenários:** come_cotas_nao_aplicado
+**Dificuldade:** media · **Cenários:** tarifa_bancaria_indevida, debito_em_duplicidade
 
-### Achado 1: Come-cotas não processado
+### Régua v1 (provisória) — medidas deste caso
 
-- **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa não processou o come-cotas de 27/11/2025.
-- **Onde olhar:** Come-cotas (posição por cotista); Quantidade final de cotas; Regulamento — come-cotas; Comunicações — passivo
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 90,48 cotas equivalentes (quantidade 0,00; PL 90,48) | 250 cotas | dentro |
+| Caixa | R$ 7.794,43 | sem tolerância | ACIMA |
+| Provisões | maior diferença R$ 0,00; total R$ 0,00 | R$ 100,00 por provisão e no total | dentro |
+
+### Achado 1: Tarifa de pacote PJ debitada do fundo
+
+- **Gravidade:** pendencia · **Dimensões:** caixa
+- **Lado correto:** nenhum · **Quem ajusta:** Beta (estorno) e Alfa (registro)
+- **Causa raiz:** Houve um débito de tarifa de R$ 172,41 na conta do fundo. Tarifa de manutenção/pacote não é encargo da classe. O Beta lançou como despesa do fundo e o Alfa nem registrou.
+- **Onde olhar:** Caixa — lançamentos do Beta; Regulamento — encargos e o que NÃO é encargo
 - **Raciocínio do analista:**
-  1. A cota é igual, mas a quantidade final de cotas do Alfa é 2.382.203,87457817 cotas maior: ele não retirou cotas nem calculou IR (R$ 7.605.155,83 no Beta).
-  2. Hoje é o penúltimo dia útil de novembro, dia de come-cotas pelo regulamento. Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = 20% × ganho; cotas retiradas = IR ÷ cota de D): o total bate com o Beta.
-  3. Sem o come-cotas o IR não é retido no prazo e as posições dos cotistas ficam erradas.
-- **Ação:** Alfa deve processar o come-cotas (retirada de cotas e IR a recolher) antes de fechar o passivo.
+  1. Caixa: o Beta tem um débito de R$ 172,41 (tarifa de pacote PJ) que o Alfa não tem. O PL do Beta fica R$ 172,41 menor.
+  2. O regulamento lista o que é encargo e diz que tarifas bancárias de manutenção e pacote são suportadas pelo administrador. Então o fundo não pode absorver essa despesa.
+  3. Nenhum dos dois lados está certo. O débito aconteceu (o dinheiro saiu), então o tratamento correto é registrar a saída e um valor a ressarcir, até o estorno.
+  4. O valor é imaterial para a cota, mas é despesa indevida e precisa ser contestada.
+  5. Régua v1 (provisória) — caixa: diferença de R$ 7.794,43; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
+- **Ação:** Pedir ao Beta o estorno da tarifa (ou o ressarcimento pelo administrador). Enquanto isso, os dois lados registram a saída de R$ 172,41 e um valor a receber do mesmo montante. Verificar se a cobrança se repete em outros fundos.
+
+### Achado 2: Pagamento da NF 5016 debitado duas vezes
+
+- **Gravidade:** pendencia · **Dimensões:** caixa
+- **Lado correto:** nenhum · **Quem ajusta:** Beta (estorno) e Alfa (registro)
+- **Causa raiz:** A despesa da NF 5016 (R$ 7.622,02) foi debitada duas vezes na conta do fundo. O Beta registrou os dois débitos como despesa; o Alfa registrou um só.
+- **Onde olhar:** Caixa — lançamentos (dois débitos idênticos); Comparação com o controle Alfa
+- **Raciocínio do analista:**
+  1. O caixa do Beta está R$ 7.622,02 abaixo do do Alfa. A diferença é um segundo lançamento com histórico idêntico (mesma NF, mesmo valor).
+  2. A mesma nota fiscal não se paga duas vezes. O segundo débito é erro operacional, mas o dinheiro saiu de fato.
+  3. O Alfa está economicamente certa (uma despesa), mas o caixa dela não reflete o que aconteceu na conta. O Beta reflete a conta, mas jogou a duplicidade no resultado e reduziu o PL.
+  4. Régua v1 (provisória) — caixa: diferença de R$ 7.794,43; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
+- **Ação:** Solicitar ao Beta o estorno imediato do débito duplicado. Até lá, registrar R$ 7.622,02 como "estorno a receber" (sem efeito no PL) e alinhar o caixa do Alfa ao real.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
-| caixa | ambos |
+| cota | Alfa |
+| caixa | Beta |
 | provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 3,19248739 |
-| Quantidade final de cotas | 175.204.953,92235148 |
-| PL final | R$ 559.339.606,06 |
-| Caixa | R$ 1.953.065,82 |
-| Total de provisões | R$ 176.003,02 |
+| Cota | 86,15139665 |
+| Quantidade final de cotas | 2.236.665,02064046 |
+| PL final | R$ 192.691.815,37 |
+| Caixa | R$ 6.878.220,33 |
+| Total de provisões | R$ 137.350,79 |
+
+### Armadilhas deste caso
+
+- Nenhum lado está certo: o dinheiro saiu, mas a despesa não é do fundo.
+- O dinheiro saiu duas vezes: registrar o fato e cobrar estorno, sem jogar a duplicidade no resultado.

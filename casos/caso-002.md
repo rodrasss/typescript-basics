@@ -1,36 +1,35 @@
-# Caso caso-002 — Jacarandá III FIE FIF Previdenciário Multimercado
+# Caso caso-002 — Jacarandá III FIC FIF Ações Investimento no Exterior
 
-> **Data-base (D):** 24/04/2026 (sexta-feira) · **D−1:** 23/04/2026 · **Fundo:** FND-0002
+> **Data-base (D):** 20/01/2026 (terça-feira) · **D−1:** 19/01/2026 · **Fundo:** FND-0002
 
 ## 1. O fundo
 
-Quem acompanha a Remanso Asset (Curitiba/PR) conhece o Jacarandá III FIE FIF Previdenciário Multimercado: a casa é uma gestora de previdência ligada a uma seguradora de médio porte. Criado em 04/03/2019, atende planos de previdência de uma seguradora, com fluxo previsível de aportes. Público-alvo: exclusivo para planos pgbl/vgbl de seguradora. Hoje seus cotistas são planos PGBL/VGBL de uma seguradora (cotista único: a seguradora, representando ~35 mil participantes). Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Marina. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. A equipe da gestora é considerada muito organizada. No fechamento de ontem (23/04/2026) o fundo tinha PL de R$ 380.076.338,58, cota de 2,28052722 e 166.661.609,46656603 cotas. Hoje, sexta-feira, 24/04/2026, é a data-base da validação.
+Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que investe via fundos offshore (São Paulo/SP), o Jacarandá III FIC FIF Ações Investimento no Exterior é um dos fundos que mais exigem atenção na rotina de validação. Criado em 04/03/2019, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores qualificados buscando diversificação global. Ao longo da vida, o fundo teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Marina. Sobre a rotina: o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A gestora costuma mandar NAV "estimado" quando o mercado americano está fechado. No fechamento de ontem (19/01/2026) o fundo tinha PL de R$ 381.965.146,60, cota de 5,79165195 e 65.950.984,14795780 cotas. Hoje, terça-feira, 20/01/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Previdência (FIE — PGBL/VGBL) |
-| Classe | Classe Previdenciária |
+| Tipo | Investimento no Exterior (ações globais) |
+| Classe | Classe de Ações — Investimento no Exterior |
 | Condomínio | aberto |
-| Gestora | Remanso Asset (Curitiba/PR) |
-| PL em D−1 | R$ 380.076.338,58 |
-| Cota em D−1 | 2,28052722 |
-| Quantidade de cotas em D−1 | 166.661.609,46656603 |
+| Gestora | Lume Gestão de Recursos (São Paulo/SP) |
+| PL em D−1 | R$ 381.965.146,60 |
+| Cota em D−1 | 5,79165195 |
+| Quantidade de cotas em D−1 | 65.950.984,14795780 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/02/2026 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,190% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,720% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,140% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 69.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 400,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 1.700,00 (mensal)
+- Auditoria independente: R$ 33.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +39,7 @@ Quem acompanha a Remanso Asset (Curitiba/PR) conhece o Jacarandá III FIE FIF Pr
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 362.691.945,47. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 370.264.438,43. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,38 +59,42 @@ Quem acompanha a Remanso Asset (Curitiba/PR) conhece o Jacarandá III FIE FIF Pr
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+3 dias úteis após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
 - Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
-- Tributação: Previdência: tributação no plano (seguradora); sem come-cotas
+- Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Debêntures: taxa indicativa ANBIMA de D.
-- Ações: preço de fechamento da B3 em D.
+- Cotas de fundos no exterior: NAV oficial mais recente disponível até 18h de D, convertido pela PTAX de venda de D.
+
+**Regras específicas deste fundo**
+
+- Ativos no exterior: NAV oficial mais recente disponível até 18h de D (em regra, o NAV de D−1), convertido pela PTAX de VENDA de D. NAV estimado ou indicativo não é aceito.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- PTAX de 20/01/2026: compra 5,0938 / venda 5,0944; PTAX de venda de 19/01/2026: 5,1173
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.443,628481 |  |
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D | 4.369,799790 |  |
-| NTN-B 15/05/2035 | ANBIMA — PU pela taxa indicativa de D | 4.120,302945 |  |
-| EVSA12 | ANBIMA — PU pela taxa indicativa de D | 1.152,865362 |  |
-| VJNR3 | B3 — preço de fechamento de D | 50,08 |  |
-| QPLN3 | B3 — preço de fechamento de D | 9,06 |  |
-| XVRM3 | B3 — preço de fechamento de D | 88,07 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.239,599581 |  |
+| PTAX | BCB — PTAX de 20/01/2026 | compra 5,0938 / venda 5,0944 |  |
+| PTAX | BCB — PTAX de 19/01/2026 | venda 5,1173 |  |
+| OFFSHORE AUSTRAL | NAV oficial de 16/01/2026 (último disponível) | USD 109,1116 |  |
+| OFFSHORE AUSTRAL | NAV de 19/01/2026 | não divulgado | mercado americano fechado (Martin Luther King Jr. Day) |
+| OFFSHORE MERIDIAN | NAV oficial de 16/01/2026 (último disponível) | USD 237,9070 |  |
+| OFFSHORE MERIDIAN | NAV de 19/01/2026 | não divulgado | mercado americano fechado (Martin Luther King Jr. Day) |
 
 ## 4. Comunicações recebidas hoje
 
-- **18:11** — *Gestora — mesa* — **Boleta (atrasada, desculpem)**: Segue boleta de hoje: VENDA de 1969 LFT 01/03/2029 @ 18.441,088972, executada às 14:54, contraparte confirmada no SELIC.
+- **17:12** — *Gestora — operações* — **NAV estimado**: Como ontem foi feriado nos EUA (Martin Luther King Jr. Day), segue o NAV ESTIMADO de 19/01/2026 do Austral World Quality Fund — Class A (USD): USD 110,4417. Valor indicativo, o oficial sai só no próximo dia útil americano.
 
 ## 5. Batimento Alfa × Beta
 
@@ -101,38 +104,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 2,26454143 | 2,26463659 | 0,00009516 |
-| Quantidade final de cotas | 167.566.128,88028430 | 167.566.061,01109540 | -67,86918890 |
-| PL final | R$ 379.460.441,11 | R$ 379.476.233,01 | R$ 15.791,90 |
-| Caixa | R$ 38.097.102,99 | R$ 3.745.498,64 | R$ -34.351.604,35 |
-| Total de provisões | R$ 267.497,46 | R$ 256.638,14 | R$ -10.859,32 |
+| Cota de fechamento | 5,85125243 | 5,89047359 | 0,03922116 |
+| Quantidade final de cotas | 66.514.521,58610617 | 66.510.063,47289272 | -4.458,11321346 |
+| PL final | R$ 389.193.256,06 | R$ 391.775.772,36 | R$ 2.582.516,30 |
+| Caixa | R$ 4.266.008,72 | R$ 4.266.008,72 | R$ 0,00 |
+| Total de provisões | R$ 262.354,43 | R$ 262.354,43 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 5.613 | 7.582 | 18.443,628481 | 18.443,628481 | 103.524.086,66 | 139.839.591,14 | 36.315.504,48 | ANBIMA — taxa indicativa D |
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 13.714 | 13.714 | 4.369,799790 | 4.369,799790 | 59.927.434,32 | 59.927.434,32 | 0,00 | ANBIMA — taxa indicativa D |
-| NTN-B 15/05/2035 — Nota do Tesouro Nacional série B — venc. 15/05/2035 | 9.697 | 9.697 | 4.120,302945 | 4.120,302945 | 39.954.577,66 | 39.954.577,66 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 39.210 | 39.210 | 815,148205 | 815,148205 | 31.961.961,12 | 31.961.961,12 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 41.586 | 41.586 | 1.152,865362 | 1.152,865362 | 47.943.058,94 | 47.943.058,94 | 0,00 | ANBIMA — taxa indicativa D |
-| VJNR3 — Vajanra Energia S.A. ON | 398.889 | 398.889 | 50,08 | 50,08 | 19.976.361,12 | 19.976.361,12 | 0,00 | B3 — preço de fechamento D |
-| QPLN3 — Quiplan Saúde S.A. ON | 2.204.894 | 2.204.894 | 9,06 | 9,06 | 19.976.339,64 | 19.976.339,64 | 0,00 | B3 — preço de fechamento D |
-| XVRM3 — Xavantina Mineração S.A. ON | 226.823 | 226.823 | 88,07 | 88,07 | 19.976.301,61 | 19.976.301,61 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 343.240.121,07 | 379.555.625,55 | 36.315.504,48 |  |
+| OFFSHORE AUSTRAL — Cotas do Austral World Quality Fund — Class A (USD) | 381.737,140489 | 381.737,140489 | USD 109,1116 × 5,0944 | USD 110,4417 × 5,0944 | 212.191.694,99 | 214.778.369,31 | 2.586.674,32 | NAV oficial de 16/01/2026 × PTAX venda D |
+| OFFSHORE MERIDIAN — Cotas do Meridian Tech Leaders Fund — Inst. (USD) | 111.412,385836 | 111.412,385836 | USD 237,9070 × 5,0944 | USD 237,9070 × 5,0944 | 135.031.078,63 | 135.031.078,63 | 0,00 | NAV oficial de 16/01/2026 × PTAX venda D |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.481 | 1.481 | 18.239,599581 | 18.239,599581 | 27.012.846,98 | 27.012.846,98 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 14.240 | 14.240 | 812,799736 | 812,799736 | 11.574.268,24 | 11.574.268,24 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 385.809.888,84 | 388.396.563,16 | 2.586.674,32 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 571.351,70 | 571.351,70 |
-| TED recebida — aplicação [APL-1] Cotista único (10:53) | 1.495.215,90 | 1.495.215,90 |
-| TED recebida — aplicação [APL-2] Cotista único (14:13) | 1.171.744,78 | 1.171.744,78 |
-| TED recebida — aplicação [APL-3] Cotista único (14:26) | 990.646,12 | 990.646,12 |
-| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 23/04/2026) | -483.459,86 | -483.459,86 |
-| Venda definitiva de 1969 LFT 01/03/2029 @ 18.441,088972 (liquidação SELIC D+0) | 36.310.504,19 | — |
-| Liquidação de compra — 22100 XVRM3 | -1.958.899,84 | — |
-| **Saldo final** | 38.097.102,99 | 3.745.498,64 |
+| Saldo inicial (D−1) | 1.022.601,08 | 1.022.601,08 |
+| TED recebida — aplicação [APL-1] Cotista 1253 (15:13) | 1.177.567,83 | 1.177.567,83 |
+| TED recebida — aplicação [APL-2] Cotista 1260 (15:26) | 995.569,18 | 995.569,18 |
+| TED recebida — aplicação [APL-3] Cotista 1267 (15:02) | 1.744.549,73 | 1.744.549,73 |
+| Pagamento de resgate [LIQ-1] — Cotista 1281 (cotizado em 16/01/2026) | -674.279,10 | -674.279,10 |
+| **Saldo final** | 4.266.008,72 | 4.266.008,72 |
 
 ### 5.4 Valores a receber
 
@@ -142,23 +139,28 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 3.657.606,80 | 3.657.606,80 |
-| COMPRAS A LIQUIDAR — Compras de ações a liquidar (D+2) — 22100 XVRM3 em 23/04/2026 | — | 1.958.899,84 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 3.917.686,74 | 3.917.686,74 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 43.316,03 | 43.316,03 | 2.865,65 | 2.865,65 | 0,00 | 0,00 | 46.181,68 | 46.181,68 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 163.117,80 | 163.117,80 | 10.859,32 | 0,00 | 0,00 | 0,00 | 173.977,12 | 163.117,80 | -10.859,32 |
-| TXCUS — Taxa máxima de custódia a pagar | 4.464,70 | 4.464,70 | 301,65 | 301,65 | 0,00 | 0,00 | 4.766,35 | 4.766,35 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 37.785,71 | 37.785,71 | 273,81 | 273,81 | 0,00 | 0,00 | 38.059,52 | 38.059,52 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 300,00 | 300,00 | 20,00 | 20,00 | 0,00 | 0,00 | 320,00 | 320,00 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.275,00 | 1.275,00 | 85,00 | 85,00 | 0,00 | 0,00 | 1.360,00 | 1.360,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.655,74 | 2.655,74 | 177,05 | 177,05 | 0,00 | 0,00 | 2.832,79 | 2.832,79 | 0,00 |
-| **Total** |  |  |  |  |  |  | 267.497,46 | 256.638,14 | -10.859,32 |
+| TXADM — Taxa de administração a pagar | 25.559,80 | 25.559,80 | 2.122,03 | 2.122,03 | 0,00 | 0,00 | 27.681,83 | 27.681,83 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 187.546,68 | 187.546,68 | 16.066,79 | 16.066,79 | 0,00 | 0,00 | 203.613,47 | 203.613,47 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.782,11 | 1.782,11 | 151,57 | 151,57 | 0,00 | 0,00 | 1.933,68 | 1.933,68 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 26.321,43 | 26.321,43 | 130,95 | 130,95 | 0,00 | 0,00 | 26.452,38 | 26.452,38 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 342,86 | 342,86 | 28,57 | 28,57 | 0,00 | 0,00 | 371,43 | 371,43 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 2.124,59 | 2.124,59 | 177,05 | 177,05 | 0,00 | 0,00 | 2.301,64 | 2.301,64 | 0,00 |
+| **Total** |  |  |  |  |  |  | 262.354,43 | 262.354,43 | 0,00 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,14% a.a. sobre R$ 381.965.146,60 ÷ 252 (linear, dias úteis) = R$ 2.122,03 · Beta: [base: PL do dia útil anterior] 0,14% a.a. sobre R$ 381.965.146,60 ÷ 252 (linear, dias úteis) = R$ 2.122,03
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,06% a.a. sobre R$ 381.965.146,60 ÷ 252 (linear, dias úteis) = R$ 16.066,79 · Beta: [base: PL do dia útil anterior] 1,06% a.a. sobre R$ 381.965.146,60 ÷ 252 (linear, dias úteis) = R$ 16.066,79
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 381.965.146,60 ÷ 252 (linear, dias úteis) = R$ 151,57 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 381.965.146,60 ÷ 252 (linear, dias úteis) = R$ 151,57
+- **AUDIT** — Alfa: R$ 33.000,00 (anual) ÷ 252 d.u. = R$ 130,95 · Beta: R$ 33.000,00 (anual) ÷ 252 d.u. = R$ 130,95
+- **ANBIMA** — Alfa: R$ 600,00 (mensal) ÷ 21 d.u. = R$ 28,57 · Beta: R$ 600,00 (mensal) ÷ 21 d.u. = R$ 28,57
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
@@ -166,33 +168,32 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista único | R$ 1.495.215,90 | 10:53 | 24/04/2026 | 24/04/2026 | 24/04/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista único | R$ 1.171.744,78 | 14:13 | 24/04/2026 | 24/04/2026 | 24/04/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista único | R$ 990.646,12 | 14:26 | 24/04/2026 | 24/04/2026 | 24/04/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista único | 614.238,58362002 cotas |  | 23/04/2026 | 24/04/2026 | 27/04/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista único | 96.406,44679377 cotas |  | 23/04/2026 | 24/04/2026 | 27/04/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista único | 211.994,77533539 cotas (R$ 483.459,86) |  | 22/04/2026 | 23/04/2026 | 24/04/2026 | não | não | cotizado em 23/04/2026 pela cota de 2,28052722; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista 1253 | R$ 1.177.567,83 | 15:13 | 20/01/2026 | 20/01/2026 | 20/01/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 1260 | R$ 995.569,18 | 15:26 | 20/01/2026 | 20/01/2026 | 20/01/2026 | sim | sim |  |
+| APL-3 | aplicacao | Cotista 1267 | R$ 1.744.549,73 | 15:02 | 20/01/2026 | 20/01/2026 | 20/01/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 1274 | 106.009,25922423 cotas |  | 15/01/2026 | 20/01/2026 | 22/01/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 1281 | 116.116,82554231 cotas (R$ 674.279,10) |  | 13/01/2026 | 16/01/2026 | 20/01/2026 | não | não | cotizado em 16/01/2026 pela cota de 5,80690266; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 343.240.121,07 | 379.555.625,55 | 36.315.504,48 |
-| Caixa | 38.097.102,99 | 3.745.498,64 | -34.351.604,35 |
+| Total de ativos | 385.809.888,84 | 388.396.563,16 | 2.586.674,32 |
+| Caixa | 4.266.008,72 | 4.266.008,72 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 3.657.606,80 | 5.616.506,64 | 1.958.899,84 |
-| Provisões | 267.497,46 | 256.638,14 | -10.859,32 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 377.426.702,28 | 377.431.702,57 | 5.000,29 |
-| PL base da cota | 377.412.119,80 | 377.427.979,41 | 15.859,61 |
-| Cota (8 casas) | 2,26454143 | 2,26463659 | 0,00009516 |
-| Aplicações convertidas | 3.657.606,80 | 3.657.606,80 | 0,00 |
-| Cotas emitidas | 1.615.164,44413206 | 1.615.096,57494316 | -67,86918890 |
-| Cotas resgatadas | 710.645,03041379 | 710.645,03041379 | 0,00000000 |
-| Valor dos resgates cotizados | 1.609.285,11 | 1.609.352,74 | 67,63 |
+| Valores a pagar | 3.917.686,74 | 3.917.686,74 | 0,00 |
+| Provisões | 262.354,43 | 262.354,43 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 385.914.533,35 | 388.501.207,67 | 2.586.674,32 |
+| PL base da cota | 385.895.856,39 | 388.482.530,71 | 2.586.674,32 |
+| Cota (8 casas) | 5,85125243 | 5,89047359 | 0,03922116 |
+| Aplicações convertidas | 3.917.686,74 | 3.917.686,74 | 0,00 |
+| Cotas emitidas | 669.546,69737260 | 665.088,58415914 | -4.458,11321346 |
+| Cotas resgatadas | 106.009,25922423 | 106.009,25922423 | 0,00000000 |
+| Valor dos resgates cotizados | 620.286,94 | 624.444,74 | 4.157,80 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 167.566.128,88028430 | 167.566.061,01109540 | -67,86918890 |
-| PL final | 379.460.441,11 | 379.476.233,01 | 15.791,90 |
+| Quantidade final de cotas | 66.514.521,58610617 | 66.510.063,47289272 | -4.458,11321346 |
+| PL final | 389.193.256,06 | 391.775.772,36 | 2.582.516,30 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -202,59 +203,49 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Taxa de gestão não apropriada hoje; Liquidação de compra de XVRM3 antecipada no controle Alfa; Venda de LFT 01/03/2029 não processada.
+**Resumo:** Reprovar até o ajuste: NAV estimado em OFFSHORE AUSTRAL.
 
-**Dificuldade:** dificil · **Cenários:** taxa_gestao_sem_apropriacao, liquidacao_compra_antecipada, boleta_tardia_nao_processada
+**Dificuldade:** media · **Cenários:** nav_estimado_feriado_eua
 
-### Achado 1: Taxa de gestão não apropriada hoje
+### Régua v1 (provisória) — medidas deste caso
 
-- **Gravidade:** erro · **Dimensões:** provisoes
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 440.595,24 cotas equivalentes (quantidade 4.458,11; PL 440.595,24) | 250 cotas | ACIMA |
+| Caixa | R$ 0,00 | sem tolerância | bate |
+| Provisões | maior diferença R$ 0,00; total R$ 0,00 | R$ 100,00 por provisão e no total | dentro |
+
+### Achado 1: NAV estimado em OFFSHORE AUSTRAL
+
+- **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não apropriou a taxa de gestão de hoje (parâmetro desativado/rotina não executada).
-- **Onde olhar:** Provisões — TXGES (apropriação zero); Regulamento — taxa de gestão
+- **Causa raiz:** Beta usou o NAV estimado enviado pela gestora para 19/01/2026 (feriado nos EUA), e não o último NAV oficial (16/01/2026).
+- **Onde olhar:** Carteira — OFFSHORE AUSTRAL; Informações de mercado — NAV; Comunicações — e-mail da gestora; Regulamento — NAV oficial
 - **Raciocínio do analista:**
-  1. A provisão de taxa de gestão do Beta ficou com o mesmo saldo de ontem: apropriação zero.
-  2. Pelo regulamento, a taxa de gestão é apropriada todo dia útil. O valor do Alfa confere com o recálculo.
-- **Ação:** Beta deve rodar a apropriação de taxa de gestão do dia e reprocessar. Verificar se outros fundos da mesma rotina foram afetados.
-
-### Achado 2: Liquidação de compra de XVRM3 antecipada no controle Alfa
-
-- **Gravidade:** ressalva · **Dimensões:** caixa
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** O Alfa debitou hoje a compra de 22100 XVRM3 feita em 23/04/2026, cuja liquidação na B3 é em D+2 (27/04/2026).
-- **Onde olhar:** Caixa; Valores a pagar — compras a liquidar
-- **Raciocínio do analista:**
-  1. Caixa do Alfa R$ 1.958.899,84 menor e "compras a liquidar" R$ 1.958.899,84 menor. PL igual.
-  2. A compra foi em 23/04/2026. Ações liquidam em D+2, ou seja, 27/04/2026. Hoje o dinheiro ainda está na conta e a obrigação ainda existe.
-  3. Sem efeito na cota, mas o caixa projetado do Alfa subestima a liquidez de hoje e pode atrapalhar decisões de zeragem.
-- **Ação:** Alfa deve estornar a liquidação antecipada e manter a obrigação até D+2. Aprovação com ressalva.
-
-### Achado 3: Venda de LFT 01/03/2029 não processada
-
-- **Gravidade:** erro · **Dimensões:** caixa, cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não processou a venda de 1969 LFT 01/03/2029, informada pela gestora às 18:11 (depois do corte operacional), embora executada e liquidada em D.
-- **Onde olhar:** Carteira — LFT 01/03/2029 (quantidade); Caixa — lançamentos; Comunicações — boleta da gestora
-- **Raciocínio do analista:**
-  1. O Beta tem 1969 LFT 01/03/2029 a mais e R$ 36.310.504,19 a menos de caixa. As duas diferenças quase se anulam, sobra R$ 5.000,29 no PL (preço de fechamento menos preço da operação).
-  2. A boleta chegou tarde, mas a operação foi executada e liquidada em D, com confirmação no SELIC. Fato econômico de D entra na cota de D.
-  3. O PL quase bate, mas a carteira e o caixa ficam errados, e o enquadramento e a liquidez de amanhã partiriam da posição errada.
-- **Ação:** Beta deve incluir a venda (baixa de 1969 LFT 01/03/2029 e crédito de R$ 36.310.504,19) e reprocessar. Reforçar com a gestora o horário limite de boletas.
+  1. A diferença está em OFFSHORE AUSTRAL: NAV USD 109,1116 (Alfa) contra USD 110,4417 (Beta). Câmbio e quantidade iguais.
+  2. 19/01/2026 foi feriado nos EUA (Martin Luther King Jr. Day) e não houve NAV oficial. O valor do Beta é o estimado do e-mail da gestora, chamado por ela mesma de "indicativo".
+  3. O regulamento exige o NAV oficial mais recente e veda NAV estimado. O correto é o NAV de 16/01/2026.
+  4. Régua v1 (provisória) — cota: diferença de 440.595,24 cotas equivalentes (a maior entre 4.458,11 cotas de quantidade e 440.595,24 cotas de PL), contra o limite de 250: ACIMA.
+- **Ação:** Beta deve voltar para o NAV oficial de 16/01/2026 e reprocessar. Responder à gestora que valor indicativo não é usado na cota. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | Alfa |
-| caixa | nenhum |
-| provisoes | Alfa |
+| caixa | ambos |
+| provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 2,26454143 |
-| Quantidade final de cotas | 167.566.128,88028430 |
-| PL final | R$ 379.460.441,11 |
-| Caixa | R$ 40.056.002,83 |
-| Total de provisões | R$ 267.497,46 |
+| Cota | 5,85125243 |
+| Quantidade final de cotas | 66.514.521,58610617 |
+| PL final | R$ 389.193.256,06 |
+| Caixa | R$ 4.266.008,72 |
+| Total de provisões | R$ 262.354,43 |
+
+### Armadilhas deste caso
+
+- NAV estimado/indicativo não é aceito; usar o último NAV oficial.

@@ -1,30 +1,30 @@
-# Caso caso-115 — Aroeira II FIF Incentivado em Infraestrutura RF
+# Caso caso-115 — Aroeira II FIF RF Crédito Privado LP
 
-> **Data-base (D):** 08/05/2026 (sexta-feira) · **D−1:** 07/05/2026 · **Fundo:** FND-0115
+> **Data-base (D):** 27/07/2026 (segunda-feira) · **D−1:** 24/07/2026 · **Fundo:** FND-0115
 
 ## 1. O fundo
 
-Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Aroeira II FIF Incentivado em Infraestrutura RF: a casa é uma gestora com foco em infraestrutura e debêntures incentivadas. Criado em 26/11/2020, compra debêntures de infraestrutura e entrega rendimento isento de IR ao cotista pessoa física. Público-alvo: público geral. Hoje seus cotistas são clientes de varejo alta renda e um FoF incentivado. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Sofia, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. A forma de apropriar as taxas muda de fundo para fundo. A gestora costuma pedir que despesas dela sejam lançadas no fundo. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (07/05/2026) o fundo tinha PL de R$ 1.288.208.898,40, cota de 3,27489408 e 393.358.949,32846450 cotas. Hoje, sexta-feira, 08/05/2026, é a data-base da validação.
+O Aroeira II FIF RF Crédito Privado LP é gerido pela Alvorada Sul Gestão, gestora gaúcha conservadora, focada em crédito privado de emissores de primeira linha, em Porto Alegre/RS. Criado em 26/11/2020, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são family offices e alguns fundos de fundos de terceiros. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Sofia, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. A classificação do saldo em compromissada já gerou ressalva de auditoria. No fechamento de ontem (24/07/2026) o fundo tinha PL de R$ 1.645.307.902,73, cota de 4,45296171 e 369.486.199,56559430 cotas. Hoje, segunda-feira, 27/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Infraestrutura (debêntures incentivadas) |
-| Classe | Classe de Renda Fixa — Infraestrutura (Lei 12.431) |
+| Tipo | Renda Fixa Crédito Privado |
+| Classe | Classe de Renda Fixa — Crédito Privado |
 | Condomínio | aberto |
-| Gestora | Ancoradouro Capital (Recife/PE) |
-| PL em D−1 | R$ 1.288.208.898,40 |
-| Cota em D−1 | 3,27489408 |
-| Quantidade de cotas em D−1 | 393.358.949,32846450 |
+| Gestora | Alvorada Sul Gestão (Porto Alegre/RS) |
+| PL em D−1 | R$ 1.645.307.902,73 |
+| Cota em D−1 | 4,45296171 |
+| Quantidade de cotas em D−1 | 369.486.199,56559430 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
 - Taxa de administração: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,880% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,870% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
@@ -40,7 +40,7 @@ Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Aroeira II FIF Incent
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 1.351.471.417,22. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 1.726.107.159,97. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,16 +61,17 @@ Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Aroeira II FIF Incent
 **Aplicação, resgate e cota**
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
+- Resgate: cotização em D+15 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
-- Tributação: Incentivado (Lei 12.431): isento para PF, sem come-cotas
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Debêntures incentivadas: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
+- Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).
+- CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual.
 
 ## 3. Informações de mercado do dia
 
@@ -80,16 +81,16 @@ Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Aroeira II FIF Incent
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| GASM13 | ANBIMA — PU pela taxa indicativa de D | 998,733167 |  |
-| RDCE13 | ANBIMA — PU pela taxa indicativa de D | 976,730871 |  |
-| SOLC12 | ANBIMA — PU pela taxa indicativa de D | 1.089,160885 |  |
-| FERR21 | ANBIMA — PU pela taxa indicativa de D | 1.152,935932 |  |
-| EVSE11 | ANBIMA — PU pela taxa indicativa de D | 1.149,578418 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.493,533385 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.362,000941 |  |
+| TFSU13 | ANBIMA — PU pela taxa indicativa de D | 962,883008 |  |
+| HBVI12 | ANBIMA — PU pela taxa indicativa de D | 1.062,875228 |  |
+| LINO11 | ANBIMA — PU pela taxa indicativa de D | 1.056,159808 |  |
+| VCLA12 | ANBIMA — PU pela taxa indicativa de D | 1.106,604460 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **14:16** — *Gestora — relações com investidores* — **Evento com cotistas**: Favor provisionar no fundo a despesa do evento anual com cotistas, R$ 7.917,39 (NF do buffet em anexo).
+- **10:29** — *Custodiante — eventos* — **Aviso de desdobramento**: Aviso: desdobramento 1:2 de JZEL3 com data "ex" na próxima semana. (Informativo a todos os clientes de custódia.)
+- **18:26** — *Gestora — mesa* — **Operação para amanhã**: Pessoal, amanhã (28/07/2026) vamos zerar parte da posição em LFT. Hoje não tem boleta.
 
 ## 5. Batimento Alfa × Beta
 
@@ -99,34 +100,34 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 3,27222472 | 3,27224535 | 0,00002063 |
-| Quantidade final de cotas | 394.822.108,24622977 | 394.822.099,02168660 | -9,22454315 |
-| PL final | R$ 1.291.946.662,61 | R$ 1.291.954.777,60 | R$ 8.114,99 |
-| Caixa | R$ 7.892.478,83 | R$ 7.892.478,83 | R$ 0,00 |
-| Total de provisões | R$ 1.275.601,97 | R$ 1.267.488,58 | R$ -8.113,39 |
+| Cota de fechamento | 4,45506182 | 4,45506182 | 0,00000000 |
+| Quantidade final de cotas | 369.849.106,73581237 | 369.849.106,73581237 | 0,00000000 |
+| PL final | R$ 1.647.700.634,58 | R$ 1.647.700.634,58 | R$ 0,00 |
+| Caixa | R$ 10.504.746,53 | R$ 10.504.746,53 | R$ 0,00 |
+| Total de provisões | R$ 1.245.941,77 | R$ 1.245.941,77 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| GASM13 — Debênture Gasodutos do Médio Norte S.A. — IPCA + 6,80% (incentivada Lei 12.431) | 201.572 | 201.572 | 998,733167 | 998,733167 | 201.316.641,94 | 201.316.641,94 | 0,00 | ANBIMA — taxa indicativa D |
-| RDCE13 — Debênture Rodovias do Cerrado S.A. — IPCA + 6,90% (incentivada Lei 12.431) | 269.532 | 269.532 | 976,730871 | 976,730871 | 263.260.225,12 | 263.260.225,12 | 0,00 | ANBIMA — taxa indicativa D |
-| SOLC12 — Debênture Solar Chapada S.A. — IPCA + 7,60% (incentivada Lei 12.431) | 213.273 | 213.273 | 1.089,160885 | 1.089,160885 | 232.288.609,43 | 232.288.609,43 | 0,00 | ANBIMA — taxa indicativa D |
-| FERR21 — Debênture Ferrovia Planalto Central S.A. — IPCA + 7,20% (incentivada Lei 12.431) | 161.180 | 161.180 | 1.152,935932 | 1.152,935932 | 185.830.213,52 | 185.830.213,52 | 0,00 | ANBIMA — taxa indicativa D |
-| EVSE11 — Debênture Eólica Ventos do Sertão S.A. — IPCA + 7,35% (incentivada Lei 12.431) | 188.593 | 188.593 | 1.149,578418 | 1.149,578418 | 216.802.442,59 | 216.802.442,59 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 6.699 | 6.699 | 18.493,533385 | 18.493,533385 | 123.888.180,15 | 123.888.180,15 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 76.240 | 76.240 | 812,479994 | 812,479994 | 61.943.474,74 | 61.943.474,74 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 1.285.329.787,49 | 1.285.329.787,49 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 22.878 | 22.878 | 18.362,000941 | 18.362,000941 | 420.085.857,53 | 420.085.857,53 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 166.089 | 166.089 | 809,374133 | 809,374133 | 134.428.140,38 | 134.428.140,38 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| CDB ARANDU 2030 — CDB Banco Arandu S.A. — 105% do CDI — venc. 2030 | 121.609 | 121.609 | 1.381,762231 | 1.381,762231 | 168.034.723,15 | 168.034.723,15 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 279.220 | 279.220 | 962,883008 | 962,883008 | 268.856.193,49 | 268.856.193,49 | 0,00 | ANBIMA — taxa indicativa D |
+| HBVI12 — Debênture Hospitalar Bem Viver S.A. — CDI + 1,95% | 221.333 | 221.333 | 1.062,875228 | 1.062,875228 | 235.249.362,84 | 235.249.362,84 | 0,00 | ANBIMA — taxa indicativa D |
+| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 190.920 | 190.920 | 1.056,159808 | 1.056,159808 | 201.642.030,54 | 201.642.030,54 | 0,00 | ANBIMA — taxa indicativa D |
+| VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 197.402 | 197.402 | 1.106,604460 | 1.106,604460 | 218.445.933,61 | 218.445.933,61 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 1.646.742.241,54 | 1.646.742.241,54 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 5.967.179,87 | 5.967.179,87 |
-| TED recebida — aplicação [APL-1] Cotista 0763 (10:41) | 4.787.784,78 | 4.787.784,78 |
-| Pagamento de resgate [LIQ-1] — Cotista 0770 (cotizado em 07/05/2026) | -900.948,36 | -900.948,36 |
-| Pagamento de resgate [LIQ-2] — Cotista 0777 (cotizado em 07/05/2026) | -1.961.537,46 | -1.961.537,46 |
-| **Saldo final** | 7.892.478,83 | 7.892.478,83 |
+| Saldo inicial (D−1) | 2.658.197,69 | 2.658.197,69 |
+| TED recebida — aplicação [APL-1] Cotista 2072 (13:01) | 2.477.943,47 | 2.477.943,47 |
+| TED recebida — aplicação [APL-2] Cotista 2079 (09:25) | 7.439.239,73 | 7.439.239,73 |
+| Pagamento de resgate [LIQ-1] — Cotista 2100 (cotizado em 24/07/2026) | -2.070.634,36 | -2.070.634,36 |
+| **Saldo final** | 10.504.746,53 | 10.504.746,53 |
 
 ### 5.4 Valores a receber
 
@@ -136,32 +137,22 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 4.787.784,78 | 4.787.784,78 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 9.917.183,20 | 9.917.183,20 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 75.088,42 | 75.088,42 | 3.066,25 | 3.066,25 | 0,00 | 0,00 | 78.154,67 | 78.154,67 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 1.088.073,02 | 1.088.073,02 | 44.985,07 | 44.789,07 | 0,00 | 0,00 | 1.133.058,09 | 1.132.862,09 | -196,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 24.497,89 | 24.497,89 | 1.022,29 | 1.022,29 | 0,00 | 0,00 | 25.520,18 | 25.520,18 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 23.523,81 | 23.523,81 | 226,19 | 226,19 | 0,00 | 0,00 | 23.750,00 | 23.750,00 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 140,00 | 140,00 | 35,00 | 35,00 | 0,00 | 0,00 | 175,00 | 175,00 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 900,00 | 900,00 | 225,00 | 225,00 | 0,00 | 0,00 | 1.125,00 | 1.125,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 5.665,57 | 5.665,57 | 236,07 | 236,07 | 0,00 | 0,00 | 5.901,64 | 5.901,64 | 0,00 |
-| DESP EVENTO — Despesa — evento de relacionamento com cotistas (gestora) | 0,00 | — | 7.917,39 | — | 0,00 | — | 7.917,39 | — | -7.917,39 |
-| **Total** |  |  |  |  |  |  | 1.275.601,97 | 1.267.488,58 | -8.113,39 |
+| TXADM — Taxa de administração a pagar | 69.165,38 | 69.165,38 | 3.916,23 | 3.916,23 | 0,00 | 0,00 | 73.081,61 | 73.081,61 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 1.047.590,42 | 1.047.590,42 | 56.557,60 | 56.557,60 | 0,00 | 0,00 | 1.104.148,02 | 1.104.148,02 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 36.308,37 | 36.308,37 | 1.958,41 | 1.958,41 | 0,00 | 0,00 | 38.266,78 | 38.266,78 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 21.714,29 | 21.714,29 | 226,19 | 226,19 | 0,00 | 0,00 | 21.940,48 | 21.940,48 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 547,83 | 547,83 | 30,43 | 30,43 | 0,00 | 0,00 | 578,26 | 578,26 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 3.521,74 | 3.521,74 | 195,65 | 195,65 | 0,00 | 0,00 | 3.717,39 | 3.717,39 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 3.987,69 | 3.987,69 | 221,54 | 221,54 | 0,00 | 0,00 | 4.209,23 | 4.209,23 | 0,00 |
+| **Total** |  |  |  |  |  |  | 1.245.941,77 | 1.245.941,77 | 0,00 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,06% a.a. sobre R$ 1.288.208.898,40 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.066,25 · Beta: [base: PL do dia útil anterior] 0,06% a.a. sobre R$ 1.288.208.898,40 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.066,25
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,88% a.a. sobre R$ 1.288.208.898,40 ÷ 252 (linear, dias úteis) = R$ 44.985,07 · Beta: [base: PL do dia útil anterior] 0,88% a.a. sobre R$ 1.288.208.898,40 fator exponencial (1+taxa)^(1/252) − 1 = R$ 44.789,07
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 1.288.208.898,40 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.022,29 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 1.288.208.898,40 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.022,29
-- **AUDIT** — Alfa: R$ 57.000,00 (anual) ÷ 252 d.u. = R$ 226,19 · Beta: R$ 57.000,00 (anual) ÷ 252 d.u. = R$ 226,19
-- **ANBIMA** — Alfa: R$ 700,00 (mensal) ÷ 20 d.u. = R$ 35,00 · Beta: R$ 700,00 (mensal) ÷ 20 d.u. = R$ 35,00
-- **SELIC** — Alfa: R$ 4.500,00 (mensal) ÷ 20 d.u. = R$ 225,00 · Beta: R$ 4.500,00 (mensal) ÷ 20 d.u. = R$ 225,00
-- **CVM** — Alfa: R$ 14.400,00 (trimestral) ÷ 61 d.u. = R$ 236,07 · Beta: R$ 14.400,00 (trimestral) ÷ 61 d.u. = R$ 236,07
-- **DESP EVENTO** — Alfa: Lançamento manual a pedido da gestora
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
@@ -169,30 +160,32 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 0763 | R$ 4.787.784,78 | 10:41 | 08/05/2026 | 08/05/2026 | 08/05/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 0770 | 275.107,63390915 cotas (R$ 900.948,36) |  | 07/04/2026 | 07/05/2026 | 08/05/2026 | não | não | cotizado em 07/05/2026 pela cota de 3,27489408; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 0777 | 598.962,10894955 cotas (R$ 1.961.537,46) |  | 07/04/2026 | 07/05/2026 | 08/05/2026 | não | não | cotizado em 07/05/2026 pela cota de 3,27489408; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista 2072 | R$ 2.477.943,47 | 13:01 | 27/07/2026 | 27/07/2026 | 27/07/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 2079 | R$ 7.439.239,73 | 09:25 | 27/07/2026 | 27/07/2026 | 27/07/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 2086 | 1.083.768,73934547 cotas |  | 10/07/2026 | 27/07/2026 | 28/07/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 2093 | 779.372,48228569 cotas |  | 10/07/2026 | 27/07/2026 | 28/07/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 2100 | 465.001,60975674 cotas (R$ 2.070.634,36) |  | 09/07/2026 | 24/07/2026 | 27/07/2026 | não | não | cotizado em 24/07/2026 pela cota de 4,45296171; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 1.285.329.787,49 | 1.285.329.787,49 | 0,00 |
-| Caixa | 7.892.478,83 | 7.892.478,83 | 0,00 |
+| Total de ativos | 1.646.742.241,54 | 1.646.742.241,54 | 0,00 |
+| Caixa | 10.504.746,53 | 10.504.746,53 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 4.787.784,78 | 4.787.784,78 | 0,00 |
-| Provisões | 1.275.601,97 | 1.267.488,58 | -8.113,39 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.287.216.592,83 | 1.287.216.592,83 | 0,00 |
-| PL base da cota | 1.287.158.879,57 | 1.287.166.992,96 | 8.113,39 |
-| Cota (8 casas) | 3,27222472 | 3,27224535 | 0,00002063 |
-| Aplicações convertidas | 4.787.784,78 | 4.787.784,78 | 0,00 |
-| Cotas emitidas | 1.463.158,91776528 | 1.463.149,69322211 | -9,22454317 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 9.917.183,20 | 9.917.183,20 | 0,00 |
+| Provisões | 1.245.941,77 | 1.245.941,77 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.646.146.969,15 | 1.646.146.969,15 | 0,00 |
+| PL base da cota | 1.646.083.863,10 | 1.646.083.863,10 | 0,00 |
+| Cota (8 casas) | 4,45506182 | 4,45506182 | 0,00000000 |
+| Aplicações convertidas | 9.917.183,20 | 9.917.183,20 | 0,00 |
+| Cotas emitidas | 2.226.048,39184924 | 2.226.048,39184924 | 0,00000000 |
+| Cotas resgatadas | 1.863.141,22163116 | 1.863.141,22163116 | 0,00000000 |
+| Valor dos resgates cotizados | 8.300.409,32 | 8.300.409,32 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 394.822.108,24622977 | 394.822.099,02168660 | -9,22454315 |
-| PL final | 1.291.946.662,61 | 1.291.954.777,60 | 8.114,99 |
+| Quantidade final de cotas | 369.849.106,73581237 | 369.849.106,73581237 | 0,00000000 |
+| PL final | 1.647.700.634,58 | 1.647.700.634,58 | 0,00 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -200,53 +193,49 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO
+**Parecer:** APROVADO
 
-**Resumo:** Reprovar até o ajuste: taxa de gestão com método linear; Despesa de evento da gestora lançada no fundo.
+**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
 
-**Dificuldade:** media · **Cenários:** metodo_exponencial_vs_linear, despesa_nao_prevista
+**Dificuldade:** media · **Cenários:** tudo_bate_com_ruido
 
-### Achado 1: taxa de gestão com método linear
+### Régua v1 (provisória) — medidas deste caso
 
-- **Gravidade:** erro · **Dimensões:** provisoes
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa apropria a taxa de gestão pelo método linear (taxa/252); o regulamento prevê o exponencial.
-- **Onde olhar:** Provisões — TXGES; Regulamento — método de apropriação
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 0,00 cotas equivalentes (quantidade 0,00; PL 0,00) | 250 cotas | dentro |
+| Caixa | R$ 0,00 | sem tolerância | bate |
+| Provisões | maior diferença R$ 0,00; total R$ 0,00 | R$ 100,00 por provisão e no total | dentro |
+
+### Achado 1: Comunicações do dia não afetam a cota de D
+
+- **Gravidade:** informativo · **Dimensões:** nenhuma
+- **Lado correto:** nenhum · **Quem ajusta:** ninguém
+- **Causa raiz:** Não há divergência; as mensagens recebidas tratam de eventos futuros, de ativos fora da carteira ou são lembretes.
+- **Onde olhar:** Comunicações recebidas; Carteira dos dois lados
 - **Raciocínio do analista:**
-  1. Diferença pequena e constante na apropriação de taxa de gestão, sempre na mesma direção.
-  2. Testei os dois métodos sobre o PL de D−1: o linear e o exponencial geram exatamente os dois valores encontrados. O regulamento define qual vale.
-  3. Mesmo pequena, é diferença de parametrização: acumula e pode gerar questionamento de cobrança acima do regulamento.
-- **Ação:** Alfa deve alinhar o método ao regulamento.
-
-### Achado 2: Despesa de evento da gestora lançada no fundo
-
-- **Gravidade:** erro · **Dimensões:** provisoes
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa provisionou R$ 7.917,39 de despesa de evento de relacionamento a pedido da gestora. O regulamento diz que esse tipo de gasto não é encargo da classe.
-- **Onde olhar:** Provisões — linha nova; Regulamento — encargos / não encargos; Comunicações — pedido da gestora
-- **Raciocínio do analista:**
-  1. O Alfa tem uma provisão que o Beta não tem: "evento de relacionamento" de R$ 7.917,39.
-  2. O regulamento classifica despesas de marketing, eventos e relacionamento da gestora como NÃO encargo. O pedido da gestora não muda o regulamento.
-- **Ação:** Alfa deve estornar a provisão e reprocessar. Responder à gestora que a despesa é dela.
+  1. Li as comunicações do dia e conferi se alguma delas exigia reflexo em D: nenhuma se refere a operação ou evento com efeito na data-base (são eventos futuros, ativos que o fundo não tem, ou dúvidas/lembretes).
+  2. Como os dois lados batem linha a linha e as apropriações conferem com o regulamento, não há motivo para segurar a cota.
+- **Ação:** Nenhuma ação sobre a cota. Responder ao remetente, se for o caso.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
+| cota | ambos |
 | caixa | ambos |
-| provisoes | Beta |
+| provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 3,27224535 |
-| Quantidade final de cotas | 394.822.099,02168660 |
-| PL final | R$ 1.291.954.777,60 |
-| Caixa | R$ 7.892.478,83 |
-| Total de provisões | R$ 1.267.488,58 |
+| Cota | 4,45506182 |
+| Quantidade final de cotas | 369.849.106,73581237 |
+| PL final | R$ 1.647.700.634,58 |
+| Caixa | R$ 10.504.746,53 |
+| Total de provisões | R$ 1.245.941,77 |
 
 ### Armadilhas deste caso
 
-- Pedido da gestora não muda o regulamento; despesa só é encargo se prevista (e, se exigido, aprovada e documentada).
+- Comunicações alarmantes nem sempre afetam a data-base: separar o que tem efeito em D do que é evento futuro, ativo que o fundo não tem ou lembrete.

@@ -1083,11 +1083,31 @@
         "raciocinio": [
           "O IR do Beta é R$ 382.800,19 contra R$ 510.400,25 do Alfa, e a razão entre os dois é 0,7500, igual a 15% ÷ 20%. A diferença é só de alíquota.",
           "Pelo regulamento, a alíquota é 15% se o prazo médio da carteira em D passar de 365 dias e 20% se for de até 365. O prazo médio informado é 95 dias: até 365, então 20%.",
-          "Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 9,75408209)) com 20%: bate com o Alfa."
+          "Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 9,75408209)) com 20%: bate com o Alfa.",
+          "Régua v1 (provisória) — cota: diferença de 13.081,71 cotas equivalentes (a maior entre 13.081,71 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve refazer o come-cotas com 20% (IR de R$ 510.400,25 e 52.326,83560486 cotas retiradas)."
+        "acao": "Beta deve refazer o come-cotas com 20% (IR de R$ 510.400,25 e 52.326,83560486 cotas retiradas). Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 13081.70864492,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 13081.70864492,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 72733327.82,
       "caixa": 976728.79,

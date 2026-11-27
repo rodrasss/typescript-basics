@@ -35,6 +35,8 @@ Casos respondidos: 24
 | caso-150 | provisao_nao_baixada_apos_pagamento+debito_em_duplicidade | REPROVADO | REPROVADO | 1/2 | 2 |
 
 
+> **Nota:** esta rodada é anterior à régua de materialidade v1 ([`regua-materialidade.md`](../regua-materialidade.md)). Na época, qualquer diferença de cota, PL ou provisão reprovava; hoje existem limites (provisórios) para o que é variação normal.
+
 ## Como ler
 
 - 24 casos do dataset já corrigido na rodada 1 (mecanismos mais sensíveis: passivo, vigência de regras, performance, ambiguidade), resolvidos às cegas por 3 agentes. Nenhum caso foi perdido.

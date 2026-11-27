@@ -924,11 +924,31 @@
         "raciocinio": [
           "Em CT-04 (Cotista 6503) a cota de referência (10,75764435) é maior que a cota de D (10,59186534): não há ganho. O Alfa mostra IR de R$ -43.630,91 e -4.119,28480956 cotas (negativas, ou seja, devolvidas), e o Beta mostra zero.",
           "O regulamento diz que posição com cota abaixo da referência não gera retenção nem devolução de cotas. As demais posições batem nos dois lados.",
-          "Por isso a quantidade final do Alfa é 4.119,28480956 cotas maior que a do Beta."
+          "Por isso a quantidade final do Alfa é 4.119,28480956 cotas maior que a do Beta.",
+          "Régua v1 (provisória) — cota: diferença de 4.119,28 cotas equivalentes (a maior entre 4.119,28 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Alfa deve zerar o IR e as cotas de CT-04 e reprocessar (retirar 4.119,28480956 cotas indevidamente devolvidas)."
+        "acao": "Alfa deve zerar o IR e as cotas de CT-04 e reprocessar (retirar 4.119,28480956 cotas indevidamente devolvidas). Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 4119.28480956,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 4119.28480956,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 83307185.97,
       "caixa": 556177.5,

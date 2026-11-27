@@ -23,6 +23,8 @@ Casos respondidos: 12
 | cc-017 | cc_nao_aplicado+ajuste_liquidado_nao_baixado | REPROVADO* | REPROVADO | 2/2 | 0 |
 
 
+> **Nota:** esta rodada é anterior à régua de materialidade v1 ([`regua-materialidade.md`](../regua-materialidade.md)). Na época, qualquer diferença de cota, PL ou provisão reprovava; hoje existem limites (provisórios) para o que é variação normal.
+
 ## Como ler
 
 - 12 casos da sessão de come-cotas (um por cenário, mais casos corretos e com achado combinado), resolvidos às cegas por 2 agentes. Nenhum caso foi perdido.

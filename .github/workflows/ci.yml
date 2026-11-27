@@ -19,4 +19,4 @@ jobs:
       - run: npm test
       # o dataset versionado tem que ser exatamente o que o gerador produz
       - run: npm run gerar
-      - run: git diff --exit-code -- casos dataset.jsonl INDICE.md COBERTURA.md
+      - run: git diff --exit-code -- casos dataset.jsonl INDICE.md COBERTURA.md regua.json sessoes

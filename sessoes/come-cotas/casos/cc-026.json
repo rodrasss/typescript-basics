@@ -1010,11 +1010,31 @@
         "raciocinio": [
           "O Beta não processou o come-cotas hoje (quantidade de cotas 96.771,62212437 maior que a do Alfa), e o aviso das operações dele diz que está agendado para 29/05/2026.",
           "O regulamento fixa o penúltimo dia útil de maio, que é hoje (28/05/2026); o último dia útil é 29/05/2026. O agendamento está um dia depois do devido.",
-          "Recalculei o come-cotas (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 7,80702104)): R$ 755.498,09 de IR e 96.771,62212437 cotas retiradas, como no Alfa."
+          "Recalculei o come-cotas (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 7,80702104)): R$ 755.498,09 de IR e 96.771,62212437 cotas retiradas, como no Alfa.",
+          "Régua v1 (provisória) — cota: diferença de 96.771,62 cotas equivalentes (a maior entre 96.771,62 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve corrigir o calendário do fundo (penúltimo dia útil de maio e de novembro) e processar o come-cotas de hoje antes de fechar o passivo. Verificar os outros fundos com a mesma parametrização."
+        "acao": "Beta deve corrigir o calendário do fundo (penúltimo dia útil de maio e de novembro) e processar o come-cotas de hoje antes de fechar o passivo. Verificar os outros fundos com a mesma parametrização. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 96771.62212437,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 96771.62212437,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 162578344.85,
       "caixa": 1743675.88,

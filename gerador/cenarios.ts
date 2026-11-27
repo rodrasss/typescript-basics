@@ -912,7 +912,7 @@ const K01: Cenario = {
         `O resgate ${m.id}, cotizado em ${fmtData(m.cotizacao)}, liquida hoje (${c.reg.cotizacao.find((x) => x.startsWith('Resgate'))}) e saiu da conta. O Alfa não deu baixa.`,
         'É descasamento de registro, sem efeito na cota de hoje. Se não for corrigido, o Alfa vai tentar pagar de novo ou projetar um caixa que não existe.',
       ],
-      acao: `Alfa deve baixar o pagamento do resgate ${m.id} (caixa e passivo). Cota pode ser aprovada; acompanhar a regularização em D+1.`,
+      acao: `Alfa deve baixar o pagamento do resgate ${m.id} (caixa e passivo). O caixa precisa bater antes de acatar.`,
     }];
   },
 };
@@ -1075,7 +1075,7 @@ const K08: Cenario = {
         `O caixa do ${ladoErrado} está ${fmtR(a.valor)} maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.`,
         'Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.',
       ],
-      acao: `${ladoErrado} deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva.`,
+      acao: `${ladoErrado} deve reclassificar a compromissada para a carteira.`,
     }];
   },
 };
@@ -1110,7 +1110,7 @@ const K09: Cenario = {
         `Caixa do Alfa ${fmtR(p.pagamento)} maior; provisão de ${nomeTaxa(cod)} do Alfa ${fmtR(p.pagamento)} maior. As duas diferenças se anulam no PL.`,
         `Hoje está dentro do prazo de pagamento do regulamento (até o 5º dia útil) e o Beta mostra a saída. A apropriação do dia confere nos dois lados.`,
       ],
-      acao: `Alfa deve registrar o pagamento (caixa) e baixar a provisão. Cota aprovada com ressalva.`,
+      acao: `Alfa deve registrar o pagamento (caixa) e baixar a provisão.`,
       gravidade: 'ressalva',
     }];
   },
@@ -1166,7 +1166,7 @@ const K10: Cenario = {
         'Não há boleta de aplicação com esse valor nem cotista com esse documento. Pode ser aplicação sem boleta, devolução de algum prestador ou erro de terceiro.',
         'O tratamento do Beta (transitória, sem efeito no PL) é prudente. Converter em cotas ou reconhecer como receita sem saber a origem seria erro.',
       ],
-      acao: `Acionar passivo/distribuidor para identificar o remetente. Se ninguém reclamar no prazo, devolver ao remetente. O Alfa deve registrar a transitória. Cota pode sair; o caixa fica pendente até a identificação.`,
+      acao: `Acionar passivo/distribuidor para identificar o remetente. Se ninguém reclamar no prazo, devolver ao remetente. O Alfa deve registrar a transitória. O caixa fica pendente até a identificação.`,
       gravidade: 'pendencia',
     }];
   },
@@ -1197,7 +1197,7 @@ const K11: Cenario = {
         `A compra foi em ${fmtData(c.dAnterior)}. Ações liquidam em D+2, ou seja, ${fmtData(liq)}. Hoje o dinheiro ainda está na conta e a obrigação ainda existe.`,
         'Sem efeito na cota, mas o caixa projetado do Alfa subestima a liquidez de hoje e pode atrapalhar decisões de zeragem.',
       ],
-      acao: 'Alfa deve estornar a liquidação antecipada e manter a obrigação até D+2. Aprovação com ressalva.',
+      acao: 'Alfa deve estornar a liquidação antecipada e manter a obrigação até D+2.',
     }];
   },
 };
@@ -1709,4 +1709,4 @@ export const CENARIOS: Cenario[] = [
   P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14, P15, P20,
 ];
 export const porId = (id: string): Cenario => CENARIOS.find((c) => c.id === id)!;
-export { diaUtilAnterior, sortear, com, hora, outro, COME_COTAS };
+export { diaUtilAnterior, sortear, com, hora, outro, COME_COTAS, ativoLivre, usarAtivo, ativoDe, provDe };

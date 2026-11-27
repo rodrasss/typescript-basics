@@ -862,9 +862,11 @@
         "raciocinio": [
           "A cota é igual, mas a quantidade final de cotas do Alfa é 1.758.322,45777129 cotas menor, com R$ 5.638.871,02 de IR retido. O Beta não tem come-cotas.",
           "Hoje é dia de come-cotas para os fundos sujeitos a ele, mas o regulamento deste fundo diz: \"Classe de ações: sem come-cotas; IR de 15% no resgate\" e \"Este fundo não está sujeito ao come-cotas: o imposto é recolhido apenas no resgate, e o administrador não retira cotas em maio nem em novembro.\" O prazo médio da carteira (444 dias) só importa para fundos sujeitos ao come-cotas.",
-          "Reter IR e retirar cotas de um fundo isento tira cotas dos cotistas sem base legal."
+          "Reter IR e retirar cotas de um fundo isento tira cotas dos cotistas sem base legal.",
+          "Régua v1 (provisória) — cota: diferença de 1.758.322,46 cotas equivalentes (a maior entre 1.758.322,46 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Alfa deve estornar o come-cotas deste fundo (devolver 1.758.322,45777129 cotas) e tirar o fundo da rotina semestral."
+        "acao": "Alfa deve estornar o come-cotas deste fundo (devolver 1.758.322,45777129 cotas) e tirar o fundo da rotina semestral. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       },
       {
         "cenario": "compromissada_como_caixa",
@@ -881,11 +883,31 @@
         ],
         "raciocinio": [
           "O caixa do Alfa está R$ 15.888.461,75 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.",
-          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário."
+          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 15.888.461,75; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
-        "acao": "Alfa deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva."
+        "acao": "Alfa deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 1758322.4577713,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 1758322.4577713,
+      "difCaixa": 15888461.75,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 529600787.01,
       "caixa": 7371264.7,

@@ -1086,9 +1086,11 @@
         ],
         "raciocinio": [
           "O IR e as cotas retiradas do Beta são, em todas as posições tributadas, exatamente o dobro dos do Alfa: R$ 6.987.983,88 contra R$ 3.493.991,94, e 3.076.711,79516450 contra 1.538.355,89758225 cotas.",
-          "Recalculei (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 2,27125072)): o valor de uma única incidência é o do Alfa. A cota de referência passa a ser a cota de D depois da primeira incidência, então uma segunda não teria base; o dobro só pode ser reprocessamento."
+          "Recalculei (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 2,27125072)): o valor de uma única incidência é o do Alfa. A cota de referência passa a ser a cota de D depois da primeira incidência, então uma segunda não teria base; o dobro só pode ser reprocessamento.",
+          "Régua v1 (provisória) — cota: diferença de 1.538.355,90 cotas equivalentes (a maior entre 1.538.355,90 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve estornar a segunda incidência (devolver 1.538.355,89758225 cotas aos cotistas) e conferir se o IR a recolher também foi duplicado."
+        "acao": "Beta deve estornar a segunda incidência (devolver 1.538.355,89758225 cotas aos cotistas) e conferir se o IR a recolher também foi duplicado. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       },
       {
         "cenario": "compromissada_como_caixa",
@@ -1105,11 +1107,31 @@
         ],
         "raciocinio": [
           "O caixa do Beta está R$ 28.700.119,66 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.",
-          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário."
+          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 28.700.119,66; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
-        "acao": "Beta deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva."
+        "acao": "Beta deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 1538355.89758223,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 1538355.89758223,
+      "difCaixa": 28700119.66,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 309968514.72,
       "caixa": 1539571.47,

@@ -1,12 +1,12 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { gerarTodos, planejar, construirCaso } from '../gerador/gerar.ts';
+import { gerarTodos, planejar, construirCaso, GERAIS } from '../gerador/gerar.ts';
 import type { Caso } from '../gerador/gerar.ts';
 import { renderEntrada, renderGabarito } from '../gerador/render.ts';
-import { CENARIOS } from '../gerador/cenarios.ts';
 import { PERFIS } from '../gerador/catalogo.ts';
 import { ehDiaUtil, somaDias, somaDiasUteis, proximoUtil, diasUteisEntre } from '../gerador/util.ts';
-import { gravidadeEfetiva } from '../gerador/caso.ts';
+import { REGUA, REGUA_JSON } from '../gerador/regua.ts';
+import { readFileSync } from 'node:fs';
 
 let cache: Caso[] | null = null;
 const casos = (): Caso[] => (cache ??= gerarTodos(200, 2026));
@@ -31,7 +31,7 @@ test('cobertura: todos os tipos de fundo e todos os cenários aparecem', () => {
     const n = cs.filter((c) => c.fundo.tipo === t).length;
     assert.ok(n >= 8, `tipo ${t} com apenas ${n} casos`);
   }
-  for (const cen of CENARIOS) {
+  for (const cen of GERAIS) {
     const n = cs.filter((c) => c.gabarito.cenarios.includes(cen.id)).length;
     assert.ok(n >= 3, `cenário ${cen.id} com apenas ${n} casos`);
   }
@@ -41,7 +41,7 @@ test('mistura de resultados: aprova, reprova e deixa pendente; há casos limpos 
   const cs = casos();
   const cont = (f: (c: Caso) => boolean): number => cs.filter(f).length;
   const limpos = cont((c) => c.gabarito.cenarios.every((i) => i.startsWith('tudo_bate')));
-  assert.ok(limpos >= 30 && limpos <= 50, `casos limpos: ${limpos}`);
+  assert.ok(limpos >= 20 && limpos <= 40, `casos limpos: ${limpos}`);
   assert.ok(cont((c) => c.gabarito.parecer === 'REPROVADO') >= 50);
   assert.ok(cont((c) => c.gabarito.parecer === 'PENDENTE') >= 12);
   assert.ok(cont((c) => c.gabarito.parecer === 'APROVADO' && c.gabarito.ressalva) >= 15, 'poucas aprovações com ressalva');
@@ -91,13 +91,14 @@ test('casos limpos: Alfa e Beta idênticos nas três validações', () => {
 
 test('o gabarito é consistente com os números: o lado "correto" coincide com a posição correta', () => {
   for (const c of casos()) {
+    const proprias = (a: Caso['gabarito']['achados'][number]): string[] => a.dimensoes.filter((d) => !(a.dimensoesDerivadas ?? []).includes(d));
     const porDim = new Map<string, number>();
-    for (const a of c.gabarito.achados) for (const d of a.dimensoes) porDim.set(d, (porDim.get(d) ?? 0) + 1);
+    for (const a of c.gabarito.achados) for (const d of proprias(a)) porDim.set(d, (porDim.get(d) ?? 0) + 1);
     for (const a of c.gabarito.achados) {
       if (a.ladoCorreto !== 'Alfa' && a.ladoCorreto !== 'Beta') continue;
-      for (const d of a.dimensoes) {
+      for (const d of proprias(a)) {
         if (porDim.get(d) === 1) {
-          assert.equal(c.gabarito.corretoPorDimensao[d], a.ladoCorreto, `${c.id} (${a.cenario}) dimensão ${d}`);
+          assert.equal(c.gabarito.corretoPorDimensao[d as 'cota' | 'caixa' | 'provisoes'], a.ladoCorreto, `${c.id} (${a.cenario}) dimensão ${d}`);
         }
       }
     }
@@ -214,17 +215,6 @@ test('benchmark: o fator do CDI é compatível com o CDI do dia e o número de d
   assert.ok(conferidos >= 10, `poucos casos conferidos (${conferidos})`);
 });
 
-test('parecer: segue a regra do prompt (diferença de cota/PL/provisão é erro; só registro é ressalva)', () => {
-  for (const c of casos()) {
-    if (c.gabarito.parecer !== 'APROVADO') continue;
-    for (const a of c.gabarito.achados) {
-      const g = gravidadeEfetiva(a);
-      assert.ok(g === 'informativo' || g === 'ressalva', `${c.id}: APROVADO com achado de gravidade ${g}`);
-      if (a.dimensoes.includes('cota')) assert.ok(a.gravidade !== undefined, `${c.id}: achado de cota aprovado sem gravidade explícita`);
-    }
-  }
-});
-
 test('regulamento: a vigência nunca é posterior à data-base', () => {
   for (const c of casos()) {
     const [d, m, a] = c.regulamento.vigencia.slice(0, 10).split('/');
@@ -236,4 +226,51 @@ test('a marca de ressalva só existe quando o parecer é APROVADO', () => {
   for (const c of casos()) {
     if (c.gabarito.ressalva) assert.equal(c.gabarito.parecer, 'APROVADO', `${c.id}: ressalva com parecer ${c.gabarito.parecer}`);
   }
+});
+
+// ---------------------------------------------------------------------------------------------
+// Régua de materialidade v1 (provisória)
+// ---------------------------------------------------------------------------------------------
+
+test('régua: o parecer decorre das medidas do caso', () => {
+  for (const c of casos()) {
+    const m = c.gabarito.regua;
+    const acima = m.cota.acima || m.caixa.acima || m.provisoes.acima;
+    if (c.gabarito.parecer === 'APROVADO') assert.ok(!acima, `${c.id}: APROVADO com dimensão acima da régua`);
+    if (c.gabarito.parecer === 'REPROVADO') assert.ok(acima, `${c.id}: REPROVADO sem dimensão acima da régua`);
+    if (c.gabarito.parecer === 'PENDENTE') assert.ok(c.gabarito.achados.some((a) => a.gravidade === 'pendencia') && !c.gabarito.achados.some((a) => a.gravidade === 'erro'), `${c.id}: PENDENTE inconsistente`);
+    for (const a of c.gabarito.achados) assert.ok(['informativo', 'ressalva', 'pendencia', 'erro'].includes(a.gravidade!), `${c.id}: achado sem gravidade final`);
+  }
+});
+
+test('régua: caixa sem tolerância, cota abaixo de 250 e provisões até R$ 100 ficam dentro', () => {
+  for (const c of casos()) {
+    const m = c.gabarito.regua;
+    assert.equal(m.caixa.acima, m.difCaixa > REGUA.caixaToleranciaReais + 0.005, `${c.id}`);
+    assert.equal(m.cota.acima, m.difCotasEquivalentes >= REGUA.cotasMinimas, `${c.id}`);
+    assert.equal(m.provisoes.acima, m.maiorDifProvisao > REGUA.provisaoMaxReais || m.difTotalProvisoes > REGUA.provisaoMaxReais, `${c.id}`);
+  }
+});
+
+test('régua: os casos de fronteira caem do lado certo', () => {
+  const por = (id: string): Caso[] => casos().filter((c) => c.gabarito.cenarios[0] === id);
+  for (const c of por('reg_cota_dentro')) { assert.ok(c.gabarito.regua.difCotasEquivalentes < REGUA.cotasMinimas && !c.gabarito.regua.provisoes.acima, c.id); assert.equal(c.gabarito.parecer, 'APROVADO', c.id); assert.ok(c.gabarito.ressalva, c.id); }
+  for (const c of por('reg_cota_acima')) { assert.ok(c.gabarito.regua.difCotasEquivalentes >= REGUA.cotasMinimas, c.id); assert.equal(c.gabarito.parecer, 'REPROVADO', c.id); }
+  for (const c of por('reg_provisao_dentro')) { assert.ok(!c.gabarito.regua.provisoes.acima && !c.gabarito.regua.cota.acima, c.id); assert.equal(c.gabarito.parecer, 'APROVADO', c.id); assert.ok(c.gabarito.ressalva, c.id); }
+  for (const c of por('reg_provisao_acima')) { assert.ok(c.gabarito.regua.provisoes.acima, c.id); assert.equal(c.gabarito.parecer, 'REPROVADO', c.id); }
+  for (const c of por('reg_caixa_baixo')) { assert.ok(c.gabarito.regua.difCaixa > 0 && c.gabarito.regua.difCaixa < 10, c.id); assert.equal(c.gabarito.parecer, 'REPROVADO', `${c.id}: caixa não tem tolerância`); }
+  for (const c of por('reg_caixa_sem_causa')) { assert.equal(c.gabarito.parecer, 'REPROVADO', c.id); assert.equal(c.gabarito.achados[0].ladoCorreto, 'indeterminado', c.id); }
+  for (const id of ['reg_cota_dentro', 'reg_cota_acima', 'reg_provisao_dentro', 'reg_provisao_acima', 'reg_caixa_baixo', 'reg_caixa_sem_causa']) assert.ok(por(id).length >= 3, `${id} com poucos casos`);
+});
+
+test('régua: os documentos e o regua.json citam os mesmos números do código', () => {
+  const doc = (f: string): string => readFileSync(new URL(`../${f}`, import.meta.url), 'utf8');
+  for (const f of ['prompt-agente.md', 'metodologia-analista.md', 'regua-materialidade.md']) {
+    const txt = doc(f);
+    assert.ok(txt.includes(String(REGUA.cotasMinimas)), `${f}: não cita ${REGUA.cotasMinimas} cotas`);
+    assert.ok(new RegExp(`R\\$ ?${REGUA.provisaoMaxReais}\\b`).test(txt), `${f}: não cita R$ ${REGUA.provisaoMaxReais}`);
+    assert.ok(/provisória|provisório/i.test(txt), `${f}: não deixa claro que a régua é provisória`);
+  }
+  const json = JSON.parse(doc('regua.json'));
+  assert.deepEqual(json, JSON.parse(JSON.stringify(REGUA_JSON)));
 });

@@ -16,6 +16,9 @@ import type { Ctx, Fundo, Regulamento, Mercado, Comunicacao, Achado, Gravidade }
 import { calcular, clonar } from './modelo.ts';
 import type { Posicao, Resultado, Dimensao, LadoId } from './modelo.ts';
 import { CENARIOS } from './cenarios.ts';
+import { CENARIOS_REGUA } from './cenarios-regua.ts';
+import { medirRegua, gravidadeFinal, linhaRegua, sufixoAcao, REGUA, REGUA_JSON } from './regua.ts';
+import type { MedidasRegua } from './regua.ts';
 import { CENARIOS_CC, DATAS_COME_COTAS } from './cenarios-come-cotas.ts';
 import type { Cenario } from './cenarios.ts';
 import { compor } from './historia.ts';
@@ -34,6 +37,7 @@ export interface Gabarito {
   resumo: string;
   dificuldade: Dificuldade;
   achados: Achado[];
+  regua: MedidasRegua;
   valoresCorretos: LadoSaida['resultado'] | null;
   corretoPorDimensao: Record<Dimensao, CertoPorDimensao>;
   diferencas: Diferencas;
@@ -57,7 +61,9 @@ export interface Caso {
 }
 
 // ------------------------------------------------------------------ regras de composição
-const porId = (id: string): Cenario => (CENARIOS.find((c) => c.id === id) ?? CENARIOS_CC.find((c) => c.id === id))!;
+/** Cenários do dataset geral: situações de divergência e os casos de fronteira da régua de materialidade. */
+export const GERAIS: Cenario[] = [...CENARIOS, ...CENARIOS_REGUA];
+const porId = (id: string): Cenario => (GERAIS.find((c) => c.id === id) ?? CENARIOS_CC.find((c) => c.id === id))!;
 
 const TAGS: Record<string, string[]> = {
   cc_nao_aplicado: ['cc', 'passivo'], cc_calendario_ultimo_dia: ['cc', 'passivo'], cc_isento_tributado: ['cc', 'passivo'], cc_aliquota_errada: ['cc', 'passivo'],
@@ -95,12 +101,14 @@ const TAGS: Record<string, string[]> = {
   boleta_tardia_nao_processada: ['lft'],
 };
 const SO_PRIMARIO = new Set([
-  'tudo_bate', 'tudo_bate_com_ruido', 'cc_correto', 'arredondamento_vs_truncamento', 'erros_que_se_compensam', 'ambos_com_taxa_antiga',
+  'tudo_bate', 'tudo_bate_com_ruido', 'cc_correto', 'reg_cota_dentro', 'reg_cota_acima', 'reg_provisao_dentro', 'reg_provisao_acima', 'reg_caixa_baixo', 'reg_caixa_sem_causa', 'arredondamento_vs_truncamento', 'erros_que_se_compensam', 'ambos_com_taxa_antiga',
   'performance_sem_reversao', 'performance_data_base_errada', 'performance_sem_linha_dagua', 'ativo_iliquido_sem_referencia',
 ]);
 const LIMPOS = new Set(['tudo_bate', 'tudo_bate_com_ruido', 'cc_correto']);
 // classe de gravidade do cenário primário: 0 = só ressalva, 1 = pendência, 2 = erro (reprova)
-const CLASSE_RESSALVA = new Set(['resgate_liquidado_nao_baixado', 'dividendo_recebido_nao_baixado', 'ajuste_liquidado_nao_baixado', 'compromissada_como_caixa', 'pagamento_taxa_nao_registrado', 'liquidacao_compra_antecipada']);
+const CLASSE_RESSALVA = new Set(['reg_cota_dentro', 'reg_provisao_dentro']);
+/** cenários de caixa que não mexem na cota: na sessão de come-cotas podem acompanhar o erro principal sem alterar a conta */
+const CAIXA_NEUTRO = new Set(['resgate_liquidado_nao_baixado', 'dividendo_recebido_nao_baixado', 'ajuste_liquidado_nao_baixado', 'compromissada_como_caixa', 'pagamento_taxa_nao_registrado', 'liquidacao_compra_antecipada']);
 const CLASSE_PENDENCIA = new Set(['ativo_iliquido_sem_referencia', 'tarifa_bancaria_indevida', 'debito_em_duplicidade', 'credito_nao_identificado']);
 const classe = (id: string): number => (CLASSE_RESSALVA.has(id) ? 0 : CLASSE_PENDENCIA.has(id) ? 1 : 2);
 const FOLGA_VARIACAO: Record<string, number> = {
@@ -109,6 +117,12 @@ const FOLGA_VARIACAO: Record<string, number> = {
 };
 
 const ARMADILHAS: Record<string, string> = {
+  reg_cota_dentro: 'Diferença pequena nem sempre reprova: converta a diferença em cotas equivalentes e compare com a régua (250) antes de decidir.',
+  reg_cota_acima: 'Perto do limite: calcule a diferença em cotas equivalentes; a partir de 250 reprova.',
+  reg_provisao_dentro: 'Até R$ 100 por provisão e no total é variação normal: aprovar com ressalva, sem reprovar por reflexo.',
+  reg_provisao_acima: 'Acima de R$ 100 numa provisão reprova, mesmo que a cota quase não se mexa.',
+  reg_caixa_baixo: 'Caixa não tem tolerância: mesmo uma diferença de poucos reais reprova até o caixa bater.',
+  reg_caixa_sem_causa: 'Caixa divergente sem causa localizada nas movimentações: recomendar a reprovação, sem escolher lado.',
   cc_correto: 'Dia de come-cotas não é sinônimo de erro: conferir data, alíquota e cada posição, e aprovar quando tudo confere.',
   cc_nao_aplicado: 'Cota igual, quantidade de cotas diferente: em dia de come-cotas, olhar a quantidade final e a tabela por cotista.',
   cc_calendario_ultimo_dia: 'O sintoma é o mesmo de "não processado", mas a causa é o calendário: o regulamento manda o penúltimo dia útil, não o último.',
@@ -173,17 +187,20 @@ const TODOS_TIPOS = Object.keys(PERFIS) as TipoFundo[];
 
 export function planejar(total: number, seed: number): Plano[] {
   const rng = criarRng(seed);
-  const nLimpos = Math.round(total * 0.2);
+  const nLimpos = Math.round(total * 0.12);
   const nDiv = total - nLimpos;
-  const divergentes = CENARIOS.filter((c) => !LIMPOS.has(c.id));
+  const divergentes = GERAIS.filter((c) => !LIMPOS.has(c.id));
   const lista: string[] = [];
   for (let i = 0; i < nLimpos; i++) lista.push(i % 2 === 0 ? 'tudo_bate' : 'tudo_bate_com_ruido');
-  // cenários "leves" (ressalva/pendência) aparecem mais, para o treino não ensinar a reprovar por reflexo
+  // cada cenário aparece o mesmo número de vezes; as sobras reforçam primeiro os casos leves (dentro da régua e pendências)
+  const base = Math.floor(nDiv / divergentes.length);
+  for (const c of divergentes) for (let i = 0; i < base; i++) lista.push(c.id);
+  // os casos "dentro da régua" são os que mais ensinam a não reprovar por reflexo: ganham reforço
+  for (const id of ['reg_cota_dentro', 'reg_provisao_dentro']) for (let i = 0; i < 2; i++) lista.push(id);
   const leves = divergentes.filter((c) => classe(c.id) < 2);
   const erros = divergentes.filter((c) => classe(c.id) === 2);
-  for (const c of [...leves, ...erros]) for (let i = 0; i < 3; i++) lista.push(c.id);
-  const extras = embaralhar(rng, leves); // as sobras reforçam os casos leves
-  for (let i = 0; lista.length < nLimpos + nDiv; i++) lista.push(extras[i % extras.length].id);
+  const prioridade = [...embaralhar(rng, leves), ...embaralhar(rng, erros)];
+  for (let i = 0; lista.length < nLimpos + nDiv; i++) lista.push(prioridade[i % prioridade.length].id);
   const ordem = embaralhar(rng, lista);
 
   const usoTipo = new Map<TipoFundo, number>(TODOS_TIPOS.map((t) => [t, 0]));
@@ -290,7 +307,7 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
   const escolhidos: Cenario[] = [primario];
   const sessao = plano.id.startsWith('cc-');
   const sec = SO_PRIMARIO.has(primario.id) ? 0 : sessao ? (chance(rng, 0.25) ? 1 : 0) : chance(rng, 0.7) ? (chance(rng, 0.3) ? 2 : 1) : 0;
-  const pool = embaralhar(rng, CENARIOS.filter((x) => !SO_PRIMARIO.has(x.id)));
+  const pool = embaralhar(rng, GERAIS.filter((x) => !SO_PRIMARIO.has(x.id)));
   const preparaveis = [...escolhidos];
   primario.preparar?.(c);
   for (const cand of pool) {
@@ -298,7 +315,7 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
     if (!tipoCompativel(cand, plano.tipo) || !dataCompativel(cand, plano.data)) continue;
     if (escolhidos.some((e) => conflita(e.id, cand.id))) continue;
     if (classe(primario.id) < 2 && classe(cand.id) > classe(primario.id)) continue; // mantém o caso leve leve
-    if (sessao && classe(cand.id) !== 0) continue; // na sessão, só achados que não mexem na cota: a conta do come-cotas fica exata
+    if (sessao && !CAIXA_NEUTRO.has(cand.id)) continue; // na sessão, só achados de caixa que não mexem na cota: a conta do come-cotas fica exata
     if (cand.aplicavel && !cand.aplicavel(c)) continue;
     escolhidos.push(cand);
     preparaveis.push(cand);
@@ -349,11 +366,34 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
   c.fundo.historia = h.historia;
   c.fundo.pistas = h.pistas;
 
+  // régua de materialidade: a gravidade de cada achado vem dos números (só pendência e informativo são fixados pelo cenário)
+  const medidas = medirRegua(lados.Alfa, lados.Beta, baseSaida);
+  // uma dimensão que estoura a régua precisa estar coberta por algum achado: o efeito derivado (por exemplo, a provisão de
+  // performance acompanhando a cota bruta) entra no achado principal, sem criar achado à parte
+  const cobertas = new Set(achados.flatMap((a) => a.dimensoes));
+  const faltam = (['cota', 'caixa', 'provisoes'] as const).filter((d) => medidas[d].acima && !cobertas.has(d));
+  const alvoDerivado = achados.find((a) => a.dimensoes.length > 0 && a.gravidade !== 'pendencia');
+  if (faltam.length && alvoDerivado) {
+    alvoDerivado.dimensoes = [...alvoDerivado.dimensoes, ...faltam];
+    alvoDerivado.dimensoesDerivadas = faltam;
+    alvoDerivado.raciocinio = [...alvoDerivado.raciocinio, `Efeito derivado do mesmo erro: a diferença também aparece em ${faltam.join(' e ')}.`];
+  }
+  for (const a of achados) {
+    const gr = gravidadeFinal(a, medidas);
+    a.gravidade = gr;
+    if (a.dimensoes.length) {
+      a.raciocinio = [...a.raciocinio, linhaRegua(a, medidas)];
+      const suf = sufixoAcao(gr);
+      if (suf) a.acao = `${a.acao} ${suf}`;
+    }
+  }
   const gravidades = achados.map(gravidadeEfetiva);
-  const pior = gravidades.length ? gravidades.reduce((a, g) => (GRAVIDADE_ORDEM[g] > GRAVIDADE_ORDEM[a] ? g : a), 'informativo' as Gravidade) : 'informativo';
+  const pior = gravidades.length ? gravidades.reduce((a, gr) => (GRAVIDADE_ORDEM[gr] > GRAVIDADE_ORDEM[a] ? gr : a), 'informativo' as Gravidade) : 'informativo';
   const parecer: Parecer = pior === 'erro' ? 'REPROVADO' : pior === 'pendencia' ? 'PENDENTE' : 'APROVADO';
-  // a marca de ressalva só existe quando o parecer é APROVADO; nos demais, o item aparece como achado de gravidade "ressalva"
+  // a marca de ressalva só existe quando o parecer é APROVADO: divergência dentro da régua, a registrar
   const ressalva = parecer === 'APROVADO' && pior === 'ressalva';
+  // na sessão de come-cotas, o erro principal tem que passar da régua (o objetivo é reconhecer a retirada indevida de cotas)
+  if (sessao && primario.id !== 'cc_correto' && parecer !== 'REPROVADO') throw new CasoInvalido('erro de come-cotas dentro da régua');
   const indeterminado = achados.some((a) => a.ladoCorreto === 'indeterminado');
 
   const caso: Caso = {
@@ -376,6 +416,7 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
       resumo: resumir(parecer, ressalva, achados),
       dificuldade: dificuldade(ids, achados, c),
       achados,
+      regua: medidas,
       valoresCorretos: indeterminado ? null : baseSaida.resultado,
       corretoPorDimensao,
       diferencas: diferencas(lados.Alfa.resultado, lados.Beta.resultado),
@@ -412,7 +453,7 @@ function dificuldade(ids: string[], achados: Achado[], c: Ctx): Dificuldade {
 function resumir(parecer: Parecer, ressalva: boolean, achados: Achado[]): string {
   if (!achados.length || achados.every((a) => a.ladoCorreto === 'nenhum' && a.gravidade === 'informativo')) return 'Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.';
   const t = achados.filter((a) => a.gravidade !== 'informativo').map((a) => a.titulo).join('; ');
-  const acao = parecer === 'REPROVADO' ? 'Reprovar até o ajuste' : parecer === 'PENDENTE' ? 'Deixar pendente e escalar' : ressalva ? 'Aprovar com ressalva' : 'Aprovar';
+  const acao = parecer === 'REPROVADO' ? 'Reprovar até o ajuste' : parecer === 'PENDENTE' ? 'Deixar pendente e escalar' : ressalva ? 'Aprovar com ressalva (dentro da régua)' : 'Aprovar';
   return `${acao}: ${t}.`;
 }
 
@@ -548,6 +589,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     gravar(casos, out);
     writeFileSync(join(out, '..', 'INDICE.md'), indiceMarkdown(casos));
     writeFileSync(join(out, '..', 'COBERTURA.md'), cobertura(casos));
+    writeFileSync(join(out, '..', 'regua.json'), JSON.stringify(REGUA_JSON, null, 2) + '\n');
     resumo(casos, 'Geral', out);
   }
   if (so === 'tudo' || so === 'come-cotas') {

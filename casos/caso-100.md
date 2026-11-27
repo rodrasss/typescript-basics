@@ -1,41 +1,35 @@
-# Caso caso-100 — Aroeira III FIC FIF Multimercado
+# Caso caso-100 — Saíra Família FIC FIF Ações Investimento no Exterior
 
-> **Data-base (D):** 05/11/2026 (quinta-feira) · **D−1:** 04/11/2026 · **Fundo:** FND-0100
+> **Data-base (D):** 31/08/2026 (segunda-feira) · **D−1:** 28/08/2026 · **Fundo:** FND-0100
 
 ## 1. O fundo
 
-O Aroeira III FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora de fundos de fundos (alocação) com comitê mensal de seleção, em São Paulo/SP. Criado em 07/01/2023, aloca em outros fundos multimercado e rebalanceia a carteira todo mês. Público-alvo: público geral. Hoje seus cotistas são clientes de um escritório de assessoria do interior paulista. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge. O gestor responsável é Isadora, e quem cuida da validação do fundo é Larissa. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (04/11/2026) o fundo tinha PL de R$ 57.571.396,39, cota de 4,39602276 e 13.096.246,17626376 cotas. Hoje, quinta-feira, 05/11/2026, é a data-base da validação.
+Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Saíra Família FIC FIF Ações Investimento no Exterior: a casa é uma gestora de ações globais que investe via fundos offshore. Criado em 11/12/2011, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: público geral. Hoje seus cotistas são clientes private com perfil arrojado e um FoF global. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Henrique, e quem cuida da validação do fundo é Lucas. Sobre a rotina: o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. O fundo converte ativos em dólar todo dia e já teve divergência de câmbio antes. No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 602.023.487,06, cota de 5,41632103 e 111.149.889,86354975 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | FIC Multimercado (fundo de fundos) |
-| Classe | Classe Multimercado — Investimento em Cotas |
+| Tipo | Investimento no Exterior (ações globais) |
+| Classe | Classe de Ações — Investimento no Exterior |
 | Condomínio | aberto |
-| Gestora | Garoa Investimentos (São Paulo/SP) |
-| PL em D−1 | R$ 57.571.396,39 |
-| Cota em D−1 | 4,39602276 |
-| Quantidade de cotas em D−1 | 13.096.246,17626376 |
+| Gestora | Lume Gestão de Recursos (São Paulo/SP) |
+| PL em D−1 | R$ 602.023.487,06 |
+| Cota em D−1 | 5,41632103 |
+| Quantidade de cotas em D−1 | 111.149.889,86354975 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,750% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-
-**Taxa de performance**
-
-- 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
-- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.
+- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,700% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 30.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
+- Auditoria independente: R$ 76.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +39,7 @@ O Aroeira III FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora d
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 59.948.155,57. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 597.590.325,40. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -66,44 +60,39 @@ O Aroeira III FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora d
 **Aplicação, resgate e cota**
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
+- Resgate: cotização em D+5 dias úteis após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
 - Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
-- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
+- Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Cotas de fundos investidos: cota de D divulgada pelo administrador do investido. Se não divulgada até 20h de D, usa-se a última cota disponível e a cota é reprocessada quando a de D for publicada.
+- Cotas de fundos no exterior: NAV oficial mais recente disponível até 18h de D, convertido pela PTAX de venda de D.
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 4,19480909 (cota da última cobrança efetiva, em 30/06/2026).
+- Ativos no exterior: NAV oficial mais recente disponível até 18h de D (em regra, o NAV de D−1), convertido pela PTAX de VENDA de D. NAV estimado ou indicativo não é aceito.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
+- PTAX de 31/08/2026: compra 5,4161 / venda 5,4167; PTAX de venda de 28/08/2026: 5,4764
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| COTA JURITI | Cota de D divulgada pelo administrador do investido | 5,36114494 | divulgada às 17:53 |
-| COTA CORUJA | Cota de D divulgada pelo administrador do investido | 7,40987943 | divulgada às 17:45 |
-| COTA POROROCA | Cota de D divulgada pelo administrador do investido | 6,10127773 | divulgada às 17:48 |
-| COTA CARAVELA | Cota de D divulgada pelo administrador do investido | 4,97380042 | divulgada às 19:19 |
-| COTA TIÊ | Cota de D divulgada pelo administrador do investido | 8,17292424 | divulgada às 17:50 |
-
-**Benchmark**
-
-- Fator acumulado do 100% do CDI de 30/06/2026 até 05/11/2026: 1,04784980
-- Fator acumulado do 100% do CDI de 03/07/2026 até 05/11/2026: 1,04620020
+| OFFSHORE POLARIS | NAV oficial de 28/08/2026 (último disponível) | USD 139,9554 |  |
+| OFFSHORE AUSTRAL | NAV oficial de 28/08/2026 (último disponível) | USD 231,0868 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.133,825562 |  |
+| PTAX | BCB — PTAX de 31/08/2026 | compra 5,4161 / venda 5,4167 |  |
+| PTAX | BCB — PTAX de 28/08/2026 | venda 5,4764 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **08:28** — *Gestora — operacional* — **Previsão de resgates**: Para a semana que vem, esperamos resgates um pouco acima da média por causa de rebalanceamento de um FoF. Só aviso.
 
 ## 5. Batimento Alfa × Beta
 
@@ -113,31 +102,30 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 4,41120901 | 4,40982506 | -0,00138395 |
-| Quantidade final de cotas | 13.004.652,90907070 | 13.004.652,90907070 | 0,00000000 |
-| PL final | R$ 57.366.242,08 | R$ 57.348.244,30 | R$ -17.997,78 |
-| Caixa | R$ 106.799,94 | R$ 106.799,94 | R$ 0,00 |
-| Total de provisões | R$ 106.188,13 | R$ 124.312,69 | R$ 18.124,56 |
+| Cota de fechamento | 5,38480210 | 5,38426826 | -0,00053384 |
+| Quantidade final de cotas | 110.799.408,37059349 | 110.799.414,20829113 | 5,83769764 |
+| PL final | R$ 596.632.886,87 | R$ 596.573.769,15 | R$ -59.117,72 |
+| Caixa | R$ 4.113.230,91 | R$ 21.968.974,67 | R$ 17.855.743,76 |
+| Total de provisões | R$ 485.558,27 | R$ 485.558,27 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 2.921 | 2.921 | 815,550522 | 815,550522 | 2.382.223,07 | 2.382.223,07 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| COTA JURITI — Cotas do Juriti Inflação FIF RF | 2.332.867,77395563 | 2.332.867,77395563 | 5,36114494 | 5,36114494 | 12.506.842,26 | 12.506.842,26 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
-| COTA CORUJA — Cotas do Coruja Quant FIF Multimercado | 1.446.737,50923806 | 1.446.737,50923806 | 7,40987943 | 7,40987943 | 10.720.150,51 | 10.720.150,51 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
-| COTA POROROCA — Cotas do Pororoca Ações FIF | 1.854.646,67046916 | 1.854.646,67046916 | 6,10127773 | 6,10127773 | 11.315.714,43 | 11.315.714,43 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
-| COTA CARAVELA — Cotas do Caravela Long Short FIF Multimercado | 2.514.544,45412413 | 2.514.544,45412413 | 4,97380042 | 4,97380042 | 12.506.842,26 | 12.506.842,26 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
-| COTA TIÊ — Cotas do Tiê Crédito FIF RF CP | 1.020.185,01536412 | 1.020.185,01536412 | 8,17292424 | 8,17292424 | 8.337.894,84 | 8.337.894,84 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
-| **Total** |  |  |  |  | 57.769.667,37 | 57.769.667,37 | 0,00 |  |
+| OFFSHORE POLARIS — Cotas do Polaris Emerging Markets Fund — Class I (USD) | 431.820,249259 | 431.820,249259 | USD 139,9554 × 5,4167 | USD 139,9554 × 5,4161 | 327.361.382,97 | 327.325.121,62 | -36.261,35 | NAV oficial mais recente × PTAX venda D |
+| OFFSHORE AUSTRAL — Cotas do Austral World Quality Fund — Class A (USD) | 166.426,653216 | 166.426,653216 | USD 231,0868 × 5,4167 | USD 231,0868 × 5,4161 | 208.320.880,07 | 208.297.804,67 | -23.075,40 | NAV oficial mais recente × PTAX venda D |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.298 | 2.298 | 18.133,825562 | 18.133,825562 | 41.671.531,14 | 41.671.531,14 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 21.992 | — | 811,919960 | — | 17.855.743,76 | — | -17.855.743,76 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 595.209.537,94 | 577.294.457,43 | -17.915.080,51 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 168.605,15 | 168.605,15 |
-| Pagamento de resgate [LIQ-1] — Cotista 0189 (cotizado em 04/11/2026) | -61.805,21 | -61.805,21 |
-| **Saldo final** | 106.799,94 | 106.799,94 |
+| Saldo inicial (D−1) | 3.796.181,52 | 3.796.181,52 |
+| TED recebida — aplicação [APL-1] Cotista 2681 (12:11) | 317.049,39 | 317.049,39 |
+| Saldo aplicado em compromissada over (classificado em disponibilidades) | — | 17.855.743,76 |
+| **Saldo final** | 4.113.230,91 | 21.968.974,67 |
 
 ### 5.4 Valores a receber
 
@@ -145,22 +133,30 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-Nenhum item.
+| Item | Alfa | Beta |
+|---|---|---|
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 317.049,39 | 317.049,39 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 3.243,42 | 3.243,42 | 137,07 | 137,07 | 0,00 | 0,00 | 3.380,49 | 3.380,49 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 40.494,52 | 40.494,52 | 1.713,43 | 1.713,43 | 0,00 | 0,00 | 42.207,95 | 42.207,95 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.034,68 | 1.034,68 | 45,69 | 45,69 | 0,00 | 0,00 | 1.080,37 | 1.080,37 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 5.833,33 | 5.833,33 | 119,05 | 119,05 | 0,00 | 0,00 | 5.952,38 | 5.952,38 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 94,74 | 94,74 | 47,37 | 47,37 | 0,00 | 0,00 | 142,11 | 142,11 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.003,23 | 2.003,23 | 87,10 | 87,10 | 0,00 | 0,00 | 2.090,33 | 2.090,33 | 0,00 |
-| PERF — Taxa de performance a pagar | 9.169,68 | 9.169,68 | 42.164,82 | 60.289,38 | 0,00 | 0,00 | 51.334,50 | 69.459,06 | 18.124,56 |
-| **Total** |  |  |  |  |  |  | 106.188,13 | 124.312,69 | 18.124,56 |
+| TXADM — Taxa de administração a pagar | 53.125,66 | 53.125,66 | 2.626,44 | 2.626,44 | 0,00 | 0,00 | 55.752,10 | 55.752,10 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 329.796,32 | 329.796,32 | 16.664,85 | 16.664,85 | 0,00 | 0,00 | 346.461,17 | 346.461,17 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 14.098,59 | 14.098,59 | 716,59 | 716,59 | 0,00 | 0,00 | 14.815,18 | 14.815,18 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 60.317,46 | 60.317,46 | 301,59 | 301,59 | 0,00 | 0,00 | 60.619,05 | 60.619,05 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 571,43 | 571,43 | 28,57 | 28,57 | 0,00 | 0,00 | 600,00 | 600,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 7.144,62 | 7.144,62 | 166,15 | 166,15 | 0,00 | 0,00 | 7.310,77 | 7.310,77 | 0,00 |
+| **Total** |  |  |  |  |  |  | 485.558,27 | 485.558,27 | 0,00 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 602.023.487,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.626,44 · Beta: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 602.023.487,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.626,44
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,70% a.a. sobre R$ 602.023.487,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 16.664,85 · Beta: [base: PL do dia útil anterior] 0,70% a.a. sobre R$ 602.023.487,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 16.664,85
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 602.023.487,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 716,59 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 602.023.487,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 716,59
+- **AUDIT** — Alfa: R$ 76.000,00 (anual) ÷ 252 d.u. = R$ 301,59 · Beta: R$ 76.000,00 (anual) ÷ 252 d.u. = R$ 301,59
+- **ANBIMA** — Alfa: R$ 600,00 (mensal) ÷ 21 d.u. = R$ 28,57 · Beta: R$ 600,00 (mensal) ÷ 21 d.u. = R$ 28,57
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 65 d.u. = R$ 166,15 · Beta: R$ 10.800,00 (trimestral) ÷ 65 d.u. = R$ 166,15
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
@@ -168,30 +164,30 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| RSG-1 | resgate | Cotista 0175 | 39.898,68233820 cotas |  | 06/10/2026 | 05/11/2026 | 06/11/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista 0182 | 51.694,58485486 cotas |  | 06/10/2026 | 05/11/2026 | 06/11/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 0189 | 14.059,34721882 cotas (R$ 61.805,21) |  | 05/10/2026 | 04/11/2026 | 05/11/2026 | não | não | cotizado em 04/11/2026 pela cota de 4,39602276; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista 2681 | R$ 317.049,39 | 12:11 | 31/08/2026 | 31/08/2026 | 31/08/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 2688 | 292.153,36064853 cotas |  | 24/08/2026 | 31/08/2026 | 02/09/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 2695 | 117.206,69165163 cotas |  | 24/08/2026 | 31/08/2026 | 02/09/2026 | sim | sim |  |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 57.769.667,37 | 57.769.667,37 | 0,00 |
-| Caixa | 106.799,94 | 106.799,94 | 0,00 |
+| Total de ativos | 595.209.537,94 | 577.294.457,43 | -17.915.080,51 |
+| Caixa | 4.113.230,91 | 21.968.974,67 | 17.855.743,76 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 106.188,13 | 124.312,69 | 18.124,56 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 57.823.763,39 | 57.823.763,39 | 0,00 |
-| PL base da cota | 57.770.279,18 | 57.752.154,62 | -18.124,56 |
-| Cota (8 casas) | 4,41120901 | 4,40982506 | -0,00138395 |
-| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
-| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Cotas resgatadas | 91.593,26719306 | 91.593,26719306 | 0,00000000 |
-| Valor dos resgates cotizados | 404.037,05 | 403.910,29 | -126,76 |
+| Valores a pagar | 317.049,39 | 317.049,39 | 0,00 |
+| Provisões | 485.558,27 | 485.558,27 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 598.540.665,38 | 598.481.328,63 | -59.336,75 |
+| PL base da cota | 598.520.161,19 | 598.460.824,44 | -59.336,75 |
+| Cota (8 casas) | 5,38480210 | 5,38426826 | -0,00053384 |
+| Aplicações convertidas | 317.049,39 | 317.049,39 | 0,00 |
+| Cotas emitidas | 58.878,55934389 | 58.884,39704153 | 5,83769764 |
+| Cotas resgatadas | 409.360,05230016 | 409.360,05230016 | 0,00000000 |
+| Valor dos resgates cotizados | 2.204.322,87 | 2.204.104,34 | -218,53 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 13.004.652,90907070 | 13.004.652,90907070 | 0,00000000 |
-| PL final | 57.366.242,08 | 57.348.244,30 | -17.997,78 |
+| Quantidade final de cotas | 110.799.408,37059349 | 110.799.414,20829113 | 5,83769764 |
+| PL final | 596.632.886,87 | 596.573.769,15 | -59.117,72 |
 
 _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
@@ -201,35 +197,57 @@ _PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Fator do benchmark de outra data-base.
+**Resumo:** Reprovar até o ajuste: Ativos no exterior convertidos com câmbio errado; Compromissada over dentro do caixa.
 
-**Dificuldade:** media · **Cenários:** performance_data_base_errada
+**Dificuldade:** media · **Cenários:** ptax_errada, compromissada_como_caixa
 
-### Achado 1: Fator do benchmark de outra data-base
+### Régua v1 (provisória) — medidas deste caso
 
-- **Gravidade:** erro · **Dimensões:** provisoes
+| Dimensão | Medida | Limite | Veredito |
+|---|---|---|---|
+| Cota | 11.019,85 cotas equivalentes (quantidade 5,84; PL 11.019,85) | 250 cotas | ACIMA |
+| Caixa | R$ 17.855.743,76 | sem tolerância | ACIMA |
+| Provisões | maior diferença R$ 0,00; total R$ 0,00 | R$ 100,00 por provisão e no total | dentro |
+
+### Achado 1: Ativos no exterior convertidos com câmbio errado
+
+- **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta corrigiu a cota de referência com o fator acumulado desde 03/07/2026, e não desde 30/06/2026 (data da última cobrança).
-- **Onde olhar:** Provisões — PERF (memória); Informações de mercado — fatores do benchmark; Regulamento — performance
+- **Causa raiz:** Beta converteu os ativos em USD pela PTAX de compra de D (5,4161), e não pela PTAX de venda de D (5,4167).
+- **Onde olhar:** Carteira — ativos no exterior (câmbio utilizado); Informações de mercado — PTAX; Regulamento — precificação no exterior
 - **Raciocínio do analista:**
-  1. A provisão de performance diverge, enquanto as outras taxas batem.
-  2. A cota de referência vale desde 30/06/2026, então o fator correto é o acumulado a partir dessa data (1,04784980). O Beta usou 1,04620020, que é o fator acumulado desde 03/07/2026.
-- **Ação:** Beta deve corrigir a data-base do benchmark e recalcular a performance.
+  1. A quantidade e o NAV em USD das cotas offshore são iguais nos dois lados; o que muda é o valor em reais.
+  2. Dividindo valor por quantidade e NAV, o câmbio implícito é 5,4167 no Alfa e 5,4161 no Beta. Esse número bate com a PTAX compra de D.
+  3. O regulamento manda usar a PTAX de venda de D.
+  4. Régua v1 (provisória) — cota: diferença de 11.019,85 cotas equivalentes (a maior entre 5,84 cotas de quantidade e 11.019,85 cotas de PL), contra o limite de 250: ACIMA.
+- **Ação:** Beta deve refazer a conversão com a PTAX venda de D (5,4167) e reprocessar a cota. Acima da régua: reprovar até o lado errado reprocessar.
+
+### Achado 2: Compromissada over dentro do caixa
+
+- **Gravidade:** erro · **Dimensões:** caixa
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta classificou a compromissada over (R$ 17.855.743,76) como disponibilidade em vez de ativo.
+- **Onde olhar:** Caixa; Carteira — compromissada
+- **Raciocínio do analista:**
+  1. O caixa do Beta está R$ 17.855.743,76 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.
+  2. Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.
+  3. Régua v1 (provisória) — caixa: diferença de R$ 17.855.743,76; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA.
+- **Ação:** Beta deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | Alfa |
-| caixa | ambos |
-| provisoes | Alfa |
+| caixa | Alfa |
+| provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 4,41120901 |
-| Quantidade final de cotas | 13.004.652,90907070 |
-| PL final | R$ 57.366.242,08 |
-| Caixa | R$ 106.799,94 |
-| Total de provisões | R$ 106.188,13 |
+| Cota | 5,38480210 |
+| Quantidade final de cotas | 110.799.408,37059349 |
+| PL final | R$ 596.632.886,87 |
+| Caixa | R$ 4.113.230,91 |
+| Total de provisões | R$ 485.558,27 |

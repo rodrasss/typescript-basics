@@ -872,11 +872,31 @@
         "raciocinio": [
           "A posição CT-01 está marcada como \"isento\" e o Beta não reteve nada dela; o Alfa reteve R$ 3.603.052,19 (689.044,49258778 cotas). As outras posições batem.",
           "O regulamento diz que cotistas isentos ou imunes não sofrem retenção.",
-          "Total de IR: R$ 10.516.789,81 no Alfa contra R$ 6.913.737,62 no Beta; a diferença é exatamente o IR de CT-01."
+          "Total de IR: R$ 10.516.789,81 no Alfa contra R$ 6.913.737,62 no Beta; a diferença é exatamente o IR de CT-01.",
+          "Régua v1 (provisória) — cota: diferença de 689.044,49 cotas equivalentes (a maior entre 689.044,49 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Alfa deve estornar a retenção de CT-01 (devolver 689.044,49258778 cotas) e corrigir o cadastro tributário do cotista."
+        "acao": "Alfa deve estornar a retenção de CT-01 (devolver 689.044,49258778 cotas) e corrigir o cadastro tributário do cotista. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 689044.49258777,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 689044.49258777,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 940684347.08,
       "caixa": 18366706.31,

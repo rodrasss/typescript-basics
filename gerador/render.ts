@@ -4,6 +4,7 @@ import type { Caso } from './gerar.ts';
 import type { Ativo, Posicao, Resultado, MovPassivo } from './modelo.ts';
 import { textoTaxa, gravidadeEfetiva } from './caso.ts';
 import { fmtR, fmtN, fmtPct, fmtData } from './util.ts';
+import { REGUA } from './regua.ts';
 
 const NA = '—';
 
@@ -253,6 +254,12 @@ export function renderGabarito(c: Caso): string {
   const g = c.gabarito;
   const L: string[] = ['## GABARITO (não faz parte da entrada)', ''];
   L.push(`**Parecer:** ${PARECER_TXT[g.parecer]}${g.ressalva ? ' (com ressalva)' : ''}`, '', `**Resumo:** ${g.resumo}`, '', `**Dificuldade:** ${g.dificuldade} · **Cenários:** ${g.cenarios.join(', ')}`, '');
+  const m = g.regua;
+  L.push(`### Régua ${m.versao} (provisória) — medidas deste caso`, '', tabela(['Dimensão', 'Medida', 'Limite', 'Veredito'], [
+    ['Cota', `${fmtN(m.difCotasEquivalentes, 2)} cotas equivalentes (quantidade ${fmtN(m.difQtdCotas, 2)}; PL ${fmtN(m.difPlEmCotas, 2)})`, `${REGUA.cotasMinimas} cotas`, m.cota.acima ? 'ACIMA' : 'dentro'],
+    ['Caixa', fmtR(m.difCaixa), 'sem tolerância', m.caixa.acima ? 'ACIMA' : 'bate'],
+    ['Provisões', `maior diferença ${fmtR(m.maiorDifProvisao)}; total ${fmtR(m.difTotalProvisoes)}`, `${fmtR(REGUA.provisaoMaxReais)} por provisão e no total`, m.provisoes.acima ? 'ACIMA' : 'dentro'],
+  ]), '');
   if (!g.achados.length) L.push('Sem achados.', '');
   g.achados.forEach((a, i) => {
     L.push(`### Achado ${i + 1}: ${a.titulo}`, '');

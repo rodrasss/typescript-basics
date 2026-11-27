@@ -1024,9 +1024,11 @@
         "raciocinio": [
           "A cota é igual nos dois lados, mas a quantidade final de cotas do Beta é 212.189,84935708 cotas maior, e a tabela de come-cotas dele está sem IR nem cotas retiradas.",
           "Hoje é o penúltimo dia útil de maio, dia de come-cotas pelo regulamento. Recalculei (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 5,67035178)): R$ 1.203.191,09 de IR e 212.189,84935708 cotas retiradas, que é o que o Alfa fez.",
-          "Sem o come-cotas, o IR não é retido no prazo e as posições dos cotistas ficam erradas."
+          "Sem o come-cotas, o IR não é retido no prazo e as posições dos cotistas ficam erradas.",
+          "Régua v1 (provisória) — cota: diferença de 212.189,85 cotas equivalentes (a maior entre 212.189,85 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve processar o come-cotas (212.189,84935708 cotas e R$ 1.203.191,09 de IR) antes de fechar o passivo."
+        "acao": "Beta deve processar o come-cotas (212.189,84935708 cotas e R$ 1.203.191,09 de IR) antes de fechar o passivo. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       },
       {
         "cenario": "ajuste_liquidado_nao_baixado",
@@ -1043,11 +1045,31 @@
         ],
         "raciocinio": [
           "O caixa difere em R$ 582.172,68, e o Beta tem um \"ajuste de D−1\" pendente no mesmo valor. PL e cota iguais.",
-          "O ajuste de D−1 liquida em D. É questão de baixa, sem efeito no PL."
+          "O ajuste de D−1 liquida em D. É questão de baixa, sem efeito no PL.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 582.172,68; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
-        "acao": "Beta deve baixar o ajuste de D−1 contra o caixa. Sem impacto na cota."
+        "acao": "Beta deve baixar o ajuste de D−1 contra o caixa. Sem impacto na cota. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 212189.84935708,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 212189.84935708,
+      "difCaixa": 582172.68,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 203016332.92,
       "caixa": 2013198.63,

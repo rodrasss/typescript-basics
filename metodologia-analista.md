@@ -49,17 +49,28 @@ Mesmo sem diferença entre os lados, conferir contra o regulamento: taxa vigente
 ### 6. Dimensionar
 Impacto em R$ no PL, em fração de cota e para o cotista (quem entra/sai pela cota errada). Dizer se **persiste** (provisão acumula, parametrização errada repete amanhã) ou é pontual.
 
-### 7. Decidir
+### 7. Decidir pela régua (v1, provisória)
+
+A régua de materialidade (veja `regua-materialidade.md`) diz o que é pequeno demais para reprovar. **Ela é provisória e muda com os casos de uso e as opiniões dos analistas**; os limites abaixo são os da v1.
+
+| Dimensão | Limite (v1) | Regra |
+|---|---|---|
+| Cota | 250 cotas equivalentes | Abaixo: dentro (ressalva). 250 ou mais: reprova. |
+| Caixa | sem tolerância | O caixa precisa estar batido antes de acatar. |
+| Provisões | R$ 100 por provisão e no total | Até R$ 100: dentro (ressalva). Acima: reprova. |
+
+- **Cota equivalente** = o maior entre |Δ quantidade final de cotas| e |Δ PL base| ÷ cota. Traduz diferença de preço, de PL ou de passivo em número de cotas.
+- **Caixa:** analise as **movimentações completas** do Alfa e compare linha a linha com as **movimentações completas** do Beta (saldo inicial, lançamentos do dia, saldo final), para achar a provável diferença no caixa de um dos lados. Achou: diga quem ajusta; REPROVADO até bater (PENDENTE se depende de terceiro). **Não achou: recomende a reprovação** e diga o que investigar (fechamento de D−1, extrato).
+- **Provisões:** recalcule cada uma com as regras do fundo (percentual, base, método, mínimo, faixas, vigência, performance, despesas fixas, taxa CVM, encargos). Meça cada provisão separadamente: diferenças que se compensam não escondem o erro.
+
 | Situação | Parecer |
 |---|---|
-| Nada diverge e as provisões conferem com o regulamento | **APROVADO** |
-| Diferença só de registro/classificação, sem efeito na cota, PL ou passivo | **APROVADO com ressalva** |
-| Há erro com efeito na cota, no PL, na quantidade de cotas ou no passivo, e a correção está clara | **REPROVADO** até o lado errado reprocessar |
+| Nada diverge | **APROVADO** |
+| Divergências todas dentro da régua | **APROVADO com ressalva** |
+| Alguma dimensão acima da régua, ou caixa divergente sem causa localizada | **REPROVADO** até o lado errado reprocessar |
 | A resposta depende de decisão ou informação externa (comitê, aprovação formal, identificação de remetente, estorno de terceiro) | **PENDENTE** e escalar |
 
-Com mais de um achado, vale o mais grave (erro > pendência > ressalva > informativo).
-
-**Sem tolerância de materialidade nesta versão:** qualquer diferença que mude a cota (8 casas), o PL, a quantidade de cotas ou o saldo de uma provisão é erro, por menor que seja. Provisão diferente muda o PL, então reprova. Só vira ressalva o que não mexe em cota, PL nem passivo (por exemplo, um item de caixa classificado errado, ou um pagamento registrado em um só dos lados, com caixa e provisão divergindo pelo mesmo valor e PL igual).
+Com mais de um achado vale o mais grave (reprovado > pendente > aprovado com ressalva). Um efeito derivado do mesmo erro (por exemplo, a provisão de performance acompanhando a cota bruta) conta: se ele estoura a régua, reprova. Devolva as **medidas** no campo `regua` da resposta: elas alimentam a calibração.
 
 ### 8. Formular a ação
 Quem ajusta, o que ajustar, com qual valor/fonte, e o que o analista do fundo deve saber (inclusive o que **não** precisa fazer). Se for um problema recorrente, sugerir a correção na origem (parametrização, cadastro, rotina).
@@ -118,4 +129,4 @@ Como reconhecer o erro pelo padrão da diferença:
 
 PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas); diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento, não achado.
 
-Em qualquer desses casos o parecer é **REPROVADO** (muda a quantidade de cotas e o PL final) e o lado errado reprocessa. Se tudo confere, aprove e diga o que conferiu (data, alíquota e cada posição).
+Em qualquer desses casos, se a diferença em cotas equivalentes chega a 250 (o que é comum, porque a retirada indevida mexe na quantidade de cotas), o parecer é **REPROVADO** e o lado errado reprocessa. Se tudo confere, aprove e diga o que conferiu (data, alíquota e cada posição).

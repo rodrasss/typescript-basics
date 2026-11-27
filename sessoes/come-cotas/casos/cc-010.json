@@ -982,9 +982,11 @@
         "raciocinio": [
           "O IR do Alfa é R$ 868.694,65 contra R$ 651.520,98 do Beta, e a razão entre os dois é 1,3333, igual a 20% ÷ 15%. A diferença é só de alíquota.",
           "Pelo regulamento, a alíquota é 15% se o prazo médio da carteira em D passar de 365 dias e 20% se for de até 365. O prazo médio informado é 464 dias: acima de 365, então 15%.",
-          "Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 3,44543574)) com 15%: bate com o Beta."
+          "Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 3,44543574)) com 15%: bate com o Beta.",
+          "Régua v1 (provisória) — cota: diferença de 63.032,28 cotas equivalentes (a maior entre 63.032,28 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Alfa deve refazer o come-cotas com 15% (IR de R$ 651.520,98 e 189.096,83104406 cotas retiradas)."
+        "acao": "Alfa deve refazer o come-cotas com 15% (IR de R$ 651.520,98 e 189.096,83104406 cotas retiradas). Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       },
       {
         "cenario": "dividendo_recebido_nao_baixado",
@@ -1002,11 +1004,31 @@
         ],
         "raciocinio": [
           "Caixa do Beta R$ 61.223,25 menor e valores a receber R$ 61.223,25 maiores. PL e cota iguais.",
-          "Os dividendos de JZEL3 foram pagos hoje. O recebível tem que virar caixa."
+          "Os dividendos de JZEL3 foram pagos hoje. O recebível tem que virar caixa.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 61.223,25; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
-        "acao": "Beta deve baixar o recebível e registrar o crédito. Sem impacto na cota; acompanhar em D+1."
+        "acao": "Beta deve baixar o recebível e registrar o crédito. Sem impacto na cota; acompanhar em D+1. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 63032.27991708,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 63032.27991708,
+      "difCaixa": 61223.25,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 79815168.89,
       "caixa": 381495.79,

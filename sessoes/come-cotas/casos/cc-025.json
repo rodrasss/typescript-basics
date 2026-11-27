@@ -875,11 +875,31 @@
         "raciocinio": [
           "A cota é igual nos dois lados, mas a quantidade final de cotas do Beta é 40.107,00163960 cotas maior, e a tabela de come-cotas dele está sem IR nem cotas retiradas.",
           "Hoje é o penúltimo dia útil de novembro, dia de come-cotas pelo regulamento. Recalculei (ganho = (cota de D − cota de referência) × cotas; IR = alíquota × ganho; cotas retiradas = IR ÷ cota de D (cota de D = 4,75092533)): R$ 190.545,37 de IR e 40.107,00163960 cotas retiradas, que é o que o Alfa fez.",
-          "Sem o come-cotas, o IR não é retido no prazo e as posições dos cotistas ficam erradas."
+          "Sem o come-cotas, o IR não é retido no prazo e as posições dos cotistas ficam erradas.",
+          "Régua v1 (provisória) — cota: diferença de 40.107,00 cotas equivalentes (a maior entre 40.107,00 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Beta deve processar o come-cotas (40.107,00163960 cotas e R$ 190.545,37 de IR) antes de fechar o passivo."
+        "acao": "Beta deve processar o come-cotas (40.107,00163960 cotas e R$ 190.545,37 de IR) antes de fechar o passivo. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 40107.0016396,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 40107.0016396,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 40531206.43,
       "caixa": 121712,

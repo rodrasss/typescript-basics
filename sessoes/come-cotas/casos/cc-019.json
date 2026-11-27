@@ -875,9 +875,11 @@
         ],
         "raciocinio": [
           "O IR é o mesmo nos dois lados (R$ 4.286.326,19), mas as cotas retiradas diferem: 993.290,09446826 no Alfa e 992.797,94495993 no Beta.",
-          "Pelo regulamento, cotas retiradas = IR ÷ cota de fechamento de D. Com a cota de D (4,31742049) o resultado é o do Beta; dividir pela cota de D−1 (4,31528132), que é menor, retira cotas a mais."
+          "Pelo regulamento, cotas retiradas = IR ÷ cota de fechamento de D. Com a cota de D (4,31742049) o resultado é o do Beta; dividir pela cota de D−1 (4,31528132), que é menor, retira cotas a mais.",
+          "Régua v1 (provisória) — cota: diferença de 492,15 cotas equivalentes (a maior entre 492,15 cotas de quantidade e 0,00 cotas de PL), contra o limite de 250: ACIMA."
         ],
-        "acao": "Alfa deve refazer a conversão pela cota de D e devolver 492,14950833 cotas aos cotistas."
+        "acao": "Alfa deve refazer a conversão pela cota de D e devolver 492,14950833 cotas aos cotistas. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       },
       {
         "cenario": "compromissada_como_caixa",
@@ -894,11 +896,31 @@
         ],
         "raciocinio": [
           "O caixa do Alfa está R$ 112.080.738,45 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.",
-          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário."
+          "Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 112.080.738,45; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
         ],
-        "acao": "Alfa deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva."
+        "acao": "Alfa deve reclassificar a compromissada para a carteira. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
       }
     ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 492.14950834,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 492.14950834,
+      "difCaixa": 112080738.45,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
     "valoresCorretos": {
       "totalAtivos": 448313498.04,
       "caixa": 6591274.36,

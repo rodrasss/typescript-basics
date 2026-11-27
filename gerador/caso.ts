@@ -70,6 +70,8 @@ export interface Impacto { lado: LadoId; dPL: number; dCota: number; dCaixa: num
 export interface Achado {
   cenario: string;
   dimensoes: Dimensao[];
+  /** dimensões acrescentadas porque o mesmo erro estoura a régua nelas (efeito derivado); não têm "lado correto" próprio */
+  dimensoesDerivadas?: Dimensao[];
   titulo: string;
   ladoCorreto: LadoId | 'nenhum' | 'indeterminado';
   ajustePor: string; // quem precisa agir
@@ -107,9 +109,9 @@ export interface Ctx {
   cotaHist: Record<string, number>;
 }
 
+/** Gravidade final do achado, já decidida pela régua de materialidade (veja regua.ts) ao montar o caso. */
 export function gravidadeEfetiva(a: Achado): Gravidade {
-  // qualquer diferença que mude a cota (8 casas), a quantidade de cotas ou o PL é erro; provisão diferente muda o PL
-  return a.gravidade ?? (a.dimensoes.includes('cota') || a.dimensoes.includes('provisoes') ? 'erro' : 'ressalva');
+  return a.gravidade ?? 'informativo';
 }
 
 export const TABELA_CVM = [
