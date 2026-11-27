@@ -61,7 +61,7 @@ Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com port
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -161,7 +161,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 130.170,77 | 136.621,28 | 6.450,51 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 212.350.134,62 | 212.339.243,81 | -10.890,81 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 212.350.134,62 | 212.339.243,81 | -10.890,81 |
 | PL base da cota | 212.341.426,93 | 212.324.085,61 | -17.341,32 |
 | Cota (8 casas) | 82,31818710 | 82,31146441 | -0,00672269 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

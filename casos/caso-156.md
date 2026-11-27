@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Murici III FIF Multimercado Crédito Privado — Classe Exclusiva: a casa é uma multi-family office que estrutura fundos exclusivos para famílias do agro. Criado em 13/07/2012, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são a holding patrimonial de uma família de industriais do Vale do Itajaí (SC). Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Sofia, e quem cuida da validação do fundo é Larissa. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo tem aplicações e resgates quase todos os dias. A equipe da gestora é considerada muito organizada. No fechamento de ontem (25/05/2026) o fundo tinha PL de R$ 100.466.474,79, cota de 3,72647944 e 26.960.158,08064305 cotas. Hoje, terça-feira, 26/05/2026, é a data-base da validação.
+Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Murici III FIF Multimercado Crédito Privado — Classe Exclusiva: a casa é uma multi-family office que estrutura fundos exclusivos para famílias do agro. Criado em 13/07/2012, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são a holding patrimonial de uma família de industriais do Vale do Itajaí (SC). Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Sofia, e quem cuida da validação do fundo é Larissa. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Os papéis de crédito do fundo pagam juros em datas diferentes ao longo do ano. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (25/05/2026) o fundo tinha PL de R$ 252.536.277,32, cota de 6,76760317 e 37.315.467,61946360 cotas. Hoje, terça-feira, 26/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,25 +12,25 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Murici III FIF Mul
 | Classe | Classe Multimercado — Exclusiva para investidor profissional |
 | Condomínio | aberto |
 | Gestora | Pedra Branca Gestão (Goiânia/GO) |
-| PL em D−1 | R$ 100.466.474,79 |
-| Cota em D−1 | 3,72647944 |
-| Quantidade de cotas em D−1 | 26.960.158,08064305 |
+| PL em D−1 | R$ 252.536.277,32 |
+| Cota em D−1 | 6,76760317 |
+| Quantidade de cotas em D−1 | 37.315.467,61946360 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,380% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,070% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,430% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 65.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 4.300,00 (mensal)
+- Auditoria independente: R$ 76.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 5.400,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Murici III FIF Mul
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 92.600.221,36. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 252.738.816,76. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,10 +60,10 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Murici III FIF Mul
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Classe exclusiva: tributação periódica semestral (come-cotas), no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -85,14 +85,18 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Murici III FIF Mul
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.244,282756 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.172,754368 |  |
-| PASU12 | ANBIMA — PU pela taxa indicativa de D | 981,082135 |  |
+| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.346,865196 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.413,525911 |  |
+| ATRI21 | ANBIMA — PU pela taxa indicativa de D | 1.008,959433 |  |
+
+**Eventos de ativos**
+
+- ATRI21: pagamento de juros em 26/05/2026 de R$ 53,600000 por título. O PU de referência de D já é "ex-juros".
 
 ## 4. Comunicações recebidas hoje
 
-- **16:57** — *Distribuidor* — **Material de divulgação**: Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.
-- **16:59** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -102,31 +106,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 3,72598611 | 3,72598611 | 0,00000000 |
-| Quantidade final de cotas | 26.789.090,52641028 | 26.983.282,05573484 | 194.191,52932456 |
-| PL final | R$ 99.815.779,20 | R$ 100.539.334,14 | R$ 723.554,94 |
-| Caixa | R$ 227.265,51 | R$ 227.265,51 | R$ 0,00 |
-| Total de provisões | R$ 72.199,62 | R$ 72.199,62 | R$ 0,00 |
+| Cota de fechamento | 6,77923380 | 6,83312185 | 0,05388805 |
+| Quantidade final de cotas | 37.396.956,64033845 | 37.242.169,03766093 | -154.787,60267752 |
+| PL final | R$ 253.522.712,47 | R$ 254.480.278,99 | R$ 957.566,52 |
+| Caixa | R$ 1.961.756,93 | R$ 3.972.614,53 | R$ 2.010.857,60 |
+| Total de provisões | R$ 128.936,42 | R$ 128.936,42 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 6.987 | 6.987 | 4.310,282536 | 4.310,282536 | 30.115.944,08 | 30.115.944,08 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.657 | 1.657 | 18.172,754368 | 18.172,754368 | 30.112.253,99 | 30.112.253,99 | 0,00 | ANBIMA — taxa indicativa D |
-| CDB YBYTU 2028 — CDB Banco Ybytu S.A. — 118% do CDI — venc. 2028 | 13.256 | 13.256 | 1.135,998373 | 1.135,998373 | 15.058.794,43 | 15.058.794,43 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 15.349 | 15.349 | 981,082135 | 981,082135 | 15.058.629,69 | 15.058.629,69 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 12.498 | 12.498 | 803,220213 | 803,220213 | 10.038.646,22 | 10.038.646,22 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 100.384.268,41 | 100.384.268,41 | 0,00 |  |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 17.144 | 17.144 | 4.415,752906 | 4.415,752906 | 75.703.667,82 | 75.703.667,82 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.111 | 4.111 | 18.413,525911 | 18.413,525911 | 75.698.005,02 | 75.698.005,02 | 0,00 | ANBIMA — taxa indicativa D |
+| CDB ITAPER 2027 — CDB Banco Itaperuna Fictício S.A. — 102% do CDI — venc. 2027 | 31.433 | 31.433 | 1.204,235819 | 1.204,235819 | 37.852.744,50 | 37.852.744,50 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| ATRI21 — Debênture Agroindustrial Três Rios S.A. — CDI + 2,30% | 37.516 | 37.516 | 1.008,959433 | 1.008,959433 | 37.852.122,09 | 37.852.122,09 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 31.058 | 31.058 | 812,508197 | 812,508197 | 25.234.879,58 | 25.234.879,58 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 252.341.419,01 | 252.341.419,01 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 309.024,33 | 309.024,33 |
-| TED recebida — aplicação [APL-1] Cotista único (10:26) | 86.159,61 | 86.159,61 |
-| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 25/05/2026) | -167.918,43 | -167.918,43 |
-| **Saldo final** | 227.265,51 | 227.265,51 |
+| Saldo inicial (D−1) | 757.797,00 | 757.797,00 |
+| TED recebida — aplicação [APL-1] Cotista único (09:08) | 596.199,69 | 596.199,69 |
+| TED recebida — aplicação [APL-2] Cotista único (09:23) | 607.760,24 | 607.760,24 |
+| Pagamento de juros — ATRI21 | — | 2.010.857,60 |
+| **Saldo final** | 1.961.756,93 | 3.972.614,53 |
 
 ### 5.4 Valores a receber
 
@@ -136,51 +141,54 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 86.159,61 | 86.159,61 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.203.959,93 | 1.203.959,93 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 5.776,89 | 5.776,89 | 358,81 | 358,81 | 0,00 | 0,00 | 6.135,70 | 6.135,70 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 23.856,95 | 23.856,95 | 1.514,97 | 1.514,97 | 0,00 | 0,00 | 25.371,92 | 25.371,92 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.278,59 | 1.278,59 | 79,74 | 79,74 | 0,00 | 0,00 | 1.358,33 | 1.358,33 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 31.210,32 | 31.210,32 | 257,94 | 257,94 | 0,00 | 0,00 | 31.468,26 | 31.468,26 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 880,00 | 880,00 | 55,00 | 55,00 | 0,00 | 0,00 | 935,00 | 935,00 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 3.440,00 | 3.440,00 | 215,00 | 215,00 | 0,00 | 0,00 | 3.655,00 | 3.655,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 3.186,89 | 3.186,89 | 88,52 | 88,52 | 0,00 | 0,00 | 3.275,41 | 3.275,41 | 0,00 |
-| **Total** |  |  |  |  |  |  | 72.199,62 | 72.199,62 | 0,00 |
+| TXADM — Taxa de administração a pagar | 11.248,01 | 11.248,01 | 701,49 | 701,49 | 0,00 | 0,00 | 11.949,50 | 11.949,50 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 68.864,74 | 68.864,74 | 4.309,15 | 4.309,15 | 0,00 | 0,00 | 73.173,89 | 73.173,89 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.573,41 | 1.573,41 | 100,21 | 100,21 | 0,00 | 0,00 | 1.673,62 | 1.673,62 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 31.666,67 | 31.666,67 | 301,59 | 301,59 | 0,00 | 0,00 | 31.968,26 | 31.968,26 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 800,00 | 800,00 | 50,00 | 50,00 | 0,00 | 0,00 | 850,00 | 850,00 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 4.320,00 | 4.320,00 | 270,00 | 270,00 | 0,00 | 0,00 | 4.590,00 | 4.590,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.603,28 | 4.603,28 | 127,87 | 127,87 | 0,00 | 0,00 | 4.731,15 | 4.731,15 | 0,00 |
+| **Total** |  |  |  |  |  |  | 128.936,42 | 128.936,42 | 0,00 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista único | R$ 86.159,61 | 10:26 | 26/05/2026 | 26/05/2026 | 26/05/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista único | 45.060,87596554 cotas (R$ 167.918,43) |  | 22/05/2026 | 25/05/2026 | 26/05/2026 | não | não | cotizado em 25/05/2026 pela cota de 3,72647944; liquidação financeira hoje |
-| RSG-NOVO | resgate | Cotista único | 194.191,52932456 cotas |  | 26/05/2026 | 27/05/2026 | 28/05/2026 | sim | não | pedido de resgate registrado hoje |
+| APL-1 | aplicacao | Cotista único | R$ 596.199,69 | 09:08 | 26/05/2026 | 26/05/2026 | 26/05/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista único | R$ 607.760,24 | 09:23 | 26/05/2026 | 26/05/2026 | 26/05/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista único | 96.106,25987796 cotas |  | 25/05/2026 | 26/05/2026 | 27/05/2026 | sim | sim |  |
+| RSG-NOVO | resgate | Cotista único | 153.387,03298492 cotas |  | 26/05/2026 | 27/05/2026 | 28/05/2026 | não | sim | pedido de resgate registrado hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 100.384.268,41 | 100.384.268,41 | 0,00 |
-| Caixa | 227.265,51 | 227.265,51 | 0,00 |
+| Total de ativos | 252.341.419,01 | 252.341.419,01 | 0,00 |
+| Caixa | 1.961.756,93 | 3.972.614,53 | 2.010.857,60 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 86.159,61 | 86.159,61 | 0,00 |
-| Provisões | 72.199,62 | 72.199,62 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 100.455.744,67 | 100.455.744,67 | 0,00 |
-| PL base da cota | 100.453.174,69 | 100.453.174,69 | 0,00 |
-| Cota (8 casas) | 3,72598611 | 3,72598611 | 0,00000000 |
-| Aplicações convertidas | 86.159,61 | 86.159,61 | 0,00 |
-| Cotas emitidas | 23.123,97509179 | 23.123,97509179 | 0,00000000 |
-| Cotas resgatadas | 194.191,52932456 | 0,00000000 | -194.191,52932456 |
-| Valor dos resgates cotizados | 723.554,94 | 0,00 | -723.554,94 |
+| Valores a pagar | 1.203.959,93 | 1.203.959,93 | 0,00 |
+| Provisões | 128.936,42 | 128.936,42 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 252.976.139,90 | 254.986.997,50 | 2.010.857,60 |
+| PL base da cota | 252.970.279,59 | 254.981.137,19 | 2.010.857,60 |
+| Cota (8 casas) | 6,77923380 | 6,83312185 | 0,05388805 |
+| Aplicações convertidas | 1.203.959,93 | 1.203.959,93 | 0,00 |
+| Cotas emitidas | 177.595,28075281 | 176.194,71106021 | -1.400,56969260 |
+| Cotas resgatadas | 96.106,25987796 | 249.493,29286288 | 153.387,03298492 |
+| Valor dos resgates cotizados | 651.526,81 | 1.704.818,07 | 1.053.291,26 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 26.789.090,52641028 | 26.983.282,05573484 | 194.191,52932456 |
-| PL final | 99.815.779,20 | 100.539.334,14 | 723.554,94 |
+| Quantidade final de cotas | 37.396.956,64033845 | 37.242.169,03766093 | -154.787,60267752 |
+| PL final | 253.522.712,47 | 254.480.278,99 | 957.566,52 |
 
 ---
 
@@ -188,36 +196,47 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Resgate de Cotista único cotizado antes da data.
+**Resumo:** Reprovar até o ajuste: Resgate de Cotista único cotizado antes da data; Juros de ATRI21 não registrados.
 
-**Dificuldade:** media · **Cenários:** resgate_cotizado_antecipadamente
+**Dificuldade:** media · **Cenários:** resgate_cotizado_antecipadamente, juros_credito_nao_registrados
 
 ### Achado 1: Resgate de Cotista único cotizado antes da data
 
 - **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa cotizou em D um pedido feito hoje, cuja cotização pelo regulamento é 27/05/2026.
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta cotizou em D um pedido feito hoje, cuja cotização pelo regulamento é 27/05/2026.
 - **Onde olhar:** Movimentações de passivo; Regulamento — prazo de cotização; Quantidade final de cotas
 - **Raciocínio do analista:**
-  1. A cota bate, mas o Alfa baixou 194.191,52932456 cotas a mais no fechamento.
+  1. A cota bate, mas o Beta baixou 153.387,03298492 cotas a mais no fechamento.
   2. O pedido de Cotista único foi feito em 26/05/2026. Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização. Ou seja, a cotização é em 27/05/2026, não hoje.
   3. Cotizar antes do prazo muda o valor recebido pelo cotista e fere a isonomia com os demais.
-- **Ação:** Alfa deve desfazer a cotização e reagendar o resgate para 27/05/2026.
+- **Ação:** Beta deve desfazer a cotização e reagendar o resgate para 27/05/2026.
+
+### Achado 2: Juros de ATRI21 não registrados
+
+- **Gravidade:** erro · **Dimensões:** caixa, cota
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa usou o PU "ex-juros" de ATRI21 mas não registrou a entrada dos juros (R$ 53,600000 × quantidade = R$ 2.010.857,60).
+- **Onde olhar:** Caixa — lançamentos; Carteira — ATRI21; Informações de mercado — agenda de eventos
+- **Raciocínio do analista:**
+  1. Ativos iguais (inclusive o PU de ATRI21), mas o caixa do Alfa tem R$ 2.010.857,60 a menos, e isso vai direto para o PL.
+  2. Hoje é dia de pagamento de juros de ATRI21. O PU de D já caiu pelo evento; quem não registrou a entrada perde os juros duas vezes: no preço e no caixa.
+- **Ação:** Alfa deve registrar o recebimento dos juros e reprocessar a cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
-| caixa | ambos |
+| cota | nenhum |
+| caixa | Beta |
 | provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 3,72598611 |
-| Quantidade final de cotas | 26.983.282,05573484 |
-| PL final | R$ 100.539.334,14 |
-| Caixa | R$ 227.265,51 |
-| Total de provisões | R$ 72.199,62 |
+| Cota | 6,83312185 |
+| Quantidade final de cotas | 37.395.556,07064585 |
+| PL final | R$ 255.528.391,28 |
+| Caixa | R$ 3.972.614,53 |
+| Total de provisões | R$ 128.936,42 |

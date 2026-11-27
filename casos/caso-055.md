@@ -62,7 +62,7 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Tucano II FIDC Re
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -169,7 +169,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 110.000,00 | 110.000,00 |
 | Provisões | 328.695,40 | 328.695,40 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 383.240.147,13 | 383.240.109,21 | -37,92 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 383.240.147,13 | 383.240.109,21 | -37,92 |
 | PL base da cota | 383.222.208,30 | 383.222.170,38 | -37,92 |
 | Cota (8 casas) | 1.185,28610293 | 1.185,28598564 | -0,00011729 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

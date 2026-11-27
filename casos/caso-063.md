@@ -61,7 +61,7 @@ O Imbuia II FII Responsabilidade Limitada é gerido pela Siriema Investimentos, 
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -161,7 +161,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 1.753.481,78 | 0,00 | -1.753.481,78 |
 | Provisões | 136.225,47 | 133.862,08 | -2.363,39 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 238.803.604,41 | 240.557.086,19 | 1.753.481,78 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 238.803.604,41 | 240.557.086,19 | 1.753.481,78 |
 | PL base da cota | 238.793.566,71 | 240.549.411,88 | 1.755.845,17 |
 | Cota (8 casas) | 88,51863792 | 89,16951401 | 0,65087609 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Maritaca Institucional FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 13/11/2010, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são dois fundos de crédito e uma seguradora. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O fundo mudou de sistema e a parametrização de casas decimais foi revisada. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. No fechamento de ontem (16/09/2026) o fundo tinha PL de R$ 251.959.104,37, cota de 1.226,91630421 e 205.359,65126875 cotas. Hoje, quinta-feira, 17/09/2026, é a data-base da validação.
+Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Maritaca Institucional FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 13/11/2010, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são dois fundos de crédito e uma seguradora. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O fundo mudou de sistema e a parametrização de casas decimais foi revisada. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. No fechamento de ontem (16/09/2026) o fundo tinha PL de R$ 251.959.104,37, cota de 1.226,91630421 e 205.359,65126875 cotas. Hoje, quinta-feira, 17/09/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -62,7 +62,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -172,7 +172,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 274.517,59 | 274.517,59 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 252.055.769,45 | 252.055.769,45 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 252.055.769,45 | 252.055.769,45 | 0,00 |
 | PL base da cota | 252.042.505,72 | 252.042.505,72 | 0,00 |
 | Cota (8 casas) | 1.227,32242757 | 1.227,32242756 | -0,00000001 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

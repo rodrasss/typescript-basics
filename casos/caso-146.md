@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem de ações, muito ativa em eventos societários e small caps, em Florianópolis/SC. Criado em 26/05/2014, monta posições compradas e vendidas em ações e usa o índice futuro para ajustar a exposição. Público-alvo: investidores qualificados. Hoje seus cotistas são um fundo de pensão fechado com 18% das cotas. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana. O gestor responsável é Otávio, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. Os resgates são pagos alguns dias depois da cotização, e o valor depende da cota certa. A carteira de ações tem pagadoras de dividendos relevantes. Sacados em atraso mudam de faixa praticamente todo dia. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (03/02/2026) o fundo tinha PL de R$ 48.934.951,33, cota de 5,23301932 e 9.351.188,72006125 cotas. Hoje, quarta-feira, 04/02/2026, é a data-base da validação.
+O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem de ações, muito ativa em eventos societários e small caps, em Florianópolis/SC. Criado em 26/05/2014, monta posições compradas e vendidas em ações e usa o índice futuro para ajustar a exposição. Público-alvo: investidores qualificados. Hoje seus cotistas são um fundo de pensão fechado com 18% das cotas. Ao longo da vida, o fundo teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Otávio, e quem cuida da validação do fundo é Pedro. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Os resgates são pagos alguns dias depois da cotização, e o valor depende da cota certa. A carteira de ações tem pagadoras de dividendos relevantes. No fechamento de ontem (03/02/2026) o fundo tinha PL de R$ 469.427.561,14, cota de 1,79860547 e 260.995.292,72377150 cotas. Hoje, quarta-feira, 04/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,30 +12,30 @@ O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem 
 | Classe | Classe Multimercado |
 | Condomínio | aberto |
 | Gestora | Marola Asset (Florianópolis/SC) |
-| PL em D−1 | R$ 48.934.951,33 |
-| Cota em D−1 | 5,23301932 |
-| Quantidade de cotas em D−1 | 9.351.188,72006125 |
+| PL em D−1 | R$ 469.427.561,14 |
+| Cota em D−1 | 1,79860547 |
+| Quantidade de cotas em D−1 | 260.995.292,72377150 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,190% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,540% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,150% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,820% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Taxa de performance**
 
 - 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
 - Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 78.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
+- Auditoria independente: R$ 70.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +45,7 @@ O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem 
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 44.952.907,12. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 446.488.309,33. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,10 +65,10 @@ O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem 
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -78,10 +78,11 @@ O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem 
 - Ações: preço de fechamento da B3 em D.
 - Eventos societários reconhecidos na data "ex".
 - Futuros: ajuste diário divulgado pela B3, liquidado em D+1.
+- Margem depositada em dinheiro na B3 é ativo da classe (valores dados em garantia).
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 5,01923794 (cota da última cobrança efetiva, em 31/12/2025).
+- Performance: cota de referência vigente = 1,73488999 (cota da última cobrança efetiva, em 31/12/2025).
 
 ## 3. Informações de mercado do dia
 
@@ -91,23 +92,19 @@ O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem 
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.232,171035 |  |
-| WQLA3 | B3 — preço de fechamento de D | 82,02 |  |
-| HZTA3 | B3 — preço de fechamento de D | 35,97 |  |
-| ZFRT3 | B3 — preço de fechamento de D | 13,20 |  |
-| YRBQ3 | B3 — preço de fechamento de D | 38,58 |  |
-| YKAP4 | B3 — preço de fechamento de D | 6,49 |  |
-| KQSA3 | B3 — preço de fechamento de D | 46,93 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.443,785121 |  |
+| QPLN3 | B3 — preço de fechamento de D | 14,66 |  |
+| KQSA3 | B3 — preço de fechamento de D | 55,06 |  |
+| WJMA4 | B3 — preço de fechamento de D | 45,52 |  |
+| JZEL3 | B3 — preço de fechamento de D | 37,48 |  |
+| WQLA3 | B3 — preço de fechamento de D | 67,35 |  |
+| YKAP4 | B3 — preço de fechamento de D | 89,28 |  |
 
 **Futuros (posição de D e ajuste do dia por contrato)**
 
 | Contrato | Quantidade (+comprado / −vendido) | Ajuste de D por contrato (R$) |
 |---|---|---|
-| INDJ26 | -96 | 494,47 |
-
-**Eventos de ativos**
-
-- HZTA3: dividendos de R$ 0,69 por ação; data-com 03/02/2026; negociação "ex" a partir de 04/02/2026; pagamento em 09/03/2026.
+| INDJ26 | -299 | 212,28 |
 
 **Benchmark**
 
@@ -115,8 +112,7 @@ O Baobá FIF Multimercado Long Short é gerido pela Marola Asset, gestora jovem 
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **17:20** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
 
 ## 5. Batimento Alfa × Beta
 
@@ -126,92 +122,101 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 5,15711646 | 5,15186043 | -0,00525603 |
-| Quantidade final de cotas | 9.351.188,72006125 | 9.351.188,72006125 | 0,00000000 |
-| PL final | R$ 48.225.169,27 | R$ 48.176.019,14 | R$ -49.150,13 |
-| Caixa | R$ 118.594,45 | R$ 123.609,27 | R$ 5.014,82 |
-| Total de provisões | R$ 317.408,25 | R$ 305.120,71 | R$ -12.287,54 |
+| Cota de fechamento | 1,76955689 | 1,76970439 | 0,00014750 |
+| Quantidade final de cotas | 260.199.586,08559453 | 260.199.571,54389710 | -14,54169744 |
+| PL final | R$ 460.437.970,33 | R$ 460.476.324,04 | R$ 38.353,71 |
+| Caixa | R$ 2.951.833,54 | R$ 2.999.955,14 | R$ 48.121,60 |
+| Total de provisões | R$ 1.743.375,62 | R$ 1.752.999,94 | R$ 9.624,32 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 782 | 782 | 18.232,171035 | 18.232,171035 | 14.257.557,75 | 14.257.557,75 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 6.179 | 6.179 | 800,977570 | 800,977570 | 4.949.240,41 | 4.949.240,41 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| WQLA3 — Waqlá Alimentos S.A. ON | 60.337 | 60.337 | 82,02 | 82,02 | 4.948.840,74 | 4.948.840,74 | 0,00 | B3 — preço de fechamento D |
-| HZTA3 — Hortaz Tecnologia S.A. ON | 96.308 | 96.308 | 35,97 | 35,97 | 3.464.198,76 | 3.464.198,76 | 0,00 | B3 — preço de fechamento D |
-| ZFRT3 — Zafira Frigoríficos S.A. ON | 412.404 | 412.404 | 13,20 | 13,20 | 5.443.732,80 | 5.443.732,80 | 0,00 | B3 — preço de fechamento D |
-| YRBQ3 — Yrubá Químicos S.A. ON | 128.275 | 128.275 | 38,58 | 38,58 | 4.948.849,50 | 4.948.849,50 | 0,00 | B3 — preço de fechamento D |
-| YKAP4 — Ykapé Papel e Celulose S.A. PN | 686.281 | 686.281 | 6,49 | 6,49 | 4.453.963,69 | 4.453.963,69 | 0,00 | B3 — preço de fechamento D |
-| KQSA3 — Kaquissá Saneamento S.A. ON | 126.542 | 126.542 | 46,93 | 46,93 | 5.938.616,06 | 5.938.616,06 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 48.404.999,71 | 48.404.999,71 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 7.856 | 7.856 | 18.443,785121 | 18.443,785121 | 144.894.375,91 | 144.894.375,91 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 62.220 | 62.220 | 806,444605 | 806,444605 | 50.176.983,32 | 50.176.983,32 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| QPLN3 — Quiplan Saúde S.A. ON | 4.449.534 | 4.449.534 | 14,66 | 14,66 | 65.230.168,44 | 65.230.168,44 | 0,00 | B3 — preço de fechamento D |
+| KQSA3 — Kaquissá Saneamento S.A. ON | 820.184 | 820.184 | 55,06 | 55,06 | 45.159.331,04 | 45.159.331,04 | 0,00 | B3 — preço de fechamento D |
+| WJMA4 — Banco Wajumá S.A. PN | 661.385 | 661.385 | 45,52 | 45,52 | 30.106.245,20 | 30.106.245,20 | 0,00 | B3 — preço de fechamento D |
+| JZEL3 — Jazê Elétrica S.A. ON | 1.204.892 | 1.204.892 | 37,48 | 37,48 | 45.159.352,16 | 45.159.352,16 | 0,00 | B3 — preço de fechamento D |
+| WQLA3 — Waqlá Alimentos S.A. ON | 447.012 | 447.012 | 67,35 | 67,35 | 30.106.258,20 | 30.106.258,20 | 0,00 | B3 — preço de fechamento D |
+| YKAP4 — Ykapé Papel e Celulose S.A. PN | 562.019 | 562.019 | 89,28 | 89,28 | 50.177.056,32 | 50.177.056,32 | 0,00 | B3 — preço de fechamento D |
+| **Total** |  |  |  |  | 461.009.770,59 | 461.009.770,59 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 824.115,75 | 824.115,75 |
-| Pagamento de resgate [LIQ-1] — Cotista 2086 (cotizado em 02/02/2026) | -144.876,43 | -144.876,43 |
-| Pagamento de resgate [LIQ-2] — Cotista 2093 (cotizado em 02/02/2026) | -35.047,53 | -35.047,53 |
-| Liquidação B3 — ajuste de futuros de 03/02/2026 | 62.326,90 | 62.326,90 |
-| Pagamento de resgate [LIQ-K12] — Cotista 7710 (cotizado em 02/02/2026) | -587.924,24 | -582.909,42 |
-| **Saldo final** | 118.594,45 | 123.609,27 |
+| Saldo inicial (D−1) | 8.453.539,99 | 8.453.539,99 |
+| TED recebida — aplicação [APL-1] Cotista 4480 (09:50) | 308.736,76 | 308.736,76 |
+| Liquidação B3 — ajuste de futuros de 03/02/2026 | -168.798,43 | -168.798,43 |
+| Pagamento de resgate [LIQ-K12] — Cotista 7710 (cotizado em 02/02/2026) | -5.641.644,78 | -5.593.523,18 |
+| **Saldo final** | 2.951.833,54 | 2.999.955,14 |
 
 ### 5.4 Valores a receber
 
-| Item | Alfa | Beta |
-|---|---|---|
-| DIVIDENDOS A RECEBER HZTA3 — Dividendos a receber — HZTA3 (R$ 0,69/ação) | 66.452,52 | — |
+Nenhum item.
 
 ### 5.5 Valores a pagar
 
 | Item | Alfa | Beta |
 |---|---|---|
-| AJUSTE FUTUROS D — Ajuste diário de futuros de D (liquidação em D+1) | 47.469,12 | 47.469,12 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 308.736,76 | 308.736,76 |
+| AJUSTE FUTUROS D — Ajuste diário de futuros de D (liquidação em D+1) | 63.471,72 | 63.471,72 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 8.455,34 | 8.455,34 | 368,95 | 368,95 | 0,00 | 0,00 | 8.824,29 | 8.824,29 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 70.354,24 | 70.354,24 | 2.990,47 | 2.990,47 | 0,00 | 0,00 | 73.344,71 | 73.344,71 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.355,19 | 1.355,19 | 58,26 | 58,26 | 0,00 | 0,00 | 1.413,45 | 1.413,45 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 58.500,00 | 58.500,00 | 309,52 | 309,52 | 0,00 | 0,00 | 58.809,52 | 58.809,52 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 66,67 | 66,67 | 33,33 | 33,33 | 0,00 | 0,00 | 100,00 | 100,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 1.357,38 | 1.357,38 | 59,02 | 59,02 | 0,00 | 0,00 | 1.416,40 | 1.416,40 | 0,00 |
-| PERF — Taxa de performance a pagar | 357.184,25 | 357.184,25 | -183.684,37 | -195.971,91 | 0,00 | 0,00 | 173.499,88 | 161.212,34 | -12.287,54 |
-| **Total** |  |  |  |  |  |  | 317.408,25 | 305.120,71 | -12.287,54 |
+| TXADM — Taxa de administração a pagar | 65.737,00 | 65.737,00 | 2.794,21 | 2.794,21 | 0,00 | 0,00 | 68.531,21 | 68.531,21 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 788.624,41 | 788.624,41 | 33.903,10 | 33.903,10 | 0,00 | 0,00 | 822.527,51 | 822.527,51 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 13.087,76 | 13.087,76 | 558,84 | 558,84 | 0,00 | 0,00 | 13.646,60 | 13.646,60 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 7.777,78 | 7.777,78 | 277,78 | 277,78 | 0,00 | 0,00 | 8.055,56 | 8.055,56 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 133,33 | 133,33 | 66,67 | 66,67 | 0,00 | 0,00 | 200,00 | 200,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.072,13 | 4.072,13 | 177,05 | 177,05 | 0,00 | 0,00 | 4.249,18 | 4.249,18 | 0,00 |
+| PERF — Taxa de performance a pagar | 2.781.738,23 | 2.781.738,23 | -1.955.572,67 | -1.945.948,35 | 0,00 | 0,00 | 826.165,56 | 835.789,88 | 9.624,32 |
+| **Total** |  |  |  |  |  |  | 1.743.375,62 | 1.752.999,94 | 9.624,32 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,15% a.a. sobre R$ 469.427.561,14 ÷ 252 (linear, dias úteis) = R$ 2.794,21 · Beta: [base: PL do dia útil anterior] 0,15% a.a. sobre R$ 469.427.561,14 ÷ 252 (linear, dias úteis) = R$ 2.794,21
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,82% a.a. sobre R$ 469.427.561,14 ÷ 252 (linear, dias úteis) = R$ 33.903,10 · Beta: [base: PL do dia útil anterior] 1,82% a.a. sobre R$ 469.427.561,14 ÷ 252 (linear, dias úteis) = R$ 33.903,10
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 469.427.561,14 ÷ 252 (linear, dias úteis) = R$ 558,84 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 469.427.561,14 ÷ 252 (linear, dias úteis) = R$ 558,84
+- **AUDIT** — Alfa: R$ 70.000,00 (anual) ÷ 252 d.u. = R$ 277,78 · Beta: R$ 70.000,00 (anual) ÷ 252 d.u. = R$ 277,78
+- **ANBIMA** — Alfa: R$ 1.200,00 (mensal) ÷ 18 d.u. = R$ 66,67 · Beta: R$ 1.200,00 (mensal) ÷ 18 d.u. = R$ 66,67
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
+- **PERF** — Alfa: 20% × max(0; cota bruta 1,77272234 − cota de referência 1,73488999 × fator 100% do CDI 1,01268388 = 1,75689513) × 260.995.292,72377150 cotas = R$ 826.165,56 · Beta: 20% × max(0; cota bruta 1,77290672 − cota de referência 1,73488999 × fator 100% do CDI 1,01268388 = 1,75689513) × 260.995.292,72377150 cotas = R$ 835.789,88
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| LIQ-1 | resgate | Cotista 2086 | 27.870,43016049 cotas (R$ 144.876,43) |  | 02/01/2026 | 02/02/2026 | 04/02/2026 | não | não | cotizado em 02/02/2026 pela cota de 5,19821281; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 2093 | 6.742,22596298 cotas (R$ 35.047,53) |  | 02/01/2026 | 02/02/2026 | 04/02/2026 | não | não | cotizado em 02/02/2026 pela cota de 5,19821281; liquidação financeira hoje |
-| LIQ-K12 | resgate | Cotista 7710 | 113.101,22537848 cotas (R$ 587.924,24) |  | 02/01/2026 | 02/02/2026 | 04/02/2026 | não | não | cotizado em 02/02/2026 pela cota de 5,19821281; liquidação hoje |
+| APL-1 | aplicacao | Cotista 4480 | R$ 308.736,76 | 09:50 | 04/02/2026 | 04/02/2026 | 04/02/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 4487 | 220.401,21665671 cotas |  | 05/01/2026 | 04/02/2026 | 06/02/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 4494 | 749.776,64747783 cotas |  | 05/01/2026 | 04/02/2026 | 06/02/2026 | sim | sim |  |
+| LIQ-K12 | resgate | Cotista 7710 | 3.156.698,92981052 cotas (R$ 5.641.644,78) |  | 02/01/2026 | 02/02/2026 | 04/02/2026 | não | não | cotizado em 02/02/2026 pela cota de 1,78719761; liquidação hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 48.404.999,71 | 48.404.999,71 | 0,00 |
-| Caixa | 118.594,45 | 123.609,27 | 5.014,82 |
-| Valores a receber | 66.452,52 | 0,00 | -66.452,52 |
-| Valores a pagar | 47.469,12 | 47.469,12 | 0,00 |
-| Provisões | 317.408,25 | 305.120,71 | -12.287,54 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 48.402.488,74 | 48.341.051,04 | -61.437,70 |
-| PL base da cota | 48.225.169,31 | 48.176.019,15 | -49.150,16 |
-| Cota (8 casas) | 5,15711646 | 5,15186043 | -0,00525603 |
-| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
-| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Total de ativos | 461.009.770,59 | 461.009.770,59 | 0,00 |
+| Caixa | 2.951.833,54 | 2.999.955,14 | 48.121,60 |
+| Valores a receber | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 372.208,48 | 372.208,48 | 0,00 |
+| Provisões | 1.743.375,62 | 1.752.999,94 | 9.624,32 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 462.709.963,24 | 462.758.084,84 | 48.121,60 |
+| PL base da cota | 461.846.020,03 | 461.884.517,31 | 38.497,28 |
+| Cota (8 casas) | 1,76955689 | 1,76970439 | 0,00014750 |
+| Aplicações convertidas | 308.736,76 | 308.736,76 | 0,00 |
+| Cotas emitidas | 174.471,22595758 | 174.456,68426013 | -14,54169745 |
+| Cotas resgatadas | 970.177,86413454 | 970.177,86413454 | 0,00000000 |
+| Valor dos resgates cotizados | 1.716.784,92 | 1.716.928,02 | 143,10 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 9.351.188,72006125 | 9.351.188,72006125 | 0,00000000 |
-| PL final | 48.225.169,27 | 48.176.019,14 | -49.150,13 |
+| Quantidade final de cotas | 260.199.586,08559453 | 260.199.571,54389710 | -14,54169744 |
+| PL final | 460.437.970,33 | 460.476.324,04 | 38.353,71 |
 
 ---
 
@@ -219,33 +224,21 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Resgate de Cotista 7710 pago a menor; Dividendos de HZTA3 não provisionados.
+**Resumo:** Reprovar até o ajuste: Resgate de Cotista 7710 pago a menor.
 
-**Dificuldade:** dificil · **Cenários:** resgate_pago_com_cota_errada, dividendo_ex_nao_provisionado
+**Dificuldade:** media · **Cenários:** resgate_pago_com_cota_errada
 
 ### Achado 1: Resgate de Cotista 7710 pago a menor
 
 - **Gravidade:** erro · **Dimensões:** caixa, cota
 - **Lado correto:** nenhum · **Quem ajusta:** Beta (complemento ao cotista) e Alfa (caixa real)
-- **Causa raiz:** O resgate LIQ-K12 (113.101,22537848 cotas) foi pago pela cota da data do pedido, 02/01/2026 (5,15387356), e não pela cota da data de cotização, 02/02/2026 (5,19821281). O cotista recebeu R$ 5.014,82 a menos.
+- **Causa raiz:** O resgate LIQ-K12 (3.156.698,92981052 cotas) foi pago pela cota da data do pedido, 02/01/2026 (1,77195333), e não pela cota da data de cotização, 02/02/2026 (1,78719761). O cotista recebeu R$ 48.121,60 a menos.
 - **Onde olhar:** Caixa — pagamento de resgate; Movimentações de passivo (cota de cotização); Regulamento — cotização de resgates
 - **Raciocínio do analista:**
-  1. O Alfa projetou o pagamento de R$ 587.924,24 e o Beta mostra R$ 582.909,42 pagos. Diferença: R$ 5.014,82.
-  2. Recalculei: 113.101,22537848 cotas × cota da data de cotização (02/02/2026) 5,19821281 = R$ 587.924,24. O valor pago corresponde a uma cota menor, a da data do pedido, que o regulamento não usa.
+  1. O Alfa projetou o pagamento de R$ 5.641.644,78 e o Beta mostra R$ 5.593.523,18 pagos. Diferença: R$ 48.121,60.
+  2. Recalculei: 3.156.698,92981052 cotas × cota da data de cotização (02/02/2026) 1,78719761 = R$ 5.641.644,78. O valor pago corresponde a uma cota menor, a da data do pedido, que o regulamento não usa.
   3. O dinheiro a menos ficou no fundo e o Beta zerou a obrigação, então o PL dele fica inflado. O cotista tem direito ao complemento.
-- **Ação:** Pagar o complemento de R$ 5.014,82 ao cotista. Até lá, os dois lados registram "complemento de resgate a pagar". O Alfa ajusta o caixa ao valor efetivamente pago. Apurar se outros resgates do dia tiveram o mesmo problema.
-
-### Achado 2: Dividendos de HZTA3 não provisionados
-
-- **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta precificou HZTA3 "ex" mas não registrou os dividendos a receber.
-- **Onde olhar:** Valores a receber; Informações de mercado — eventos societários; Carteira — HZTA3
-- **Raciocínio do analista:**
-  1. Os ativos batem, mas o Alfa tem R$ 66.452,52 de dividendos a receber de HZTA3 que o Beta não tem.
-  2. HZTA3 ficou "ex" em D: o preço de fechamento já não carrega o dividendo. Se o direito não entra como valor a receber, o fundo perde esse valor no PL.
-  3. O regulamento manda reconhecer o evento na data "ex", então o lado correto é o que provisionou.
-- **Ação:** Beta deve registrar R$ 66.452,52 de dividendos a receber de HZTA3 e reprocessar a cota.
+- **Ação:** Pagar o complemento de R$ 48.121,60 ao cotista. Até lá, os dois lados registram "complemento de resgate a pagar". O Alfa ajusta o caixa ao valor efetivamente pago. Apurar se outros resgates do dia tiveram o mesmo problema.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -259,11 +252,11 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 | Item | Valor |
 |---|---|
-| Cota | 5,15711646 |
-| Quantidade final de cotas | 9.351.188,72006125 |
-| PL final | R$ 48.225.169,27 |
-| Caixa | R$ 123.609,27 |
-| Total de provisões | R$ 317.408,25 |
+| Cota | 1,76955689 |
+| Quantidade final de cotas | 260.199.586,08559453 |
+| PL final | R$ 460.437.970,33 |
+| Caixa | R$ 2.999.955,14 |
+| Total de provisões | R$ 1.743.375,62 |
 
 ### Armadilhas deste caso
 

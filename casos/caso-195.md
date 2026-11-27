@@ -1,10 +1,10 @@
-# Caso caso-195 — Sabiá Advisory FIC FIF Ações Investimento no Exterior
+# Caso caso-195 — Angico Total FIC FIF Ações Investimento no Exterior
 
 > **Data-base (D):** 10/03/2026 (terça-feira) · **D−1:** 09/03/2026 · **Fundo:** FND-0195
 
 ## 1. O fundo
 
-O Sabiá Advisory FIC FIF Ações Investimento no Exterior é gerido pela Lume Gestão de Recursos, gestora de ações globais que investe via fundos offshore, em São Paulo/SP. Criado em 12/08/2013, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: público geral. Hoje seus cotistas são clientes private com perfil arrojado e um FoF global. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Caio, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. No fechamento de ontem (09/03/2026) o fundo tinha PL de R$ 126.470.613,45, cota de 4,25300950 e 29.736.734,29307142 cotas. Hoje, terça-feira, 10/03/2026, é a data-base da validação.
+Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que investe via fundos offshore (São Paulo/SP), o Angico Total FIC FIF Ações Investimento no Exterior é um dos fundos que mais exigem atenção na rotina de validação. Criado em 27/12/2012, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: investidores qualificados. Hoje seus cotistas são clientes private com perfil arrojado e um FoF global. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge. O gestor responsável é Cecília, e quem cuida da validação do fundo é Thiago. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. A área de risco pediu atenção redobrada ao fundo depois de um apontamento de auditoria em 2025 (já regularizado). No fechamento de ontem (09/03/2026) o fundo tinha PL de R$ 803.126.673,97, cota de 4,23799218 e 189.506.407,71777550 cotas. Hoje, terça-feira, 10/03/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,30 +12,30 @@ O Sabiá Advisory FIC FIF Ações Investimento no Exterior é gerido pela Lume G
 | Classe | Classe de Ações — Investimento no Exterior |
 | Condomínio | aberto |
 | Gestora | Lume Gestão de Recursos (São Paulo/SP) |
-| PL em D−1 | R$ 126.470.613,45 |
-| Cota em D−1 | 4,25300950 |
-| Quantidade de cotas em D−1 | 29.736.734,29307142 |
+| PL em D−1 | R$ 803.126.673,97 |
+| Cota em D−1 | 4,23799218 |
+| Quantidade de cotas em D−1 | 189.506.407,71777550 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
 - Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,740% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,840% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Taxa de performance**
 
 - 20% sobre o que exceder MSCI ACWI em reais; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
 - Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 47.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 400,00 (mensal)
+- Auditoria independente: R$ 75.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +45,7 @@ O Sabiá Advisory FIC FIF Ações Investimento no Exterior é gerido pela Lume G
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 126.192.843,50. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 746.257.776,27. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,9 +65,9 @@ O Sabiá Advisory FIC FIF Ações Investimento no Exterior é gerido pela Lume G
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+3 dias úteis após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
 
 **Precificação dos ativos**
@@ -79,32 +79,32 @@ O Sabiá Advisory FIC FIF Ações Investimento no Exterior é gerido pela Lume G
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 3,78736663 (cota da última cobrança efetiva, em 31/12/2025).
+- Performance: cota de referência vigente = 3,93735584 (cota da última cobrança efetiva, em 31/12/2025).
 - Ativos no exterior: NAV oficial mais recente disponível até 18h de D (em regra, o NAV de D−1), convertido pela PTAX de VENDA de D. NAV estimado ou indicativo não é aceito.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
-- PTAX de 10/03/2026: compra 5,2452 / venda 5,2458; PTAX de venda de 09/03/2026: 5,2563
+- PTAX de 10/03/2026: compra 5,6634 / venda 5,6640; PTAX de venda de 09/03/2026: 5,6605
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| OFFSHORE MERIDIAN | NAV oficial de 09/03/2026 (último disponível) | USD 246,7234 |  |
-| OFFSHORE BOREAL | NAV oficial de 09/03/2026 (último disponível) | USD 178,0316 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.208,073144 |  |
-| PTAX | BCB — PTAX de 10/03/2026 | compra 5,2452 / venda 5,2458 |  |
-| PTAX | BCB — PTAX de 09/03/2026 | venda 5,2563 |  |
+| OFFSHORE BOREAL | NAV oficial de 09/03/2026 (último disponível) | USD 92,4790 |  |
+| OFFSHORE AUSTRAL | NAV oficial de 09/03/2026 (último disponível) | USD 100,5827 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.191,063582 |  |
+| PTAX | BCB — PTAX de 10/03/2026 | compra 5,6634 / venda 5,6640 |  |
+| PTAX | BCB — PTAX de 09/03/2026 | venda 5,6605 |  |
 
 **Benchmark**
 
-- Fator acumulado do MSCI ACWI em reais de 31/12/2025 até 10/03/2026: 1,13227561
+- Fator acumulado do MSCI ACWI em reais de 31/12/2025 até 10/03/2026: 1,03565186
 
 ## 4. Comunicações recebidas hoje
 
-- **10:36** — *Área de risco* — **Lembrete**: Lembrete: o fundo teve apontamento de auditoria em 2025 sobre conciliação de caixa. Atenção redobrada.
-- **17:43** — *Distribuidor* — **Cota atrasada?**: Bom dia! A cota do Sabiá Advisory FIC FIF Ações Investimento no Exterior de ontem saiu mais tarde, está tudo certo? Temos clientes perguntando.
+- **09:22** — *Área de risco* — **Lembrete**: Lembrete: o fundo teve apontamento de auditoria em 2025 sobre conciliação de caixa. Atenção redobrada.
+- **10:28** — *Custodiante — eventos* — **Aviso de desdobramento**: Aviso: desdobramento 1:2 de JZEL3 com data "ex" na próxima semana. (Informativo a todos os clientes de custódia.)
 
 ## 5. Batimento Alfa × Beta
 
@@ -114,32 +114,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 4,30390893 | 4,30390893 | 0,00000000 |
-| Quantidade final de cotas | 29.754.083,22664201 | 29.754.083,22664201 | 0,00000000 |
-| PL final | R$ 128.058.864,50 | R$ 128.058.864,50 | R$ 0,00 |
-| Caixa | R$ 419.613,54 | R$ 419.613,54 | R$ 0,00 |
-| Total de provisões | R$ 183.252,14 | R$ 183.252,14 | R$ 0,00 |
+| Cota de fechamento | 4,14885306 | 4,14885306 | 0,00000000 |
+| Quantidade final de cotas | 190.509.367,45624354 | 190.509.367,45624354 | 0,00000000 |
+| PL final | R$ 790.395.372,13 | R$ 790.395.372,13 | R$ 0,00 |
+| Caixa | R$ 5.445.992,33 | R$ 5.445.992,33 | R$ 0,00 |
+| Total de provisões | R$ 3.645.161,24 | R$ 3.645.161,24 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| OFFSHORE MERIDIAN — Cotas do Meridian Tech Leaders Fund — Inst. (USD) | 54.677,937138 | 54.677,937138 | USD 246,7234 × 5,2458 | USD 246,7234 × 5,2458 | 70.767.555,05 | 70.767.555,05 | 0,00 | NAV oficial mais recente × PTAX venda D |
-| OFFSHORE BOREAL — Cotas do Boreal Global Equity Fund — Class I (USD) | 48.220,390440 | 48.220,390440 | USD 178,0316 × 5,2458 | USD 178,0316 × 5,2458 | 45.033.898,67 | 45.033.898,67 | 0,00 | NAV oficial mais recente × PTAX venda D |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 495 | 495 | 18.208,073144 | 18.208,073144 | 9.012.996,21 | 9.012.996,21 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 4.767 | 4.767 | 809,812533 | 809,812533 | 3.860.376,34 | 3.860.376,34 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 128.674.826,27 | 128.674.826,27 | 0,00 |  |
+| OFFSHORE BOREAL — Cotas do Boreal Global Equity Fund — Class I (USD) | 828.028,181089 | 828.028,181089 | USD 92,4790 × 5,6640 | USD 92,4790 × 5,6640 | 433.722.035,65 | 433.722.035,65 | 0,00 | NAV oficial mais recente × PTAX venda D |
+| OFFSHORE AUSTRAL — Cotas do Austral World Quality Fund — Class A (USD) | 484.473,813916 | 484.473,813916 | USD 100,5827 × 5,6640 | USD 100,5827 × 5,6640 | 276.004.931,78 | 276.004.931,78 | 0,00 | NAV oficial mais recente × PTAX venda D |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 3.035 | 3.035 | 18.191,063582 | 18.191,063582 | 55.209.877,97 | 55.209.877,97 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 29.812 | 29.812 | 793,562855 | 793,562855 | 23.657.695,83 | 23.657.695,83 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 788.594.541,23 | 788.594.541,23 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 175.582,78 | 175.582,78 |
-| TED recebida — aplicação [APL-1] Cotista 4816 (12:51) | 119.062,25 | 119.062,25 |
-| TED recebida — aplicação [APL-2] Cotista 4823 (10:30) | 86.221,91 | 86.221,91 |
-| TED recebida — aplicação [APL-3] Cotista 4830 (14:30) | 381.221,09 | 381.221,09 |
-| Pagamento de resgate [LIQ-1] — Cotista 4844 (cotizado em 06/03/2026) | -342.474,49 | -342.474,49 |
-| **Saldo final** | 419.613,54 | 419.613,54 |
+| Saldo inicial (D−1) | 6.024.531,04 | 6.024.531,04 |
+| TED recebida — aplicação [APL-1] Cotista 5670 (14:33) | 825.313,93 | 825.313,93 |
+| TED recebida — aplicação [APL-2] Cotista 5677 (12:45) | 3.335.818,65 | 3.335.818,65 |
+| Pagamento de resgate [LIQ-1] — Cotista 5684 (cotizado em 06/03/2026) | -2.435.413,62 | -2.435.413,62 |
+| Pagamento de resgate [LIQ-2] — Cotista 5691 (cotizado em 06/03/2026) | -2.304.257,67 | -2.304.257,67 |
+| **Saldo final** | 5.445.992,33 | 5.445.992,33 |
 
 ### 5.4 Valores a receber
 
@@ -149,64 +149,62 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 586.505,25 | 586.505,25 |
-| RESGATES A PAGAR — Resgates já cotizados e ainda não liquidados | 340.486,07 | 340.486,07 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 4.161.132,58 | 4.161.132,58 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 2.948,02 | 2.948,02 | 501,87 | 501,87 | 0,00 | 0,00 | 3.449,89 | 3.449,89 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 22.552,66 | 22.552,66 | 3.713,82 | 3.713,82 | 0,00 | 0,00 | 26.266,48 | 26.266,48 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 881,13 | 881,13 | 150,56 | 150,56 | 0,00 | 0,00 | 1.031,69 | 1.031,69 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 30.587,30 | 30.587,30 | 186,51 | 186,51 | 0,00 | 0,00 | 30.773,81 | 30.773,81 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 109,09 | 109,09 | 18,18 | 18,18 | 0,00 | 0,00 | 127,27 | 127,27 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 5.754,10 | 5.754,10 | 127,87 | 127,87 | 0,00 | 0,00 | 5.881,97 | 5.881,97 | 0,00 |
-| PERF — Taxa de performance a pagar | 97.346,40 | 97.346,40 | 18.374,63 | 18.374,63 | 0,00 | 0,00 | 115.721,03 | 115.721,03 | 0,00 |
-| **Total** |  |  |  |  |  |  | 183.252,14 | 183.252,14 | 0,00 |
+| TXADM — Taxa de administração a pagar | 19.059,96 | 19.059,96 | 3.187,01 | 3.187,01 | 0,00 | 0,00 | 22.246,97 | 22.246,97 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 164.516,23 | 164.516,23 | 26.770,89 | 26.770,89 | 0,00 | 0,00 | 191.287,12 | 191.287,12 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 3.814,63 | 3.814,63 | 637,40 | 637,40 | 0,00 | 0,00 | 4.452,03 | 4.452,03 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 48.809,52 | 48.809,52 | 297,62 | 297,62 | 0,00 | 0,00 | 49.107,14 | 49.107,14 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 300,00 | 300,00 | 50,00 | 50,00 | 0,00 | 0,00 | 350,00 | 350,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 7.967,21 | 7.967,21 | 177,05 | 177,05 | 0,00 | 0,00 | 8.144,26 | 8.144,26 | 0,00 |
+| PERF — Taxa de performance a pagar | 8.585.765,98 | 8.585.765,98 | -5.216.192,26 | -5.216.192,26 | 0,00 | 0,00 | 3.369.573,72 | 3.369.573,72 | 0,00 |
+| **Total** |  |  |  |  |  |  | 3.645.161,24 | 3.645.161,24 | 0,00 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 126.470.613,45 ÷ 252 (linear, dias úteis) = R$ 501,87 · Beta: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 126.470.613,45 ÷ 252 (linear, dias úteis) = R$ 501,87
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,74% a.a. sobre R$ 126.470.613,45 ÷ 252 (linear, dias úteis) = R$ 3.713,82 · Beta: [base: PL do dia útil anterior] 0,74% a.a. sobre R$ 126.470.613,45 ÷ 252 (linear, dias úteis) = R$ 3.713,82
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 126.470.613,45 ÷ 252 (linear, dias úteis) = R$ 150,56 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 126.470.613,45 ÷ 252 (linear, dias úteis) = R$ 150,56
-- **AUDIT** — Alfa: R$ 47.000,00 (anual) ÷ 252 d.u. = R$ 186,51 · Beta: R$ 47.000,00 (anual) ÷ 252 d.u. = R$ 186,51
-- **ANBIMA** — Alfa: R$ 400,00 (mensal) ÷ 22 d.u. = R$ 18,18 · Beta: R$ 400,00 (mensal) ÷ 22 d.u. = R$ 18,18
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
-- **PERF** — Alfa: 20% × max(0; cota bruta 4,30780045 − cota de referência 3,78736663 × fator MSCI ACWI em reais 1,13227561 = 4,28834286) × 29.736.734,29307142 cotas = R$ 115.721,03 · Beta: 20% × max(0; cota bruta 4,30780045 − cota de referência 3,78736663 × fator MSCI ACWI em reais 1,13227561 = 4,28834286) × 29.736.734,29307142 cotas = R$ 115.721,03
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 803.126.673,97 ÷ 252 (linear, dias úteis) = R$ 3.187,01 · Beta: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 803.126.673,97 ÷ 252 (linear, dias úteis) = R$ 3.187,01
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,84% a.a. sobre R$ 803.126.673,97 ÷ 252 (linear, dias úteis) = R$ 26.770,89 · Beta: [base: PL do dia útil anterior] 0,84% a.a. sobre R$ 803.126.673,97 ÷ 252 (linear, dias úteis) = R$ 26.770,89
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 803.126.673,97 ÷ 252 (linear, dias úteis) = R$ 637,40 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 803.126.673,97 ÷ 252 (linear, dias úteis) = R$ 637,40
+- **AUDIT** — Alfa: R$ 75.000,00 (anual) ÷ 252 d.u. = R$ 297,62 · Beta: R$ 75.000,00 (anual) ÷ 252 d.u. = R$ 297,62
+- **ANBIMA** — Alfa: R$ 1.100,00 (mensal) ÷ 22 d.u. = R$ 50,00 · Beta: R$ 1.100,00 (mensal) ÷ 22 d.u. = R$ 50,00
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
+- **PERF** — Alfa: 20% × max(0; cota bruta 4,16663385 − cota de referência 3,93735584 × fator MSCI ACWI em reais 1,03565186 = 4,07772990) × 189.506.407,71777550 cotas = R$ 3.369.573,72 · Beta: 20% × max(0; cota bruta 4,16663385 − cota de referência 3,93735584 × fator MSCI ACWI em reais 1,03565186 = 4,07772990) × 189.506.407,71777550 cotas = R$ 3.369.573,72
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 4816 | R$ 119.062,25 | 12:51 | 10/03/2026 | 10/03/2026 | 10/03/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 4823 | R$ 86.221,91 | 10:30 | 10/03/2026 | 10/03/2026 | 10/03/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista 4830 | R$ 381.221,09 | 14:30 | 10/03/2026 | 10/03/2026 | 10/03/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 4837 | 118.923,75703208 cotas |  | 05/03/2026 | 10/03/2026 | 12/03/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 4844 | 80.039,10657161 cotas (R$ 342.474,49) |  | 03/03/2026 | 06/03/2026 | 10/03/2026 | não | não | cotizado em 06/03/2026 pela cota de 4,27883954; liquidação financeira hoje |
-| PEN-1 | resgate | Cotista 4851 | 33.056,77696572 cotas (R$ 140.590,79) |  | 04/03/2026 | 09/03/2026 | 11/03/2026 | não | não | cotizado em 09/03/2026 pela cota de 4,25300950; liquidação em 11/03/2026 (ainda a pagar) |
-| PEN-2 | resgate | Cotista 4858 | 47.000,90021947 cotas (R$ 199.895,28) |  | 04/03/2026 | 09/03/2026 | 11/03/2026 | não | não | cotizado em 09/03/2026 pela cota de 4,25300950; liquidação em 11/03/2026 (ainda a pagar) |
+| APL-1 | aplicacao | Cotista 5670 | R$ 825.313,93 | 14:33 | 10/03/2026 | 10/03/2026 | 10/03/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 5677 | R$ 3.335.818,65 | 12:45 | 10/03/2026 | 10/03/2026 | 10/03/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 5684 | 567.720,58944416 cotas (R$ 2.435.413,62) |  | 03/03/2026 | 06/03/2026 | 10/03/2026 | não | não | cotizado em 06/03/2026 pela cota de 4,28981027; liquidação financeira hoje |
+| LIQ-2 | resgate | Cotista 5691 | 537.146,75673716 cotas (R$ 2.304.257,67) |  | 03/03/2026 | 06/03/2026 | 10/03/2026 | não | não | cotizado em 06/03/2026 pela cota de 4,28981027; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 128.674.826,27 | 128.674.826,27 | 0,00 |
-| Caixa | 419.613,54 | 419.613,54 | 0,00 |
+| Total de ativos | 788.594.541,23 | 788.594.541,23 | 0,00 |
+| Caixa | 5.445.992,33 | 5.445.992,33 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 926.991,32 | 926.991,32 | 0,00 |
-| Provisões | 183.252,14 | 183.252,14 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 128.104.616,19 | 128.104.616,19 | 0,00 |
-| PL base da cota | 127.984.196,35 | 127.984.196,35 | 0,00 |
-| Cota (8 casas) | 4,30390893 | 4,30390893 | 0,00000000 |
-| Aplicações convertidas | 586.505,25 | 586.505,25 | 0,00 |
-| Cotas emitidas | 136.272,69060267 | 136.272,69060267 | 0,00000000 |
-| Cotas resgatadas | 118.923,75703208 | 118.923,75703208 | 0,00000000 |
-| Valor dos resgates cotizados | 511.837,02 | 511.837,02 | 0,00 |
+| Valores a pagar | 4.161.132,58 | 4.161.132,58 | 0,00 |
+| Provisões | 3.645.161,24 | 3.645.161,24 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 789.634.933,43 | 789.634.933,43 | 0,00 |
+| PL base da cota | 786.234.239,74 | 786.234.239,74 | 0,00 |
+| Cota (8 casas) | 4,14885306 | 4,14885306 | 0,00000000 |
+| Aplicações convertidas | 4.161.132,58 | 4.161.132,58 | 0,00 |
+| Cotas emitidas | 1.002.959,73846805 | 1.002.959,73846805 | 0,00000000 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 29.754.083,22664201 | 29.754.083,22664201 | 0,00000000 |
-| PL final | 128.058.864,50 | 128.058.864,50 | 0,00 |
+| Quantidade final de cotas | 190.509.367,45624354 | 190.509.367,45624354 | 0,00000000 |
+| PL final | 790.395.372,13 | 790.395.372,13 | 0,00 |
 
 ---
 
@@ -241,11 +239,11 @@ Nenhum item.
 
 | Item | Valor |
 |---|---|
-| Cota | 4,30390893 |
-| Quantidade final de cotas | 29.754.083,22664201 |
-| PL final | R$ 128.058.864,50 |
-| Caixa | R$ 419.613,54 |
-| Total de provisões | R$ 183.252,14 |
+| Cota | 4,14885306 |
+| Quantidade final de cotas | 190.509.367,45624354 |
+| PL final | R$ 790.395.372,13 |
+| Caixa | R$ 5.445.992,33 |
+| Total de provisões | R$ 3.645.161,24 |
 
 ### Armadilhas deste caso
 

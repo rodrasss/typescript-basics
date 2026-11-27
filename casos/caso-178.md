@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Jabuticaba Plus FIP Multiestratégia: a casa é uma gestora de private equity com participações em empresas familiares do interior. Criado em 16/07/2009, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores qualificados. Hoje seus cotistas são family offices e um endowment universitário. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. O contrato de administração foi aditado recentemente. Os resgates liquidados no dia exigem baixa manual em uma das pontas. No fechamento de ontem (29/06/2026) o fundo tinha PL de R$ 148.589.070,04, cota de 888,07387135 e 167.316,11505810 cotas. Hoje, terça-feira, 30/06/2026, é a data-base da validação.
+Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Jabuticaba Plus FIP Multiestratégia: a casa é uma gestora de private equity com participações em empresas familiares do interior. Criado em 16/07/2009, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores qualificados. Hoje seus cotistas são family offices e um endowment universitário. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. O contrato de administração foi aditado recentemente. Já entrou dinheiro na conta do fundo sem identificação do remetente. No fechamento de ontem (29/06/2026) o fundo tinha PL de R$ 148.589.070,04, cota de 888,07387135 e 167.316,11505810 cotas. Hoje, terça-feira, 30/06/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Jabuticaba Plus F
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -169,7 +169,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 330.851,28 | 330.171,83 | -679,45 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 148.635.227,14 | 148.635.227,14 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 148.635.227,14 | 148.635.227,14 | 0,00 |
 | PL base da cota | 148.621.107,42 | 148.621.786,87 | 679,45 |
 | Cota (8 casas) | 888,26534950 | 888,26941038 | 0,00406088 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

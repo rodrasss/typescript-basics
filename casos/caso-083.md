@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Cedro Rosa Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 09/04/2017, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Helena, e quem cuida da validação do fundo é Larissa. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A forma de apropriar as taxas muda de fundo para fundo. A gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (03/09/2026) o fundo tinha PL de R$ 162.264.084,13, cota de 51,55932842 e 3.147.133,39127101 cotas. Hoje, sexta-feira, 04/09/2026, é a data-base da validação.
+O Cedro Rosa Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 09/04/2017, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Helena, e quem cuida da validação do fundo é Larissa. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A forma de apropriar as taxas muda de fundo para fundo. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (03/09/2026) o fundo tinha PL de R$ 162.264.084,13, cota de 51,55932842 e 3.147.133,39127101 cotas. Hoje, sexta-feira, 04/09/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Cedro Rosa Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestã
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -174,7 +174,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 1.542.095,36 | 1.542.095,36 |
 | Provisões | 214.850,27 | 214.402,24 | -448,03 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 162.403.943,77 | 160.861.848,41 | -1.542.095,36 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 162.403.943,77 | 160.861.848,41 | -1.542.095,36 |
 | PL base da cota | 162.395.421,94 | 160.853.774,61 | -1.541.647,33 |
 | Cota (8 casas) | 51,60106094 | 51,11120331 | -0,48985763 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

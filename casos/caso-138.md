@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Graúna Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 11/11/2018, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Isadora, e quem cuida da validação do fundo é Renata. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. Já entrou dinheiro na conta do fundo sem identificação do remetente. No fechamento de ontem (24/07/2026) o fundo tinha PL de R$ 435.667.826,36, cota de 27,49312507 e 15.846.427,97967312 cotas. Hoje, segunda-feira, 27/07/2026, é a data-base da validação.
+O Graúna Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 11/11/2018, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Isadora, e quem cuida da validação do fundo é Renata. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A base de cálculo das taxas é um ponto sensível da parametrização. No fechamento de ontem (24/07/2026) o fundo tinha PL de R$ 435.667.826,36, cota de 27,49312507 e 15.846.427,97967312 cotas. Hoje, segunda-feira, 27/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Graúna Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, 
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -169,7 +169,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 378.126,69 | 378.126,69 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 435.836.312,10 | 435.836.312,10 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 435.836.312,10 | 435.836.312,10 | 0,00 |
 | PL base da cota | 435.817.353,86 | 435.817.353,86 | 0,00 |
 | Cota (8 casas) | 27,50256110 | 27,50256110 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

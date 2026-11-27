@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Juazeiro Estratégia FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional, em Salvador/BA. Criado em 18/09/2010, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são cerca de 6 mil cotistas qualificados via assessorias. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Marina. Sobre a rotina: o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. As taxas do fundo foram alteradas recentemente em assembleia. No fechamento de ontem (03/11/2026) o fundo tinha PL de R$ 111.213.319,83, cota de 1,44672995 e 76.872.203,45642555 cotas. Hoje, quarta-feira, 04/11/2026, é a data-base da validação.
+Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional (Salvador/BA), o Juazeiro Estratégia FIF RF Crédito Privado LP é um dos fundos que mais exigem atenção na rotina de validação. Criado em 18/09/2010, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são cerca de 6 mil cotistas qualificados via assessorias. Ao longo da vida, o fundo teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Marina. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. No fechamento de ontem (03/11/2026) o fundo tinha PL de R$ 263.041.515,81, cota de 1,77131966 e 148.500.307,57607080 cotas. Hoje, quarta-feira, 04/11/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,25 +12,31 @@ O Juazeiro Estratégia FIF RF Crédito Privado LP é gerido pela Itapuã Gestão
 | Classe | Classe de Renda Fixa — Crédito Privado |
 | Condomínio | aberto |
 | Gestora | Itapuã Gestão (Salvador/BA) |
-| PL em D−1 | R$ 111.213.319,83 |
-| Cota em D−1 | 1,44672995 |
-| Quantidade de cotas em D−1 | 76.872.203,45642555 |
+| PL em D−1 | R$ 263.041.515,81 |
+| Cota em D−1 | 1,77131966 |
+| Quantidade de cotas em D−1 | 148.500.307,57607080 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,140% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,850% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,860% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,040% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+
+**Taxa de performance**
+
+- 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
+- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
+- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 54.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 2.300,00 (mensal)
+- Auditoria independente: R$ 73.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 800,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 4.300,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +46,7 @@ O Juazeiro Estratégia FIF RF Crédito Privado LP é gerido pela Itapuã Gestão
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 100.135.516,20. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 248.620.749,91. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,10 +66,10 @@ O Juazeiro Estratégia FIF RF Crédito Privado LP é gerido pela Itapuã Gestão
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -72,6 +78,10 @@ O Juazeiro Estratégia FIF RF Crédito Privado LP é gerido pela Itapuã Gestão
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
 - Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).
 - CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual.
+
+**Regras específicas deste fundo**
+
+- Performance: cota de referência vigente = 1,67899031 (cota da última cobrança efetiva, em 30/06/2026).
 
 ## 3. Informações de mercado do dia
 
@@ -87,9 +97,15 @@ O Juazeiro Estratégia FIF RF Crédito Privado LP é gerido pela Itapuã Gestão
 | PASU12 | ANBIMA — PU pela taxa indicativa de D | 1.051,631156 |  |
 | EVSA12 | ANBIMA — PU pela taxa indicativa de D | 1.121,076450 |  |
 
+**Benchmark**
+
+- Fator acumulado do 100% do CDI de 30/06/2026 até 04/11/2026: 1,04729964
+
 ## 4. Comunicações recebidas hoje
 
-- **18:59** — *Gestora — mesa* — **Boleta (atrasada, desculpem)**: Segue boleta de hoje: VENDA de 143 LFT 01/03/2029 @ 18.437,865084, executada às 15:12, contraparte confirmada no SELIC.
+- **09:25** — *Gestora — operacional* — **Previsão de resgates**: Para a semana que vem, esperamos resgates um pouco acima da média por causa de rebalanceamento de um FoF. Só aviso.
+- **10:57** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **18:59** — *Gestora — mesa* — **Boleta (atrasada, desculpem)**: Segue boleta de hoje: VENDA de 338 LFT 01/03/2029 @ 18.437,865084, executada às 15:12, contraparte confirmada no SELIC.
 
 ## 5. Batimento Alfa × Beta
 
@@ -99,36 +115,35 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1,44764782 | 1,44763519 | -0,00001263 |
-| Quantidade final de cotas | 77.205.500,24025220 | 77.533.144,21094058 | 327.643,97068839 |
-| PL final | R$ 111.766.374,11 | R$ 112.239.707,95 | R$ 473.333,84 |
-| Caixa | R$ 4.318.853,74 | R$ 1.682.239,03 | R$ -2.636.614,71 |
-| Total de provisões | R$ 133.310,30 | R$ 133.310,30 | R$ 0,00 |
+| Cota de fechamento | 1,76960645 | 1,76959409 | -0,00001236 |
+| Quantidade final de cotas | 149.145.893,31739458 | 149.145.900,86297566 | 7,54558107 |
+| PL final | R$ 263.929.534,81 | R$ 263.927.704,71 | R$ -1.830,10 |
+| Caixa | R$ 9.089.008,82 | R$ 2.857.010,42 | R$ -6.231.998,40 |
+| Total de provisões | R$ 681.954,56 | R$ 681.495,56 | R$ -459,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.363 | 1.506 | 18.431,075270 | 18.431,075270 | 25.121.555,59 | 27.757.199,36 | 2.635.643,77 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 10.958 | 10.958 | 810,430449 | 810,430449 | 8.880.696,86 | 8.880.696,86 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB ITAPER 2028 — CDB Banco Itaperuna Fictício S.A. — 113% do CDI — venc. 2028 | 8.111 | 8.111 | 1.368,754121 | 1.368,754121 | 11.101.964,68 | 11.101.964,68 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| HBVI12 — Debênture Hospitalar Bem Viver S.A. — CDI + 1,95% | 8.191 | 8.191 | 1.084,222981 | 1.084,222981 | 8.880.870,44 | 8.880.870,44 | 0,00 | ANBIMA — taxa indicativa D |
-| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 17.172 | 17.172 | 969,700876 | 969,700876 | 16.651.703,44 | 16.651.703,44 | 0,00 | ANBIMA — taxa indicativa D |
-| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 16.890 | 16.890 | 1.051,631156 | 1.051,631156 | 17.762.050,22 | 17.762.050,22 | 0,00 | ANBIMA — taxa indicativa D |
-| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 17.824 | 17.824 | 1.121,076450 | 1.121,076450 | 19.982.066,64 | 19.982.066,64 | 0,00 | ANBIMA — taxa indicativa D |
-| **Total** |  |  |  |  | 108.380.907,87 | 111.016.551,64 | 2.635.643,77 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 3.223 | 3.561 | 18.431,075270 | 18.431,075270 | 59.403.355,60 | 65.633.059,04 | 6.229.703,44 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 25.914 | 25.914 | 810,430449 | 810,430449 | 21.001.494,66 | 21.001.494,66 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| CDB ITAPER 2028 — CDB Banco Itaperuna Fictício S.A. — 113% do CDI — venc. 2028 | 19.179 | 19.179 | 1.368,754121 | 1.368,754121 | 26.251.335,29 | 26.251.335,29 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| HBVI12 — Debênture Hospitalar Bem Viver S.A. — CDI + 1,95% | 19.370 | 19.370 | 1.084,222981 | 1.084,222981 | 21.001.399,14 | 21.001.399,14 | 0,00 | ANBIMA — taxa indicativa D |
+| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 40.608 | 40.608 | 969,700876 | 969,700876 | 39.377.613,17 | 39.377.613,17 | 0,00 | ANBIMA — taxa indicativa D |
+| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 39.941 | 39.941 | 1.051,631156 | 1.051,631156 | 42.003.200,00 | 42.003.200,00 | 0,00 | ANBIMA — taxa indicativa D |
+| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 42.150 | 42.150 | 1.121,076450 | 1.121,076450 | 47.253.372,37 | 47.253.372,37 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 256.291.770,23 | 262.521.473,67 | 6.229.703,44 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 399.665,98 | 399.665,98 |
-| TED recebida — aplicação [APL-1] Cotista 2912 (10:48) | 149.576,81 | 149.576,81 |
-| TED recebida — aplicação [APL-2] Cotista 2919 (10:32) | 301.988,80 | 301.988,80 |
-| TED recebida — aplicação [APL-3] Cotista 2926 (10:01) | 356.705,55 | 356.705,55 |
-| Venda definitiva de 143 LFT 01/03/2029 @ 18.437,865084 (liquidação SELIC D+0) | 2.636.614,71 | — |
-| TED recebida — aplicação [APL-4] Cotista 4756 (14:24) | 474.301,89 | 474.301,89 |
-| **Saldo final** | 4.318.853,74 | 1.682.239,03 |
+| Saldo inicial (D−1) | 945.289,16 | 945.289,16 |
+| TED recebida — aplicação [APL-1] Cotista 2912 (11:48) | 353.778,76 | 353.778,76 |
+| TED recebida — aplicação [APL-2] Cotista 2919 (10:32) | 714.263,28 | 714.263,28 |
+| TED recebida — aplicação [APL-3] Cotista 2926 (10:01) | 843.679,22 | 843.679,22 |
+| Venda definitiva de 338 LFT 01/03/2029 @ 18.437,865084 (liquidação SELIC D+0) | 6.231.998,40 | — |
+| **Saldo final** | 9.089.008,82 | 2.857.010,42 |
 
 ### 5.4 Valores a receber
 
@@ -138,62 +153,56 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.282.573,05 | 1.282.573,05 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.911.721,26 | 1.911.721,26 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 13.332,26 | 13.332,26 | 617,85 | 617,85 | 0,00 | 0,00 | 13.950,11 | 13.950,11 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 80.330,72 | 80.330,72 | 3.751,24 | 3.751,24 | 0,00 | 0,00 | 84.081,96 | 84.081,96 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 3.799,88 | 3.799,88 | 176,53 | 176,53 | 0,00 | 0,00 | 3.976,41 | 3.976,41 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 27.857,14 | 27.857,14 | 214,29 | 214,29 | 0,00 | 0,00 | 28.071,43 | 28.071,43 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 47,37 | 47,37 | 47,37 | 47,37 | 0,00 | 0,00 | 94,74 | 94,74 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 121,05 | 121,05 | 121,05 | 121,05 | 0,00 | 0,00 | 242,10 | 242,10 | 0,00 |
+| TXADM — Taxa de administração a pagar | 13.514,38 | 13.514,38 | 626,29 | 626,29 | 0,00 | 0,00 | 14.140,67 | 14.140,67 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 192.233,41 | 192.233,41 | 8.976,81 | 8.976,81 | 0,00 | 0,00 | 201.210,22 | 201.210,22 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 8.987,51 | 8.987,51 | 417,53 | 417,53 | 0,00 | 0,00 | 9.405,04 | 9.405,04 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 37.658,73 | 37.658,73 | 289,68 | 289,68 | 0,00 | 0,00 | 37.948,41 | 37.948,41 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 42,11 | 42,11 | 42,11 | 42,11 | 0,00 | 0,00 | 84,22 | 84,22 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 226,32 | 226,32 | 226,32 | 226,32 | 0,00 | 0,00 | 452,64 | 452,64 | 0,00 |
 | CVM — Taxa de fiscalização CVM a pagar | 2.767,74 | 2.767,74 | 125,81 | 125,81 | 0,00 | 0,00 | 2.893,55 | 2.893,55 | 0,00 |
-| **Total** |  |  |  |  |  |  | 133.310,30 | 133.310,30 | 0,00 |
+| PERF — Taxa de performance a pagar | 513.697,64 | 513.697,64 | -97.877,83 | -98.336,83 | 0,00 | 0,00 | 415.819,81 | 415.360,81 | -459,00 |
+| **Total** |  |  |  |  |  |  | 681.954,56 | 681.495,56 | -459,00 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,14% a.a. sobre R$ 111.213.319,83 ÷ 252 (linear, dias úteis) = R$ 617,85 · Beta: [base: PL do dia útil anterior] 0,14% a.a. sobre R$ 111.213.319,83 ÷ 252 (linear, dias úteis) = R$ 617,85
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,85% a.a. sobre R$ 111.213.319,83 ÷ 252 (linear, dias úteis) = R$ 3.751,24 · Beta: [base: PL do dia útil anterior] 0,85% a.a. sobre R$ 111.213.319,83 ÷ 252 (linear, dias úteis) = R$ 3.751,24
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 111.213.319,83 ÷ 252 (linear, dias úteis) = R$ 176,53 · Beta: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 111.213.319,83 ÷ 252 (linear, dias úteis) = R$ 176,53
-- **AUDIT** — Alfa: R$ 54.000,00 (anual) ÷ 252 d.u. = R$ 214,29 · Beta: R$ 54.000,00 (anual) ÷ 252 d.u. = R$ 214,29
-- **ANBIMA** — Alfa: R$ 900,00 (mensal) ÷ 19 d.u. = R$ 47,37 · Beta: R$ 900,00 (mensal) ÷ 19 d.u. = R$ 47,37
-- **SELIC** — Alfa: R$ 2.300,00 (mensal) ÷ 19 d.u. = R$ 121,05 · Beta: R$ 2.300,00 (mensal) ÷ 19 d.u. = R$ 121,05
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 62 d.u. = R$ 125,81 · Beta: R$ 7.800,00 (trimestral) ÷ 62 d.u. = R$ 125,81
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 2912 | R$ 149.576,81 | 10:48 | 04/11/2026 | 04/11/2026 | 04/11/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 2919 | R$ 301.988,80 | 10:32 | 04/11/2026 | 04/11/2026 | 04/11/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista 2926 | R$ 356.705,55 | 10:01 | 04/11/2026 | 04/11/2026 | 04/11/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 2933 | 56.058,69234347 cotas |  | 05/10/2026 | 04/11/2026 | 05/11/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista 2940 | 168.978,63578259 cotas |  | 05/10/2026 | 04/11/2026 | 05/11/2026 | sim | sim |  |
-| APL-4 | aplicacao | Cotista 4756 | R$ 474.301,89 | 14:24 | 04/11/2026 | 05/11/2026 | 04/11/2026 | não | sim | recursos creditados às 14:24, após o horário de corte (14:00) |
+| APL-1 | aplicacao | Cotista 2912 | R$ 353.778,76 | 11:48 | 04/11/2026 | 04/11/2026 | 04/11/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 2919 | R$ 714.263,28 | 10:32 | 04/11/2026 | 04/11/2026 | 04/11/2026 | sim | sim |  |
+| APL-3 | aplicacao | Cotista 2926 | R$ 843.679,22 | 10:01 | 04/11/2026 | 04/11/2026 | 04/11/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 2933 | 108.293,14994250 cotas |  | 05/10/2026 | 04/11/2026 | 05/11/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 2940 | 326.429,81805150 cotas |  | 05/10/2026 | 04/11/2026 | 05/11/2026 | sim | sim |  |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 108.380.907,87 | 111.016.551,64 | 2.635.643,77 |
-| Caixa | 4.318.853,74 | 1.682.239,03 | -2.636.614,71 |
+| Total de ativos | 256.291.770,23 | 262.521.473,67 | 6.229.703,44 |
+| Caixa | 9.089.008,82 | 2.857.010,42 | -6.231.998,40 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 1.282.573,05 | 1.282.573,05 | 0,00 |
-| Provisões | 133.310,30 | 133.310,30 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 111.288.932,40 | 111.287.961,46 | -970,94 |
-| PL base da cota | 111.283.878,26 | 111.282.907,32 | -970,94 |
-| Cota (8 casas) | 1,44764782 | 1,44763519 | -0,00001263 |
-| Aplicações convertidas | 808.271,16 | 1.282.573,05 | 474.301,89 |
-| Cotas emitidas | 558.334,11195271 | 885.978,08264109 | 327.643,97068838 |
-| Cotas resgatadas | 225.037,32812606 | 225.037,32812606 | 0,00000000 |
-| Valor dos resgates cotizados | 325.774,79 | 325.771,96 | -2,83 |
+| Valores a pagar | 1.911.721,26 | 1.911.721,26 | 0,00 |
+| Provisões | 681.954,56 | 681.495,56 | -459,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 263.213.627,59 | 263.211.332,63 | -2.294,96 |
+| PL base da cota | 262.787.103,23 | 262.785.267,27 | -1.835,96 |
+| Cota (8 casas) | 1,76960645 | 1,76959409 | -0,00001236 |
+| Aplicações convertidas | 1.911.721,26 | 1.911.721,26 | 0,00 |
+| Cotas emitidas | 1.080.308,70931781 | 1.080.316,25489888 | 7,54558107 |
+| Cotas resgatadas | 434.722,96799400 | 434.722,96799400 | 0,00000000 |
+| Valor dos resgates cotizados | 769.288,57 | 769.283,20 | -5,37 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 77.205.500,24025220 | 77.533.144,21094058 | 327.643,97068839 |
-| PL final | 111.766.374,11 | 112.239.707,95 | 473.333,84 |
+| Quantidade final de cotas | 149.145.893,31739458 | 149.145.900,86297566 | 7,54558107 |
+| PL final | 263.929.534,81 | 263.927.704,71 | -1.830,10 |
 
 ---
 
@@ -201,33 +210,21 @@ Nenhum item.
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Venda de LFT 01/03/2029 não processada; Aplicação recebida após o horário de corte convertida em D.
+**Resumo:** Reprovar até o ajuste: Venda de LFT 01/03/2029 não processada.
 
-**Dificuldade:** media · **Cenários:** boleta_tardia_nao_processada, aplicacao_apos_corte_convertida
+**Dificuldade:** media · **Cenários:** boleta_tardia_nao_processada
 
 ### Achado 1: Venda de LFT 01/03/2029 não processada
 
 - **Gravidade:** erro · **Dimensões:** caixa, cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não processou a venda de 143 LFT 01/03/2029, informada pela gestora às 18:59 (depois do corte operacional), embora executada e liquidada em D.
+- **Causa raiz:** Beta não processou a venda de 338 LFT 01/03/2029, informada pela gestora às 18:59 (depois do corte operacional), embora executada e liquidada em D.
 - **Onde olhar:** Carteira — LFT 01/03/2029 (quantidade); Caixa — lançamentos; Comunicações — boleta da gestora
 - **Raciocínio do analista:**
-  1. O Beta tem 143 LFT 01/03/2029 a mais e R$ 2.636.614,71 a menos de caixa. As duas diferenças quase se anulam, sobra R$ -970,94 no PL (preço de fechamento menos preço da operação).
+  1. O Beta tem 338 LFT 01/03/2029 a mais e R$ 6.231.998,40 a menos de caixa. As duas diferenças quase se anulam, sobra R$ -2.294,96 no PL (preço de fechamento menos preço da operação).
   2. A boleta chegou tarde, mas a operação foi executada e liquidada em D, com confirmação no SELIC. Fato econômico de D entra na cota de D.
   3. O PL quase bate, mas a carteira e o caixa ficam errados, e o enquadramento e a liquidez de amanhã partiriam da posição errada.
-- **Ação:** Beta deve incluir a venda (baixa de 143 LFT 01/03/2029 e crédito de R$ 2.636.614,71) e reprocessar. Reforçar com a gestora o horário limite de boletas.
-
-### Achado 2: Aplicação recebida após o horário de corte convertida em D
-
-- **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta converteu em D a aplicação de Cotista 4756 creditada às 14:24, depois do corte de 14:00.
-- **Onde olhar:** Movimentações de passivo (horário de crédito); Regulamento — horário de corte; Quantidade final de cotas
-- **Raciocínio do analista:**
-  1. Cota e PL-base iguais; a quantidade final de cotas do Beta tem 474.301,89 reais a mais convertidos.
-  2. A aplicação de Cotista 4756 entrou às 14:24. O corte do regulamento é 14:00, então ela deve ser convertida com a cota do dia útil seguinte (05/11/2026).
-  3. Converter com a cota de hoje favorece ou prejudica os demais cotistas, conforme a variação de amanhã. É erro de passivo.
-- **Ação:** Beta deve estornar a conversão e manter os recursos como "aplicação a converter" para 05/11/2026.
+- **Ação:** Beta deve incluir a venda (baixa de 338 LFT 01/03/2029 e crédito de R$ 6.231.998,40) e reprocessar. Reforçar com a gestora o horário limite de boletas.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -235,18 +232,14 @@ Nenhum item.
 |---|---|
 | cota | Alfa |
 | caixa | Alfa |
-| provisoes | ambos |
+| provisoes | Alfa |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 1,44764782 |
-| Quantidade final de cotas | 77.205.500,24025220 |
-| PL final | R$ 111.766.374,11 |
-| Caixa | R$ 4.318.853,74 |
-| Total de provisões | R$ 133.310,30 |
-
-### Armadilhas deste caso
-
-- Horário de corte: o horário do crédito decide a data de conversão.
+| Cota | 1,76960645 |
+| Quantidade final de cotas | 149.145.893,31739458 |
+| PL final | R$ 263.929.534,81 |
+| Caixa | R$ 9.089.008,82 |
+| Total de provisões | R$ 681.954,56 |

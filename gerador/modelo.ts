@@ -79,7 +79,27 @@ export interface MovPassivo {
   observacao?: string;
 }
 
-export interface ComeCotas { cotaReferencia: number; dataReferencia: string; aliquota: number; aplicar: boolean; }
+/** Posição de um cotista sujeita ao come-cotas. A quantidade é derivada: `peso` × cotas existentes ao fim do dia. */
+export interface PosicaoCotista {
+  id: string;
+  cotista: string;
+  tratamento: 'tributado' | 'isento';
+  peso: number; // fração das cotas existentes ao fim do dia (a soma dos pesos é 1)
+  cotaReferencia: number; // cota do último come-cotas ou da aplicação, a mais recente
+  dataReferencia: string;
+  origemReferencia: 'último come-cotas' | 'aplicação';
+}
+export interface ComeCotas {
+  aliquota: number;
+  posicoes: PosicaoCotista[];
+  aplicar: boolean;
+  vezes: number; // 1 = normal; 2 = processado em duplicidade
+  cotaConversao: 'D' | 'D-1'; // cota usada para converter o IR em cotas
+  cotaD1: number; // cota de D−1 (usada só quando cotaConversao = 'D-1')
+  tributaIsentos: boolean; // erro: retém também dos cotistas isentos
+  devolvePrejuizo: boolean; // erro: devolve cotas quando a cota está abaixo da referência
+}
+export interface DetalheComeCotas { id: string; qtdCotas: number; ganho: number; ir: number; cotasRetiradas: number; }
 
 export interface Posicao {
   ativos: Ativo[];
@@ -110,6 +130,7 @@ export interface Resultado {
   valorResgates: number;
   irComeCotas: number;
   cotasComeCotas: number;
+  detalheComeCotas: DetalheComeCotas[];
   qtdFinal: number;
   plFinal: number;
 }
@@ -234,17 +255,37 @@ export function calcular(p: Posicao, ctx: CtxCalculo): Resultado {
   }
   let irComeCotas = 0;
   let cotasComeCotas = 0;
-  if (p.comeCotas && p.comeCotas.aplicar) {
-    const ganho = Math.max(0, cota - p.comeCotas.cotaReferencia);
-    irComeCotas = r2(ganho * (p.qtdCotasBase - cotasResgatadas) * p.comeCotas.aliquota);
-    cotasComeCotas = truncar8(irComeCotas / cota);
+  const detalheComeCotas: DetalheComeCotas[] = [];
+  const cc = p.comeCotas;
+  if (cc && cc.aplicar) {
+    // incide sobre as cotas existentes ao fim do dia, depois das conversões e cotizações de D
+    const qAposMov = arredondar8(p.qtdCotasBase + cotasEmitidas - cotasResgatadas);
+    const cotaConv = cc.cotaConversao === 'D-1' ? cc.cotaD1 : cota;
+    let distribuido = 0;
+    cc.posicoes.forEach((pos, i) => {
+      const qtd = i < cc.posicoes.length - 1 ? truncar8(qAposMov * pos.peso) : arredondar8(qAposMov - distribuido);
+      distribuido = arredondar8(distribuido + qtd);
+      const tributado = pos.tratamento === 'tributado' || cc.tributaIsentos;
+      const variacao = (cota - pos.cotaReferencia) * qtd;
+      const ganho = tributado ? (cc.devolvePrejuizo ? variacao : Math.max(0, variacao)) : 0;
+      const ir1 = r2(ganho * cc.aliquota);
+      let ir = 0;
+      let cotasRet = 0;
+      for (let k = 0; k < cc.vezes; k++) {
+        ir = r2(ir + ir1);
+        cotasRet = arredondar8(cotasRet + truncar8(ir1 / cotaConv));
+      }
+      detalheComeCotas.push({ id: pos.id, qtdCotas: qtd, ganho: r2(ganho), ir, cotasRetiradas: cotasRet });
+      irComeCotas = r2(irComeCotas + ir);
+      cotasComeCotas = arredondar8(cotasComeCotas + cotasRet);
+    });
   }
   // soma de quantidades que já têm 8 casas: arredonda (não trunca) para não gerar ruído de ponto flutuante
   const qtdFinal = arredondar8(p.qtdCotasBase + cotasEmitidas - cotasResgatadas - cotasComeCotas);
   const plFinal = r2(qtdFinal * cota);
   return {
     totalAtivos, caixa: p.caixa.saldoFinal, totalReceber, totalPagar, totalProvisoes, plAntesApropriacoes: plSemApropriacao, plBase, cotaBrutaPerf, cota,
-    aplicacoesConvertidas, cotasEmitidas, cotasResgatadas, valorResgates, irComeCotas, cotasComeCotas, qtdFinal, plFinal,
+    aplicacoesConvertidas, cotasEmitidas, cotasResgatadas, valorResgates, irComeCotas, cotasComeCotas, detalheComeCotas, qtdFinal, plFinal,
   };
 }
 

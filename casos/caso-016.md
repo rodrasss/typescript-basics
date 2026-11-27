@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Mandacaru Institucional FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 16/11/2021, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. As rotinas diárias do administrador exigem acompanhamento próximo. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (08/05/2026) o fundo tinha PL de R$ 507.468.489,00, cota de 1.294,42885728 e 392.040,46336162 cotas. Hoje, segunda-feira, 11/05/2026, é a data-base da validação.
+Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Mandacaru Institucional FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 16/11/2021, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. O PL do fundo está perto do limite entre duas faixas da taxa de fiscalização. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (08/05/2026) o fundo tinha PL de R$ 507.468.489,00, cota de 1.294,42885728 e 392.040,46336162 cotas. Hoje, segunda-feira, 11/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -62,7 +62,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -175,7 +175,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 223.000,11 | 221.569,73 | -1.430,38 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 507.688.563,76 | 501.811.877,21 | -5.876.686,55 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 507.688.563,76 | 501.811.877,21 | -5.876.686,55 |
 | PL base da cota | 507.669.008,47 | 501.793.752,30 | -5.875.256,17 |
 | Cota (8 casas) | 1.294,94033375 | 1.279,95398229 | -14,98635146 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Caatinga Família FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 11/11/2016, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo fez uma nova emissão de cotas em 2024 para comprar mais um ativo e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Helena, e quem cuida da validação do fundo é Felipe. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. A mesa da gestora mexe nas posições de futuros várias vezes ao dia. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (12/03/2026) o fundo tinha PL de R$ 1.245.136.694,05, cota de 101,75803429 e 12.236.249,47765434 cotas. Hoje, sexta-feira, 13/03/2026, é a data-base da validação.
+Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Caatinga Família FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 11/11/2016, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo fez uma nova emissão de cotas em 2024 para comprar mais um ativo e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Helena, e quem cuida da validação do fundo é Felipe. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (12/03/2026) o fundo tinha PL de R$ 1.245.136.694,05, cota de 101,75803429 e 12.236.249,47765434 cotas. Hoje, sexta-feira, 13/03/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Caatinga Famíl
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -167,7 +167,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 575.417,14 | 575.417,14 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 1.245.609.559,52 | 1.245.609.559,52 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.245.609.559,52 | 1.245.609.559,52 | 0,00 |
 | PL base da cota | 1.245.562.103,41 | 1.245.562.103,41 | 0,00 |
 | Cota (8 casas) | 101,79280061 | 101,79280061 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

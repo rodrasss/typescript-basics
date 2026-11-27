@@ -80,6 +80,7 @@ function secaoMercado(c: Caso): string {
   const m = c.mercado;
   const L: string[] = ['## 3. Informações de mercado do dia', ''];
   L.push(`- CDI: ${fmtPct(m.cdiAA, 2)} a.a.`);
+  if (m.prazoMedioCarteira !== undefined) L.push(`- Prazo médio da carteira em ${fmtData(c.data)}: ${fmtN(m.prazoMedioCarteira, 0)} dias (informado pelo administrador)`);
   if (m.ptax) L.push(`- PTAX de ${fmtData(c.data)}: compra ${fmtN(m.ptax.compraD, 4)} / venda ${fmtN(m.ptax.vendaD, 4)}; PTAX de venda de ${fmtData(c.dAnterior)}: ${fmtN(m.ptax.vendaD1, 4)}`);
   L.push('');
   if (m.referencias.length) L.push('**Referências de preço**', '', tabela(['Ativo', 'Fonte', 'Valor', 'Observação'], m.referencias.map((r) => [r.ativo, r.fonte, r.valor, r.obs ?? ''])), '');
@@ -175,6 +176,7 @@ function secaoBatimento(c: Caso): string {
   L.push('### 5.7 Passivo (aplicações, resgates e demais movimentos)', '');
   if (!mu.length) L.push('Nenhum movimento de passivo no dia.', '');
   else {
+    L.push('_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._', '');
     L.push(tabela(['ID', 'Tipo', 'Cotista', 'Valor / cotas', 'Crédito às', 'Solicitado em', 'Cotização', 'Liquidação', 'Converte/cotiza hoje? Alfa', 'Converte/cotiza hoje? Beta', 'Observação'],
       mu.map(({ x: a, y: b }) => {
         const m = (a ?? b)!;
@@ -190,12 +192,53 @@ function secaoBatimento(c: Caso): string {
   };
   const linhasF: [string, string[]][] = [
     ['Total de ativos', f('totalAtivos')], ['Caixa', f('caixa')], ['Valores a receber', f('totalReceber')], ['Valores a pagar', f('totalPagar')], ['Provisões', f('totalProvisoes')],
-    ['PL antes das apropriações do dia (saldos anteriores das provisões)', f('plAntesApropriacoes')], ['PL base da cota', f('plBase')], ['Cota (8 casas)', f('cota', 8)], ['Aplicações convertidas', f('aplicacoesConvertidas')], ['Cotas emitidas', f('cotasEmitidas', 8)],
+    ['PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance)', f('plAntesApropriacoes')], ['PL base da cota', f('plBase')], ['Cota (8 casas)', f('cota', 8)], ['Aplicações convertidas', f('aplicacoesConvertidas')], ['Cotas emitidas', f('cotasEmitidas', 8)],
     ['Cotas resgatadas', f('cotasResgatadas', 8)], ['Valor dos resgates cotizados', f('valorResgates')], ['IR de come-cotas', f('irComeCotas')],
     ['Cotas retiradas (come-cotas)', f('cotasComeCotas', 8)], ['Quantidade final de cotas', f('qtdFinal', 8)], ['PL final', f('plFinal')],
   ];
   L.push('### 5.8 Fechamento do dia', '', tabela(['Item', 'Alfa', 'Beta', 'Δ'], linhasF.map(([k, v]) => [k, ...v])), '');
+  L.push(...secaoComeCotas(c));
   return L.join('\n');
+}
+
+function secaoComeCotas(c: Caso): string[] {
+  const x = c.lados.Alfa;
+  const s = c.lados.Beta;
+  if (!x.posicao.comeCotas && !s.posicao.comeCotas) return [];
+  const L: string[] = ['### 5.9 Come-cotas (hoje é dia de come-cotas)', ''];
+  const achar = (lado: typeof x, id: string) => lado.posicao.comeCotas?.posicoes.find((p) => p.id === id);
+  const detalhe = (lado: typeof x, id: string) => lado.resultado.detalheComeCotas.find((d) => d.id === id);
+  const estado = (lado: typeof x): string => (!lado.posicao.comeCotas ? 'sem come-cotas' : !lado.posicao.comeCotas.aplicar ? 'não processado' : NA);
+  const ids = [...new Set([...(x.posicao.comeCotas?.posicoes ?? []), ...(s.posicao.comeCotas?.posicoes ?? [])].map((p) => p.id))];
+  const linhas = ids.map((id) => {
+    const a = achar(x, id);
+    const b = achar(s, id);
+    const ref = (a ?? b)!;
+    const dx = detalhe(x, id);
+    const ds = detalhe(s, id);
+    return [
+      id, ref.cotista, ref.tratamento, `${ref.origemReferencia} em ${fmtData(ref.dataReferencia)}`,
+      dx ? fmtN(dx.qtdCotas, 8) : estado(x), ds ? fmtN(ds.qtdCotas, 8) : estado(s),
+      a ? fmtN(a.cotaReferencia, 8) : NA, b ? fmtN(b.cotaReferencia, 8) : NA,
+      dx ? fmtN(dx.ir, 2) : estado(x), ds ? fmtN(ds.ir, 2) : estado(s),
+      dx ? fmtN(dx.cotasRetiradas, 8) : estado(x), ds ? fmtN(ds.cotasRetiradas, 8) : estado(s),
+    ];
+  });
+  L.push(tabela(
+    ['Posição', 'Cotista', 'Tratamento', 'Referência', 'Qtd de cotas Alfa', 'Qtd de cotas Beta', 'Cota de referência Alfa', 'Cota de referência Beta', 'IR Alfa', 'IR Beta', 'Cotas retiradas Alfa', 'Cotas retiradas Beta'],
+    [...linhas, ['**Total**', '', '', '', '', '', '', '', fmtN(x.resultado.irComeCotas, 2), fmtN(s.resultado.irComeCotas, 2), fmtN(x.resultado.cotasComeCotas, 8), fmtN(s.resultado.cotasComeCotas, 8)]],
+  ), '');
+  if (c.memoriaDisponivel) {
+    L.push('**Memória do come-cotas informada por cada lado**', '');
+    for (const [nome, lado] of [['Alfa', x], ['Beta', s]] as const) {
+      const cc = lado.posicao.comeCotas;
+      if (!cc) { L.push(`- ${nome}: sem come-cotas neste fundo`); continue; }
+      if (!cc.aplicar) { L.push(`- ${nome}: come-cotas não processado hoje`); continue; }
+      L.push(`- ${nome}: alíquota ${fmtPct(cc.aliquota, 0)}; IR convertido em cotas pela ${cc.cotaConversao === 'D' ? `cota de D (${fmtN(lado.resultado.cota, 8)})` : `cota de D−1 (${fmtN(cc.cotaD1, 8)})`}`);
+    }
+    L.push('');
+  } else L.push('_Memória do come-cotas: não disponível neste caso. Recalcular a partir do regulamento._', '');
+  return L;
 }
 
 export function renderEntrada(c: Caso): string {

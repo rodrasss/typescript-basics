@@ -19,25 +19,26 @@
     "inicio": "2010-09-24",
     "cotistas": "carteiras administradas e clientes private com perfil moderado",
     "marcos": [
-      "reduziu o prazo de cotização em 2024 para competir em plataformas",
-      "mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge"
+      "mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge",
+      "migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização"
     ],
     "particularidades": [
-      "as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês",
-      "o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes"
+      "a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras",
+      "o fundo tem aplicações e resgates quase todos os dias"
     ],
     "pistas": [
-      "As rotinas diárias do administrador exigem acompanhamento próximo."
+      "A gestora costuma pedir que despesas dela sejam lançadas no fundo.",
+      "A performance oscila bastante e o fundo vive perto da linha d’água."
     ],
-    "historia": "O Jatobá FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora de fundos de fundos (alocação) com comitê mensal de seleção, em São Paulo/SP. Criado em 24/09/2010, aloca em outros fundos multimercado e rebalanceia a carteira todo mês. Público-alvo: investidores qualificados. Hoje seus cotistas são carteiras administradas e clientes private com perfil moderado. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge. O gestor responsável é Cecília, e quem cuida da validação do fundo é Juliana. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. As rotinas diárias do administrador exigem acompanhamento próximo. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (03/11/2026) o fundo tinha PL de R$ 434.785.761,57, cota de 2,30924492 e 188.280.487,67075680 cotas. Hoje, quarta-feira, 04/11/2026, é a data-base da validação."
+    "historia": "Quem acompanha a Garoa Investimentos (São Paulo/SP) conhece o Jatobá FIC FIF Multimercado: a casa é uma gestora de fundos de fundos (alocação) com comitê mensal de seleção. Criado em 24/09/2010, aloca em outros fundos multimercado e rebalanceia a carteira todo mês. Público-alvo: investidores qualificados. Hoje seus cotistas são carteiras administradas e clientes private com perfil moderado. Ao longo da vida, o fundo mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Cecília, e quem cuida da validação do fundo é Juliana. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; o fundo tem aplicações e resgates quase todos os dias. A gestora costuma pedir que despesas dela sejam lançadas no fundo. A performance oscila bastante e o fundo vive perto da linha d’água. A equipe da gestora é considerada muito organizada. No fechamento de ontem (03/11/2026) o fundo tinha PL de R$ 949.486.481,27, cota de 6,24046250 e 152.150.017,93023312 cotas. Hoje, quarta-feira, 04/11/2026, é a data-base da validação."
   },
   "data": "2026-11-04",
   "dAnterior": "2026-11-03",
   "diaSemana": "quarta-feira",
   "anterior": {
-    "pl": 434785761.57,
-    "cota": 2.30924492,
-    "qtdCotas": 188280487.6707568
+    "pl": 949486481.27,
+    "cota": 6.2404625,
+    "qtdCotas": 152150017.93023312
   },
   "regulamento": {
     "vigencia": "01/11/2025 (adaptado à Resolução CVM 175)",
@@ -46,8 +47,8 @@
         "codigo": "TXADM",
         "nome": "Taxa de administração",
         "param": {
-          "pct": 0.0017,
-          "metodo": "exponencial_252"
+          "pct": 0.0018,
+          "metodo": "linear_252"
         },
         "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
       },
@@ -55,8 +56,8 @@
         "codigo": "TXGES",
         "nome": "Taxa de gestão",
         "param": {
-          "pct": 0.0085,
-          "metodo": "exponencial_252"
+          "pct": 0.0088,
+          "metodo": "linear_252"
         },
         "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
       },
@@ -64,8 +65,8 @@
         "codigo": "TXCUS",
         "nome": "Taxa máxima de custódia",
         "param": {
-          "pct": 0.0003,
-          "metodo": "exponencial_252"
+          "pct": 0.0002,
+          "metodo": "linear_252"
         },
         "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
       }
@@ -74,14 +75,14 @@
       {
         "codigo": "AUDIT",
         "nome": "Auditoria independente",
-        "valor": 43000,
+        "valor": 67000,
         "periodo": "anual",
         "observacao": "contrato anual; provisão diária por 1/252"
       },
       {
         "codigo": "ANBIMA",
         "nome": "Taxa ANBIMA (convênio de autorregulação)",
-        "valor": 700,
+        "valor": 600,
         "periodo": "mensal"
       }
     ],
@@ -111,7 +112,7 @@
         "valor": 14400
       }
     ],
-    "plReferenciaCVM": 420878715.1,
+    "plReferenciaCVM": 918522507.99,
     "encargos": [
       "taxas de administração, gestão, custódia e performance previstas neste regulamento",
       "taxa de fiscalização da CVM",
@@ -127,53 +128,53 @@
       "despesas não previstas expressamente como encargo"
     ],
     "cotizacao": [
-      "Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.",
-      "Resgate: cotização em D+45 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização."
+      "Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.",
+      "Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização."
     ],
-    "cota": "Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.",
+    "cota": "Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).",
     "precificacao": [
       "Manual de marcação a mercado do administrador (versão simulada vigente).",
       "Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.",
       "Operações compromissadas: PU de ida acrescido da remuneração pactuada.",
       "Cotas de fundos investidos: cota de D divulgada pelo administrador do investido. Se não divulgada até 20h de D, usa-se a última cota disponível e a cota é reprocessada quando a de D for publicada."
     ],
-    "tributacao": "Longo prazo; come-cotas semestral (maio/novembro) a 15%",
+    "tributacao": "Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)",
     "especificos": [],
     "alteracoes": [],
-    "horarioCorte": "14:00"
+    "horarioCorte": "16:00"
   },
   "mercado": {
     "cdiAA": 0.1415,
     "referencias": [
       {
-        "ativo": "COTA CARAVELA",
-        "fonte": "Cota de D divulgada pelo administrador do investido",
-        "valor": "1,63383565",
-        "obs": "divulgada às 19:23"
-      },
-      {
-        "ativo": "COTA SABIÁ",
-        "fonte": "Cota de D divulgada pelo administrador do investido",
-        "valor": "3,08353310",
-        "obs": "divulgada às 18:14"
-      },
-      {
-        "ativo": "COTA CORUJA",
+        "ativo": "COTA JURITI",
         "fonte": "Cota de D divulgada pelo administrador do investido",
         "valor": "7,23146986",
         "obs": "divulgada às 18:35"
       },
       {
-        "ativo": "COTA JURITI",
+        "ativo": "COTA CARDEAL",
         "fonte": "Cota de D divulgada pelo administrador do investido",
         "valor": "2,41609317",
         "obs": "divulgada às 17:12"
       },
       {
-        "ativo": "COTA CARDEAL",
+        "ativo": "COTA SABIÁ",
         "fonte": "Cota de D divulgada pelo administrador do investido",
         "valor": "4,35612413",
         "obs": "divulgada às 19:47"
+      },
+      {
+        "ativo": "COTA POROROCA",
+        "fonte": "Cota de D divulgada pelo administrador do investido",
+        "valor": "3,35773226",
+        "obs": "divulgada às 18:46"
+      },
+      {
+        "ativo": "COTA GAIVOTA",
+        "fonte": "Cota de D divulgada pelo administrador do investido",
+        "valor": "1,86809289",
+        "obs": "divulgada às 17:49"
       }
     ],
     "futuros": [],
@@ -182,10 +183,10 @@
   },
   "comunicacoes": [
     {
-      "hora": "14:32",
-      "de": "Gestora — relações com investidores",
-      "assunto": "Evento com cotistas",
-      "texto": "Favor provisionar no fundo a despesa do evento anual com cotistas, R$ 23.145,01 (NF do buffet em anexo)."
+      "hora": "12:56",
+      "de": "Gestora — jurídico",
+      "assunto": "Honorários",
+      "texto": "Precisamos provisionar honorários do escritório que está cuidando da cobrança de um emissor da carteira: R$ 15.740,32 (proposta anexa; a aprovação do administrador está em andamento)."
     }
   ],
   "memoriaDisponivel": true,
@@ -197,139 +198,147 @@
             "codigo": "COMPROMISSADA OVER",
             "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
             "classe": "Compromissada",
-            "quantidade": 21061,
-            "preco": 807.318335,
-            "valor": 17002931.45,
+            "quantidade": 46321,
+            "preco": 797.244358,
+            "valor": 36929155.91,
             "fonte": "PU de ida + remuneração pactuada (taxa over)"
-          },
-          {
-            "codigo": "COTA CARAVELA",
-            "descricao": "Cotas do Caravela Long Short FIF Multimercado",
-            "classe": "Cota de fundo",
-            "quantidade": 57237226.29269478,
-            "preco": 1.63383565,
-            "valor": 93516220.82,
-            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
-          },
-          {
-            "codigo": "COTA SABIÁ",
-            "descricao": "Cotas do Sabiá Macro FIF Multimercado",
-            "classe": "Cota de fundo",
-            "quantidade": 23434979.26880864,
-            "preco": 3.0835331,
-            "valor": 72262534.27,
-            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
-          },
-          {
-            "codigo": "COTA CORUJA",
-            "descricao": "Cotas do Coruja Quant FIF Multimercado",
-            "classe": "Cota de fundo",
-            "quantidade": 11168408.42278778,
-            "preco": 7.23146986,
-            "valor": 80764008.89,
-            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
           },
           {
             "codigo": "COTA JURITI",
             "descricao": "Cotas do Juriti Inflação FIF RF",
             "classe": "Cota de fundo",
-            "quantidade": 35186865.82924587,
-            "preco": 2.41609317,
-            "valor": 85014746.2,
+            "quantidade": 26810107.08850423,
+            "preco": 7.23146986,
+            "valor": 193876481.35,
             "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
           },
           {
             "codigo": "COTA CARDEAL",
             "descricao": "Cotas do Cardeal Global FIC FIF IE",
             "classe": "Cota de fundo",
-            "quantidade": 19516144.0920067,
+            "quantidade": 84064926.49937625,
+            "preco": 2.41609317,
+            "valor": 203108694.75,
+            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
+          },
+          {
+            "codigo": "COTA SABIÁ",
+            "descricao": "Cotas do Sabiá Macro FIF Multimercado",
+            "classe": "Cota de fundo",
+            "quantidade": 46626011.72287873,
             "preco": 4.35612413,
-            "valor": 85014746.2,
+            "valor": 203108694.75,
+            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
+          },
+          {
+            "codigo": "COTA POROROCA",
+            "descricao": "Cotas do Pororoca Ações FIF",
+            "classe": "Cota de fundo",
+            "quantidade": 52241227.40455845,
+            "preco": 3.35773226,
+            "valor": 175412054.56,
+            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
+          },
+          {
+            "codigo": "COTA GAIVOTA",
+            "descricao": "Cotas do Gaivota Juros FIF Multimercado",
+            "classe": "Cota de fundo",
+            "quantidade": 69188736.95261505,
+            "preco": 1.86809289,
+            "valor": 129250987.57,
             "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
           }
         ],
         "caixa": {
-          "saldoInicial": 1597852.23,
+          "saldoInicial": 6922939.7,
           "lancamentos": [
             {
-              "historico": "TED recebida — aplicação [APL-1] Cotista 5488 (12:16)",
-              "valor": 441493.09
+              "historico": "TED recebida — aplicação [APL-1] Cotista 1176 (09:46)",
+              "valor": 3134381.72
             },
             {
-              "historico": "TED recebida — aplicação [APL-2] Cotista 5495 (13:37)",
-              "valor": 1741613.79
+              "historico": "TED recebida — aplicação [APL-2] Cotista 1183 (14:57)",
+              "valor": 1590599.34
+            },
+            {
+              "historico": "TED recebida — aplicação [APL-3] Cotista 1190 (10:20)",
+              "valor": 3127183.92
+            },
+            {
+              "historico": "Pagamento de resgate [LIQ-1] — Cotista 1197 (cotizado em 03/11/2026)",
+              "valor": -1048766.16
             }
           ],
-          "saldoFinal": 3780959.11
+          "saldoFinal": 13726338.52
         },
         "aReceber": [],
         "aPagar": [
           {
             "codigo": "APLIC A CONVERTER",
             "descricao": "Aplicações recebidas no dia, a converter em cotas",
-            "valor": 2183106.88
+            "valor": 7852164.98
           }
         ],
         "provisoes": [
           {
             "codigo": "TXADM",
             "descricao": "Taxa de administração a pagar",
-            "saldoAnterior": 63838.63,
-            "apropriacao": 2930.6,
+            "saldoAnterior": 146906.01,
+            "apropriacao": 6782.05,
             "pagamento": 0,
-            "saldoAtual": 66769.23,
-            "memoria": "[base: PL do dia útil anterior] 0,17% a.a. sobre R$ 434.785.761,57 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.930,60",
+            "saldoAtual": 153688.06,
+            "memoria": "[base: PL do dia útil anterior] 0,18% a.a. sobre R$ 949.486.481,27 ÷ 252 (linear, dias úteis) = R$ 6.782,05",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0017,
-                "metodo": "exponencial_252"
+                "pct": 0.0018,
+                "metodo": "linear_252"
               }
             }
           },
           {
             "codigo": "TXGES",
             "descricao": "Taxa de gestão a pagar",
-            "saldoAnterior": 312800.1,
-            "apropriacao": 14603.66,
+            "saldoAnterior": 726610.81,
+            "apropriacao": 22891.73,
             "pagamento": 0,
-            "saldoAtual": 327403.76,
-            "memoria": "[base: PL do dia útil anterior] 0,85% a.a. sobre R$ 434.785.761,57 fator exponencial (1+taxa)^(1/252) − 1 = R$ 14.603,66",
+            "saldoAtual": 749502.54,
+            "memoria": "[base: PL do dia útil anterior] 0,88% a.a. sobre R$ 949.486.481,27 ÷ 365 × 1 dia(s) corrido(s) = R$ 22.891,73",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0085,
-                "metodo": "exponencial_252"
+                "pct": 0.0088,
+                "metodo": "corridos_365"
               }
             }
           },
           {
             "codigo": "TXCUS",
             "descricao": "Taxa máxima de custódia a pagar",
-            "saldoAnterior": 11376.12,
-            "apropriacao": 517.52,
+            "saldoAnterior": 16978.68,
+            "apropriacao": 753.56,
             "pagamento": 0,
-            "saldoAtual": 11893.64,
-            "memoria": "[base: PL do dia útil anterior] 0,03% a.a. sobre R$ 434.785.761,57 fator exponencial (1+taxa)^(1/252) − 1 = R$ 517,52",
+            "saldoAtual": 17732.24,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 949.486.481,27 ÷ 252 (linear, dias úteis) = R$ 753,56",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0003,
-                "metodo": "exponencial_252"
+                "pct": 0.0002,
+                "metodo": "linear_252"
               }
             }
           },
           {
             "codigo": "AUDIT",
             "descricao": "Auditoria independente a pagar",
-            "saldoAnterior": 13138.89,
-            "apropriacao": 170.63,
+            "saldoAnterior": 25789.68,
+            "apropriacao": 265.87,
             "pagamento": 0,
-            "saldoAtual": 13309.52,
-            "memoria": "R$ 43.000,00 (anual) ÷ 252 d.u. = R$ 170,63",
+            "saldoAtual": 26055.55,
+            "memoria": "R$ 67.000,00 (anual) ÷ 252 d.u. = R$ 265,87",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 43000,
+              "valorPeriodo": 67000,
               "periodo": "anual",
               "diasPeriodo": 252
             }
@@ -337,14 +346,14 @@
           {
             "codigo": "ANBIMA",
             "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
-            "saldoAnterior": 36.84,
-            "apropriacao": 36.84,
+            "saldoAnterior": 31.58,
+            "apropriacao": 31.58,
             "pagamento": 0,
-            "saldoAtual": 73.68,
-            "memoria": "R$ 700,00 (mensal) ÷ 19 d.u. = R$ 36,84",
+            "saldoAtual": 63.16,
+            "memoria": "R$ 600,00 (mensal) ÷ 19 d.u. = R$ 31,58",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 700,
+              "valorPeriodo": 600,
               "periodo": "mensal",
               "diasPeriodo": 19
             }
@@ -365,15 +374,15 @@
             }
           }
         ],
-        "qtdCotasBase": 188280487.6707568,
+        "qtdCotasBase": 152150017.93023312,
         "arredondamento": "truncamento",
         "movs": [
           {
             "id": "APL-1",
             "tipo": "aplicacao",
-            "cotista": "Cotista 5488",
-            "valor": 441493.09,
-            "recebidoAs": "12:16",
+            "cotista": "Cotista 1176",
+            "valor": 3134381.72,
+            "recebidoAs": "09:46",
             "solicitadoEm": "2026-11-04",
             "cotizacao": "2026-11-04",
             "liquidacao": "2026-11-04",
@@ -382,33 +391,57 @@
           {
             "id": "APL-2",
             "tipo": "aplicacao",
-            "cotista": "Cotista 5495",
-            "valor": 1741613.79,
-            "recebidoAs": "13:37",
+            "cotista": "Cotista 1183",
+            "valor": 1590599.34,
+            "recebidoAs": "14:57",
             "solicitadoEm": "2026-11-04",
             "cotizacao": "2026-11-04",
             "liquidacao": "2026-11-04",
             "converterHoje": true
+          },
+          {
+            "id": "APL-3",
+            "tipo": "aplicacao",
+            "cotista": "Cotista 1190",
+            "valor": 3127183.92,
+            "recebidoAs": "10:20",
+            "solicitadoEm": "2026-11-04",
+            "cotizacao": "2026-11-04",
+            "liquidacao": "2026-11-04",
+            "converterHoje": true
+          },
+          {
+            "id": "LIQ-1",
+            "tipo": "resgate",
+            "cotista": "Cotista 1197",
+            "cotas": 168059.04349538,
+            "valor": 1048766.16,
+            "solicitadoEm": "2026-10-02",
+            "cotizacao": "2026-11-03",
+            "liquidacao": "2026-11-04",
+            "converterHoje": false,
+            "observacao": "cotizado em 03/11/2026 pela cota de 6,24046250; liquidação financeira hoje"
           }
         ]
       },
       "resultado": {
-        "totalAtivos": 433575187.83,
-        "caixa": 3780959.11,
+        "totalAtivos": 941686068.89,
+        "caixa": 13726338.52,
         "totalReceber": 0,
-        "totalPagar": 2183106.88,
-        "totalProvisoes": 423456.28,
-        "plAntesApropriacoes": 434768017.22,
-        "plBase": 434749583.78,
-        "cota": 2.30905278,
-        "aplicacoesConvertidas": 2183106.88,
-        "cotasEmitidas": 945455.59933021,
+        "totalPagar": 7852164.98,
+        "totalProvisoes": 951048,
+        "plAntesApropriacoes": 946640093.41,
+        "plBase": 946609194.43,
+        "cota": 6.22155164,
+        "aplicacoesConvertidas": 7852164.98,
+        "cotasEmitidas": 1262091.10433421,
         "cotasResgatadas": 0,
         "valorResgates": 0,
         "irComeCotas": 0,
         "cotasComeCotas": 0,
-        "qtdFinal": 189225943.270087,
-        "plFinal": 436932690.36
+        "detalheComeCotas": [],
+        "qtdFinal": 153412109.03456733,
+        "plFinal": 954461358.56
       }
     },
     "Beta": {
@@ -418,135 +451,147 @@
             "codigo": "COMPROMISSADA OVER",
             "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
             "classe": "Compromissada",
-            "quantidade": 21061,
-            "preco": 807.318335,
-            "valor": 17002931.45,
+            "quantidade": 46321,
+            "preco": 797.244358,
+            "valor": 36929155.91,
             "fonte": "PU de ida + remuneração pactuada (taxa over)"
-          },
-          {
-            "codigo": "COTA CARAVELA",
-            "descricao": "Cotas do Caravela Long Short FIF Multimercado",
-            "classe": "Cota de fundo",
-            "quantidade": 57237226.29269478,
-            "preco": 1.63383565,
-            "valor": 93516220.82,
-            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
-          },
-          {
-            "codigo": "COTA SABIÁ",
-            "descricao": "Cotas do Sabiá Macro FIF Multimercado",
-            "classe": "Cota de fundo",
-            "quantidade": 23434979.26880864,
-            "preco": 3.0835331,
-            "valor": 72262534.27,
-            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
-          },
-          {
-            "codigo": "COTA CORUJA",
-            "descricao": "Cotas do Coruja Quant FIF Multimercado",
-            "classe": "Cota de fundo",
-            "quantidade": 11168408.42278778,
-            "preco": 7.23146986,
-            "valor": 80764008.89,
-            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
           },
           {
             "codigo": "COTA JURITI",
             "descricao": "Cotas do Juriti Inflação FIF RF",
             "classe": "Cota de fundo",
-            "quantidade": 35186865.82924587,
-            "preco": 2.41609317,
-            "valor": 85014746.2,
+            "quantidade": 26810107.08850423,
+            "preco": 7.23146986,
+            "valor": 193876481.35,
             "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
           },
           {
             "codigo": "COTA CARDEAL",
             "descricao": "Cotas do Cardeal Global FIC FIF IE",
             "classe": "Cota de fundo",
-            "quantidade": 19516144.0920067,
+            "quantidade": 84064926.49937625,
+            "preco": 2.41609317,
+            "valor": 203108694.75,
+            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
+          },
+          {
+            "codigo": "COTA SABIÁ",
+            "descricao": "Cotas do Sabiá Macro FIF Multimercado",
+            "classe": "Cota de fundo",
+            "quantidade": 46626011.72287873,
             "preco": 4.35612413,
-            "valor": 85014746.2,
+            "valor": 203108694.75,
+            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
+          },
+          {
+            "codigo": "COTA POROROCA",
+            "descricao": "Cotas do Pororoca Ações FIF",
+            "classe": "Cota de fundo",
+            "quantidade": 52241227.40455845,
+            "preco": 3.35773226,
+            "valor": 175412054.56,
+            "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
+          },
+          {
+            "codigo": "COTA GAIVOTA",
+            "descricao": "Cotas do Gaivota Juros FIF Multimercado",
+            "classe": "Cota de fundo",
+            "quantidade": 69188736.95261505,
+            "preco": 1.86809289,
+            "valor": 129250987.57,
             "fonte": "Cota divulgada pelo administrador do fundo investido (D)"
           }
         ],
         "caixa": {
-          "saldoInicial": 1597852.23,
+          "saldoInicial": 6922939.7,
           "lancamentos": [
             {
-              "historico": "TED recebida — aplicação [APL-1] Cotista 5488 (12:16)",
-              "valor": 441493.09
+              "historico": "TED recebida — aplicação [APL-1] Cotista 1176 (09:46)",
+              "valor": 3134381.72
             },
             {
-              "historico": "TED recebida — aplicação [APL-2] Cotista 5495 (13:37)",
-              "valor": 1741613.79
+              "historico": "TED recebida — aplicação [APL-2] Cotista 1183 (14:57)",
+              "valor": 1590599.34
+            },
+            {
+              "historico": "TED recebida — aplicação [APL-3] Cotista 1190 (10:20)",
+              "valor": 3127183.92
+            },
+            {
+              "historico": "Pagamento de resgate [LIQ-1] — Cotista 1197 (cotizado em 03/11/2026)",
+              "valor": -1048766.16
             }
           ],
-          "saldoFinal": 3780959.11
+          "saldoFinal": 13726338.52
         },
         "aReceber": [],
         "aPagar": [
           {
             "codigo": "APLIC A CONVERTER",
             "descricao": "Aplicações recebidas no dia, a converter em cotas",
-            "valor": 2183106.88
+            "valor": 7852164.98
           }
         ],
         "provisoes": [
           {
             "codigo": "TXADM",
             "descricao": "Taxa de administração a pagar",
-            "saldoAnterior": 63838.63,
-            "apropriacao": 2930.6,
+            "saldoAnterior": 146906.01,
+            "apropriacao": 6782.05,
             "pagamento": 0,
-            "saldoAtual": 66769.23,
-            "memoria": "[base: PL do dia útil anterior] 0,17% a.a. sobre R$ 434.785.761,57 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.930,60",
+            "saldoAtual": 153688.06,
+            "memoria": "[base: PL do dia útil anterior] 0,18% a.a. sobre R$ 949.486.481,27 ÷ 252 (linear, dias úteis) = R$ 6.782,05",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0017,
-                "metodo": "exponencial_252"
+                "pct": 0.0018,
+                "metodo": "linear_252"
               }
             }
           },
           {
             "codigo": "TXGES",
             "descricao": "Taxa de gestão a pagar",
-            "saldoAnterior": 312800.1,
-            "apropriacao": 0,
+            "saldoAnterior": 726610.81,
+            "apropriacao": 33156.67,
             "pagamento": 0,
-            "saldoAtual": 312800.1,
-            "memoria": "Sem apropriação no dia",
+            "saldoAtual": 759767.48,
+            "memoria": "[base: PL do dia útil anterior] 0,88% a.a. sobre R$ 949.486.481,27 ÷ 252 (linear, dias úteis) = R$ 33.156,67",
             "regra": {
-              "tipo": "manual"
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0088,
+                "metodo": "linear_252"
+              }
             }
           },
           {
             "codigo": "TXCUS",
             "descricao": "Taxa máxima de custódia a pagar",
-            "saldoAnterior": 11376.12,
-            "apropriacao": 517.52,
+            "saldoAnterior": 16978.68,
+            "apropriacao": 753.56,
             "pagamento": 0,
-            "saldoAtual": 11893.64,
-            "memoria": "[base: PL do dia útil anterior] 0,03% a.a. sobre R$ 434.785.761,57 fator exponencial (1+taxa)^(1/252) − 1 = R$ 517,52",
+            "saldoAtual": 17732.24,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 949.486.481,27 ÷ 252 (linear, dias úteis) = R$ 753,56",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0003,
-                "metodo": "exponencial_252"
+                "pct": 0.0002,
+                "metodo": "linear_252"
               }
             }
           },
           {
             "codigo": "AUDIT",
             "descricao": "Auditoria independente a pagar",
-            "saldoAnterior": 13138.89,
-            "apropriacao": 170.63,
+            "saldoAnterior": 25789.68,
+            "apropriacao": 265.87,
             "pagamento": 0,
-            "saldoAtual": 13309.52,
-            "memoria": "R$ 43.000,00 (anual) ÷ 252 d.u. = R$ 170,63",
+            "saldoAtual": 26055.55,
+            "memoria": "R$ 67.000,00 (anual) ÷ 252 d.u. = R$ 265,87",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 43000,
+              "valorPeriodo": 67000,
               "periodo": "anual",
               "diasPeriodo": 252
             }
@@ -554,14 +599,14 @@
           {
             "codigo": "ANBIMA",
             "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
-            "saldoAnterior": 36.84,
-            "apropriacao": 36.84,
+            "saldoAnterior": 31.58,
+            "apropriacao": 31.58,
             "pagamento": 0,
-            "saldoAtual": 73.68,
-            "memoria": "R$ 700,00 (mensal) ÷ 19 d.u. = R$ 36,84",
+            "saldoAtual": 63.16,
+            "memoria": "R$ 600,00 (mensal) ÷ 19 d.u. = R$ 31,58",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 700,
+              "valorPeriodo": 600,
               "periodo": "mensal",
               "diasPeriodo": 19
             }
@@ -582,27 +627,27 @@
             }
           },
           {
-            "codigo": "DESP EVENTO",
-            "descricao": "Despesa — evento de relacionamento com cotistas (gestora)",
+            "codigo": "HONORARIOS",
+            "descricao": "Honorários advocatícios — cobrança contra um emissor da carteira",
             "saldoAnterior": 0,
-            "apropriacao": 23145.01,
+            "apropriacao": 15740.32,
             "pagamento": 0,
-            "saldoAtual": 23145.01,
-            "memoria": "Lançamento manual a pedido da gestora",
+            "saldoAtual": 15740.32,
+            "memoria": "Lançamento manual com base em e-mail da gestora",
             "regra": {
               "tipo": "manual"
             }
           }
         ],
-        "qtdCotasBase": 188280487.6707568,
+        "qtdCotasBase": 152150017.93023312,
         "arredondamento": "truncamento",
         "movs": [
           {
             "id": "APL-1",
             "tipo": "aplicacao",
-            "cotista": "Cotista 5488",
-            "valor": 441493.09,
-            "recebidoAs": "12:16",
+            "cotista": "Cotista 1176",
+            "valor": 3134381.72,
+            "recebidoAs": "09:46",
             "solicitadoEm": "2026-11-04",
             "cotizacao": "2026-11-04",
             "liquidacao": "2026-11-04",
@@ -611,116 +656,127 @@
           {
             "id": "APL-2",
             "tipo": "aplicacao",
-            "cotista": "Cotista 5495",
-            "valor": 1741613.79,
-            "recebidoAs": "13:37",
+            "cotista": "Cotista 1183",
+            "valor": 1590599.34,
+            "recebidoAs": "14:57",
             "solicitadoEm": "2026-11-04",
             "cotizacao": "2026-11-04",
             "liquidacao": "2026-11-04",
             "converterHoje": true
+          },
+          {
+            "id": "APL-3",
+            "tipo": "aplicacao",
+            "cotista": "Cotista 1190",
+            "valor": 3127183.92,
+            "recebidoAs": "10:20",
+            "solicitadoEm": "2026-11-04",
+            "cotizacao": "2026-11-04",
+            "liquidacao": "2026-11-04",
+            "converterHoje": true
+          },
+          {
+            "id": "LIQ-1",
+            "tipo": "resgate",
+            "cotista": "Cotista 1197",
+            "cotas": 168059.04349538,
+            "valor": 1048766.16,
+            "solicitadoEm": "2026-10-02",
+            "cotizacao": "2026-11-03",
+            "liquidacao": "2026-11-04",
+            "converterHoje": false,
+            "observacao": "cotizado em 03/11/2026 pela cota de 6,24046250; liquidação financeira hoje"
           }
         ]
       },
       "resultado": {
-        "totalAtivos": 433575187.83,
-        "caixa": 3780959.11,
+        "totalAtivos": 941686068.89,
+        "caixa": 13726338.52,
         "totalReceber": 0,
-        "totalPagar": 2183106.88,
-        "totalProvisoes": 431997.63,
-        "plAntesApropriacoes": 434768017.22,
-        "plBase": 434741042.43,
-        "cota": 2.30900741,
-        "aplicacoesConvertidas": 2183106.88,
-        "cotasEmitidas": 945474.17671561,
+        "totalPagar": 7852164.98,
+        "totalProvisoes": 977053.26,
+        "plAntesApropriacoes": 946640093.41,
+        "plBase": 946583189.17,
+        "cota": 6.22138072,
+        "aplicacoesConvertidas": 7852164.98,
+        "cotasEmitidas": 1262125.77776463,
         "cotasResgatadas": 0,
         "valorResgates": 0,
         "irComeCotas": 0,
         "cotasComeCotas": 0,
-        "qtdFinal": 189225961.8474724,
-        "plFinal": 436924148.07
+        "detalheComeCotas": [],
+        "qtdFinal": 153412143.70799774,
+        "plFinal": 954435353.08
       }
     }
   },
   "gabarito": {
     "cenarios": [
       "despesa_nao_prevista",
-      "taxa_gestao_sem_apropriacao"
+      "taxa_por_dias_corridos"
     ],
     "parecer": "REPROVADO",
     "ressalva": false,
-    "resumo": "Reprovar até o ajuste: Despesa de evento da gestora lançada no fundo; Taxa de gestão não apropriada hoje.",
-    "dificuldade": "media",
+    "resumo": "Reprovar até o ajuste: Honorários provisionados sem aprovação documentada; taxa de gestão na base 365 corridos.",
+    "dificuldade": "dificil",
     "achados": [
       {
         "cenario": "despesa_nao_prevista",
         "dimensoes": [
           "provisoes"
         ],
-        "titulo": "Despesa de evento da gestora lançada no fundo",
-        "ladoCorreto": "Alfa",
-        "ajustePor": "Beta",
-        "causaRaiz": "Beta provisionou R$ 23.145,01 de despesa de evento de relacionamento a pedido da gestora. O regulamento diz que esse tipo de gasto não é encargo da classe.",
+        "titulo": "Honorários provisionados sem aprovação documentada",
+        "ladoCorreto": "indeterminado",
+        "ajustePor": "Administrador (aprovação) e depois o lado divergente",
+        "causaRaiz": "Beta provisionou R$ 15.740,32 de honorários com base em e-mail da gestora. É um encargo possível pelo regulamento, mas só quando aprovado pelo administrador e documentado, e a aprovação ainda está \"em andamento\".",
         "evidencias": [
           "Provisões — linha nova",
-          "Regulamento — encargos / não encargos",
-          "Comunicações — pedido da gestora"
+          "Regulamento — encargos (honorários advocatícios com aprovação)",
+          "Comunicações — e-mail da gestora"
         ],
         "raciocinio": [
-          "O Beta tem uma provisão que o Alfa não tem: \"evento de relacionamento\" de R$ 23.145,01.",
-          "O regulamento classifica despesas de marketing, eventos e relacionamento da gestora como NÃO encargo. O pedido da gestora não muda o regulamento."
+          "Só o Beta tem a provisão de honorários de R$ 15.740,32.",
+          "O regulamento permite honorários em defesa da classe, mas exige aprovação do administrador e documentação. Hoje só existe uma proposta e um e-mail dizendo que a aprovação está em andamento.",
+          "A despesa provavelmente é legítima, mas ainda não cumpre o requisito. Não dá para dizer qual lado está certo sem a aprovação."
         ],
-        "acao": "Beta deve estornar a provisão e reprocessar. Responder à gestora que a despesa é dela."
+        "acao": "Pedir a aprovação formal do administrador. Sem ela, a provisão sai (lado Beta); com ela, os dois lados provisionam.",
+        "gravidade": "pendencia"
       },
       {
-        "cenario": "taxa_gestao_sem_apropriacao",
+        "cenario": "taxa_por_dias_corridos",
         "dimensoes": [
           "provisoes"
         ],
-        "titulo": "Taxa de gestão não apropriada hoje",
-        "ladoCorreto": "Alfa",
-        "ajustePor": "Beta",
-        "causaRaiz": "Beta não apropriou a taxa de gestão de hoje (parâmetro desativado/rotina não executada).",
+        "titulo": "taxa de gestão na base 365 corridos",
+        "ladoCorreto": "Beta",
+        "ajustePor": "Alfa",
+        "causaRaiz": "Alfa apropriou a taxa de gestão por 1/365 × 1 dia(s) corrido(s); o regulamento manda 1/252 por dia útil.",
         "evidencias": [
-          "Provisões — TXGES (apropriação zero)",
-          "Regulamento — taxa de gestão"
+          "Provisões — TXGES",
+          "Regulamento — método de apropriação",
+          "Data-base (dia da semana)"
         ],
         "raciocinio": [
-          "A provisão de taxa de gestão do Beta ficou com o mesmo saldo de ontem: apropriação zero.",
-          "Pelo regulamento, a taxa de gestão é apropriada todo dia útil. O valor do Alfa confere com o recálculo."
+          "A apropriação de taxa de gestão do Alfa é menor que a do Beta.",
+          "O valor do Alfa é compatível com 1/365 do percentual anual por dia corrido.",
+          "O regulamento é explícito: 1/252 por dia útil."
         ],
-        "acao": "Beta deve rodar a apropriação de taxa de gestão do dia e reprocessar. Verificar se outros fundos da mesma rotina foram afetados."
+        "acao": "Alfa deve corrigir o método de apropriação para a base 252 e reprocessar."
       }
     ],
-    "valoresCorretos": {
-      "totalAtivos": 433575187.83,
-      "caixa": 3780959.11,
-      "totalReceber": 0,
-      "totalPagar": 2183106.88,
-      "totalProvisoes": 423456.28,
-      "plAntesApropriacoes": 434768017.22,
-      "plBase": 434749583.78,
-      "cota": 2.30905278,
-      "aplicacoesConvertidas": 2183106.88,
-      "cotasEmitidas": 945455.59933021,
-      "cotasResgatadas": 0,
-      "valorResgates": 0,
-      "irComeCotas": 0,
-      "cotasComeCotas": 0,
-      "qtdFinal": 189225943.270087,
-      "plFinal": 436932690.36
-    },
+    "valoresCorretos": null,
     "corretoPorDimensao": {
-      "cota": "Alfa",
+      "cota": "nenhum",
       "caixa": "ambos",
-      "provisoes": "Alfa"
+      "provisoes": "nenhum"
     },
     "diferencas": {
-      "cota": -0.00004537,
-      "qtdFinal": 18.5773854,
-      "plFinal": -8542.29,
-      "plBase": -8541.35,
+      "cota": -0.00017092,
+      "qtdFinal": 34.67343041,
+      "plFinal": -26005.48,
+      "plBase": -26005.26,
       "caixa": 0,
-      "provisoes": 8541.35
+      "provisoes": 26005.26
     },
     "armadilhas": [
       "Pedido da gestora não muda o regulamento; despesa só é encargo se prevista (e, se exigido, aprovada e documentada)."

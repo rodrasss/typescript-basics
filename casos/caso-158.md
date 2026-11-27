@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Baobá Institucional FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset, gestora de previdência ligada a uma seguradora de médio porte, em Curitiba/PR. Criado em 05/09/2017, atende planos de previdência de uma seguradora, com fluxo previsível de aportes. Público-alvo: exclusivo para planos pgbl/vgbl de seguradora. Hoje seus cotistas são planos PGBL/VGBL de uma seguradora (cotista único: a seguradora, representando ~35 mil participantes). Ao longo da vida, o fundo mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Isadora, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. No fechamento de ontem (06/01/2026) o fundo tinha PL de R$ 110.885.681,88, cota de 6,65015081 e 16.674.160,46396963 cotas. Hoje, quarta-feira, 07/01/2026, é a data-base da validação.
+O Baobá Institucional FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset, gestora de previdência ligada a uma seguradora de médio porte, em Curitiba/PR. Criado em 05/09/2017, atende planos de previdência de uma seguradora, com fluxo previsível de aportes. Público-alvo: exclusivo para planos pgbl/vgbl de seguradora. Hoje seus cotistas são planos PGBL/VGBL de uma seguradora (cotista único: a seguradora, representando ~35 mil participantes). Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Isadora, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo tem aplicações e resgates quase todos os dias. A conta do fundo já teve cobrança de tarifa que não era do fundo. No fechamento de ontem (06/01/2026) o fundo tinha PL de R$ 2.730.375.969,49, cota de 1,66709196 e 1.637.807.642,66610740 cotas. Hoje, quarta-feira, 07/01/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,25 +12,25 @@ O Baobá Institucional FIE FIF Previdenciário Multimercado é gerido pela Reman
 | Classe | Classe Previdenciária |
 | Condomínio | aberto |
 | Gestora | Remanso Asset (Curitiba/PR) |
-| PL em D−1 | R$ 110.885.681,88 |
-| Cota em D−1 | 6,65015081 |
-| Quantidade de cotas em D−1 | 16.674.160,46396963 |
+| PL em D−1 | R$ 2.730.375.969,49 |
+| Cota em D−1 | 1,66709196 |
+| Quantidade de cotas em D−1 | 1.637.807.642,66610740 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,080% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,330% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,780% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 67.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 5.400,00 (mensal)
+- Auditoria independente: R$ 79.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 5.800,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ O Baobá Institucional FIE FIF Previdenciário Multimercado é gerido pela Reman
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 101.338.404,56. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 2.815.740.809,56. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,9 +60,9 @@ O Baobá Institucional FIE FIF Previdenciário Multimercado é gerido pela Reman
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Previdência: tributação no plano (seguradora); sem come-cotas
 
 **Precificação dos ativos**
@@ -102,35 +102,35 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 6,64454860 | 6,64454860 | 0,00000000 |
-| Quantidade final de cotas | 16.778.507,15646052 | 16.778.507,15646052 | 0,00000000 |
-| PL final | R$ 111.485.606,24 | R$ 111.485.606,24 | R$ 0,00 |
-| Caixa | R$ 1.311.122,07 | R$ 1.311.122,07 | R$ 0,00 |
-| Total de provisões | R$ 179.154,50 | R$ 179.154,50 | R$ 0,00 |
+| Cota de fechamento | 1,66555070 | 1,66555070 | 0,00000000 |
+| Quantidade final de cotas | 1.643.336.393,60177540 | 1.643.336.393,60177540 | 0,00000000 |
+| PL final | R$ 2.737.060.080,70 | R$ 2.737.060.080,70 | R$ 0,00 |
+| Caixa | R$ 31.230.416,01 | R$ 31.230.416,01 | R$ 0,00 |
+| Total de provisões | R$ 2.824.929,23 | R$ 2.824.929,23 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.244 | 2.244 | 18.130,069828 | 18.130,069828 | 40.683.876,69 | 40.683.876,69 | 0,00 | ANBIMA — taxa indicativa D |
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 4.019 | 4.019 | 4.337,738531 | 4.337,738531 | 17.433.371,16 | 17.433.371,16 | 0,00 | ANBIMA — taxa indicativa D |
-| NTN-B 15/05/2035 — Nota do Tesouro Nacional série B — venc. 15/05/2035 | 2.771 | 2.771 | 4.193,718556 | 4.193,718556 | 11.620.794,12 | 11.620.794,12 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 11.450 | 11.450 | 811,968020 | 811,968020 | 9.297.033,83 | 9.297.033,83 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 14.097 | 14.097 | 989,306321 | 989,306321 | 13.946.251,21 | 13.946.251,21 | 0,00 | ANBIMA — taxa indicativa D |
-| ZFRT3 — Zafira Frigoríficos S.A. ON | 392.620 | 392.620 | 14,80 | 14,80 | 5.810.776,00 | 5.810.776,00 | 0,00 | B3 — preço de fechamento D |
-| QPLN3 — Quiplan Saúde S.A. ON | 67.442 | 67.442 | 86,16 | 86,16 | 5.810.802,72 | 5.810.802,72 | 0,00 | B3 — preço de fechamento D |
-| UQPA4 — Uquapé Petroquímica S.A. PN | 77.726 | 77.726 | 74,76 | 74,76 | 5.810.795,76 | 5.810.795,76 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 110.413.701,49 | 110.413.701,49 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 55.211 | 55.211 | 18.130,069828 | 18.130,069828 | 1.000.979.285,27 | 1.000.979.285,27 | 0,00 | ANBIMA — taxa indicativa D |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 98.897 | 98.897 | 4.337,738531 | 4.337,738531 | 428.989.327,50 | 428.989.327,50 | 0,00 | ANBIMA — taxa indicativa D |
+| NTN-B 15/05/2035 — Nota do Tesouro Nacional série B — venc. 15/05/2035 | 68.196 | 68.196 | 4.193,718556 | 4.193,718556 | 285.994.830,64 | 285.994.830,64 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 281.779 | 281.779 | 811,968020 | 811,968020 | 228.795.536,71 | 228.795.536,71 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 346.903 | 346.903 | 989,306321 | 989,306321 | 343.193.330,67 | 343.193.330,67 | 0,00 | ANBIMA — taxa indicativa D |
+| ZFRT3 — Zafira Frigoríficos S.A. ON | 9.661.966 | 9.661.966 | 14,80 | 14,80 | 142.997.096,80 | 142.997.096,80 | 0,00 | B3 — preço de fechamento D |
+| QPLN3 — Quiplan Saúde S.A. ON | 1.659.669 | 1.659.669 | 86,16 | 86,16 | 142.997.081,04 | 142.997.081,04 | 0,00 | B3 — preço de fechamento D |
+| UQPA4 — Uquapé Petroquímica S.A. PN | 1.912.749 | 1.912.749 | 74,76 | 74,76 | 142.997.115,24 | 142.997.115,24 | 0,00 | B3 — preço de fechamento D |
+| **Total** |  |  |  |  | 2.716.943.603,87 | 2.716.943.603,87 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 742.658,01 | 742.658,01 |
-| TED recebida — aplicação [APL-1] Cotista único (11:28) | 304.790,10 | 304.790,10 |
-| TED recebida — aplicação [APL-2] Cotista único (12:47) | 448.609,24 | 448.609,24 |
-| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 06/01/2026) | -184.935,28 | -184.935,28 |
-| **Saldo final** | 1.311.122,07 | 1.311.122,07 |
+| Saldo inicial (D−1) | 18.286.721,62 | 18.286.721,62 |
+| TED recebida — aplicação [APL-1] Cotista único (12:32) | 10.494.705,44 | 10.494.705,44 |
+| TED recebida — aplicação [APL-2] Cotista único (13:37) | 7.002.713,40 | 7.002.713,40 |
+| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 06/01/2026) | -4.553.724,45 | -4.553.724,45 |
+| **Saldo final** | 31.230.416,01 | 31.230.416,01 |
 
 ### 5.4 Valores a receber
 
@@ -140,52 +140,55 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 753.399,34 | 753.399,34 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 17.497.418,84 | 17.497.418,84 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 8.821,70 | 8.821,70 | 351,88 | 351,88 | 0,00 | 0,00 | 9.173,58 | 9.173,58 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 149.425,92 | 149.425,92 | 5.813,88 | 5.813,88 | 0,00 | 0,00 | 155.239,80 | 155.239,80 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 3.269,08 | 3.269,08 | 131,99 | 131,99 | 0,00 | 0,00 | 3.401,07 | 3.401,07 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 9.305,56 | 9.305,56 | 265,87 | 265,87 | 0,00 | 0,00 | 9.571,43 | 9.571,43 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 171,43 | 171,43 | 57,14 | 57,14 | 0,00 | 0,00 | 228,57 | 228,57 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 771,43 | 771,43 | 257,14 | 257,14 | 0,00 | 0,00 | 1.028,57 | 1.028,57 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 383,61 | 383,61 | 127,87 | 127,87 | 0,00 | 0,00 | 511,48 | 511,48 | 0,00 |
-| **Total** |  |  |  |  |  |  | 179.154,50 | 179.154,50 | 0,00 |
+| TXADM — Taxa de administração a pagar | 461.382,70 | 461.382,70 | 18.403,63 | 18.403,63 | 0,00 | 0,00 | 479.786,33 | 479.786,33 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 2.163.688,80 | 2.163.688,80 | 84.185,04 | 84.185,04 | 0,00 | 0,00 | 2.247.873,84 | 2.247.873,84 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 80.493,88 | 80.493,88 | 3.249,96 | 3.249,96 | 0,00 | 0,00 | 83.743,84 | 83.743,84 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 10.972,22 | 10.972,22 | 313,49 | 313,49 | 0,00 | 0,00 | 11.285,71 | 11.285,71 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 142,86 | 142,86 | 47,62 | 47,62 | 0,00 | 0,00 | 190,48 | 190,48 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 828,57 | 828,57 | 276,19 | 276,19 | 0,00 | 0,00 | 1.104,76 | 1.104,76 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 708,20 | 708,20 | 236,07 | 236,07 | 0,00 | 0,00 | 944,27 | 944,27 | 0,00 |
+| **Total** |  |  |  |  |  |  | 2.824.929,23 | 2.824.929,23 | 0,00 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista único | R$ 304.790,10 | 11:28 | 07/01/2026 | 07/01/2026 | 07/01/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista único | R$ 448.609,24 | 12:47 | 07/01/2026 | 07/01/2026 | 07/01/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista único | 9.039,39065100 cotas |  | 06/01/2026 | 07/01/2026 | 08/01/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista único | 27.809,18578727 cotas (R$ 184.935,28) |  | 05/01/2026 | 06/01/2026 | 07/01/2026 | não | não | cotizado em 06/01/2026 pela cota de 6,65015081; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista único | R$ 10.494.705,44 | 12:32 | 07/01/2026 | 07/01/2026 | 07/01/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista único | R$ 7.002.713,40 | 13:37 | 07/01/2026 | 07/01/2026 | 07/01/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista único | 4.088.846,86481913 cotas |  | 06/01/2026 | 07/01/2026 | 08/01/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista único | 887.887,76653866 cotas |  | 06/01/2026 | 07/01/2026 | 08/01/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista único | 2.731.537,64575659 cotas (R$ 4.553.724,45) |  | 05/01/2026 | 06/01/2026 | 07/01/2026 | não | não | cotizado em 06/01/2026 pela cota de 1,66709196; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 110.413.701,49 | 110.413.701,49 | 0,00 |
-| Caixa | 1.311.122,07 | 1.311.122,07 | 0,00 |
+| Total de ativos | 2.716.943.603,87 | 2.716.943.603,87 | 0,00 |
+| Caixa | 31.230.416,01 | 31.230.416,01 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 753.399,34 | 753.399,34 | 0,00 |
-| Provisões | 179.154,50 | 179.154,50 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 110.799.275,49 | 110.799.275,49 | 0,00 |
-| PL base da cota | 110.792.269,72 | 110.792.269,72 | 0,00 |
-| Cota (8 casas) | 6,64454860 | 6,64454860 | 0,00000000 |
-| Aplicações convertidas | 753.399,34 | 753.399,34 | 0,00 |
-| Cotas emitidas | 113.386,08314189 | 113.386,08314189 | 0,00000000 |
-| Cotas resgatadas | 9.039,39065100 | 9.039,39065100 | 0,00000000 |
-| Valor dos resgates cotizados | 60.062,67 | 60.062,67 | 0,00 |
+| Valores a pagar | 17.497.418,84 | 17.497.418,84 | 0,00 |
+| Provisões | 2.824.929,23 | 2.824.929,23 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 2.727.958.383,81 | 2.727.958.383,81 | 0,00 |
+| PL base da cota | 2.727.851.671,81 | 2.727.851.671,81 | 0,00 |
+| Cota (8 casas) | 1,66555070 | 1,66555070 | 0,00000000 |
+| Aplicações convertidas | 17.497.418,84 | 17.497.418,84 | 0,00 |
+| Cotas emitidas | 10.505.485,56702597 | 10.505.485,56702597 | 0,00000000 |
+| Cotas resgatadas | 4.976.734,63135779 | 4.976.734,63135779 | 0,00000000 |
+| Valor dos resgates cotizados | 8.289.003,85 | 8.289.003,85 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 16.778.507,15646052 | 16.778.507,15646052 | 0,00000000 |
-| PL final | 111.485.606,24 | 111.485.606,24 | 0,00 |
+| Quantidade final de cotas | 1.643.336.393,60177540 | 1.643.336.393,60177540 | 0,00000000 |
+| PL final | 2.737.060.080,70 | 2.737.060.080,70 | 0,00 |
 
 ---
 
@@ -211,11 +214,11 @@ Sem achados.
 
 | Item | Valor |
 |---|---|
-| Cota | 6,64454860 |
-| Quantidade final de cotas | 16.778.507,15646052 |
-| PL final | R$ 111.485.606,24 |
-| Caixa | R$ 1.311.122,07 |
-| Total de provisões | R$ 179.154,50 |
+| Cota | 1,66555070 |
+| Quantidade final de cotas | 1.643.336.393,60177540 |
+| PL final | R$ 2.737.060.080,70 |
+| Caixa | R$ 31.230.416,01 |
+| Total de provisões | R$ 2.824.929,23 |
 
 ### Armadilhas deste caso
 

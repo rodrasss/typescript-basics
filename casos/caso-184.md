@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos exclusivos para famílias do agro (Goiânia/GO), o Seriguela II FIF Multimercado Crédito Privado — Classe Exclusiva é um dos fundos que mais exigem atenção na rotina de validação. Criado em 25/09/2013, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são a holding patrimonial de uma família de industriais do Vale do Itajaí (SC). Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Otávio, e quem cuida da validação do fundo é Marina. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Os resgates são pagos alguns dias depois da cotização, e o valor depende da cota certa. Vencimentos de títulos bancários dependem de baixa manual em alguns sistemas. Sacados em atraso mudam de faixa praticamente todo dia. Uma vez, em 2024, o fundo ficou três dias com a cota segurada por causa de uma divergência de caixa que acabou sendo só de classificação. No fechamento de ontem (06/08/2026) o fundo tinha PL de R$ 37.975.630,37, cota de 14,90469433 e 2.547.897,29377389 cotas. Hoje, sexta-feira, 07/08/2026, é a data-base da validação.
+Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Seriguela II FIF Multimercado Crédito Privado — Classe Exclusiva: a casa é uma multi-family office que estrutura fundos exclusivos para famílias do agro. Criado em 25/09/2013, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são a holding patrimonial de uma família de industriais do Vale do Itajaí (SC). Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e teve a estrutura da família revisada em 2024, com mudança de holding cotista. O gestor responsável é Otávio, e quem cuida da validação do fundo é Marina. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. Cadastros de despesas já foram duplicados em outros fundos da mesma carteira. No fechamento de ontem (06/08/2026) o fundo tinha PL de R$ 151.162.258,44, cota de 2,28598231 e 66.125.733,83347741 cotas. Hoje, sexta-feira, 07/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,9 +12,9 @@ Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos 
 | Classe | Classe Multimercado — Exclusiva para investidor profissional |
 | Condomínio | aberto |
 | Gestora | Pedra Branca Gestão (Goiânia/GO) |
-| PL em D−1 | R$ 37.975.630,37 |
-| Cota em D−1 | 14,90469433 |
-| Quantidade de cotas em D−1 | 2.547.897,29377389 |
+| PL em D−1 | R$ 151.162.258,44 |
+| Cota em D−1 | 2,28598231 |
+| Quantidade de cotas em D−1 | 66.125.733,83347741 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,15 +22,15 @@ Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos 
 
 **Taxas**
 
-- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,510% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,070% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,530% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 29.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 2.200,00 (mensal)
+- Auditoria independente: R$ 41.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 300,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 5.500,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos 
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 39.449.230,46. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 142.416.449,78. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,10 +60,10 @@ Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos 
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Classe exclusiva: tributação periódica semestral (come-cotas), no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -85,17 +85,14 @@ Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos 
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.249,037914 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.289,773543 |  |
-| LINO11 | ANBIMA — PU pela taxa indicativa de D | 998,240373 |  |
-
-**Eventos de ativos**
-
-- CDB PIRACE 2027: vencimento em 07/08/2026; valor de resgate 1.332,806641 por título; liquidação financeira em D.
+| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.499,800397 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.281,970085 |  |
+| EVSA12 | ANBIMA — PU pela taxa indicativa de D | 1.141,688522 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **12:54** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (10/08/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **12:14** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **14:54** — *Gestora — relações com investidores* — **Evento com cotistas**: Favor provisionar no fundo a despesa do evento anual com cotistas, R$ 8.604,34 (NF do buffet em anexo).
 
 ## 5. Batimento Alfa × Beta
 
@@ -105,33 +102,35 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 14,79386585 | 14,79576215 | 0,00189630 |
-| Quantidade final de cotas | 2.535.887,43299837 | 2.535.887,43299837 | 0,00000000 |
-| PL final | R$ 37.515.578,49 | R$ 37.520.387,30 | R$ 4.808,81 |
-| Caixa | R$ 253.879,38 | R$ 5.926.587,65 | R$ 5.672.708,27 |
-| Total de provisões | R$ 34.509,49 | R$ 34.509,49 | R$ 0,00 |
+| Cota de fechamento | 2,27514295 | 2,27536436 | 0,00022141 |
+| Quantidade final de cotas | 66.649.616,28442873 | 66.649.559,44905169 | -56,83537704 |
+| PL final | R$ 151.637.404,61 | R$ 151.652.032,18 | R$ 14.627,57 |
+| Caixa | R$ 1.976.755,78 | R$ 1.982.792,61 | R$ 6.036,83 |
+| Total de provisões | R$ 129.332,87 | R$ 120.728,53 | R$ -8.604,34 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 2.608 | 2.608 | 4.349,730130 | 4.349,730130 | 11.344.096,18 | 11.344.096,18 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 602 | 602 | 18.289,773543 | 18.289,773543 | 11.010.443,67 | 11.010.443,67 | 0,00 | ANBIMA — taxa indicativa D |
-| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 5.681 | 5.681 | 998,240373 | 998,240373 | 5.671.003,56 | 5.671.003,56 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 4.636 | 4.636 | 815,457461 | 815,457461 | 3.780.460,79 | 3.780.460,79 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB PIRACE 2027 — CDB Banco Piracema S.A. — 109% do CDI — venc. 2027 | 4.255 | — | 1.332,050923 | — | 5.667.876,68 | — | -5.667.876,68 | Último PU calculado (D−1) |
-| **Total** |  |  |  |  | 37.473.880,88 | 31.806.004,20 | -5.667.876,68 |  |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 10.134 | 10.134 | 4.461,603795 | 4.461,603795 | 45.213.892,86 | 45.213.892,86 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.430 | 2.430 | 18.281,970085 | 18.281,970085 | 44.425.187,31 | 44.425.187,31 | 0,00 | ANBIMA — taxa indicativa D |
+| CDB PIRACE 2027 — CDB Banco Piracema S.A. — 108% do CDI — venc. 2027 | 16.592 | 16.592 | 1.362,582911 | 1.362,582911 | 22.607.975,66 | 22.607.975,66 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 19.802 | 19.802 | 1.141,688522 | 1.141,688522 | 22.607.716,11 | 22.607.716,11 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 18.947 | 18.947 | 795,491012 | 795,491012 | 15.072.168,20 | 15.072.168,20 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 149.926.940,14 | 149.926.940,14 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 739.526,13 | 739.526,13 |
-| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 06/08/2026) | -55.476,51 | -55.476,51 |
-| Pagamento de resgate [LIQ-2] — Cotista único (cotizado em 06/08/2026) | -106.840,15 | -106.840,15 |
-| Pagamento de resgate [LIQ-K12] — Cotista único (cotizado em 06/08/2026) | -323.330,09 | -321.714,08 |
-| Resgate no vencimento — CDB PIRACE 2027 (liquidação B3) | — | 5.671.092,26 |
-| **Saldo final** | 253.879,38 | 5.926.587,65 |
+| Saldo inicial (D−1) | 2.063.396,86 | 2.063.396,86 |
+| TED recebida — aplicação [APL-1] Cotista único (12:35) | 222.379,46 | 222.379,46 |
+| TED recebida — aplicação [APL-2] Cotista único (13:24) | 400.583,08 | 400.583,08 |
+| TED recebida — aplicação [APL-3] Cotista único (13:17) | 705.903,35 | 705.903,35 |
+| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 06/08/2026) | -378.973,94 | -378.973,94 |
+| Pagamento de resgate [LIQ-2] — Cotista único (cotizado em 06/08/2026) | -246.927,78 | -246.927,78 |
+| Pagamento de resgate [LIQ-K12] — Cotista único (cotizado em 06/08/2026) | -789.605,25 | -783.568,42 |
+| **Saldo final** | 1.976.755,78 | 1.982.792,61 |
 
 ### 5.4 Valores a receber
 
@@ -139,61 +138,69 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-Nenhum item.
+| Item | Alfa | Beta |
+|---|---|---|
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.328.865,89 | 1.328.865,89 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 4.564,84 | 4.564,84 | 165,77 | 165,77 | 0,00 | 0,00 | 4.730,61 | 4.730,61 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 20.494,57 | 20.494,57 | 768,55 | 768,55 | 0,00 | 0,00 | 21.263,12 | 21.263,12 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 410,25 | 410,25 | 15,07 | 15,07 | 0,00 | 0,00 | 425,32 | 425,32 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 5.638,89 | 5.638,89 | 115,08 | 115,08 | 0,00 | 0,00 | 5.753,97 | 5.753,97 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 209,52 | 209,52 | 52,38 | 52,38 | 0,00 | 0,00 | 261,90 | 261,90 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 419,05 | 419,05 | 104,76 | 104,76 | 0,00 | 0,00 | 523,81 | 523,81 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 1.495,38 | 1.495,38 | 55,38 | 55,38 | 0,00 | 0,00 | 1.550,76 | 1.550,76 | 0,00 |
-| **Total** |  |  |  |  |  |  | 34.509,49 | 34.509,49 | 0,00 |
+| TXADM — Taxa de administração a pagar | 11.406,40 | 11.406,40 | 419,75 | 419,75 | 0,00 | 0,00 | 11.826,15 | 11.826,15 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 87.105,16 | 87.105,16 | 3.170,84 | 3.170,84 | 0,00 | 0,00 | 90.276,00 | 90.276,00 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 3.190,07 | 3.190,07 | 119,96 | 119,96 | 0,00 | 0,00 | 3.310,03 | 3.310,03 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 10.412,70 | 10.412,70 | 162,70 | 162,70 | 0,00 | 0,00 | 10.575,40 | 10.575,40 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 57,14 | 57,14 | 14,29 | 14,29 | 0,00 | 0,00 | 71,43 | 71,43 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.047,62 | 1.047,62 | 261,90 | 261,90 | 0,00 | 0,00 | 1.309,52 | 1.309,52 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 3.240,00 | 3.240,00 | 120,00 | 120,00 | 0,00 | 0,00 | 3.360,00 | 3.360,00 | 0,00 |
+| DESP EVENTO — Despesa — evento de relacionamento com cotistas (gestora) | 0,00 | — | 8.604,34 | — | 0,00 | — | 8.604,34 | — | -8.604,34 |
+| **Total** |  |  |  |  |  |  | 129.332,87 | 120.728,53 | -8.604,34 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 37.975.630,37 ÷ 252 (linear, dias úteis) = R$ 165,77 · Beta: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 37.975.630,37 ÷ 252 (linear, dias úteis) = R$ 165,77
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,51% a.a. sobre R$ 37.975.630,37 ÷ 252 (linear, dias úteis) = R$ 768,55 · Beta: [base: PL do dia útil anterior] 0,51% a.a. sobre R$ 37.975.630,37 ÷ 252 (linear, dias úteis) = R$ 768,55
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 37.975.630,37 ÷ 252 (linear, dias úteis) = R$ 15,07 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 37.975.630,37 ÷ 252 (linear, dias úteis) = R$ 15,07
-- **AUDIT** — Alfa: R$ 29.000,00 (anual) ÷ 252 d.u. = R$ 115,08 · Beta: R$ 29.000,00 (anual) ÷ 252 d.u. = R$ 115,08
-- **ANBIMA** — Alfa: R$ 1.100,00 (mensal) ÷ 21 d.u. = R$ 52,38 · Beta: R$ 1.100,00 (mensal) ÷ 21 d.u. = R$ 52,38
-- **SELIC** — Alfa: R$ 2.200,00 (mensal) ÷ 21 d.u. = R$ 104,76 · Beta: R$ 2.200,00 (mensal) ÷ 21 d.u. = R$ 104,76
-- **CVM** — Alfa: R$ 3.600,00 (trimestral) ÷ 65 d.u. = R$ 55,38 · Beta: R$ 3.600,00 (trimestral) ÷ 65 d.u. = R$ 55,38
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 151.162.258,44 fator exponencial (1+taxa)^(1/252) − 1 = R$ 419,75 · Beta: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 151.162.258,44 fator exponencial (1+taxa)^(1/252) − 1 = R$ 419,75
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,53% a.a. sobre R$ 151.162.258,44 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.170,84 · Beta: [base: PL do dia útil anterior] 0,53% a.a. sobre R$ 151.162.258,44 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.170,84
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 151.162.258,44 fator exponencial (1+taxa)^(1/252) − 1 = R$ 119,96 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 151.162.258,44 fator exponencial (1+taxa)^(1/252) − 1 = R$ 119,96
+- **AUDIT** — Alfa: R$ 41.000,00 (anual) ÷ 252 d.u. = R$ 162,70 · Beta: R$ 41.000,00 (anual) ÷ 252 d.u. = R$ 162,70
+- **ANBIMA** — Alfa: R$ 300,00 (mensal) ÷ 21 d.u. = R$ 14,29 · Beta: R$ 300,00 (mensal) ÷ 21 d.u. = R$ 14,29
+- **SELIC** — Alfa: R$ 5.500,00 (mensal) ÷ 21 d.u. = R$ 261,90 · Beta: R$ 5.500,00 (mensal) ÷ 21 d.u. = R$ 261,90
+- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00 · Beta: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00
+- **DESP EVENTO** — Alfa: Lançamento manual a pedido da gestora
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| RSG-1 | resgate | Cotista único | 6.504,14623754 cotas |  | 06/08/2026 | 07/08/2026 | 10/08/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista único | 5.505,71453798 cotas |  | 06/08/2026 | 07/08/2026 | 10/08/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista único | 3.722,08281121 cotas (R$ 55.476,51) |  | 05/08/2026 | 06/08/2026 | 07/08/2026 | não | não | cotizado em 06/08/2026 pela cota de 14,90469433; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista único | 7.168,22125296 cotas (R$ 106.840,15) |  | 05/08/2026 | 06/08/2026 | 07/08/2026 | não | não | cotizado em 06/08/2026 pela cota de 14,90469433; liquidação financeira hoje |
-| LIQ-K12 | resgate | Cotista único | 21.693,17131802 cotas (R$ 323.330,09) |  | 05/08/2026 | 06/08/2026 | 07/08/2026 | não | não | cotizado em 06/08/2026 pela cota de 14,90469433; liquidação hoje |
+| APL-1 | aplicacao | Cotista único | R$ 222.379,46 | 12:35 | 07/08/2026 | 07/08/2026 | 07/08/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista único | R$ 400.583,08 | 13:24 | 07/08/2026 | 07/08/2026 | 07/08/2026 | sim | sim |  |
+| APL-3 | aplicacao | Cotista único | R$ 705.903,35 | 13:17 | 07/08/2026 | 07/08/2026 | 07/08/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista único | 60.197,72299993 cotas |  | 06/08/2026 | 07/08/2026 | 10/08/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista único | 165.781,65890448 cotas (R$ 378.973,94) |  | 05/08/2026 | 06/08/2026 | 07/08/2026 | não | não | cotizado em 06/08/2026 pela cota de 2,28598231; liquidação financeira hoje |
+| LIQ-2 | resgate | Cotista único | 108.018,23956504 cotas (R$ 246.927,78) |  | 05/08/2026 | 06/08/2026 | 07/08/2026 | não | não | cotizado em 06/08/2026 pela cota de 2,28598231; liquidação financeira hoje |
+| LIQ-K12 | resgate | Cotista único | 345.411,79172935 cotas (R$ 789.605,25) |  | 05/08/2026 | 06/08/2026 | 07/08/2026 | não | não | cotizado em 06/08/2026 pela cota de 2,28598231; liquidação hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 37.473.880,88 | 31.806.004,20 | -5.667.876,68 |
-| Caixa | 253.879,38 | 5.926.587,65 | 5.672.708,27 |
+| Total de ativos | 149.926.940,14 | 149.926.940,14 | 0,00 |
+| Caixa | 1.976.755,78 | 1.982.792,61 | 6.036,83 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 34.509,49 | 34.509,49 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 37.694.527,76 | 37.699.359,35 | 4.831,59 |
-| PL base da cota | 37.693.250,77 | 37.698.082,36 | 4.831,59 |
-| Cota (8 casas) | 14,79386585 | 14,79576215 | 0,00189630 |
-| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
-| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Cotas resgatadas | 12.009,86077552 | 12.009,86077552 | 0,00000000 |
-| Valor dos resgates cotizados | 177.672,27 | 177.695,04 | 22,77 |
+| Valores a pagar | 1.328.865,89 | 1.328.865,89 | 0,00 |
+| Provisões | 129.332,87 | 120.728,53 | -8.604,34 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 150.458.370,94 | 150.464.407,77 | 6.036,83 |
+| PL base da cota | 150.445.497,16 | 150.460.138,33 | 14.641,17 |
+| Cota (8 casas) | 2,27514295 | 2,27536436 | 0,00022141 |
+| Aplicações convertidas | 1.328.865,89 | 1.328.865,89 | 0,00 |
+| Cotas emitidas | 584.080,17395125 | 584.023,33857421 | -56,83537704 |
+| Cotas resgatadas | 60.197,72299993 | 60.197,72299993 | 0,00000000 |
+| Valor dos resgates cotizados | 136.958,43 | 136.971,75 | 13,32 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 2.535.887,43299837 | 2.535.887,43299837 | 0,00000000 |
-| PL final | 37.515.578,49 | 37.520.387,30 | 4.808,81 |
+| Quantidade final de cotas | 66.649.616,28442873 | 66.649.559,44905169 | -56,83537704 |
+| PL final | 151.637.404,61 | 151.652.032,18 | 14.627,57 |
 
 ---
 
@@ -201,33 +208,32 @@ Nenhum item.
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Resgate de Cotista único pago a menor; CDB PIRACE 2027 vencido não baixado.
+**Resumo:** Reprovar até o ajuste: Resgate de Cotista único pago a menor; Despesa de evento da gestora lançada no fundo.
 
-**Dificuldade:** media · **Cenários:** resgate_pago_com_cota_errada, ativo_vencido_nao_baixado
+**Dificuldade:** dificil · **Cenários:** resgate_pago_com_cota_errada, despesa_nao_prevista
 
 ### Achado 1: Resgate de Cotista único pago a menor
 
 - **Gravidade:** erro · **Dimensões:** caixa, cota
 - **Lado correto:** nenhum · **Quem ajusta:** Beta (complemento ao cotista) e Alfa (caixa real)
-- **Causa raiz:** O resgate LIQ-K12 (21.693,17131802 cotas) foi pago pela cota da data do pedido, 05/08/2026 (14,83020047), e não pela cota da data de cotização, 06/08/2026 (14,90469433). O cotista recebeu R$ 1.616,01 a menos.
+- **Causa raiz:** O resgate LIQ-K12 (345.411,79172935 cotas) foi pago pela cota da data do pedido, 05/08/2026 (2,26850512), e não pela cota da data de cotização, 06/08/2026 (2,28598231). O cotista recebeu R$ 6.036,83 a menos.
 - **Onde olhar:** Caixa — pagamento de resgate; Movimentações de passivo (cota de cotização); Regulamento — cotização de resgates
 - **Raciocínio do analista:**
-  1. O Alfa projetou o pagamento de R$ 323.330,09 e o Beta mostra R$ 321.714,08 pagos. Diferença: R$ 1.616,01.
-  2. Recalculei: 21.693,17131802 cotas × cota da data de cotização (06/08/2026) 14,90469433 = R$ 323.330,09. O valor pago corresponde a uma cota menor, a da data do pedido, que o regulamento não usa.
+  1. O Alfa projetou o pagamento de R$ 789.605,25 e o Beta mostra R$ 783.568,42 pagos. Diferença: R$ 6.036,83.
+  2. Recalculei: 345.411,79172935 cotas × cota da data de cotização (06/08/2026) 2,28598231 = R$ 789.605,25. O valor pago corresponde a uma cota menor, a da data do pedido, que o regulamento não usa.
   3. O dinheiro a menos ficou no fundo e o Beta zerou a obrigação, então o PL dele fica inflado. O cotista tem direito ao complemento.
-- **Ação:** Pagar o complemento de R$ 1.616,01 ao cotista. Até lá, os dois lados registram "complemento de resgate a pagar". O Alfa ajusta o caixa ao valor efetivamente pago. Apurar se outros resgates do dia tiveram o mesmo problema.
+- **Ação:** Pagar o complemento de R$ 6.036,83 ao cotista. Até lá, os dois lados registram "complemento de resgate a pagar". O Alfa ajusta o caixa ao valor efetivamente pago. Apurar se outros resgates do dia tiveram o mesmo problema.
 
-### Achado 2: CDB PIRACE 2027 vencido não baixado
+### Achado 2: Despesa de evento da gestora lançada no fundo
 
-- **Gravidade:** erro · **Dimensões:** caixa, cota
+- **Gravidade:** erro · **Dimensões:** provisoes
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa manteve CDB PIRACE 2027 na carteira pelo PU de D−1 e não registrou o crédito do vencimento.
-- **Onde olhar:** Carteira; Caixa — lançamentos; Informações de mercado — eventos
+- **Causa raiz:** Alfa provisionou R$ 8.604,34 de despesa de evento de relacionamento a pedido da gestora. O regulamento diz que esse tipo de gasto não é encargo da classe.
+- **Onde olhar:** Provisões — linha nova; Regulamento — encargos / não encargos; Comunicações — pedido da gestora
 - **Raciocínio do analista:**
-  1. O Alfa tem CDB PIRACE 2027 (R$ 5.667.876,68) que não aparece no Beta, e o caixa do Beta tem R$ 5.671.092,26 a mais. Parece só um problema de classificação, mas não é.
-  2. O título venceu hoje com resgate de 1.332,806641 por unidade. O Alfa manteve o PU de D−1 (1.332,050923), deixando de reconhecer o último dia de rendimento: R$ 3.215,58 no PL.
-  3. Além da cota, o caixa projetado do lado errado subestima a disponibilidade, o que pode atrapalhar a liquidação de resgates.
-- **Ação:** Alfa deve baixar CDB PIRACE 2027, registrar o crédito de R$ 5.671.092,26 e reprocessar a cota.
+  1. O Alfa tem uma provisão que o Beta não tem: "evento de relacionamento" de R$ 8.604,34.
+  2. O regulamento classifica despesas de marketing, eventos e relacionamento da gestora como NÃO encargo. O pedido da gestora não muda o regulamento.
+- **Ação:** Alfa deve estornar a provisão e reprocessar. Responder à gestora que a despesa é dela.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -235,18 +241,19 @@ Nenhum item.
 |---|---|
 | cota | nenhum |
 | caixa | Beta |
-| provisoes | ambos |
+| provisoes | Beta |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 14,79512790 |
-| Quantidade final de cotas | 2.535.887,43299837 |
-| PL final | R$ 37.518.778,91 |
-| Caixa | R$ 5.926.587,65 |
-| Total de provisões | R$ 34.509,49 |
+| Cota | 2,27527307 |
+| Quantidade final de cotas | 66.649.582,88161954 |
+| PL final | R$ 151.646.001,06 |
+| Caixa | R$ 1.982.792,61 |
+| Total de provisões | R$ 120.728,53 |
 
 ### Armadilhas deste caso
 
 - Recalcular o valor do resgate: cotas × cota de cotização.
+- Pedido da gestora não muda o regulamento; despesa só é encargo se prevista (e, se exigido, aprovada e documentada).

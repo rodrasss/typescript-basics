@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Sanhaço FIF RF Crédito Privado LP: a casa é uma gestora baiana de crédito privado e infraestrutura regional. Criado em 04/07/2022, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são clientes private que buscam CDI+ com prazo de resgate longo. Ao longo da vida, o fundo aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano e mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Diego. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. A carteira de ações paga dividendos relevantes ao longo do ano. A equipe da gestora é considerada muito organizada. No fechamento de ontem (05/02/2026) o fundo tinha PL de R$ 330.157.462,03, cota de 1,16141056 e 284.272.825,99319965 cotas. Hoje, sexta-feira, 06/02/2026, é a data-base da validação.
+Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional (Salvador/BA), o Sanhaço FIF RF Crédito Privado LP é um dos fundos que mais exigem atenção na rotina de validação. Criado em 04/07/2022, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são clientes private que buscam CDI+ com prazo de resgate longo. Ao longo da vida, o fundo mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Diego. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. Os papéis de crédito do fundo pagam juros em datas diferentes ao longo do ano. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (05/02/2026) o fundo tinha PL de R$ 1.558.867.955,63, cota de 2,95503289 e 527.529.815,62489880 cotas. Hoje, sexta-feira, 06/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,9 +12,9 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Sanhaço FIF RF Crédit
 | Classe | Classe de Renda Fixa — Crédito Privado |
 | Condomínio | aberto |
 | Gestora | Itapuã Gestão (Salvador/BA) |
-| PL em D−1 | R$ 330.157.462,03 |
-| Cota em D−1 | 1,16141056 |
-| Quantidade de cotas em D−1 | 284.272.825,99319965 |
+| PL em D−1 | R$ 1.558.867.955,63 |
+| Cota em D−1 | 2,95503289 |
+| Quantidade de cotas em D−1 | 527.529.815,62489880 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,21 +22,15 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Sanhaço FIF RF Crédit
 
 **Taxas**
 
-- Taxa de administração: 0,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,670% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-
-**Taxa de performance**
-
-- 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
-- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,590% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 71.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 500,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 3.900,00 (mensal)
+- Auditoria independente: R$ 46.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 2.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -46,7 +40,7 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Sanhaço FIF RF Crédit
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 299.991.908,70. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 1.543.204.979,86. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -67,9 +61,9 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Sanhaço FIF RF Crédit
 **Aplicação, resgate e cota**
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+60 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Resgate: cotização em D+15 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -79,10 +73,6 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Sanhaço FIF RF Crédit
 - Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).
 - CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual.
 
-**Regras específicas deste fundo**
-
-- Performance: cota de referência vigente = 1,14228942 (cota da última cobrança efetiva, em 31/12/2025).
-
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
@@ -91,17 +81,13 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Sanhaço FIF RF Crédit
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.279,602498 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.375,262254 |  |
 | VCLA12 | ANBIMA — PU pela taxa indicativa de D | 1.097,086499 |  |
-| EVSA12 | ANBIMA — PU pela taxa indicativa de D | 1.032,529003 |  |
+| LINO11 | ANBIMA — PU pela taxa indicativa de D | 1.032,529003 |  |
 | PASU12 | ANBIMA — PU pela taxa indicativa de D | 1.126,958493 |  |
-| TFSU13 | ANBIMA | sem taxa indicativa divulgada para o ativo |  |
-| TFSU13 | Comitê de precificação (ata de 27/12/2025) | 1.107,989844 |  |
-| TFSU13 | B3 — último negócio no secundário (03/02/2026) | 1.070,249718 | volume de R$ 2.100.000,00 |
-
-**Benchmark**
-
-- Fator acumulado do 100% do CDI de 31/12/2025 até 06/02/2026: 1,01374810
+| EVSA12 | ANBIMA | sem taxa indicativa divulgada para o ativo |  |
+| EVSA12 | Comitê de precificação (ata de 29/12/2025) | 1.025,791119 |  |
+| EVSA12 | B3 — último negócio no secundário (02/02/2026) | 997,866770 | volume de R$ 800.000,00 |
 
 ## 4. Comunicações recebidas hoje
 
@@ -116,32 +102,31 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1,16137788 | 1,15606212 | -0,00531576 |
-| Quantidade final de cotas | 285.647.021,87507750 | 285.653.340,64928055 | 6.318,77420306 |
-| PL final | R$ 331.744.132,69 | R$ 330.233.006,58 | R$ -1.511.126,11 |
-| Caixa | R$ 4.425.315,06 | R$ 4.425.315,06 | R$ 0,00 |
-| Total de provisões | R$ 518.896,47 | R$ 278.390,42 | R$ -240.506,05 |
+| Cota de fechamento | 2,95633746 | 2,94953643 | -0,00680103 |
+| Quantidade final de cotas | 524.740.140,87179220 | 524.740.140,87179220 | 0,00000000 |
+| PL final | R$ 1.551.308.935,22 | R$ 1.547.740.161,78 | R$ -3.568.773,44 |
+| Caixa | R$ 12.137.039,84 | R$ 12.137.039,84 | R$ 0,00 |
+| Total de provisões | R$ 1.171.425,33 | R$ 1.171.425,33 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.396 | 4.396 | 18.279,602498 | 18.279,602498 | 80.357.132,58 | 80.357.132,58 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 32.456 | 32.456 | 792,228091 | 792,228091 | 25.712.554,92 | 25.712.554,92 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB TARUMÃ 2028 — CDB Banco Tarumã S.A. — 101% do CDI — venc. 2028 | 27.585 | 27.585 | 1.165,134457 | 1.165,134457 | 32.140.234,00 | 32.140.234,00 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 35.155 | 35.155 | 1.097,086499 | 1.097,086499 | 38.568.075,87 | 38.568.075,87 | 0,00 | ANBIMA — taxa indicativa D |
-| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 56.030 | 56.030 | 1.032,529003 | 1.032,529003 | 57.852.600,04 | 57.852.600,04 | 0,00 | ANBIMA — taxa indicativa D |
-| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 37.075 | 37.075 | 1.126,958493 | 1.126,958493 | 41.781.986,13 | 41.781.986,13 | 0,00 | ANBIMA — taxa indicativa D |
-| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 46.413 | 46.413 | 1.107,989844 | 1.070,249718 | 51.425.132,63 | 49.673.500,16 | -1.751.632,47 | Alfa: Comitê de precificação (ata de 27/12/2025) / Beta: Último negócio B3 |
-| **Total** |  |  |  |  | 327.837.716,17 | 326.086.083,70 | -1.751.632,47 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 22.414 | 22.414 | 18.375,262254 | 18.375,262254 | 411.863.128,16 | 411.863.128,16 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 162.904 | 162.904 | 809,033727 | 809,033727 | 131.794.830,26 | 131.794.830,26 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| CDB YBYTU 2027 — CDB Banco Ybytu S.A. — 113% do CDI — venc. 2027 | 144.782 | 144.782 | 1.137,869270 | 1.137,869270 | 164.742.988,65 | 164.742.988,65 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 128.481 | 128.481 | 1.025,791119 | 997,866770 | 131.794.668,76 | 128.206.920,48 | -3.587.748,28 | Alfa: Comitê de precificação (ata de 29/12/2025) / Beta: Último negócio B3 |
+| VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 180.197 | 180.197 | 1.097,086499 | 1.097,086499 | 197.691.695,86 | 197.691.695,86 | 0,00 | ANBIMA — taxa indicativa D |
+| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 287.195 | 287.195 | 1.032,529003 | 1.032,529003 | 296.537.167,02 | 296.537.167,02 | 0,00 | ANBIMA — taxa indicativa D |
+| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 190.039 | 190.039 | 1.126,958493 | 1.126,958493 | 214.166.065,05 | 214.166.065,05 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 1.548.590.543,76 | 1.545.002.795,48 | -3.587.748,28 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 2.829.354,36 | 2.829.354,36 |
-| TED recebida — aplicação [APL-1] Cotista 5257 (10:04) | 1.595.960,70 | 1.595.960,70 |
-| **Saldo final** | 4.425.315,06 | 4.425.315,06 |
+| Saldo inicial (D−1) | 12.137.039,84 | 12.137.039,84 |
+| **Saldo final** | 12.137.039,84 | 12.137.039,84 |
 
 ### 5.4 Valores a receber
 
@@ -149,52 +134,52 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.595.960,70 | 1.595.960,70 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 29.231,85 | 29.231,85 | 1.179,13 | 1.179,13 | 0,00 | 0,00 | 30.410,98 | 30.410,98 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 214.553,83 | 214.553,83 | 8.778,00 | 8.778,00 | 0,00 | 0,00 | 223.331,83 | 223.331,83 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 6.596,69 | 6.596,69 | 262,03 | 262,03 | 0,00 | 0,00 | 6.858,72 | 6.858,72 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 12.960,32 | 12.960,32 | 281,75 | 281,75 | 0,00 | 0,00 | 13.242,07 | 13.242,07 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 111,11 | 111,11 | 27,78 | 27,78 | 0,00 | 0,00 | 138,89 | 138,89 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 866,67 | 866,67 | 216,67 | 216,67 | 0,00 | 0,00 | 1.083,34 | 1.083,34 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 3.196,72 | 3.196,72 | 127,87 | 127,87 | 0,00 | 0,00 | 3.324,59 | 3.324,59 | 0,00 |
-| PERF — Taxa de performance a pagar | 286.036,48 | 286.036,48 | -45.530,43 | -286.036,48 | 0,00 | 0,00 | 240.506,05 | 0,00 | -240.506,05 |
-| **Total** |  |  |  |  |  |  | 518.896,47 | 278.390,42 | -240.506,05 |
+| TXADM — Taxa de administração a pagar | 165.777,09 | 165.777,09 | 6.804,58 | 6.804,58 | 0,00 | 0,00 | 172.581,67 | 172.581,67 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 898.722,63 | 898.722,63 | 36.497,31 | 36.497,31 | 0,00 | 0,00 | 935.219,94 | 935.219,94 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 46.007,20 | 46.007,20 | 1.855,80 | 1.855,80 | 0,00 | 0,00 | 47.863,00 | 47.863,00 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 8.579,37 | 8.579,37 | 182,54 | 182,54 | 0,00 | 0,00 | 8.761,91 | 8.761,91 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 244,44 | 244,44 | 61,11 | 61,11 | 0,00 | 0,00 | 305,55 | 305,55 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 444,44 | 444,44 | 111,11 | 111,11 | 0,00 | 0,00 | 555,55 | 555,55 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 5.901,64 | 5.901,64 | 236,07 | 236,07 | 0,00 | 0,00 | 6.137,71 | 6.137,71 | 0,00 |
+| **Total** |  |  |  |  |  |  | 1.171.425,33 | 1.171.425,33 | 0,00 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 5257 | R$ 1.595.960,70 | 10:04 | 06/02/2026 | 06/02/2026 | 06/02/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 2660 | 748.114,09169158 cotas |  | 22/01/2026 | 06/02/2026 | 09/02/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 2667 | 2.041.560,66141503 cotas |  | 22/01/2026 | 06/02/2026 | 09/02/2026 | sim | sim |  |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 327.837.716,17 | 326.086.083,70 | -1.751.632,47 |
-| Caixa | 4.425.315,06 | 4.425.315,06 | 0,00 |
+| Total de ativos | 1.548.590.543,76 | 1.545.002.795,48 | -3.587.748,28 |
+| Caixa | 12.137.039,84 | 12.137.039,84 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 1.595.960,70 | 1.595.960,70 | 0,00 |
-| Provisões | 518.896,47 | 278.390,42 | -240.506,05 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 330.399.553,34 | 328.647.920,87 | -1.751.632,47 |
-| PL base da cota | 330.148.174,06 | 328.637.047,64 | -1.511.126,42 |
-| Cota (8 casas) | 1,16137788 | 1,15606212 | -0,00531576 |
-| Aplicações convertidas | 1.595.960,70 | 1.595.960,70 | 0,00 |
-| Cotas emitidas | 1.374.195,88187782 | 1.380.514,65608093 | 6.318,77420311 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 1.171.425,33 | 1.171.425,33 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.559.601.906,79 | 1.556.014.158,51 | -3.587.748,28 |
+| PL base da cota | 1.559.556.158,27 | 1.555.968.409,99 | -3.587.748,28 |
+| Cota (8 casas) | 2,95633746 | 2,94953643 | -0,00680103 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 2.789.674,75310661 | 2.789.674,75310661 | 0,00000000 |
+| Valor dos resgates cotizados | 8.247.219,97 | 8.228.247,31 | -18.972,66 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 285.647.021,87507750 | 285.653.340,64928055 | 6.318,77420306 |
-| PL final | 331.744.132,69 | 330.233.006,58 | -1.511.126,11 |
+| Quantidade final de cotas | 524.740.140,87179220 | 524.740.140,87179220 | 0,00000000 |
+| PL final | 1.551.308.935,22 | 1.547.740.161,78 | -3.568.773,44 |
 
 ---
 
@@ -202,21 +187,21 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 **Parecer:** PENDENTE
 
-**Resumo:** Deixar pendente e escalar: TFSU13 sem referência confiável de preço.
+**Resumo:** Deixar pendente e escalar: EVSA12 sem referência confiável de preço.
 
-**Dificuldade:** media · **Cenários:** ativo_iliquido_sem_referencia
+**Dificuldade:** dificil · **Cenários:** ativo_iliquido_sem_referencia
 
-### Achado 1: TFSU13 sem referência confiável de preço
+### Achado 1: EVSA12 sem referência confiável de preço
 
 - **Gravidade:** pendencia · **Dimensões:** cota
 - **Lado correto:** indeterminado · **Quem ajusta:** Comitê de precificação (Alfa) com apoio do Beta
-- **Causa raiz:** Sem taxa ANBIMA para TFSU13: o Alfa usa o preço do comitê de 27/12/2025 (vencido, com mais de 30 dias) e o Beta usa o último negócio no secundário. Nenhum dos dois segue o manual de forma limpa.
-- **Onde olhar:** Carteira — TFSU13; Informações de mercado — comitê e negócio B3; Regulamento — precificação na ausência de ANBIMA
+- **Causa raiz:** Sem taxa ANBIMA para EVSA12: o Alfa usa o preço do comitê de 29/12/2025 (vencido, com mais de 30 dias) e o Beta usa o último negócio no secundário. Nenhum dos dois segue o manual de forma limpa.
+- **Onde olhar:** Carteira — EVSA12; Informações de mercado — comitê e negócio B3; Regulamento — precificação na ausência de ANBIMA
 - **Raciocínio do analista:**
-  1. TFSU13: PU 1.107,989844 (Alfa, comitê) contra 1.070,249718 (Beta, negócio B3). Impacto de R$ -1.751.632,47 no PL.
-  2. O manual manda usar o preço do comitê na falta de ANBIMA, mas exige revisão ao menos mensal e manda levar ao comitê os negócios relevantes. A ata é de 27/12/2025, ou seja, vencida, e houve negócio recente.
+  1. EVSA12: PU 1.025,791119 (Alfa, comitê) contra 997,866770 (Beta, negócio B3). Impacto de R$ -3.587.748,28 no PL.
+  2. O manual manda usar o preço do comitê na falta de ANBIMA, mas exige revisão ao menos mensal e manda levar ao comitê os negócios relevantes. A ata é de 29/12/2025, ou seja, vencida, e houve negócio recente.
   3. Não dá para afirmar qual preço está certo só com o que recebi: é decisão do comitê de precificação. Não é o caso de escolher um lado.
-- **Ação:** Escalar para o comitê de precificação hoje: revisão extraordinária do PU de TFSU13 com base no negócio de B3. Segurar a divulgação até a definição, ou divulgar com o preço vigente do comitê e registrar formalmente o risco de reprocessamento, conforme a política da área.
+- **Ação:** Escalar para o comitê de precificação hoje: revisão extraordinária do PU de EVSA12 com base no negócio de B3. Segurar a divulgação até a definição, ou divulgar com o preço vigente do comitê e registrar formalmente o risco de reprocessamento, conforme a política da área.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -224,7 +209,7 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 |---|---|
 | cota | Alfa |
 | caixa | ambos |
-| provisoes | Alfa |
+| provisoes | ambos |
 
 ### Valores corretos
 

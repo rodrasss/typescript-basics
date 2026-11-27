@@ -5,6 +5,7 @@
 import type { Ctx } from './caso.ts';
 import type { TipoFundo } from './catalogo.ts';
 import { escolher, chance, fmtR, fmtN, fmtData, diaDaSemana } from './util.ts';
+import { CENARIOS } from './cenarios.ts';
 
 const PROPOSITO: Record<TipoFundo, string> = {
   RF_DI: 'nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata',
@@ -113,7 +114,9 @@ export function compor(c: Ctx, cenarioIds: string[]): { historia: string; pistas
   }
   // isca: uma pista de outra categoria, para que as pistas não sejam diagnósticas
   if (chance(rng, 0.4)) {
-    const outros = Object.keys(PISTAS).filter((k) => !cenarioIds.includes(k));
+    // só iscas plausíveis para o tipo do fundo (nada de "carteira de ações" num FIDC)
+    const plausivel = (k: string): boolean => { const cen = CENARIOS.find((x) => x.id === k); return !cen || !cen.tipos || cen.tipos.includes(c.tipo); };
+    const outros = Object.keys(PISTAS).filter((k) => !cenarioIds.includes(k) && plausivel(k));
     pistas.push(escolher(rng, PISTAS[escolher(rng, outros)]));
   }
   if (pistas.length) partes.push(pistas.join(' '));

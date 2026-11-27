@@ -62,7 +62,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -173,7 +173,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 285.943,68 | 283.790,95 | -2.152,73 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 353.181.460,31 | 352.560.776,39 | -620.683,92 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 353.181.460,31 | 352.560.776,39 | -620.683,92 |
 | PL base da cota | 353.158.679,62 | 352.540.148,43 | -618.531,19 |
 | Cota (8 casas) | 1.107,95001427 | 1.106,00952213 | -1,94049214 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

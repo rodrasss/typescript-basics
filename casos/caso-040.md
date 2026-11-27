@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Cumaru II FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 11/07/2010, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Isadora, e quem cuida da validação do fundo é Felipe. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A gestora costuma pedir que despesas dela sejam lançadas no fundo. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. No fechamento de ontem (03/07/2026) o fundo tinha PL de R$ 400.740.400,95, cota de 1.151,98545308 e 347.869,32410916 cotas. Hoje, segunda-feira, 06/07/2026, é a data-base da validação.
+Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Cumaru II FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 11/07/2010, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Isadora, e quem cuida da validação do fundo é Felipe. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A gestora costuma pedir que despesas dela sejam lançadas no fundo. O fundo mudou de sistema e a parametrização de casas decimais foi revisada. No fechamento de ontem (03/07/2026) o fundo tinha PL de R$ 400.740.400,95, cota de 1.151,98545308 e 347.869,32410916 cotas. Hoje, segunda-feira, 06/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -62,7 +62,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -174,7 +174,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 658.034,10 | 683.596,97 | 25.562,87 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 400.899.146,19 | 400.899.146,19 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 400.899.146,19 | 400.899.146,19 | 0,00 |
 | PL base da cota | 400.873.902,83 | 400.848.339,96 | -25.562,87 |
 | Cota (8 casas) | 1.152,36922328 | 1.152,29573917 | -0,07348411 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

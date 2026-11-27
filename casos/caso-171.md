@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes (São Paulo/SP), o Ingá FII Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 03/10/2011, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Lívia, e quem cuida da validação do fundo é Bruno. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O anúncio de rendimentos costuma sair no fim do dia, depois do fechamento de um dos lados. O fundo recebe aplicações perto do horário de corte quase todo dia. No fechamento de ontem (16/06/2026) o fundo tinha PL de R$ 645.245.186,57, cota de 100,17480696 e 6.441.192,21278447 cotas. Hoje, quarta-feira, 17/06/2026, é a data-base da validação.
+Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes (São Paulo/SP), o Ingá FII Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 03/10/2011, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Lívia, e quem cuida da validação do fundo é Bruno. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O anúncio de rendimentos costuma sair no fim do dia, depois do fechamento de um dos lados. A conta do fundo já teve cobrança de tarifa que não era do fundo. No fechamento de ontem (16/06/2026) o fundo tinha PL de R$ 645.245.186,57, cota de 100,17480696 e 6.441.192,21278447 cotas. Hoje, quarta-feira, 17/06/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com port
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -168,7 +168,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 6.247.956,45 | 0,00 | -6.247.956,45 |
 | Provisões | 324.301,07 | 324.229,69 | -71,38 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 639.259.434,60 | 645.507.391,05 | 6.247.956,45 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 639.259.434,60 | 645.507.391,05 | 6.247.956,45 |
 | PL base da cota | 639.235.627,85 | 645.483.655,68 | 6.248.027,83 |
 | Cota (8 casas) | 99,24181839 | 100,21182948 | 0,97001109 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

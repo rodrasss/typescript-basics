@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Imbuia Prime FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset, gestora de previdência ligada a uma seguradora de médio porte, em Curitiba/PR. Criado em 03/03/2018, atende planos de previdência de uma seguradora, com fluxo previsível de aportes. Público-alvo: exclusivo para planos pgbl/vgbl de seguradora. Hoje seus cotistas são planos PGBL/VGBL de uma seguradora (cotista único: a seguradora, representando ~35 mil participantes). Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Otávio, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo tem aplicações e resgates quase todos os dias. A liquidação dos ajustes de futuros exige conciliação diária. No fechamento de ontem (27/03/2026) o fundo tinha PL de R$ 233.737.061,19, cota de 4,43302150 e 52.726.353,94736711 cotas. Hoje, segunda-feira, 30/03/2026, é a data-base da validação.
+Sob a gestão da Remanso Asset, gestora de previdência ligada a uma seguradora de médio porte (Curitiba/PR), o Imbuia Prime FIE FIF Previdenciário Multimercado é um dos fundos que mais exigem atenção na rotina de validação. Criado em 03/03/2018, atende planos de previdência de uma seguradora, com fluxo previsível de aportes. Público-alvo: exclusivo para planos pgbl/vgbl de seguradora. Hoje seus cotistas são planos PGBL/VGBL de uma seguradora (cotista único: a seguradora, representando ~35 mil participantes). Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Otávio, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A carteira de ações paga dividendos relevantes ao longo do ano. No fechamento de ontem (27/03/2026) o fundo tinha PL de R$ 300.953.557,42, cota de 2,87294192 e 104.754.487,14248882 cotas. Hoje, segunda-feira, 30/03/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,25 +12,25 @@ O Imbuia Prime FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset
 | Classe | Classe Previdenciária |
 | Condomínio | aberto |
 | Gestora | Remanso Asset (Curitiba/PR) |
-| PL em D−1 | R$ 233.737.061,19 |
-| Cota em D−1 | 4,43302150 |
-| Quantidade de cotas em D−1 | 52.726.353,94736711 |
+| PL em D−1 | R$ 300.953.557,42 |
+| Cota em D−1 | 2,87294192 |
+| Quantidade de cotas em D−1 | 104.754.487,14248882 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,120% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,810% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,970% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 24.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Auditoria independente: R$ 50.000,00 (anual) — contrato anual; provisão diária por 1/252
 - Taxa ANBIMA (convênio de autorregulação): R$ 300,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 5.000,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 1.200,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ O Imbuia Prime FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 211.265.733,12. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 307.046.515,60. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -62,7 +62,7 @@ O Imbuia Prime FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Previdência: tributação no plano (seguradora); sem come-cotas
 
 **Precificação dos ativos**
@@ -81,17 +81,17 @@ O Imbuia Prime FIE FIF Previdenciário Multimercado é gerido pela Remanso Asset
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.159,532426 |  |
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D | 4.486,443218 |  |
-| NTN-B 15/05/2035 | ANBIMA — PU pela taxa indicativa de D | 4.121,127207 |  |
-| LINO11 | ANBIMA — PU pela taxa indicativa de D | 1.063,696175 |  |
-| KXOB3 | B3 — preço de fechamento de D | 79,56 |  |
-| UQPA4 | B3 — preço de fechamento de D | 60,15 |  |
-| XVRM3 | B3 — preço de fechamento de D | 79,51 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.419,003488 |  |
+| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D | 4.487,806963 |  |
+| NTN-B 15/05/2035 | ANBIMA — PU pela taxa indicativa de D | 4.231,067945 |  |
+| TFSU13 | ANBIMA — PU pela taxa indicativa de D | 992,873806 |  |
+| QXTR3 | B3 — preço de fechamento de D | 51,99 |  |
+| WQLA3 | B3 — preço de fechamento de D | 85,45 |  |
+| KXOB3 | B3 — preço de fechamento de D | 70,05 |  |
 
 **Eventos de ativos**
 
-- KXOB3: dividendos de R$ 1,05 por ação; data-com 27/03/2026; negociação "ex" a partir de 30/03/2026; pagamento em 23/04/2026.
+- WQLA3: dividendos de R$ 2,28 por ação; data-com 27/03/2026; negociação "ex" a partir de 30/03/2026; pagamento em 17/04/2026.
 
 ## 4. Comunicações recebidas hoje
 
@@ -106,102 +106,89 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 4,43565159 | 4,43243442 | -0,00321717 |
-| Quantidade final de cotas | 52.861.399,51917426 | 52.861.534,60499366 | 135,08581939 |
-| PL final | R$ 234.474.750,83 | R$ 234.305.285,48 | R$ -169.465,35 |
-| Caixa | R$ 2.134.328,19 | R$ 2.134.328,19 | R$ 0,00 |
-| Total de provisões | R$ 210.099,83 | R$ 218.147,97 | R$ 8.048,14 |
+| Cota de fechamento | 2,87425010 | 2,87825002 | 0,00399992 |
+| Quantidade final de cotas | 104.332.278,07502908 | 104.332.278,07502908 | 0,00000000 |
+| PL final | R$ 299.877.060,69 | R$ 300.294.381,46 | R$ 417.320,77 |
+| Caixa | R$ 3.026.927,45 | R$ 3.026.927,45 | R$ 0,00 |
+| Total de provisões | R$ 306.753,26 | R$ 306.753,26 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.719 | 4.719 | 18.159,532426 | 18.159,532426 | 85.694.833,52 | 85.694.833,52 | 0,00 | ANBIMA — taxa indicativa D |
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 8.187 | 8.187 | 4.486,443218 | 4.486,443218 | 36.730.510,63 | 36.730.510,63 | 0,00 | ANBIMA — taxa indicativa D |
-| NTN-B 15/05/2035 — Nota do Tesouro Nacional série B — venc. 15/05/2035 | 5.942 | 5.942 | 4.121,127207 | 4.121,127207 | 24.487.737,86 | 24.487.737,86 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 24.105 | 24.105 | 812,654086 | 812,654086 | 19.589.026,74 | 19.589.026,74 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 27.624 | 27.624 | 1.063,696175 | 1.063,696175 | 29.383.543,14 | 29.383.543,14 | 0,00 | ANBIMA — taxa indicativa D |
-| KXOB3 — Kaxoeira Obras S.A. ON | 153.887 | 153.887 | 79,56 | 79,56 | 12.243.249,72 | 12.243.249,72 | 0,00 | B3 — preço de fechamento D |
-| UQPA4 — Uquapé Petroquímica S.A. PN | 203.546 | 203.546 | 60,15 | 60,15 | 12.243.291,90 | 12.243.291,90 | 0,00 | B3 — preço de fechamento D |
-| XVRM3 — Xavantina Mineração S.A. ON | 153.984 | 153.984 | 79,51 | 79,51 | 12.243.267,84 | 12.243.267,84 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 232.615.461,35 | 232.615.461,35 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 5.968 | 5.968 | 18.419,003488 | 18.419,003488 | 109.924.612,82 | 109.924.612,82 | 0,00 | ANBIMA — taxa indicativa D |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 10.498 | 10.498 | 4.487,806963 | 4.487,806963 | 47.112.997,50 | 47.112.997,50 | 0,00 | ANBIMA — taxa indicativa D |
+| NTN-B 15/05/2035 — Nota do Tesouro Nacional série B — venc. 15/05/2035 | 7.423 | 7.423 | 4.231,067945 | 4.231,067945 | 31.407.217,36 | 31.407.217,36 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 31.616 | 31.616 | 794,726887 | 794,726887 | 25.126.085,26 | 25.126.085,26 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 37.959 | 37.959 | 992,873806 | 992,873806 | 37.688.496,80 | 37.688.496,80 | 0,00 | ANBIMA — taxa indicativa D |
+| QXTR3 — Quixadá Transportes S.A. ON | 302.052 | 302.052 | 51,99 | 51,99 | 15.703.683,48 | 15.703.683,48 | 0,00 | B3 — preço de fechamento D |
+| WQLA3 — Waqlá Alimentos S.A. ON | 183.776 | 183.776 | 85,45 | 85,45 | 15.703.659,20 | 15.703.659,20 | 0,00 | B3 — preço de fechamento D |
+| KXOB3 — Kaxoeira Obras S.A. ON | 224.178 | 224.178 | 70,05 | 70,05 | 15.703.668,90 | 15.703.668,90 | 0,00 | B3 — preço de fechamento D |
+| **Total** |  |  |  |  | 298.370.421,32 | 298.370.421,32 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 2.280.180,91 | 2.280.180,91 |
-| TED recebida — aplicação [APL-1] Cotista único (13:33) | 165.817,16 | 165.817,16 |
-| TED recebida — aplicação [APL-2] Cotista único (10:01) | 659.717,85 | 659.717,85 |
-| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 27/03/2026) | -393.233,81 | -393.233,81 |
-| Pagamento de resgate [LIQ-2] — Cotista único (cotizado em 27/03/2026) | -578.153,92 | -578.153,92 |
-| **Saldo final** | 2.134.328,19 | 2.134.328,19 |
+| Saldo inicial (D−1) | 3.559.382,61 | 3.559.382,61 |
+| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 27/03/2026) | -532.455,16 | -532.455,16 |
+| **Saldo final** | 3.026.927,45 | 3.026.927,45 |
 
 ### 5.4 Valores a receber
 
 | Item | Alfa | Beta |
 |---|---|---|
-| DIVIDENDOS A RECEBER KXOB3 — Dividendos a receber — KXOB3 (R$ 1,05/ação) | 161.581,35 | — |
+| DIVIDENDOS A RECEBER WQLA3 — Dividendos a receber — WQLA3 (R$ 2,28/ação) | — | 419.009,28 |
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 825.535,01 | 825.535,01 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 22.835,92 | 22.835,92 | 1.113,03 | 1.113,03 | 0,00 | 0,00 | 23.948,95 | 23.948,95 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 146.770,38 | 146.770,38 | 7.512,98 | 15.561,12 | 0,00 | 0,00 | 154.283,36 | 162.331,50 | 8.048,14 |
-| TXCUS — Taxa máxima de custódia a pagar | 3.807,93 | 3.807,93 | 185,51 | 185,51 | 0,00 | 0,00 | 3.993,44 | 3.993,44 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 15.047,62 | 15.047,62 | 95,24 | 95,24 | 0,00 | 0,00 | 15.142,86 | 15.142,86 | 0,00 |
+| TXADM — Taxa de administração a pagar | 40.309,77 | 40.309,77 | 2.030,24 | 2.030,24 | 0,00 | 0,00 | 42.340,01 | 42.340,01 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 225.056,82 | 225.056,82 | 11.584,32 | 11.584,32 | 0,00 | 0,00 | 236.641,14 | 236.641,14 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 4.764,20 | 4.764,20 | 238,85 | 238,85 | 0,00 | 0,00 | 5.003,05 | 5.003,05 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 10.515,87 | 10.515,87 | 198,41 | 198,41 | 0,00 | 0,00 | 10.714,28 | 10.714,28 | 0,00 |
 | ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 272,73 | 272,73 | 13,64 | 13,64 | 0,00 | 0,00 | 286,37 | 286,37 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 4.545,45 | 4.545,45 | 227,27 | 227,27 | 0,00 | 0,00 | 4.772,72 | 4.772,72 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 7.544,26 | 7.544,26 | 127,87 | 127,87 | 0,00 | 0,00 | 7.672,13 | 7.672,13 | 0,00 |
-| **Total** |  |  |  |  |  |  | 210.099,83 | 218.147,97 | 8.048,14 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.090,91 | 1.090,91 | 54,55 | 54,55 | 0,00 | 0,00 | 1.145,46 | 1.145,46 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 10.445,90 | 10.445,90 | 177,05 | 177,05 | 0,00 | 0,00 | 10.622,95 | 10.622,95 | 0,00 |
+| **Total** |  |  |  |  |  |  | 306.753,26 | 306.753,26 | 0,00 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,12% a.a. sobre R$ 233.737.061,19 ÷ 252 (linear, dias úteis) = R$ 1.113,03 · Beta: [base: PL do dia útil anterior] 0,12% a.a. sobre R$ 233.737.061,19 ÷ 252 (linear, dias úteis) = R$ 1.113,03
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,81% a.a. sobre R$ 233.737.061,19 ÷ 252 (linear, dias úteis) = R$ 7.512,98 · Beta: [base: PL do dia útil anterior] 0,81% a.a. sobre R$ 233.737.061,19 ÷ 365 × 3 dia(s) corrido(s) = R$ 15.561,12
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 233.737.061,19 ÷ 252 (linear, dias úteis) = R$ 185,51 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 233.737.061,19 ÷ 252 (linear, dias úteis) = R$ 185,51
-- **AUDIT** — Alfa: R$ 24.000,00 (anual) ÷ 252 d.u. = R$ 95,24 · Beta: R$ 24.000,00 (anual) ÷ 252 d.u. = R$ 95,24
-- **ANBIMA** — Alfa: R$ 300,00 (mensal) ÷ 22 d.u. = R$ 13,64 · Beta: R$ 300,00 (mensal) ÷ 22 d.u. = R$ 13,64
-- **SELIC** — Alfa: R$ 5.000,00 (mensal) ÷ 22 d.u. = R$ 227,27 · Beta: R$ 5.000,00 (mensal) ÷ 22 d.u. = R$ 227,27
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista único | R$ 165.817,16 | 13:33 | 30/03/2026 | 30/03/2026 | 30/03/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista único | R$ 659.717,85 | 10:01 | 30/03/2026 | 30/03/2026 | 30/03/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista único | 51.068,01111291 cotas |  | 27/03/2026 | 30/03/2026 | 31/03/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista único | 88.705,59415394 cotas (R$ 393.233,81) |  | 26/03/2026 | 27/03/2026 | 30/03/2026 | não | não | cotizado em 27/03/2026 pela cota de 4,43302150; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista único | 130.419,83181533 cotas (R$ 578.153,92) |  | 26/03/2026 | 27/03/2026 | 30/03/2026 | não | não | cotizado em 27/03/2026 pela cota de 4,43302150; liquidação financeira hoje |
+| RSG-1 | resgate | Cotista único | 67.268,38876683 cotas |  | 27/03/2026 | 30/03/2026 | 31/03/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista único | 354.940,67869292 cotas |  | 27/03/2026 | 30/03/2026 | 31/03/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista único | 185.334,46892118 cotas (R$ 532.455,16) |  | 26/03/2026 | 27/03/2026 | 30/03/2026 | não | não | cotizado em 27/03/2026 pela cota de 2,87294192; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 232.615.461,35 | 232.615.461,35 | 0,00 |
-| Caixa | 2.134.328,19 | 2.134.328,19 | 0,00 |
-| Valores a receber | 161.581,35 | 0,00 | -161.581,35 |
-| Valores a pagar | 825.535,01 | 825.535,01 | 0,00 |
-| Provisões | 210.099,83 | 218.147,97 | 8.048,14 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 233.885.011,59 | 233.723.430,24 | -161.581,35 |
-| PL base da cota | 233.875.736,05 | 233.706.106,56 | -169.629,49 |
-| Cota (8 casas) | 4,43565159 | 4,43243442 | -0,00321717 |
-| Aplicações convertidas | 825.535,01 | 825.535,01 | 0,00 |
-| Cotas emitidas | 186.113,58292006 | 186.248,66873946 | 135,08581940 |
-| Cotas resgatadas | 51.068,01111291 | 51.068,01111291 | 0,00000000 |
-| Valor dos resgates cotizados | 226.519,90 | 226.355,61 | -164,29 |
+| Total de ativos | 298.370.421,32 | 298.370.421,32 | 0,00 |
+| Caixa | 3.026.927,45 | 3.026.927,45 | 0,00 |
+| Valores a receber | 0,00 | 419.009,28 | 419.009,28 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 306.753,26 | 306.753,26 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 301.104.892,57 | 301.523.901,85 | 419.009,28 |
+| PL base da cota | 301.090.595,51 | 301.509.604,79 | 419.009,28 |
+| Cota (8 casas) | 2,87425010 | 2,87825002 | 0,00399992 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 422.209,06745975 | 422.209,06745975 | 0,00000000 |
+| Valor dos resgates cotizados | 1.213.534,45 | 1.215.223,26 | 1.688,81 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 52.861.399,51917426 | 52.861.534,60499366 | 135,08581939 |
-| PL final | 234.474.750,83 | 234.305.285,48 | -169.465,35 |
+| Quantidade final de cotas | 104.332.278,07502908 | 104.332.278,07502908 | 0,00000000 |
+| PL final | 299.877.060,69 | 300.294.381,46 | 417.320,77 |
 
 ---
 
@@ -209,48 +196,36 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Dividendos de KXOB3 não provisionados; taxa de gestão na base 365 corridos.
+**Resumo:** Reprovar até o ajuste: Dividendos de WQLA3 não provisionados.
 
-**Dificuldade:** media · **Cenários:** dividendo_ex_nao_provisionado, taxa_por_dias_corridos
+**Dificuldade:** media · **Cenários:** dividendo_ex_nao_provisionado
 
-### Achado 1: Dividendos de KXOB3 não provisionados
+### Achado 1: Dividendos de WQLA3 não provisionados
 
 - **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta precificou KXOB3 "ex" mas não registrou os dividendos a receber.
-- **Onde olhar:** Valores a receber; Informações de mercado — eventos societários; Carteira — KXOB3
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa precificou WQLA3 "ex" mas não registrou os dividendos a receber.
+- **Onde olhar:** Valores a receber; Informações de mercado — eventos societários; Carteira — WQLA3
 - **Raciocínio do analista:**
-  1. Os ativos batem, mas o Alfa tem R$ 161.581,35 de dividendos a receber de KXOB3 que o Beta não tem.
-  2. KXOB3 ficou "ex" em D: o preço de fechamento já não carrega o dividendo. Se o direito não entra como valor a receber, o fundo perde esse valor no PL.
+  1. Os ativos batem, mas o Beta tem R$ 419.009,28 de dividendos a receber de WQLA3 que o Alfa não tem.
+  2. WQLA3 ficou "ex" em D: o preço de fechamento já não carrega o dividendo. Se o direito não entra como valor a receber, o fundo perde esse valor no PL.
   3. O regulamento manda reconhecer o evento na data "ex", então o lado correto é o que provisionou.
-- **Ação:** Beta deve registrar R$ 161.581,35 de dividendos a receber de KXOB3 e reprocessar a cota.
-
-### Achado 2: taxa de gestão na base 365 corridos
-
-- **Gravidade:** erro · **Dimensões:** provisoes
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta apropriou a taxa de gestão por 1/365 × 3 dia(s) corrido(s); o regulamento manda 1/252 por dia útil.
-- **Onde olhar:** Provisões — TXGES; Regulamento — método de apropriação; Data-base (dia da semana)
-- **Raciocínio do analista:**
-  1. A apropriação de taxa de gestão do Beta é maior que a do Alfa.
-  2. Hoje é segunda-feira e desde o último dia útil passaram 3 dias corridos. A conta por corridos apropria 3/365, enquanto a base 252 apropria 1/252.
-  3. O regulamento é explícito: 1/252 por dia útil.
-- **Ação:** Beta deve corrigir o método de apropriação para a base 252 e reprocessar.
+- **Ação:** Alfa deve registrar R$ 419.009,28 de dividendos a receber de WQLA3 e reprocessar a cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Alfa |
+| cota | Beta |
 | caixa | ambos |
-| provisoes | Alfa |
+| provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 4,43565159 |
-| Quantidade final de cotas | 52.861.399,51917426 |
-| PL final | R$ 234.474.750,83 |
-| Caixa | R$ 2.134.328,19 |
-| Total de provisões | R$ 210.099,83 |
+| Cota | 2,87825002 |
+| Quantidade final de cotas | 104.332.278,07502908 |
+| PL final | R$ 300.294.381,46 |
+| Caixa | R$ 3.026.927,45 |
+| Total de provisões | R$ 306.753,26 |

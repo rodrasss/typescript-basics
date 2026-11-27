@@ -1,10 +1,10 @@
-# Caso caso-076 — Pintassilgo Estratégia FIC FIF Ações Investimento no Exterior
+# Caso caso-076 — Corrupião Família FIC FIF Ações Investimento no Exterior
 
 > **Data-base (D):** 28/11/2025 (sexta-feira) · **D−1:** 27/11/2025 · **Fundo:** FND-0076
 
 ## 1. O fundo
 
-Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que investe via fundos offshore (São Paulo/SP), o Pintassilgo Estratégia FIC FIF Ações Investimento no Exterior é um dos fundos que mais exigem atenção na rotina de validação. Criado em 28/07/2014, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: público geral. Hoje seus cotistas são investidores qualificados buscando diversificação global. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano. O gestor responsável é Isadora, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. A gestora costuma mandar NAV "estimado" quando o mercado americano está fechado. A equipe da gestora é considerada muito organizada. No fechamento de ontem (27/11/2025) o fundo tinha PL de R$ 634.238.078,43, cota de 5,65962961 e 112.063.530,83477160 cotas. Hoje, sexta-feira, 28/11/2025, é a data-base da validação.
+Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que investe via fundos offshore (São Paulo/SP), o Corrupião Família FIC FIF Ações Investimento no Exterior é um dos fundos que mais exigem atenção na rotina de validação. Criado em 03/09/2016, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: público geral. Hoje seus cotistas são investidores qualificados buscando diversificação global. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Lucas. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; o fundo tem aplicações e resgates quase todos os dias. A gestora costuma mandar NAV "estimado" quando o mercado americano está fechado. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (27/11/2025) o fundo tinha PL de R$ 147.179.399,94, cota de 2,07561884 e 70.908.683,42309442 cotas. Hoje, sexta-feira, 28/11/2025, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,24 +12,24 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 | Classe | Classe de Ações — Investimento no Exterior |
 | Condomínio | aberto |
 | Gestora | Lume Gestão de Recursos (São Paulo/SP) |
-| PL em D−1 | R$ 634.238.078,43 |
-| Cota em D−1 | 5,65962961 |
-| Quantidade de cotas em D−1 | 112.063.530,83477160 |
+| PL em D−1 | R$ 147.179.399,94 |
+| Cota em D−1 | 2,07561884 |
+| Quantidade de cotas em D−1 | 70.908.683,42309442 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,130% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,940% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 67.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
+- Auditoria independente: R$ 79.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -39,7 +39,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 612.647.490,71. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 314.128.027,09. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,7 +61,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+5 dias úteis após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
 
 **Precificação dos ativos**
@@ -78,25 +78,23 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
-- PTAX de 28/11/2025: compra 5,3951 / venda 5,3957; PTAX de venda de 27/11/2025: 5,3652
+- PTAX de 28/11/2025: compra 5,5378 / venda 5,5384; PTAX de venda de 27/11/2025: 5,5901
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.496,842857 |  |
-| PTAX | BCB — PTAX de 28/11/2025 | compra 5,3951 / venda 5,3957 |  |
-| PTAX | BCB — PTAX de 27/11/2025 | venda 5,3652 |  |
-| OFFSHORE POLARIS | NAV oficial de 26/11/2025 (último disponível) | USD 118,8360 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.475,649886 |  |
+| PTAX | BCB — PTAX de 28/11/2025 | compra 5,5378 / venda 5,5384 |  |
+| PTAX | BCB — PTAX de 27/11/2025 | venda 5,5901 |  |
+| OFFSHORE MERIDIAN | NAV oficial de 26/11/2025 (último disponível) | USD 201,6049 |  |
+| OFFSHORE MERIDIAN | NAV de 27/11/2025 | não divulgado | mercado americano fechado (Thanksgiving) |
+| OFFSHORE POLARIS | NAV oficial de 26/11/2025 (último disponível) | USD 160,9255 |  |
 | OFFSHORE POLARIS | NAV de 27/11/2025 | não divulgado | mercado americano fechado (Thanksgiving) |
-| OFFSHORE BOREAL | NAV oficial de 26/11/2025 (último disponível) | USD 211,1982 |  |
-| OFFSHORE BOREAL | NAV de 27/11/2025 | não divulgado | mercado americano fechado (Thanksgiving) |
 
 ## 4. Comunicações recebidas hoje
 
-- **08:55** — *Gestora — operacional* — **Previsão de resgates**: Para a semana que vem, esperamos resgates um pouco acima da média por causa de rebalanceamento de um FoF. Só aviso.
-- **12:44** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (01/12/2025) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
-- **17:12** — *Gestora — operações* — **NAV estimado**: Como ontem foi feriado nos EUA (Thanksgiving), segue o NAV ESTIMADO de 27/11/2025 do Polaris Emerging Markets Fund — Class I (USD): USD 118,0653. Valor indicativo, o oficial sai só no próximo dia útil americano.
+- **17:12** — *Gestora — operações* — **NAV estimado**: Como ontem foi feriado nos EUA (Thanksgiving), segue o NAV ESTIMADO de 27/11/2025 do Meridian Tech Leaders Fund — Inst. (USD): USD 199,3611. Valor indicativo, o oficial sai só no próximo dia útil americano.
 
 ## 5. Batimento Alfa × Beta
 
@@ -106,32 +104,33 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 5,63342827 | 5,65348816 | 0,02005989 |
-| Quantidade final de cotas | 112.266.297,71729434 | 112.264.206,39547900 | -2.091,32181534 |
-| PL final | R$ 632.444.135,33 | R$ 634.684.361,65 | R$ 2.240.226,32 |
-| Caixa | R$ 7.190.215,45 | R$ 7.190.215,45 | R$ 0,00 |
-| Total de provisões | R$ 540.517,13 | R$ 540.517,13 | R$ 0,00 |
+| Cota de fechamento | 2,08755714 | 2,10038377 | 0,01282663 |
+| Quantidade final de cotas | 71.057.260,15438654 | 71.053.908,51193477 | -3.351,64245176 |
+| PL final | R$ 148.336.090,78 | R$ 149.240.476,23 | R$ 904.385,45 |
+| Caixa | R$ 1.663.538,84 | R$ 1.663.538,84 | R$ 0,00 |
+| Total de provisões | R$ 172.453,44 | R$ 172.500,31 | R$ 46,87 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| OFFSHORE POLARIS — Cotas do Polaris Emerging Markets Fund — Class I (USD) | 540.579,558079 | 540.579,558079 | USD 118,0653 × 5,3957 | USD 118,8360 × 5,3957 | 344.373.471,71 | 346.621.453,42 | 2.247.981,71 | Alfa: NAV estimado informado pela gestora / Beta: NAV oficial de 26/11/2025 × PTAX venda D |
-| OFFSHORE BOREAL — Cotas do Boreal Global Equity Fund — Class I (USD) | 193.563,196926 | 193.563,196926 | USD 211,1982 × 5,3957 | USD 211,1982 × 5,3957 | 220.577.288,54 | 220.577.288,54 | 0,00 | NAV oficial de 26/11/2025 × PTAX venda D |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.385 | 2.385 | 18.496,842857 | 18.496,842857 | 44.114.970,21 | 44.114.970,21 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 23.588 | 23.588 | 801,541768 | 801,541768 | 18.906.767,22 | 18.906.767,22 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 627.972.497,68 | 630.220.479,39 | 2.247.981,71 |  |
+| OFFSHORE MERIDIAN — Cotas do Meridian Tech Leaders Fund — Inst. (USD) | 73.192,422455 | 73.192,422455 | USD 199,3611 × 5,5384 | USD 201,6049 × 5,5384 | 80.814.792,31 | 81.724.359,07 | 909.566,76 | NAV oficial de 26/11/2025 × PTAX venda D |
+| OFFSHORE POLARIS — Cotas do Polaris Emerging Markets Fund — Class I (USD) | 58.350,917926 | 58.350,917926 | USD 160,9255 × 5,5384 | USD 160,9255 × 5,5384 | 52.006.410,32 | 52.006.410,32 | 0,00 | NAV oficial de 26/11/2025 × PTAX venda D |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 563 | 563 | 18.475,649886 | 18.475,649886 | 10.401.790,89 | 10.401.790,89 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 5.535 | 5.535 | 805,344048 | 805,344048 | 4.457.579,31 | 4.457.579,31 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 147.680.572,83 | 148.590.139,59 | 909.566,76 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 6.443.179,89 | 6.443.179,89 |
-| TED recebida — aplicação [APL-1] Cotista 1862 (15:36) | 1.330.743,09 | 1.330.743,09 |
-| TED recebida — aplicação [APL-2] Cotista 1869 (11:44) | 1.989.589,41 | 1.989.589,41 |
-| Pagamento de resgate [LIQ-1] — Cotista 1890 (cotizado em 26/11/2025) | -1.033.239,97 | -1.033.239,97 |
-| Pagamento de resgate [LIQ-2] — Cotista 1897 (cotizado em 26/11/2025) | -1.540.056,97 | -1.540.056,97 |
-| **Saldo final** | 7.190.215,45 | 7.190.215,45 |
+| Saldo inicial (D−1) | 1.019.069,06 | 1.019.069,06 |
+| TED recebida — aplicação [APL-1] Cotista 2975 (09:35) | 246.888,47 | 246.888,47 |
+| TED recebida — aplicação [APL-2] Cotista 2982 (15:33) | 730.712,91 | 730.712,91 |
+| TED recebida — aplicação [APL-3] Cotista 2989 (13:20) | 168.128,24 | 168.128,24 |
+| Pagamento de resgate [LIQ-1] — Cotista 3010 (cotizado em 26/11/2025) | -218.973,13 | -218.973,13 |
+| Pagamento de resgate [LIQ-2] — Cotista 3017 (cotizado em 26/11/2025) | -282.286,71 | -282.286,71 |
+| **Saldo final** | 1.663.538,84 | 1.663.538,84 |
 
 ### 5.4 Valores a receber
 
@@ -141,53 +140,63 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 3.320.332,50 | 3.320.332,50 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.145.729,62 | 1.145.729,62 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 57.500,02 | 57.500,02 | 3.271,86 | 3.271,86 | 0,00 | 0,00 | 60.771,88 | 60.771,88 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 417.625,35 | 417.625,35 | 23.658,09 | 23.658,09 | 0,00 | 0,00 | 441.283,44 | 441.283,44 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 8.966,98 | 8.966,98 | 503,36 | 503,36 | 0,00 | 0,00 | 9.470,34 | 9.470,34 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 20.738,10 | 20.738,10 | 265,87 | 265,87 | 0,00 | 0,00 | 21.003,97 | 21.003,97 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 852,63 | 852,63 | 47,37 | 47,37 | 0,00 | 0,00 | 900,00 | 900,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 6.918,75 | 6.918,75 | 168,75 | 168,75 | 0,00 | 0,00 | 7.087,50 | 7.087,50 | 0,00 |
-| **Total** |  |  |  |  |  |  | 540.517,13 | 540.517,13 | 0,00 |
+| TXADM — Taxa de administração a pagar | 6.138,27 | 6.138,27 | 350,43 | 350,43 | 0,00 | 0,00 | 6.488,70 | 6.488,70 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 107.237,03 | 107.237,03 | 6.015,67 | 6.015,67 | 0,00 | 0,00 | 113.252,70 | 113.252,70 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 3.201,76 | 3.201,76 | 175,21 | 175,21 | 0,00 | 0,00 | 3.376,97 | 3.376,97 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 41.380,95 | 41.380,95 | 313,49 | 313,49 | 0,00 | 0,00 | 41.694,44 | 41.694,44 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 568,42 | 568,42 | 31,58 | 31,58 | 0,00 | 0,00 | 600,00 | 600,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 6.918,75 | 6.918,75 | 121,88 | 168,75 | 0,00 | 0,00 | 7.040,63 | 7.087,50 | 46,87 |
+| **Total** |  |  |  |  |  |  | 172.453,44 | 172.500,31 | 46,87 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,06% a.a. sobre R$ 147.179.399,94 ÷ 252 (linear, dias úteis) = R$ 350,43 · Beta: [base: PL do dia útil anterior] 0,06% a.a. sobre R$ 147.179.399,94 ÷ 252 (linear, dias úteis) = R$ 350,43
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,03% a.a. sobre R$ 147.179.399,94 ÷ 252 (linear, dias úteis) = R$ 6.015,67 · Beta: [base: PL do dia útil anterior] 1,03% a.a. sobre R$ 147.179.399,94 ÷ 252 (linear, dias úteis) = R$ 6.015,67
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 147.179.399,94 ÷ 252 (linear, dias úteis) = R$ 175,21 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 147.179.399,94 ÷ 252 (linear, dias úteis) = R$ 175,21
+- **AUDIT** — Alfa: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49 · Beta: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49
+- **ANBIMA** — Alfa: R$ 600,00 (mensal) ÷ 19 d.u. = R$ 31,58 · Beta: R$ 600,00 (mensal) ÷ 19 d.u. = R$ 31,58
+- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 64 d.u. = R$ 121,88 · Beta: R$ 10.800,00 (trimestral) ÷ 64 d.u. = R$ 168,75
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 1862 | R$ 1.330.743,09 | 15:36 | 28/11/2025 | 28/11/2025 | 28/11/2025 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 1869 | R$ 1.989.589,41 | 11:44 | 28/11/2025 | 28/11/2025 | 28/11/2025 | sim | sim |  |
-| RSG-1 | resgate | Cotista 1876 | 112.728,38071455 cotas |  | 21/11/2025 | 28/11/2025 | 02/12/2025 | sim | sim |  |
-| RSG-2 | resgate | Cotista 1883 | 273.902,93992827 cotas |  | 21/11/2025 | 28/11/2025 | 02/12/2025 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 1890 | 179.987,92680234 cotas (R$ 1.033.239,97) |  | 18/11/2025 | 26/11/2025 | 28/11/2025 | não | não | cotizado em 26/11/2025 pela cota de 5,74060708; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 1897 | 268.274,23440491 cotas (R$ 1.540.056,97) |  | 18/11/2025 | 26/11/2025 | 28/11/2025 | não | não | cotizado em 26/11/2025 pela cota de 5,74060708; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista 2975 | R$ 246.888,47 | 09:35 | 28/11/2025 | 28/11/2025 | 28/11/2025 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 2982 | R$ 730.712,91 | 15:33 | 28/11/2025 | 28/11/2025 | 28/11/2025 | sim | sim |  |
+| APL-3 | aplicacao | Cotista 2989 | R$ 168.128,24 | 13:20 | 28/11/2025 | 28/11/2025 | 28/11/2025 | sim | sim |  |
+| RSG-1 | resgate | Cotista 2996 | 163.710,72384761 cotas |  | 21/11/2025 | 28/11/2025 | 02/12/2025 | sim | sim |  |
+| RSG-2 | resgate | Cotista 3003 | 236.550,03440558 cotas |  | 21/11/2025 | 28/11/2025 | 02/12/2025 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 3010 | 106.757,68350118 cotas (R$ 218.973,13) |  | 18/11/2025 | 26/11/2025 | 28/11/2025 | não | não | cotizado em 26/11/2025 pela cota de 2,05112293; liquidação financeira hoje |
+| LIQ-2 | resgate | Cotista 3017 | 137.625,44672142 cotas (R$ 282.286,71) |  | 18/11/2025 | 26/11/2025 | 28/11/2025 | não | não | cotizado em 26/11/2025 pela cota de 2,05112293; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 627.972.497,68 | 630.220.479,39 | 2.247.981,71 |
-| Caixa | 7.190.215,45 | 7.190.215,45 | 0,00 |
+| Total de ativos | 147.680.572,83 | 148.590.139,59 | 909.566,76 |
+| Caixa | 1.663.538,84 | 1.663.538,84 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 3.320.332,50 | 3.320.332,50 | 0,00 |
-| Provisões | 540.517,13 | 540.517,13 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 631.329.778,80 | 633.577.760,51 | 2.247.981,71 |
-| PL base da cota | 631.301.863,50 | 633.549.845,21 | 2.247.981,71 |
-| Cota (8 casas) | 5,63342827 | 5,65348816 | 0,02005989 |
-| Aplicações convertidas | 3.320.332,50 | 3.320.332,50 | 0,00 |
-| Cotas emitidas | 589.398,20316554 | 587.306,88135021 | -2.091,32181533 |
-| Cotas resgatadas | 386.631,32064282 | 386.631,32064282 | 0,00000000 |
-| Valor dos resgates cotizados | 2.178.059,82 | 2.185.815,60 | 7.755,78 |
+| Valores a pagar | 1.145.729,62 | 1.145.729,62 | 0,00 |
+| Provisões | 172.453,44 | 172.500,31 | 46,87 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 148.032.936,87 | 148.942.503,63 | 909.566,76 |
+| PL base da cota | 148.025.928,61 | 148.935.448,50 | 909.519,89 |
+| Cota (8 casas) | 2,08755714 | 2,10038377 | 0,01282663 |
+| Aplicações convertidas | 1.145.729,62 | 1.145.729,62 | 0,00 |
+| Cotas emitidas | 548.837,48954530 | 545.485,84709354 | -3.351,64245176 |
+| Cotas resgatadas | 400.260,75825319 | 400.260,75825319 | 0,00000000 |
+| Valor dos resgates cotizados | 835.567,20 | 840.701,20 | 5.134,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 112.266.297,71729434 | 112.264.206,39547900 | -2.091,32181534 |
-| PL final | 632.444.135,33 | 634.684.361,65 | 2.240.226,32 |
+| Quantidade final de cotas | 71.057.260,15438654 | 71.053.908,51193477 | -3.351,64245176 |
+| PL final | 148.336.090,78 | 149.240.476,23 | 904.385,45 |
 
 ---
 
@@ -195,21 +204,32 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: NAV estimado em OFFSHORE POLARIS.
+**Resumo:** Reprovar até o ajuste: NAV estimado em OFFSHORE MERIDIAN; Taxa CVM pela faixa do PL atual.
 
-**Dificuldade:** media · **Cenários:** nav_estimado_feriado_eua
+**Dificuldade:** media · **Cenários:** nav_estimado_feriado_eua, taxa_cvm_faixa_errada
 
-### Achado 1: NAV estimado em OFFSHORE POLARIS
+### Achado 1: NAV estimado em OFFSHORE MERIDIAN
 
 - **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
 - **Causa raiz:** Alfa usou o NAV estimado enviado pela gestora para 27/11/2025 (feriado nos EUA), e não o último NAV oficial (26/11/2025).
-- **Onde olhar:** Carteira — OFFSHORE POLARIS; Informações de mercado — NAV; Comunicações — e-mail da gestora; Regulamento — NAV oficial
+- **Onde olhar:** Carteira — OFFSHORE MERIDIAN; Informações de mercado — NAV; Comunicações — e-mail da gestora; Regulamento — NAV oficial
 - **Raciocínio do analista:**
-  1. A diferença está em OFFSHORE POLARIS: NAV USD 118,8360 (Beta) contra USD 118,0653 (Alfa). Câmbio e quantidade iguais.
+  1. A diferença está em OFFSHORE MERIDIAN: NAV USD 201,6049 (Beta) contra USD 199,3611 (Alfa). Câmbio e quantidade iguais.
   2. 27/11/2025 foi feriado nos EUA (Thanksgiving) e não houve NAV oficial. O valor do Alfa é o estimado do e-mail da gestora, chamado por ela mesma de "indicativo".
   3. O regulamento exige o NAV oficial mais recente e veda NAV estimado. O correto é o NAV de 26/11/2025.
 - **Ação:** Alfa deve voltar para o NAV oficial de 26/11/2025 e reprocessar. Responder à gestora que valor indicativo não é usado na cota.
+
+### Achado 2: Taxa CVM pela faixa do PL atual
+
+- **Gravidade:** erro · **Dimensões:** provisoes
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa enquadrou a taxa de fiscalização pelo PL atual (R$ 147.179.399,94), na faixa de R$ 7.800,00/trimestre. A regra usa o PL do último dia útil do trimestre anterior (R$ 314.128.027,09), faixa de R$ 10.800,00.
+- **Onde olhar:** Provisões — CVM; Regulamento — tabela da taxa de fiscalização e PL de referência
+- **Raciocínio do analista:**
+  1. A apropriação da taxa CVM difere entre os lados.
+  2. O PL de referência do trimestre é R$ 314.128.027,09 → R$ 10.800,00/trimestre. O PL atual cruzou o limite da faixa, mas isso só conta para o próximo trimestre.
+- **Ação:** Alfa deve usar a faixa do PL de referência (R$ 10.800,00/trimestre).
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -217,18 +237,19 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 |---|---|
 | cota | Beta |
 | caixa | ambos |
-| provisoes | ambos |
+| provisoes | Beta |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 5,65348816 |
-| Quantidade final de cotas | 112.264.206,39547900 |
-| PL final | R$ 634.684.361,65 |
-| Caixa | R$ 7.190.215,45 |
-| Total de provisões | R$ 540.517,13 |
+| Cota | 2,10038377 |
+| Quantidade final de cotas | 71.053.908,51193477 |
+| PL final | R$ 149.240.476,23 |
+| Caixa | R$ 1.663.538,84 |
+| Total de provisões | R$ 172.500,31 |
 
 ### Armadilhas deste caso
 
 - NAV estimado/indicativo não é aceito; usar o último NAV oficial.
+- A faixa da taxa CVM segue o PL de referência do trimestre, não o PL de hoje.

@@ -62,7 +62,7 @@ O Bem-te-vi III FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capita
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -164,7 +164,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 229.896,00 | 229.896,00 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 278.620.690,58 | 278.620.690,58 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 278.620.690,58 | 278.620.690,58 | 0,00 |
 | PL base da cota | 278.603.494,98 | 278.603.494,98 | 0,00 |
 | Cota (8 casas) | 1.403,39916599 | 1.403,39916599 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

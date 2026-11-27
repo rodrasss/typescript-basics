@@ -61,7 +61,7 @@ O Cajueiro Plus FII Responsabilidade Limitada é gerido pela Siriema Investiment
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -159,7 +159,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 182.105,87 | 182.105,87 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 116.718.991,50 | 116.718.991,50 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 116.718.991,50 | 116.718.991,50 | 0,00 |
 | PL base da cota | 116.714.222,06 | 116.714.222,06 | 0,00 |
 | Cota (8 casas) | 115,94824348 | 115,94824348 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

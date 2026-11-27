@@ -61,7 +61,7 @@ O Capivara Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão,
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -169,7 +169,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 330.700,78 | 330.700,78 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 288.769.347,43 | 288.769.347,43 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 288.769.347,43 | 288.769.347,43 | 0,00 |
 | PL base da cota | 288.754.386,52 | 288.754.386,52 | 0,00 |
 | Cota (8 casas) | 104,80664263 | 104,80664263 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

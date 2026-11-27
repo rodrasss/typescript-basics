@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Juazeiro FIP Multiestratégia: a casa é uma gestora de private equity com participações em empresas familiares do interior. Criado em 21/05/2012, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores profissionais. Hoje seus cotistas são family offices e um endowment universitário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e passou por uma reestruturação societária em uma das investidas em 2023. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Lucas. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. As chamadas de capital vencem em datas diferentes para cada cotista. A família escolheu manter parte dos títulos até o vencimento, e isso já gerou dúvidas de marcação. No fechamento de ontem (11/08/2026) o fundo tinha PL de R$ 248.106.961,60, cota de 1.128,20782032 e 219.912,46393570 cotas. Hoje, quarta-feira, 12/08/2026, é a data-base da validação.
+Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Juazeiro FIP Multiestratégia: a casa é uma gestora de private equity com participações em empresas familiares do interior. Criado em 21/05/2012, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores profissionais. Hoje seus cotistas são family offices e um endowment universitário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e passou por uma reestruturação societária em uma das investidas em 2023. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Lucas. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. As chamadas de capital vencem em datas diferentes para cada cotista. O fundo paga despesas pequenas e variadas, e já houve pagamento em duplicidade. No fechamento de ontem (11/08/2026) o fundo tinha PL de R$ 248.106.961,60, cota de 1.128,20782032 e 219.912,46393570 cotas. Hoje, quarta-feira, 12/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Juazeiro FIP Mult
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -158,6 +158,8 @@ Nenhum item.
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
 | INT-1 | integralizacao | Investidores (chamada de capital) | R$ 5.035.928,34 | 11:20 | 31/07/2026 | 12/08/2026 | 12/08/2026 | sim | não | 5ª chamada de capital — vencimento hoje |
@@ -171,7 +173,7 @@ Nenhum item.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 5.035.928,34 | 5.035.928,34 | 0,00 |
 | Provisões | 235.176,38 | 235.176,38 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 248.099.672,76 | 248.099.672,76 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 248.099.672,76 | 248.099.672,76 | 0,00 |
 | PL base da cota | 248.078.825,80 | 248.078.825,80 | 0,00 |
 | Cota (8 casas) | 1.128,07987942 | 1.128,07987942 | 0,00000000 |
 | Aplicações convertidas | 5.035.928,34 | 0,00 | -5.035.928,34 |

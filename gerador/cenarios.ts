@@ -10,8 +10,9 @@ import { reprecificar, calcular, taxaDiaria } from './modelo.ts';
 import type { TipoFundo } from './catalogo.ts';
 import {
   r2, entre, inteiro, escolher, chance, fmtR, fmtN, fmtPct, fmtData, somaDias, somaDiasUteis, ehDiaUtil,
-  diasUteisNoMes, diaUtilAnterior, proximoUtil, solicitacaoPara, diasUteisEntre,
+  diasUteisNoMes, diaUtilAnterior, proximoUtil, solicitacaoPara, diasUteisEntre, datasComeCotas,
 } from './util.ts';
+import { prepararComeCotas, resultadoDe } from './come-cotas.ts';
 
 export interface Cenario {
   id: string;
@@ -555,27 +556,23 @@ const C12: Cenario = {
 };
 
 const C13: Cenario = {
-  id: 'come_cotas_nao_aplicado', nome: 'Come-cotas não aplicado', dim: 'cota', tipos: COME_COTAS, datas: ['2026-05-29', '2025-11-28'],
-  preparar: (c) => {
-    const ref = c.data === '2026-05-29' ? '2025-11-28' : '2025-05-30';
-    const cotaRef = Number((c.cotaAnterior * (1 - entre(c.rng, 0.03, 0.07))).toFixed(8));
-    c.base.comeCotas = { cotaReferencia: cotaRef, dataReferencia: ref, aliquota: 0.15, aplicar: true };
-    c.reg.especificos.push(`Come-cotas: no último dia útil de maio e de novembro, retém 15% do rendimento desde o último come-cotas, por redução da quantidade de cotas. (Simplificação do caso: cota de referência única de ${fmtN(cotaRef, 8)}, de ${fmtData(ref)}, para todos os cotistas.)`);
-    com(c, '08:40', 'Passivo/escrituração', 'Come-cotas de hoje', `Hoje (${fmtData(c.data)}) é dia de come-cotas. Base: cota de referência ${fmtN(cotaRef, 8)} (${fmtData(ref)}), alíquota 15%.`);
-  },
+  id: 'come_cotas_nao_aplicado', nome: 'Come-cotas não aplicado', dim: 'cota', tipos: COME_COTAS, datas: datasComeCotas([2025, 2026]),
+  preparar: (c) => prepararComeCotas(c),
   aplicar: (c) => {
-    const { errado, ladoErrado, ladoCerto } = sortear(c);
+    const { errado, certo, ladoErrado, ladoCerto } = sortear(c);
     errado.comeCotas = { ...errado.comeCotas!, aplicar: false };
+    const rc = resultadoDe(c, certo);
+    const cc = certo.comeCotas!;
     return [{
       cenario: 'come_cotas_nao_aplicado', dimensoes: ['cota'], titulo: 'Come-cotas não processado', ladoCorreto: ladoCerto, ajustePor: ladoErrado,
       causaRaiz: `${ladoErrado} não processou o come-cotas de ${fmtData(c.data)}.`,
-      evidencias: ['Movimentações do dia — come-cotas', 'Quantidade final de cotas', 'Regulamento — tributação', 'Comunicações — passivo'],
+      evidencias: ['Come-cotas (posição por cotista)', 'Quantidade final de cotas', 'Regulamento — come-cotas', 'Comunicações — passivo'],
       raciocinio: [
-        `A cota é igual, mas a quantidade final do ${ladoErrado} é maior e ele não tem IR de come-cotas a recolher.`,
-        `Hoje é o último dia útil de ${c.data.slice(5, 7) === '05' ? 'maio' : 'novembro'}, dia de come-cotas para este fundo. Recalculei: (cota de D − cota de referência) × cotas × 15% bate com o ${ladoCerto}.`,
-        'Se o come-cotas não é processado, o IR não é recolhido no prazo e as posições dos cotistas ficam erradas.',
+        `A cota é igual, mas a quantidade final de cotas do ${ladoErrado} é ${fmtN(rc.cotasComeCotas, 8)} cotas maior: ele não retirou cotas nem calculou IR (${fmtR(rc.irComeCotas)} no ${ladoCerto}).`,
+        `Hoje é o penúltimo dia útil de ${c.data.slice(5, 7) === '05' ? 'maio' : 'novembro'}, dia de come-cotas pelo regulamento. Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = ${fmtPct(cc.aliquota, 0)} × ganho; cotas retiradas = IR ÷ cota de D): o total bate com o ${ladoCerto}.`,
+        'Sem o come-cotas o IR não é retido no prazo e as posições dos cotistas ficam erradas.',
       ],
-      acao: `${ladoErrado} deve processar o come-cotas (redução de cotas + IR a recolher) antes de fechar o passivo.`,
+      acao: `${ladoErrado} deve processar o come-cotas (retirada de cotas e IR a recolher) antes de fechar o passivo.`,
     }];
   },
 };
@@ -1712,4 +1709,4 @@ export const CENARIOS: Cenario[] = [
   P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14, P15, P20,
 ];
 export const porId = (id: string): Cenario => CENARIOS.find((c) => c.id === id)!;
-export { diaUtilAnterior };
+export { diaUtilAnterior, sortear, com, hora, outro, COME_COTAS };

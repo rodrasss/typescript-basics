@@ -61,7 +61,7 @@ O Canjerana Estratégia FIP Multiestratégia é gerido pela Varanda Capital, ges
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -159,7 +159,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 412.888,87 | 412.888,87 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 464.214.513,88 | 476.701.045,56 | 12.486.531,68 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 464.214.513,88 | 476.701.045,56 | 12.486.531,68 |
 | PL base da cota | 464.183.926,86 | 476.670.458,54 | 12.486.531,68 |
 | Cota (8 casas) | 1.710,79223677 | 1.756,81248915 | 46,02025238 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Tangará Prime FIP Multiestratégia: a casa é uma gestora multiestratégia criada por ex-sócios de banco de investimento. Criado em 23/01/2017, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores qualificados. Hoje seus cotistas são 8 investidores profissionais (fundos de pensão e family offices) com capital comprometido. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e passou por uma reestruturação societária em uma das investidas em 2023. O gestor responsável é Lívia, e quem cuida da validação do fundo é Lucas. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. O anúncio de rendimentos costuma sair no fim do dia, depois do fechamento de um dos lados. No fechamento de ontem (10/09/2026) o fundo tinha PL de R$ 239.662.386,39, cota de 972,22726798 e 246.508,60378168 cotas. Hoje, sexta-feira, 11/09/2026, é a data-base da validação.
+Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Tangará Prime FIP Multiestratégia: a casa é uma gestora multiestratégia criada por ex-sócios de banco de investimento. Criado em 23/01/2017, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores qualificados. Hoje seus cotistas são 8 investidores profissionais (fundos de pensão e family offices) com capital comprometido. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e passou por uma reestruturação societária em uma das investidas em 2023. O gestor responsável é Lívia, e quem cuida da validação do fundo é Lucas. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. No fechamento de ontem (10/09/2026) o fundo tinha PL de R$ 239.662.386,39, cota de 972,22726798 e 246.508,60378168 cotas. Hoje, sexta-feira, 11/09/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Tangará Prime FIP M
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -161,7 +161,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 183.000,00 | 183.000,00 |
 | Provisões | 250.518,77 | 250.518,77 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 239.654.766,64 | 239.654.766,64 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 239.654.766,64 | 239.654.766,64 | 0,00 |
 | PL base da cota | 239.634.441,99 | 239.634.441,99 | 0,00 |
 | Cota (8 casas) | 972,11390723 | 972,11390723 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

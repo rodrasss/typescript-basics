@@ -15,7 +15,8 @@ import { gravidadeEfetiva } from './caso.ts';
 import type { Ctx, Fundo, Regulamento, Mercado, Comunicacao, Achado, Gravidade } from './caso.ts';
 import { calcular, clonar } from './modelo.ts';
 import type { Posicao, Resultado, Dimensao, LadoId } from './modelo.ts';
-import { CENARIOS, porId } from './cenarios.ts';
+import { CENARIOS } from './cenarios.ts';
+import { CENARIOS_CC, DATAS_COME_COTAS } from './cenarios-come-cotas.ts';
 import type { Cenario } from './cenarios.ts';
 import { compor } from './historia.ts';
 import { renderEntrada, renderGabarito, renderCompleto } from './render.ts';
@@ -56,7 +57,12 @@ export interface Caso {
 }
 
 // ------------------------------------------------------------------ regras de composição
+const porId = (id: string): Cenario => (CENARIOS.find((c) => c.id === id) ?? CENARIOS_CC.find((c) => c.id === id))!;
+
 const TAGS: Record<string, string[]> = {
+  cc_nao_aplicado: ['cc', 'passivo'], cc_calendario_ultimo_dia: ['cc', 'passivo'], cc_isento_tributado: ['cc', 'passivo'], cc_aliquota_errada: ['cc', 'passivo'],
+  cc_cota_referencia_errada: ['cc', 'passivo'], cc_duplicado: ['cc', 'passivo'], cc_cota_conversao_d1: ['cc', 'passivo'], cc_prejuizo_devolvido: ['cc', 'passivo'],
+  cc_cotista_isento_tributado: ['cc', 'passivo'], cc_correto: ['cc', 'passivo'],
   pagamento_taxa_nao_registrado: ['pg', 'taxa'],
   provisao_nao_baixada_apos_pagamento: ['pg', 'taxa'],
   taxa_reduzida_nao_aplicada: ['red', 'taxa'],
@@ -79,7 +85,7 @@ const TAGS: Record<string, string[]> = {
   aplicacao_apos_corte_convertida: ['passivo'],
   integralizacao_nao_convertida: ['passivo'],
   resgate_cotizado_antecipadamente: ['passivo'],
-  come_cotas_nao_aplicado: ['passivo'],
+  come_cotas_nao_aplicado: ['passivo', 'cc'],
   auditoria_contrato_novo: ['audit'],
   erros_que_se_compensam: ['audit'],
   dividendo_ex_nao_provisionado: ['div'],
@@ -89,10 +95,10 @@ const TAGS: Record<string, string[]> = {
   boleta_tardia_nao_processada: ['lft'],
 };
 const SO_PRIMARIO = new Set([
-  'tudo_bate', 'tudo_bate_com_ruido', 'arredondamento_vs_truncamento', 'erros_que_se_compensam', 'ambos_com_taxa_antiga',
+  'tudo_bate', 'tudo_bate_com_ruido', 'cc_correto', 'arredondamento_vs_truncamento', 'erros_que_se_compensam', 'ambos_com_taxa_antiga',
   'performance_sem_reversao', 'performance_data_base_errada', 'performance_sem_linha_dagua', 'ativo_iliquido_sem_referencia',
 ]);
-const LIMPOS = new Set(['tudo_bate', 'tudo_bate_com_ruido']);
+const LIMPOS = new Set(['tudo_bate', 'tudo_bate_com_ruido', 'cc_correto']);
 // classe de gravidade do cenário primário: 0 = só ressalva, 1 = pendência, 2 = erro (reprova)
 const CLASSE_RESSALVA = new Set(['resgate_liquidado_nao_baixado', 'dividendo_recebido_nao_baixado', 'ajuste_liquidado_nao_baixado', 'compromissada_como_caixa', 'pagamento_taxa_nao_registrado', 'liquidacao_compra_antecipada']);
 const CLASSE_PENDENCIA = new Set(['ativo_iliquido_sem_referencia', 'tarifa_bancaria_indevida', 'debito_em_duplicidade', 'credito_nao_identificado']);
@@ -103,6 +109,16 @@ const FOLGA_VARIACAO: Record<string, number> = {
 };
 
 const ARMADILHAS: Record<string, string> = {
+  cc_correto: 'Dia de come-cotas não é sinônimo de erro: conferir data, alíquota e cada posição, e aprovar quando tudo confere.',
+  cc_nao_aplicado: 'Cota igual, quantidade de cotas diferente: em dia de come-cotas, olhar a quantidade final e a tabela por cotista.',
+  cc_calendario_ultimo_dia: 'O sintoma é o mesmo de "não processado", mas a causa é o calendário: o regulamento manda o penúltimo dia útil, não o último.',
+  cc_isento_tributado: 'Hoje é dia de come-cotas para outros fundos, mas este não está sujeito a ele: ler o regulamento antes de procurar divergência de cálculo.',
+  cc_aliquota_errada: 'A alíquota depende do prazo médio da carteira em D; perto de 365 dias, conferir de que lado do limite o fundo está.',
+  cc_cota_referencia_errada: 'Posição com aplicação depois do último come-cotas usa a cota da aplicação como referência, não a do último come-cotas.',
+  cc_duplicado: 'Todas as posições tributadas com o dobro do valor: reprocessamento, não erro de alíquota.',
+  cc_cota_conversao_d1: 'IR igual e cotas retiradas diferentes: a diferença está na cota usada para converter o IR em cotas.',
+  cc_prejuizo_devolvido: 'Posição com cota abaixo da referência não gera retenção nem devolução de cotas.',
+  cc_cotista_isento_tributado: 'A divergência total de IR vem de uma única posição: conferir o tratamento tributário de cada cotista.',
   tudo_bate: 'Não inventar problema: quando tudo bate e as apropriações conferem com o regulamento, a resposta certa é aprovar.',
   tudo_bate_com_ruido: 'Comunicações alarmantes nem sempre afetam a data-base: separar o que tem efeito em D do que é evento futuro, ativo que o fundo não tem ou lembrete.',
   erros_que_se_compensam: 'Cota igual não prova que está certa: dois erros podem se anular hoje. Conferir componente por componente.',
@@ -186,6 +202,28 @@ export function planejar(total: number, seed: number): Plano[] {
   return planos;
 }
 
+export function planejarSessaoComeCotas(total: number, seed: number): Plano[] {
+  const rng = criarRng(seed + 7);
+  const nCorretos = Math.max(2, Math.round(total * 0.18));
+  const erros = CENARIOS_CC.filter((c) => c.id !== 'cc_correto');
+  const lista: string[] = Array.from({ length: nCorretos }, () => 'cc_correto');
+  for (let i = 0; lista.length < total; i++) lista.push(erros[i % erros.length].id);
+  const ordem = embaralhar(rng, lista);
+  const usoTipo = new Map<TipoFundo, number>(TODOS_TIPOS.map((t) => [t, 0]));
+  const usoData = new Map<string, number>(DATAS_COME_COTAS.map((d) => [d, 0]));
+  return ordem.map((cid, i) => {
+    const cen = porId(cid);
+    const candidatos = TODOS_TIPOS.filter((t) => tipoCompativel(cen, t));
+    const minT = Math.min(...candidatos.map((t) => usoTipo.get(t)!));
+    const tipo = escolher(rng, candidatos.filter((t) => usoTipo.get(t)! === minT));
+    usoTipo.set(tipo, usoTipo.get(tipo)! + 1);
+    const minD = Math.min(...DATAS_COME_COTAS.map((d) => usoData.get(d)!));
+    const data = escolher(rng, DATAS_COME_COTAS.filter((d) => usoData.get(d)! === minD));
+    usoData.set(data, usoData.get(data)! + 1);
+    return { n: i + 1, id: `cc-${String(i + 1).padStart(3, '0')}`, tipo, data, primario: cid, seed: seed * 1000 + i * 7919 + 555 };
+  });
+}
+
 // ------------------------------------------------------------------ ruído de comunicações (sem efeito na data-base)
 function adicionarRuido(c: Ctx, rng: Rng): void {
   const hh = (a: number, b: number): string => `${String(inteiro(rng, a, b)).padStart(2, '0')}:${String(inteiro(rng, 0, 59)).padStart(2, '0')}`;
@@ -250,7 +288,8 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
 
   // escolhe os cenários (primário + secundários)
   const escolhidos: Cenario[] = [primario];
-  const sec = SO_PRIMARIO.has(primario.id) ? 0 : chance(rng, 0.7) ? (chance(rng, 0.3) ? 2 : 1) : 0;
+  const sessao = plano.id.startsWith('cc-');
+  const sec = SO_PRIMARIO.has(primario.id) ? 0 : sessao ? (chance(rng, 0.25) ? 1 : 0) : chance(rng, 0.7) ? (chance(rng, 0.3) ? 2 : 1) : 0;
   const pool = embaralhar(rng, CENARIOS.filter((x) => !SO_PRIMARIO.has(x.id)));
   const preparaveis = [...escolhidos];
   primario.preparar?.(c);
@@ -259,6 +298,7 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
     if (!tipoCompativel(cand, plano.tipo) || !dataCompativel(cand, plano.data)) continue;
     if (escolhidos.some((e) => conflita(e.id, cand.id))) continue;
     if (classe(primario.id) < 2 && classe(cand.id) > classe(primario.id)) continue; // mantém o caso leve leve
+    if (sessao && classe(cand.id) !== 0) continue; // na sessão, só achados que não mexem na cota: a conta do come-cotas fica exata
     if (cand.aplicavel && !cand.aplicavel(c)) continue;
     escolhidos.push(cand);
     preparaveis.push(cand);
@@ -431,6 +471,12 @@ export function gerarTodos(total = 200, seed = 2026): Caso[] {
   return planos.map((p) => construirCaso(p, nomes));
 }
 
+export function gerarSessaoComeCotas(total = 33, seed = 2026): Caso[] {
+  const planos = planejarSessaoComeCotas(total, seed);
+  const nomes = new Set<string>();
+  return planos.map((p) => construirCaso(p, nomes));
+}
+
 // ------------------------------------------------------------------ saída em disco
 function slug(s: string): string {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -486,16 +532,30 @@ function arg(nome: string, padrao: string): string {
   return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : padrao;
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const n = Number(arg('n', '200'));
-  const seed = Number(arg('seed', '2026'));
-  const out = resolve(arg('out', 'casos'));
-  const casos = gerarTodos(n, seed);
-  gravar(casos, out);
-  writeFileSync(join(out, '..', 'INDICE.md'), indiceMarkdown(casos));
-  writeFileSync(join(out, '..', 'COBERTURA.md'), cobertura(casos));
-  console.log(`${casos.length} casos gravados em ${out}`);
+function resumo(casos: Caso[], titulo: string, out: string): void {
+  console.log(`${titulo}: ${casos.length} casos gravados em ${out}`);
   const ap = casos.filter((c) => c.gabarito.parecer === 'APROVADO').length;
-  console.log(`APROVADO ${ap} · REPROVADO ${casos.filter((c) => c.gabarito.parecer === 'REPROVADO').length} · PENDENTE ${casos.filter((c) => c.gabarito.parecer === 'PENDENTE').length}`);
+  console.log(`  APROVADO ${ap} · REPROVADO ${casos.filter((c) => c.gabarito.parecer === 'REPROVADO').length} · PENDENTE ${casos.filter((c) => c.gabarito.parecer === 'PENDENTE').length}`);
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const seed = Number(arg('seed', '2026'));
+  const so = arg('so', 'tudo'); // tudo | geral | come-cotas
+  if (so === 'tudo' || so === 'geral') {
+    const out = resolve(arg('out', 'casos'));
+    const casos = gerarTodos(Number(arg('n', '200')), seed);
+    gravar(casos, out);
+    writeFileSync(join(out, '..', 'INDICE.md'), indiceMarkdown(casos));
+    writeFileSync(join(out, '..', 'COBERTURA.md'), cobertura(casos));
+    resumo(casos, 'Geral', out);
+  }
+  if (so === 'tudo' || so === 'come-cotas') {
+    const outCC = resolve(arg('out-cc', 'sessoes/come-cotas/casos'));
+    const cc = gerarSessaoComeCotas(Number(arg('n-cc', '33')), seed);
+    gravar(cc, outCC);
+    writeFileSync(join(outCC, '..', 'INDICE.md'), indiceMarkdown(cc));
+    writeFileSync(join(outCC, '..', 'COBERTURA.md'), cobertura(cc));
+    resumo(cc, 'Sessão come-cotas', outCC);
+  }
 }
 void iso;

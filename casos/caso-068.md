@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Sucupira FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 19/09/2014, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Henrique, e quem cuida da validação do fundo é Diego. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. A carteira de ações tem pagadoras de dividendos relevantes. No fechamento de ontem (12/08/2026) o fundo tinha PL de R$ 254.107.350,72, cota de 1.156,59650265 e 219.702,67948908 cotas. Hoje, quinta-feira, 13/08/2026, é a data-base da validação.
+Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Sucupira FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 19/09/2014, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Henrique, e quem cuida da validação do fundo é Diego. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. A conta do fundo já teve cobrança de tarifa que não era do fundo. No fechamento de ontem (12/08/2026) o fundo tinha PL de R$ 254.107.350,72, cota de 1.156,59650265 e 219.702,67948908 cotas. Hoje, quinta-feira, 13/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -62,7 +62,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -167,7 +167,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 241.640,52 | 241.640,52 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 253.576.897,21 | 250.594.435,42 | -2.982.461,79 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 253.576.897,21 | 250.594.435,42 | -2.982.461,79 |
 | PL base da cota | 253.561.295,27 | 250.578.833,48 | -2.982.461,79 |
 | Cota (8 casas) | 1.154,11107347 | 1.140,53608295 | -13,57499052 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

@@ -59,7 +59,7 @@ Impacto em R$ no PL, em fração de cota e para o cotista (quem entra/sai pela c
 
 Com mais de um achado, vale o mais grave (erro > pendência > ressalva > informativo).
 
-**Sem tolerância de materialidade nesta versão:** qualquer diferença que mude a cota (8 casas), o PL, a quantidade de cotas ou o saldo de uma provisão é erro, por menor que seja. Provisão diferente muda o PL, então reprova. Só vira ressalva o que não mexe em cota, PL nem passivo (por exemplo, um item de caixa classificado errado).
+**Sem tolerância de materialidade nesta versão:** qualquer diferença que mude a cota (8 casas), o PL, a quantidade de cotas ou o saldo de uma provisão é erro, por menor que seja. Provisão diferente muda o PL, então reprova. Só vira ressalva o que não mexe em cota, PL nem passivo (por exemplo, um item de caixa classificado errado, ou um pagamento registrado em um só dos lados, com caixa e provisão divergindo pelo mesmo valor e PL igual).
 
 ### 8. Formular a ação
 Quem ajusta, o que ajustar, com qual valor/fonte, e o que o analista do fundo deve saber (inclusive o que **não** precisa fazer). Se for um problema recorrente, sugerir a correção na origem (parametrização, cadastro, rotina).
@@ -76,3 +76,35 @@ Quem ajusta, o que ajustar, com qual valor/fonte, e o que o analista do fundo de
 - **Fatos de D entram na cota de D**, mesmo que a boleta tenha chegado depois do corte operacional, desde que executados e liquidados em D.
 - **Ruído:** comunicações alarmantes sem efeito em D não são achado; dizer por que foram descartadas.
 - **Não inventar problema** quando tudo bate: aprovar e dizer o que foi conferido.
+- **Um achado por causa raiz:** o efeito dela em cota, quantidade de cotas ou PL entra no mesmo achado, em `dimensoes`. Não abra um achado separado para a "consequência".
+- **Os dois lados errados:** `nenhum`, `quem_ajusta` = os dois, e entregue a cota e a quantidade de cotas corretas recalculadas.
+- **Evento real de dinheiro:** pagamento em duplicidade que de fato saiu da conta, ou resgate pago a menor. O dinheiro saiu, então nenhum lado está certo (`nenhum`); o ajuste é de registro e de cobrança. Se depende de estorno de terceiro, PENDENTE.
+- **Preço de comitê vencido contra negócio relevante no secundário:** sem taxa ANBIMA, uma ata com mais de 30 dias e um negócio recente relevante significam que a referência não é confiável. Não escolha lado: `indeterminado`, PENDENTE, escalar ao comitê de precificação.
+- **Definição da cota:** PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa. A cota bruta de performance usa o PL antes da provisão de performance, já deduzidas as demais provisões.
+- **Movimentos que cotizam hoje** alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; o caixa e o "a pagar" deles aparecem depois do fechamento.
+
+## Dia de come-cotas (penúltimo dia útil de maio e de novembro)
+
+O come-cotas é a retenção semestral de IR feita por redução da quantidade de cotas. Em dia de come-cotas a cota costuma bater e a **quantidade de cotas** é que diverge. Siga este roteiro, além do geral.
+
+1. **Data.** O come-cotas ocorre no **penúltimo** dia útil de maio e de novembro, não no último. Se um lado não processou, procure nas comunicações um aviso de agendamento (por exemplo, "agendado para o último dia útil"): é erro de calendário.
+2. **O fundo está sujeito?** Confira a tributação no regulamento. Fundos de ações, previdência, infraestrutura incentivada, investimento no exterior, FII, Fiagro, FIDC e FIP não têm come-cotas. Se um lado retirou cotas de um fundo assim, ele errou, mesmo com o cálculo "certo".
+3. **Alíquota.** 15% se o prazo médio da carteira em D for superior a 365 dias; 20% se for de até 365. O prazo médio está nas informações de mercado. Perto de 365 dias, confira de que lado do limite o fundo está.
+4. **Posição por cotista.** Para cada cotista tributado: ganho = (cota de D − cota de referência) × quantidade de cotas, se positivo; IR = alíquota × ganho, em reais e centavos; cotas retiradas = IR ÷ cota de D, truncadas na 8ª casa. A cota de referência é a do último come-cotas **ou a da aplicação, a mais recente**.
+5. **Isentos e prejuízo.** Cotista isento ou imune não sofre retenção. Posição com cota abaixo da referência não gera retenção nem devolução de cotas.
+6. **Totais.** Some IR e cotas retiradas; confira com a quantidade final de cotas de cada lado.
+
+Como reconhecer o erro pelo padrão da diferença:
+
+| Padrão | Causa provável |
+|---|---|
+| Um lado sem IR e sem cotas retiradas | não processou (rotina ou calendário) |
+| IR e cotas retiradas em todas as posições com exatamente o dobro | processado em duplicidade |
+| Razão entre os IR igual a 15% ÷ 20% (ou o inverso), em todas as posições | alíquota errada |
+| IR igual, cotas retiradas diferentes | IR convertido por uma cota que não é a de D (por exemplo, a de D−1) |
+| Diferença em uma só posição, com aplicação recente | cota de referência desatualizada |
+| Diferença só na posição de um cotista isento | retenção indevida |
+| Cotas devolvidas (valor negativo) numa posição abaixo da referência | prejuízo tratado como crédito |
+| Um lado retirou cotas e o regulamento diz que o fundo não tem come-cotas | aplicado em fundo isento |
+
+Em qualquer desses casos o parecer é **REPROVADO** (muda a quantidade de cotas e o PL final) e o lado errado reprocessa. Se tudo confere, aprove e diga o que conferiu (data, alíquota e cada posição).

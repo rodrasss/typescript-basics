@@ -1,10 +1,12 @@
 # Validação de fundos: casos simulados para treinar o agente
 
-Este repositório tem **200 casos de uso simulados** para treinar e avaliar um agente que valida **cota, caixa e provisões** de fundos, comparando o que está no **Alfa** com o que está no **Beta**.
+Este repositório tem **200 casos de uso simulados** para treinar e avaliar um agente que valida **cota, caixa e provisões** de fundos, comparando o que está no **Alfa** com o que está no **Beta**. Há também uma **sessão de come-cotas** com mais 33 casos: [`sessoes/come-cotas`](sessoes/come-cotas/README.md).
 
 Cada caso é um **fundo-persona**: tem história, gestora, cotistas, regulamento, taxas, ativos, um dia de movimento e (na maioria dos casos) um ou mais problemas escondidos. O caso traz a **entrada** que o agente recebe e o **gabarito** que um analista experiente daria (parecer, causa raiz, quem está certo, raciocínio passo a passo e ação).
 
 > **Nomes neutros.** Os dois lados da comparação se chamam **Alfa** (o controle interno da casa) e **Beta** (o administrador/custodiante). No uso real, Alfa e Beta correspondem às duas pontas que você compara; o raciocínio não muda.
+
+> **Convenção de datas.** Nada é processado em D0, o dia corrente. A data-base de cada caso é o dia que está sendo validado, um fechamento já encerrado. O come-cotas ocorre no **penúltimo dia útil** de maio e de novembro.
 
 > **Tudo é fictício.** Fundos, gestoras, emissores, tickers, pessoas, preços e valores foram inventados por código. Nenhum dado real foi usado. Como os casos nunca se repetem na prática, simulado e real valem o mesmo para treinar: o que se treina é o jeito de raciocinar, não o valor.
 
@@ -16,6 +18,7 @@ Cada caso é um **fundo-persona**: tem história, gestora, cotistas, regulamento
 | `casos/caso-NNN.json` | O mesmo caso, estruturado (posições dos dois lados, resultados, achados) |
 | `dataset.jsonl` | Uma linha por caso: `entrada` (markdown), `gabarito` (markdown), `parecer`, `dificuldade`, `cenarios` |
 | `INDICE.md` / `COBERTURA.md` | Lista dos casos e estatísticas de cobertura |
+| `sessoes/come-cotas/` | **Sessão de come-cotas:** 33 casos em dia de come-cotas (posição por cotista), com README próprio |
 | `metodologia-analista.md` | **O método do analista**, em forma de roteiro, para o agente |
 | `prompt-agente.md` | **Rascunho do prompt do agente**, com o formato JSON da resposta |
 | `gerador/` | Código que gera, confere e avalia os casos (TypeScript) |
@@ -43,12 +46,14 @@ Tudo é determinístico (semente 2026): rodar de novo gera os mesmos 200 casos.
 
 ## O que os casos cobrem
 
-53 tipos de situação, em 15 tipos de fundo (renda fixa DI e crédito privado, multimercado macro e long & short, ações, FIC, previdência, FIDC, FII, FIP, cambial, investimento no exterior, exclusivo, Fiagro e infraestrutura). Dos 200 casos, 40 (20%) estão limpos, para o agente aprender a **não inventar problema**; 82 (41%) têm mais de um achado. O parecer esperado é aprovado em 62, reprovado em 122 e pendente em 16. A dificuldade vai de 41 casos fáceis a 33 difíceis.
+53 tipos de situação, em 15 tipos de fundo (renda fixa DI e crédito privado, multimercado macro e long & short, ações, FIC, previdência, FIDC, FII, FIP, cambial, investimento no exterior, exclusivo, Fiagro e infraestrutura). Dos 200 casos, 40 (20%) estão limpos, para o agente aprender a **não inventar problema**; 89 (45%) têm mais de um achado. O parecer esperado é aprovado em 62, reprovado em 121 e pendente em 17. A dificuldade vai de 35 casos fáceis a 42 difíceis.
 
 - **Cota, carteira e passivo:** preço de crédito com fonte errada, ação com fechamento de D−1, cota de fundo investido de D−1, desdobramento não refletido, dividendo com data "ex" não provisionado, aplicação não convertida ou convertida após o corte, resgate cotizado antes do prazo, PTAX errada, NAV estimado em feriado nos EUA, ajuste de futuros errado, título vencido não baixado, título mantido até o vencimento marcado a mercado, come-cotas não aplicado, arredondamento × truncamento, PDD com aging desatualizado, amortização, rendimento anunciado, laudo de FIP, integralização, ativo ilíquido sem referência, boleta tardia.
 - **Caixa:** resgate liquidado e não baixado, tarifa bancária indevida, débito em duplicidade, dividendo/juros recebidos, ajuste liquidado, compromissada como caixa, pagamento de taxa, crédito não identificado, liquidação antecipada de compra, resgate pago com cota errada, margem tratada como despesa.
 - **Provisões:** redução de taxa em assembleia não aplicada (e o caso em que **os dois** lados estão errados), mínimo mensal, base de cálculo, dias corridos × úteis, gestão sem apropriação, performance (reversão, data-base, linha d'água), aditivo de auditoria, faixa da taxa CVM, taxa escalonada, despesa que não é encargo, duplicidade, método linear × exponencial.
 - **Armadilhas de raciocínio:** dois erros que se compensam, "cota igual mas passivo diferente", comunicação alarmante sem efeito em D, "o lado óbvio está errado", casos em que **nenhum** lado está certo e casos em que o certo é **escalar** (não escolher lado).
+
+**Sessão de come-cotas** (33 casos, 4 datas, 10 tipos de fundo): come-cotas não processado, agendado para o último dia útil, aplicado em fundo isento, com alíquota errada (15% × 20% pelo prazo médio), com cota de referência desatualizada, em duplicidade, convertido pela cota de D−1, devolvendo cotas de prejuízo ou retendo cotista isento, mais casos corretos. Detalhes em [`sessoes/come-cotas/README.md`](sessoes/come-cotas/README.md).
 
 Veja `COBERTURA.md` para a contagem exata.
 
@@ -56,7 +61,8 @@ Veja `COBERTURA.md` para a contagem exata.
 
 ```bash
 npm ci                # uma vez
-npm run gerar         # regenera casos/, dataset.jsonl, INDICE.md e COBERTURA.md
+npm run gerar         # regenera casos/ e a sessão de come-cotas (dataset.jsonl, INDICE.md e COBERTURA.md de cada um)
+npm run gerar -- --so come-cotas   # só a sessão de come-cotas (ou --so geral)
 npm test              # testes do dataset
 npm run typecheck     # tipos
 ```
@@ -76,7 +82,8 @@ Os casos usam regras **plausíveis**, mas simuladas. Alinhe com o processo real 
 2. **Dimensão "cota"** inclui cota, quantidade final de cotas e PL (o passivo). Caixa e provisões são validados à parte.
 3. **Regulamento:** taxas calculadas sobre o PL do dia útil anterior; base 252; cota truncada em 8 casas; come-cotas simplificado (cota de referência única). Taxa CVM, tributação e calendário de feriados são simplificações.
 4. **Hierarquia de evidência** (regulamento > manual de precificação > referência oficial de D > comunicação formal > informal) é uma proposta.
-5. O agente que você descreveu **não faz filtro nem busca**: só valida e opina com tudo que recebe. Os casos seguem esse formato.
+5. **Come-cotas:** interpretei "penúltimo dia" como penúltimo **dia útil**; alíquotas de 15% e 20% pelo prazo médio da carteira; posição por cotista simplificada. As simplificações estão em [`sessoes/come-cotas/README.md`](sessoes/come-cotas/README.md).
+6. O agente que você descreveu **não faz filtro nem busca**: só valida e opina com tudo que recebe. Os casos seguem esse formato.
 
 ## Resultado da avaliação com agentes
 
@@ -86,4 +93,6 @@ Os casos usam regras **plausíveis**, mas simuladas. Alinhe com o processo real 
 - O parecer divergiu em 11 casos por um **defeito do gabarito**, não do agente: erro de provisão que muda a cota estava rotulado "aprovado com ressalva", contra a regra do próprio prompt. Com a regra corrigida, o parecer concorda em 36 de 36.
 - Os agentes também apontaram, de forma independente, defeitos de coerência nas entradas (datas de resgate fora do prazo do regulamento, cota de cotização diferente da do cabeçalho, fator de CDI incompatível, ruído de ponto flutuante, persona contraditória). Todos foram corrigidos no gerador e **viraram testes automáticos**.
 
-**Pendente:** uma segunda rodada às cegas sobre o dataset já corrigido. Os identificadores dos casos mudaram entre as versões, então os resultados da rodada 1 valem para o método (prompt + metodologia), não para os casos atuais.
+**Rodada 2** (detalhes em [`avaliacao/rodada-2.md`](avaliacao/rodada-2.md)): 3 agentes resolveram 24 casos do dataset já corrigido, às cegas. **Parecer certo em 23 de 24** e **33 de 35 achados**, sem problema inventado. O erro de parecer e os achados que faltaram eram ambiguidades do prompt (caixa e provisão divergindo pelo mesmo valor; rótulo de lado em evento real de dinheiro), todas esclarecidas em seguida no prompt, na metodologia e no gerador.
+
+**Pendente:** uma rodada às cegas sobre a sessão de come-cotas e sobre o dataset após esses ajustes. Os identificadores dos casos mudam a cada versão do gerador, então os resultados das rodadas valem para o método (prompt + metodologia), não para os casos atuais.

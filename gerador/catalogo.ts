@@ -48,7 +48,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de Renda Fixa — Referenciada DI', publico: ['Público geral', 'Público geral (plataformas digitais)'],
     pl: [80e6, 2.5e9], cota: [1.2, 6.5], retornoDia: [0.00049, 0.00054], taxaAdm: [0.0005, 0.0015], taxaGes: [0.0010, 0.0040],
     custodia: [0.0001, 0.0003], perf: { chance: 0, benchmarks: [] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: [{ cot: 0, corridos: false, liq: 0 }], tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
+    cotizacaoResgate: [{ cot: 0, corridos: false, liq: 0 }], tributacao: 'Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)',
   },
   RF_CP: {
     tipo: 'RF_CP', rotulo: 'Renda Fixa Crédito Privado', sufixo: 'FIF RF Crédito Privado LP',
@@ -56,7 +56,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     pl: [60e6, 1.8e9], cota: [1.1, 4.8], retornoDia: [0.00040, 0.00070], taxaAdm: [0.0005, 0.0015], taxaGes: [0.0040, 0.0090],
     custodia: [0.0001, 0.0004], perf: { chance: 0.25, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
     cotizacaoResgate: [{ cot: 30, corridos: true, liq: 1 }, { cot: 15, corridos: true, liq: 1 }, { cot: 60, corridos: true, liq: 1 }],
-    tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
+    tributacao: 'Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)',
   },
   FIM_MACRO: {
     tipo: 'FIM_MACRO', rotulo: 'Multimercado Macro', sufixo: 'FIF Multimercado',
@@ -64,7 +64,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     pl: [50e6, 1.5e9], cota: [1.5, 12], retornoDia: [-0.006, 0.007], taxaAdm: [0.0005, 0.002], taxaGes: [0.008, 0.019],
     custodia: [0.0001, 0.0004], perf: { chance: 0.9, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
     cotizacaoResgate: [{ cot: 30, corridos: true, liq: 1 }, { cot: 1, corridos: false, liq: 1 }],
-    tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
+    tributacao: 'Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)',
   },
   FIM_LS: {
     tipo: 'FIM_LS', rotulo: 'Multimercado Long & Short', sufixo: 'FIF Multimercado Long Short',
@@ -72,7 +72,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     pl: [40e6, 900e6], cota: [1.3, 9], retornoDia: [-0.008, 0.009], taxaAdm: [0.0005, 0.002], taxaGes: [0.01, 0.019],
     custodia: [0.0001, 0.0004], perf: { chance: 0.95, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
     cotizacaoResgate: [{ cot: 30, corridos: true, liq: 2 }, { cot: 15, corridos: true, liq: 2 }],
-    tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
+    tributacao: 'Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)',
   },
   FIA: {
     tipo: 'FIA', rotulo: 'Ações', sufixo: 'FIF Ações',
@@ -88,7 +88,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     pl: [40e6, 1e9], cota: [1.2, 8], retornoDia: [-0.004, 0.005], taxaAdm: [0.0005, 0.002], taxaGes: [0.004, 0.01],
     custodia: [0.0001, 0.0003], perf: { chance: 0.3, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
     cotizacaoResgate: [{ cot: 30, corridos: true, liq: 1 }, { cot: 45, corridos: true, liq: 1 }],
-    tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
+    tributacao: 'Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)',
   },
   PREV: {
     tipo: 'PREV', rotulo: 'Previdência (FIE — PGBL/VGBL)', sufixo: 'FIE FIF Previdenciário Multimercado',
@@ -128,7 +128,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     pl: [40e6, 700e6], cota: [2, 9], retornoDia: [-0.012, 0.012], taxaAdm: [0.0005, 0.002], taxaGes: [0.003, 0.008],
     custodia: [0.0001, 0.0003], perf: { chance: 0, benchmarks: [] }, comeCotas: true, condominio: 'aberto',
     cotizacaoResgate: [{ cot: 0, corridos: false, liq: 1 }],
-    tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
+    tributacao: 'Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)',
   },
   IE: {
     tipo: 'IE', rotulo: 'Investimento no Exterior (ações globais)', sufixo: 'FIC FIF Ações Investimento no Exterior',
@@ -144,7 +144,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     pl: [30e6, 600e6], cota: [1.2, 15], retornoDia: [-0.0015, 0.002], taxaAdm: [0.0004, 0.0012], taxaGes: [0.002, 0.006],
     custodia: [0.0001, 0.0002], perf: { chance: 0, benchmarks: [] }, comeCotas: true, condominio: 'aberto',
     cotizacaoResgate: [{ cot: 1, corridos: false, liq: 1 }],
-    tributacao: 'Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)',
+    tributacao: 'Classe exclusiva: tributação periódica semestral (come-cotas), no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)',
   },
   FIAGRO: {
     tipo: 'FIAGRO', rotulo: 'Fiagro (cadeias agroindustriais)', sufixo: 'Fiagro — Direitos Creditórios',
@@ -240,7 +240,6 @@ export const MARCOS_HISTORIA: Fato[] = [
   { texto: 'adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão' },
   { texto: 'incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas' },
   { texto: 'trocou de gestor responsável em 2023 depois da saída do fundador' },
-  { texto: 'aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano', aberto: true },
   { texto: 'teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana', aberto: true, exceto: ['PREV', 'EXCLUSIVO'] },
   { texto: 'migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização' },
   { texto: 'foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo', tipos: TIPOS_VAREJO, publicoGeral: true },

@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Baobá Fiagro — Direitos Creditórios: a casa é uma gestora de Fiagro e CRA, muito próxima de cooperativas. Criado em 20/06/2015, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo fez uma nova emissão de cotas em 2024 para comprar mais um ativo e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. A base de cálculo das taxas é um ponto sensível da parametrização. A gestora costuma mandar NAV "estimado" quando o mercado americano está fechado. A equipe da gestora é considerada muito organizada. No fechamento de ontem (24/09/2026) o fundo tinha PL de R$ 170.022.612,29, cota de 14,47021813 e 11.749.830,62765813 cotas. Hoje, sexta-feira, 25/09/2026, é a data-base da validação.
+Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Baobá Fiagro — Direitos Creditórios: a casa é uma gestora de Fiagro e CRA, muito próxima de cooperativas. Criado em 20/06/2015, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo fez uma nova emissão de cotas em 2024 para comprar mais um ativo e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. A base de cálculo das taxas é um ponto sensível da parametrização. Parte dos papéis de crédito do fundo não tem taxa indicativa ANBIMA divulgada. A equipe da gestora é considerada muito organizada. No fechamento de ontem (24/09/2026) o fundo tinha PL de R$ 170.022.612,29, cota de 14,47021813 e 11.749.830,62765813 cotas. Hoje, sexta-feira, 25/09/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Baobá Fiagro — D
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -161,7 +161,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 171.597,96 | 171.600,70 | 2,74 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 170.104.751,46 | 170.104.751,46 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 170.104.751,46 | 170.104.751,46 | 0,00 |
 | PL base da cota | 170.097.386,13 | 170.097.383,39 | -2,74 |
 | Cota (8 casas) | 14,47658196 | 14,47658172 | -0,00000024 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

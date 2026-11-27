@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Tamanduá Plus FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 16/03/2016, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Otávio, e quem cuida da validação do fundo é Lucas. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. A conta do fundo já teve cobrança de tarifa que não era do fundo. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (04/03/2026) o fundo tinha PL de R$ 792.827.926,13, cota de 113,73623770 e 6.970.759,20651645 cotas. Hoje, quinta-feira, 05/03/2026, é a data-base da validação.
+O Tamanduá Plus FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 16/03/2016, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Otávio, e quem cuida da validação do fundo é Lucas. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. As taxas do fundo foram alteradas recentemente em assembleia. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (04/03/2026) o fundo tinha PL de R$ 792.827.926,13, cota de 113,73623770 e 6.970.759,20651645 cotas. Hoje, quinta-feira, 05/03/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Tamanduá Plus FII Responsabilidade Limitada é gerido pela Siriema Investimen
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -159,7 +159,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 885.611,10 | 885.611,10 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 793.224.914,17 | 793.224.914,17 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 793.224.914,17 | 793.224.914,17 | 0,00 |
 | PL base da cota | 793.188.909,72 | 793.188.909,72 | 0,00 |
 | Cota (8 casas) | 113,78802311 | 113,78802311 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

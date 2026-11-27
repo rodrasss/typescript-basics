@@ -61,7 +61,7 @@ O Pitanga Advisory FIP Multiestratégia é gerido pela Coivara Partners, gestora
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -167,7 +167,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 174.149,56 | 180.991,60 | 6.842,04 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 116.482.773,82 | 116.482.773,82 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 116.482.773,82 | 116.482.773,82 | 0,00 |
 | PL base da cota | 116.474.157,89 | 116.467.315,85 | -6.842,04 |
 | Cota (8 casas) | 1.203,97162881 | 1.203,90090392 | -0,07072489 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

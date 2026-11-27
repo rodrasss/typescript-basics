@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Angico Plus FIP Multiestratégia é gerido pela Varanda Capital, gestora de private equity com participações em empresas familiares do interior, em Belo Horizonte/MG. Criado em 23/08/2020, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores profissionais. Hoje seus cotistas são 8 investidores profissionais (fundos de pensão e family offices) com capital comprometido. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Isadora, e quem cuida da validação do fundo é Diego. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. O comitê de investimentos aprova laudos fora de ciclo, às vezes no meio do mês. A mesa da gestora mexe nas posições de futuros várias vezes ao dia. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 241.628.770,76, cota de 2.065,52477217 e 116.981,78303895 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
+O Angico Plus FIP Multiestratégia é gerido pela Varanda Capital, gestora de private equity com participações em empresas familiares do interior, em Belo Horizonte/MG. Criado em 23/08/2020, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores profissionais. Hoje seus cotistas são 8 investidores profissionais (fundos de pensão e family offices) com capital comprometido. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Isadora, e quem cuida da validação do fundo é Diego. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. O comitê de investimentos aprova laudos fora de ciclo, às vezes no meio do mês. A conta do fundo já teve cobrança de tarifa que não era do fundo. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 241.628.770,76, cota de 2.065,52477217 e 116.981,78303895 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Angico Plus FIP Multiestratégia é gerido pela Varanda Capital, gestora de pr
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -167,7 +167,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 538.594,12 | 538.594,12 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 224.440.343,54 | 241.636.792,94 | 17.196.449,40 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 224.440.343,54 | 241.636.792,94 | 17.196.449,40 |
 | PL base da cota | 224.419.718,03 | 241.616.167,43 | 17.196.449,40 |
 | Cota (8 casas) | 1.918,41594648 | 2.065,41703462 | 147,00108814 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

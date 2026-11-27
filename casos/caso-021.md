@@ -61,7 +61,7 @@ O Carcará III FIP Multiestratégia é gerido pela Varanda Capital, gestora de p
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -171,7 +171,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 1.741.686,74 | 1.741.686,74 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 1.056.631.210,94 | 1.060.491.402,76 | 3.860.191,82 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.056.631.210,94 | 1.060.491.402,76 | 3.860.191,82 |
 | PL base da cota | 1.056.553.226,89 | 1.060.413.418,71 | 3.860.191,82 |
 | Cota (8 casas) | 1.264,18010504 | 1.268,79887632 | 4,61877128 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

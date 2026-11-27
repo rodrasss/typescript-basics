@@ -61,7 +61,7 @@ O Cajueiro III FII Responsabilidade Limitada é gerido pela Siriema Investimento
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -159,7 +159,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 369.935,78 | 369.935,78 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 287.766.302,71 | 287.766.302,71 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 287.766.302,71 | 287.766.302,71 | 0,00 |
 | PL base da cota | 287.754.692,95 | 287.754.692,95 | 0,00 |
 | Cota (8 casas) | 107,51509501 | 107,51509501 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

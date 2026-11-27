@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Baobá Advisory Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 03/02/2012, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Felipe. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O prazo de cotização do fundo mudou no passado e alguns sistemas guardam parametrizações antigas. No fechamento de ontem (14/08/2026) o fundo tinha PL de R$ 220.158.915,10, cota de 34,85928362 e 6.315.646,57196447 cotas. Hoje, segunda-feira, 17/08/2026, é a data-base da validação.
+O Baobá Advisory Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 03/02/2012, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Felipe. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O anúncio de rendimentos costuma sair no fim do dia, depois do fechamento de um dos lados. No fechamento de ontem (14/08/2026) o fundo tinha PL de R$ 220.158.915,10, cota de 34,85928362 e 6.315.646,57196447 cotas. Hoje, segunda-feira, 17/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Baobá Advisory Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo G
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -170,7 +170,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 144.696,75 | 144.696,75 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 220.300.350,00 | 218.943.470,58 | -1.356.879,42 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 220.300.350,00 | 218.943.470,58 | -1.356.879,42 |
 | PL base da cota | 220.289.048,68 | 218.932.169,26 | -1.356.879,42 |
 | Cota (8 casas) | 34,87988857 | 34,66504446 | -0,21484411 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

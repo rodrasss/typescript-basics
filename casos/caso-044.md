@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Buriti Institucional FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 26/01/2018, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Helena, e quem cuida da validação do fundo é Pedro. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o administrador revisa o manual de precificação uma vez por ano. O prazo de liquidação de ações (D+2) confunde alguns sistemas. No fechamento de ontem (07/07/2026) o fundo tinha PL de R$ 284.191.789,02, cota de 116,65062767 e 2.436.264,55075282 cotas. Hoje, quarta-feira, 08/07/2026, é a data-base da validação.
+Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Buriti Institucional FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 26/01/2018, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Helena, e quem cuida da validação do fundo é Pedro. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; o administrador revisa o manual de precificação uma vez por ano. O método de apropriação das taxas já foi questionado em auditoria. No fechamento de ontem (07/07/2026) o fundo tinha PL de R$ 284.191.789,02, cota de 116,65062767 e 2.436.264,55075282 cotas. Hoje, quarta-feira, 08/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Buriti Instituc
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -159,7 +159,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 131.916,44 | 131.916,44 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 284.195.123,12 | 284.195.123,12 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 284.195.123,12 | 284.195.123,12 | 0,00 |
 | PL base da cota | 284.181.583,01 | 284.181.583,01 | 0,00 |
 | Cota (8 casas) | 116,64643846 | 116,64643846 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

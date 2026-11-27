@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Jequitibá Família FIF RF Referenciado DI: a casa é uma gestora de renda fixa líquida para plataformas digitais. Criado em 07/05/2011, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral. Hoje seus cotistas são cerca de 48 mil cotistas pessoa física vindos de plataformas digitais. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Renata. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; o administrador revisa o manual de precificação uma vez por ano. A classificação do saldo em compromissada já gerou ressalva de auditoria. Cadastros de despesas já foram duplicados em outros fundos da mesma carteira. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (07/10/2026) o fundo tinha PL de R$ 174.922.143,50, cota de 6,24116356 e 28.027.168,57863440 cotas. Hoje, quinta-feira, 08/10/2026, é a data-base da validação.
+Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Jequitibá Família FIF RF Referenciado DI: a casa é uma gestora de renda fixa líquida para plataformas digitais. Criado em 07/05/2011, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral. Hoje seus cotistas são cerca de 48 mil cotistas pessoa física vindos de plataformas digitais. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Renata. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A classificação do saldo em compromissada já gerou ressalva de auditoria. A área de risco pediu atenção redobrada ao fundo depois de um apontamento de auditoria em 2025 (já regularizado). No fechamento de ontem (07/10/2026) o fundo tinha PL de R$ 208.999.788,72, cota de 2,40460276 e 86.916.555,28164609 cotas. Hoje, quinta-feira, 08/10/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,25 +12,25 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Jequitibá Fam
 | Classe | Classe de Renda Fixa — Referenciada DI |
 | Condomínio | aberto |
 | Gestora | Farol do Norte Capital (São Paulo/SP) |
-| PL em D−1 | R$ 174.922.143,50 |
-| Cota em D−1 | 6,24116356 |
-| Quantidade de cotas em D−1 | 28.027.168,57863440 |
+| PL em D−1 | R$ 208.999.788,72 |
+| Cota em D−1 | 2,40460276 |
+| Quantidade de cotas em D−1 | 86.916.555,28164609 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,120% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,310% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 72.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 4.100,00 (mensal)
+- Auditoria independente: R$ 28.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 4.500,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Jequitibá Fam
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 161.711.454,38. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 207.917.829,25. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,10 +60,10 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Jequitibá Fam
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização no próprio dia do pedido, pela cota de fechamento desse dia; liquidação financeira no mesmo dia da cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -80,14 +80,13 @@ Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Jequitibá Fam
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.448,760819 |  |
-| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.299,804443 |  |
-| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 815,490191 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.195,645168 |  |
+| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.187,658763 |  |
+| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 783,516601 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **14:03** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
 
 ## 5. Batimento Alfa × Beta
 
@@ -97,32 +96,30 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 6,24432402 | 6,24432402 | 0,00000000 |
-| Quantidade final de cotas | 28.242.462,12933645 | 28.242.462,12933645 | 0,00000000 |
-| PL final | R$ 176.355.084,66 | R$ 176.355.084,66 | R$ 0,00 |
-| Caixa | R$ 45.449.077,69 | R$ 1.805.120,54 | R$ -43.643.957,15 |
-| Total de provisões | R$ 22.048,96 | R$ 22.048,96 | R$ 0,00 |
+| Cota de fechamento | 2,40599100 | 2,40599100 | 0,00000000 |
+| Quantidade final de cotas | 86.376.975,56956160 | 86.376.975,56956160 | 0,00000000 |
+| PL final | R$ 207.822.225,83 | R$ 207.822.225,83 | R$ 0,00 |
+| Caixa | R$ 382.504,04 | R$ 52.570.195,08 | R$ 52.187.691,04 |
+| Total de provisões | R$ 27.289,75 | R$ 27.289,75 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.258 | 4.258 | 18.448,760819 | 18.448,760819 | 78.554.823,57 | 78.554.823,57 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 1.908 | 1.908 | 18.299,804443 | 18.299,804443 | 34.916.026,88 | 34.916.026,88 | 0,00 | ANBIMA — taxa indicativa D |
-| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 10.704 | 10.704 | 815,490191 | 815,490191 | 8.729.007,00 | 8.729.007,00 | 0,00 | ANBIMA — taxa indicativa D |
-| CDB TARUMÃ 2027 — CDB Banco Tarumã S.A. — 113% do CDI — venc. 2027 | 6.514 | 6.514 | 1.339,913813 | 1.339,913813 | 8.728.198,58 | 8.728.198,58 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | — | 53.749 | — | 811,995705 | — | 43.643.957,15 | 43.643.957,15 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 130.928.056,03 | 174.572.013,18 | 43.643.957,15 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 5.163 | 5.163 | 18.195,645168 | 18.195,645168 | 93.944.116,00 | 93.944.116,00 | 0,00 | ANBIMA — taxa indicativa D |
+| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 2.296 | 2.296 | 18.187,658763 | 18.187,658763 | 41.758.864,52 | 41.758.864,52 | 0,00 | ANBIMA — taxa indicativa D |
+| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 13.321 | 13.321 | 783,516601 | 783,516601 | 10.437.224,64 | 10.437.224,64 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 64.530 | — | 808,735333 | — | 52.187.691,04 | — | -52.187.691,04 | PU de ida + remuneração pactuada (taxa over) |
+| CDB TARUMÃ 2027 — CDB Banco Tarumã S.A. — 117% do CDI — venc. 2027 | 9.052 | 9.052 | 1.153,042432 | 1.153,042432 | 10.437.340,09 | 10.437.340,09 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| **Total** |  |  |  |  | 208.765.236,29 | 156.577.545,25 | -52.187.691,04 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 460.757,85 | 460.757,85 |
-| TED recebida — aplicação [APL-1] Cotista 0987 (13:54) | 602.722,20 | 602.722,20 |
-| TED recebida — aplicação [APL-2] Cotista 0994 (09:04) | 741.640,49 | 741.640,49 |
-| Saldo aplicado em compromissada over (classificado em disponibilidades) | 43.643.957,15 | — |
-| **Saldo final** | 45.449.077,69 | 1.805.120,54 |
+| Saldo inicial (D−1) | 382.504,04 | 382.504,04 |
+| Saldo aplicado em compromissada over (classificado em disponibilidades) | — | 52.187.691,04 |
+| **Saldo final** | 382.504,04 | 52.570.195,08 |
 
 ### 5.4 Valores a receber
 
@@ -130,52 +127,52 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.344.362,69 | 1.344.362,69 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 4.097,83 | 4.097,83 | 832,96 | 832,96 | 0,00 | 0,00 | 4.930,79 | 4.930,79 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 3.757,99 | 3.757,99 | 763,55 | 763,55 | 0,00 | 0,00 | 4.521,54 | 4.521,54 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 343,80 | 343,80 | 69,41 | 69,41 | 0,00 | 0,00 | 413,21 | 413,21 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 9.714,29 | 9.714,29 | 285,71 | 285,71 | 0,00 | 0,00 | 10.000,00 | 10.000,00 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 214,29 | 214,29 | 42,86 | 42,86 | 0,00 | 0,00 | 257,15 | 257,15 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 976,19 | 976,19 | 195,24 | 195,24 | 0,00 | 0,00 | 1.171,43 | 1.171,43 | 0,00 |
+| TXADM — Taxa de administração a pagar | 3.820,29 | 3.820,29 | 746,09 | 746,09 | 0,00 | 0,00 | 4.566,38 | 4.566,38 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 13.093,14 | 13.093,14 | 2.567,07 | 2.567,07 | 0,00 | 0,00 | 15.660,21 | 15.660,21 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 403,17 | 403,17 | 82,93 | 82,93 | 0,00 | 0,00 | 486,10 | 486,10 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 4.111,11 | 4.111,11 | 111,11 | 111,11 | 0,00 | 0,00 | 4.222,22 | 4.222,22 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 261,90 | 261,90 | 52,38 | 52,38 | 0,00 | 0,00 | 314,28 | 314,28 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.071,43 | 1.071,43 | 214,29 | 214,29 | 0,00 | 0,00 | 1.285,72 | 1.285,72 | 0,00 |
 | CVM — Taxa de fiscalização CVM a pagar | 629,03 | 629,03 | 125,81 | 125,81 | 0,00 | 0,00 | 754,84 | 754,84 | 0,00 |
-| **Total** |  |  |  |  |  |  | 22.048,96 | 22.048,96 | 0,00 |
+| **Total** |  |  |  |  |  |  | 27.289,75 | 27.289,75 | 0,00 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 0987 | R$ 602.722,20 | 13:54 | 08/10/2026 | 08/10/2026 | 08/10/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 0994 | R$ 741.640,49 | 09:04 | 08/10/2026 | 08/10/2026 | 08/10/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 4291 | 241.937,43542367 cotas |  | 08/10/2026 | 08/10/2026 | 08/10/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 4298 | 297.642,27666081 cotas |  | 08/10/2026 | 08/10/2026 | 08/10/2026 | sim | sim |  |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 130.928.056,03 | 174.572.013,18 | 43.643.957,15 |
-| Caixa | 45.449.077,69 | 1.805.120,54 | -43.643.957,15 |
+| Total de ativos | 208.765.236,29 | 156.577.545,25 | -52.187.691,04 |
+| Caixa | 382.504,04 | 52.570.195,08 | 52.187.691,04 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 1.344.362,69 | 1.344.362,69 | 0,00 |
-| Provisões | 22.048,96 | 22.048,96 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 175.013.037,61 | 175.013.037,61 | 0,00 |
-| PL base da cota | 175.010.722,07 | 175.010.722,07 | 0,00 |
-| Cota (8 casas) | 6,24432402 | 6,24432402 | 0,00000000 |
-| Aplicações convertidas | 1.344.362,69 | 1.344.362,69 | 0,00 |
-| Cotas emitidas | 215.293,55070205 | 215.293,55070205 | 0,00000000 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 27.289,75 | 27.289,75 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 209.124.350,26 | 209.124.350,26 | 0,00 |
+| PL base da cota | 209.120.450,58 | 209.120.450,58 | 0,00 |
+| Cota (8 casas) | 2,40599100 | 2,40599100 | 0,00000000 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 539.579,71208448 | 539.579,71208448 | 0,00000000 |
+| Valor dos resgates cotizados | 1.298.223,93 | 1.298.223,93 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 28.242.462,12933645 | 28.242.462,12933645 | 0,00000000 |
-| PL final | 176.355.084,66 | 176.355.084,66 | 0,00 |
+| Quantidade final de cotas | 86.376.975,56956160 | 86.376.975,56956160 | 0,00000000 |
+| PL final | 207.822.225,83 | 207.822.225,83 | 0,00 |
 
 ---
 
@@ -190,28 +187,28 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 ### Achado 1: Compromissada over dentro do caixa
 
 - **Gravidade:** ressalva · **Dimensões:** caixa
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa classificou a compromissada over (R$ 43.643.957,15) como disponibilidade em vez de ativo.
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta classificou a compromissada over (R$ 52.187.691,04) como disponibilidade em vez de ativo.
 - **Onde olhar:** Caixa; Carteira — compromissada
 - **Raciocínio do analista:**
-  1. O caixa do Alfa está R$ 43.643.957,15 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.
+  1. O caixa do Beta está R$ 52.187.691,04 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.
   2. Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.
-- **Ação:** Alfa deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva.
+- **Ação:** Beta deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | ambos |
-| caixa | Beta |
+| caixa | Alfa |
 | provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 6,24432402 |
-| Quantidade final de cotas | 28.242.462,12933645 |
-| PL final | R$ 176.355.084,66 |
-| Caixa | R$ 1.805.120,54 |
-| Total de provisões | R$ 22.048,96 |
+| Cota | 2,40599100 |
+| Quantidade final de cotas | 86.376.975,56956160 |
+| PL final | R$ 207.822.225,83 |
+| Caixa | R$ 382.504,04 |
+| Total de provisões | R$ 27.289,75 |

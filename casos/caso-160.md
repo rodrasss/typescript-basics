@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Caatinga Plus FIF Multimercado Long Short é gerido pela Maré Alta Investimentos, gestora long & short com histórico de boletas fora do horário, em Rio de Janeiro/RJ. Criado em 06/11/2011, monta posições compradas e vendidas em ações e usa o índice futuro para ajustar a exposição. Público-alvo: investidores qualificados. Hoje seus cotistas são um fundo de pensão fechado com 18% das cotas. Ao longo da vida, o fundo aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano e reduziu o prazo de cotização em 2024 para competir em plataformas. O gestor responsável é Murilo, e quem cuida da validação do fundo é Felipe. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. O fundo converte ativos em dólar todo dia e já teve divergência de câmbio antes. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (23/10/2026) o fundo tinha PL de R$ 282.823.100,66, cota de 8,89356105 e 31.800.883,66789216 cotas. Hoje, segunda-feira, 26/10/2026, é a data-base da validação.
+O Caatinga Plus FIF Multimercado Long Short é gerido pela Maré Alta Investimentos, gestora long & short com histórico de boletas fora do horário, em Rio de Janeiro/RJ. Criado em 06/11/2011, monta posições compradas e vendidas em ações e usa o índice futuro para ajustar a exposição. Público-alvo: investidores qualificados. Hoje seus cotistas são um fundo de pensão fechado com 18% das cotas. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana. O gestor responsável é Murilo, e quem cuida da validação do fundo é Felipe. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A mesa da gestora mexe nas posições de futuros várias vezes ao dia. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (23/10/2026) o fundo tinha PL de R$ 61.944.647,02, cota de 6,13721876 e 10.093.276,68410983 cotas. Hoje, segunda-feira, 26/10/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,30 +12,30 @@ O Caatinga Plus FIF Multimercado Long Short é gerido pela Maré Alta Investimen
 | Classe | Classe Multimercado |
 | Condomínio | aberto |
 | Gestora | Maré Alta Investimentos (Rio de Janeiro/RJ) |
-| PL em D−1 | R$ 282.823.100,66 |
-| Cota em D−1 | 8,89356105 |
-| Quantidade de cotas em D−1 | 31.800.883,66789216 |
+| PL em D−1 | R$ 61.944.647,02 |
+| Cota em D−1 | 6,13721876 |
+| Quantidade de cotas em D−1 | 10.093.276,68410983 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,150% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,050% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Taxa de performance**
 
 - 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
 - Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 65.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 500,00 (mensal)
+- Auditoria independente: R$ 51.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +45,7 @@ O Caatinga Plus FIF Multimercado Long Short é gerido pela Maré Alta Investimen
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 287.510.748,25. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 57.793.374,91. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,10 +65,10 @@ O Caatinga Plus FIF Multimercado Long Short é gerido pela Maré Alta Investimen
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+15 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -78,10 +78,11 @@ O Caatinga Plus FIF Multimercado Long Short é gerido pela Maré Alta Investimen
 - Ações: preço de fechamento da B3 em D.
 - Eventos societários reconhecidos na data "ex".
 - Futuros: ajuste diário divulgado pela B3, liquidado em D+1.
+- Margem depositada em dinheiro na B3 é ativo da classe (valores dados em garantia).
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 8,34165560 (cota da última cobrança efetiva, em 30/06/2026).
+- Performance: cota de referência vigente = 5,75588010 (cota da última cobrança efetiva, em 30/06/2026).
 
 ## 3. Informações de mercado do dia
 
@@ -122,38 +123,38 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 8,73385142 | 8,73385142 | 0,00000000 |
-| Quantidade final de cotas | 31.969.664,15076416 | 31.969.664,15076416 | 0,00000000 |
-| PL final | R$ 279.218.296,64 | R$ 279.218.296,64 | R$ 0,00 |
-| Caixa | R$ 1.057.082,98 | R$ 4.160.461,82 | R$ 3.103.378,84 |
-| Total de provisões | R$ 457.187,55 | R$ 457.187,55 | R$ 0,00 |
+| Cota de fechamento | 6,02593857 | 6,02593857 | 0,00000000 |
+| Quantidade final de cotas | 10.184.684,60136535 | 10.184.684,60136535 | 0,00000000 |
+| PL final | R$ 61.372.283,76 | R$ 61.372.283,76 | R$ 0,00 |
+| Caixa | R$ 494.999,87 | R$ 1.176.882,68 | R$ 681.882,81 |
+| Total de provisões | R$ 111.635,86 | R$ 111.635,86 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.783 | 4.783 | 18.469,665095 | 18.469,665095 | 88.340.408,15 | 88.340.408,15 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 37.511 | 37.511 | 802,720423 | 802,720423 | 30.110.845,79 | 30.110.845,79 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| QXTR3 — Quixadá Transportes S.A. ON | 330.521 | 330.521 | 54,66 | 54,66 | 18.066.277,86 | 18.066.277,86 | 0,00 | B3 — preço de fechamento D |
-| KQSA3 — Kaquissá Saneamento S.A. ON | 323.005 | 323.005 | 93,22 | 93,22 | 30.110.526,10 | 30.110.526,10 | 0,00 | B3 — preço de fechamento D |
-| KXOB3 — Kaxoeira Obras S.A. ON | 865.244 | 865.244 | 48,72 | 48,72 | 42.154.687,68 | 42.154.687,68 | 0,00 | B3 — preço de fechamento D |
-| YRBQ3 — Yrubá Químicos S.A. ON | 943.058 | 943.058 | 22,35 | 22,35 | 21.077.346,30 | 21.077.346,30 | 0,00 | B3 — preço de fechamento D |
-| QPLN3 — Quiplan Saúde S.A. ON | 1.126.529 | 1.126.529 | 18,71 | 18,71 | 21.077.357,59 | 21.077.357,59 | 0,00 | B3 — preço de fechamento D |
-| VJNR3 — Vajanra Energia S.A. ON | 1.006.703 | 1.006.703 | 29,91 | 29,91 | 30.110.486,73 | 30.110.486,73 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 281.047.936,20 | 281.047.936,20 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.048 | 1.048 | 18.469,665095 | 18.469,665095 | 19.356.209,02 | 19.356.209,02 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 8.223 | 8.223 | 802,720423 | 802,720423 | 6.600.770,04 | 6.600.770,04 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| QXTR3 — Quixadá Transportes S.A. ON | 72.461 | 72.461 | 54,66 | 54,66 | 3.960.718,26 | 3.960.718,26 | 0,00 | B3 — preço de fechamento D |
+| KQSA3 — Kaquissá Saneamento S.A. ON | 70.813 | 70.813 | 93,22 | 93,22 | 6.601.187,86 | 6.601.187,86 | 0,00 | B3 — preço de fechamento D |
+| KXOB3 — Kaxoeira Obras S.A. ON | 189.689 | 189.689 | 48,72 | 48,72 | 9.241.648,08 | 9.241.648,08 | 0,00 | B3 — preço de fechamento D |
+| YRBQ3 — Yrubá Químicos S.A. ON | 206.748 | 206.748 | 22,35 | 22,35 | 4.620.817,80 | 4.620.817,80 | 0,00 | B3 — preço de fechamento D |
+| QPLN3 — Quiplan Saúde S.A. ON | 246.970 | 246.970 | 18,71 | 18,71 | 4.620.808,70 | 4.620.808,70 | 0,00 | B3 — preço de fechamento D |
+| VJNR3 — Vajanra Energia S.A. ON | 220.701 | 220.701 | 29,91 | 29,91 | 6.601.166,91 | 6.601.166,91 | 0,00 | B3 — preço de fechamento D |
+| **Total** |  |  |  |  | 61.603.326,67 | 61.603.326,67 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 4.701.266,12 | 4.701.266,12 |
-| TED recebida — aplicação [APL-1] Cotista 6174 (14:17) | 294.619,44 | 294.619,44 |
-| TED recebida — aplicação [APL-2] Cotista 6181 (14:44) | 948.754,44 | 948.754,44 |
-| TED recebida — aplicação [APL-3] Cotista 6188 (09:25) | 230.729,78 | 230.729,78 |
-| Liquidação B3 — ajuste de futuros de 23/10/2026 | -21.750,32 | -21.750,32 |
-| Liquidação de compra — 104500 KXOB3 | -5.096.536,48 | — |
-| Pagamento de resgate [LIQ-9] — Cotista 1814 (cotizado em 22/10/2026) | — | -1.993.157,64 |
-| **Saldo final** | 1.057.082,98 | 4.160.461,82 |
+| Saldo inicial (D−1) | 1.028.102,77 | 1.028.102,77 |
+| TED recebida — aplicação [APL-1] Cotista 1883 (09:43) | 242.314,43 | 242.314,43 |
+| TED recebida — aplicação [APL-2] Cotista 1890 (12:48) | 109.839,93 | 109.839,93 |
+| TED recebida — aplicação [APL-3] Cotista 1897 (09:05) | 236.355,21 | 236.355,21 |
+| Liquidação B3 — ajuste de futuros de 23/10/2026 | -4.763,81 | -4.763,81 |
+| Liquidação de compra — 22900 KXOB3 | -1.116.848,66 | — |
+| Pagamento de resgate [LIQ-9] — Cotista 1814 (cotizado em 22/10/2026) | — | -434.965,85 |
+| **Saldo final** | 494.999,87 | 1.176.882,68 |
 
 ### 5.4 Valores a receber
 
@@ -163,57 +164,60 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.474.103,66 | 1.474.103,66 |
-| RESGATES A PAGAR — Resgates já cotizados e ainda não liquidados | 2.370.411,98 | 377.254,34 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 588.509,57 | 588.509,57 |
+| RESGATES A PAGAR — Resgates já cotizados e ainda não liquidados | 517.593,07 | 82.627,22 |
 | AJUSTE FUTUROS D — Ajuste diário de futuros de D (liquidação em D+1) | 59.122,70 | 59.122,70 |
-| COMPRAS A LIQUIDAR — Compras de ações a liquidar (D+2) — 104500 KXOB3 em 23/10/2026 | — | 5.096.536,48 |
+| COMPRAS A LIQUIDAR — Compras de ações a liquidar (D+2) — 22900 KXOB3 em 23/10/2026 | — | 1.116.848,66 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 10.558,09 | 10.558,09 | 673,39 | 673,39 | 0,00 | 0,00 | 11.231,48 | 11.231,48 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 201.780,26 | 201.780,26 | 12.906,61 | 12.906,61 | 0,00 | 0,00 | 214.686,87 | 214.686,87 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 3.487,89 | 3.487,89 | 224,46 | 224,46 | 0,00 | 0,00 | 3.712,35 | 3.712,35 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 25.019,84 | 25.019,84 | 257,94 | 257,94 | 0,00 | 0,00 | 25.277,78 | 25.277,78 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 380,95 | 380,95 | 23,81 | 23,81 | 0,00 | 0,00 | 404,76 | 404,76 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.012,90 | 2.012,90 | 125,81 | 125,81 | 0,00 | 0,00 | 2.138,71 | 2.138,71 | 0,00 |
-| PERF — Taxa de performance a pagar | 1.505.813,83 | 1.505.813,83 | -1.306.078,23 | -1.306.078,23 | 0,00 | 0,00 | 199.735,60 | 199.735,60 | 0,00 |
-| **Total** |  |  |  |  |  |  | 457.187,55 | 457.187,55 | 0,00 |
+| TXADM — Taxa de administração a pagar | 1.926,64 | 1.926,64 | 122,88 | 122,88 | 0,00 | 0,00 | 2.049,52 | 2.049,52 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 41.662,86 | 41.662,86 | 2.664,91 | 2.664,91 | 0,00 | 0,00 | 44.327,77 | 44.327,77 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 763,90 | 763,90 | 49,16 | 49,16 | 0,00 | 0,00 | 813,06 | 813,06 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 19.630,95 | 19.630,95 | 202,38 | 202,38 | 0,00 | 0,00 | 19.833,33 | 19.833,33 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 761,90 | 761,90 | 47,62 | 47,62 | 0,00 | 0,00 | 809,52 | 809,52 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 1.393,55 | 1.393,55 | 87,10 | 87,10 | 0,00 | 0,00 | 1.480,65 | 1.480,65 | 0,00 |
+| PERF — Taxa de performance a pagar | 331.078,53 | 331.078,53 | -288.756,52 | -288.756,52 | 0,00 | 0,00 | 42.322,01 | 42.322,01 | 0,00 |
+| **Total** |  |  |  |  |  |  | 111.635,86 | 111.635,86 | 0,00 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 6174 | R$ 294.619,44 | 14:17 | 26/10/2026 | 26/10/2026 | 26/10/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 6181 | R$ 948.754,44 | 14:44 | 26/10/2026 | 26/10/2026 | 26/10/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista 6188 | R$ 230.729,78 | 09:25 | 26/10/2026 | 26/10/2026 | 26/10/2026 | sim | sim |  |
-| PEN-1 | resgate | Cotista 6195 | 19.726,03899509 cotas (R$ 175.434,73) |  | 08/10/2026 | 23/10/2026 | 27/10/2026 | não | não | cotizado em 23/10/2026 pela cota de 8,89356105; liquidação em 27/10/2026 (ainda a pagar) |
-| PEN-2 | resgate | Cotista 6202 | 22.692,77884653 cotas (R$ 201.819,61) |  | 08/10/2026 | 23/10/2026 | 27/10/2026 | não | não | cotizado em 23/10/2026 pela cota de 8,89356105; liquidação em 27/10/2026 (ainda a pagar) |
-| LIQ-9 | resgate | Cotista 1814 | 223.017,55413978 cotas (R$ 1.993.157,64) |  | 07/10/2026 | 22/10/2026 | 26/10/2026 | não | não | cotizado em 22/10/2026 pela cota de 8,93722313; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista 1883 | R$ 242.314,43 | 09:43 | 26/10/2026 | 26/10/2026 | 26/10/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 1890 | R$ 109.839,93 | 12:48 | 26/10/2026 | 26/10/2026 | 26/10/2026 | sim | sim |  |
+| APL-3 | aplicacao | Cotista 1897 | R$ 236.355,21 | 09:05 | 26/10/2026 | 26/10/2026 | 26/10/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 1904 | 6.254,80584787 cotas |  | 09/10/2026 | 26/10/2026 | 28/10/2026 | sim | sim |  |
+| PEN-1 | resgate | Cotista 1911 | 6.260,84392931 cotas (R$ 38.424,17) |  | 08/10/2026 | 23/10/2026 | 27/10/2026 | não | não | cotizado em 23/10/2026 pela cota de 6,13721876; liquidação em 27/10/2026 (ainda a pagar) |
+| PEN-2 | resgate | Cotista 1918 | 7.202,45695124 cotas (R$ 44.203,05) |  | 08/10/2026 | 23/10/2026 | 27/10/2026 | não | não | cotizado em 23/10/2026 pela cota de 6,13721876; liquidação em 27/10/2026 (ainda a pagar) |
+| LIQ-9 | resgate | Cotista 1814 | 70.783,50095092 cotas (R$ 434.965,85) |  | 07/10/2026 | 22/10/2026 | 26/10/2026 | não | não | cotizado em 22/10/2026 pela cota de 6,14501746; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 281.047.936,20 | 281.047.936,20 | 0,00 |
-| Caixa | 1.057.082,98 | 4.160.461,82 | 3.103.378,84 |
+| Total de ativos | 61.603.326,67 | 61.603.326,67 | 0,00 |
+| Caixa | 494.999,87 | 1.176.882,68 | 681.882,81 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 3.903.638,34 | 7.007.017,18 | 3.103.378,84 |
-| Provisões | 457.187,55 | 457.187,55 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 277.958.140,91 | 277.958.140,91 | 0,00 |
-| PL base da cota | 277.744.193,29 | 277.744.193,29 | 0,00 |
-| Cota (8 casas) | 8,73385142 | 8,73385142 | 0,00000000 |
-| Aplicações convertidas | 1.474.103,66 | 1.474.103,66 | 0,00 |
-| Cotas emitidas | 168.780,48287200 | 168.780,48287200 | 0,00000000 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 1.165.225,34 | 1.847.108,15 | 681.882,81 |
+| Provisões | 111.635,86 | 111.635,86 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 60.866.961,40 | 60.866.961,40 | 0,00 |
+| PL base da cota | 60.821.465,34 | 60.821.465,34 | 0,00 |
+| Cota (8 casas) | 6,02593857 | 6,02593857 | 0,00000000 |
+| Aplicações convertidas | 588.509,57 | 588.509,57 | 0,00 |
+| Cotas emitidas | 97.662,72310339 | 97.662,72310339 | 0,00000000 |
+| Cotas resgatadas | 6.254,80584787 | 6.254,80584787 | 0,00000000 |
+| Valor dos resgates cotizados | 37.691,08 | 37.691,08 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 31.969.664,15076416 | 31.969.664,15076416 | 0,00000000 |
-| PL final | 279.218.296,64 | 279.218.296,64 | 0,00 |
+| Quantidade final de cotas | 10.184.684,60136535 | 10.184.684,60136535 | 0,00000000 |
+| PL final | 61.372.283,76 | 61.372.283,76 | 0,00 |
 
 ---
 
@@ -229,10 +233,10 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 - **Gravidade:** ressalva · **Dimensões:** caixa
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** O controle Alfa não registrou o pagamento do resgate LIQ-9 (Cotista 1814, R$ 1.993.157,64) e manteve o valor em "resgates a pagar".
+- **Causa raiz:** O controle Alfa não registrou o pagamento do resgate LIQ-9 (Cotista 1814, R$ 434.965,85) e manteve o valor em "resgates a pagar".
 - **Onde olhar:** Caixa — lançamentos; Valores a pagar — resgates; Movimentações de passivo (liquidações do dia)
 - **Raciocínio do analista:**
-  1. O caixa do Alfa está R$ 1.993.157,64 acima do Beta, e "resgates a pagar" do Alfa está R$ 1.993.157,64 acima também. PL e cota batem.
+  1. O caixa do Alfa está R$ 434.965,85 acima do Beta, e "resgates a pagar" do Alfa está R$ 434.965,85 acima também. PL e cota batem.
   2. O resgate LIQ-9, cotizado em 22/10/2026, liquida hoje (Resgate: cotização em D+15 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.) e saiu da conta. O Alfa não deu baixa.
   3. É descasamento de registro, sem efeito na cota de hoje. Se não for corrigido, o Alfa vai tentar pagar de novo ou projetar um caixa que não existe.
 - **Ação:** Alfa deve baixar o pagamento do resgate LIQ-9 (caixa e passivo). Cota pode ser aprovada; acompanhar a regularização em D+1.
@@ -241,10 +245,10 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 - **Gravidade:** ressalva · **Dimensões:** caixa
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** O Alfa debitou hoje a compra de 104500 KXOB3 feita em 23/10/2026, cuja liquidação na B3 é em D+2 (27/10/2026).
+- **Causa raiz:** O Alfa debitou hoje a compra de 22900 KXOB3 feita em 23/10/2026, cuja liquidação na B3 é em D+2 (27/10/2026).
 - **Onde olhar:** Caixa; Valores a pagar — compras a liquidar
 - **Raciocínio do analista:**
-  1. Caixa do Alfa R$ 5.096.536,48 menor e "compras a liquidar" R$ 5.096.536,48 menor. PL igual.
+  1. Caixa do Alfa R$ 1.116.848,66 menor e "compras a liquidar" R$ 1.116.848,66 menor. PL igual.
   2. A compra foi em 23/10/2026. Ações liquidam em D+2, ou seja, 27/10/2026. Hoje o dinheiro ainda está na conta e a obrigação ainda existe.
   3. Sem efeito na cota, mas o caixa projetado do Alfa subestima a liquidez de hoje e pode atrapalhar decisões de zeragem.
 - **Ação:** Alfa deve estornar a liquidação antecipada e manter a obrigação até D+2. Aprovação com ressalva.
@@ -261,8 +265,8 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 | Item | Valor |
 |---|---|
-| Cota | 8,73385142 |
-| Quantidade final de cotas | 31.969.664,15076416 |
-| PL final | R$ 279.218.296,64 |
-| Caixa | R$ 4.160.461,82 |
-| Total de provisões | R$ 457.187,55 |
+| Cota | 6,02593857 |
+| Quantidade final de cotas | 10.184.684,60136535 |
+| PL final | R$ 61.372.283,76 |
+| Caixa | R$ 1.176.882,68 |
+| Total de provisões | R$ 111.635,86 |

@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Biguá FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 19/12/2019, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Cecília, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A taxa de gestão é escalonada por faixa de patrimônio. As taxas do fundo foram alteradas recentemente em assembleia. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (14/05/2026) o fundo tinha PL de R$ 110.662.329,98, cota de 114,60546016 e 965.593,87151615 cotas. Hoje, sexta-feira, 15/05/2026, é a data-base da validação.
+O Biguá FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 19/12/2019, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Cecília, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A taxa de gestão é escalonada por faixa de patrimônio. As rotinas diárias do administrador exigem acompanhamento próximo. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (14/05/2026) o fundo tinha PL de R$ 110.662.329,98, cota de 114,60546016 e 965.593,87151615 cotas. Hoje, sexta-feira, 15/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Biguá FII Responsabilidade Limitada é gerido pela Siriema Investimentos, ges
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -167,7 +167,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 56.059,44 | 55.605,00 | -454,44 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 110.702.994,57 | 110.702.994,57 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 110.702.994,57 | 110.702.994,57 | 0,00 |
 | PL base da cota | 110.698.551,44 | 110.699.005,88 | 454,44 |
 | Cota (8 casas) | 114,64297227 | 114,64344290 | 0,00047063 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

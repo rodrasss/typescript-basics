@@ -61,7 +61,7 @@ Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Graúna Estratégia 
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -157,6 +157,8 @@ Nenhum item.
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
 | INT-1 | integralizacao | Investidores (chamada de capital) | R$ 52.433.020,94 | 11:20 | 27/01/2026 | 06/02/2026 | 06/02/2026 | sim | não | 6ª chamada de capital — vencimento hoje |
@@ -170,7 +172,7 @@ Nenhum item.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 52.433.020,94 | 52.433.020,94 | 0,00 |
 | Provisões | 2.773.979,97 | 2.773.979,97 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 1.434.145.730,13 | 1.434.145.730,13 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.434.145.730,13 | 1.434.145.730,13 | 0,00 |
 | PL base da cota | 1.434.040.429,12 | 1.434.040.429,12 | 0,00 |
 | Cota (8 casas) | 1.404,90225147 | 1.404,90225147 | 0,00000000 |
 | Aplicações convertidas | 52.433.020,94 | 0,00 | -52.433.020,94 |

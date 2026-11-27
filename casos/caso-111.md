@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Capivara Estratégia Fiagro — Direitos Creditórios: a casa é uma gestora de Fiagro e CRA, muito próxima de cooperativas. Criado em 15/05/2009, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Cecília, e quem cuida da validação do fundo é Juliana. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o administrador revisa o manual de precificação uma vez por ano. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. A liquidação dos ajustes de futuros exige conciliação diária. No fechamento de ontem (02/07/2026) o fundo tinha PL de R$ 963.036.177,05, cota de 57,94840574 e 16.618.855,42127184 cotas. Hoje, sexta-feira, 03/07/2026, é a data-base da validação.
+Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Capivara Estratégia Fiagro — Direitos Creditórios: a casa é uma gestora de Fiagro e CRA, muito próxima de cooperativas. Criado em 15/05/2009, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Cecília, e quem cuida da validação do fundo é Juliana. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o administrador revisa o manual de precificação uma vez por ano. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. O contrato de administração foi aditado recentemente. No fechamento de ontem (02/07/2026) o fundo tinha PL de R$ 963.036.177,05, cota de 57,94840574 e 16.618.855,42127184 cotas. Hoje, sexta-feira, 03/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Capivara Estratégi
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -172,7 +172,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 255.574,74 | 125.132,63 | -130.442,11 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 963.449.341,99 | 963.449.341,99 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 963.449.341,99 | 963.449.341,99 | 0,00 |
 | PL base da cota | 963.412.980,08 | 963.412.980,08 | 0,00 |
 | Cota (8 casas) | 57,97107897 | 57,97107897 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

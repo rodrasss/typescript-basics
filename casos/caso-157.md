@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Tuiuiú Institucional FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 14/03/2011, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O comitê de investimentos aprova laudos fora de ciclo, às vezes no meio do mês. No fechamento de ontem (20/08/2026) o fundo tinha PL de R$ 215.881.743,03, cota de 1.356,96490316 e 159.091,61874890 cotas. Hoje, sexta-feira, 21/08/2026, é a data-base da validação.
+Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Tuiuiú Institucional FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 14/03/2011, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. No fechamento de ontem (20/08/2026) o fundo tinha PL de R$ 215.881.743,03, cota de 1.356,96490316 e 159.091,61874890 cotas. Hoje, sexta-feira, 21/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -62,7 +62,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -164,7 +164,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 213.310,30 | 213.307,42 | -2,88 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 215.962.357,15 | 215.962.357,15 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 215.962.357,15 | 215.962.357,15 | 0,00 |
 | PL base da cota | 215.951.115,81 | 215.951.118,69 | 2,88 |
 | Cota (8 casas) | 1.357,40095869 | 1.357,40097679 | 0,00001810 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

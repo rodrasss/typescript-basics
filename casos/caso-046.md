@@ -62,7 +62,7 @@ O Arara Azul Institucional FIDC Responsabilidade Limitada é gerido pela Quaresm
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -165,7 +165,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 176.351,23 | 176.351,23 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 82.873.654,99 | 82.873.654,99 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 82.873.654,99 | 82.873.654,99 | 0,00 |
 | PL base da cota | 82.866.939,18 | 82.866.939,18 | 0,00 |
 | Cota (8 casas) | 1.073,66049402 | 1.073,66049402 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

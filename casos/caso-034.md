@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas (Cuiabá/MT), o Cumaru II Fiagro — Direitos Creditórios é um dos fundos que mais exigem atenção na rotina de validação. Criado em 24/11/2013, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Murilo, e quem cuida da validação do fundo é Renata. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. Parte dos papéis de crédito do fundo não tem taxa indicativa ANBIMA divulgada. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. No fechamento de ontem (09/11/2026) o fundo tinha PL de R$ 182.582.223,67, cota de 53,78655070 e 3.394.570,22736050 cotas. Hoje, terça-feira, 10/11/2026, é a data-base da validação.
+Sob a gestão da Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas (Cuiabá/MT), o Cumaru II Fiagro — Direitos Creditórios é um dos fundos que mais exigem atenção na rotina de validação. Criado em 24/11/2013, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Murilo, e quem cuida da validação do fundo é Renata. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. Parte dos papéis de crédito do fundo não tem taxa indicativa ANBIMA divulgada. A classificação do saldo em compromissada já gerou ressalva de auditoria. No fechamento de ontem (09/11/2026) o fundo tinha PL de R$ 182.582.223,67, cota de 53,78655070 e 3.394.570,22736050 cotas. Hoje, terça-feira, 10/11/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Sob a gestão da Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima d
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -171,7 +171,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 77.043,61 | 77.043,61 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 182.706.055,85 | 182.157.956,73 | -548.099,12 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 182.706.055,85 | 182.157.956,73 | -548.099,12 |
 | PL base da cota | 182.697.657,75 | 182.149.558,63 | -548.099,12 |
 | Cota (8 casas) | 53,82055621 | 53,65909273 | -0,16146348 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

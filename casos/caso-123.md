@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Bromélia Investimentos (Campinas/SP) conhece o Buriti III FIF Multimercado Crédito Privado — Classe Exclusiva: a casa é uma gestora familiar com processos manuais e planilhas próprias. Criado em 22/09/2019, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são uma família de produtores de soja de Sorriso (MT). Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Camila. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. A equipe da gestora é considerada muito organizada. No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 276.942.219,61, cota de 13,25043259 e 20.900.617,20781557 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
+Quem acompanha a Bromélia Investimentos (Campinas/SP) conhece o Buriti III FIF Multimercado Crédito Privado — Classe Exclusiva: a casa é uma gestora familiar com processos manuais e planilhas próprias. Criado em 22/09/2019, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são uma família de produtores de soja de Sorriso (MT). Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Camila. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 173.538.185,73, cota de 11,43857808 e 15.171.307,51467440 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,25 +12,25 @@ Quem acompanha a Bromélia Investimentos (Campinas/SP) conhece o Buriti III FIF 
 | Classe | Classe Multimercado — Exclusiva para investidor profissional |
 | Condomínio | aberto |
 | Gestora | Bromélia Investimentos (Campinas/SP) |
-| PL em D−1 | R$ 276.942.219,61 |
-| Cota em D−1 | 13,25043259 |
-| Quantidade de cotas em D−1 | 20.900.617,20781557 |
+| PL em D−1 | R$ 173.538.185,73 |
+| Cota em D−1 | 11,43857808 |
+| Quantidade de cotas em D−1 | 15.171.307,51467440 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,200% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,070% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,550% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 75.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 3.200,00 (mensal)
+- Auditoria independente: R$ 39.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 4.200,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Quem acompanha a Bromélia Investimentos (Campinas/SP) conhece o Buriti III FIF 
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 283.290.730,70. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 168.143.862,51. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,10 +60,10 @@ Quem acompanha a Bromélia Investimentos (Campinas/SP) conhece o Buriti III FIF 
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Classe exclusiva: tributação periódica semestral (come-cotas), no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -85,16 +85,18 @@ Quem acompanha a Bromélia Investimentos (Campinas/SP) conhece o Buriti III FIF 
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.290,718364 |  |
-| ATRI21 | ANBIMA — PU pela taxa indicativa de D | 1.019,969915 |  |
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (referência de mercado) | 4.421,442951 |  |
-| NTN-B 15/08/2030 | PU na curva da taxa de aquisição (6,12% a.a.) — cálculo do custodiante | 4.382,326361 |  |
-| ATRI21 | PU par (curva da taxa de emissão) — informativo | 1.043,604552 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.198,459074 |  |
+| EVSA12 | ANBIMA — PU pela taxa indicativa de D | 1.038,254139 |  |
+| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (referência de mercado) | 4.573,676209 |  |
+| NTN-B 15/08/2030 | PU na curva da taxa de aquisição (6,12% a.a.) — cálculo do custodiante | 4.427,444256 |  |
+
+**Eventos de ativos**
+
+- EVSA12: pagamento de juros em 31/08/2026 de R$ 56,340000 por título. O PU de referência de D já é "ex-juros".
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **15:29** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
 
 ## 5. Batimento Alfa × Beta
 
@@ -104,31 +106,31 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 13,29420627 | 13,30471388 | 0,01050761 |
-| Quantidade final de cotas | 20.942.765,20764616 | 20.942.712,94651452 | -52,26113164 |
-| PL final | R$ 278.417.440,53 | R$ 278.636.803,62 | R$ 219.363,09 |
-| Caixa | R$ 2.897.264,41 | R$ 2.897.264,41 | R$ 0,00 |
-| Total de provisões | R$ 90.737,87 | R$ 90.737,87 | R$ 0,00 |
+| Cota de fechamento | 11,42984265 | 11,63611335 | 0,20627070 |
+| Quantidade final de cotas | 15.171.307,51467440 | 15.171.307,51467440 | 0,00000000 |
+| PL final | R$ 173.405.657,69 | R$ 176.535.053,91 | R$ 3.129.396,22 |
+| Caixa | R$ 144.666,28 | R$ 1.555.983,28 | R$ 1.411.317,00 |
+| Total de provisões | R$ 122.932,85 | R$ 122.932,85 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 18.838 | 18.838 | 4.421,442951 | 4.382,326361 | 83.291.142,31 | 82.554.263,99 | -736.878,32 | Alfa: ANBIMA — taxa indicativa D / Beta: Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.514 | 4.514 | 18.290,718364 | 18.290,718364 | 82.564.302,70 | 82.564.302,70 | 0,00 | ANBIMA — taxa indicativa D |
-| CDB ITAPER 2030 — CDB Banco Itaperuna Fictício S.A. — 100% do CDI — venc. 2030 | 30.006 | 30.006 | 1.375,651624 | 1.375,651624 | 41.277.802,63 | 41.277.802,63 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| ATRI21 — Debênture Agroindustrial Três Rios S.A. — CDI + 2,30% | 40.470 | 40.470 | 1.019,969915 | 1.043,604552 | 41.278.182,46 | 42.234.676,22 | 956.493,76 | Alfa: ANBIMA — taxa indicativa D / Beta: Curva — taxa de emissão |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 33.880 | 33.880 | 812,245470 | 812,245470 | 27.518.876,52 | 27.518.876,52 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 275.930.306,62 | 276.149.922,06 | 219.615,44 |  |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 11.749 | 11.749 | 4.427,444256 | 4.573,676209 | 52.018.042,56 | 53.736.121,78 | 1.718.079,22 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.858 | 2.858 | 18.198,459074 | 18.198,459074 | 52.011.196,03 | 52.011.196,03 | 0,00 | ANBIMA — taxa indicativa D |
+| CDB ITAPER 2028 — CDB Banco Itaperuna Fictício S.A. — 102% do CDI — venc. 2028 | 22.158 | 22.158 | 1.173,746455 | 1.173,746455 | 26.007.873,95 | 26.007.873,95 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 25.050 | 25.050 | 1.038,254139 | 1.038,254139 | 26.008.266,18 | 26.008.266,18 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 21.203 | 21.203 | 817,740209 | 817,740209 | 17.338.545,65 | 17.338.545,65 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 173.383.924,37 | 175.102.003,59 | 1.718.079,22 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 2.218.150,46 | 2.218.150,46 |
-| TED recebida — aplicação [APL-1] Cotista único (11:50) | 879.716,66 | 879.716,66 |
-| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 28/08/2026) | -200.602,71 | -200.602,71 |
-| **Saldo final** | 2.897.264,41 | 2.897.264,41 |
+| Saldo inicial (D−1) | 411.674,94 | 411.674,94 |
+| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 28/08/2026) | -267.008,66 | -267.008,66 |
+| Pagamento de juros — EVSA12 | — | 1.411.317,00 |
+| **Saldo final** | 144.666,28 | 1.555.983,28 |
 
 ### 5.4 Valores a receber
 
@@ -136,61 +138,59 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 879.716,66 | 879.716,66 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 23.767,03 | 23.767,03 | 1.208,87 | 1.208,87 | 0,00 | 0,00 | 24.975,90 | 24.975,90 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 43.289,45 | 43.289,45 | 2.197,95 | 2.197,95 | 0,00 | 0,00 | 45.487,40 | 45.487,40 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 2.153,72 | 2.153,72 | 109,90 | 109,90 | 0,00 | 0,00 | 2.263,62 | 2.263,62 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 8.333,33 | 8.333,33 | 297,62 | 297,62 | 0,00 | 0,00 | 8.630,95 | 8.630,95 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 857,14 | 857,14 | 42,86 | 42,86 | 0,00 | 0,00 | 900,00 | 900,00 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 3.047,62 | 3.047,62 | 152,38 | 152,38 | 0,00 | 0,00 | 3.200,00 | 3.200,00 | 0,00 |
+| TXADM — Taxa de administração a pagar | 9.836,63 | 9.836,63 | 481,88 | 481,88 | 0,00 | 0,00 | 10.318,51 | 10.318,51 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 76.151,86 | 76.151,86 | 3.777,20 | 3.777,20 | 0,00 | 0,00 | 79.929,06 | 79.929,06 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.353,09 | 1.353,09 | 68,86 | 68,86 | 0,00 | 0,00 | 1.421,95 | 1.421,95 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 20.428,57 | 20.428,57 | 154,76 | 154,76 | 0,00 | 0,00 | 20.583,33 | 20.583,33 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 1.142,86 | 1.142,86 | 57,14 | 57,14 | 0,00 | 0,00 | 1.200,00 | 1.200,00 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 4.000,00 | 4.000,00 | 200,00 | 200,00 | 0,00 | 0,00 | 4.200,00 | 4.200,00 | 0,00 |
 | CVM — Taxa de fiscalização CVM a pagar | 5.160,00 | 5.160,00 | 120,00 | 120,00 | 0,00 | 0,00 | 5.280,00 | 5.280,00 | 0,00 |
-| **Total** |  |  |  |  |  |  | 90.737,87 | 90.737,87 | 0,00 |
+| **Total** |  |  |  |  |  |  | 122.932,85 | 122.932,85 | 0,00 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 276.942.219,61 ÷ 252 (linear, dias úteis) = R$ 1.208,87 · Beta: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 276.942.219,61 ÷ 252 (linear, dias úteis) = R$ 1.208,87
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 276.942.219,61 ÷ 252 (linear, dias úteis) = R$ 2.197,95 · Beta: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 276.942.219,61 ÷ 252 (linear, dias úteis) = R$ 2.197,95
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 276.942.219,61 ÷ 252 (linear, dias úteis) = R$ 109,90 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 276.942.219,61 ÷ 252 (linear, dias úteis) = R$ 109,90
-- **AUDIT** — Alfa: R$ 75.000,00 (anual) ÷ 252 d.u. = R$ 297,62 · Beta: R$ 75.000,00 (anual) ÷ 252 d.u. = R$ 297,62
-- **ANBIMA** — Alfa: R$ 900,00 (mensal) ÷ 21 d.u. = R$ 42,86 · Beta: R$ 900,00 (mensal) ÷ 21 d.u. = R$ 42,86
-- **SELIC** — Alfa: R$ 3.200,00 (mensal) ÷ 21 d.u. = R$ 152,38 · Beta: R$ 3.200,00 (mensal) ÷ 21 d.u. = R$ 152,38
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 173.538.185,73 fator exponencial (1+taxa)^(1/252) − 1 = R$ 481,88 · Beta: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 173.538.185,73 fator exponencial (1+taxa)^(1/252) − 1 = R$ 481,88
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,55% a.a. sobre R$ 173.538.185,73 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.777,20 · Beta: [base: PL do dia útil anterior] 0,55% a.a. sobre R$ 173.538.185,73 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.777,20
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 173.538.185,73 fator exponencial (1+taxa)^(1/252) − 1 = R$ 68,86 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 173.538.185,73 fator exponencial (1+taxa)^(1/252) − 1 = R$ 68,86
+- **AUDIT** — Alfa: R$ 39.000,00 (anual) ÷ 252 d.u. = R$ 154,76 · Beta: R$ 39.000,00 (anual) ÷ 252 d.u. = R$ 154,76
+- **ANBIMA** — Alfa: R$ 1.200,00 (mensal) ÷ 21 d.u. = R$ 57,14 · Beta: R$ 1.200,00 (mensal) ÷ 21 d.u. = R$ 57,14
+- **SELIC** — Alfa: R$ 4.200,00 (mensal) ÷ 21 d.u. = R$ 200,00 · Beta: R$ 4.200,00 (mensal) ÷ 21 d.u. = R$ 200,00
 - **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00 · Beta: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista único | R$ 879.716,66 | 11:50 | 31/08/2026 | 31/08/2026 | 31/08/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista único | 24.024,93611859 cotas |  | 28/08/2026 | 31/08/2026 | 01/09/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista único | 15.139,33297175 cotas (R$ 200.602,71) |  | 27/08/2026 | 28/08/2026 | 31/08/2026 | não | não | cotizado em 28/08/2026 pela cota de 13,25043259; liquidação financeira hoje |
+| LIQ-1 | resgate | Cotista único | 23.342,81920960 cotas (R$ 267.008,66) |  | 27/08/2026 | 28/08/2026 | 31/08/2026 | não | não | cotizado em 28/08/2026 pela cota de 11,43857808; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 275.930.306,62 | 276.149.922,06 | 219.615,44 |
-| Caixa | 2.897.264,41 | 2.897.264,41 | 0,00 |
+| Total de ativos | 173.383.924,37 | 175.102.003,59 | 1.718.079,22 |
+| Caixa | 144.666,28 | 1.555.983,28 | 1.411.317,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 879.716,66 | 879.716,66 | 0,00 |
-| Provisões | 90.737,87 | 90.737,87 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 277.861.246,08 | 278.080.861,52 | 219.615,44 |
-| PL base da cota | 277.857.116,50 | 278.076.731,94 | 219.615,44 |
-| Cota (8 casas) | 13,29420627 | 13,30471388 | 0,01050761 |
-| Aplicações convertidas | 879.716,66 | 879.716,66 | 0,00 |
-| Cotas emitidas | 66.172,93594918 | 66.120,67481754 | -52,26113164 |
-| Cotas resgatadas | 24.024,93611859 | 24.024,93611859 | 0,00000000 |
-| Valor dos resgates cotizados | 319.392,46 | 319.644,90 | 252,44 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 122.932,85 | 122.932,85 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 173.410.517,64 | 176.539.913,86 | 3.129.396,22 |
+| PL base da cota | 173.405.657,80 | 176.535.054,02 | 3.129.396,22 |
+| Cota (8 casas) | 11,42984265 | 11,63611335 | 0,20627070 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 20.942.765,20764616 | 20.942.712,94651452 | -52,26113164 |
-| PL final | 278.417.440,53 | 278.636.803,62 | 219.363,09 |
+| Quantidade final de cotas | 15.171.307,51467440 | 15.171.307,51467440 | 0,00000000 |
+| PL final | 173.405.657,69 | 176.535.053,91 | 3.129.396,22 |
 
 ---
 
@@ -198,53 +198,51 @@ Nenhum item.
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: NTN-B 15/08/2030 marcado a mercado em vez da curva; PU de ATRI21 divergente.
+**Resumo:** Reprovar até o ajuste: NTN-B 15/08/2030 marcado a mercado em vez da curva; Juros de EVSA12 não registrados.
 
-**Dificuldade:** media · **Cenários:** curva_vs_mercado_exclusivo, preco_credito_fonte_errada
+**Dificuldade:** media · **Cenários:** curva_vs_mercado_exclusivo, juros_credito_nao_registrados
 
 ### Achado 1: NTN-B 15/08/2030 marcado a mercado em vez da curva
 
 - **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa aplicou a regra geral (ANBIMA) a um título que o regulamento classifica como "mantido até o vencimento".
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta aplicou a regra geral (ANBIMA) a um título que o regulamento classifica como "mantido até o vencimento".
 - **Onde olhar:** Carteira — NTN-B 15/08/2030; Regulamento — classe exclusiva / títulos mantidos até o vencimento; Informações de mercado — PU ANBIMA e PU curva
 - **Raciocínio do analista:**
-  1. NTN-B 15/08/2030: PU 4.382,326361 (Beta) contra 4.421,442951 (Alfa).
-  2. O PU do Alfa é o ANBIMA de D, o que à primeira vista parece "o certo". Mas o regulamento desta classe exclusiva classifica o título como mantido até o vencimento, com marcação na curva da taxa de aquisição.
-  3. O PU de curva informado (4.382,326361) bate com o Beta. A referência ANBIMA aqui serve só como informação.
-- **Ação:** Alfa deve voltar NTN-B 15/08/2030 para a curva de aquisição e reprocessar. Rever a parametrização do ativo como "mantido até o vencimento" para que o erro não se repita.
+  1. NTN-B 15/08/2030: PU 4.427,444256 (Alfa) contra 4.573,676209 (Beta).
+  2. O PU do Beta é o ANBIMA de D, o que à primeira vista parece "o certo". Mas o regulamento desta classe exclusiva classifica o título como mantido até o vencimento, com marcação na curva da taxa de aquisição.
+  3. O PU de curva informado (4.427,444256) bate com o Alfa. A referência ANBIMA aqui serve só como informação.
+- **Ação:** Beta deve voltar NTN-B 15/08/2030 para a curva de aquisição e reprocessar. Rever a parametrização do ativo como "mantido até o vencimento" para que o erro não se repita.
 
-### Achado 2: PU de ATRI21 divergente
+### Achado 2: Juros de EVSA12 não registrados
 
-- **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta precificou ATRI21 pela curva de emissão (PU par), e não pela taxa indicativa ANBIMA de D.
-- **Onde olhar:** Carteira — linha ATRI21; Informações de mercado — referências ANBIMA; Regulamento — precificação
+- **Gravidade:** erro · **Dimensões:** caixa, cota
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa usou o PU "ex-juros" de EVSA12 mas não registrou a entrada dos juros (R$ 56,340000 × quantidade = R$ 1.411.317,00).
+- **Onde olhar:** Caixa — lançamentos; Carteira — EVSA12; Informações de mercado — agenda de eventos
 - **Raciocínio do analista:**
-  1. A diferença de ativos está concentrada em ATRI21: mesma quantidade (40.470) nos dois lados, mas PU 1.019,969915 no Alfa contra 1.043,604552 no Beta, o que dá R$ 956.493,76 de diferença de valor.
-  2. A referência ANBIMA de D é 1.019,969915, igual ao Alfa. O PU do Beta coincide com o PU par (curva de emissão).
-  3. O regulamento manda precificar pela taxa indicativa ANBIMA do próprio dia, então o lado correto é o que usou a referência de D.
-- **Ação:** Pedir ao Beta que reprecifique ATRI21 pela taxa indicativa ANBIMA de D (PU 1.019,969915) e recalcule a cota antes da divulgação.
+  1. Ativos iguais (inclusive o PU de EVSA12), mas o caixa do Alfa tem R$ 1.411.317,00 a menos, e isso vai direto para o PL.
+  2. Hoje é dia de pagamento de juros de EVSA12. O PU de D já caiu pelo evento; quem não registrou a entrada perde os juros duas vezes: no preço e no caixa.
+- **Ação:** Alfa deve registrar o recebimento dos juros e reprocessar a cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | nenhum |
-| caixa | ambos |
+| caixa | Beta |
 | provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 13,25894998 |
-| Quantidade final de cotas | 20.942.941,16518605 |
-| PL final | R$ 277.681.409,34 |
-| Caixa | R$ 2.897.264,41 |
-| Total de provisões | R$ 90.737,87 |
+| Cota | 11,52286806 |
+| Quantidade final de cotas | 15.171.307,51467440 |
+| PL final | R$ 174.816.974,79 |
+| Caixa | R$ 1.555.983,28 |
+| Total de provisões | R$ 122.932,85 |
 
 ### Armadilhas deste caso
 
 - O lado que usou o preço de mercado parece o "certo"; o regulamento deste fundo manda marcar na curva.
-- Descobrir qual lado está certo comparando com a referência de D, não com o D−1 nem com a curva de emissão.

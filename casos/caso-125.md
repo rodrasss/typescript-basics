@@ -61,7 +61,7 @@ O Cerejeira do Mato Plus FIP Multiestratégia é gerido pela Varanda Capital, ge
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -152,6 +152,8 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
 | INT-1 | integralizacao | Investidores (chamada de capital) | R$ 10.103.957,19 | 11:20 | 23/10/2026 | 05/11/2026 | 05/11/2026 | sim | não | 2ª chamada de capital — vencimento hoje |
@@ -165,7 +167,7 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 10.103.957,19 | 10.103.957,19 | 0,00 |
 | Provisões | 859.647,45 | 859.647,45 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 433.365.473,78 | 441.903.987,05 | 8.538.513,27 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 433.365.473,78 | 441.903.987,05 | 8.538.513,27 |
 | PL base da cota | 433.331.370,31 | 441.869.883,58 | 8.538.513,27 |
 | Cota (8 casas) | 1.382,92502544 | 1.410,17466507 | 27,24963963 |
 | Aplicações convertidas | 10.103.957,19 | 0,00 | -10.103.957,19 |

@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Angico II FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 21/11/2017, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Camila. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. As rotinas diárias do administrador exigem acompanhamento próximo. O fundo recebe aplicações perto do horário de corte quase todo dia. No fechamento de ontem (17/06/2026) o fundo tinha PL de R$ 1.224.974.487,91, cota de 100,03892146 e 12.244.978,95331196 cotas. Hoje, quinta-feira, 18/06/2026, é a data-base da validação.
+O Angico II FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 21/11/2017, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Camila. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. As rotinas diárias do administrador exigem acompanhamento próximo. O anúncio de rendimentos costuma sair no fim do dia, depois do fechamento de um dos lados. No fechamento de ontem (17/06/2026) o fundo tinha PL de R$ 1.224.974.487,91, cota de 100,03892146 e 12.244.978,95331196 cotas. Hoje, quinta-feira, 18/06/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Angico II FII Responsabilidade Limitada é gerido pela Siriema Investimentos, 
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -158,7 +158,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 630.188,92 | 669.887,30 | 39.698,38 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 1.225.696.905,72 | 1.225.696.905,72 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.225.696.905,72 | 1.225.696.905,72 | 0,00 |
 | PL base da cota | 1.225.687.191,92 | 1.225.647.493,54 | -39.698,38 |
 | Cota (8 casas) | 100,09712524 | 100,09388323 | -0,00324201 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

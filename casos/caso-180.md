@@ -1,10 +1,10 @@
-# Caso caso-180 — Sanhaço Prime FIF RF Referenciado DI
+# Caso caso-180 — Taiúva Família FIF RF Referenciado DI
 
 > **Data-base (D):** 25/02/2026 (quarta-feira) · **D−1:** 24/02/2026 · **Fundo:** FND-0180
 
 ## 1. O fundo
 
-Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesouraria, cultura de mesa e muita boleta no fim do dia (São Paulo/SP), o Sanhaço Prime FIF RF Referenciado DI é um dos fundos que mais exigem atenção na rotina de validação. Criado em 06/01/2013, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são cerca de 48 mil cotistas pessoa física vindos de plataformas digitais. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. O contrato com a auditoria foi renegociado recentemente. O prazo de liquidação de ações (D+2) confunde alguns sistemas. No fechamento de ontem (24/02/2026) o fundo tinha PL de R$ 119.671.891,10, cota de 3,31782821 e 36.069.345,22255657 cotas. Hoje, quarta-feira, 25/02/2026, é a data-base da validação.
+O Taiúva Família FIF RF Referenciado DI é gerido pela Cumeeira Capital, boutique fundada por ex-operadores de tesouraria, cultura de mesa e muita boleta no fim do dia, em São Paulo/SP. Criado em 06/07/2020, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são cerca de 48 mil cotistas pessoa física vindos de plataformas digitais. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana. O gestor responsável é Henrique, e quem cuida da validação do fundo é Camila. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. A forma de apropriar as taxas muda de fundo para fundo. O método de apropriação das taxas já foi questionado em auditoria. No fechamento de ontem (24/02/2026) o fundo tinha PL de R$ 241.175.787,42, cota de 4,65970531 e 51.757.733,88508218 cotas. Hoje, quarta-feira, 25/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,9 +12,9 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 | Classe | Classe de Renda Fixa — Referenciada DI |
 | Condomínio | aberto |
 | Gestora | Cumeeira Capital (São Paulo/SP) |
-| PL em D−1 | R$ 119.671.891,10 |
-| Cota em D−1 | 3,31782821 |
-| Quantidade de cotas em D−1 | 36.069.345,22255657 |
+| PL em D−1 | R$ 241.175.787,42 |
+| Cota em D−1 | 4,65970531 |
+| Quantidade de cotas em D−1 | 51.757.733,88508218 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,15 +22,15 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 
 **Taxas**
 
-- Taxa de administração: 0,150% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,260% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,270% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 91.000,00 (anual) — aditivo assinado em 13/02/2026, novo valor vigente a partir de 25/02/2026; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 400,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 2.100,00 (mensal)
+- Auditoria independente: R$ 45.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 3.300,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 121.878.613,63. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 230.004.199,70. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,10 +60,10 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
 - Resgate: cotização no próprio dia do pedido, pela cota de fechamento desse dia; liquidação financeira no mesmo dia da cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -80,13 +80,14 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.154,967768 |  |
-| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.392,466698 |  |
-| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 782,539538 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.338,416611 |  |
+| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.419,758908 |  |
+| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 788,096966 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **10:57** — *Jurídico/contratos* — **Aditivo — auditoria**: Aditivo ao contrato de auditoria assinado: novo honorário anual de R$ 91.000,00 a partir de 25/02/2026 (antes R$ 65.000,00).
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -96,31 +97,30 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 3,31970697 | 3,31970416 | -0,00000281 |
-| Quantidade final de cotas | 36.331.856,25075132 | 36.331.856,47295665 | 0,22220533 |
-| PL final | R$ 120.611.116,43 | R$ 120.611.015,07 | R$ -101,36 |
-| Caixa | R$ 1.629.236,01 | R$ 1.629.236,01 | R$ 0,00 |
-| Total de provisões | R$ 82.045,65 | R$ 82.147,22 | R$ 101,57 |
+| Cota de fechamento | 4,66201529 | 4,66201536 | 0,00000007 |
+| Quantidade final de cotas | 51.666.611,63334989 | 51.666.611,63023192 | -0,00311797 |
+| PL final | R$ 240.870.533,42 | R$ 240.870.537,02 | R$ 3,60 |
+| Caixa | R$ 3.797.325,35 | R$ 3.797.325,35 | R$ 0,00 |
+| Total de provisões | R$ 88.944,06 | R$ 88.940,59 | R$ -3,47 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.951 | 2.951 | 18.154,967768 | 18.154,967768 | 53.575.309,88 | 53.575.309,88 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 1.295 | 1.295 | 18.392,466698 | 18.392,466698 | 23.818.244,37 | 23.818.244,37 | 0,00 | ANBIMA — taxa indicativa D |
-| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 7.607 | 7.607 | 782,539538 | 782,539538 | 5.952.778,27 | 5.952.778,27 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 37.159 | 37.159 | 801,001941 | 801,001941 | 29.764.431,13 | 29.764.431,13 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB ARANDU 2028 — CDB Banco Arandu S.A. — 106% do CDI — venc. 2028 | 5.548 | 5.548 | 1.073,028605 | 1.073,028605 | 5.953.162,70 | 5.953.162,70 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| **Total** |  |  |  |  | 119.063.926,35 | 119.063.926,35 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 5.854 | 5.854 | 18.338,416611 | 18.338,416611 | 107.353.090,84 | 107.353.090,84 | 0,00 | ANBIMA — taxa indicativa D |
+| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 2.590 | 2.590 | 18.419,758908 | 18.419,758908 | 47.707.175,57 | 47.707.175,57 | 0,00 | ANBIMA — taxa indicativa D |
+| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 15.135 | 15.135 | 788,096966 | 788,096966 | 11.927.847,58 | 11.927.847,58 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 72.825 | 72.825 | 818,942636 | 818,942636 | 59.639.497,47 | 59.639.497,47 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| CDB YBYTU 2027 — CDB Banco Ybytu S.A. — 114% do CDI — venc. 2027 | 8.950 | 8.950 | 1.332,676704 | 1.332,676704 | 11.927.456,50 | 11.927.456,50 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| **Total** |  |  |  |  | 238.555.067,96 | 238.555.067,96 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 757.776,32 | 757.776,32 |
-| TED recebida — aplicação [APL-1] Cotista 2450 (09:12) | 487.734,04 | 487.734,04 |
-| TED recebida — aplicação [APL-2] Cotista 2457 (10:14) | 383.725,65 | 383.725,65 |
-| **Saldo final** | 1.629.236,01 | 1.629.236,01 |
+| Saldo inicial (D−1) | 2.829.223,18 | 2.829.223,18 |
+| TED recebida — aplicação [APL-1] Cotista 1890 (12:15) | 968.102,17 | 968.102,17 |
+| **Saldo final** | 3.797.325,35 | 3.797.325,35 |
 
 ### 5.4 Valores a receber
 
@@ -130,58 +130,61 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 871.459,69 | 871.459,69 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 968.102,17 | 968.102,17 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 10.949,51 | 10.949,51 | 712,33 | 712,33 | 0,00 | 0,00 | 11.661,84 | 11.661,84 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 18.660,58 | 18.660,58 | 1.234,71 | 1.233,11 | 0,00 | 0,00 | 19.895,29 | 19.893,69 | -1,60 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.396,52 | 1.396,52 | 94,98 | 94,98 | 0,00 | 0,00 | 1.491,50 | 1.491,50 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 41.785,71 | 41.785,71 | 257,94 | 361,11 | 0,00 | 0,00 | 42.043,65 | 42.146,82 | 103,17 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 333,33 | 333,33 | 22,22 | 22,22 | 0,00 | 0,00 | 355,55 | 355,55 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.750,00 | 1.750,00 | 116,67 | 116,67 | 0,00 | 0,00 | 1.866,67 | 1.866,67 | 0,00 |
+| TXADM — Taxa de administração a pagar | 16.047,35 | 16.047,35 | 1.052,75 | 1.052,75 | 0,00 | 0,00 | 17.100,10 | 17.100,10 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 39.211,13 | 39.211,13 | 2.584,03 | 2.580,56 | 0,00 | 0,00 | 41.795,16 | 41.791,69 | -3,47 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.398,15 | 1.398,15 | 95,70 | 95,70 | 0,00 | 0,00 | 1.493,85 | 1.493,85 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 20.178,57 | 20.178,57 | 178,57 | 178,57 | 0,00 | 0,00 | 20.357,14 | 20.357,14 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 500,00 | 500,00 | 33,33 | 33,33 | 0,00 | 0,00 | 533,33 | 533,33 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 2.750,00 | 2.750,00 | 183,33 | 183,33 | 0,00 | 0,00 | 2.933,33 | 2.933,33 | 0,00 |
 | CVM — Taxa de fiscalização CVM a pagar | 4.603,28 | 4.603,28 | 127,87 | 127,87 | 0,00 | 0,00 | 4.731,15 | 4.731,15 | 0,00 |
-| **Total** |  |  |  |  |  |  | 82.045,65 | 82.147,22 | 101,57 |
+| **Total** |  |  |  |  |  |  | 88.944,06 | 88.940,59 | -3,47 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,15% a.a. sobre R$ 119.671.891,10 ÷ 252 (linear, dias úteis) = R$ 712,33 · Beta: [base: PL do dia útil anterior] 0,15% a.a. sobre R$ 119.671.891,10 ÷ 252 (linear, dias úteis) = R$ 712,33
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,26% a.a. sobre R$ 119.671.891,10 ÷ 252 (linear, dias úteis) = R$ 1.234,71 · Beta: [base: PL do dia útil anterior] 0,26% a.a. sobre R$ 119.671.891,10 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.233,11
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 119.671.891,10 ÷ 252 (linear, dias úteis) = R$ 94,98 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 119.671.891,10 ÷ 252 (linear, dias úteis) = R$ 94,98
-- **AUDIT** — Alfa: R$ 65.000,00 (anual) ÷ 252 d.u. = R$ 257,94 · Beta: R$ 91.000,00 (anual) ÷ 252 d.u. = R$ 361,11
-- **ANBIMA** — Alfa: R$ 400,00 (mensal) ÷ 18 d.u. = R$ 22,22 · Beta: R$ 400,00 (mensal) ÷ 18 d.u. = R$ 22,22
-- **SELIC** — Alfa: R$ 2.100,00 (mensal) ÷ 18 d.u. = R$ 116,67 · Beta: R$ 2.100,00 (mensal) ÷ 18 d.u. = R$ 116,67
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 241.175.787,42 ÷ 252 (linear, dias úteis) = R$ 1.052,75 · Beta: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 241.175.787,42 ÷ 252 (linear, dias úteis) = R$ 1.052,75
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,27% a.a. sobre R$ 241.175.787,42 ÷ 252 (linear, dias úteis) = R$ 2.584,03 · Beta: [base: PL do dia útil anterior] 0,27% a.a. sobre R$ 241.175.787,42 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.580,56
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 241.175.787,42 ÷ 252 (linear, dias úteis) = R$ 95,70 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 241.175.787,42 ÷ 252 (linear, dias úteis) = R$ 95,70
+- **AUDIT** — Alfa: R$ 45.000,00 (anual) ÷ 252 d.u. = R$ 178,57 · Beta: R$ 45.000,00 (anual) ÷ 252 d.u. = R$ 178,57
+- **ANBIMA** — Alfa: R$ 600,00 (mensal) ÷ 18 d.u. = R$ 33,33 · Beta: R$ 600,00 (mensal) ÷ 18 d.u. = R$ 33,33
+- **SELIC** — Alfa: R$ 3.300,00 (mensal) ÷ 18 d.u. = R$ 183,33 · Beta: R$ 3.300,00 (mensal) ÷ 18 d.u. = R$ 183,33
 - **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 2450 | R$ 487.734,04 | 09:12 | 25/02/2026 | 25/02/2026 | 25/02/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 2457 | R$ 383.725,65 | 10:14 | 25/02/2026 | 25/02/2026 | 25/02/2026 | sim | sim |  |
+| APL-1 | aplicacao | Cotista 1890 | R$ 968.102,17 | 12:15 | 25/02/2026 | 25/02/2026 | 25/02/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 1897 | 182.492,22597361 cotas |  | 25/02/2026 | 25/02/2026 | 25/02/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 1904 | 116.287,46782597 cotas |  | 25/02/2026 | 25/02/2026 | 25/02/2026 | sim | sim |  |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 119.063.926,35 | 119.063.926,35 | 0,00 |
-| Caixa | 1.629.236,01 | 1.629.236,01 | 0,00 |
+| Total de ativos | 238.555.067,96 | 238.555.067,96 | 0,00 |
+| Caixa | 3.797.325,35 | 3.797.325,35 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 871.459,69 | 871.459,69 | 0,00 |
-| Provisões | 82.045,65 | 82.147,22 | 101,57 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 119.742.223,74 | 119.742.223,74 | 0,00 |
-| PL base da cota | 119.739.657,02 | 119.739.555,45 | -101,57 |
-| Cota (8 casas) | 3,31970697 | 3,31970416 | -0,00000281 |
-| Aplicações convertidas | 871.459,69 | 871.459,69 | 0,00 |
-| Cotas emitidas | 262.511,02819475 | 262.511,25040008 | 0,22220533 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 968.102,17 | 968.102,17 | 0,00 |
+| Provisões | 88.944,06 | 88.940,59 | -3,47 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 241.299.602,66 | 241.299.602,66 | 0,00 |
+| PL base da cota | 241.295.347,08 | 241.295.350,55 | 3,47 |
+| Cota (8 casas) | 4,66201529 | 4,66201536 | 0,00000007 |
+| Aplicações convertidas | 968.102,17 | 968.102,17 | 0,00 |
+| Cotas emitidas | 207.657,44206729 | 207.657,43894932 | -0,00311797 |
+| Cotas resgatadas | 298.779,69379958 | 298.779,69379958 | 0,00000000 |
+| Valor dos resgates cotizados | 1.392.915,50 | 1.392.915,52 | 0,02 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 36.331.856,25075132 | 36.331.856,47295665 | 0,22220533 |
-| PL final | 120.611.116,43 | 120.611.015,07 | -101,36 |
+| Quantidade final de cotas | 51.666.611,63334989 | 51.666.611,63023192 | -0,00311797 |
+| PL final | 240.870.533,42 | 240.870.537,02 | 3,60 |
 
 ---
 
@@ -189,9 +192,9 @@ Nenhum item.
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: taxa de gestão com método exponencial; Auditoria provisionada com o valor antigo.
+**Resumo:** Reprovar até o ajuste: taxa de gestão com método exponencial.
 
-**Dificuldade:** media · **Cenários:** metodo_exponencial_vs_linear, auditoria_contrato_novo
+**Dificuldade:** media · **Cenários:** metodo_exponencial_vs_linear
 
 ### Achado 1: taxa de gestão com método exponencial
 
@@ -205,31 +208,20 @@ Nenhum item.
   3. Mesmo pequena, é diferença de parametrização: acumula e pode gerar questionamento de cobrança acima do regulamento.
 - **Ação:** Beta deve alinhar o método ao regulamento.
 
-### Achado 2: Auditoria provisionada com o valor antigo
-
-- **Gravidade:** erro · **Dimensões:** provisoes
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa continua provisionando R$ 65.000,00/ano. O aditivo assinado fixa R$ 91.000,00/ano a partir de hoje.
-- **Onde olhar:** Provisões — AUDIT; Regulamento/contratos — despesas fixas; Comunicações — aditivo
-- **Raciocínio do analista:**
-  1. A apropriação de auditoria difere: R$ 361,11 (Beta) contra R$ 257,94 (Alfa).
-  2. Existe aditivo assinado com vigência a partir de hoje. Diferente de uma proposta, aditivo assinado vale.
-- **Ação:** Alfa deve atualizar o valor anual de auditoria e reprocessar.
-
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | nenhum |
+| cota | Alfa |
 | caixa | ambos |
-| provisoes | nenhum |
+| provisoes | Alfa |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 3,31970411 |
-| Quantidade final de cotas | 36.331.856,47691050 |
-| PL final | R$ 120.611.013,27 |
-| Caixa | R$ 1.629.236,01 |
-| Total de provisões | R$ 82.148,82 |
+| Cota | 4,66201529 |
+| Quantidade final de cotas | 51.666.611,63334989 |
+| PL final | R$ 240.870.533,42 |
+| Caixa | R$ 3.797.325,35 |
+| Total de provisões | R$ 88.944,06 |

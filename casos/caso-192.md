@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Ariranha II Fiagro — Direitos Creditórios: a casa é uma especialista em crédito estruturado (FIDC e CRA). Criado em 25/07/2021, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Lívia, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. O PL do fundo está perto do limite entre duas faixas da taxa de fiscalização. No fechamento de ontem (04/11/2026) o fundo tinha PL de R$ 493.535.280,10, cota de 84,08646397 e 5.869.378,45575384 cotas. Hoje, quinta-feira, 05/11/2026, é a data-base da validação.
+Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Ariranha II Fiagro — Direitos Creditórios: a casa é uma especialista em crédito estruturado (FIDC e CRA). Criado em 25/07/2021, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Lívia, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. Cadastros de despesas já foram duplicados em outros fundos da mesma carteira. No fechamento de ontem (04/11/2026) o fundo tinha PL de R$ 493.535.280,10, cota de 84,08646397 e 5.869.378,45575384 cotas. Hoje, quinta-feira, 05/11/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Ariranha II Fiagr
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -174,7 +174,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 179.118,54 | 102.949,87 | -76.168,67 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 493.849.954,59 | 493.715.194,90 | -134.759,69 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 493.849.954,59 | 493.715.194,90 | -134.759,69 |
 | PL base da cota | 493.827.269,61 | 493.692.509,92 | -134.759,69 |
 | Cota (8 casas) | 84,13621192 | 84,11325213 | -0,02295979 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

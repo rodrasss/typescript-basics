@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Juazeiro III FIP Multiestratégia: a casa é uma gestora multiestratégia criada por ex-sócios de banco de investimento. Criado em 21/03/2020, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores qualificados. Hoje seus cotistas são family offices e um endowment universitário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Lívia, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. O fundo recebe aplicações perto do horário de corte quase todo dia. No fechamento de ontem (02/06/2026) o fundo tinha PL de R$ 1.430.683.517,02, cota de 1.912,39076806 e 748.112,54107258 cotas. Hoje, quarta-feira, 03/06/2026, é a data-base da validação.
+Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Juazeiro III FIP Multiestratégia: a casa é uma gestora multiestratégia criada por ex-sócios de banco de investimento. Criado em 21/03/2020, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores qualificados. Hoje seus cotistas são family offices e um endowment universitário. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Lívia, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. O comitê de investimentos aprova laudos fora de ciclo, às vezes no meio do mês. No fechamento de ontem (02/06/2026) o fundo tinha PL de R$ 1.430.683.517,02, cota de 1.912,39076806 e 748.112,54107258 cotas. Hoje, quarta-feira, 03/06/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Juazeiro III FIP Mul
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -157,7 +157,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 2.595.095,07 | 2.594.714,12 | -380,95 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 1.430.604.267,63 | 1.430.603.886,67 | -380,96 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.430.604.267,63 | 1.430.603.886,67 | -380,96 |
 | PL base da cota | 1.430.495.212,57 | 1.430.495.212,56 | -0,01 |
 | Cota (8 casas) | 1.912,13906201 | 1.912,13906200 | -0,00000001 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

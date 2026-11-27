@@ -61,7 +61,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Ariranha Adviso
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
@@ -171,7 +171,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 1.058,10 | 1.058,10 |
 | Provisões | 230.556,29 | 230.556,29 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 340.977.719,86 | 340.977.553,61 | -166,25 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 340.977.719,86 | 340.977.553,61 | -166,25 |
 | PL base da cota | 340.965.469,85 | 340.965.303,60 | -166,25 |
 | Cota (8 casas) | 84,87255215 | 84,87251077 | -0,00004138 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

@@ -61,7 +61,7 @@ Sob a gestão da Varanda Capital, gestora de private equity com participações 
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
@@ -167,7 +167,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 487.187,81 | 487.406,07 | 218,26 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 875.334.402,24 | 875.334.620,51 | 218,27 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 875.334.402,24 | 875.334.620,51 | 218,27 |
 | PL base da cota | 875.279.020,81 | 875.279.020,82 | 0,01 |
 | Cota (8 casas) | 1.326,96841479 | 1.326,96841480 | 0,00000001 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

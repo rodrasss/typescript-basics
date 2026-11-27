@@ -62,7 +62,7 @@ O Buriti FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capital, espe
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
@@ -164,7 +164,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 180.650,03 | 180.650,03 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 77.281.928,65 | 77.281.928,65 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 77.281.928,65 | 77.281.928,65 | 0,00 |
 | PL base da cota | 77.275.720,98 | 77.275.720,98 | 0,00 |
 | Cota (8 casas) | 1.293,86432239 | 1.293,86432239 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

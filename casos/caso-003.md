@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Aroeira II Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 24/10/2013, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A mesa da gestora mexe nas posições de futuros várias vezes ao dia. A equipe da gestora é considerada muito organizada. No fechamento de ontem (30/06/2026) o fundo tinha PL de R$ 226.721.157,79, cota de 37,74062425 e 6.007.350,49544652 cotas. Hoje, quarta-feira, 01/07/2026, é a data-base da validação.
+O Aroeira II Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 24/10/2013, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A conta do fundo já teve cobrança de tarifa que não era do fundo. A equipe da gestora é considerada muito organizada. No fechamento de ontem (30/06/2026) o fundo tinha PL de R$ 226.721.157,79, cota de 37,74062425 e 6.007.350,49544652 cotas. Hoje, quarta-feira, 01/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -61,7 +61,7 @@ O Aroeira II Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestã
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -171,7 +171,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 237.910,87 | 237.910,87 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 226.880.516,01 | 224.918.169,78 | -1.962.346,23 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 226.880.516,01 | 224.918.169,78 | -1.962.346,23 |
 | PL base da cota | 226.869.624,91 | 224.907.278,68 | -1.962.346,23 |
 | Cota (8 casas) | 37,76533849 | 37,43868097 | -0,32665752 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

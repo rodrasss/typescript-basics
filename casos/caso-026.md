@@ -1,37 +1,36 @@
-# Caso caso-026 — Embaúba Total FIDC Responsabilidade Limitada
+# Caso caso-026 — Paineira Total FIF RF Crédito Privado LP
 
 > **Data-base (D):** 22/05/2026 (sexta-feira) · **D−1:** 21/05/2026 · **Fundo:** FND-0026
 
 ## 1. O fundo
 
-O Embaúba Total FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA), em São Paulo/SP. Criado em 14/12/2018, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Otávio, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; o administrador revisa o manual de precificação uma vez por ano. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. A carteira de ações paga dividendos relevantes ao longo do ano. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (21/05/2026) o fundo tinha PL de R$ 764.948.368,27, cota de 1.457,64494617 e 524.783,74125079 cotas. Hoje, sexta-feira, 22/05/2026, é a data-base da validação.
+Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional (Salvador/BA), o Paineira Total FIF RF Crédito Privado LP é um dos fundos que mais exigem atenção na rotina de validação. Criado em 27/10/2018, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: público geral. Hoje seus cotistas são family offices e alguns fundos de fundos de terceiros. Ao longo da vida, o fundo teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Cecília, e quem cuida da validação do fundo é Rafael. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A área de risco pediu atenção redobrada ao fundo depois de um apontamento de auditoria em 2025 (já regularizado). No fechamento de ontem (21/05/2026) o fundo tinha PL de R$ 84.779.952,62, cota de 4,35232419 e 19.479.236,54753967 cotas. Hoje, sexta-feira, 22/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | FIDC (direitos creditórios) |
-| Classe | Classe de FIDC — subclasse única (monocota) |
-| Condomínio | fechado |
-| Gestora | Quaresmeira Capital (São Paulo/SP) |
-| PL em D−1 | R$ 764.948.368,27 |
-| Cota em D−1 | 1.457,64494617 |
-| Quantidade de cotas em D−1 | 524.783,74125079 |
+| Tipo | Renda Fixa Crédito Privado |
+| Classe | Classe de Renda Fixa — Crédito Privado |
+| Condomínio | aberto |
+| Gestora | Itapuã Gestão (Salvador/BA) |
+| PL em D−1 | R$ 84.779.952,62 |
+| Cota em D−1 | 4,35232419 |
+| Quantidade de cotas em D−1 | 19.479.236,54753967 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,200% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,380% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,130% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,520% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 102.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 300,00 (mensal)
-- Agente de cobrança: R$ 13.000,00 (mensal)
-- Agência de classificação de risco (rating): R$ 63.000,00 (anual)
+- Auditoria independente: R$ 79.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 800,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 3.300,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -41,7 +40,7 @@ O Embaúba Total FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capit
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 748.716.836,94. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 77.029.103,27. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +60,18 @@ O Embaúba Total FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capit
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+15 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
-
-**Regras específicas deste fundo**
-
-- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
-- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
+- Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).
+- CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual.
 
 ## 3. Informações de mercado do dia
 
@@ -85,12 +81,16 @@ O Embaúba Total FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capit
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.322,071164 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.450,203605 |  |
+| PASU12 | ANBIMA — PU pela taxa indicativa de D | 1.055,137644 |  |
+| VCLA12 | ANBIMA — PU pela taxa indicativa de D | 1.059,333753 |  |
+| TFSU13 | ANBIMA — PU pela taxa indicativa de D | 1.109,583327 |  |
+| EVSA12 | ANBIMA — PU pela taxa indicativa de D | 970,065118 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **11:50** — *Auditoria independente* — **Proposta de renovação**: Segue a proposta de renovação do contrato de auditoria: R$ 217.000,00/ano, com vigência a partir de janeiro do próximo ano, se aprovada. Ainda não assinada.
-- **17:51** — *Distribuidor* — **Material de divulgação**: Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.
+- **11:55** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (25/05/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **12:47** — *Auditoria independente* — **Proposta de renovação**: Segue a proposta de renovação do contrato de auditoria: R$ 177.000,00/ano, com vigência a partir de janeiro do próximo ano, se aprovada. Ainda não assinada.
 
 ## 5. Batimento Alfa × Beta
 
@@ -100,32 +100,33 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1.458,31950888 | 1.458,31950886 | -0,00000002 |
-| Quantidade final de cotas | 524.783,74125079 | 524.783,74125079 | 0,00000000 |
-| PL final | R$ 765.302.367,81 | R$ 765.302.367,80 | R$ -0,01 |
-| Caixa | R$ 11.761.824,77 | R$ 11.761.824,77 | R$ 0,00 |
-| Total de provisões | R$ 791.338,73 | R$ 791.795,08 | R$ 456,35 |
+| Cota de fechamento | 4,35507922 | 4,35507923 | 0,00000001 |
+| Quantidade final de cotas | 19.544.725,25982077 | 19.544.725,25967040 | -0,00015037 |
+| PL final | R$ 85.118.826,84 | R$ 85.118.827,03 | R$ 0,19 |
+| Caixa | R$ 1.021.660,37 | R$ 1.021.660,37 | R$ 0,00 |
+| Total de provisões | R$ 46.137,36 | R$ 46.526,25 | R$ 388,89 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 537.381.807,07 | 537.381.807,07 | 1,00 | 1,00 | 537.381.807,07 | 537.381.807,07 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
-| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 38.384.414,79 | 38.384.414,79 | 1,00 | 1,00 | 38.384.414,79 | 38.384.414,79 | 0,00 | Valor presente (custodiante) |
-| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 15.353.765,92 | 15.353.765,92 | 1,00 | 1,00 | 15.353.765,92 | 15.353.765,92 | 0,00 | Valor presente (custodiante) |
-| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 9.212.259,55 | 9.212.259,55 | 1,00 | 1,00 | 9.212.259,55 | 9.212.259,55 | 0,00 | Valor presente (custodiante) |
-| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 6.141.506,37 | 6.141.506,37 | 1,00 | 1,00 | 6.141.506,37 | 6.141.506,37 | 0,00 | Valor presente (custodiante) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 6.285 | 6.285 | 18.322,071164 | 18.322,143773 | 115.154.217,27 | 115.154.673,61 | 456,34 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 57.687 | 57.687 | 798,476037 | 798,476037 | 46.061.687,15 | 46.061.687,15 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -13.357.776,35 | -13.357.776,35 | -13.357.776,35 | -13.357.776,35 | 0,00 | Cálculo pelo aging do custodiante |
-| **Total** |  |  |  |  | 754.331.881,77 | 754.332.338,11 | 456,34 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.213 | 1.213 | 18.450,203605 | 18.450,203605 | 22.380.096,97 | 22.380.096,97 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 9.064 | 9.064 | 790,072742 | 790,072742 | 7.161.219,33 | 7.161.219,33 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| CDB ITAPER 2028 — CDB Banco Itaperuna Fictício S.A. — 108% do CDI — venc. 2028 | 7.725 | 7.725 | 1.158,665657 | 1.158,665657 | 8.950.692,20 | 8.950.692,20 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 15.270 | 15.270 | 1.055,137644 | 1.055,163112 | 16.111.951,82 | 16.112.340,72 | 388,90 | ANBIMA — taxa indicativa D |
+| VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 8.450 | 8.450 | 1.059,333753 | 1.059,333753 | 8.951.370,21 | 8.951.370,21 | 0,00 | ANBIMA — taxa indicativa D |
+| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 8.874 | 8.874 | 1.109,583327 | 1.109,583327 | 9.846.442,44 | 9.846.442,44 | 0,00 | ANBIMA — taxa indicativa D |
+| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 11.073 | 11.073 | 970,065118 | 970,065118 | 10.741.531,05 | 10.741.531,05 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 84.143.304,02 | 84.143.692,92 | 388,90 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 11.761.824,77 | 11.761.824,77 |
-| **Saldo final** | 11.761.824,77 | 11.761.824,77 |
+| Saldo inicial (D−1) | 899.713,42 | 899.713,42 |
+| TED recebida — aplicação [APL-1] Cotista 5264 (14:00) | 285.208,53 | 285.208,53 |
+| Pagamento de resgate [LIQ-1] — Cotista 5271 (cotizado em 21/05/2026) | -163.261,58 | -163.261,58 |
+| **Saldo final** | 1.021.660,37 | 1.021.660,37 |
 
 ### 5.4 Valores a receber
 
@@ -133,57 +134,62 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-Nenhum item.
+| Item | Alfa | Beta |
+|---|---|---|
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 285.208,53 | 285.208,53 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 87.428,51 | 87.428,51 | 6.064,98 | 6.064,98 | 0,00 | 0,00 | 93.493,49 | 93.493,49 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 565.136,54 | 565.136,54 | 41.604,75 | 41.604,75 | 0,00 | 0,00 | 606.741,29 | 606.741,29 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 8.622,81 | 8.622,81 | 607,04 | 607,04 | 0,00 | 0,00 | 9.229,85 | 9.229,85 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 38.047,62 | 38.047,62 | 404,76 | 861,11 | 0,00 | 0,00 | 38.452,38 | 38.908,73 | 456,35 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 210,00 | 210,00 | 15,00 | 15,00 | 0,00 | 0,00 | 225,00 | 225,00 | 0,00 |
-| COBRANCA — Agente de cobrança a pagar | 9.100,00 | 9.100,00 | 650,00 | 650,00 | 0,00 | 0,00 | 9.750,00 | 9.750,00 | 0,00 |
-| RATING — Agência de classificação de risco (rating) a pagar | 27.000,00 | 27.000,00 | 250,00 | 250,00 | 0,00 | 0,00 | 27.250,00 | 27.250,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 6.019,67 | 6.019,67 | 177,05 | 177,05 | 0,00 | 0,00 | 6.196,72 | 6.196,72 | 0,00 |
-| **Total** |  |  |  |  |  |  | 791.338,73 | 791.795,08 | 456,35 |
+| TXADM — Taxa de administração a pagar | 6.245,54 | 6.245,54 | 437,07 | 437,07 | 0,00 | 0,00 | 6.682,61 | 6.682,61 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 23.829,90 | 23.829,90 | 1.744,91 | 1.744,91 | 0,00 | 0,00 | 25.574,81 | 25.574,81 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 462,62 | 462,62 | 33,64 | 33,64 | 0,00 | 0,00 | 496,26 | 496,26 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 6.896,83 | 6.896,83 | 313,49 | 702,38 | 0,00 | 0,00 | 7.210,32 | 7.599,21 | 388,89 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 560,00 | 560,00 | 40,00 | 40,00 | 0,00 | 0,00 | 600,00 | 600,00 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 2.310,00 | 2.310,00 | 165,00 | 165,00 | 0,00 | 0,00 | 2.475,00 | 2.475,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 3.009,84 | 3.009,84 | 88,52 | 88,52 | 0,00 | 0,00 | 3.098,36 | 3.098,36 | 0,00 |
+| **Total** |  |  |  |  |  |  | 46.137,36 | 46.526,25 | 388,89 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 764.948.368,27 fator exponencial (1+taxa)^(1/252) − 1 = R$ 6.064,98 · Beta: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 764.948.368,27 fator exponencial (1+taxa)^(1/252) − 1 = R$ 6.064,98
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,38% a.a. sobre R$ 764.948.368,27 fator exponencial (1+taxa)^(1/252) − 1 = R$ 41.604,75 · Beta: [base: PL do dia útil anterior] 1,38% a.a. sobre R$ 764.948.368,27 fator exponencial (1+taxa)^(1/252) − 1 = R$ 41.604,75
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 764.948.368,27 fator exponencial (1+taxa)^(1/252) − 1 = R$ 607,04 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 764.948.368,27 fator exponencial (1+taxa)^(1/252) − 1 = R$ 607,04
-- **AUDIT** — Alfa: R$ 102.000,00 (anual) ÷ 252 d.u. = R$ 404,76 · Beta: R$ 217.000,00 (anual) ÷ 252 d.u. = R$ 861,11
-- **ANBIMA** — Alfa: R$ 300,00 (mensal) ÷ 20 d.u. = R$ 15,00 · Beta: R$ 300,00 (mensal) ÷ 20 d.u. = R$ 15,00
-- **COBRANCA** — Alfa: R$ 13.000,00 (mensal) ÷ 20 d.u. = R$ 650,00 · Beta: R$ 13.000,00 (mensal) ÷ 20 d.u. = R$ 650,00
-- **RATING** — Alfa: R$ 63.000,00 (anual) ÷ 252 d.u. = R$ 250,00 · Beta: R$ 63.000,00 (anual) ÷ 252 d.u. = R$ 250,00
-- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,13% a.a. sobre R$ 84.779.952,62 fator exponencial (1+taxa)^(1/252) − 1 = R$ 437,07 · Beta: [base: PL do dia útil anterior] 0,13% a.a. sobre R$ 84.779.952,62 fator exponencial (1+taxa)^(1/252) − 1 = R$ 437,07
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,52% a.a. sobre R$ 84.779.952,62 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.744,91 · Beta: [base: PL do dia útil anterior] 0,52% a.a. sobre R$ 84.779.952,62 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.744,91
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 84.779.952,62 fator exponencial (1+taxa)^(1/252) − 1 = R$ 33,64 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 84.779.952,62 fator exponencial (1+taxa)^(1/252) − 1 = R$ 33,64
+- **AUDIT** — Alfa: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49 · Beta: R$ 177.000,00 (anual) ÷ 252 d.u. = R$ 702,38
+- **ANBIMA** — Alfa: R$ 800,00 (mensal) ÷ 20 d.u. = R$ 40,00 · Beta: R$ 800,00 (mensal) ÷ 20 d.u. = R$ 40,00
+- **SELIC** — Alfa: R$ 3.300,00 (mensal) ÷ 20 d.u. = R$ 165,00 · Beta: R$ 3.300,00 (mensal) ÷ 20 d.u. = R$ 165,00
+- **CVM** — Alfa: R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52 · Beta: R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-Nenhum movimento de passivo no dia.
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
+| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
+|---|---|---|---|---|---|---|---|---|---|---|
+| APL-1 | aplicacao | Cotista 5264 | R$ 285.208,53 | 14:00 | 22/05/2026 | 22/05/2026 | 22/05/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 5271 | 37.511,35499183 cotas (R$ 163.261,58) |  | 06/05/2026 | 21/05/2026 | 22/05/2026 | não | não | cotizado em 21/05/2026 pela cota de 4,35232419; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 754.331.881,77 | 754.332.338,11 | 456,34 |
-| Caixa | 11.761.824,77 | 11.761.824,77 | 0,00 |
+| Total de ativos | 84.143.304,02 | 84.143.692,92 | 388,90 |
+| Caixa | 1.021.660,37 | 1.021.660,37 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 791.338,73 | 791.795,08 | 456,35 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 765.352.141,39 | 765.352.597,73 | 456,34 |
-| PL base da cota | 765.302.367,81 | 765.302.367,80 | -0,01 |
-| Cota (8 casas) | 1.458,31950888 | 1.458,31950886 | -0,00000002 |
-| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
-| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valores a pagar | 285.208,53 | 285.208,53 | 0,00 |
+| Provisões | 46.137,36 | 46.526,25 | 388,89 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 84.836.441,13 | 84.836.830,03 | 388,90 |
+| PL base da cota | 84.833.618,50 | 84.833.618,51 | 0,01 |
+| Cota (8 casas) | 4,35507922 | 4,35507923 | 0,00000001 |
+| Aplicações convertidas | 285.208,53 | 285.208,53 | 0,00 |
+| Cotas emitidas | 65.488,71228110 | 65.488,71213073 | -0,00015037 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 524.783,74125079 | 524.783,74125079 | 0,00000000 |
-| PL final | 765.302.367,81 | 765.302.367,80 | -0,01 |
+| Quantidade final de cotas | 19.544.725,25982077 | 19.544.725,25967040 | -0,00015037 |
+| PL final | 85.118.826,84 | 85.118.827,03 | 0,19 |
 
 ---
 
@@ -191,7 +197,7 @@ Nenhum movimento de passivo no dia.
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Provisão de auditoria com valor de proposta não assinada; PU de LFT 01/03/2029 diferente da referência.
+**Resumo:** Reprovar até o ajuste: Provisão de auditoria com valor de proposta não assinada; PU de PASU12 diferente da referência.
 
 **Dificuldade:** dificil · **Cenários:** erros_que_se_compensam
 
@@ -199,23 +205,23 @@ Nenhum movimento de passivo no dia.
 
 - **Gravidade:** erro · **Dimensões:** provisoes
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta passou a provisionar a auditoria por R$ 217.000,00/ano (proposta ainda não assinada, para o ano que vem) em vez de R$ 102.000,00.
+- **Causa raiz:** Beta passou a provisionar a auditoria por R$ 177.000,00/ano (proposta ainda não assinada, para o ano que vem) em vez de R$ 79.000,00.
 - **Onde olhar:** Provisões — auditoria; Regulamento/contrato — despesas fixas; Comunicações — proposta da auditoria
 - **Raciocínio do analista:**
-  1. A cota bate (ou quase), então seria fácil aprovar direto. Mas comparando linha a linha, a apropriação de auditoria do Beta é R$ 861,11/dia contra R$ 404,76/dia do Alfa.
-  2. O contrato vigente é de R$ 102.000,00/ano. O valor novo vem de uma proposta não assinada, válida só para o ano que vem.
-- **Ação:** Beta deve voltar a apropriação de auditoria para R$ 102.000,00/ano.
+  1. A cota bate (ou quase), então seria fácil aprovar direto. Mas comparando linha a linha, a apropriação de auditoria do Beta é R$ 702,38/dia contra R$ 313,49/dia do Alfa.
+  2. O contrato vigente é de R$ 79.000,00/ano. O valor novo vem de uma proposta não assinada, válida só para o ano que vem.
+- **Ação:** Beta deve voltar a apropriação de auditoria para R$ 79.000,00/ano.
 
-### Achado 2: PU de LFT 01/03/2029 diferente da referência
+### Achado 2: PU de PASU12 diferente da referência
 
 - **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta usou PU 18.322,143773 para LFT 01/03/2029; a referência de D é 18.322,071164.
-- **Onde olhar:** Carteira — LFT 01/03/2029; Informações de mercado — referências
+- **Causa raiz:** Beta usou PU 1.055,163112 para PASU12; a referência de D é 1.055,137644.
+- **Onde olhar:** Carteira — PASU12; Informações de mercado — referências
 - **Raciocínio do analista:**
-  1. Em LFT 01/03/2029, o Beta tem R$ 456,34 a mais de valor, praticamente o mesmo montante da provisão a maior (R$ 456,35). Por isso a cota parece bater.
+  1. Em PASU12, o Beta tem R$ 388,90 a mais de valor, praticamente o mesmo montante da provisão a maior (R$ 388,89). Por isso a cota parece bater.
   2. São dois erros independentes que se anulam hoje. Amanhã a provisão continua acumulando e o preço pode não compensar mais. Componente errado não se aprova, mesmo com a cota igual.
-- **Ação:** Beta deve reprecificar LFT 01/03/2029 pela referência de D (18.322,071164), corrigir a provisão e reenviar a posição antes da divulgação.
+- **Ação:** Beta deve reprecificar PASU12 pela referência de D (1.055,137644), corrigir a provisão e reenviar a posição antes da divulgação.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -229,11 +235,11 @@ Nenhum movimento de passivo no dia.
 
 | Item | Valor |
 |---|---|
-| Cota | 1.458,31950888 |
-| Quantidade final de cotas | 524.783,74125079 |
-| PL final | R$ 765.302.367,81 |
-| Caixa | R$ 11.761.824,77 |
-| Total de provisões | R$ 791.338,73 |
+| Cota | 4,35507922 |
+| Quantidade final de cotas | 19.544.725,25982077 |
+| PL final | R$ 85.118.826,84 |
+| Caixa | R$ 1.021.660,37 |
+| Total de provisões | R$ 46.137,36 |
 
 ### Armadilhas deste caso
 

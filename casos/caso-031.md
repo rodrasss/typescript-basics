@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Saíra Advisory FIF Multimercado é gerido pela Barlavento Investimentos, gestora macro com equipe enxuta e forte uso de derivativos, em Rio de Janeiro/RJ. Criado em 11/08/2011, toma posições direcionais em juros, câmbio e bolsa, e a equipe trata o caixa como ferramenta de trabalho. Público-alvo: público geral. Hoje seus cotistas são fundos de fundos de grandes plataformas (concentração de 40% em 3 FoFs). Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. A liquidação dos ajustes de futuros exige conciliação diária. No fechamento de ontem (16/06/2026) o fundo tinha PL de R$ 152.678.140,41, cota de 7,90350528 e 19.317.775,46771352 cotas. Hoje, quarta-feira, 17/06/2026, é a data-base da validação.
+Quem acompanha a Barlavento Investimentos (Rio de Janeiro/RJ) conhece o Saíra Advisory FIF Multimercado: a casa é uma gestora macro com equipe enxuta e forte uso de derivativos. Criado em 11/08/2011, toma posições direcionais em juros, câmbio e bolsa, e a equipe trata o caixa como ferramenta de trabalho. Público-alvo: público geral. Hoje seus cotistas são fundos de fundos de grandes plataformas (concentração de 40% em 3 FoFs). Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; o administrador revisa o manual de precificação uma vez por ano. A liquidação dos ajustes de futuros exige conciliação diária. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (16/06/2026) o fundo tinha PL de R$ 154.969.390,93, cota de 4,94621132 e 31.330.927,97552187 cotas. Hoje, quarta-feira, 17/06/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,9 +12,9 @@ O Saíra Advisory FIF Multimercado é gerido pela Barlavento Investimentos, gest
 | Classe | Classe Multimercado |
 | Condomínio | aberto |
 | Gestora | Barlavento Investimentos (Rio de Janeiro/RJ) |
-| PL em D−1 | R$ 152.678.140,41 |
-| Cota em D−1 | 7,90350528 |
-| Quantidade de cotas em D−1 | 19.317.775,46771352 |
+| PL em D−1 | R$ 154.969.390,93 |
+| Cota em D−1 | 4,94621132 |
+| Quantidade de cotas em D−1 | 31.330.927,97552187 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,21 +22,21 @@ O Saíra Advisory FIF Multimercado é gerido pela Barlavento Investimentos, gest
 
 **Taxas**
 
-- Taxa de administração: 0,120% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,680% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,330% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Taxa de performance**
 
 - 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
 - Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 24.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 800,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 2.200,00 (mensal)
+- Auditoria independente: R$ 46.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 300,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 3.500,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -46,7 +46,7 @@ O Saíra Advisory FIF Multimercado é gerido pela Barlavento Investimentos, gest
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 140.519.940,74. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 145.975.101,00. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -67,9 +67,9 @@ O Saíra Advisory FIF Multimercado é gerido pela Barlavento Investimentos, gest
 **Aplicação, resgate e cota**
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
+- Tributação: Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)
 
 **Precificação dos ativos**
 
@@ -82,7 +82,7 @@ O Saíra Advisory FIF Multimercado é gerido pela Barlavento Investimentos, gest
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 7,23476053 (cota da última cobrança efetiva, em 31/12/2025).
+- Performance: cota de referência vigente = 4,58359317 (cota da última cobrança efetiva, em 31/12/2025).
 
 ## 3. Informações de mercado do dia
 
@@ -92,23 +92,20 @@ O Saíra Advisory FIF Multimercado é gerido pela Barlavento Investimentos, gest
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.193,047244 |  |
-| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.204,076879 |  |
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D | 4.479,544947 |  |
-| JZEL3 | B3 — preço de fechamento de D | 67,18 |  |
-| KXOB3 | B3 — preço de fechamento de D | 70,13 |  |
-| UQPA4 | B3 — preço de fechamento de D | 63,41 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.379,663598 |  |
+| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.056,798765 |  |
+| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D | 4.377,038439 |  |
+| WJMA4 | B3 — preço de fechamento de D | 51,57 |  |
+| JZEL3 | B3 — preço de fechamento de D | 48,28 |  |
+| YRBQ3 | B3 — preço de fechamento de D | 67,18 |  |
 
 **Futuros (posição de D e ajuste do dia por contrato)**
 
 | Contrato | Quantidade (+comprado / −vendido) | Ajuste de D por contrato (R$) |
 |---|---|---|
-| DI1F28 | 1.860 | -4,54 |
-| DOLN26 | 86 | -407,07 |
-
-**Eventos de ativos**
-
-- JZEL3: pagamento em 17/06/2026 de dividendos de R$ 2,14 por ação (data-com 21/05/2026).
+| DI1F28 | 865 | 39,92 |
+| DOLN26 | -168 | 278,10 |
+| INDQ26 | 103 | -477,56 |
 
 **Benchmark**
 
@@ -127,94 +124,90 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 7,83032287 | 7,83032287 | 0,00000000 |
-| Quantidade final de cotas | 19.326.624,89893239 | 19.326.624,89893239 | 0,00000000 |
-| PL final | R$ 151.333.712,95 | R$ 151.333.712,95 | R$ 0,00 |
-| Caixa | R$ 1.764.932,07 | R$ 2.182.192,03 | R$ 417.259,96 |
-| Total de provisões | R$ 903.574,51 | R$ 903.574,51 | R$ 0,00 |
+| Cota de fechamento | 4,95389343 | 4,95389343 | 0,00000000 |
+| Quantidade final de cotas | 31.258.977,59177619 | 31.258.977,59177619 | 0,00000000 |
+| PL final | R$ 154.853.643,72 | R$ 154.853.643,72 | R$ 0,00 |
+| Caixa | R$ 1.430.743,18 | R$ 1.304.576,05 | R$ -126.167,13 |
+| Total de provisões | R$ 861.022,23 | R$ 861.022,23 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 3.809 | 3.809 | 18.193,047244 | 18.193,047244 | 69.297.316,95 | 69.297.316,95 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 1.692 | 1.692 | 18.204,076879 | 18.204,076879 | 30.801.298,08 | 30.801.298,08 | 0,00 | ANBIMA — taxa indicativa D |
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 2.062 | 2.062 | 4.479,544947 | 4.479,544947 | 9.236.821,68 | 9.236.821,68 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 28.706 | 28.706 | 804,596787 | 804,596787 | 23.096.755,37 | 23.096.755,37 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| JZEL3 — Jazê Elétrica S.A. ON | 91.680 | 91.680 | 67,18 | 67,18 | 6.159.062,40 | 6.159.062,40 | 0,00 | B3 — preço de fechamento D |
-| KXOB3 — Kaxoeira Obras S.A. ON | 87.824 | 87.824 | 70,13 | 70,13 | 6.159.097,12 | 6.159.097,12 | 0,00 | B3 — preço de fechamento D |
-| UQPA4 — Uquapé Petroquímica S.A. PN | 97.131 | 97.131 | 63,41 | 63,41 | 6.159.076,71 | 6.159.076,71 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 150.909.428,31 | 150.909.428,31 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 3.868 | 3.868 | 18.379,663598 | 18.379,663598 | 71.092.538,80 | 71.092.538,80 | 0,00 | ANBIMA — taxa indicativa D |
+| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 1.750 | 1.750 | 18.056,798765 | 18.056,798765 | 31.599.397,84 | 31.599.397,84 | 0,00 | ANBIMA — taxa indicativa D |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 2.166 | 2.166 | 4.377,038439 | 4.377,038439 | 9.480.665,26 | 9.480.665,26 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 29.599 | 29.599 | 800,609545 | 800,609545 | 23.697.241,92 | 23.697.241,92 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| WJMA4 — Banco Wajumá S.A. PN | 122.539 | 122.539 | 51,57 | 51,57 | 6.319.336,23 | 6.319.336,23 | 0,00 | B3 — preço de fechamento D |
+| JZEL3 — Jazê Elétrica S.A. ON | 130.890 | 130.890 | 48,28 | 48,28 | 6.319.369,20 | 6.319.369,20 | 0,00 | B3 — preço de fechamento D |
+| YRBQ3 — Yrubá Químicos S.A. ON | 94.066 | 94.066 | 67,18 | 67,18 | 6.319.353,88 | 6.319.353,88 | 0,00 | B3 — preço de fechamento D |
+| **Total** |  |  |  |  | 154.827.903,13 | 154.827.903,13 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 1.326.887,39 | 1.326.887,39 |
-| TED recebida — aplicação [APL-1] Cotista 1204 (11:25) | 431.050,24 | 431.050,24 |
-| TED recebida — aplicação [APL-2] Cotista 1211 (09:49) | 228.059,20 | 228.059,20 |
-| Liquidação B3 — ajuste de futuros de 16/06/2026 | -221.064,76 | — |
-| Crédito de dividendos — JZEL3 | — | 196.195,20 |
-| **Saldo final** | 1.764.932,07 | 2.182.192,03 |
+| Saldo inicial (D−1) | 1.662.113,22 | 1.662.113,22 |
+| Pagamento de resgate [LIQ-1] — Cotista 2226 (cotizado em 16/06/2026) | -231.370,04 | -231.370,04 |
+| Liquidação B3 — ajuste de futuros de 16/06/2026 | — | -126.167,13 |
+| **Saldo final** | 1.430.743,18 | 1.304.576,05 |
 
 ### 5.4 Valores a receber
 
-| Item | Alfa | Beta |
-|---|---|---|
-| DIVIDENDOS A RECEBER JZEL3 — Dividendos a receber — JZEL3 | 196.195,20 | — |
+Nenhum item.
 
 ### 5.5 Valores a pagar
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 659.109,44 | 659.109,44 |
-| AJUSTE FUTUROS D — Ajuste diário de futuros de D (liquidação em D+1) | 43.452,42 | 43.452,42 |
-| AJUSTE FUTUROS D-1 — Ajuste de futuros de 16/06/2026 a pagar | — | 221.064,76 |
+| AJUSTE FUTUROS D — Ajuste diário de futuros de D (liquidação em D+1) | 61.378,68 | 61.378,68 |
+| AJUSTE FUTUROS D-1 — Ajuste de futuros de 16/06/2026 a pagar | 126.167,13 | — |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 8.083,49 | 8.083,49 | 727,04 | 727,04 | 0,00 | 0,00 | 8.810,53 | 8.810,53 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 114.080,21 | 114.080,21 | 10.178,54 | 10.178,54 | 0,00 | 0,00 | 124.258,75 | 124.258,75 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.363,59 | 1.363,59 | 121,17 | 121,17 | 0,00 | 0,00 | 1.484,76 | 1.484,76 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 20.571,43 | 20.571,43 | 95,24 | 95,24 | 0,00 | 0,00 | 20.666,67 | 20.666,67 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 419,05 | 419,05 | 38,10 | 38,10 | 0,00 | 0,00 | 457,15 | 457,15 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.152,38 | 1.152,38 | 104,76 | 104,76 | 0,00 | 0,00 | 1.257,14 | 1.257,14 | 0,00 |
+| TXADM — Taxa de administração a pagar | 11.638,83 | 11.638,83 | 1.045,43 | 1.045,43 | 0,00 | 0,00 | 12.684,26 | 12.684,26 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 88.665,68 | 88.665,68 | 8.178,94 | 8.178,94 | 0,00 | 0,00 | 96.844,62 | 96.844,62 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 2.051,23 | 2.051,23 | 184,49 | 184,49 | 0,00 | 0,00 | 2.235,72 | 2.235,72 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 34.865,08 | 34.865,08 | 182,54 | 182,54 | 0,00 | 0,00 | 35.047,62 | 35.047,62 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 157,14 | 157,14 | 14,29 | 14,29 | 0,00 | 0,00 | 171,43 | 171,43 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.833,33 | 1.833,33 | 166,67 | 166,67 | 0,00 | 0,00 | 2.000,00 | 2.000,00 | 0,00 |
 | CVM — Taxa de fiscalização CVM a pagar | 6.521,31 | 6.521,31 | 127,87 | 127,87 | 0,00 | 0,00 | 6.649,18 | 6.649,18 | 0,00 |
-| PERF — Taxa de performance a pagar | 1.112.886,83 | 1.112.886,83 | -372.896,50 | -372.896,50 | 0,00 | 0,00 | 739.990,33 | 739.990,33 | 0,00 |
-| **Total** |  |  |  |  |  |  | 903.574,51 | 903.574,51 | 0,00 |
+| PERF — Taxa de performance a pagar | 665.219,83 | 665.219,83 | 40.169,57 | 40.169,57 | 0,00 | 0,00 | 705.389,40 | 705.389,40 | 0,00 |
+| **Total** |  |  |  |  |  |  | 861.022,23 | 861.022,23 | 0,00 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 1204 | R$ 431.050,24 | 11:25 | 17/06/2026 | 17/06/2026 | 17/06/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 1211 | R$ 228.059,20 | 09:49 | 17/06/2026 | 17/06/2026 | 17/06/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 1218 | 75.324,54869774 cotas |  | 18/05/2026 | 17/06/2026 | 18/06/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 2219 | 71.950,38374568 cotas |  | 16/06/2026 | 17/06/2026 | 18/06/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 2226 | 46.777,22524919 cotas (R$ 231.370,04) |  | 15/06/2026 | 16/06/2026 | 17/06/2026 | não | não | cotizado em 16/06/2026 pela cota de 4,94621132; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 150.909.428,31 | 150.909.428,31 | 0,00 |
-| Caixa | 1.764.932,07 | 2.182.192,03 | 417.259,96 |
-| Valores a receber | 196.195,20 | 0,00 | -196.195,20 |
-| Valores a pagar | 702.561,86 | 923.626,62 | 221.064,76 |
-| Provisões | 903.574,51 | 903.574,51 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 152.015.802,26 | 152.015.802,26 | 0,00 |
-| PL base da cota | 151.264.419,21 | 151.264.419,21 | 0,00 |
-| Cota (8 casas) | 7,83032287 | 7,83032287 | 0,00000000 |
-| Aplicações convertidas | 659.109,44 | 659.109,44 | 0,00 |
-| Cotas emitidas | 84.173,97991661 | 84.173,97991661 | 0,00000000 |
-| Cotas resgatadas | 75.324,54869774 | 75.324,54869774 | 0,00000000 |
-| Valor dos resgates cotizados | 589.815,54 | 589.815,54 | 0,00 |
+| Total de ativos | 154.827.903,13 | 154.827.903,13 | 0,00 |
+| Caixa | 1.430.743,18 | 1.304.576,05 | -126.167,13 |
+| Valores a receber | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 187.545,81 | 61.378,68 | -126.167,13 |
+| Provisões | 861.022,23 | 861.022,23 | 0,00 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 155.925.367,90 | 155.925.367,90 | 0,00 |
+| PL base da cota | 155.210.078,27 | 155.210.078,27 | 0,00 |
+| Cota (8 casas) | 4,95389343 | 4,95389343 | 0,00000000 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 71.950,38374568 | 71.950,38374568 | 0,00000000 |
+| Valor dos resgates cotizados | 356.434,53 | 356.434,53 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 19.326.624,89893239 | 19.326.624,89893239 | 0,00000000 |
-| PL final | 151.333.712,95 | 151.333.712,95 | 0,00 |
+| Quantidade final de cotas | 31.258.977,59177619 | 31.258.977,59177619 | 0,00000000 |
+| PL final | 154.853.643,72 | 154.853.643,72 | 0,00 |
 
 ---
 
@@ -222,46 +215,35 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 **Parecer:** APROVADO (com ressalva)
 
-**Resumo:** Aprovar com ressalva: Ajuste de D−1 liquidado e não baixado; Dividendos de JZEL3 pagos e não baixados.
+**Resumo:** Aprovar com ressalva: Ajuste de D−1 liquidado e não baixado.
 
-**Dificuldade:** dificil · **Cenários:** ajuste_liquidado_nao_baixado, dividendo_recebido_nao_baixado
+**Dificuldade:** media · **Cenários:** ajuste_liquidado_nao_baixado
 
 ### Achado 1: Ajuste de D−1 liquidado e não baixado
 
 - **Gravidade:** ressalva · **Dimensões:** caixa
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não registrou a liquidação financeira do ajuste de 16/06/2026 (R$ -221.064,76) e manteve o valor pendente.
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa não registrou a liquidação financeira do ajuste de 16/06/2026 (R$ -126.167,13) e manteve o valor pendente.
 - **Onde olhar:** Caixa; Valores a receber/pagar — ajuste D−1
 - **Raciocínio do analista:**
-  1. O caixa difere em R$ 221.064,76, e o Beta tem um "ajuste de D−1" pendente no mesmo valor. PL e cota iguais.
+  1. O caixa difere em R$ 126.167,13, e o Alfa tem um "ajuste de D−1" pendente no mesmo valor. PL e cota iguais.
   2. O ajuste de D−1 liquida em D. É questão de baixa, sem efeito no PL.
-- **Ação:** Beta deve baixar o ajuste de D−1 contra o caixa. Sem impacto na cota.
-
-### Achado 2: Dividendos de JZEL3 pagos e não baixados
-
-- **Gravidade:** ressalva · **Dimensões:** caixa
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa não registrou o crédito dos dividendos de JZEL3 pagos hoje e manteve o valor como "a receber".
-- **Onde olhar:** Caixa; Valores a receber; Informações de mercado — eventos
-- **Raciocínio do analista:**
-  1. Caixa do Alfa R$ 196.195,20 menor e valores a receber R$ 196.195,20 maiores. PL e cota iguais.
-  2. Os dividendos de JZEL3 foram pagos hoje. O recebível tem que virar caixa.
-- **Ação:** Alfa deve baixar o recebível e registrar o crédito. Sem impacto na cota; acompanhar em D+1.
+- **Ação:** Alfa deve baixar o ajuste de D−1 contra o caixa. Sem impacto na cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | ambos |
-| caixa | nenhum |
+| caixa | Beta |
 | provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 7,83032287 |
-| Quantidade final de cotas | 19.326.624,89893239 |
-| PL final | R$ 151.333.712,95 |
-| Caixa | R$ 1.961.127,27 |
-| Total de provisões | R$ 903.574,51 |
+| Cota | 4,95389343 |
+| Quantidade final de cotas | 31.258.977,59177619 |
+| PL final | R$ 154.853.643,72 |
+| Caixa | R$ 1.304.576,05 |
+| Total de provisões | R$ 861.022,23 |

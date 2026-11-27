@@ -56,6 +56,7 @@ export interface Referencia { ativo: string; fonte: string; valor: string; obs?:
 export interface Futuro { contrato: string; quantidade: number; ajustePorContrato: number; }
 export interface Mercado {
   cdiAA: number;
+  prazoMedioCarteira?: number;
   ptax?: { compraD: number; vendaD: number; vendaD1: number };
   referencias: Referencia[];
   futuros: Futuro[];
@@ -265,7 +266,7 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
       'despesas não previstas expressamente como encargo',
     ],
     cotizacao: [],
-    cota: 'Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.',
+    cota: 'Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).',
     precificacao: [],
     tributacao: perfil.tributacao,
     especificos: [],
@@ -298,7 +299,7 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
       benchmark: bench === 'CDI' ? '100% do CDI' : bench,
       periodicidade: 'semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte)',
       linhaDagua: 'Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.',
-      metodo: 'Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.',
+      metodo: 'Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.',
     };
     perfCfg.pct = 0.2;
     reg.performance = perfCfg;
@@ -570,7 +571,7 @@ function precificacaoDoTipo(tipo: TipoFundo): string[] {
     INFRA: ['Debêntures incentivadas: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).'],
     PREV: ['Debêntures: taxa indicativa ANBIMA de D.', 'Ações: preço de fechamento da B3 em D.'],
     FIA: ['Ações: preço de fechamento da B3 em D.', 'Eventos societários (dividendos, JCP, desdobramentos, grupamentos) reconhecidos na data "ex".'],
-    FIM_LS: ['Ações: preço de fechamento da B3 em D.', 'Eventos societários reconhecidos na data "ex".', 'Futuros: ajuste diário divulgado pela B3, liquidado em D+1.'],
+    FIM_LS: ['Ações: preço de fechamento da B3 em D.', 'Eventos societários reconhecidos na data "ex".', 'Futuros: ajuste diário divulgado pela B3, liquidado em D+1.', 'Margem depositada em dinheiro na B3 é ativo da classe (valores dados em garantia).'],
     FIM_MACRO: ['Ações: preço de fechamento da B3 em D.', 'Futuros (DI1, DOL, IND): ajuste diário divulgado pela B3, reconhecido em D e liquidado em D+1.', 'Margem depositada em dinheiro na B3 é ativo da classe (valores dados em garantia).'],
     CAMBIAL: ['Futuros de dólar: ajuste diário divulgado pela B3, reconhecido em D e liquidado em D+1.', 'Margem depositada em dinheiro na B3 é ativo da classe (valores dados em garantia).'],
     FIC_FIM: ['Cotas de fundos investidos: cota de D divulgada pelo administrador do investido. Se não divulgada até 20h de D, usa-se a última cota disponível e a cota é reprocessada quando a de D for publicada.'],

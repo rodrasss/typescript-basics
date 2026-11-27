@@ -144,3 +144,18 @@ export function solicitacaoPara(cotizacao: string, cot: number, corridos: boolea
   }
   return null;
 }
+
+// ---------- come-cotas: penúltimo dia útil de maio e de novembro ----------
+export function penultimoDiaUtilDoMes(s: string): string {
+  return diaUtilAnterior(ultimoDiaUtilDoMes(s));
+}
+/** Datas de come-cotas (penúltimo dia útil de maio e de novembro) nos anos informados. */
+export function datasComeCotas(anos: number[]): string[] {
+  return anos.flatMap((a) => ['05', '11'].map((m) => penultimoDiaUtilDoMes(`${a}-${m}-15`)));
+}
+/** Data do come-cotas anterior (seis meses antes) a uma data de come-cotas. */
+export function comeCotasAnterior(data: string): string {
+  const ano = Number(data.slice(0, 4));
+  return data.slice(5, 7) === '05' ? penultimoDiaUtilDoMes(`${ano - 1}-11-15`) : penultimoDiaUtilDoMes(`${ano}-05-15`);
+}
+export const ehDiaDeComeCotas = (s: string): boolean => datasComeCotas([Number(s.slice(0, 4))]).includes(s);

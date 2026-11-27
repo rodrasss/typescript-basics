@@ -61,7 +61,7 @@ Sob a gestão da Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima d
 **Aplicação, resgate e cota**
 
 - Condomínio fechado: sem resgate; liquidez via B3.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
@@ -174,7 +174,7 @@ Nenhum movimento de passivo no dia.
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
 | Provisões | 244.040,18 | 244.040,18 | 0,00 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 259.827.577,47 | 262.895.771,66 | 3.068.194,19 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 259.827.577,47 | 262.895.771,66 | 3.068.194,19 |
 | PL base da cota | 259.817.949,94 | 262.886.144,13 | 3.068.194,19 |
 | Cota (8 casas) | 74,97832882 | 75,86374906 | 0,88542024 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |

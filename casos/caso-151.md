@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-O Paineira FIF Ações é gerido pela Marola Asset, gestora jovem de ações, muito ativa em eventos societários e small caps, em Florianópolis/SC. Criado em 10/10/2018, é um fundo de ações de gestão ativa, concentrado em poucas dezenas de papéis. Público-alvo: público geral. Hoje seus cotistas são clientes de varejo que entraram na alta de 2024. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Larissa. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. Em dias de feed de preços instável, já houve ações com o fechamento do dia anterior. A forma de apropriar as taxas muda de fundo para fundo. A equipe da gestora é considerada muito organizada. No fechamento de ontem (26/05/2026) o fundo tinha PL de R$ 1.016.806.332,79, cota de 12,77724934 e 79.579.438,80865039 cotas. Hoje, quarta-feira, 27/05/2026, é a data-base da validação.
+Quem acompanha a Marola Asset (Florianópolis/SC) conhece o Paineira FIF Ações: a casa é uma gestora jovem de ações, muito ativa em eventos societários e small caps. Criado em 10/10/2018, é um fundo de ações de gestão ativa, concentrado em poucas dezenas de papéis. Público-alvo: público geral. Hoje seus cotistas são clientes de varejo que entraram na alta de 2024. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Larissa. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem aplicações e resgates quase todos os dias. Em dias de feed de preços instável, já houve ações com o fechamento do dia anterior. A carteira tem papéis de empresas que vêm anunciando desdobramentos e bonificações. A área de risco pediu atenção redobrada ao fundo depois de um apontamento de auditoria em 2025 (já regularizado). No fechamento de ontem (26/05/2026) o fundo tinha PL de R$ 30.133.378,64, cota de 23,92673320 e 1.259.402,12474793 cotas. Hoje, quarta-feira, 27/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -12,30 +12,30 @@ O Paineira FIF Ações é gerido pela Marola Asset, gestora jovem de ações, mu
 | Classe | Classe de Ações |
 | Condomínio | aberto |
 | Gestora | Marola Asset (Florianópolis/SC) |
-| PL em D−1 | R$ 1.016.806.332,79 |
-| Cota em D−1 | 12,77724934 |
-| Quantidade de cotas em D−1 | 79.579.438,80865039 |
+| PL em D−1 | R$ 30.133.378,64 |
+| Cota em D−1 | 23,92673320 |
+| Quantidade de cotas em D−1 | 1.259.402,12474793 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,400% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,040% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Taxa de performance**
 
-- 20% sobre o que exceder SMLL; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
+- 20% sobre o que exceder Ibovespa; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
 - Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A cota bruta de performance é o PL antes da provisão de performance (já deduzidas as demais provisões), em reais e centavos, dividido pela quantidade de cotas existentes antes das movimentações do dia. A provisão é revertida quando o excesso diminui.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 35.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
+- Auditoria independente: R$ 27.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 500,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +45,7 @@ O Paineira FIF Ações é gerido pela Marola Asset, gestora jovem de ações, mu
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 928.901.597,38. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 31.085.214,89. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,9 +65,9 @@ O Paineira FIF Ações é gerido pela Marola Asset, gestora jovem de ações, mu
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
-- Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
+- Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).
 - Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
 
 **Precificação dos ativos**
@@ -80,7 +80,7 @@ O Paineira FIF Ações é gerido pela Marola Asset, gestora jovem de ações, mu
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 11,62577215 (cota da última cobrança efetiva, em 31/12/2025).
+- Performance: cota de referência vigente = 20,45177661 (cota da última cobrança efetiva, em 31/12/2025).
 
 ## 3. Informações de mercado do dia
 
@@ -90,23 +90,29 @@ O Paineira FIF Ações é gerido pela Marola Asset, gestora jovem de ações, mu
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| JZEL3 | B3 — preço de fechamento de D | 11,16 |  |
-| KXOB3 | B3 — preço de fechamento de D | 65,47 |  |
-| HZTA3 | B3 — preço de fechamento de D | 37,41 |  |
-| YRBQ3 | B3 — preço de fechamento de D | 52,29 |  |
-| WQLA3 | B3 — preço de fechamento de D | 10,32 |  |
-| YKAP4 | B3 — preço de fechamento de D | 10,75 |  |
-| QXTR3 | B3 — preço de fechamento de D | 90,40 |  |
-| ZFRT3 | B3 — preço de fechamento de D | 92,01 |  |
-| JZEL3 | B3 — preço de fechamento de D−1 | 11,73 |  |
+| JZEL3 | B3 — preço de fechamento de D | 43,69 |  |
+| KXOB3 | B3 — preço de fechamento de D | 34,06 |  |
+| WJMA4 | B3 — preço de fechamento de D | 19,71 |  |
+| ZFRT3 | B3 — preço de fechamento de D | 61,19 |  |
+| YKAP4 | B3 — preço de fechamento de D | 18,17 |  |
+| QXTR3 | B3 — preço de fechamento de D | 74,32 |  |
+| XVRM3 | B3 — preço de fechamento de D | 92,96 |  |
+| VJNR3 | B3 — preço de fechamento de D | 86,60 |  |
+| XVRM3 | B3 — fechamento de D−1 (antes do desdobramento) | 376,79 |  |
+| ZFRT3 | B3 — preço de fechamento de D−1 | 57,78 |  |
+
+**Eventos de ativos**
+
+- XVRM3: desdobramento na proporção 1:4 — ações negociadas "ex-desdobramento" a partir de 27/05/2026 (cada ação vira 4).
 
 **Benchmark**
 
-- Fator acumulado do SMLL de 31/12/2025 até 27/05/2026: 1,07717709
+- Fator acumulado do Ibovespa de 31/12/2025 até 27/05/2026: 1,17286014
 
 ## 4. Comunicações recebidas hoje
 
-- **17:54** — *Distribuidor* — **Material de divulgação**: Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -116,36 +122,36 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 12,66189439 | 12,60811519 | -0,05377920 |
-| Quantidade final de cotas | 79.552.777,83041216 | 79.554.621,12519458 | 1.843,29478242 |
-| PL final | R$ 1.007.288.871,32 | R$ 1.003.033.827,04 | R$ -4.255.044,28 |
-| Caixa | R$ 16.630.681,54 | R$ 16.630.681,54 | R$ 0,00 |
-| Total de provisões | R$ 3.843.429,90 | R$ 2.773.890,49 | R$ -1.069.539,41 |
+| Cota de fechamento | 22,94693818 | 24,31604941 | 1,36911123 |
+| Quantidade final de cotas | 1.266.830,59426308 | 1.259.753,98375150 | -7.076,61051158 |
+| PL final | R$ 29.069.883,33 | R$ 30.632.240,11 | R$ 1.562.356,78 |
+| Caixa | R$ 529.557,59 | R$ 529.557,59 | R$ 0,00 |
+| Total de provisões | R$ 39.734,90 | R$ 143.313,12 | R$ 103.578,22 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 64.870 | 64.870 | 807,246706 | 807,246706 | 52.366.093,82 | 52.366.093,82 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| JZEL3 — Jazê Elétrica S.A. ON | 9.384.663 | 9.384.663 | 11,73 | 11,16 | 110.082.096,99 | 104.732.839,08 | -5.349.257,91 | Alfa: B3 — preço de fechamento (D−1) / Beta: B3 — preço de fechamento D |
-| KXOB3 — Kaxoeira Obras S.A. ON | 1.439.737 | 1.439.737 | 65,47 | 65,47 | 94.259.581,39 | 94.259.581,39 | 0,00 | B3 — preço de fechamento D |
-| HZTA3 — Hortaz Tecnologia S.A. ON | 1.959.716 | 1.959.716 | 37,41 | 37,41 | 73.312.975,56 | 73.312.975,56 | 0,00 | B3 — preço de fechamento D |
-| YRBQ3 — Yrubá Químicos S.A. ON | 2.403.508 | 2.403.508 | 52,29 | 52,29 | 125.679.433,32 | 125.679.433,32 | 0,00 | B3 — preço de fechamento D |
-| WQLA3 — Waqlá Alimentos S.A. ON | 7.103.972 | 7.103.972 | 10,32 | 10,32 | 73.312.991,04 | 73.312.991,04 | 0,00 | B3 — preço de fechamento D |
-| YKAP4 — Ykapé Papel e Celulose S.A. PN | 13.639.626 | 13.639.626 | 10,75 | 10,75 | 146.625.979,50 | 146.625.979,50 | 0,00 | B3 — preço de fechamento D |
-| QXTR3 — Quixadá Transportes S.A. ON | 1.853.679 | 1.853.679 | 90,40 | 90,40 | 167.572.581,60 | 167.572.581,60 | 0,00 | B3 — preço de fechamento D |
-| ZFRT3 — Zafira Frigoríficos S.A. ON | 1.707.415 | 1.707.415 | 92,01 | 92,01 | 157.099.254,15 | 157.099.254,15 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 1.000.310.987,37 | 994.961.729,46 | -5.349.257,91 |  |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 2.208 | 2.208 | 818,386752 | 818,386752 | 1.806.997,95 | 1.806.997,95 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| JZEL3 — Jazê Elétrica S.A. ON | 99.268 | 99.268 | 43,69 | 43,69 | 4.337.018,92 | 4.337.018,92 | 0,00 | B3 — preço de fechamento D |
+| KXOB3 — Kaxoeira Obras S.A. ON | 63.668 | 63.668 | 34,06 | 34,06 | 2.168.532,08 | 2.168.532,08 | 0,00 | B3 — preço de fechamento D |
+| WJMA4 — Banco Wajumá S.A. PN | 238.379 | 238.379 | 19,71 | 19,71 | 4.698.450,09 | 4.698.450,09 | 0,00 | B3 — preço de fechamento D |
+| ZFRT3 — Zafira Frigoríficos S.A. ON | 59.065 | 59.065 | 57,78 | 61,19 | 3.412.775,70 | 3.614.187,35 | 201.411,65 | B3 — preço de fechamento D |
+| YKAP4 — Ykapé Papel e Celulose S.A. PN | 218.801 | 218.801 | 18,17 | 18,17 | 3.975.614,17 | 3.975.614,17 | 0,00 | B3 — preço de fechamento D |
+| QXTR3 — Quixadá Transportes S.A. ON | 29.178 | 29.178 | 74,32 | 74,32 | 2.168.508,96 | 2.168.508,96 | 0,00 | B3 — preço de fechamento D |
+| XVRM3 — Xavantina Mineração S.A. ON | 5.832 | 23.328 | 92,96 | 92,96 | 542.142,72 | 2.168.570,88 | 1.626.428,16 | B3 — preço de fechamento D |
+| VJNR3 — Vajanra Energia S.A. ON | 66.775 | 66.775 | 86,60 | 86,60 | 5.782.715,00 | 5.782.715,00 | 0,00 | B3 — preço de fechamento D |
+| **Total** |  |  |  |  | 28.892.755,59 | 30.720.595,40 | 1.827.839,81 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 11.158.892,93 | 11.158.892,93 |
-| TED recebida — aplicação [APL-1] Cotista 3325 (14:28) | 599.167,99 | 599.167,99 |
-| TED recebida — aplicação [APL-2] Cotista 3332 (11:57) | 868.194,46 | 868.194,46 |
-| TED recebida — aplicação [APL-3] Cotista 3339 (14:00) | 4.004.426,16 | 4.004.426,16 |
-| **Saldo final** | 16.630.681,54 | 16.630.681,54 |
+| Saldo inicial (D−1) | 156.592,69 | 156.592,69 |
+| TED recebida — aplicação [APL-1] Cotista 0406 (09:54) | 145.790,27 | 145.790,27 |
+| TED recebida — aplicação [APL-2] Cotista 0413 (09:20) | 77.352,08 | 77.352,08 |
+| TED recebida — aplicação [APL-3] Cotista 7328 (13:05) | 149.822,55 | 149.822,55 |
+| **Saldo final** | 529.557,59 | 529.557,59 |
 
 ### 5.4 Valores a receber
 
@@ -155,53 +161,58 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 5.471.788,61 | 5.471.788,61 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 372.964,90 | 372.964,90 |
+| RESGATES A PAGAR — Resgates já cotizados e ainda não liquidados | 110.190,67 | 110.190,67 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 41.713,44 | 41.713,44 | 2.420,97 | 2.420,97 | 0,00 | 0,00 | 44.134,41 | 44.134,41 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 951.246,06 | 951.246,06 | 56.099,02 | 56.489,24 | 0,00 | 0,00 | 1.007.345,08 | 1.007.735,30 | 390,22 |
-| TXCUS — Taxa máxima de custódia a pagar | 6.823,37 | 6.823,37 | 403,49 | 403,49 | 0,00 | 0,00 | 7.226,86 | 7.226,86 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 13.888,89 | 13.888,89 | 138,89 | 138,89 | 0,00 | 0,00 | 14.027,78 | 14.027,78 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 935,00 | 935,00 | 55,00 | 55,00 | 0,00 | 0,00 | 990,00 | 990,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 6.550,82 | 6.550,82 | 177,05 | 177,05 | 0,00 | 0,00 | 6.727,87 | 6.727,87 | 0,00 |
-| PERF — Taxa de performance a pagar | 7.819.151,72 | 7.819.151,72 | -5.056.173,82 | -6.126.103,45 | 0,00 | 0,00 | 2.762.977,90 | 1.693.048,27 | -1.069.929,63 |
-| **Total** |  |  |  |  |  |  | 3.843.429,90 | 2.773.890,49 | -1.069.539,41 |
+| TXADM — Taxa de administração a pagar | 2.040,47 | 2.040,47 | 119,58 | 119,58 | 0,00 | 0,00 | 2.160,05 | 2.160,05 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 21.427,29 | 21.427,29 | 1.243,60 | 1.243,60 | 0,00 | 0,00 | 22.670,89 | 22.670,89 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 604,03 | 604,03 | 35,87 | 35,87 | 0,00 | 0,00 | 639,90 | 639,90 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 11.464,29 | 11.464,29 | 107,14 | 107,14 | 0,00 | 0,00 | 11.571,43 | 11.571,43 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 425,00 | 425,00 | 25,00 | 25,00 | 0,00 | 0,00 | 450,00 | 450,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 2.183,61 | 2.183,61 | 59,02 | 59,02 | 0,00 | 0,00 | 2.242,63 | 2.242,63 | 0,00 |
+| PERF — Taxa de performance a pagar | 0,00 | 0,00 | 0,00 | 103.578,22 | 0,00 | 0,00 | 0,00 | 103.578,22 | 103.578,22 |
+| **Total** |  |  |  |  |  |  | 39.734,90 | 143.313,12 | 103.578,22 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
+_Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim do dia, mas não o PL base da cota de hoje; seus efeitos em caixa e em "a pagar" aparecem depois do fechamento (resgate com liquidação no mesmo dia da cotização: a saída de caixa ocorre depois do fechamento da cota)._
+
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 3325 | R$ 599.167,99 | 14:28 | 27/05/2026 | 27/05/2026 | 27/05/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 3332 | R$ 868.194,46 | 11:57 | 27/05/2026 | 27/05/2026 | 27/05/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista 3339 | R$ 4.004.426,16 | 14:00 | 27/05/2026 | 27/05/2026 | 27/05/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 3346 | 284.378,84250639 cotas |  | 27/04/2026 | 27/05/2026 | 29/05/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista 3353 | 174.428,26185348 cotas |  | 27/04/2026 | 27/05/2026 | 29/05/2026 | sim | sim |  |
+| APL-1 | aplicacao | Cotista 0406 | R$ 145.790,27 | 09:54 | 27/05/2026 | 27/05/2026 | 27/05/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 0413 | R$ 77.352,08 | 09:20 | 27/05/2026 | 27/05/2026 | 27/05/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 0420 | 3.991,11643293 cotas |  | 26/05/2026 | 27/05/2026 | 29/05/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 0427 | 4.833,77635559 cotas |  | 26/05/2026 | 27/05/2026 | 29/05/2026 | sim | sim |  |
+| PEN-1 | resgate | Cotista 0434 | 2.133,59427812 cotas (R$ 51.049,94) |  | 25/05/2026 | 26/05/2026 | 28/05/2026 | não | não | cotizado em 26/05/2026 pela cota de 23,92673320; liquidação em 28/05/2026 (ainda a pagar) |
+| PEN-2 | resgate | Cotista 0441 | 2.471,74270274 cotas (R$ 59.140,73) |  | 25/05/2026 | 26/05/2026 | 28/05/2026 | não | não | cotizado em 26/05/2026 pela cota de 23,92673320; liquidação em 28/05/2026 (ainda a pagar) |
+| APL-3 | aplicacao | Cotista 7328 | R$ 149.822,55 | 13:05 | 27/05/2026 | 27/05/2026 | 27/05/2026 | sim | não |  |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 1.000.310.987,37 | 994.961.729,46 | -5.349.257,91 |
-| Caixa | 16.630.681,54 | 16.630.681,54 | 0,00 |
+| Total de ativos | 28.892.755,59 | 30.720.595,40 | 1.827.839,81 |
+| Caixa | 529.557,59 | 529.557,59 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 5.471.788,61 | 5.471.788,61 | 0,00 |
-| Provisões | 3.843.429,90 | 2.773.890,49 | -1.069.539,41 |
-| PL antes das apropriações do dia (saldos anteriores das provisões) | 1.010.448.722,72 | 1.005.099.464,81 | -5.349.257,91 |
-| PL base da cota | 1.007.626.450,40 | 1.003.346.731,90 | -4.279.718,50 |
-| Cota (8 casas) | 12,66189439 | 12,60811519 | -0,05377920 |
-| Aplicações convertidas | 5.471.788,61 | 5.471.788,61 | 0,00 |
-| Cotas emitidas | 432.146,12612164 | 433.989,42090406 | 1.843,29478242 |
-| Cotas resgatadas | 458.807,10435987 | 458.807,10435987 | 0,00000000 |
-| Valor dos resgates cotizados | 5.809.367,10 | 5.784.692,82 | -24.674,28 |
+| Valores a pagar | 483.155,57 | 483.155,57 | 0,00 |
+| Provisões | 39.734,90 | 143.313,12 | 103.578,22 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 28.901.012,92 | 30.728.852,73 | 1.827.839,81 |
+| PL base da cota | 28.899.422,71 | 30.623.684,30 | 1.724.261,59 |
+| Cota (8 casas) | 22,94693818 | 24,31604941 | 1,36911123 |
+| Aplicações convertidas | 372.964,90 | 223.142,35 | -149.822,55 |
+| Cotas emitidas | 16.253,36230367 | 9.176,75179209 | -7.076,61051158 |
+| Cotas resgatadas | 8.824,89278852 | 8.824,89278852 | 0,00000000 |
+| Valor dos resgates cotizados | 202.504,27 | 214.586,52 | 12.082,25 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 79.552.777,83041216 | 79.554.621,12519458 | 1.843,29478242 |
-| PL final | 1.007.288.871,32 | 1.003.033.827,04 | -4.255.044,28 |
+| Quantidade final de cotas | 1.266.830,59426308 | 1.259.753,98375150 | -7.076,61051158 |
+| PL final | 29.069.883,33 | 30.632.240,11 | 1.562.356,78 |
 
 ---
 
@@ -209,39 +220,51 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Preço de JZEL3 desatualizado; taxa de gestão com método exponencial.
+**Resumo:** Reprovar até o ajuste: Preço de ZFRT3 desatualizado; Aplicação de Cotista 7328 não convertida; Desdobramento de XVRM3 não aplicado.
 
-**Dificuldade:** media · **Cenários:** preco_acao_d1, metodo_exponencial_vs_linear
+**Dificuldade:** dificil · **Cenários:** preco_acao_d1, aplicacao_nao_convertida, desdobramento_nao_refletido
 
-### Achado 1: Preço de JZEL3 desatualizado
+### Achado 1: Preço de ZFRT3 desatualizado
 
 - **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa manteve o fechamento de D−1 de JZEL3 (falha na carga de preços).
-- **Onde olhar:** Carteira — linha JZEL3; Informações de mercado — fechamento B3 de D e D−1
+- **Causa raiz:** Alfa manteve o fechamento de D−1 de ZFRT3 (falha na carga de preços).
+- **Onde olhar:** Carteira — linha ZFRT3; Informações de mercado — fechamento B3 de D e D−1
 - **Raciocínio do analista:**
-  1. Quantidade igual nos dois lados (9.384.663 ações), preço diferente: 11,16 (Beta) contra 11,73 (Alfa).
-  2. O fechamento B3 de D é 11,16, e 11,73 é exatamente o fechamento de D−1. O Alfa não atualizou o preço do dia.
-  3. Impacto: R$ 5.349.257,91 no PL do Alfa.
-- **Ação:** Alfa deve recarregar o fechamento de D de JZEL3 e reprocessar a cota.
+  1. Quantidade igual nos dois lados (59.065 ações), preço diferente: 61,19 (Beta) contra 57,78 (Alfa).
+  2. O fechamento B3 de D é 61,19, e 57,78 é exatamente o fechamento de D−1. O Alfa não atualizou o preço do dia.
+  3. Impacto: R$ -201.411,65 no PL do Alfa.
+- **Ação:** Alfa deve recarregar o fechamento de D de ZFRT3 e reprocessar a cota.
 
-### Achado 2: taxa de gestão com método exponencial
+### Achado 2: Aplicação de Cotista 7328 não convertida
 
-- **Gravidade:** erro · **Dimensões:** provisoes
+- **Gravidade:** erro · **Dimensões:** cota
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** O passivo do Beta recebeu os recursos de Cotista 7328 (13:05) mas deixou a aplicação para D+1, como se tivesse chegado após o corte.
+- **Onde olhar:** Movimentações de passivo; Quantidade final de cotas; Regulamento — horário de corte
+- **Raciocínio do analista:**
+  1. Cota, caixa e PL-base batem, mas a quantidade final de cotas do Beta é menor e as aplicações a converter continuam abertas.
+  2. A TED de Cotista 7328 entrou às 13:05, antes do corte de 14:00: pelo regulamento converte em D+0.
+  3. O impacto é no passivo: R$ 149.822,55 que deveriam ter virado cotas hoje.
+- **Ação:** Beta deve converter a aplicação de Cotista 7328 pela cota de D. Sem isso o passivo não pode ser aprovado.
+
+### Achado 3: Desdobramento de XVRM3 não aplicado
+
+- **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa apropria a taxa de gestão pelo método exponencial ((1+taxa)^(1/252)−1); o regulamento prevê o linear.
-- **Onde olhar:** Provisões — TXGES; Regulamento — método de apropriação
+- **Causa raiz:** Alfa usou o preço ex-desdobramento mas manteve a quantidade antiga de XVRM3.
+- **Onde olhar:** Carteira — XVRM3 (quantidade); Informações de mercado — eventos societários
 - **Raciocínio do analista:**
-  1. Diferença pequena e constante na apropriação de taxa de gestão, sempre na mesma direção.
-  2. Testei os dois métodos sobre o PL de D−1: o linear e o exponencial geram exatamente os dois valores encontrados. O regulamento define qual vale.
-  3. Mesmo pequena, é diferença de parametrização: acumula e pode gerar questionamento de cobrança acima do regulamento.
-- **Ação:** Alfa deve alinhar o método ao regulamento.
+  1. Em XVRM3 o preço é o mesmo nos dois lados (92,96), mas a quantidade é 23.328 (Beta) contra 5.832 (Alfa), exatamente 1/4.
+  2. Há evento de desdobramento 1:4 com data "ex" em D. O preço de D já é pós-desdobramento, então a quantidade tem que ser multiplicada por 4.
+  3. Sem o ajuste, o Alfa subavalia o ativo em R$ 1.626.428,16.
+- **Ação:** Alfa deve processar o evento de desdobramento (quantidade × 4) em XVRM3 e reprocessar a cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
+| cota | nenhum |
 | caixa | ambos |
 | provisoes | Beta |
 
@@ -249,8 +272,12 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 | Item | Valor |
 |---|---|
-| Cota | 12,60811519 |
-| Quantidade final de cotas | 79.554.621,12519458 |
-| PL final | R$ 1.003.033.827,04 |
-| Caixa | R$ 16.630.681,54 |
-| Total de provisões | R$ 2.773.890,49 |
+| Cota | 24,31604941 |
+| Quantidade final de cotas | 1.265.915,45132683 |
+| PL final | R$ 30.782.062,66 |
+| Caixa | R$ 529.557,59 |
+| Total de provisões | R$ 143.313,12 |
+
+### Armadilhas deste caso
+
+- Cota igual não basta: conferir a quantidade final de cotas e o passivo.
