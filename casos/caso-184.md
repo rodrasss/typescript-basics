@@ -18,7 +18,7 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Seriguela II FIF M
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -201,6 +201,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 66.649.616,28442873 | 66.649.559,44905169 | -56,83537704 |
 | PL final | 151.637.404,61 | 151.652.032,18 | 14.627,57 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

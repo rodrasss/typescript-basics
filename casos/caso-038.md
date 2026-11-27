@@ -18,7 +18,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Ingá Advisory FI
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -196,6 +196,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 7.768.884,94731872 | 7.768.881,26768308 | -3,67963564 |
 | PL final | 57.713.893,99 | 57.746.001,62 | 32.107,63 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

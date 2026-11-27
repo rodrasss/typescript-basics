@@ -18,7 +18,7 @@ O Aroeira II Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestã
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -182,6 +182,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 6.007.350,49544652 | 6.007.350,49544652 | 0,00000000 |
 | PL final | 226.869.624,89 | 224.907.278,67 | -1.962.346,22 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

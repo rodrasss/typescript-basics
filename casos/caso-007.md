@@ -18,7 +18,7 @@ Sob a gestão da Pedra Branca Gestão, multi-family office que estrutura fundos 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -187,11 +187,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 101.859.898,06100115 | 101.859.898,10085899 | 0,03985783 |
 | PL final | 430.524.557,27 | 430.524.489,20 | -68,07 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** PENDENTE (com ressalva)
+**Parecer:** PENDENTE
 
 **Resumo:** Deixar pendente e escalar: Tarifa de pacote PJ debitada do fundo; Pagamento de resgate não baixado no controle Alfa.
 

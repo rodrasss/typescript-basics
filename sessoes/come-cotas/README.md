@@ -24,6 +24,8 @@ A **cota costuma bater** e a **quantidade de cotas** é que diverge. Por isso a 
 - quantidade de cotas existentes ao fim do dia;
 - IR e cotas retiradas calculados por cada lado.
 
+A posição **CT-HJ**, quando o dia tem aplicações, reúne as cotas emitidas hoje: referência igual à cota de D, sem ganho. Quem estava no fundo no último come-cotas tem a mesma cota de referência (a cota daquele dia); só quem aplicou depois tem referência própria.
+
 A entrada traz também o **prazo médio da carteira** (que define a alíquota: 15% acima de 365 dias, 20% até 365) e a regra do come-cotas no regulamento. Em parte dos casos há uma "memória do come-cotas" com a alíquota e a cota de conversão usadas por cada lado; nos demais, o agente precisa recalcular.
 
 A regra de cálculo (por cotista tributado):
@@ -52,6 +54,10 @@ cotas retiradas = IR ÷ cota de D                   (truncadas na 8ª casa)
 Cerca de 30% dos casos de erro trazem um segundo achado, sempre de caixa ou de registro (que não mexe na cota), para a conta do come-cotas continuar exata e o dia continuar parecendo um dia real. Os 6 casos corretos não têm combinação.
 
 O parecer esperado é **reprovado** em todo erro de come-cotas (muda a quantidade de cotas e o PL final) e **aprovado** nos casos corretos.
+
+## Validação com agentes
+
+2 agentes resolveram 12 casos da sessão às cegas: **parecer certo em 12 de 12 e 14 de 14 achados, sem falso positivo** (detalhes e ajustes feitos em [`avaliacao/rodada-3-come-cotas.md`](../../avaliacao/rodada-3-come-cotas.md)). Os ajustes que as observações dos agentes motivaram já estão nesta versão dos casos; ela ainda não foi reavaliada às cegas.
 
 ## Arquivos
 

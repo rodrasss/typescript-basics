@@ -18,7 +18,7 @@ Quem acompanha a Garoa Investimentos (São Paulo/SP) conhece o Jatobá FIC FIF M
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -190,6 +190,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 153.412.109,03456733 | 153.412.143,70799774 | 34,67343041 |
 | PL final | 954.461.358,56 | 954.435.353,08 | -26.005,48 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

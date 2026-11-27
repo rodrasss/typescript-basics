@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Umbuzeiro II FIF RF Crédito Privado LP: a casa é uma gestora gaúcha conservadora, focada em crédito privado de emissores de primeira linha. Criado em 10/12/2012, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são cerca de 6 mil cotistas qualificados via assessorias. Ao longo da vida, o fundo mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge e teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. No fechamento de ontem (28/05/2025) o fundo tinha PL de R$ 1.038.918.607,29, cota de 2,47516315 e 419.737.423,40699750 cotas. Hoje, quinta-feira, 29/05/2025, é a data-base da validação.
+Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Umbuzeiro II FIF RF Crédito Privado LP: a casa é uma gestora gaúcha conservadora, focada em crédito privado de emissores de primeira linha. Criado em 10/12/2012, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são cerca de 6 mil cotistas qualificados via assessorias. Ao longo da vida, o fundo mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge e teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. Dia de come-cotas é sempre sensível para a operação. A gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. No fechamento de ontem (28/05/2025) o fundo tinha PL de R$ 1.038.918.607,29, cota de 2,47516315 e 419.737.423,40699750 cotas. Hoje, quinta-feira, 29/05/2025, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -18,7 +18,7 @@ Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Umbuzeiro II F
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -95,8 +95,7 @@ Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Umbuzeiro II F
 ## 4. Comunicações recebidas hoje
 
 - **08:20** — *Passivo/escrituração* — **Come-cotas de hoje**: Hoje (29/05/2025) é dia de come-cotas deste fundo, conforme o regulamento (penúltimo dia útil de maio).
-- **10:08** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
-- **19:08** — *Gestora — mesa* — **Boleta (atrasada, desculpem)**: Segue boleta de hoje: VENDA de 1741 LFT 01/03/2029 @ 18.107,533164, executada às 15:20, contraparte confirmada no SELIC.
+- **19:12** — *Gestora — mesa* — **Boleta (atrasada, desculpem)**: Segue boleta de hoje: VENDA de 3489 LFT 01/03/2029 @ 18.110,915224, executada às 15:46, contraparte confirmada no SELIC.
 
 ## 5. Batimento Alfa × Beta
 
@@ -106,24 +105,24 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 2,47622441 | 2,47624858 | 0,00002417 |
-| Quantidade final de cotas | 418.152.519,74421620 | 413.189.545,63787264 | -4.962.974,10634357 |
-| PL final | R$ 1.035.439.476,49 | R$ 1.023.160.025,66 | R$ -12.279.450,83 |
-| Caixa | R$ 46.080.065,38 | R$ 14.554.850,14 | R$ -31.525.215,24 |
+| Cota de fechamento | 2,47622825 | 2,47624858 | 0,00002033 |
+| Quantidade final de cotas | 413.258.493,01179713 | 418.152.506,72718300 | 4.894.013,71538585 |
+| PL final | R$ 1.023.322.354,95 | R$ 1.035.449.551,01 | R$ 12.127.196,06 |
+| Caixa | R$ 77.743.833,36 | R$ 14.554.850,14 | R$ -63.188.983,22 |
 | Total de provisões | R$ 605.269,51 | R$ 605.269,51 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 11.911 | 13.652 | 18.113,360094 | 18.113,360094 | 215.748.232,08 | 247.283.592,00 | 31.535.359,92 | ANBIMA — taxa indicativa D |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 10.163 | 13.652 | 18.113,360094 | 18.113,360094 | 184.086.078,64 | 247.283.592,00 | 63.197.513,36 | ANBIMA — taxa indicativa D |
 | COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 100.105 | 100.105 | 790,504093 | 790,504093 | 79.133.412,23 | 79.133.412,23 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
 | CDB PIRACE 2029 — CDB Banco Piracema S.A. — 112% do CDI — venc. 2029 | 89.788 | 89.788 | 1.101,667211 | 1.101,667211 | 98.916.495,54 | 98.916.495,54 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
 | ATRI21 — Debênture Agroindustrial Três Rios S.A. — CDI + 2,30% | 154.767 | 154.767 | 1.150,439851 | 1.150,439851 | 178.050.124,42 | 178.050.124,42 | 0,00 | ANBIMA — taxa indicativa D |
 | EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 150.100 | 150.100 | 1.120,313496 | 1.120,313496 | 168.159.055,75 | 168.159.055,75 | 0,00 | ANBIMA — taxa indicativa D |
 | LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 87.699 | 87.699 | 1.127,917074 | 1.127,917074 | 98.917.199,47 | 98.917.199,47 | 0,00 | ANBIMA — taxa indicativa D |
 | VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 159.235 | 159.235 | 993,921330 | 993,921330 | 158.267.062,98 | 158.267.062,98 | 0,00 | ANBIMA — taxa indicativa D |
-| **Total** |  |  |  |  | 997.191.582,47 | 1.028.726.942,39 | 31.535.359,92 |  |
+| **Total** |  |  |  |  | 965.529.429,03 | 1.028.726.942,39 | 63.197.513,36 |  |
 
 ### 5.3 Caixa
 
@@ -132,8 +131,8 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | Saldo inicial (D−1) | 11.252.526,73 | 11.252.526,73 |
 | TED recebida — aplicação [APL-1] Cotista 1344 (12:48) | 1.427.834,98 | 1.427.834,98 |
 | TED recebida — aplicação [APL-2] Cotista 1351 (10:03) | 1.874.488,43 | 1.874.488,43 |
-| Venda definitiva de 1741 LFT 01/03/2029 @ 18.107,533164 (liquidação SELIC D+0) | 31.525.215,24 | — |
-| **Saldo final** | 46.080.065,38 | 14.554.850,14 |
+| Venda definitiva de 3489 LFT 01/03/2029 @ 18.110,915224 (liquidação SELIC D+0) | 63.188.983,22 | — |
+| **Saldo final** | 77.743.833,36 | 14.554.850,14 |
 
 ### 5.4 Valores a receber
 
@@ -183,37 +182,42 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 997.191.582,47 | 1.028.726.942,39 | 31.535.359,92 |
-| Caixa | 46.080.065,38 | 14.554.850,14 | -31.525.215,24 |
+| Total de ativos | 965.529.429,03 | 1.028.726.942,39 | 63.197.513,36 |
+| Caixa | 77.743.833,36 | 14.554.850,14 | -63.188.983,22 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 3.302.323,41 | 3.302.323,41 | 0,00 |
 | Provisões | 605.269,51 | 605.269,51 | 0,00 |
-| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.039.392.552,02 | 1.039.402.696,70 | 10.144,68 |
-| PL base da cota | 1.039.364.054,93 | 1.039.374.199,61 | 10.144,68 |
-| Cota (8 casas) | 2,47622441 | 2,47624858 | 0,00002417 |
+| PL antes das apropriações do dia (deduzidos os saldos anteriores das provisões, exceto a performance) | 1.039.394.166,56 | 1.039.402.696,70 | 8.530,14 |
+| PL base da cota | 1.039.365.669,47 | 1.039.374.199,61 | 8.530,14 |
+| Cota (8 casas) | 2,47622825 | 2,47624858 | 0,00002033 |
 | Aplicações convertidas | 3.302.323,41 | 3.302.323,41 | 0,00 |
-| Cotas emitidas | 1.333.612,33200991 | 1.333.599,31497668 | -13,01703323 |
+| Cotas emitidas | 1.333.610,26391649 | 1.333.599,31497668 | -10,94893981 |
 | Cotas resgatadas | 2.918.515,99479120 | 2.918.515,99479120 | 0,00000000 |
-| Valor dos resgates cotizados | 7.226.900,55 | 7.226.971,08 | 70,53 |
-| IR de come-cotas | 0,00 | 12.289.525,35 | 12.289.525,35 |
-| Cotas retiradas (come-cotas) | 0,00000000 | 4.962.961,08931033 | 4.962.961,08931033 |
-| Quantidade final de cotas | 418.152.519,74421620 | 413.189.545,63787264 | -4.962.974,10634357 |
-| PL final | 1.035.439.476,49 | 1.023.160.025,66 | -12.279.450,83 |
+| Valor dos resgates cotizados | 7.226.911,76 | 7.226.971,08 | 59,32 |
+| IR de come-cotas | 12.118.722,13 | 0,00 | -12.118.722,13 |
+| Cotas retiradas (come-cotas) | 4.894.024,66432565 | 0,00000000 | -4.894.024,66432565 |
+| Quantidade final de cotas | 413.258.493,01179713 | 418.152.506,72718300 | 4.894.013,71538585 |
+| PL final | 1.023.322.354,95 | 1.035.449.551,01 | 12.127.196,06 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ### 5.9 Come-cotas (hoje é dia de come-cotas)
 
 | Posição | Cotista | Tratamento | Referência | Qtd de cotas Alfa | Qtd de cotas Beta | Cota de referência Alfa | Cota de referência Beta | IR Alfa | IR Beta | Cotas retiradas Alfa | Cotas retiradas Beta |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| CT-01 | Cotista 4824 | tributado | último come-cotas em 28/11/2024 | não processado | 131.968.931,12309894 | 2,32953840 | 2,32953840 | não processado | 3.872.237,13 | não processado | 1.563.751,37830467 |
-| CT-02 | Cotista 2233 | tributado | último come-cotas em 28/11/2024 | não processado | 138.617.555,98006117 | 2,33028285 | 2,33028285 | não processado | 4.046.682,55 | não processado | 1.634.198,83717813 |
-| CT-03 | Cotista 3565 | tributado | último come-cotas em 28/11/2024 | não processado | 75.351.081,71223837 | 2,32675891 | 2,32675891 | não processado | 2.252.841,67 | não processado | 909.780,09566390 |
-| CT-04 | Cotista 8180 | tributado | último come-cotas em 28/11/2024 | não processado | 72.214.937,91178447 | 2,32961936 | 2,32961936 | não processado | 2.117.764,00 | não processado | 855.230,77816363 |
-| **Total** |  |  |  |  |  |  |  | 0,00 | 12.289.525,35 | 0,00000000 | 4.962.961,08931033 |
+| CT-01 | Cotista 4824 | tributado | último come-cotas em 28/11/2024 | 131.548.047,17929230 | não processado | 2,33085670 | 2,33085670 | 3.824.668,70 | não processado | 1.544.554,18235374 | não processado |
+| CT-02 | Cotista 6945 | tributado | último come-cotas em 28/11/2024 | 138.175.467,80714640 | não processado | 2,33085670 | 2,33085670 | 4.017.356,39 | não processado | 1.622.369,17780095 | não processado |
+| CT-03 | Cotista 2233 | tributado | último come-cotas em 28/11/2024 | 75.110.767,11567958 | não processado | 2,33085670 | 2,33085670 | 2.183.793,73 | não processado | 881.903,24538943 | não processado |
+| CT-04 | Cotista 6129 | tributado | último come-cotas em 28/11/2024 | 71.984.625,31008804 | não processado | 2,33085670 | 2,33085670 | 2.092.903,31 | não processado | 845.198,05878153 | não processado |
+| CT-HJ | Aplicações convertidas hoje | tributado | aplicação em 29/05/2025 | 1.333.610,26391649 | não processado | 2,47622825 | 2,47624858 | 0,00 | não processado | 0,00000000 | não processado |
+| **Total** |  |  |  |  |  |  |  | 12.118.722,13 | 0,00 | 4.894.024,66432565 | 0,00000000 |
+
+_As posições agrupam todos os cotistas do fundo por situação tributária e por cota de referência, e somam a quantidade de cotas existente ao fim do dia; os identificadores não são os da seção 5.7. Quem estava no fundo no último come-cotas tem a mesma cota de referência (a cota daquele dia). A posição CT-HJ, quando existe, reúne as cotas emitidas hoje: referência igual à cota de D, sem ganho._
 
 **Memória do come-cotas informada por cada lado**
 
-- Alfa: come-cotas não processado hoje
-- Beta: alíquota 20%; IR convertido em cotas pela cota de D (2,47624858)
+- Alfa: alíquota 20%; IR convertido em cotas pela cota de D (2,47622825)
+- Beta: come-cotas não processado hoje
 
 ---
 
@@ -228,32 +232,32 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 ### Achado 1: Come-cotas não processado
 
 - **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa não processou o come-cotas de 29/05/2025.
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta não processou o come-cotas de 29/05/2025.
 - **Onde olhar:** Come-cotas (posição por cotista); Quantidade final de cotas; Regulamento — come-cotas; Comunicações — passivo
 - **Raciocínio do analista:**
-  1. A cota é igual, mas a quantidade final de cotas do Alfa é 4.962.193,38214179 cotas maior: ele não retirou cotas nem calculou IR (R$ 12.287.504,38 no Beta).
-  2. Hoje é o penúltimo dia útil de maio, dia de come-cotas pelo regulamento. Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = 20% × ganho; cotas retiradas = IR ÷ cota de D): o total bate com o Beta.
+  1. A cota é igual, mas a quantidade final de cotas do Beta é 4.894.024,66432565 cotas maior: ele não retirou cotas nem calculou IR (R$ 12.118.722,13 no Alfa).
+  2. Hoje é o penúltimo dia útil de maio, dia de come-cotas pelo regulamento. Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = 20% × ganho; cotas retiradas = IR ÷ cota de D): o total bate com o Alfa.
   3. Sem o come-cotas o IR não é retido no prazo e as posições dos cotistas ficam erradas.
-- **Ação:** Alfa deve processar o come-cotas (retirada de cotas e IR a recolher) antes de fechar o passivo.
+- **Ação:** Beta deve processar o come-cotas (retirada de cotas e IR a recolher) antes de fechar o passivo.
 
 ### Achado 2: Venda de LFT 01/03/2029 não processada
 
 - **Gravidade:** erro · **Dimensões:** caixa, cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não processou a venda de 1741 LFT 01/03/2029, informada pela gestora às 19:08 (depois do corte operacional), embora executada e liquidada em D.
+- **Causa raiz:** Beta não processou a venda de 3489 LFT 01/03/2029, informada pela gestora às 19:12 (depois do corte operacional), embora executada e liquidada em D.
 - **Onde olhar:** Carteira — LFT 01/03/2029 (quantidade); Caixa — lançamentos; Comunicações — boleta da gestora
 - **Raciocínio do analista:**
-  1. O Beta tem 1741 LFT 01/03/2029 a mais e R$ 31.525.215,24 a menos de caixa. As duas diferenças quase se anulam, sobra R$ 10.144,69 no PL (preço de fechamento menos preço da operação).
+  1. O Beta tem 3489 LFT 01/03/2029 a mais e R$ 63.188.983,22 a menos de caixa. As duas diferenças quase se anulam, sobra R$ 8.530,15 no PL (preço de fechamento menos preço da operação).
   2. A boleta chegou tarde, mas a operação foi executada e liquidada em D, com confirmação no SELIC. Fato econômico de D entra na cota de D.
   3. O PL quase bate, mas a carteira e o caixa ficam errados, e o enquadramento e a liquidez de amanhã partiriam da posição errada.
-- **Ação:** Beta deve incluir a venda (baixa de 1741 LFT 01/03/2029 e crédito de R$ 31.525.215,24) e reprocessar. Reforçar com a gestora o horário limite de boletas.
+- **Ação:** Beta deve incluir a venda (baixa de 3489 LFT 01/03/2029 e crédito de R$ 63.188.983,22) e reprocessar. Reforçar com a gestora o horário limite de boletas.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | nenhum |
+| cota | Alfa |
 | caixa | Alfa |
 | provisoes | ambos |
 
@@ -261,8 +265,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 
 | Item | Valor |
 |---|---|
-| Cota | 2,47622441 |
-| Quantidade final de cotas | 413.190.326,36207443 |
-| PL final | R$ 1.023.151.972,11 |
-| Caixa | R$ 46.080.065,38 |
+| Cota | 2,47622825 |
+| Quantidade final de cotas | 413.258.493,01179713 |
+| PL final | R$ 1.023.322.354,95 |
+| Caixa | R$ 77.743.833,36 |
 | Total de provisões | R$ 605.269,51 |

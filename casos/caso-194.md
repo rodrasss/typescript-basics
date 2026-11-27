@@ -18,7 +18,7 @@ Quem acompanha a Coivara Partners (São Paulo/SP) conhece o Tangará Prime FIP M
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -172,6 +172,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 246.508,60378168 | 246.508,60378168 | 0,00000000 |
 | PL final | 239.634.441,99 | 239.634.441,99 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ O Arara Azul II FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -186,6 +186,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 37.537.084,75221802 | 37.537.128,22506536 | 43,47284734 |
 | PL final | 81.458.704,73 | 81.445.105,52 | -13.599,21 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

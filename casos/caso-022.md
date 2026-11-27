@@ -18,7 +18,7 @@ Quem acompanha a Marola Asset (Florianópolis/SC) conhece o Ingá Estratégia FI
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -214,6 +214,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 8.444.964,94879486 | 8.445.621,36662083 | 656,41782597 |
 | PL final | 54.780.040,44 | 50.277.068,36 | -4.502.972,08 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -162,9 +162,11 @@ const CC05: Cenario = {
   preparar: (c) => prepararComeCotas(c, { aplicacaoRecente: true }),
   aplicar: (c) => {
     const { errado, certo, ladoErrado, ladoCerto } = sortear(c);
-    const alvo = errado.comeCotas!.posicoes.find((p) => p.origemReferencia === 'aplicação')!;
+    const alvo = errado.comeCotas!.posicoes.find((p) => p.origemReferencia === 'aplicação' && !p.aplicacoesDoDia)!;
     const certaRef = alvo.cotaReferencia;
-    alvo.cotaReferencia = truncar8(certaRef * (1 - entre(c.rng, 0.02, 0.06)));
+    const ultimo = errado.comeCotas!.posicoes.find((p) => p.origemReferencia === 'último come-cotas');
+    // o erro típico: usar a referência do último come-cotas (a mesma das demais posições) numa posição com aplicação posterior
+    alvo.cotaReferencia = ultimo ? ultimo.cotaReferencia : truncar8(certaRef * (1 - entre(c.rng, 0.02, 0.06)));
     const { rc, re } = avaliar(c, certo, errado);
     const dc = det(rc, alvo.id);
     const de = det(re, alvo.id);
@@ -174,7 +176,7 @@ const CC05: Cenario = {
       evidencias: ['Come-cotas (cota de referência por posição)', 'Regulamento — cota de referência', 'Quantidade final de cotas'],
       raciocinio: [
         `Só a posição ${alvo.id} diverge: IR de ${fmtR(de.ir)} no ${ladoErrado} contra ${fmtR(dc.ir)} no ${ladoCerto}; as demais posições batem.`,
-        `A referência de ${alvo.id} é uma aplicação de ${fmtData(alvo.dataReferencia)}, feita depois do último come-cotas. Pelo regulamento, vale a cota da aplicação (${fmtN(certaRef, 8)}, como no ${ladoCerto}); o ${ladoErrado} usou ${fmtN(alvo.cotaReferencia, 8)}, menor, o que aumenta o ganho tributado.`,
+        `A referência de ${alvo.id} é uma aplicação de ${fmtData(alvo.dataReferencia)}, feita depois do último come-cotas. Pelo regulamento, vale a cota da aplicação (${fmtN(certaRef, 8)}, como no ${ladoCerto}); o ${ladoErrado} usou ${fmtN(alvo.cotaReferencia, 8)}, que é a referência do último come-cotas${ultimo ? ' (a mesma das posições sem aplicação recente)' : ''} e é menor, o que aumenta o ganho tributado.`,
         `Recalculei ${alvo.id} (${fraseRecalculo(c)}): ${fmtR(dc.ir)} de IR e ${fmtN(dc.cotasRetiradas, 8)} cotas retiradas. O ${ladoErrado} retirou ${fmtN(de.cotasRetiradas - dc.cotasRetiradas, 8)} cotas a mais do cotista.`,
       ],
       acao: `${ladoErrado} deve corrigir a cota de referência de ${alvo.id} para ${fmtN(certaRef, 8)} e devolver ${fmtN(de.cotasRetiradas - dc.cotasRetiradas, 8)} cotas ao cotista.`,

@@ -18,7 +18,7 @@ Quem acompanha a Remanso Asset (Curitiba/PR) conhece o Jacarandá III FIE FIF Pr
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/02/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -194,11 +194,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 167.566.128,88028430 | 167.566.061,01109540 | -67,86918890 |
 | PL final | 379.460.441,11 | 379.476.233,01 | 15.791,90 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** REPROVADO
 
 **Resumo:** Reprovar até o ajuste: Taxa de gestão não apropriada hoje; Liquidação de compra de XVRM3 antecipada no controle Alfa; Venda de LFT 01/03/2029 não processada.
 

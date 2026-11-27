@@ -18,7 +18,7 @@ Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestr
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -203,6 +203,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 149.145.893,31739458 | 149.145.900,86297566 | 7,54558107 |
 | PL final | 263.929.534,81 | 263.927.704,71 | -1.830,10 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

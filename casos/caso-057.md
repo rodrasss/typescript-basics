@@ -18,7 +18,7 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Carcará Família FIF R
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -210,6 +210,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 38.878.393,37395239 | 38.369.577,95232894 | -508.815,42162345 |
 | PL final | 119.443.609,47 | 117.885.420,50 | -1.558.188,97 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

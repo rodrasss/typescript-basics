@@ -18,7 +18,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Quaresmeira Insti
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -193,6 +193,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 143.826.571,82335597 | 143.826.571,82335597 | 0,00000000 |
 | PL final | 453.166.692,84 | 453.036.923,87 | -129.768,97 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

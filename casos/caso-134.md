@@ -18,7 +18,7 @@ O Canjerana Estratégia FIP Multiestratégia é gerido pela Varanda Capital, ges
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/03/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -170,6 +170,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 271.326,88404927 | 271.326,88404927 | 0,00000000 |
 | PL final | 464.183.926,86 | 476.670.458,54 | 12.486.531,68 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

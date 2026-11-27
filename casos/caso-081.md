@@ -18,7 +18,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -212,6 +212,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 25.976.142,15119906 | 25.977.691,23208284 | 1.549,08088378 |
 | PL final | 157.839.807,44 | 156.778.937,74 | -1.060.869,70 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

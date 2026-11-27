@@ -18,7 +18,7 @@ O Guará Advisory FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -203,11 +203,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 24.862.074,39443521 | 24.664.108,24156100 | -197.966,15287421 |
 | PL final | 54.875.455,99 | 54.438.506,01 | -436.949,98 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** REPROVADO
 
 **Resumo:** Reprovar até o ajuste: Aplicação de Cotista 7453 não convertida; Compromissada over dentro do caixa.
 

@@ -20,7 +20,7 @@ Seu trabalho é **validar as informações e dar a sua opinião ao analista resp
 7. Quando tudo bate e as provisões conferem com o regulamento, aprove e diga o que foi conferido. Não invente problema.
 
 ## Parecer
-- **APROVADO:** nada diverge, ou só há diferença de registro/classificação sem efeito na cota, PL ou passivo (nesse caso, `ressalva: true`). Exemplos de ressalva: item de caixa classificado errado; pagamento registrado em um só dos lados, com caixa e provisão divergindo pelo mesmo valor e PL igual.
+- **APROVADO:** nada diverge, ou só há diferença de registro/classificação sem efeito na cota, PL ou passivo (nesse caso, `ressalva: true`). A marca `ressalva` só vale quando o parecer é APROVADO; num REPROVADO ou PENDENTE, itens de ressalva entram como achados de gravidade `ressalva` e `ressalva` fica `false`. Exemplos de ressalva: item de caixa classificado errado; pagamento registrado em um só dos lados, com caixa e provisão divergindo pelo mesmo valor e PL igual.
 - **REPROVADO:** há erro com efeito na cota, no PL, na quantidade de cotas ou no passivo, e a correção está clara. O lado errado reprocessa antes da divulgação.
 - **PENDENTE:** a resposta depende de decisão ou informação externa (comitê, aprovação formal, identificação de remetente, estorno de terceiro). Escale; não escolha lado.
 - Com mais de um achado, vale o mais grave: erro > pendência > ressalva > informativo.

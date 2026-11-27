@@ -18,7 +18,7 @@ O Socó FIC FIF Ações Investimento no Exterior é gerido pela Lume Gestão de 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -202,6 +202,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 13.527.849,48347363 | 13.526.724,29515997 | -1.125,18831366 |
 | PL final | 74.940.445,72 | 75.687.729,36 | 747.283,64 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

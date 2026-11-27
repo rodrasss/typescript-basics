@@ -18,7 +18,7 @@ O Bem-te-vi FIF Multimercado é gerido pela Serra do Mar Asset, gestora cambial 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -208,6 +208,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 77.130.043,33555284 | 77.130.051,02695960 | 7,69140676 |
 | PL final | 500.587.688,80 | 500.573.667,11 | -14.021,69 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

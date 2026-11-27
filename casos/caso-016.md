@@ -18,7 +18,7 @@ Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -186,6 +186,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 392.040,46336162 | 392.040,46336162 | 0,00000000 |
 | PL final | 507.669.008,47 | 501.793.752,30 | -5.875.256,17 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

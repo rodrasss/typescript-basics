@@ -18,7 +18,7 @@ Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Gavião Real FIF Cambi
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -198,6 +198,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 17.976.395,75971888 | 17.976.971,20099202 | 575,44127314 |
 | PL final | 95.928.779,93 | 95.520.593,51 | -408.186,42 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ O Bem-te-vi III FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capita
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -175,6 +175,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 198.520,49347786 | 198.520,49347786 | 0,00000000 |
 | PL final | 278.603.494,98 | 278.603.494,98 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

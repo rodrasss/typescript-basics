@@ -18,7 +18,7 @@ Quem acompanha a Cumeeira Capital (São Paulo/SP) conhece o Embaúba FIF RF Refe
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -195,6 +195,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 48.649.431,66714776 | 48.649.436,17759144 | 4,51044368 |
 | PL final | 86.459.679,47 | 86.457.002,04 | -2.677,43 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

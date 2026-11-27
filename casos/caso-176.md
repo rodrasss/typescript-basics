@@ -18,7 +18,7 @@ Quem acompanha a Maré Alta Investimentos (Rio de Janeiro/RJ) conhece o Murici T
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -213,6 +213,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 183.988.487,70115894 | 183.987.851,15791652 | -636,54324242 |
 | PL final | 701.799.380,36 | 702.071.890,92 | 272.510,56 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ Quem acompanha a Pedra Branca Gestão (Goiânia/GO) conhece o Biguá III FIF Mul
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/03/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -192,11 +192,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 5.438.361,14171645 | 5.438.361,14171645 | 0,00000000 |
 | PL final | 72.452.363,30 | 72.452.324,09 | -39,21 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** REPROVADO
 
 **Resumo:** Reprovar até o ajuste: Taxa CVM pela faixa do PL atual; Compromissada over dentro do caixa.
 

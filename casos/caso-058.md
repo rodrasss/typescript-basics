@@ -216,11 +216,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 8.486.867,43108672 | 8.485.087,32999578 | -1.780,10109094 |
 | PL final | 73.563.746,71 | 79.492.344,31 | 5.928.597,60 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** REPROVADO
 
 **Resumo:** Reprovar até o ajuste: Desdobramento de ZFRT3 não aplicado; Dividendos de KQSA3 pagos e não baixados.
 

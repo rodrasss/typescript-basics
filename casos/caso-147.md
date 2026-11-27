@@ -18,7 +18,7 @@ O Pirarucu Família FIC FIF Ações Investimento no Exterior é gerido pela Lume
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -185,6 +185,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 17.043.998,75539461 | 17.044.854,78666786 | 856,03127325 |
 | PL final | 72.768.828,24 | 72.180.568,76 | -588.259,48 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

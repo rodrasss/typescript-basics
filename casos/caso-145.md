@@ -18,7 +18,7 @@ Sob a gestão da Serra do Mar Asset, gestora cambial e de juros com operação m
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/05/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -209,6 +209,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 116.905.791,08365730 | 116.905.791,08365730 | 0,00000000 |
 | PL final | 423.728.495,52 | 423.728.495,52 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

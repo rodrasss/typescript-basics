@@ -4,7 +4,7 @@
 
 ## 1. O fundo
 
-Sob a gestão da Farol do Norte Capital, gestora de renda fixa líquida para plataformas digitais (São Paulo/SP), o Juazeiro III FIF RF Referenciado DI é um dos fundos que mais exigem atenção na rotina de validação. Criado em 02/06/2019, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são tesourarias de empresas médias que usam o fundo como caixa. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. A equipe da gestora é considerada muito organizada. No fechamento de ontem (26/11/2025) o fundo tinha PL de R$ 566.674.255,81, cota de 3,19096416 e 177.587.157,79692966 cotas. Hoje, quinta-feira, 27/11/2025, é a data-base da validação.
+Quem acompanha a Farol do Norte Capital (São Paulo/SP) conhece o Juazeiro III FIF RF Referenciado DI: a casa é uma gestora de renda fixa líquida para plataformas digitais. Criado em 02/06/2019, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são tesourarias de empresas médias que usam o fundo como caixa. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. O contrato com a auditoria foi renegociado recentemente. No fechamento de ontem (26/11/2025) o fundo tinha PL de R$ 566.674.255,81, cota de 3,19096416 e 177.587.157,79692966 cotas. Hoje, quinta-feira, 27/11/2025, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -91,8 +91,8 @@ Sob a gestão da Farol do Norte Capital, gestora de renda fixa líquida para pla
 
 ## 4. Comunicações recebidas hoje
 
-- **08:20** — *Passivo/escrituração* — **Come-cotas de hoje**: Hoje (27/11/2025) é dia de come-cotas deste fundo, conforme o regulamento (penúltimo dia útil de novembro).
-- **13:39** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (28/11/2025) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **15:29** — *Distribuidor* — **Material de divulgação**: Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.
+- **18:08** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
 
 ## 5. Batimento Alfa × Beta
 
@@ -103,8 +103,8 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
 | Cota de fechamento | 3,19248739 | 3,19248739 | 0,00000000 |
-| Quantidade final de cotas | 175.199.638,57167754 | 177.587.157,79692966 | 2.387.519,22525212 |
-| PL final | R$ 559.322.636,87 | R$ 566.944.761,89 | R$ 7.622.125,02 |
+| Quantidade final de cotas | 177.587.157,79692966 | 175.204.953,92235148 | -2.382.203,87457818 |
+| PL final | R$ 566.944.761,89 | R$ 559.339.606,06 | R$ -7.605.155,83 |
 | Caixa | R$ 1.953.065,82 | R$ 1.953.065,82 | R$ 0,00 |
 | Total de provisões | R$ 176.003,02 | R$ 176.003,02 | R$ 0,00 |
 
@@ -169,19 +169,23 @@ Nenhum movimento de passivo no dia.
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
-| IR de come-cotas | 7.622.125,02 | 0,00 | -7.622.125,02 |
-| Cotas retiradas (come-cotas) | 2.387.519,22525212 | 0,00000000 | -2.387.519,22525212 |
-| Quantidade final de cotas | 175.199.638,57167754 | 177.587.157,79692966 | 2.387.519,22525212 |
-| PL final | 559.322.636,87 | 566.944.761,89 | 7.622.125,02 |
+| IR de come-cotas | 0,00 | 7.605.155,83 | 7.605.155,83 |
+| Cotas retiradas (come-cotas) | 0,00000000 | 2.382.203,87457817 | 2.382.203,87457817 |
+| Quantidade final de cotas | 177.587.157,79692966 | 175.204.953,92235148 | -2.382.203,87457818 |
+| PL final | 566.944.761,89 | 559.339.606,06 | -7.605.155,83 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ### 5.9 Come-cotas (hoje é dia de come-cotas)
 
 | Posição | Cotista | Tratamento | Referência | Qtd de cotas Alfa | Qtd de cotas Beta | Cota de referência Alfa | Cota de referência Beta | IR Alfa | IR Beta | Cotas retiradas Alfa | Cotas retiradas Beta |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| CT-01 | Cotista 3053 | tributado | último come-cotas em 29/05/2025 | 58.230.829,04161324 | não processado | 2,98013555 | 2,98013555 | 2.473.084,74 | não processado | 774.657,63772366 | não processado |
-| CT-02 | Cotista 2509 | tributado | último come-cotas em 29/05/2025 | 79.203.872,37743063 | não processado | 2,97374884 | 2,97374884 | 3.464.988,04 | não processado | 1.085.356,84458882 | não processado |
-| CT-03 | Cotista 2580 | tributado | último come-cotas em 29/05/2025 | 40.152.456,37788579 | não processado | 2,98278014 | 2,98278014 | 1.684.052,24 | não processado | 527.504,74293964 | não processado |
-| **Total** |  |  |  |  |  |  |  | 7.622.125,02 | 0,00 | 2.387.519,22525212 | 0,00000000 |
+| CT-01 | Cotista 3053 | tributado | último come-cotas em 29/05/2025 | não processado | 58.230.829,04161324 | 2,97836279 | 2,97836279 | não processado | 2.493.730,60 | não processado | 781.124,65152133 |
+| CT-02 | Cotista 4169 | tributado | último come-cotas em 29/05/2025 | não processado | 79.203.872,37743063 | 2,97836279 | 2,97836279 | não processado | 3.391.899,50 | não processado | 1.062.462,92800548 |
+| CT-03 | Cotista 2509 | tributado | último come-cotas em 29/05/2025 | não processado | 40.152.456,37788579 | 2,97836279 | 2,97836279 | não processado | 1.719.525,73 | não processado | 538.616,29505136 |
+| **Total** |  |  |  |  |  |  |  | 0,00 | 7.605.155,83 | 0,00000000 | 2.382.203,87457817 |
+
+_As posições agrupam todos os cotistas do fundo por situação tributária e por cota de referência, e somam a quantidade de cotas existente ao fim do dia; os identificadores não são os da seção 5.7. Quem estava no fundo no último come-cotas tem a mesma cota de referência (a cota daquele dia). A posição CT-HJ, quando existe, reúne as cotas emitidas hoje: referência igual à cota de D, sem ganho._
 
 _Memória do come-cotas: não disponível neste caso. Recalcular a partir do regulamento._
 
@@ -198,20 +202,20 @@ _Memória do come-cotas: não disponível neste caso. Recalcular a partir do reg
 ### Achado 1: Come-cotas não processado
 
 - **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não processou o come-cotas de 27/11/2025.
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa não processou o come-cotas de 27/11/2025.
 - **Onde olhar:** Come-cotas (posição por cotista); Quantidade final de cotas; Regulamento — come-cotas; Comunicações — passivo
 - **Raciocínio do analista:**
-  1. A cota é igual, mas a quantidade final de cotas do Beta é 2.387.519,22525212 cotas maior: ele não retirou cotas nem calculou IR (R$ 7.622.125,02 no Alfa).
-  2. Hoje é o penúltimo dia útil de novembro, dia de come-cotas pelo regulamento. Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = 20% × ganho; cotas retiradas = IR ÷ cota de D): o total bate com o Alfa.
+  1. A cota é igual, mas a quantidade final de cotas do Alfa é 2.382.203,87457817 cotas maior: ele não retirou cotas nem calculou IR (R$ 7.605.155,83 no Beta).
+  2. Hoje é o penúltimo dia útil de novembro, dia de come-cotas pelo regulamento. Recalculei posição a posição (ganho = (cota de D − cota de referência) × cotas; IR = 20% × ganho; cotas retiradas = IR ÷ cota de D): o total bate com o Beta.
   3. Sem o come-cotas o IR não é retido no prazo e as posições dos cotistas ficam erradas.
-- **Ação:** Beta deve processar o come-cotas (retirada de cotas e IR a recolher) antes de fechar o passivo.
+- **Ação:** Alfa deve processar o come-cotas (retirada de cotas e IR a recolher) antes de fechar o passivo.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Alfa |
+| cota | Beta |
 | caixa | ambos |
 | provisoes | ambos |
 
@@ -220,7 +224,7 @@ _Memória do come-cotas: não disponível neste caso. Recalcular a partir do reg
 | Item | Valor |
 |---|---|
 | Cota | 3,19248739 |
-| Quantidade final de cotas | 175.199.638,57167754 |
-| PL final | R$ 559.322.636,87 |
+| Quantidade final de cotas | 175.204.953,92235148 |
+| PL final | R$ 559.339.606,06 |
 | Caixa | R$ 1.953.065,82 |
 | Total de provisões | R$ 176.003,02 |

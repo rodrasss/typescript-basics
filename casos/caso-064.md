@@ -18,7 +18,7 @@ O Angico Institucional FIE FIF Previdenciário Multimercado é gerido pela Reman
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/05/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -218,6 +218,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 430.519.402,41207640 | 430.513.610,40162486 | -5.792,01045156 |
 | PL final | 1.777.462.716,70 | 1.780.190.056,73 | 2.727.340,03 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

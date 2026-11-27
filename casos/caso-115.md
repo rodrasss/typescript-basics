@@ -18,7 +18,7 @@ Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Aroeira II FIF Incent
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -193,6 +193,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 394.822.108,24622977 | 394.822.099,02168660 | -9,22454315 |
 | PL final | 1.291.946.662,61 | 1.291.954.777,60 | 8.114,99 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

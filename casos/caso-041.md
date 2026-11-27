@@ -181,6 +181,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 524.740.140,87179220 | 524.740.140,87179220 | 0,00000000 |
 | PL final | 1.551.308.935,22 | 1.547.740.161,78 | -3.568.773,44 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)

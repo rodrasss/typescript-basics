@@ -18,7 +18,7 @@ O Jabuticaba FIC FIF Multimercado é gerido pela Garoa Investimentos, gestora de
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/01/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -187,6 +187,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 220.007.008,02238232 | 220.006.046,75055426 | -961,27182806 |
 | PL final | 690.760.291,02 | 691.199.513,66 | 439.222,64 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

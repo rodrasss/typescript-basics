@@ -18,7 +18,7 @@ Sob a gestão da Garoa Investimentos, gestora de fundos de fundos (alocação) c
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -206,6 +206,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 88.055.055,96111983 | 88.055.040,66461161 | -15,29650822 |
 | PL final | 632.961.937,41 | 632.979.092,40 | 17.154,99 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

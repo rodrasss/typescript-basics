@@ -18,7 +18,7 @@ Quem acompanha a Barlavento Investimentos (Rio de Janeiro/RJ) conhece o Saíra A
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/01/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -208,6 +208,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 31.258.977,59177619 | 31.258.977,59177619 | 0,00000000 |
 | PL final | 154.853.643,72 | 154.853.643,72 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

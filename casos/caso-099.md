@@ -18,7 +18,7 @@ O Guapuruvu Advisory FIF Incentivado em Infraestrutura RF é gerido pela Itapuã
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -176,6 +176,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 64.581.359,03130706 | 65.664.558,92219504 | 1.083.199,89088798 |
 | PL final | 114.039.684,43 | 115.952.431,01 | 1.912.746,58 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

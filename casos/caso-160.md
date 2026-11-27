@@ -18,7 +18,7 @@ O Caatinga Plus FIF Multimercado Long Short é gerido pela Maré Alta Investimen
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -218,6 +218,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 10.184.684,60136535 | 10.184.684,60136535 | 0,00000000 |
 | PL final | 61.372.283,76 | 61.372.283,76 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

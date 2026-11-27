@@ -18,7 +18,7 @@ Quem acompanha a Bromélia Investimentos (Campinas/SP) conhece o Buriti III FIF 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -191,6 +191,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 15.171.307,51467440 | 15.171.307,51467440 | 0,00000000 |
 | PL final | 173.405.657,69 | 176.535.053,91 | 3.129.396,22 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

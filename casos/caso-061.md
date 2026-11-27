@@ -18,7 +18,7 @@ O Guapuruvu II FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora cam
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -195,6 +195,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 9.936.583,88353965 | 9.936.583,88353965 | 0,00000000 |
 | PL final | 61.453.332,75 | 61.453.332,75 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ O Murici FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora cambial e
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/01/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -189,6 +189,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 49.367.924,81586948 | 49.366.365,39907967 | -1.559,41678981 |
 | PL final | 223.512.367,78 | 225.167.766,31 | 1.655.398,53 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ O Graúna Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -180,6 +180,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 15.846.427,97967312 | 15.846.427,97967312 | 0,00000000 |
 | PL final | 435.817.353,73 | 435.817.353,73 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

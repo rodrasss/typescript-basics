@@ -18,7 +18,7 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Sabiá Estra
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -204,6 +204,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 289.149.997,35708870 | 289.149.996,96297290 | -0,39411581 |
 | PL final | 472.789.845,96 | 472.789.914,72 | 68,76 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

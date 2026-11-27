@@ -18,7 +18,7 @@ Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Garça Moura Instituci
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -219,6 +219,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 43.633.390,19474658 | 43.633.390,19474658 | 0,00000000 |
 | PL final | 286.031.552,31 | 286.031.552,31 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

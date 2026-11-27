@@ -18,7 +18,7 @@ Quem acompanha a Maré Alta Investimentos (Rio de Janeiro/RJ) conhece o Graúna 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/02/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -221,11 +221,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 16.426.590,40086259 | 16.426.590,19974546 | -0,20111713 |
 | PL final | 136.780.164,84 | 136.780.627,88 | 463,04 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** REPROVADO
 
 **Resumo:** Reprovar até o ajuste: Taxa de administração sem o mínimo mensal; Pagamento de resgate não baixado no controle Alfa.
 

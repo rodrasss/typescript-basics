@@ -54,6 +54,8 @@ export function montarConfigComeCotas(c: Ctx, opts: OpcoesCC = {}): { config: Co
   pesos[n - 1] = peso4(1 - pesos.slice(0, n - 1).reduce((a, b) => a + b, 0));
 
   const dataAnterior = comeCotasAnterior(c.data);
+  // quem já estava no fundo no último come-cotas tem a MESMA cota de referência: a cota daquele dia
+  const cotaRefUltimo = truncar8(cotaD / (1 + gSem));
   const idxRecente = opts.aplicacaoRecente ? (unico ? 0 : 1) : -1;
   const idxPrejuizo = opts.prejuizo && !unico ? n - 1 : -1;
   const idxIsento = opts.isento && !unico ? 0 : -1;
@@ -63,16 +65,23 @@ export function montarConfigComeCotas(c: Ctx, opts: OpcoesCC = {}): { config: Co
     const nome = unico ? 'Cotista único' : `Cotista ${String(inteiro(rng, 1000, 9999))}${i === idxIsento ? ' (entidade imune)' : ''}`;
     let origem: PosicaoCotista['origemReferencia'] = 'último come-cotas';
     let dataRef = dataAnterior;
-    let g = gSem * entre(rng, 0.97, 1.03);
+    let cotaRef = cotaRefUltimo;
     if (i === idxRecente || i === idxPrejuizo) {
       const du = inteiro(rng, 20, 90);
       origem = 'aplicação';
       dataRef = somaDiasUteis(c.data, -du);
-      g = i === idxPrejuizo ? -entre(rng, 0.004, 0.03) : gSem * (du / 126) * entre(rng, 0.9, 1.1);
+      const g = i === idxPrejuizo ? -entre(rng, 0.004, 0.03) : gSem * (du / 126) * entre(rng, 0.9, 1.1);
+      cotaRef = truncar8(cotaD / (1 + g));
     }
     posicoes.push({
       id, cotista: nome, tratamento: i === idxIsento ? 'isento' : 'tributado', peso: pesos[i],
-      cotaReferencia: truncar8(cotaD / (1 + g)), dataReferencia: dataRef, origemReferencia: origem,
+      cotaReferencia: cotaRef, dataReferencia: dataRef, origemReferencia: origem,
+    });
+  }
+  if (r.cotasEmitidas > 0) {
+    posicoes.push({
+      id: 'CT-HJ', cotista: unico ? 'Cotista único (aplicações de hoje)' : 'Aplicações convertidas hoje', tratamento: 'tributado', peso: 0,
+      cotaReferencia: 0, dataReferencia: c.data, origemReferencia: 'aplicação', aplicacoesDoDia: true,
     });
   }
   return {

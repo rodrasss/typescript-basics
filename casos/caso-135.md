@@ -18,7 +18,7 @@ O Bem-te-vi Plus FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora c
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -197,11 +197,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 133.985.747,19575804 | 133.985.747,21606007 | 0,02030203 |
 | PL final | 288.163.557,83 | 288.163.544,48 | -13,35 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** REPROVADO
 
 **Resumo:** Reprovar até o ajuste: taxa de gestão com método exponencial; Compromissada over dentro do caixa.
 

@@ -18,7 +18,7 @@ Quem acompanha a Lume Gestão de Recursos (São Paulo/SP) conhece o Aroeira Advi
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/01/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -186,6 +186,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 26.373.478,84163932 | 26.373.478,84163932 | 0,00000000 |
 | PL final | 88.101.234,02 | 88.101.234,02 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

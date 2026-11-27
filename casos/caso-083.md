@@ -18,7 +18,7 @@ O Cedro Rosa Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestã
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -185,6 +185,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 3.147.133,39127101 | 3.147.133,39127101 | 0,00000000 |
 | PL final | 162.395.421,91 | 160.853.774,60 | -1.541.647,31 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

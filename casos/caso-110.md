@@ -18,7 +18,7 @@ O Pintassilgo FIF Cambial Dólar é gerido pela Serra do Mar Asset, gestora camb
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -190,6 +190,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 28.089.421,03110991 | 28.089.421,03110991 | 0,00000000 |
 | PL final | 129.199.180,48 | 129.199.180,48 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -197,6 +197,7 @@ function secaoBatimento(c: Caso): string {
     ['Cotas retiradas (come-cotas)', f('cotasComeCotas', 8)], ['Quantidade final de cotas', f('qtdFinal', 8)], ['PL final', f('plFinal')],
   ];
   L.push('### 5.8 Fechamento do dia', '', tabela(['Item', 'Alfa', 'Beta', 'Δ'], linhasF.map(([k, v]) => [k, ...v])), '');
+  L.push('_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._', '');
   L.push(...secaoComeCotas(c));
   return L.join('\n');
 }
@@ -219,7 +220,7 @@ function secaoComeCotas(c: Caso): string[] {
     return [
       id, ref.cotista, ref.tratamento, `${ref.origemReferencia} em ${fmtData(ref.dataReferencia)}`,
       dx ? fmtN(dx.qtdCotas, 8) : estado(x), ds ? fmtN(ds.qtdCotas, 8) : estado(s),
-      a ? fmtN(a.cotaReferencia, 8) : NA, b ? fmtN(b.cotaReferencia, 8) : NA,
+      a ? fmtN(a.aplicacoesDoDia ? x.resultado.cota : a.cotaReferencia, 8) : NA, b ? fmtN(b.aplicacoesDoDia ? s.resultado.cota : b.cotaReferencia, 8) : NA,
       dx ? fmtN(dx.ir, 2) : estado(x), ds ? fmtN(ds.ir, 2) : estado(s),
       dx ? fmtN(dx.cotasRetiradas, 8) : estado(x), ds ? fmtN(ds.cotasRetiradas, 8) : estado(s),
     ];
@@ -228,6 +229,7 @@ function secaoComeCotas(c: Caso): string[] {
     ['Posição', 'Cotista', 'Tratamento', 'Referência', 'Qtd de cotas Alfa', 'Qtd de cotas Beta', 'Cota de referência Alfa', 'Cota de referência Beta', 'IR Alfa', 'IR Beta', 'Cotas retiradas Alfa', 'Cotas retiradas Beta'],
     [...linhas, ['**Total**', '', '', '', '', '', '', '', fmtN(x.resultado.irComeCotas, 2), fmtN(s.resultado.irComeCotas, 2), fmtN(x.resultado.cotasComeCotas, 8), fmtN(s.resultado.cotasComeCotas, 8)]],
   ), '');
+  L.push('_As posições agrupam todos os cotistas do fundo por situação tributária e por cota de referência, e somam a quantidade de cotas existente ao fim do dia; os identificadores não são os da seção 5.7. Quem estava no fundo no último come-cotas tem a mesma cota de referência (a cota daquele dia). A posição CT-HJ, quando existe, reúne as cotas emitidas hoje: referência igual à cota de D, sem ganho._', '');
   if (c.memoriaDisponivel) {
     L.push('**Memória do come-cotas informada por cada lado**', '');
     for (const [nome, lado] of [['Alfa', x], ['Beta', s]] as const) {

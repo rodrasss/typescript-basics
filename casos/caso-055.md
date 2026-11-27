@@ -181,11 +181,13 @@ Nenhum movimento de passivo no dia.
 | Quantidade final de cotas | 323.316,20808837 | 323.316,20808837 | 0,00000000 |
 | PL final | 383.222.208,30 | 383.222.170,38 | -37,92 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** PENDENTE (com ressalva)
+**Parecer:** PENDENTE
 
 **Resumo:** Deixar pendente e escalar: Tarifa de pacote PJ debitada do fundo; TED sem identificação na conta do fundo; Compromissada over dentro do caixa.
 

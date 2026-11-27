@@ -352,7 +352,8 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
   const gravidades = achados.map(gravidadeEfetiva);
   const pior = gravidades.length ? gravidades.reduce((a, g) => (GRAVIDADE_ORDEM[g] > GRAVIDADE_ORDEM[a] ? g : a), 'informativo' as Gravidade) : 'informativo';
   const parecer: Parecer = pior === 'erro' ? 'REPROVADO' : pior === 'pendencia' ? 'PENDENTE' : 'APROVADO';
-  const ressalva = pior === 'ressalva' || (parecer !== 'APROVADO' && gravidades.some((g) => g === 'ressalva'));
+  // a marca de ressalva só existe quando o parecer é APROVADO; nos demais, o item aparece como achado de gravidade "ressalva"
+  const ressalva = parecer === 'APROVADO' && pior === 'ressalva';
   const indeterminado = achados.some((a) => a.ladoCorreto === 'indeterminado');
 
   const caso: Caso = {

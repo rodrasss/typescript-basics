@@ -18,7 +18,7 @@ O Seriguela Institucional FIF RF Referenciado DI é gerido pela Cumeeira Capital
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -188,6 +188,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 457.418.848,10427180 | 460.801.019,95940864 | 3.382.171,85513681 |
 | PL final | 2.127.495.196,46 | 2.143.225.974,51 | 15.730.778,05 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

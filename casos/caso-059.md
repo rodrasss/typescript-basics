@@ -18,7 +18,7 @@ Sob a gestão da Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima d
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -185,6 +185,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 3.465.240,61053980 | 3.465.240,61053980 | 0,00000000 |
 | PL final | 259.817.949,94 | 262.886.144,11 | 3.068.194,17 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -224,3 +224,16 @@ test('parecer: segue a regra do prompt (diferença de cota/PL/provisão é erro;
     }
   }
 });
+
+test('regulamento: a vigência nunca é posterior à data-base', () => {
+  for (const c of casos()) {
+    const [d, m, a] = c.regulamento.vigencia.slice(0, 10).split('/');
+    assert.ok(`${a}-${m}-${d}` <= c.data, `${c.id}: vigência ${a}-${m}-${d} posterior à data-base ${c.data}`);
+  }
+});
+
+test('a marca de ressalva só existe quando o parecer é APROVADO', () => {
+  for (const c of casos()) {
+    if (c.gabarito.ressalva) assert.equal(c.gabarito.parecer, 'APROVADO', `${c.id}: ressalva com parecer ${c.gabarito.parecer}`);
+  }
+});

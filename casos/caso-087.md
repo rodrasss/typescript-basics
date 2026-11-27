@@ -18,7 +18,7 @@ Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em c
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/02/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -209,6 +209,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 485.713.925,97908240 | 485.713.521,33713410 | -404,64194828 |
 | PL final | 1.161.046.260,38 | 1.161.285.983,60 | 239.723,22 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ O Carcará III FIP Multiestratégia é gerido pela Varanda Capital, gestora de p
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -182,6 +182,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 835.761,63133186 | 835.761,63133186 | 0,00000000 |
 | PL final | 1.056.553.226,89 | 1.060.413.418,71 | 3.860.191,82 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

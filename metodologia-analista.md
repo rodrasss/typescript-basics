@@ -94,6 +94,15 @@ O come-cotas é a retenção semestral de IR feita por redução da quantidade d
 5. **Isentos e prejuízo.** Cotista isento ou imune não sofre retenção. Posição com cota abaixo da referência não gera retenção nem devolução de cotas.
 6. **Totais.** Some IR e cotas retiradas; confira com a quantidade final de cotas de cada lado.
 
+Observações de leitura da seção 5.9:
+
+- As posições agrupam todos os cotistas do fundo por situação tributária e referência, e somam a quantidade de cotas existente ao fim do dia; os identificadores não são os da seção de passivo.
+- Quem estava no fundo no último come-cotas tem a **mesma** cota de referência (a cota daquele dia); só quem aplicou depois tem referência própria (a cota da aplicação).
+- A posição **CT-HJ**, quando existe, reúne as cotas emitidas hoje: a referência é a cota de D, então não há ganho nem retenção.
+- Se um lado **não processou**, a seção só mostra os números do outro lado: a validação possível é recalcular pelas regras e comparar com o lado que processou.
+- O prazo médio da carteira é informado pelo administrador e não se recalcula: use o valor informado.
+- Em fundo que não tem come-cotas, qualquer retirada é indevida; ignore as cotas de referência e o histórico do lado que retirou.
+
 Como reconhecer o erro pelo padrão da diferença:
 
 | Padrão | Causa provável |
@@ -102,9 +111,11 @@ Como reconhecer o erro pelo padrão da diferença:
 | IR e cotas retiradas em todas as posições com exatamente o dobro | processado em duplicidade |
 | Razão entre os IR igual a 15% ÷ 20% (ou o inverso), em todas as posições | alíquota errada |
 | IR igual, cotas retiradas diferentes | IR convertido por uma cota que não é a de D (por exemplo, a de D−1) |
-| Diferença em uma só posição, com aplicação recente | cota de referência desatualizada |
+| Diferença em uma só posição com aplicação recente; um dos lados usou, nela, a mesma referência das posições do último come-cotas | cota de referência desatualizada (a referência correta é a cota da aplicação) |
 | Diferença só na posição de um cotista isento | retenção indevida |
 | Cotas devolvidas (valor negativo) numa posição abaixo da referência | prejuízo tratado como crédito |
 | Um lado retirou cotas e o regulamento diz que o fundo não tem come-cotas | aplicado em fundo isento |
+
+PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas); diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento, não achado.
 
 Em qualquer desses casos o parecer é **REPROVADO** (muda a quantidade de cotas e o PL final) e o lado errado reprocessa. Se tudo confere, aprove e diga o que conferiu (data, alíquota e cada posição).

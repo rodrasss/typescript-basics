@@ -18,7 +18,7 @@ Quem acompanha a Marola Asset (Florianópolis/SC) conhece o Paineira FIF Ações
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -213,6 +213,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 1.266.830,59426308 | 1.259.753,98375150 | -7.076,61051158 |
 | PL final | 29.069.883,33 | 30.632.240,11 | 1.562.356,78 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

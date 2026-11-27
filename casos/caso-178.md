@@ -18,7 +18,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Jabuticaba Plus F
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -180,6 +180,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 167.316,11505810 | 167.316,11505810 | 0,00000000 |
 | PL final | 148.621.107,42 | 148.621.786,87 | 679,45 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

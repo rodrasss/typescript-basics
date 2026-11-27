@@ -18,7 +18,7 @@ O Angico Plus FIP Multiestratégia é gerido pela Varanda Capital, gestora de pr
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -178,6 +178,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 116.981,78303895 | 116.981,78303895 | 0,00000000 |
 | PL final | 224.419.718,03 | 241.616.167,43 | 17.196.449,40 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

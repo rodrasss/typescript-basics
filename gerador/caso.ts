@@ -158,6 +158,20 @@ function plAleatorio(rng: Rng, [a, b]: [number, number]): number {
   return Math.exp(entre(rng, Math.log(a), Math.log(b)));
 }
 
+/** Primeiro dia de um mês entre março/2025 e o mês anterior à data-base: a vigência nunca é posterior ao dia validado. */
+function vigenciaRegulamento(rng: Rng, data: string): string {
+  const limite = `${data.slice(0, 8)}01`;
+  const lista: string[] = [];
+  for (let ano = 2025; ano <= Number(data.slice(0, 4)); ano++) {
+    for (let mes = 1; mes <= 12; mes++) {
+      const d = `${ano}-${String(mes).padStart(2, '0')}-01`;
+      if (d >= '2025-03-01' && d < limite) lista.push(d);
+    }
+  }
+  inteiro(rng, 2025, 2025); // mantém o consumo do gerador aleatório
+  return lista[inteiro(rng, 0, lista.length - 1)];
+}
+
 export interface OpcoesBase { data: string; nomesUsados: Set<string>; indice: number; }
 
 export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: OpcoesBase): Ctx {
@@ -246,7 +260,7 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
   const plReferenciaCVM = r2(plAnterior * entre(rng, 0.9, 1.05));
 
   let reg: Regulamento = {
-    vigencia: `${fmtData(`${inteiro(rng, 2025, 2025)}-${String(inteiro(rng, 3, 12)).padStart(2, '0')}-01`)} (adaptado à Resolução CVM 175)`,
+    vigencia: `${fmtData(vigenciaRegulamento(rng, data))} (adaptado à Resolução CVM 175)`,
     taxas,
     despesasFixas,
     tabelaCVM: TABELA_CVM,

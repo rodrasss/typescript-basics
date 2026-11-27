@@ -18,7 +18,7 @@ O Cerejeira do Mato Plus FIP Multiestratégia é gerido pela Varanda Capital, ge
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -178,6 +178,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 320.650,30232422 | 313.344,08036416 | -7.306,22196006 |
 | PL final | 443.435.327,50 | 441.869.883,58 | -1.565.443,92 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

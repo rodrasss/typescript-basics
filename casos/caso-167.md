@@ -18,7 +18,7 @@ O Uirapuru Família FIF Multimercado Crédito Privado — Classe Exclusiva é ge
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -185,6 +185,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 56.938.960,31933179 | 56.335.297,16333009 | -603.663,15600169 |
 | PL final | 318.891.851,49 | 315.537.808,80 | -3.354.042,69 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -181,6 +181,8 @@ Nenhum movimento de passivo no dia.
 | Quantidade final de cotas | 2.755.115,31764593 | 2.755.115,31764593 | 0,00000000 |
 | PL final | 288.754.386,50 | 288.754.386,50 | 0,00 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)

@@ -52,10 +52,10 @@
 
 | Item | Casos |
 |---|---|
-| cota: correto = Beta | 14 |
-| cota: correto = Alfa | 13 |
-| caixa: correto = Beta | 6 |
-| caixa: correto = Alfa | 4 |
+| cota: correto = Alfa | 16 |
+| cota: correto = Beta | 11 |
+| caixa: correto = Alfa | 6 |
+| caixa: correto = Beta | 4 |
 
 ## Número de achados por caso
 

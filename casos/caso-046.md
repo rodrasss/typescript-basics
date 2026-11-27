@@ -18,7 +18,7 @@ O Arara Azul Institucional FIDC Responsabilidade Limitada é gerido pela Quaresm
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/01/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -176,6 +176,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 77.181,69723216 | 77.181,69723216 | 0,00000000 |
 | PL final | 82.866.939,18 | 82.866.939,18 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

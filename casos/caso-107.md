@@ -18,7 +18,7 @@ Sob a gestão da Bromélia Investimentos, gestora familiar com processos manuais
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -188,6 +188,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 51.204.748,64329013 | 51.204.748,64329013 | 0,00000000 |
 | PL final | 228.524.262,14 | 228.524.262,14 | 0,00 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

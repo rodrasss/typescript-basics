@@ -18,7 +18,7 @@ Sob a gestão da Ancoradouro Capital, gestora com foco em infraestrutura e debê
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -202,6 +202,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 220.726.423,85866132 | 220.749.724,20664895 | 23.300,34798762 |
 | PL final | 303.971.970,93 | 300.393.725,81 | -3.578.245,12 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

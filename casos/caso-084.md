@@ -18,7 +18,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Ariranha Adviso
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -182,6 +182,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 4.017.382,07671763 | 4.017.382,07671763 | 0,00000000 |
 | PL final | 340.965.469,81 | 340.965.303,57 | -166,24 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ Quem acompanha a Garoa Investimentos (São Paulo/SP) conhece o Pintassilgo Insti
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -178,6 +178,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 51.677.634,95975181 | 51.677.634,95975181 | 0,00000000 |
 | PL final | 84.843.881,15 | 84.843.881,66 | 0,51 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

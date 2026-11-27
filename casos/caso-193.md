@@ -18,7 +18,7 @@ O Sucupira Prime FIC FIF Multimercado é gerido pela Garoa Investimentos, gestor
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -208,6 +208,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 132.652.682,27871205 | 132.651.447,42762770 | -1.234,85108435 |
 | PL final | 724.825.162,67 | 725.497.483,31 | 672.320,64 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

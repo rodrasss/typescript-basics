@@ -18,7 +18,7 @@ Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Embaúba II FIF Cambia
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -197,6 +197,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 115.836.826,18988010 | 116.891.280,49455133 | 1.054.454,30467123 |
 | PL final | 615.262.666,52 | 620.863.358,36 | 5.600.691,84 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

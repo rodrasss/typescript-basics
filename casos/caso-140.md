@@ -18,7 +18,7 @@ Sob a gestão da Varanda Capital, gestora de private equity com participações 
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -178,6 +178,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 98.852,05921013 | 98.852,05921013 | 0,00000000 |
 | PL final | 132.977.903,92 | 127.724.523,11 | -5.253.380,81 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

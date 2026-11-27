@@ -18,7 +18,7 @@ O Gavião Real Total FIF Multimercado Long Short é gerido pela Marola Asset, ge
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/07/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -231,11 +231,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 83.230.094,60042822 | 83.230.100,80643256 | 6,20600434 |
 | PL final | 607.483.631,40 | 607.465.995,30 | -17.636,10 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** PENDENTE (com ressalva)
+**Parecer:** PENDENTE
 
 **Resumo:** Deixar pendente e escalar: Honorários provisionados sem aprovação documentada; Dividendos de ZFRT3 pagos e não baixados.
 

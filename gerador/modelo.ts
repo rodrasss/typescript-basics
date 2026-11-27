@@ -88,6 +88,8 @@ export interface PosicaoCotista {
   cotaReferencia: number; // cota do último come-cotas ou da aplicação, a mais recente
   dataReferencia: string;
   origemReferencia: 'último come-cotas' | 'aplicação';
+  /** posição das cotas emitidas hoje: quantidade = cotas emitidas em D e referência = cota de D (sem ganho) */
+  aplicacoesDoDia?: boolean;
 }
 export interface ComeCotas {
   aliquota: number;
@@ -99,7 +101,7 @@ export interface ComeCotas {
   tributaIsentos: boolean; // erro: retém também dos cotistas isentos
   devolvePrejuizo: boolean; // erro: devolve cotas quando a cota está abaixo da referência
 }
-export interface DetalheComeCotas { id: string; qtdCotas: number; ganho: number; ir: number; cotasRetiradas: number; }
+export interface DetalheComeCotas { id: string; qtdCotas: number; cotaReferencia: number; ganho: number; ir: number; cotasRetiradas: number; }
 
 export interface Posicao {
   ativos: Ativo[];
@@ -261,12 +263,26 @@ export function calcular(p: Posicao, ctx: CtxCalculo): Resultado {
     // incide sobre as cotas existentes ao fim do dia, depois das conversões e cotizações de D
     const qAposMov = arredondar8(p.qtdCotasBase + cotasEmitidas - cotasResgatadas);
     const cotaConv = cc.cotaConversao === 'D-1' ? cc.cotaD1 : cota;
+    // as cotas emitidas hoje formam uma posição própria, sem ganho; as demais dividem o resto pelos pesos
+    const emitidasHoje = cc.posicoes.some((p) => p.aplicacoesDoDia) ? cotasEmitidas : 0;
+    const restante = arredondar8(qAposMov - emitidasHoje);
+    const normais = cc.posicoes.filter((p) => !p.aplicacoesDoDia);
     let distribuido = 0;
-    cc.posicoes.forEach((pos, i) => {
-      const qtd = i < cc.posicoes.length - 1 ? truncar8(qAposMov * pos.peso) : arredondar8(qAposMov - distribuido);
-      distribuido = arredondar8(distribuido + qtd);
+    let iNormal = 0;
+    cc.posicoes.forEach((pos) => {
+      let qtd: number;
+      let cotaRef: number;
+      if (pos.aplicacoesDoDia) {
+        qtd = cotasEmitidas;
+        cotaRef = cota;
+      } else {
+        qtd = iNormal === normais.length - 1 ? arredondar8(restante - distribuido) : truncar8(restante * pos.peso);
+        distribuido = arredondar8(distribuido + qtd);
+        iNormal++;
+        cotaRef = pos.cotaReferencia;
+      }
       const tributado = pos.tratamento === 'tributado' || cc.tributaIsentos;
-      const variacao = (cota - pos.cotaReferencia) * qtd;
+      const variacao = (cota - cotaRef) * qtd;
       const ganho = tributado ? (cc.devolvePrejuizo ? variacao : Math.max(0, variacao)) : 0;
       const ir1 = r2(ganho * cc.aliquota);
       let ir = 0;
@@ -275,7 +291,7 @@ export function calcular(p: Posicao, ctx: CtxCalculo): Resultado {
         ir = r2(ir + ir1);
         cotasRet = arredondar8(cotasRet + truncar8(ir1 / cotaConv));
       }
-      detalheComeCotas.push({ id: pos.id, qtdCotas: qtd, ganho: r2(ganho), ir, cotasRetiradas: cotasRet });
+      detalheComeCotas.push({ id: pos.id, qtdCotas: qtd, cotaReferencia: cotaRef, ganho: r2(ganho), ir, cotasRetiradas: cotasRet });
       irComeCotas = r2(irComeCotas + ir);
       cotasComeCotas = arredondar8(cotasComeCotas + cotasRet);
     });

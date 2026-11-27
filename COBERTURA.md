@@ -12,8 +12,8 @@
 
 | Item | Casos |
 |---|---|
-| media | 123 |
-| dificil | 42 |
+| media | 122 |
+| dificil | 43 |
 | facil | 35 |
 
 ## Tipo de fundo
@@ -47,20 +47,20 @@
 | tarifa_bancaria_indevida | 11 |
 | debito_em_duplicidade | 10 |
 | boleta_tardia_nao_processada | 9 |
+| despesa_nao_prevista | 8 |
 | metodo_exponencial_vs_linear | 8 |
 | provisao_duplicada | 8 |
 | taxa_por_dias_corridos | 8 |
 | aplicacao_nao_convertida | 7 |
-| despesa_nao_prevista | 7 |
 | dividendo_recebido_nao_baixado | 7 |
 | liquidacao_compra_antecipada | 7 |
 | resgate_pago_com_cota_errada | 7 |
-| taxa_cvm_faixa_errada | 7 |
 | taxa_escalonada_ignorada | 7 |
 | aplicacao_apos_corte_convertida | 6 |
 | auditoria_contrato_novo | 6 |
 | credito_nao_identificado | 6 |
 | juros_credito_nao_registrados | 6 |
+| taxa_cvm_faixa_errada | 6 |
 | ajuste_liquidado_nao_baixado | 5 |
 | amortizacao_nao_registrada | 5 |
 | pagamento_taxa_nao_registrado | 5 |
@@ -100,10 +100,10 @@
 |---|---|
 | cota: correto = Alfa | 69 |
 | caixa: correto = Beta | 55 |
+| cota: correto = Beta | 45 |
 | provisoes: correto = Beta | 45 |
-| cota: correto = Beta | 44 |
 | provisoes: correto = Alfa | 39 |
-| cota: correto = nenhum | 23 |
+| cota: correto = nenhum | 22 |
 | caixa: correto = Alfa | 16 |
 | provisoes: correto = nenhum | 9 |
 | caixa: correto = nenhum | 7 |

@@ -5,12 +5,12 @@ Total: 200 casos. Todos os dados são fictícios.
 | Caso | Fundo | Tipo | Data-base | Cenário(s) | Parecer | Dificuldade |
 |---|---|---|---|---|---|---|
 | [caso-001](casos/caso-001.md) | Socó FIF Ações | FIA | 2026-01-29 | resgate_liquidado_nao_baixado, compromissada_como_caixa | APROVADO (c/ ressalva) | media |
-| [caso-002](casos/caso-002.md) | Jacarandá III FIE FIF Previdenciário Multimercado | PREV | 2026-04-24 | taxa_gestao_sem_apropriacao, liquidacao_compra_antecipada, boleta_tardia_nao_processada | REPROVADO (c/ ressalva) | dificil |
+| [caso-002](casos/caso-002.md) | Jacarandá III FIE FIF Previdenciário Multimercado | PREV | 2026-04-24 | taxa_gestao_sem_apropriacao, liquidacao_compra_antecipada, boleta_tardia_nao_processada | REPROVADO | dificil |
 | [caso-003](casos/caso-003.md) | Aroeira II Fiagro — Direitos Creditórios | FIAGRO | 2026-07-01 | ativo_iliquido_sem_referencia | PENDENTE | media |
 | [caso-004](casos/caso-004.md) | Cajueiro III FII Responsabilidade Limitada | FII | 2026-10-07 | tudo_bate_com_ruido | APROVADO | media |
 | [caso-005](casos/caso-005.md) | Arara Azul II FIC FIF Multimercado | FIC_FIM | 2026-05-28 | debito_em_duplicidade | PENDENTE | media |
 | [caso-006](casos/caso-006.md) | Biguá Institucional FIF RF Crédito Privado LP | RF_CP | 2026-09-02 | taxa_escalonada_ignorada | REPROVADO | media |
-| [caso-007](casos/caso-007.md) | Araucária Total FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-09-23 | tarifa_bancaria_indevida, resgate_liquidado_nao_baixado | PENDENTE (c/ ressalva) | dificil |
+| [caso-007](casos/caso-007.md) | Araucária Total FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-09-23 | tarifa_bancaria_indevida, resgate_liquidado_nao_baixado | PENDENTE | dificil |
 | [caso-008](casos/caso-008.md) | Embaúba FIF RF Referenciado DI | RF_DI | 2026-04-16 | ativo_vencido_nao_baixado, provisao_duplicada | REPROVADO | media |
 | [caso-009](casos/caso-009.md) | Angico Plus FIP Multiestratégia | FIP | 2026-08-31 | laudo_fip_nao_atualizado | REPROVADO | media |
 | [caso-010](casos/caso-010.md) | Umbuzeiro Plus FIF Multimercado | FIM_MACRO | 2026-08-20 | taxa_gestao_sem_apropriacao, aplicacao_nao_convertida | REPROVADO | dificil |
@@ -30,7 +30,7 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-024](casos/caso-024.md) | Baobá Advisory Fiagro — Direitos Creditórios | FIAGRO | 2026-08-17 | ativo_iliquido_sem_referencia | PENDENTE | media |
 | [caso-025](casos/caso-025.md) | Ingá Prime FIF RF Referenciado DI | RF_DI | 2026-04-28 | aplicacao_apos_corte_convertida, provisao_duplicada | REPROVADO | media |
 | [caso-026](casos/caso-026.md) | Paineira Total FIF RF Crédito Privado LP | RF_CP | 2026-05-22 | erros_que_se_compensam | REPROVADO | dificil |
-| [caso-027](casos/caso-027.md) | Umbuzeiro II FIF Cambial Dólar | CAMBIAL | 2026-04-23 | ajuste_futuros_errado, compromissada_como_caixa | REPROVADO (c/ ressalva) | media |
+| [caso-027](casos/caso-027.md) | Umbuzeiro II FIF Cambial Dólar | CAMBIAL | 2026-04-23 | ajuste_futuros_errado, compromissada_como_caixa | REPROVADO | media |
 | [caso-028](casos/caso-028.md) | Juazeiro FIP Multiestratégia | FIP | 2026-08-12 | integralizacao_nao_convertida | REPROVADO | media |
 | [caso-029](casos/caso-029.md) | Pirarucu Plus FIF Incentivado em Infraestrutura RF | INFRA | 2026-09-11 | tarifa_bancaria_indevida, debito_em_duplicidade | PENDENTE | media |
 | [caso-030](casos/caso-030.md) | Garça Moura Institucional FIF Multimercado | FIM_MACRO | 2026-06-23 | tudo_bate | APROVADO | facil |
@@ -48,20 +48,20 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-042](casos/caso-042.md) | Seriguela FIF Multimercado Long Short | FIM_LS | 2026-02-10 | taxa_reduzida_nao_aplicada | REPROVADO | media |
 | [caso-043](casos/caso-043.md) | Graúna Estratégia FIP Multiestratégia | FIP | 2026-02-06 | integralizacao_nao_convertida | REPROVADO | media |
 | [caso-044](casos/caso-044.md) | Buriti Institucional FII Responsabilidade Limitada | FII | 2026-07-08 | tudo_bate_com_ruido | APROVADO | media |
-| [caso-045](casos/caso-045.md) | Biguá Prime FIF RF Referenciado DI | RF_DI | 2026-05-28 | come_cotas_nao_aplicado, taxa_cvm_faixa_errada | REPROVADO | media |
+| [caso-045](casos/caso-045.md) | Gavião Real FIF RF Referenciado DI | RF_DI | 2026-05-28 | come_cotas_nao_aplicado, despesa_nao_prevista | REPROVADO | dificil |
 | [caso-046](casos/caso-046.md) | Arara Azul Institucional FIDC Responsabilidade Limitada | FIDC | 2026-02-24 | compromissada_como_caixa | APROVADO (c/ ressalva) | media |
 | [caso-047](casos/caso-047.md) | Angico II FII Responsabilidade Limitada | FII | 2026-06-18 | taxa_gestao_sem_apropriacao | REPROVADO | media |
 | [caso-048](casos/caso-048.md) | Baobá Fiagro — Direitos Creditórios | FIAGRO | 2026-09-25 | taxa_sobre_pl_do_dia | REPROVADO | media |
 | [caso-049](casos/caso-049.md) | Cumaru FIF Ações | FIA | 2026-05-15 | tudo_bate | APROVADO | facil |
 | [caso-050](casos/caso-050.md) | Peroba III FIF Incentivado em Infraestrutura RF | INFRA | 2026-04-06 | tudo_bate | APROVADO | facil |
-| [caso-051](casos/caso-051.md) | Gavião Real Total FIF Multimercado Long Short | FIM_LS | 2026-05-11 | despesa_nao_prevista, dividendo_recebido_nao_baixado | PENDENTE (c/ ressalva) | dificil |
+| [caso-051](casos/caso-051.md) | Gavião Real Total FIF Multimercado Long Short | FIM_LS | 2026-05-11 | despesa_nao_prevista, dividendo_recebido_nao_baixado | PENDENTE | dificil |
 | [caso-052](casos/caso-052.md) | Tamanduá III FIE FIF Previdenciário Multimercado | PREV | 2026-03-06 | taxa_reduzida_nao_aplicada, credito_nao_identificado | REPROVADO | dificil |
 | [caso-053](casos/caso-053.md) | Carcará Institucional FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-04-30 | preco_credito_fonte_errada, aplicacao_nao_convertida, boleta_tardia_nao_processada | REPROVADO | media |
 | [caso-054](casos/caso-054.md) | Ipê Roxo Institucional FIF RF Referenciado DI | RF_DI | 2026-01-30 | provisao_duplicada, taxa_cvm_faixa_errada | REPROVADO | media |
-| [caso-055](casos/caso-055.md) | Tucano II FIDC Responsabilidade Limitada | FIDC | 2026-06-19 | tarifa_bancaria_indevida, credito_nao_identificado, compromissada_como_caixa | PENDENTE (c/ ressalva) | dificil |
+| [caso-055](casos/caso-055.md) | Tucano II FIDC Responsabilidade Limitada | FIDC | 2026-06-19 | tarifa_bancaria_indevida, credito_nao_identificado, compromissada_como_caixa | PENDENTE | dificil |
 | [caso-056](casos/caso-056.md) | Jabuticaba FIC FIF Multimercado | FIC_FIM | 2026-03-27 | cota_investido_d1 | REPROVADO | facil |
 | [caso-057](casos/caso-057.md) | Carcará Família FIF RF Crédito Privado LP | RF_CP | 2026-08-04 | ativo_vencido_nao_baixado, resgate_cotizado_antecipadamente | REPROVADO | media |
-| [caso-058](casos/caso-058.md) | Pintassilgo Estratégia FIF Ações | FIA | 2026-01-19 | desdobramento_nao_refletido, dividendo_recebido_nao_baixado | REPROVADO (c/ ressalva) | media |
+| [caso-058](casos/caso-058.md) | Pintassilgo Estratégia FIF Ações | FIA | 2026-01-19 | desdobramento_nao_refletido, dividendo_recebido_nao_baixado | REPROVADO | media |
 | [caso-059](casos/caso-059.md) | Biguá Fiagro — Direitos Creditórios | FIAGRO | 2026-08-04 | juros_credito_nao_registrados | REPROVADO | facil |
 | [caso-060](casos/caso-060.md) | Baobá Institucional FIF Multimercado | FIM_MACRO | 2026-02-06 | credito_nao_identificado | PENDENTE | media |
 | [caso-061](casos/caso-061.md) | Guapuruvu II FIF Cambial Dólar | CAMBIAL | 2026-10-07 | pagamento_taxa_nao_registrado | APROVADO (c/ ressalva) | media |
@@ -75,7 +75,7 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-069](casos/caso-069.md) | Tiriba II FIF Incentivado em Infraestrutura RF | INFRA | 2026-04-02 | provisao_duplicada | REPROVADO | facil |
 | [caso-070](casos/caso-070.md) | Pitanga Advisory FIP Multiestratégia | FIP | 2026-06-18 | taxa_escalonada_ignorada, despesa_nao_prevista | REPROVADO | media |
 | [caso-071](casos/caso-071.md) | Corrupião Estratégia FIF Multimercado Long Short | FIM_LS | 2026-01-21 | dividendo_ex_nao_provisionado | REPROVADO | media |
-| [caso-072](casos/caso-072.md) | Biguá III FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-05-12 | taxa_cvm_faixa_errada, compromissada_como_caixa | REPROVADO (c/ ressalva) | media |
+| [caso-072](casos/caso-072.md) | Biguá III FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-05-12 | taxa_cvm_faixa_errada, compromissada_como_caixa | REPROVADO | media |
 | [caso-073](casos/caso-073.md) | Seriguela Plus FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-05-25 | curva_vs_mercado_exclusivo, resgate_pago_com_cota_errada, juros_credito_nao_registrados | REPROVADO | dificil |
 | [caso-074](casos/caso-074.md) | Umbuzeiro Família FIF Multimercado | FIM_MACRO | 2026-03-23 | taxa_sobre_pl_do_dia, debito_em_duplicidade | REPROVADO | dificil |
 | [caso-075](casos/caso-075.md) | Buriti Família FIC FIF Multimercado | FIC_FIM | 2026-05-20 | taxa_cvm_faixa_errada | REPROVADO | facil |
@@ -105,7 +105,7 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-099](casos/caso-099.md) | Guapuruvu Advisory FIF Incentivado em Infraestrutura RF | INFRA | 2026-02-09 | resgate_cotizado_antecipadamente | REPROVADO | media |
 | [caso-100](casos/caso-100.md) | Aroeira III FIC FIF Multimercado | FIC_FIM | 2026-11-05 | performance_data_base_errada | REPROVADO | media |
 | [caso-101](casos/caso-101.md) | Sanhaço II FIF Ações | FIA | 2026-05-12 | tudo_bate_com_ruido | APROVADO | media |
-| [caso-102](casos/caso-102.md) | Guará Advisory FIF Cambial Dólar | CAMBIAL | 2026-03-02 | aplicacao_nao_convertida, compromissada_como_caixa | REPROVADO (c/ ressalva) | media |
+| [caso-102](casos/caso-102.md) | Guará Advisory FIF Cambial Dólar | CAMBIAL | 2026-03-02 | aplicacao_nao_convertida, compromissada_como_caixa | REPROVADO | media |
 | [caso-103](casos/caso-103.md) | Uirapuru II FIF Ações | FIA | 2026-08-24 | preco_acao_d1 | REPROVADO | media |
 | [caso-104](casos/caso-104.md) | Corrupião Prime FIP Multiestratégia | FIP | 2026-01-30 | tudo_bate_com_ruido | APROVADO | media |
 | [caso-105](casos/caso-105.md) | Embaúba Plus FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-04-08 | juros_credito_nao_registrados, taxa_sobre_pl_do_dia | REPROVADO | media |
@@ -132,13 +132,13 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-126](casos/caso-126.md) | Canjerana Total FIE FIF Previdenciário Multimercado | PREV | 2026-03-16 | liquidacao_compra_antecipada, resgate_liquidado_nao_baixado, dividendo_recebido_nao_baixado | APROVADO (c/ ressalva) | media |
 | [caso-127](casos/caso-127.md) | Saíra FIF Ações | FIA | 2026-04-14 | minimo_mensal_ignorado, despesa_nao_prevista | REPROVADO | dificil |
 | [caso-128](casos/caso-128.md) | Imbuia Família FIC FIF Multimercado | FIC_FIM | 2026-01-02 | performance_sem_linha_dagua | REPROVADO | facil |
-| [caso-129](casos/caso-129.md) | Graúna FIF Multimercado Long Short | FIM_LS | 2026-04-14 | minimo_mensal_ignorado, resgate_liquidado_nao_baixado | REPROVADO (c/ ressalva) | media |
+| [caso-129](casos/caso-129.md) | Graúna FIF Multimercado Long Short | FIM_LS | 2026-04-14 | minimo_mensal_ignorado, resgate_liquidado_nao_baixado | REPROVADO | media |
 | [caso-130](casos/caso-130.md) | Juazeiro Estratégia FIF RF Crédito Privado LP | RF_CP | 2026-11-04 | boleta_tardia_nao_processada | REPROVADO | media |
 | [caso-131](casos/caso-131.md) | Tangará III FIF Incentivado em Infraestrutura RF | INFRA | 2026-04-10 | auditoria_contrato_novo | REPROVADO | media |
 | [caso-132](casos/caso-132.md) | Tamanduá Plus FII Responsabilidade Limitada | FII | 2026-03-05 | tudo_bate | APROVADO | facil |
 | [caso-133](casos/caso-133.md) | Tiriba III FIDC Responsabilidade Limitada | FIDC | 2026-06-10 | pdd_aging_desatualizado, taxa_escalonada_ignorada | REPROVADO | media |
 | [caso-134](casos/caso-134.md) | Canjerana Estratégia FIP Multiestratégia | FIP | 2026-05-18 | laudo_fip_nao_atualizado | REPROVADO | media |
-| [caso-135](casos/caso-135.md) | Bem-te-vi Plus FIF Cambial Dólar | CAMBIAL | 2026-03-24 | metodo_exponencial_vs_linear, compromissada_como_caixa | REPROVADO (c/ ressalva) | media |
+| [caso-135](casos/caso-135.md) | Bem-te-vi Plus FIF Cambial Dólar | CAMBIAL | 2026-03-24 | metodo_exponencial_vs_linear, compromissada_como_caixa | REPROVADO | media |
 | [caso-136](casos/caso-136.md) | Jandaia Advisory FIF Ações | FIA | 2026-06-19 | desdobramento_nao_refletido | REPROVADO | media |
 | [caso-137](casos/caso-137.md) | Bem-te-vi FIF Multimercado | FIM_MACRO | 2026-05-05 | credito_nao_identificado, debito_em_duplicidade | PENDENTE | dificil |
 | [caso-138](casos/caso-138.md) | Graúna Fiagro — Direitos Creditórios | FIAGRO | 2026-07-27 | tudo_bate_com_ruido | APROVADO | media |
@@ -186,7 +186,7 @@ Total: 200 casos. Todos os dados são fictícios.
 | [caso-180](casos/caso-180.md) | Taiúva Família FIF RF Referenciado DI | RF_DI | 2026-02-25 | metodo_exponencial_vs_linear | REPROVADO | media |
 | [caso-181](casos/caso-181.md) | Mandacaru Família FIF Multimercado | FIM_MACRO | 2026-07-15 | preco_acao_d1 | REPROVADO | media |
 | [caso-182](casos/caso-182.md) | Murici Plus FIF RF Crédito Privado LP | RF_CP | 2026-11-24 | debito_em_duplicidade, tarifa_bancaria_indevida | PENDENTE | dificil |
-| [caso-183](casos/caso-183.md) | Sucupira II FIF Incentivado em Infraestrutura RF | INFRA | 2026-02-18 | debito_em_duplicidade, resgate_liquidado_nao_baixado | PENDENTE (c/ ressalva) | dificil |
+| [caso-183](casos/caso-183.md) | Sucupira II FIF Incentivado em Infraestrutura RF | INFRA | 2026-02-18 | debito_em_duplicidade, resgate_liquidado_nao_baixado | PENDENTE | dificil |
 | [caso-184](casos/caso-184.md) | Seriguela II FIF Multimercado Crédito Privado — Classe Exclusiva | EXCLUSIVO | 2026-08-07 | resgate_pago_com_cota_errada, despesa_nao_prevista | REPROVADO | dificil |
 | [caso-185](casos/caso-185.md) | Garça Moura III FIC FIF Multimercado | FIC_FIM | 2026-02-24 | taxa_cvm_faixa_errada, aplicacao_apos_corte_convertida | REPROVADO | media |
 | [caso-186](casos/caso-186.md) | Ingá FIF Cambial Dólar | CAMBIAL | 2026-11-05 | provisao_nao_baixada_apos_pagamento | REPROVADO | media |

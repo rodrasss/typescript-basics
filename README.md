@@ -95,4 +95,6 @@ Os casos usam regras **plausíveis**, mas simuladas. Alinhe com o processo real 
 
 **Rodada 2** (detalhes em [`avaliacao/rodada-2.md`](avaliacao/rodada-2.md)): 3 agentes resolveram 24 casos do dataset já corrigido, às cegas. **Parecer certo em 23 de 24** e **33 de 35 achados**, sem problema inventado. O erro de parecer e os achados que faltaram eram ambiguidades do prompt (caixa e provisão divergindo pelo mesmo valor; rótulo de lado em evento real de dinheiro), todas esclarecidas em seguida no prompt, na metodologia e no gerador.
 
-**Pendente:** uma rodada às cegas sobre a sessão de come-cotas e sobre o dataset após esses ajustes. Os identificadores dos casos mudam a cada versão do gerador, então os resultados das rodadas valem para o método (prompt + metodologia), não para os casos atuais.
+**Rodada 3 — sessão de come-cotas** (detalhes em [`avaliacao/rodada-3-come-cotas.md`](avaliacao/rodada-3-come-cotas.md)): 2 agentes resolveram 12 casos às cegas. **Parecer certo em 12 de 12 e 14 de 14 achados, sem falso positivo.** As observações deles motivaram ajustes de coerência (cota de referência única por evento, posição das aplicações do dia, vigência do regulamento, significado da marca de ressalva), já aplicados.
+
+**Pendente:** reavaliar às cegas os dois datasets depois dos últimos ajustes. Os identificadores dos casos mudam a cada versão do gerador, então os resultados das rodadas valem para o método (prompt + metodologia), não para os casos atuais.

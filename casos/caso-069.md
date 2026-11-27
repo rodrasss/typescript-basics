@@ -18,7 +18,7 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Tiriba II FIF Incentiva
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -190,6 +190,8 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 141.720.730,37561128 | 141.720.730,37561128 | 0,00000000 |
 | PL final | 280.330.268,39 | 280.330.133,76 | -134,63 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

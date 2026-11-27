@@ -18,7 +18,7 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Ariranha II Fiagr
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/01/2026 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -185,6 +185,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 5.869.378,45575384 | 5.869.378,45575384 | 0,00000000 |
 | PL final | 493.827.269,59 | 493.692.509,90 | -134.759,69 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

@@ -18,7 +18,7 @@ Quem acompanha a Ancoradouro Capital (Recife/PE) conhece o Sucupira II FIF Incen
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -190,11 +190,13 @@ _Aplicações e resgates que cotizam hoje alteram a quantidade de cotas ao fim d
 | Quantidade final de cotas | 54.205.290,42839744 | 54.205.302,75637384 | 12,32797640 |
 | PL final | 138.232.689,77 | 138.223.891,71 | -8.798,06 |
 
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
+
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** PENDENTE (com ressalva)
+**Parecer:** PENDENTE
 
 **Resumo:** Deixar pendente e escalar: Pagamento da NF 6441 debitado duas vezes; Pagamento de resgate não baixado no controle Alfa.
 

@@ -18,7 +18,7 @@ O Pitanga Advisory FIP Multiestratégia é gerido pela Coivara Partners, gestora
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
@@ -178,6 +178,8 @@ Nenhum movimento de passivo no dia.
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 96.741,61342528 | 96.741,61342528 | 0,00000000 |
 | PL final | 116.474.157,89 | 116.467.315,85 | -6.842,04 |
+
+_PL final = quantidade final de cotas × cota de fechamento (truncada em 8 casas). Diferenças de poucos reais em relação a "PL base − IR" são resíduo de truncamento e não são achado._
 
 ---
 

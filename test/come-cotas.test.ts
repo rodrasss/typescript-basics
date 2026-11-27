@@ -131,3 +131,44 @@ test('o calendário do come-cotas também vale no dataset geral', () => {
   assert.ok(gerais.length >= 3);
   for (const c of gerais) assert.ok(datas.includes(c.data), `${c.id}: ${c.data} não é penúltimo dia útil de maio/novembro`);
 });
+
+test('quem estava no fundo no último come-cotas tem a mesma cota de referência', () => {
+  for (const c of sessao()) {
+    for (const lado of [c.lados.Alfa, c.lados.Beta]) {
+      const refs = (lado.posicao.comeCotas?.posicoes ?? []).filter((p) => p.origemReferencia === 'último come-cotas').map((p) => `${p.dataReferencia}:${p.cotaReferencia}`);
+      // no lado errado de cc_cota_referencia_errada a posição com aplicação recente usa a referência velha, mas as demais continuam iguais entre si
+      assert.equal(new Set(refs).size <= 1, true, `${c.id}: posições com o mesmo último come-cotas e cotas de referência diferentes`);
+    }
+  }
+});
+
+test('cc_cota_referencia_errada: o lado errado usa a referência do último come-cotas na posição com aplicação recente', () => {
+  for (const c of sessao().filter((x) => primario(x) === 'cc_cota_referencia_errada')) {
+    const posicoes = [c.lados.Alfa.posicao.comeCotas!.posicoes, c.lados.Beta.posicao.comeCotas!.posicoes];
+    const alvo = posicoes[0].findIndex((p, i) => p.origemReferencia === 'aplicação' && p.cotaReferencia !== posicoes[1][i].cotaReferencia);
+    assert.ok(alvo >= 0, `${c.id}: nenhuma posição com referência divergente`);
+    const [a, b] = [posicoes[0][alvo].cotaReferencia, posicoes[1][alvo].cotaReferencia];
+    const ultimo = posicoes[0].find((p) => p.origemReferencia === 'último come-cotas')?.cotaReferencia;
+    if (ultimo !== undefined) assert.ok(a === ultimo || b === ultimo, `${c.id}: o lado errado não usou a referência do último come-cotas`);
+  }
+});
+
+test('aplicações convertidas hoje formam a posição CT-HJ: sem ganho e com a cota de D como referência', () => {
+  let conferidos = 0;
+  for (const c of sessao()) {
+    for (const lado of [c.lados.Alfa, c.lados.Beta]) {
+      const cc = lado.posicao.comeCotas;
+      if (!cc || !cc.aplicar) continue;
+      const r = lado.resultado;
+      const hj = r.detalheComeCotas.find((d) => d.id === 'CT-HJ');
+      if (r.cotasEmitidas > 0) {
+        assert.ok(hj, `${c.id}: faltou a posição CT-HJ`);
+        assert.equal(hj!.qtdCotas, r.cotasEmitidas, `${c.id}: CT-HJ ≠ cotas emitidas`);
+        assert.equal(hj!.ir, 0, `${c.id}: CT-HJ com IR`);
+        assert.equal(hj!.cotaReferencia, r.cota, `${c.id}: referência de CT-HJ ≠ cota de D`);
+        conferidos++;
+      } else assert.ok(!hj, `${c.id}: CT-HJ sem aplicações`);
+    }
+  }
+  assert.ok(conferidos >= 5, `poucos casos com aplicações no dia (${conferidos})`);
+});
