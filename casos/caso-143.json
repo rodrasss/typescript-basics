@@ -1,0 +1,724 @@
+{
+  "id": "caso-143",
+  "seed": 3988330,
+  "fundo": {
+    "codigo": "FND-0143",
+    "nome": "Pequi Fiagro — Direitos Creditórios",
+    "tipo": "FIAGRO",
+    "rotulo": "Fiagro (cadeias agroindustriais)",
+    "classe": "Classe de Fiagro",
+    "condominio": "fechado",
+    "publico": "Público geral (cotas negociadas na B3)",
+    "gestora": {
+      "nome": "Quaresmeira Capital",
+      "perfil": "especialista em crédito estruturado (FIDC e CRA)",
+      "cidade": "São Paulo/SP"
+    },
+    "gestorResponsavel": "Murilo",
+    "analistaResponsavel": "Diego",
+    "inicio": "2012-11-04",
+    "cotistas": "cerca de 40 mil cotistas pessoa física via B3",
+    "marcos": [
+      "trocou de gestor responsável em 2023 depois da saída do fundador",
+      "trocou de custodiante em 2024, com migração de carteira e de cadastros"
+    ],
+    "particularidades": [
+      "a gestora publica uma carta mensal aos cotistas até o 5º dia útil",
+      "as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês"
+    ],
+    "pistas": [
+      "Cadastros de despesas já foram duplicados em outros fundos da mesma carteira."
+    ],
+    "historia": "O Pequi Fiagro — Direitos Creditórios é gerido pela Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA), em São Paulo/SP. Criado em 04/11/2012, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Murilo, e quem cuida da validação do fundo é Diego. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. Cadastros de despesas já foram duplicados em outros fundos da mesma carteira. A equipe da gestora é considerada muito organizada. No fechamento de ontem (07/10/2026) o fundo tinha PL de R$ 368.736.589,06, cota de 12,52710102 e 29.435.109,38240510 cotas. Hoje, quinta-feira, 08/10/2026, é a data-base da validação."
+  },
+  "data": "2026-10-08",
+  "dAnterior": "2026-10-07",
+  "diaSemana": "quinta-feira",
+  "anterior": {
+    "pl": 368736589.06,
+    "cota": 12.52710102,
+    "qtdCotas": 29435109.3824051
+  },
+  "regulamento": {
+    "vigencia": "01/03/2026 (adaptado à Resolução CVM 175)",
+    "taxas": [
+      {
+        "codigo": "TXADM",
+        "nome": "Taxa de administração",
+        "param": {
+          "pct": 0.0011,
+          "metodo": "exponencial_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXGES",
+        "nome": "Taxa de gestão",
+        "param": {
+          "pct": 0.0097,
+          "metodo": "exponencial_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXCUS",
+        "nome": "Taxa máxima de custódia",
+        "param": {
+          "pct": 0.0002,
+          "metodo": "exponencial_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      }
+    ],
+    "despesasFixas": [
+      {
+        "codigo": "AUDIT",
+        "nome": "Auditoria independente",
+        "valor": 26000,
+        "periodo": "anual",
+        "observacao": "contrato anual; provisão diária por 1/252"
+      },
+      {
+        "codigo": "ANBIMA",
+        "nome": "Taxa ANBIMA (convênio de autorregulação)",
+        "valor": 400,
+        "periodo": "mensal"
+      },
+      {
+        "codigo": "ESCRIT",
+        "nome": "Escrituração de cotas",
+        "valor": 13000,
+        "periodo": "mensal"
+      }
+    ],
+    "tabelaCVM": [
+      {
+        "ate": 20000000,
+        "valor": 2100
+      },
+      {
+        "ate": 50000000,
+        "valor": 3600
+      },
+      {
+        "ate": 100000000,
+        "valor": 5400
+      },
+      {
+        "ate": 300000000,
+        "valor": 7800
+      },
+      {
+        "ate": 1000000000,
+        "valor": 10800
+      },
+      {
+        "ate": null,
+        "valor": 14400
+      }
+    ],
+    "plReferenciaCVM": 350788453.08,
+    "encargos": [
+      "taxas de administração, gestão, custódia e performance previstas neste regulamento",
+      "taxa de fiscalização da CVM",
+      "honorários e despesas do auditor independente",
+      "custos de corretagem, emolumentos e registro de operações",
+      "despesas com custódia e liquidação de ativos (SELIC/B3)",
+      "contribuição anual à ANBIMA",
+      "honorários advocatícios e custas em defesa dos interesses da classe, quando aprovados pelo administrador e documentados"
+    ],
+    "naoEncargos": [
+      "tarifas bancárias de manutenção de conta e pacotes de serviços (suportadas pelo administrador)",
+      "despesas de marketing, eventos e relacionamento da gestora ou do distribuidor",
+      "despesas não previstas expressamente como encargo"
+    ],
+    "cotizacao": [
+      "Condomínio fechado: sem resgate; liquidez via B3."
+    ],
+    "cota": "Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).",
+    "precificacao": [
+      "Manual de marcação a mercado do administrador (versão simulada vigente).",
+      "Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.",
+      "Operações compromissadas: PU de ida acrescido da remuneração pactuada.",
+      "CRA: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação do administrador (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).",
+      "LCA: curva do papel."
+    ],
+    "tributacao": "Fiagro: rendimentos isentos para PF nas condições legais",
+    "especificos": [
+      "Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como \"rendimentos a distribuir\" (passivo) na data do anúncio (data-com), reduzindo o PL."
+    ],
+    "alteracoes": []
+  },
+  "mercado": {
+    "cdiAA": 0.1415,
+    "referencias": [
+      {
+        "ativo": "CRA0260A1B2",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "1.007,210692"
+      },
+      {
+        "ativo": "CRA0260C3D4",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "976,973235"
+      },
+      {
+        "ativo": "LFT 01/03/2029",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "18.231,853926"
+      },
+      {
+        "ativo": "CRA0260A1B2",
+        "fonte": "PU par (curva da taxa de emissão) — informativo",
+        "valor": "1.026,781875"
+      }
+    ],
+    "futuros": [],
+    "eventos": [],
+    "benchmarks": []
+  },
+  "comunicacoes": [
+    {
+      "hora": "18:05",
+      "de": "Administrador — aviso aos cotistas",
+      "assunto": "Anúncio de rendimentos",
+      "texto": "Rendimento de R$ 0,13 por cota; data-com 08/10/2026; pagamento em 23/10/2026."
+    }
+  ],
+  "memoriaDisponivel": true,
+  "lados": {
+    "Alfa": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "CRA0260A1B2",
+            "descricao": "CRA Securitizadora Piracema — série 45 (lastro: CPR de soja) — CDI + 3,10%",
+            "classe": "CRA",
+            "quantidade": 105595,
+            "preco": 1026.781875,
+            "valor": 108423032.09,
+            "fonte": "Curva — taxa de emissão"
+          },
+          {
+            "codigo": "CRA0260C3D4",
+            "descricao": "CRA Securitizadora Piracema — série 51 (lastro: cédulas de cooperativa) — IPCA + 8,20%",
+            "classe": "CRA",
+            "quantidade": 90719,
+            "preco": 976.973235,
+            "valor": 88630034.91,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "CRA0260E5F6",
+            "descricao": "CRA Securitizadora Araçá — série 12 (lastro: duplicatas de insumos) — CDI + 4,00%",
+            "classe": "CRA",
+            "quantidade": 90188,
+            "preco": 982.72949,
+            "valor": 88630407.24,
+            "fonte": "Preço do comitê de precificação do administrador"
+          },
+          {
+            "codigo": "LCA ARANDU 2027",
+            "descricao": "LCA Banco Arandu S.A. — 93% do CDI",
+            "classe": "LCA",
+            "quantidade": 33228,
+            "preco": 1066.946056,
+            "valor": 35452483.55,
+            "fonte": "Curva do papel"
+          },
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 1945,
+            "preco": 18231.853926,
+            "valor": 35460955.89,
+            "fonte": "ANBIMA — taxa indicativa D"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 14601588.9,
+          "lancamentos": [],
+          "saldoFinal": 14601588.9
+        },
+        "aReceber": [],
+        "aPagar": [],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 7902.62,
+            "apropriacao": 1608.68,
+            "pagamento": 0,
+            "saldoAtual": 9511.3,
+            "memoria": "[base: PL do dia útil anterior] 0,11% a.a. sobre R$ 368.736.589,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.608,68",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0011,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 70454.72,
+            "apropriacao": 14125.31,
+            "pagamento": 0,
+            "saldoAtual": 84580.03,
+            "memoria": "[base: PL do dia útil anterior] 0,97% a.a. sobre R$ 368.736.589,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 14.125,31",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0097,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 1499.35,
+            "apropriacao": 292.62,
+            "pagamento": 0,
+            "saldoAtual": 1791.97,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 368.736.589,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 292,62",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0002,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 12071.43,
+            "apropriacao": 103.17,
+            "pagamento": 0,
+            "saldoAtual": 12174.6,
+            "memoria": "R$ 26.000,00 (anual) ÷ 252 d.u. = R$ 103,17",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 26000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 95.24,
+            "apropriacao": 19.05,
+            "pagamento": 0,
+            "saldoAtual": 114.29,
+            "memoria": "R$ 400,00 (mensal) ÷ 21 d.u. = R$ 19,05",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 400,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "ESCRIT",
+            "descricao": "Escrituração de cotas a pagar",
+            "saldoAnterior": 3095.24,
+            "apropriacao": 619.05,
+            "pagamento": 0,
+            "saldoAtual": 3714.29,
+            "memoria": "R$ 13.000,00 (mensal) ÷ 21 d.u. = R$ 619,05",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 13000,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 870.97,
+            "apropriacao": 174.19,
+            "pagamento": 0,
+            "saldoAtual": 1045.16,
+            "memoria": "R$ 10.800,00 (trimestral) ÷ 62 d.u. = R$ 174,19",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 10800,
+              "periodo": "trimestral",
+              "diasPeriodo": 62
+            }
+          },
+          {
+            "codigo": "ESCRIT (2)",
+            "descricao": "Escrituração de cotas a pagar",
+            "saldoAnterior": 0,
+            "apropriacao": 619.05,
+            "pagamento": 0,
+            "saldoAtual": 619.05,
+            "memoria": "R$ 13.000,00 (mensal) ÷ 21 d.u. = R$ 619,05",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 13000,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          }
+        ],
+        "qtdCotasBase": 29435109.3824051,
+        "arredondamento": "truncamento",
+        "movs": []
+      },
+      "resultado": {
+        "totalAtivos": 356596913.68,
+        "caixa": 14601588.9,
+        "totalReceber": 0,
+        "totalPagar": 0,
+        "totalProvisoes": 113550.69,
+        "plAntesApropriacoes": 371102513.01,
+        "plBase": 371084951.89,
+        "cota": 12.60688204,
+        "aplicacoesConvertidas": 0,
+        "cotasEmitidas": 0,
+        "cotasResgatadas": 0,
+        "valorResgates": 0,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "detalheComeCotas": [],
+        "qtdFinal": 29435109.3824051,
+        "plFinal": 371084951.82
+      }
+    },
+    "Beta": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "CRA0260A1B2",
+            "descricao": "CRA Securitizadora Piracema — série 45 (lastro: CPR de soja) — CDI + 3,10%",
+            "classe": "CRA",
+            "quantidade": 105595,
+            "preco": 1007.210692,
+            "valor": 106356413.02,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "CRA0260C3D4",
+            "descricao": "CRA Securitizadora Piracema — série 51 (lastro: cédulas de cooperativa) — IPCA + 8,20%",
+            "classe": "CRA",
+            "quantidade": 90719,
+            "preco": 976.973235,
+            "valor": 88630034.91,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "CRA0260E5F6",
+            "descricao": "CRA Securitizadora Araçá — série 12 (lastro: duplicatas de insumos) — CDI + 4,00%",
+            "classe": "CRA",
+            "quantidade": 90188,
+            "preco": 982.72949,
+            "valor": 88630407.24,
+            "fonte": "Preço do comitê de precificação do administrador"
+          },
+          {
+            "codigo": "LCA ARANDU 2027",
+            "descricao": "LCA Banco Arandu S.A. — 93% do CDI",
+            "classe": "LCA",
+            "quantidade": 33228,
+            "preco": 1066.946056,
+            "valor": 35452483.55,
+            "fonte": "Curva do papel"
+          },
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 1945,
+            "preco": 18231.853926,
+            "valor": 35460955.89,
+            "fonte": "ANBIMA — taxa indicativa D"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 14601588.9,
+          "lancamentos": [],
+          "saldoFinal": 14601588.9
+        },
+        "aReceber": [],
+        "aPagar": [
+          {
+            "codigo": "RENDIMENTOS A DISTRIBUIR",
+            "descricao": "Rendimentos anunciados (R$ 0,13/cota)",
+            "valor": 3826564.22
+          }
+        ],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 7902.62,
+            "apropriacao": 1608.68,
+            "pagamento": 0,
+            "saldoAtual": 9511.3,
+            "memoria": "[base: PL do dia útil anterior] 0,11% a.a. sobre R$ 368.736.589,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.608,68",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0011,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 70454.72,
+            "apropriacao": 14125.31,
+            "pagamento": 0,
+            "saldoAtual": 84580.03,
+            "memoria": "[base: PL do dia útil anterior] 0,97% a.a. sobre R$ 368.736.589,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 14.125,31",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0097,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 1499.35,
+            "apropriacao": 292.62,
+            "pagamento": 0,
+            "saldoAtual": 1791.97,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 368.736.589,06 fator exponencial (1+taxa)^(1/252) − 1 = R$ 292,62",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0002,
+                "metodo": "exponencial_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 12071.43,
+            "apropriacao": 103.17,
+            "pagamento": 0,
+            "saldoAtual": 12174.6,
+            "memoria": "R$ 26.000,00 (anual) ÷ 252 d.u. = R$ 103,17",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 26000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 95.24,
+            "apropriacao": 19.05,
+            "pagamento": 0,
+            "saldoAtual": 114.29,
+            "memoria": "R$ 400,00 (mensal) ÷ 21 d.u. = R$ 19,05",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 400,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "ESCRIT",
+            "descricao": "Escrituração de cotas a pagar",
+            "saldoAnterior": 3095.24,
+            "apropriacao": 619.05,
+            "pagamento": 0,
+            "saldoAtual": 3714.29,
+            "memoria": "R$ 13.000,00 (mensal) ÷ 21 d.u. = R$ 619,05",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 13000,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 870.97,
+            "apropriacao": 174.19,
+            "pagamento": 0,
+            "saldoAtual": 1045.16,
+            "memoria": "R$ 10.800,00 (trimestral) ÷ 62 d.u. = R$ 174,19",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 10800,
+              "periodo": "trimestral",
+              "diasPeriodo": 62
+            }
+          }
+        ],
+        "qtdCotasBase": 29435109.3824051,
+        "arredondamento": "truncamento",
+        "movs": []
+      },
+      "resultado": {
+        "totalAtivos": 354530294.61,
+        "caixa": 14601588.9,
+        "totalReceber": 0,
+        "totalPagar": 3826564.22,
+        "totalProvisoes": 112931.64,
+        "plAntesApropriacoes": 365209329.72,
+        "plBase": 365192387.65,
+        "cota": 12.40669375,
+        "aplicacoesConvertidas": 0,
+        "cotasEmitidas": 0,
+        "cotasResgatadas": 0,
+        "valorResgates": 0,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "detalheComeCotas": [],
+        "qtdFinal": 29435109.3824051,
+        "plFinal": 365192387.61
+      }
+    }
+  },
+  "gabarito": {
+    "cenarios": [
+      "rendimento_nao_provisionado",
+      "preco_credito_fonte_errada",
+      "provisao_duplicada"
+    ],
+    "parecer": "REPROVADO",
+    "ressalva": false,
+    "resumo": "Reprovar até o ajuste: Rendimentos anunciados fora do passivo; PU de CRA0260A1B2 divergente; Provisão de Escrituração de cotas duplicada.",
+    "dificuldade": "media",
+    "achados": [
+      {
+        "cenario": "rendimento_nao_provisionado",
+        "dimensoes": [
+          "provisoes",
+          "cota"
+        ],
+        "titulo": "Rendimentos anunciados fora do passivo",
+        "ladoCorreto": "Beta",
+        "ajustePor": "Alfa",
+        "causaRaiz": "Alfa não reconheceu os rendimentos anunciados hoje (R$ 0,13/cota, R$ 3.826.564,22).",
+        "evidencias": [
+          "Valores a pagar",
+          "Comunicações — aviso de rendimentos",
+          "Regulamento — política de distribuição"
+        ],
+        "raciocinio": [
+          "O Beta tem R$ 3.826.564,22 de \"rendimentos a distribuir\" que o Alfa não tem. O valor corresponde ao rendimento de R$ 0,13 por cota anunciado no aviso.",
+          "O regulamento manda reconhecer o rendimento anunciado no passivo na data-com, que é hoje (aviso das 18:05). É fato de D e entra na cota de D.",
+          "Régua v1 (provisória) — cota: diferença de 471.149,29 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 471.149,29 cotas de PL), contra o limite de 250: ACIMA; provisões: maior diferença numa provisão de R$ 619,05 e diferença total de R$ 619,05, contra o limite de R$ 100,00 por provisão e no total: ACIMA."
+        ],
+        "acao": "Alfa deve registrar os rendimentos a distribuir e reprocessar a cota patrimonial. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
+      },
+      {
+        "cenario": "preco_credito_fonte_errada",
+        "dimensoes": [
+          "cota"
+        ],
+        "titulo": "PU de CRA0260A1B2 divergente",
+        "ladoCorreto": "Beta",
+        "ajustePor": "Alfa",
+        "causaRaiz": "Alfa precificou CRA0260A1B2 pela curva de emissão (PU par), e não pela taxa indicativa ANBIMA de D.",
+        "evidencias": [
+          "Carteira — linha CRA0260A1B2",
+          "Informações de mercado — referências ANBIMA",
+          "Regulamento — precificação"
+        ],
+        "raciocinio": [
+          "A diferença de ativos está concentrada em CRA0260A1B2: mesma quantidade (105.595) nos dois lados, mas PU 1.007,210692 no Beta contra 1.026,781875 no Alfa, o que dá R$ 2.066.619,07 de diferença de valor.",
+          "A referência ANBIMA de D é 1.007,210692, igual ao Beta. O PU do Alfa coincide com o PU par (curva de emissão).",
+          "O regulamento manda precificar pela taxa indicativa ANBIMA do próprio dia, então o lado correto é o que usou a referência de D.",
+          "Régua v1 (provisória) — cota: diferença de 471.149,29 cotas equivalentes (a maior entre 0,00 cotas de quantidade e 471.149,29 cotas de PL), contra o limite de 250: ACIMA."
+        ],
+        "acao": "Pedir ao Alfa que reprecifique CRA0260A1B2 pela taxa indicativa ANBIMA de D (PU 1.007,210692) e recalcule a cota antes da divulgação. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
+      },
+      {
+        "cenario": "provisao_duplicada",
+        "dimensoes": [
+          "provisoes"
+        ],
+        "titulo": "Provisão de Escrituração de cotas duplicada",
+        "ladoCorreto": "Beta",
+        "ajustePor": "Alfa",
+        "causaRaiz": "Alfa criou hoje uma segunda linha de provisão para Escrituração de cotas, com a mesma apropriação diária. A despesa está contada duas vezes.",
+        "evidencias": [
+          "Provisões — linhas com mesmo código/descrição"
+        ],
+        "raciocinio": [
+          "O Alfa tem uma linha a mais, \"ESCRIT (2)\", com saldo anterior zero e a mesma apropriação da linha original.",
+          "O regulamento/contrato prevê uma única despesa. A segunda linha parece um cadastro duplicado.",
+          "Régua v1 (provisória) — provisões: maior diferença numa provisão de R$ 619,05 e diferença total de R$ 619,05, contra o limite de R$ 100,00 por provisão e no total: ACIMA."
+        ],
+        "acao": "Alfa deve excluir a linha duplicada e reprocessar. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
+      }
+    ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 0,
+      "difPlEmCotas": 471149.29024708,
+      "difCotasEquivalentes": 471149.29024708,
+      "difCaixa": 0,
+      "maiorDifProvisao": 619.05,
+      "difTotalProvisoes": 619.05,
+      "cota": {
+        "acima": true
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": true
+      }
+    },
+    "valoresCorretos": {
+      "totalAtivos": 354530294.61,
+      "caixa": 14601588.9,
+      "totalReceber": 0,
+      "totalPagar": 3826564.22,
+      "totalProvisoes": 112931.64,
+      "plAntesApropriacoes": 365209329.72,
+      "plBase": 365192387.65,
+      "cota": 12.40669375,
+      "aplicacoesConvertidas": 0,
+      "cotasEmitidas": 0,
+      "cotasResgatadas": 0,
+      "valorResgates": 0,
+      "irComeCotas": 0,
+      "cotasComeCotas": 0,
+      "detalheComeCotas": [],
+      "qtdFinal": 29435109.3824051,
+      "plFinal": 365192387.61
+    },
+    "corretoPorDimensao": {
+      "cota": "Beta",
+      "caixa": "ambos",
+      "provisoes": "Beta"
+    },
+    "diferencas": {
+      "cota": -0.20018829,
+      "qtdFinal": 0,
+      "plFinal": -5892564.21,
+      "plBase": -5892564.24,
+      "caixa": 0,
+      "provisoes": -619.05
+    },
+    "armadilhas": [
+      "Descobrir qual lado está certo comparando com a referência de D, não com o D−1 nem com a curva de emissão."
+    ]
+  }
+}

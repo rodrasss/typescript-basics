@@ -1,141 +1,104 @@
-# Clipper GTA: cortes automáticos de lives
+# Validação de fundos: casos simulados para treinar o agente
 
-Esta automação pega as lives dos streamers na Twitch, na Kick e no YouTube (GTA RP, GTA V e, agora, GTA 6), acha os momentos engraçados e transforma cada um num vídeo vertical legendado. Depois posta no **YouTube Shorts**, no **TikTok** e no **Instagram Reels**.
+Este repositório tem **200 casos de uso simulados** para treinar e avaliar um agente que valida **cota, caixa e provisões** de fundos, comparando o que está no **Alfa** com o que está no **Beta**. Há também uma **sessão de come-cotas** com mais 33 casos: [`sessoes/come-cotas`](sessoes/come-cotas/README.md).
 
-> 👉 **Começando agora? Siga o [GUIA.md](GUIA.md)**, que tem o passo a passo de instalação, chaves e contas, com todos os links.
+Cada caso é um **fundo-persona**: tem história, gestora, cotistas, regulamento, taxas, ativos, um dia de movimento e (na maioria dos casos) um ou mais problemas escondidos. O caso traz a **entrada** que o agente recebe e o **gabarito** que um analista experiente daria (parecer, causa raiz, quem está certo, raciocínio passo a passo e ação).
 
-```
-VOD da live ──► baixa só o áudio ──► acha picos de reação (risada, grito, susto)
-            ──► transcreve só esses trechos (Whisper) + tira alguns frames
-            ──► IA, etapa 1 (triagem): escolhe os melhores momentos
-            ──► IA, etapa 2 (editor): para cada corte, decide início/fim exatos,
-                corta tempo morto, marca o zoom na reação, destaca as palavras-chave
-                e escreve gancho, título e legenda
-            ──► baixa só os trechos escolhidos (segmentos HLS, segundos)
-            ──► renderiza em 1080x1920: fundo desfocado OU câmera em cima + jogo
-                embaixo, legenda palavra por palavra, título e crédito
-            ──► painel de revisão ──► posta pelas APIs oficiais
-```
+> **Nomes neutros.** Os dois lados da comparação se chamam **Alfa** (o controle interno da casa) e **Beta** (o administrador/custodiante). No uso real, Alfa e Beta correspondem às duas pontas que você compara; o raciocínio não muda.
 
-### Base de conhecimento da IA
+> **Convenção de datas.** Nada é processado em D0, o dia corrente. A data-base de cada caso é o dia que está sendo validado, um fechamento já encerrado. O come-cotas ocorre no **penúltimo dia útil** de maio e de novembro.
 
-As duas etapas da IA recebem uma base de conhecimento, guardada em cache entre as chamadas. Ela tem:
+> **Tudo é fictício.** Fundos, gestoras, emissores, tickers, pessoas, preços e valores foram inventados por código. Nenhum dado real foi usado. Como os casos nunca se repetem na prática, simulado e real valem o mesmo para treinar: o que se treina é o jeito de raciocinar, não o valor.
 
-- **Manual de edição** (`knowledge/playbook.md`): gancho, ritmo, duração, o que é engraçado em GTA/RP/GTA 6, títulos e o que evitar. Edite à vontade.
-- **Exemplos reais do que viralizou:** clipes mais vistos da Twitch e Shorts de canais de cortes, com views, duração, fala e o momento do pico. Vêm com dados estatísticos (duração típica, onde fica a reação, estilo dos títulos).
-  - O projeto já vem com uma base inicial de GTA 6 (`knowledge/seed.json`).
-  - O comando `aprender` atualiza a base no seu PC, inclusive com perfis do TikTok e canais de cortes que você indicar.
-- **O seu gosto:** o que você aprovou, rejeitou e como reescreveu os títulos e legendas no painel. Quanto mais você revisa, mais a IA acerta o seu estilo.
+## O que tem aqui
 
-Também existe o **modo ao vivo**: enquanto o streamer joga GTA, a cada 15 minutos o programa analisa só o trecho novo da live (Twitch ou Kick) e solta os cortes na hora, antes de qualquer outro canal. Quando a live acaba, o processamento normal do VOD pula a parte que o modo ao vivo já analisou.
+| Caminho | Conteúdo |
+|---|---|
+| `casos/caso-NNN.md` | Caso legível: entrada (seções 1–5) + gabarito no final |
+| `casos/caso-NNN.json` | O mesmo caso, estruturado (posições dos dois lados, resultados, achados) |
+| `dataset.jsonl` | Uma linha por caso: `entrada` (markdown), `gabarito` (markdown), `parecer`, `dificuldade`, `cenarios` |
+| `INDICE.md` / `COBERTURA.md` | Lista dos casos e estatísticas de cobertura |
+| `sessoes/come-cotas/` | **Sessão de come-cotas:** 33 casos em dia de come-cotas (posição por cotista), com README próprio |
+| `regua-materialidade.md` / `regua.json` | **Régua de materialidade v1 (provisória):** limites de cota, caixa e provisões, e como medir |
+| `base-de-opinioes/` | Formato para guardar as opiniões dos analistas e calibrar a régua (`npm run calibrar`) |
+| `metodologia-analista.md` | **O método do analista**, em forma de roteiro, para o agente |
+| `prompt-agente.md` | **Rascunho do prompt do agente**, com o formato JSON da resposta |
+| `gerador/` | Código que gera, confere e avalia os casos (TypeScript) |
+| `test/` | Testes automáticos do dataset |
+| `avaliacao/` | Resultado da avaliação às cegas com agentes |
 
-Também existe o modo **clipes populares da Twitch**. Nele o programa pega os clipes mais vistos do canal (a própria audiência já marcou o momento bom), e o Claude escolhe, apara e escreve o título. O programa evita postar duas vezes o mesmo momento quando ele aparece tanto num clipe quanto no VOD.
+## Como um caso é montado
 
-## ⚠️ Direitos autorais e monetização
+A entrada tem cinco partes, no formato em que o agente a receberia "de mão beijada":
 
-- **Se um streamer reclamar:** `npm run clipper -- remover --streamer "Nome" --bloquear` apaga os vídeos dele do YouTube, lista os links do TikTok e do Instagram para apagar no app e para de gerar cortes dele.
-- **A live pertence ao streamer.** Repostar sem permissão pode gerar strike, remoção do vídeo e até banimento. O YouTube desmonetiza "conteúdo reutilizado" e o TikTok reduz o alcance de "conteúdo não original".
-- **O jeito que dá dinheiro:** programas de clipadores (o streamer paga por visualização ou libera a monetização) ou autorização direta. O programa só processa streamers com `"clipPermission": true`.
-- Por padrão, nada é postado sem você aprovar no painel.
+1. **O fundo:** história de vida, tipo, gestora, cotistas, PL/cota/quantidade de cotas em D−1.
+2. **Regulamento (simulado):** taxas (percentual, base de cálculo, método 1/252 ou exponencial, mínimo, faixas), performance com linha d'água, despesas fixas, taxa CVM por faixa, encargos e o que **não** é encargo, horário de corte, cotização, arredondamento da cota, regras de precificação, regras específicas e alterações recentes.
+3. **Mercado do dia:** referências de preço, PTAX, ajustes de futuros, eventos de ativos, benchmark.
+4. **Comunicações do dia:** e-mails e avisos, uns relevantes e outros só ruído.
+5. **Batimento Alfa × Beta:** resumo, carteira, caixa, valores a receber/pagar, provisões (com ou sem memória de cálculo), passivo e fechamento do dia.
 
-## Comandos
+O gabarito não está na entrada. Os testes garantem que a entrada não vaza a causa raiz, o título do achado nem o identificador do cenário.
+
+### Como o gerador constrói cada caso
+1. Monta a persona e o regulamento, e calcula a **posição correta** do fundo (PL, provisões por regra, cota truncada em 8 casas, passivo).
+2. Copia essa posição para os dois lados e **introduz os erros** de um ou mais cenários em um dos lados (sorteado), ou nos dois.
+3. Compara as posições e confere o gabarito contra os números (**oráculo**): o lado que o gabarito diz estar certo tem que ser o lado cujo valor coincide com a posição correta. Se falhar, o caso é refeito com outra semente.
+
+Tudo é determinístico (semente 2026): rodar de novo gera os mesmos 200 casos.
+
+## O que os casos cobrem
+
+57 situações de divergência (incluindo casos de fronteira da régua) em 15 tipos de fundo (renda fixa DI e crédito privado, multimercado macro e long & short, ações, FIC, previdência, FIDC, FII, FIP, cambial, investimento no exterior, exclusivo, Fiagro e infraestrutura). Dos 200 casos, 24 (12%) estão limpos, para o agente aprender a **não inventar problema**; 79 (40%) têm mais de um achado. O parecer esperado, **pela régua v1**, é aprovado em 44 (24 limpos e 20 com ressalva, isto é, divergência dentro da régua), reprovado em 142 e pendente em 14. A dificuldade vai de 35 casos fáceis a 41 difíceis.
+
+- **Cota, carteira e passivo:** preço de crédito com fonte errada, ação com fechamento de D−1, cota de fundo investido de D−1, desdobramento não refletido, dividendo com data "ex" não provisionado, aplicação não convertida ou convertida após o corte, resgate cotizado antes do prazo, PTAX errada, NAV estimado em feriado nos EUA, ajuste de futuros errado, título vencido não baixado, título mantido até o vencimento marcado a mercado, come-cotas não aplicado, arredondamento × truncamento, PDD com aging desatualizado, amortização, rendimento anunciado, laudo de FIP, integralização, ativo ilíquido sem referência, boleta tardia.
+- **Caixa:** resgate liquidado e não baixado, tarifa bancária indevida, débito em duplicidade, dividendo/juros recebidos, ajuste liquidado, compromissada como caixa, pagamento de taxa, crédito não identificado, liquidação antecipada de compra, resgate pago com cota errada, margem tratada como despesa.
+- **Provisões:** redução de taxa em assembleia não aplicada (e o caso em que **os dois** lados estão errados), mínimo mensal, base de cálculo, dias corridos × úteis, gestão sem apropriação, performance (reversão, data-base, linha d'água), aditivo de auditoria, faixa da taxa CVM, taxa escalonada, despesa que não é encargo, duplicidade, método linear × exponencial.
+- **Armadilhas de raciocínio:** dois erros que se compensam, "cota igual mas passivo diferente", comunicação alarmante sem efeito em D, "o lado óbvio está errado", casos em que **nenhum** lado está certo e casos em que o certo é **escalar** (não escolher lado).
+
+**Sessão de come-cotas** (33 casos, 4 datas, 10 tipos de fundo): come-cotas não processado, agendado para o último dia útil, aplicado em fundo isento, com alíquota errada (15% × 20% pelo prazo médio), com cota de referência desatualizada, em duplicidade, convertido pela cota de D−1, devolvendo cotas de prejuízo ou retendo cotista isento, mais casos corretos. Detalhes em [`sessoes/come-cotas/README.md`](sessoes/come-cotas/README.md).
+
+Veja `COBERTURA.md` para a contagem exata.
+
+## Como usar
 
 ```bash
-npm run setup                                     # primeira vez: cria o .env, confere tudo e roda o teste offline
-npm run clipper -- doctor                         # confere instalação, chaves e logins
-npm run smoke                                     # teste técnico com vídeo sintético (barras coloridas)
-
-npm run clipper -- vod "<link do VOD>" --streamer "Nome"          # processa um VOD
-npm run clipper -- twitch-clips --streamer "Nome" --days 3        # clipes mais vistos da Twitch
-npm run clipper -- watch [--publish] [--every 3]                  # rodada automática (ou loop a cada 3 h)
-npm run clipper -- ao-vivo [--publish] [--every 15]               # cortes DURANTE as lives (a cada 15 min)
-npm run clipper -- watch --ao-vivo --publish --every 0.25         # tudo junto: lives em andamento + VODs, a cada 15 min
-npm run clipper -- aprender                       # atualiza a base de conhecimento da IA
-
-npm run clipper -- painel                         # http://127.0.0.1:4310: assistir, editar, aprovar, postar
-npm run clipper -- painel --celular               # o mesmo painel no celular (mesmo Wi-Fi, QR code): copiar legenda para o TikTok
-npm run clipper -- list [--status pending]        # mesma fila, no terminal
-npm run clipper -- approve <id...> | reject <id...>
-npm run clipper -- remover <id...>                # tira um corte do ar (YouTube pela API; TikTok/Instagram mostra o link)
-npm run clipper -- remover --streamer "Nome" --bloquear   # tira TUDO de um streamer e para de gerar
-npm run clipper -- publish [id...] [--platforms youtube,tiktok]
-
-npm run clipper -- frame "<link>" --at 600 [--facecam x,y,w,h]   # acha a posição da câmera
-npm run clipper -- auth:youtube | auth:tiktok | auth:instagram    # logins das redes
+npm ci                # uma vez
+npm run gerar         # regenera casos/ e a sessão de come-cotas (dataset.jsonl, INDICE.md e COBERTURA.md de cada um)
+npm run gerar -- --so come-cotas   # só a sessão de come-cotas (ou --so geral)
+npm test              # testes do dataset
+npm run typecheck     # tipos
 ```
 
-## Configuração (`clipper.config.json`)
+Para o agente:
+1. Use `prompt-agente.md` como *system prompt* e anexe `metodologia-analista.md`.
+2. Envie a **entrada** de um caso e peça a resposta em JSON.
+3. Compare com o gabarito. Para avaliar em lote: `gerador/amostra.ts` monta uma amostra só com entradas e `gerador/avaliar.ts` pontua as respostas (parecer, lado correto e dimensão de cada achado).
+4. Use `dataset.jsonl` como exemplos (few-shot ou recuperação por similaridade) e, se fizer sentido, como base para ajuste fino.
 
-| Campo | O que faz |
-|---|---|
-| `streamers[].clipPermission` | Só processa o streamer quando for `true`. |
-| `streamers[].twitch` / `kick` / `youtube` | Onde buscar as lives: Twitch, Kick (kick.com/canal) e/ou YouTube. |
-| `streamers[].credit` | Crédito queimado no vídeo e colocado na legenda. |
-| `streamers[].context` | Contexto para o Claude: personagem no RP, servidor, bordões. Melhora bastante os títulos. |
-| `streamers[].layout` / `facecam` | `"split"` + posição da câmera (frações 0–1) para usar câmera em cima e jogo embaixo. |
-| `streamers[].perVideo` / `minScore` | Limites só desse streamer (ex.: `perVideo: 1, minScore: 8` para postar pouco e só o melhor). |
-| `clips.perVideo` / `candidates` | Máximo de cortes por VOD e quantos picos o Claude avalia. |
-| `clips.minSeconds` / `maxSeconds` | Só limites técnicos (5 s e 180 s, o máximo dos Shorts/Reels). A duração de cada corte é a do momento, do começo ao fim da situação. |
-| `clips.windowBefore` / `windowAfter` | Quanto da live antes/depois de cada pico a IA enxerga (para pegar a situação inteira). |
-| `clips.games` / `gameKeywords` | Só analisa GTA: na Twitch, pelos trechos de cada jogo; na Kick/YouTube, pela categoria ou por palavras no título ("GTA", "Vice City", "RP"). Lives de outros jogos são puladas. |
-| `clips.minScore` | Nota mínima (1–10) para renderizar. |
-| `clips.frames` | Frames de cada trecho enviados ao Claude (0 desliga). Funciona em fontes HLS (Twitch/Kick) e nos clipes. |
-| `clips.hashtags` | Hashtags sempre adicionadas. |
-| `clips.editPass` / `editFrames` | Etapa do editor de IA (liga/desliga) e quantos frames ele vê de cada corte. |
-| `render.allowCuts` / `punchZoom` / `emphasisColor` / `bottomText` | O que o editor de IA pode usar: cortar tempo morto, zoom de reação, cor das palavras-chave e um rodapé curto embaixo do vídeo ("ESPERA O FINAL"). |
-| `knowledge.*` | Fontes do `aprender`: canais da Twitch, buscas e canais do YouTube, perfis do TikTok, quantos transcrever e quantos exemplos entram no contexto. |
-| `render.layout` | Layout padrão: `blur` (vídeo inteiro com fundo desfocado), `crop` (corta o centro) ou `split`. |
-| `render.zoom` / `font` / `highlightColor` | Aparência. Fontes `.ttf` próprias vão em `assets/fonts/`. |
-| `publish.platforms` | Redes onde postar. |
-| `publish.youtubePrivacy` | Privacidade no YouTube (`private` / `unlisted` / `public`). |
-| `publish.tiktokMode` | `direct` (padrão): tenta publicar direto e público. Se o app ainda não tiver a aprovação do TikTok, manda para a caixa de entrada do app; como ali o TikTok não recebe texto, a legenda pronta (com créditos) fica no painel, com o botão Copiar. `inbox`: sempre caixa de entrada. |
-| `publish.maxPerDay` / `minGapMinutes` | Ritmo seguro: no máximo N posts por dia e um intervalo mínimo entre eles. |
-| `publish.windows` / `liveAnytime` | Janelas de horário para os cortes de lives encerradas (padrão: 12h–14h e 18h–22h30; fim de semana 9h–13h e 18h–22h30). Cortes do modo ao vivo saem na hora. |
-| `publish.autoApproveMinScore` | Aprovação automática por nota (`null` = sempre revisar). |
-| `publish.perRun` | Quantos cortes postar por rodada. |
-| `watch.*` | Quantos VODs e clipes processar por rodada. |
-| `live.*` | Modo ao vivo: de quantos em quantos minutos olhar (`intervalMinutes`), quanto voltar na primeira olhada (`lookbackMinutes`), o mínimo de live nova para analisar (`minChunkMinutes`) e o máximo de cortes por olhada (`perChunk`). |
+## Premissas que você precisa conferir
 
-## Custos
+Os casos usam regras **plausíveis**, mas simuladas. Alinhe com o processo real antes de treinar de verdade:
 
-- **Claude:** cerca de US$ 0,30–0,80 por VOD, contando a triagem e o editor para cada corte. Para gastar menos, use `clips.editPass: false` ou `CLAUDE_EFFORT=medium`.
-- **Transcrição:** centavos.
-- **APIs das redes:** grátis.
-- O vídeo é processado no seu computador (ffmpeg).
+1. **Parecer:** `APROVADO` / `REPROVADO` / `PENDENTE`, mais uma marca de `ressalva` (aprovado com divergências dentro da régua). Se o seu processo tem outros estados ou critérios, ajuste `metodologia-analista.md` e `prompt-agente.md`.
+   **Régua de materialidade v1, provisória** ([`regua-materialidade.md`](regua-materialidade.md)): cota, 250 cotas equivalentes; caixa, sem tolerância (conciliar as movimentações completas do Alfa e do Beta; sem causa localizada, recomendar reprovação); provisões, R$ 100 em cada provisão e no total. **Esses números vão mudar** conforme os casos de uso e as opiniões dos analistas, que você guarda em [`base-de-opinioes/`](base-de-opinioes/README.md) e que `npm run calibrar` usa para sugerir novos limites. Os números vêm de um único lugar (`gerador/regua.ts`, exportado em `regua.json`).
+2. **Dimensão "cota"** inclui cota, quantidade final de cotas e PL (o passivo). Caixa e provisões são validados à parte.
+3. **Regulamento:** taxas calculadas sobre o PL do dia útil anterior; base 252; cota truncada em 8 casas; come-cotas simplificado (cota de referência única). Taxa CVM, tributação e calendário de feriados são simplificações.
+4. **Hierarquia de evidência** (regulamento > manual de precificação > referência oficial de D > comunicação formal > informal) é uma proposta.
+5. **Come-cotas:** interpretei "penúltimo dia" como penúltimo **dia útil**; alíquotas de 15% e 20% pelo prazo médio da carteira; posição por cotista simplificada. As simplificações estão em [`sessoes/come-cotas/README.md`](sessoes/come-cotas/README.md).
+6. O agente que você descreveu **não faz filtro nem busca**: só valida e opina com tudo que recebe. Os casos seguem esse formato.
 
-## Limitações conhecidas
+## Resultado da avaliação com agentes
 
-- A IA vê alguns frames e a fala, não o vídeo inteiro. Momentos puramente visuais e muito rápidos podem passar.
-- **Chat da Twitch:** os picos de mensagens seriam um bom sinal, mas a Twitch não tem API oficial para o chat de VODs antigos.
-- **YouTube:** ele às vezes bloqueia downloads e aí é preciso usar cookies (`YTDLP_COOKIES`). Sem a auditoria do Google, os uploads pela API ficam privados.
-- **Download de trechos:** em fontes não HLS (YouTube), o download de trechos usa o yt-dlp e é mais lento.
+**Rodada 1** (detalhes em [`avaliacao/rodada-1.md`](avaliacao/rodada-1.md)): 8 agentes resolveram casos **às cegas**, só com a entrada, seguindo `prompt-agente.md` e `metodologia-analista.md`. Um limite de uso da conta interrompeu a maioria antes do fim, então **36 de 60 casos** foram respondidos.
 
-## Estrutura
+- Encontraram **55 de 55** achados do gabarito (lado correto e dimensão), com **zero falsos positivos**, e aprovaram corretamente os casos limpos.
+- O parecer divergiu em 11 casos por um **defeito do gabarito**, não do agente: erro de provisão que muda a cota estava rotulado "aprovado com ressalva", contra a regra do próprio prompt. Com a regra corrigida, o parecer concorda em 36 de 36.
+- Os agentes também apontaram, de forma independente, defeitos de coerência nas entradas (datas de resgate fora do prazo do regulamento, cota de cotização diferente da do cabeçalho, fator de CDI incompatível, ruído de ponto flutuante, persona contraditória). Todos foram corrigidos no gerador e **viraram testes automáticos**.
 
-```
-src/
-  cli.ts                  comandos
-  pipeline.ts             fluxo VOD / clipes da Twitch / watch / publish
-  panel.ts                painel web local de revisão
-  config.ts               config + validação
-  state.ts                fila de cortes e o que já foi processado (data/state.json)
-  sources/ytdlp.ts        listar, baixar áudio, escolher HLS ou yt-dlp
-  sources/hls.ts          baixa só os segmentos HLS do trecho (Twitch/Kick)
-  sources/twitch.ts       API Helix (clipes populares)
-  analysis/loudness.ts    detecção de picos de reação pelo volume
-  analysis/transcribe.ts  Whisper com timestamps por palavra
-  analysis/frames.ts      frames dos trechos para o Claude
-  analysis/knowledge.ts   base de conhecimento + comando aprender
-  analysis/claude.ts      chamada ao Claude (JSON validado, cache, fallback)
-  analysis/select.ts      etapa 1: triagem dos momentos
-  analysis/edit.ts        etapa 2: editor (cortes, zoom, destaques, textos)
-  render/captions.ts      legendas animadas (ASS)
-  render/render.ts        ffmpeg 9:16 (blur / crop / split), cortes internos, zoom + grade da facecam
-  render/timeline.ts      linha do tempo com cortes (remapeia legendas e zooms)
-knowledge/
-  playbook.md             manual de edição que a IA segue (editável)
-  seed.json               base inicial de exemplos reais (GTA 6 / RP)
-  publish/                YouTube, TikTok (inbox/direct), Instagram + logins OAuth
-scripts/smoke.ts          teste offline de ponta a ponta do vídeo
-test/                     testes unitários (npm test)
-```
+**Rodada 2** (detalhes em [`avaliacao/rodada-2.md`](avaliacao/rodada-2.md)): 3 agentes resolveram 24 casos do dataset já corrigido, às cegas. **Parecer certo em 23 de 24** e **33 de 35 achados**, sem problema inventado. O erro de parecer e os achados que faltaram eram ambiguidades do prompt (caixa e provisão divergindo pelo mesmo valor; rótulo de lado em evento real de dinheiro), todas esclarecidas em seguida no prompt, na metodologia e no gerador.
+
+**Rodada 3 — sessão de come-cotas** (detalhes em [`avaliacao/rodada-3-come-cotas.md`](avaliacao/rodada-3-come-cotas.md)): 2 agentes resolveram 12 casos às cegas. **Parecer certo em 12 de 12 e 14 de 14 achados, sem falso positivo.** As observações deles motivaram ajustes de coerência (cota de referência única por evento, posição das aplicações do dia, vigência do regulamento, significado da marca de ressalva), já aplicados.
+
+**Rodada 4 — régua de materialidade v1** (detalhes em [`avaliacao/rodada-4-regua.md`](avaliacao/rodada-4-regua.md)): 3 agentes resolveram 24 casos às cegas com a régua; um deles bateu no limite de uso, então **22 casos foram respondidos**. **Parecer certo em 22 de 22**, **veredito da régua (cota, caixa e provisões) certo em 22 de 22** e 26 de 27 achados. O que faltou foi o rótulo de um pagamento duplicado no caixa. As observações dos agentes viraram ajustes de definição (líquido × soma de módulos, fronteira, decisão de terceiro, caixa sem extrato, calendário na entrada).
+
+**Pendente:** reavaliar às cegas os casos que a régua ainda não exercitou (a rodada deixou 2 sem resposta) e, principalmente, **calibrar a régua com as opiniões dos analistas** (`base-de-opinioes/`). Os identificadores dos casos mudam a cada versão do gerador, então os resultados das rodadas valem para o método (prompt + metodologia), não para os casos atuais.

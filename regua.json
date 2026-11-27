@@ -1,0 +1,25 @@
+{
+  "versao": "v1",
+  "status": "provisória",
+  "aviso": "Régua provisória: muda conforme os casos de uso e as opiniões dos analistas. Não é regra definitiva.",
+  "cota": {
+    "medida": "cotas equivalentes = max(|Δ quantidade final de cotas|, |Δ PL base| ÷ cota média)",
+    "limiteCotas": 250,
+    "regra": "abaixo do limite: dentro da régua (ressalva); a partir do limite: reprova"
+  },
+  "caixa": {
+    "toleranciaReais": 0,
+    "regra": "sem tolerância: conciliar as movimentações completas dos dois lados; sem causa localizada, recomendar reprovação"
+  },
+  "provisoes": {
+    "limiteReais": 100,
+    "regra": "até o limite em cada provisão e no total: variação normal (ressalva); acima: reprova"
+  },
+  "historico": [
+    {
+      "versao": "v1",
+      "data": "2026-11-27",
+      "motivo": "Primeira régua, definida pelo responsável do processo (250 cotas; caixa sem tolerância; R$ 100 em provisões), a ser calibrada com as opiniões dos analistas."
+    }
+  ]
+}

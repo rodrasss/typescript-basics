@@ -1,24 +1,19 @@
 {
-  "name": "clipper-gta",
+  "name": "validacao-fundos",
   "version": "0.1.0",
-  "description": "Automação de cortes de lives (GTA RP / GTA 6): acha os momentos engraçados, gera vídeo vertical legendado e posta no YouTube Shorts, TikTok e Instagram Reels.",
+  "description": "Casos simulados (fundos-persona) para treinar e avaliar um agente que valida cota, caixa e provisões comparando duas posições (Alfa x Beta). Todos os dados são fictícios.",
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=20.12"
+    "node": ">=22"
   },
   "scripts": {
-    "setup": "tsx scripts/setup.ts",
-    "clipper": "tsx src/cli.ts",
-    "smoke": "tsx scripts/smoke.ts",
+    "gerar": "tsx gerador/gerar.ts",
+    "amostra": "tsx gerador/amostra.ts",
+    "avaliar": "tsx gerador/avaliar.ts",
     "test": "tsx --test test/*.test.ts",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@anthropic-ai/sdk": "^1.10.0",
-    "commander": "^15.1.0",
-    "qrcode-terminal": "^0.12.0",
-    "zod": "^4.6.7"
+    "typecheck": "tsc --noEmit",
+    "calibrar": "tsx gerador/calibrar.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",

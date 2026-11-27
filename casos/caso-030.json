@@ -1,0 +1,667 @@
+{
+  "id": "caso-030",
+  "seed": 2255651,
+  "fundo": {
+    "codigo": "FND-0030",
+    "nome": "Garça Moura Institucional FIF Cambial Dólar",
+    "tipo": "CAMBIAL",
+    "rotulo": "Cambial Dólar",
+    "classe": "Classe Cambial",
+    "condominio": "aberto",
+    "publico": "Público geral",
+    "gestora": {
+      "nome": "Serra do Mar Asset",
+      "perfil": "gestora cambial e de juros com operação muito sistematizada",
+      "cidade": "Santos/SP"
+    },
+    "gestorResponsavel": "Lívia",
+    "analistaResponsavel": "Diego",
+    "inicio": "2012-01-03",
+    "cotistas": "pequenas empresas importadoras",
+    "marcos": [
+      "teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana",
+      "migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização"
+    ],
+    "particularidades": [
+      "a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras",
+      "o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa"
+    ],
+    "pistas": [
+      "A liquidação dos ajustes de futuros exige conciliação diária.",
+      "Os resgates liquidados no dia exigem baixa manual em uma das pontas."
+    ],
+    "historia": "Quem acompanha a Serra do Mar Asset (Santos/SP) conhece o Garça Moura Institucional FIF Cambial Dólar: a casa é uma gestora cambial e de juros com operação muito sistematizada. Criado em 03/01/2012, dá ao cotista exposição (ou proteção) ao dólar, via futuros e caixa remunerado. Público-alvo: público geral. Hoje seus cotistas são pequenas empresas importadoras. Ao longo da vida, o fundo teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Diego. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. A liquidação dos ajustes de futuros exige conciliação diária. Os resgates liquidados no dia exigem baixa manual em uma das pontas. A área de risco pediu atenção redobrada ao fundo depois de um apontamento de auditoria em 2025 (já regularizado). No fechamento de ontem (29/04/2026) o fundo tinha PL de R$ 426.550.703,17, cota de 5,58669679 e 76.351.146,02473058 cotas. Hoje, quinta-feira, 30/04/2026, é a data-base da validação."
+  },
+  "data": "2026-04-30",
+  "dAnterior": "2026-04-29",
+  "diaSemana": "quinta-feira",
+  "anterior": {
+    "pl": 426550703.17,
+    "cota": 5.58669679,
+    "qtdCotas": 76351146.02473058
+  },
+  "regulamento": {
+    "vigencia": "01/11/2025 (adaptado à Resolução CVM 175)",
+    "taxas": [
+      {
+        "codigo": "TXADM",
+        "nome": "Taxa de administração",
+        "param": {
+          "pct": 0.0012,
+          "metodo": "linear_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXGES",
+        "nome": "Taxa de gestão",
+        "param": {
+          "pct": 0.0079,
+          "metodo": "linear_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXCUS",
+        "nome": "Taxa máxima de custódia",
+        "param": {
+          "pct": 0.0002,
+          "metodo": "linear_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      }
+    ],
+    "despesasFixas": [
+      {
+        "codigo": "AUDIT",
+        "nome": "Auditoria independente",
+        "valor": 43000,
+        "periodo": "anual",
+        "observacao": "contrato anual; provisão diária por 1/252"
+      },
+      {
+        "codigo": "ANBIMA",
+        "nome": "Taxa ANBIMA (convênio de autorregulação)",
+        "valor": 700,
+        "periodo": "mensal"
+      },
+      {
+        "codigo": "SELIC",
+        "nome": "Custódia SELIC/B3 (estimativa mensal)",
+        "valor": 1300,
+        "periodo": "mensal"
+      }
+    ],
+    "tabelaCVM": [
+      {
+        "ate": 20000000,
+        "valor": 2100
+      },
+      {
+        "ate": 50000000,
+        "valor": 3600
+      },
+      {
+        "ate": 100000000,
+        "valor": 5400
+      },
+      {
+        "ate": 300000000,
+        "valor": 7800
+      },
+      {
+        "ate": 1000000000,
+        "valor": 10800
+      },
+      {
+        "ate": null,
+        "valor": 14400
+      }
+    ],
+    "plReferenciaCVM": 431040844.18,
+    "encargos": [
+      "taxas de administração, gestão, custódia e performance previstas neste regulamento",
+      "taxa de fiscalização da CVM",
+      "honorários e despesas do auditor independente",
+      "custos de corretagem, emolumentos e registro de operações",
+      "despesas com custódia e liquidação de ativos (SELIC/B3)",
+      "contribuição anual à ANBIMA",
+      "honorários advocatícios e custas em defesa dos interesses da classe, quando aprovados pelo administrador e documentados"
+    ],
+    "naoEncargos": [
+      "tarifas bancárias de manutenção de conta e pacotes de serviços (suportadas pelo administrador)",
+      "despesas de marketing, eventos e relacionamento da gestora ou do distribuidor",
+      "despesas não previstas expressamente como encargo"
+    ],
+    "cotizacao": [
+      "Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.",
+      "Resgate: cotização no próprio dia do pedido, pela cota de fechamento desse dia; liquidação financeira em D+1 dia útil após a cotização."
+    ],
+    "cota": "Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).",
+    "precificacao": [
+      "Manual de marcação a mercado do administrador (versão simulada vigente).",
+      "Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.",
+      "Operações compromissadas: PU de ida acrescido da remuneração pactuada.",
+      "Futuros de dólar: ajuste diário divulgado pela B3, reconhecido em D e liquidado em D+1.",
+      "Margem depositada em dinheiro na B3 é ativo da classe (valores dados em garantia)."
+    ],
+    "tributacao": "Come-cotas semestral, no penúltimo dia útil de maio e de novembro (15% se o prazo médio da carteira superar 365 dias; 20% caso contrário)",
+    "especificos": [],
+    "alteracoes": [],
+    "horarioCorte": "15:00"
+  },
+  "mercado": {
+    "cdiAA": 0.1415,
+    "referencias": [
+      {
+        "ativo": "LFT 01/03/2029",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "18.431,122705"
+      },
+      {
+        "ativo": "LFT 01/09/2031",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "18.112,579632"
+      },
+      {
+        "ativo": "PTAX",
+        "fonte": "BCB — PTAX de 30/04/2026",
+        "valor": "compra 5,7537 / venda 5,7543"
+      },
+      {
+        "ativo": "PTAX",
+        "fonte": "BCB — PTAX de 29/04/2026",
+        "valor": "venda 5,7754"
+      }
+    ],
+    "futuros": [
+      {
+        "contrato": "DOLK26",
+        "quantidade": 1523,
+        "ajustePorContrato": -1117.83
+      }
+    ],
+    "eventos": [],
+    "benchmarks": [],
+    "ptax": {
+      "compraD": 5.7537,
+      "vendaD": 5.7543,
+      "vendaD1": 5.7754
+    }
+  },
+  "comunicacoes": [],
+  "memoriaDisponivel": true,
+  "lados": {
+    "Alfa": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 13948,
+            "preco": 18431.122705,
+            "valor": 257077299.49,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "LFT 01/09/2031",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/09/2031",
+            "classe": "Título público",
+            "quantidade": 5914,
+            "preco": 18112.579632,
+            "valor": 107117795.94,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "COMPROMISSADA OVER",
+            "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
+            "classe": "Compromissada",
+            "quantidade": 80865,
+            "preco": 794.795817,
+            "valor": 64271163.74,
+            "fonte": "PU de ida + remuneração pactuada (taxa over)"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 2129903.48,
+          "lancamentos": [],
+          "saldoFinal": 2129903.48
+        },
+        "aReceber": [],
+        "aPagar": [
+          {
+            "codigo": "AJUSTE FUTUROS D",
+            "descricao": "Ajuste diário de futuros de D (liquidação em D+1)",
+            "valor": 1702455.09
+          },
+          {
+            "codigo": "AJUSTE FUTUROS D-1",
+            "descricao": "Ajuste de futuros de 29/04/2026 a pagar",
+            "valor": 840094.6
+          }
+        ],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 38347.55,
+            "apropriacao": 2031.19,
+            "pagamento": 0,
+            "saldoAtual": 40378.74,
+            "memoria": "[base: PL do dia útil anterior] 0,12% a.a. sobre R$ 426.550.703,17 ÷ 252 (linear, dias úteis) = R$ 2.031,19",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0012,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 258270.83,
+            "apropriacao": 13372.03,
+            "pagamento": 0,
+            "saldoAtual": 271642.86,
+            "memoria": "[base: PL do dia útil anterior] 0,79% a.a. sobre R$ 426.550.703,17 ÷ 252 (linear, dias úteis) = R$ 13.372,03",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0079,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 6461,
+            "apropriacao": 338.53,
+            "pagamento": 0,
+            "saldoAtual": 6799.53,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 426.550.703,17 ÷ 252 (linear, dias úteis) = R$ 338,53",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0002,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 4607.14,
+            "apropriacao": 170.63,
+            "pagamento": 0,
+            "saldoAtual": 4777.77,
+            "memoria": "R$ 43.000,00 (anual) ÷ 252 d.u. = R$ 170,63",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 43000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 665,
+            "apropriacao": 35,
+            "pagamento": 0,
+            "saldoAtual": 700,
+            "memoria": "R$ 700,00 (mensal) ÷ 20 d.u. = R$ 35,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 700,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "SELIC",
+            "descricao": "Custódia SELIC/B3 (estimativa mensal) a pagar",
+            "saldoAnterior": 1235,
+            "apropriacao": 65,
+            "pagamento": 0,
+            "saldoAtual": 1300,
+            "memoria": "R$ 1.300,00 (mensal) ÷ 20 d.u. = R$ 65,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 1300,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 3363.93,
+            "apropriacao": 177.05,
+            "pagamento": 0,
+            "saldoAtual": 3540.98,
+            "memoria": "R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 10800,
+              "periodo": "trimestral",
+              "diasPeriodo": 61
+            }
+          }
+        ],
+        "qtdCotasBase": 76351146.02473058,
+        "arredondamento": "truncamento",
+        "movs": [
+          {
+            "id": "RSG-1",
+            "tipo": "resgate",
+            "cotista": "Cotista 5957",
+            "cotas": 250984.97296463,
+            "solicitadoEm": "2026-04-30",
+            "cotizacao": "2026-04-30",
+            "liquidacao": "2026-05-04",
+            "converterHoje": true
+          }
+        ]
+      },
+      "resultado": {
+        "totalAtivos": 428466259.17,
+        "caixa": 2129903.48,
+        "totalReceber": 0,
+        "totalPagar": 2542549.69,
+        "totalProvisoes": 329139.88,
+        "plAntesApropriacoes": 427740662.51,
+        "plBase": 427724473.08,
+        "cota": 5.60207011,
+        "aplicacoesConvertidas": 0,
+        "cotasEmitidas": 0,
+        "cotasResgatadas": 250984.97296463,
+        "valorResgates": 1406035.42,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "detalheComeCotas": [],
+        "qtdFinal": 76100161.05176595,
+        "plFinal": 426318437.59
+      }
+    },
+    "Beta": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 13948,
+            "preco": 18431.122705,
+            "valor": 257077299.49,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "LFT 01/09/2031",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/09/2031",
+            "classe": "Título público",
+            "quantidade": 5914,
+            "preco": 18112.579632,
+            "valor": 107117795.94,
+            "fonte": "ANBIMA — taxa indicativa D"
+          },
+          {
+            "codigo": "COMPROMISSADA OVER",
+            "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
+            "classe": "Compromissada",
+            "quantidade": 80865,
+            "preco": 794.795817,
+            "valor": 64271163.74,
+            "fonte": "PU de ida + remuneração pactuada (taxa over)"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 2129903.48,
+          "lancamentos": [
+            {
+              "historico": "Liquidação B3 — ajuste de futuros de 29/04/2026",
+              "valor": -840094.6
+            }
+          ],
+          "saldoFinal": 1289808.88
+        },
+        "aReceber": [],
+        "aPagar": [
+          {
+            "codigo": "AJUSTE FUTUROS D",
+            "descricao": "Ajuste diário de futuros de D (liquidação em D+1)",
+            "valor": 1702455.09
+          }
+        ],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 38347.55,
+            "apropriacao": 2031.19,
+            "pagamento": 0,
+            "saldoAtual": 40378.74,
+            "memoria": "[base: PL do dia útil anterior] 0,12% a.a. sobre R$ 426.550.703,17 ÷ 252 (linear, dias úteis) = R$ 2.031,19",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0012,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 258270.83,
+            "apropriacao": 13372.03,
+            "pagamento": 0,
+            "saldoAtual": 271642.86,
+            "memoria": "[base: PL do dia útil anterior] 0,79% a.a. sobre R$ 426.550.703,17 ÷ 252 (linear, dias úteis) = R$ 13.372,03",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0079,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 6461,
+            "apropriacao": 338.53,
+            "pagamento": 0,
+            "saldoAtual": 6799.53,
+            "memoria": "[base: PL do dia útil anterior] 0,02% a.a. sobre R$ 426.550.703,17 ÷ 252 (linear, dias úteis) = R$ 338,53",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0002,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 4607.14,
+            "apropriacao": 170.63,
+            "pagamento": 0,
+            "saldoAtual": 4777.77,
+            "memoria": "R$ 43.000,00 (anual) ÷ 252 d.u. = R$ 170,63",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 43000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 665,
+            "apropriacao": 35,
+            "pagamento": 0,
+            "saldoAtual": 700,
+            "memoria": "R$ 700,00 (mensal) ÷ 20 d.u. = R$ 35,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 700,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "SELIC",
+            "descricao": "Custódia SELIC/B3 (estimativa mensal) a pagar",
+            "saldoAnterior": 1235,
+            "apropriacao": 65,
+            "pagamento": 0,
+            "saldoAtual": 1300,
+            "memoria": "R$ 1.300,00 (mensal) ÷ 20 d.u. = R$ 65,00",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 1300,
+              "periodo": "mensal",
+              "diasPeriodo": 20
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 3363.93,
+            "apropriacao": 177.05,
+            "pagamento": 0,
+            "saldoAtual": 3540.98,
+            "memoria": "R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 10800,
+              "periodo": "trimestral",
+              "diasPeriodo": 61
+            }
+          }
+        ],
+        "qtdCotasBase": 76351146.02473058,
+        "arredondamento": "truncamento",
+        "movs": [
+          {
+            "id": "RSG-1",
+            "tipo": "resgate",
+            "cotista": "Cotista 5957",
+            "cotas": 250984.97296463,
+            "solicitadoEm": "2026-04-30",
+            "cotizacao": "2026-04-30",
+            "liquidacao": "2026-05-04",
+            "converterHoje": true
+          }
+        ]
+      },
+      "resultado": {
+        "totalAtivos": 428466259.17,
+        "caixa": 1289808.88,
+        "totalReceber": 0,
+        "totalPagar": 1702455.09,
+        "totalProvisoes": 329139.88,
+        "plAntesApropriacoes": 427740662.51,
+        "plBase": 427724473.08,
+        "cota": 5.60207011,
+        "aplicacoesConvertidas": 0,
+        "cotasEmitidas": 0,
+        "cotasResgatadas": 250984.97296463,
+        "valorResgates": 1406035.42,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "detalheComeCotas": [],
+        "qtdFinal": 76100161.05176595,
+        "plFinal": 426318437.59
+      }
+    }
+  },
+  "gabarito": {
+    "cenarios": [
+      "ajuste_liquidado_nao_baixado"
+    ],
+    "parecer": "REPROVADO",
+    "ressalva": false,
+    "resumo": "Reprovar até o ajuste: Ajuste de D−1 liquidado e não baixado.",
+    "dificuldade": "media",
+    "achados": [
+      {
+        "cenario": "ajuste_liquidado_nao_baixado",
+        "dimensoes": [
+          "caixa"
+        ],
+        "titulo": "Ajuste de D−1 liquidado e não baixado",
+        "ladoCorreto": "Beta",
+        "ajustePor": "Alfa",
+        "causaRaiz": "Alfa não registrou a liquidação financeira do ajuste de 29/04/2026 (R$ -840.094,60) e manteve o valor pendente.",
+        "evidencias": [
+          "Caixa",
+          "Valores a receber/pagar — ajuste D−1"
+        ],
+        "raciocinio": [
+          "O caixa difere em R$ 840.094,60, e o Alfa tem um \"ajuste de D−1\" pendente no mesmo valor. PL e cota iguais.",
+          "O ajuste de D−1 liquida em D. É questão de baixa, sem efeito no PL.",
+          "Régua v1 (provisória) — caixa: diferença de R$ 840.094,60; o caixa não tem tolerância e precisa bater antes de acatar: ACIMA."
+        ],
+        "acao": "Alfa deve baixar o ajuste de D−1 contra o caixa. Sem impacto na cota. Acima da régua: reprovar até o lado errado reprocessar.",
+        "gravidade": "erro"
+      }
+    ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 0,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 0,
+      "difCaixa": 840094.6,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": false
+      },
+      "caixa": {
+        "acima": true
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
+    "valoresCorretos": {
+      "totalAtivos": 428466259.17,
+      "caixa": 1289808.88,
+      "totalReceber": 0,
+      "totalPagar": 1702455.09,
+      "totalProvisoes": 329139.88,
+      "plAntesApropriacoes": 427740662.51,
+      "plBase": 427724473.08,
+      "cota": 5.60207011,
+      "aplicacoesConvertidas": 0,
+      "cotasEmitidas": 0,
+      "cotasResgatadas": 250984.97296463,
+      "valorResgates": 1406035.42,
+      "irComeCotas": 0,
+      "cotasComeCotas": 0,
+      "detalheComeCotas": [],
+      "qtdFinal": 76100161.05176595,
+      "plFinal": 426318437.59
+    },
+    "corretoPorDimensao": {
+      "cota": "ambos",
+      "caixa": "Beta",
+      "provisoes": "ambos"
+    },
+    "diferencas": {
+      "cota": 0,
+      "qtdFinal": 0,
+      "plFinal": 0,
+      "plBase": 0,
+      "caixa": -840094.6,
+      "provisoes": 0
+    },
+    "armadilhas": []
+  }
+}

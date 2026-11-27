@@ -1,0 +1,642 @@
+{
+  "id": "caso-073",
+  "seed": 2700897,
+  "fundo": {
+    "codigo": "FND-0073",
+    "nome": "Seriguela Plus FII Responsabilidade Limitada",
+    "tipo": "FII",
+    "rotulo": "FII (imobiliário)",
+    "classe": "Classe de FII — Tijolo",
+    "condominio": "fechado",
+    "publico": "Público geral (cotas negociadas na B3)",
+    "gestora": {
+      "nome": "Siriema Investimentos",
+      "perfil": "gestora de fundos imobiliários com portfólio de galpões e lajes",
+      "cidade": "São Paulo/SP"
+    },
+    "gestorResponsavel": "Otávio",
+    "analistaResponsavel": "Rafael",
+    "inicio": "2021-11-14",
+    "cotistas": "cerca de 85 mil cotistas pessoa física negociando na B3",
+    "marcos": [
+      "adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão",
+      "incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas"
+    ],
+    "particularidades": [
+      "o administrador revisa o manual de precificação uma vez por ano",
+      "o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota"
+    ],
+    "pistas": [],
+    "historia": "Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes (São Paulo/SP), o Seriguela Plus FII Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 14/11/2021, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Otávio, e quem cuida da validação do fundo é Rafael. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. No fechamento de ontem (15/01/2026) o fundo tinha PL de R$ 1.431.208.424,91, cota de 87,86367399 e 16.288.966,30332078 cotas. Hoje, sexta-feira, 16/01/2026, é a data-base da validação."
+  },
+  "data": "2026-01-16",
+  "dAnterior": "2026-01-15",
+  "diaSemana": "sexta-feira",
+  "anterior": {
+    "pl": 1431208424.91,
+    "cota": 87.86367399,
+    "qtdCotas": 16288966.30332078
+  },
+  "regulamento": {
+    "vigencia": "01/11/2025 (adaptado à Resolução CVM 175)",
+    "taxas": [
+      {
+        "codigo": "TXADM",
+        "nome": "Taxa de administração",
+        "param": {
+          "pct": 0.0014,
+          "metodo": "linear_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXGES",
+        "nome": "Taxa de gestão",
+        "param": {
+          "pct": 0.008,
+          "metodo": "linear_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      },
+      {
+        "codigo": "TXCUS",
+        "nome": "Taxa máxima de custódia",
+        "param": {
+          "pct": 0.0001,
+          "metodo": "linear_252"
+        },
+        "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
+      }
+    ],
+    "despesasFixas": [
+      {
+        "codigo": "AUDIT",
+        "nome": "Auditoria independente",
+        "valor": 113000,
+        "periodo": "anual",
+        "observacao": "contrato anual; provisão diária por 1/252"
+      },
+      {
+        "codigo": "ANBIMA",
+        "nome": "Taxa ANBIMA (convênio de autorregulação)",
+        "valor": 1200,
+        "periodo": "mensal"
+      },
+      {
+        "codigo": "ESCRIT",
+        "nome": "Escrituração de cotas",
+        "valor": 14000,
+        "periodo": "mensal"
+      }
+    ],
+    "tabelaCVM": [
+      {
+        "ate": 20000000,
+        "valor": 2100
+      },
+      {
+        "ate": 50000000,
+        "valor": 3600
+      },
+      {
+        "ate": 100000000,
+        "valor": 5400
+      },
+      {
+        "ate": 300000000,
+        "valor": 7800
+      },
+      {
+        "ate": 1000000000,
+        "valor": 10800
+      },
+      {
+        "ate": null,
+        "valor": 14400
+      }
+    ],
+    "plReferenciaCVM": 1375170166.37,
+    "encargos": [
+      "taxas de administração, gestão, custódia e performance previstas neste regulamento",
+      "taxa de fiscalização da CVM",
+      "honorários e despesas do auditor independente",
+      "custos de corretagem, emolumentos e registro de operações",
+      "despesas com custódia e liquidação de ativos (SELIC/B3)",
+      "contribuição anual à ANBIMA",
+      "honorários advocatícios e custas em defesa dos interesses da classe, quando aprovados pelo administrador e documentados"
+    ],
+    "naoEncargos": [
+      "tarifas bancárias de manutenção de conta e pacotes de serviços (suportadas pelo administrador)",
+      "despesas de marketing, eventos e relacionamento da gestora ou do distribuidor",
+      "despesas não previstas expressamente como encargo"
+    ],
+    "cotizacao": [
+      "Condomínio fechado: sem resgate; liquidez via B3."
+    ],
+    "cota": "Cota de fechamento = PL do dia (em reais e centavos) ÷ quantidade de cotas existentes antes das movimentações do dia, truncada na 8ª casa (TRUNCAMENTO).",
+    "precificacao": [
+      "Manual de marcação a mercado do administrador (versão simulada vigente).",
+      "Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.",
+      "Operações compromissadas: PU de ida acrescido da remuneração pactuada.",
+      "Imóveis: valor justo do laudo de avaliação vigente.",
+      "LCI: curva do papel."
+    ],
+    "tributacao": "FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%",
+    "especificos": [
+      "Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como \"rendimentos a distribuir\" (passivo) na data do anúncio (data-com), reduzindo o PL."
+    ],
+    "alteracoes": []
+  },
+  "mercado": {
+    "cdiAA": 0.1415,
+    "referencias": [
+      {
+        "ativo": "LFT 01/03/2029",
+        "fonte": "ANBIMA — PU pela taxa indicativa de D",
+        "valor": "18.184,666224"
+      }
+    ],
+    "futuros": [],
+    "eventos": [],
+    "benchmarks": []
+  },
+  "comunicacoes": [
+    {
+      "hora": "10:49",
+      "de": "Área de risco",
+      "assunto": "Lembrete",
+      "texto": "Lembrete: o fundo teve apontamento de auditoria em 2025 sobre conciliação de caixa. Atenção redobrada."
+    },
+    {
+      "hora": "19:24",
+      "de": "Distribuidor",
+      "assunto": "Cota atrasada?",
+      "texto": "Bom dia! A cota do Seriguela Plus FII Responsabilidade Limitada de ontem saiu mais tarde, está tudo certo? Temos clientes perguntando."
+    }
+  ],
+  "memoriaDisponivel": false,
+  "lados": {
+    "Alfa": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "IMOVEL GLP-CAJAMAR",
+            "descricao": "Galpão logístico em Cajamar (SP) — módulos A a D",
+            "classe": "Imóvel",
+            "quantidade": 545712173.81,
+            "preco": 1,
+            "valor": 545712173.81,
+            "fonte": "Laudo de avaliação anual (valor justo)"
+          },
+          {
+            "codigo": "IMOVEL LAJES-JQB",
+            "descricao": "Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP)",
+            "classe": "Imóvel",
+            "quantidade": 409284130.36,
+            "preco": 1,
+            "valor": 409284130.36,
+            "fonte": "Laudo de avaliação anual (valor justo)"
+          },
+          {
+            "codigo": "IMOVEL GLP-EXTREMA",
+            "descricao": "Galpão logístico em Extrema (MG)",
+            "classe": "Imóvel",
+            "quantidade": 245570478.21,
+            "preco": 1,
+            "valor": 245570478.21,
+            "fonte": "Laudo de avaliação anual (valor justo)"
+          },
+          {
+            "codigo": "LCI TARUMA 2027",
+            "descricao": "LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027",
+            "classe": "LCI",
+            "quantidade": 71999,
+            "preco": 1136.920034,
+            "valor": 81857105.53,
+            "fonte": "Curva do papel"
+          },
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 4501,
+            "preco": 18184.666224,
+            "valor": 81849182.67,
+            "fonte": "ANBIMA — taxa indicativa D"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 67722770.49,
+          "lancamentos": [],
+          "saldoFinal": 67722770.49
+        },
+        "aReceber": [],
+        "aPagar": [],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 78384.2,
+            "apropriacao": 7951.16,
+            "pagamento": 0,
+            "saldoAtual": 86335.36,
+            "memoria": "[base: PL do dia útil anterior] 0,14% a.a. sobre R$ 1.431.208.424,91 ÷ 252 (linear, dias úteis) = R$ 7.951,16",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0014,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 464261,
+            "apropriacao": 45435.19,
+            "pagamento": 0,
+            "saldoAtual": 509696.19,
+            "memoria": "[base: PL do dia útil anterior] 0,80% a.a. sobre R$ 1.431.208.424,91 ÷ 252 (linear, dias úteis) = R$ 45.435,19",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.008,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 5635.88,
+            "apropriacao": 567.94,
+            "pagamento": 0,
+            "saldoAtual": 6203.82,
+            "memoria": "[base: PL do dia útil anterior] 0,01% a.a. sobre R$ 1.431.208.424,91 ÷ 252 (linear, dias úteis) = R$ 567,94",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0001,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 43944.44,
+            "apropriacao": 448.41,
+            "pagamento": 0,
+            "saldoAtual": 44392.85,
+            "memoria": "R$ 113.000,00 (anual) ÷ 252 d.u. = R$ 448,41",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 113000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 571.43,
+            "apropriacao": 57.14,
+            "pagamento": 0,
+            "saldoAtual": 628.57,
+            "memoria": "R$ 1.200,00 (mensal) ÷ 21 d.u. = R$ 57,14",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 1200,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "ESCRIT",
+            "descricao": "Escrituração de cotas a pagar",
+            "saldoAnterior": 6666.67,
+            "apropriacao": 666.67,
+            "pagamento": 0,
+            "saldoAtual": 7333.34,
+            "memoria": "R$ 14.000,00 (mensal) ÷ 21 d.u. = R$ 666,67",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 14000,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 2360.66,
+            "apropriacao": 236.07,
+            "pagamento": 0,
+            "saldoAtual": 2596.73,
+            "memoria": "R$ 14.400,00 (trimestral) ÷ 61 d.u. = R$ 236,07",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 14400,
+              "periodo": "trimestral",
+              "diasPeriodo": 61
+            }
+          }
+        ],
+        "qtdCotasBase": 16288966.30332078,
+        "arredondamento": "truncamento",
+        "movs": []
+      },
+      "resultado": {
+        "totalAtivos": 1364273070.58,
+        "caixa": 67722770.49,
+        "totalReceber": 0,
+        "totalPagar": 0,
+        "totalProvisoes": 657186.86,
+        "plAntesApropriacoes": 1431394016.79,
+        "plBase": 1431338654.21,
+        "cota": 87.87166892,
+        "aplicacoesConvertidas": 0,
+        "cotasEmitidas": 0,
+        "cotasResgatadas": 0,
+        "valorResgates": 0,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "detalheComeCotas": [],
+        "qtdFinal": 16288966.30332078,
+        "plFinal": 1431338654.05
+      }
+    },
+    "Beta": {
+      "posicao": {
+        "ativos": [
+          {
+            "codigo": "IMOVEL GLP-CAJAMAR",
+            "descricao": "Galpão logístico em Cajamar (SP) — módulos A a D",
+            "classe": "Imóvel",
+            "quantidade": 545712173.81,
+            "preco": 1,
+            "valor": 545712173.81,
+            "fonte": "Laudo de avaliação anual (valor justo)"
+          },
+          {
+            "codigo": "IMOVEL LAJES-JQB",
+            "descricao": "Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP)",
+            "classe": "Imóvel",
+            "quantidade": 409284130.36,
+            "preco": 1,
+            "valor": 409284130.36,
+            "fonte": "Laudo de avaliação anual (valor justo)"
+          },
+          {
+            "codigo": "IMOVEL GLP-EXTREMA",
+            "descricao": "Galpão logístico em Extrema (MG)",
+            "classe": "Imóvel",
+            "quantidade": 245570478.21,
+            "preco": 1,
+            "valor": 245570478.21,
+            "fonte": "Laudo de avaliação anual (valor justo)"
+          },
+          {
+            "codigo": "LCI TARUMA 2027",
+            "descricao": "LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027",
+            "classe": "LCI",
+            "quantidade": 71999,
+            "preco": 1136.920034,
+            "valor": 81857105.53,
+            "fonte": "Curva do papel"
+          },
+          {
+            "codigo": "LFT 01/03/2029",
+            "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
+            "classe": "Título público",
+            "quantidade": 4501,
+            "preco": 18184.666224,
+            "valor": 81849182.67,
+            "fonte": "ANBIMA — taxa indicativa D"
+          }
+        ],
+        "caixa": {
+          "saldoInicial": 67722770.49,
+          "lancamentos": [],
+          "saldoFinal": 67722770.49
+        },
+        "aReceber": [],
+        "aPagar": [],
+        "provisoes": [
+          {
+            "codigo": "TXADM",
+            "descricao": "Taxa de administração a pagar",
+            "saldoAnterior": 78384.2,
+            "apropriacao": 7951.16,
+            "pagamento": 0,
+            "saldoAtual": 86335.36,
+            "memoria": "[base: PL do dia útil anterior] 0,14% a.a. sobre R$ 1.431.208.424,91 ÷ 252 (linear, dias úteis) = R$ 7.951,16",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0014,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXGES",
+            "descricao": "Taxa de gestão a pagar",
+            "saldoAnterior": 464261,
+            "apropriacao": 45435.19,
+            "pagamento": 0,
+            "saldoAtual": 509696.19,
+            "memoria": "[base: PL do dia útil anterior] 0,80% a.a. sobre R$ 1.431.208.424,91 ÷ 252 (linear, dias úteis) = R$ 45.435,19",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.008,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "TXCUS",
+            "descricao": "Taxa máxima de custódia a pagar",
+            "saldoAnterior": 5635.88,
+            "apropriacao": 567.94,
+            "pagamento": 0,
+            "saldoAtual": 6203.82,
+            "memoria": "[base: PL do dia útil anterior] 0,01% a.a. sobre R$ 1.431.208.424,91 ÷ 252 (linear, dias úteis) = R$ 567,94",
+            "regra": {
+              "tipo": "pct",
+              "param": {
+                "pct": 0.0001,
+                "metodo": "linear_252"
+              }
+            }
+          },
+          {
+            "codigo": "AUDIT",
+            "descricao": "Auditoria independente a pagar",
+            "saldoAnterior": 43944.44,
+            "apropriacao": 448.41,
+            "pagamento": 0,
+            "saldoAtual": 44392.85,
+            "memoria": "R$ 113.000,00 (anual) ÷ 252 d.u. = R$ 448,41",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 113000,
+              "periodo": "anual",
+              "diasPeriodo": 252
+            }
+          },
+          {
+            "codigo": "ANBIMA",
+            "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
+            "saldoAnterior": 571.43,
+            "apropriacao": 57.14,
+            "pagamento": 0,
+            "saldoAtual": 628.57,
+            "memoria": "R$ 1.200,00 (mensal) ÷ 21 d.u. = R$ 57,14",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 1200,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "ESCRIT",
+            "descricao": "Escrituração de cotas a pagar",
+            "saldoAnterior": 6666.67,
+            "apropriacao": 666.67,
+            "pagamento": 0,
+            "saldoAtual": 7333.34,
+            "memoria": "R$ 14.000,00 (mensal) ÷ 21 d.u. = R$ 666,67",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 14000,
+              "periodo": "mensal",
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "CVM",
+            "descricao": "Taxa de fiscalização CVM a pagar",
+            "saldoAnterior": 2360.66,
+            "apropriacao": 236.07,
+            "pagamento": 0,
+            "saldoAtual": 2596.73,
+            "memoria": "R$ 14.400,00 (trimestral) ÷ 61 d.u. = R$ 236,07",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 14400,
+              "periodo": "trimestral",
+              "diasPeriodo": 61
+            }
+          }
+        ],
+        "qtdCotasBase": 16288966.30332078,
+        "arredondamento": "truncamento",
+        "movs": []
+      },
+      "resultado": {
+        "totalAtivos": 1364273070.58,
+        "caixa": 67722770.49,
+        "totalReceber": 0,
+        "totalPagar": 0,
+        "totalProvisoes": 657186.86,
+        "plAntesApropriacoes": 1431394016.79,
+        "plBase": 1431338654.21,
+        "cota": 87.87166892,
+        "aplicacoesConvertidas": 0,
+        "cotasEmitidas": 0,
+        "cotasResgatadas": 0,
+        "valorResgates": 0,
+        "irComeCotas": 0,
+        "cotasComeCotas": 0,
+        "detalheComeCotas": [],
+        "qtdFinal": 16288966.30332078,
+        "plFinal": 1431338654.05
+      }
+    }
+  },
+  "gabarito": {
+    "cenarios": [
+      "tudo_bate_com_ruido"
+    ],
+    "parecer": "APROVADO",
+    "ressalva": false,
+    "resumo": "Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.",
+    "dificuldade": "media",
+    "achados": [
+      {
+        "cenario": "tudo_bate_com_ruido",
+        "dimensoes": [],
+        "titulo": "Comunicações do dia não afetam a cota de D",
+        "ladoCorreto": "nenhum",
+        "ajustePor": "ninguém",
+        "causaRaiz": "Não há divergência; as mensagens recebidas tratam de eventos futuros, de ativos fora da carteira ou são lembretes.",
+        "evidencias": [
+          "Comunicações recebidas",
+          "Carteira dos dois lados"
+        ],
+        "raciocinio": [
+          "Li as comunicações do dia e conferi se alguma delas exigia reflexo em D: nenhuma se refere a operação ou evento com efeito na data-base (são eventos futuros, ativos que o fundo não tem, ou dúvidas/lembretes).",
+          "Como os dois lados batem linha a linha e as apropriações conferem com o regulamento, não há motivo para segurar a cota."
+        ],
+        "acao": "Nenhuma ação sobre a cota. Responder ao remetente, se for o caso.",
+        "gravidade": "informativo"
+      }
+    ],
+    "regua": {
+      "versao": "v1",
+      "difQtdCotas": 0,
+      "difPlEmCotas": 0,
+      "difCotasEquivalentes": 0,
+      "difCaixa": 0,
+      "maiorDifProvisao": 0,
+      "difTotalProvisoes": 0,
+      "cota": {
+        "acima": false
+      },
+      "caixa": {
+        "acima": false
+      },
+      "provisoes": {
+        "acima": false
+      }
+    },
+    "valoresCorretos": {
+      "totalAtivos": 1364273070.58,
+      "caixa": 67722770.49,
+      "totalReceber": 0,
+      "totalPagar": 0,
+      "totalProvisoes": 657186.86,
+      "plAntesApropriacoes": 1431394016.79,
+      "plBase": 1431338654.21,
+      "cota": 87.87166892,
+      "aplicacoesConvertidas": 0,
+      "cotasEmitidas": 0,
+      "cotasResgatadas": 0,
+      "valorResgates": 0,
+      "irComeCotas": 0,
+      "cotasComeCotas": 0,
+      "detalheComeCotas": [],
+      "qtdFinal": 16288966.30332078,
+      "plFinal": 1431338654.05
+    },
+    "corretoPorDimensao": {
+      "cota": "ambos",
+      "caixa": "ambos",
+      "provisoes": "ambos"
+    },
+    "diferencas": {
+      "cota": 0,
+      "qtdFinal": 0,
+      "plFinal": 0,
+      "plBase": 0,
+      "caixa": 0,
+      "provisoes": 0
+    },
+    "armadilhas": [
+      "Comunicações alarmantes nem sempre afetam a data-base: separar o que tem efeito em D do que é evento futuro, ativo que o fundo não tem ou lembrete."
+    ]
+  }
+}
