@@ -1,20 +1,20 @@
-# Caso caso-019 — Cajueiro Plus FIF RF Referenciado DI
+# Caso caso-019 — Cajueiro Plus FII Responsabilidade Limitada
 
-> **Data-base (D):** 24/02/2026 (terça-feira) · **D−1:** 23/02/2026 · **Fundo:** FND-0019
+> **Data-base (D):** 27/02/2026 (sexta-feira) · **D−1:** 26/02/2026 · **Fundo:** FND-0019
 
 ## 1. O fundo
 
-O Cajueiro Plus FIF RF Referenciado DI é gerido pela Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA), em São Paulo/SP. Criado em 05/05/2016, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral. Hoje seus cotistas são tesourarias de empresas médias que usam o fundo como caixa. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo. O gestor responsável é Lívia, e quem cuida da validação do fundo é Lucas. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. No fechamento de ontem (23/02/2026) o fundo tinha PL de R$ 98.024.549,32, cota de 4,08852738 e 23.975.514,94818412 cotas. Hoje, terça-feira, 24/02/2026, é a data-base da validação.
+O Cajueiro Plus FII Responsabilidade Limitada é gerido pela Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes, em São Paulo/SP. Criado em 05/05/2016, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 30 mil cotistas, com 12% em um FoF imobiliário. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Lívia, e quem cuida da validação do fundo é Lucas. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Uma vez, em 2024, o fundo ficou três dias com a cota segurada por causa de uma divergência de caixa que acabou sendo só de classificação. No fechamento de ontem (26/02/2026) o fundo tinha PL de R$ 116.740.084,22, cota de 115,97393591 e 1.006.606,21112047 cotas. Hoje, sexta-feira, 27/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Renda Fixa Referenciado DI |
-| Classe | Classe de Renda Fixa — Referenciada DI |
-| Condomínio | aberto |
-| Gestora | Quaresmeira Capital (São Paulo/SP) |
-| PL em D−1 | R$ 98.024.549,32 |
-| Cota em D−1 | 4,08852738 |
-| Quantidade de cotas em D−1 | 23.975.514,94818412 |
+| Tipo | FII (imobiliário) |
+| Classe | Classe de FII — Tijolo |
+| Condomínio | fechado |
+| Gestora | Siriema Investimentos (São Paulo/SP) |
+| PL em D−1 | R$ 116.740.084,22 |
+| Cota em D−1 | 115,97393591 |
+| Quantidade de cotas em D−1 | 1.006.606,21112047 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,15 +22,15 @@ O Cajueiro Plus FIF RF Referenciado DI é gerido pela Quaresmeira Capital, espec
 
 **Taxas**
 
-- Taxa de administração: 0,140% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,270% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,620% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 71.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 6.000,00 (mensal)
+- Auditoria independente: R$ 135.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
+- Escrituração de cotas: R$ 11.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ O Cajueiro Plus FIF RF Referenciado DI é gerido pela Quaresmeira Capital, espec
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 100.327.613,01. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 116.120.103,53. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,17 +60,21 @@ O Cajueiro Plus FIF RF Referenciado DI é gerido pela Quaresmeira Capital, espec
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+0 (liquidação D+0).
+- Condomínio fechado: sem resgate; liquidez via B3.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- CDB: curva do papel ajustada por spread de crédito do emissor.
+- Imóveis: valor justo do laudo de avaliação vigente.
+- LCI: curva do papel.
+
+**Regras específicas deste fundo**
+
+- Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como "rendimentos a distribuir" (passivo) na data do anúncio (data-com), reduzindo o PL.
 
 ## 3. Informações de mercado do dia
 
@@ -80,14 +84,12 @@ O Cajueiro Plus FIF RF Referenciado DI é gerido pela Quaresmeira Capital, espec
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.478,470381 |  |
-| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.200,020075 |  |
-| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 814,846117 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.389,909065 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **11:49** — *Área de risco* — **Lembrete**: Lembrete: o fundo teve apontamento de auditoria em 2025 sobre conciliação de caixa. Atenção redobrada.
+- **14:04** — *Gestora — operacional* — **Dúvida sobre taxa**: Vocês conseguem confirmar se a taxa de gestão está sendo apropriada pelo PL do dia anterior? Só para checar.
 
 ## 5. Batimento Alfa × Beta
 
@@ -97,34 +99,29 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 4,09100910 | 4,09100910 | 0,00000000 |
-| Quantidade final de cotas | 24.123.309,22266548 | 24.123.309,22266548 | 0,00000000 |
-| PL final | R$ 98.688.677,55 | R$ 98.688.677,55 | R$ 0,00 |
-| Caixa | R$ 2.019.747,10 | R$ 2.019.747,10 | R$ 0,00 |
-| Total de provisões | R$ 41.674,66 | R$ 41.674,66 | R$ 0,00 |
+| Cota de fechamento | 115,94824348 | 115,94824348 | 0,00000000 |
+| Quantidade final de cotas | 1.006.606,21112047 | 1.006.606,21112047 | 0,00000000 |
+| PL final | R$ 116.714.222,06 | R$ 116.714.222,06 | R$ 0,00 |
+| Caixa | R$ 4.896.194,12 | R$ 4.896.194,12 | R$ 0,00 |
+| Total de provisões | R$ 182.105,87 | R$ 182.105,87 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.368 | 2.368 | 18.478,470381 | 18.478,470381 | 43.757.017,86 | 43.757.017,86 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 1.069 | 1.069 | 18.200,020075 | 18.200,020075 | 19.455.821,46 | 19.455.821,46 | 0,00 | ANBIMA — taxa indicativa D |
-| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 5.967 | 5.967 | 814,846117 | 814,846117 | 4.862.186,78 | 4.862.186,78 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 30.375 | 30.375 | 800,314208 | 800,314208 | 24.309.544,07 | 24.309.544,07 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB ARANDU 2028 — CDB Banco Arandu S.A. — 107% do CDI — venc. 2028 | 3.897 | 3.897 | 1.247,450283 | 1.247,450283 | 4.861.313,75 | 4.861.313,75 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| **Total** |  |  |  |  | 97.245.883,92 | 97.245.883,92 | 0,00 |  |
+| IMOVEL GLP-CAJAMAR — Galpão logístico em Cajamar (SP) — módulos A a D | 44.803.511,87 | 44.803.511,87 | 1,00 | 1,00 | 44.803.511,87 | 44.803.511,87 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL LAJES-JQB — Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP) | 33.602.633,91 | 33.602.633,91 | 1,00 | 1,00 | 33.602.633,91 | 33.602.633,91 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL GLP-EXTREMA — Galpão logístico em Extrema (MG) | 20.161.580,34 | 20.161.580,34 | 1,00 | 1,00 | 20.161.580,34 | 20.161.580,34 | 0,00 | Laudo de avaliação anual (valor justo) |
+| LCI TARUMA 2027 — LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027 | 6.174 | 6.174 | 1.088,450094 | 1.088,450094 | 6.720.090,88 | 6.720.090,88 | 0,00 | Curva do papel |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 365 | 365 | 18.389,909065 | 18.389,909065 | 6.712.316,81 | 6.712.316,81 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 112.000.133,81 | 112.000.133,81 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 1.112.447,37 | 1.112.447,37 |
-| TED recebida — aplicação Cotista 2296 (10:43) | 386.296,63 | 386.296,63 |
-| TED recebida — aplicação Cotista 2303 (15:52) | 468.264,60 | 468.264,60 |
-| TED recebida — aplicação Cotista 2310 (12:22) | 285.345,26 | 285.345,26 |
-| Pagamento de resgate — Cotista 2331 (cotizado em 23/02/2026) | -167.681,01 | -167.681,01 |
-| Pagamento de resgate — Cotista 2338 (cotizado em 23/02/2026) | -64.925,75 | -64.925,75 |
-| **Saldo final** | 2.019.747,10 | 2.019.747,10 |
+| Saldo inicial (D−1) | 4.896.194,12 | 4.896.194,12 |
+| **Saldo final** | 4.896.194,12 | 4.896.194,12 |
 
 ### 5.4 Valores a receber
 
@@ -132,64 +129,47 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.139.906,49 | 1.139.906,49 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 7.422,91 | 7.422,91 | 544,20 | 544,20 | 0,00 | 0,00 | 7.967,11 | 7.967,11 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 14.300,89 | 14.300,89 | 1.048,85 | 1.048,85 | 0,00 | 0,00 | 15.349,74 | 15.349,74 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.081,49 | 1.081,49 | 77,79 | 77,79 | 0,00 | 0,00 | 1.159,28 | 1.159,28 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 6.480,16 | 6.480,16 | 281,75 | 281,75 | 0,00 | 0,00 | 6.761,91 | 6.761,91 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 777,78 | 777,78 | 55,56 | 55,56 | 0,00 | 0,00 | 833,34 | 833,34 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 4.666,67 | 4.666,67 | 333,33 | 333,33 | 0,00 | 0,00 | 5.000,00 | 5.000,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 4.475,41 | 4.475,41 | 127,87 | 127,87 | 0,00 | 0,00 | 4.603,28 | 4.603,28 | 0,00 |
-| **Total** |  |  |  |  |  |  | 41.674,66 | 41.674,66 | 0,00 |
+| TXADM — Taxa de administração a pagar | 8.108,31 | 8.108,31 | 463,25 | 463,25 | 0,00 | 0,00 | 8.571,56 | 8.571,56 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 48.428,18 | 48.428,18 | 2.872,18 | 2.872,18 | 0,00 | 0,00 | 51.300,36 | 51.300,36 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.561,56 | 1.561,56 | 92,65 | 92,65 | 0,00 | 0,00 | 1.654,21 | 1.654,21 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 102.857,14 | 102.857,14 | 535,71 | 535,71 | 0,00 | 0,00 | 103.392,85 | 103.392,85 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 1.133,33 | 1.133,33 | 66,67 | 66,67 | 0,00 | 0,00 | 1.200,00 | 1.200,00 | 0,00 |
+| ESCRIT — Escrituração de cotas a pagar | 10.388,89 | 10.388,89 | 611,11 | 611,11 | 0,00 | 0,00 | 11.000,00 | 11.000,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.859,02 | 4.859,02 | 127,87 | 127,87 | 0,00 | 0,00 | 4.986,89 | 4.986,89 | 0,00 |
+| **Total** |  |  |  |  |  |  | 182.105,87 | 182.105,87 | 0,00 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,14% a.a. sobre R$ 98.024.549,32 fator exponencial (1+taxa)^(1/252) − 1 = R$ 544,20 · Beta: [base: PL do dia útil anterior] 0,14% a.a. sobre R$ 98.024.549,32 fator exponencial (1+taxa)^(1/252) − 1 = R$ 544,20
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,27% a.a. sobre R$ 98.024.549,32 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.048,85 · Beta: [base: PL do dia útil anterior] 0,27% a.a. sobre R$ 98.024.549,32 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.048,85
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 98.024.549,32 fator exponencial (1+taxa)^(1/252) − 1 = R$ 77,79 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 98.024.549,32 fator exponencial (1+taxa)^(1/252) − 1 = R$ 77,79
-- **AUDIT** — Alfa: R$ 71.000,00 (anual) ÷ 252 d.u. = R$ 281,75 · Beta: R$ 71.000,00 (anual) ÷ 252 d.u. = R$ 281,75
-- **ANBIMA** — Alfa: R$ 1.000,00 (mensal) ÷ 18 d.u. = R$ 55,56 · Beta: R$ 1.000,00 (mensal) ÷ 18 d.u. = R$ 55,56
-- **SELIC** — Alfa: R$ 6.000,00 (mensal) ÷ 18 d.u. = R$ 333,33 · Beta: R$ 6.000,00 (mensal) ÷ 18 d.u. = R$ 333,33
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 2296 | R$ 386.296,63 | 10:43 | 24/02/2026 | 24/02/2026 | 24/02/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 2303 | R$ 468.264,60 | 15:52 | 24/02/2026 | 24/02/2026 | 24/02/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista 2310 | R$ 285.345,26 | 12:22 | 24/02/2026 | 24/02/2026 | 24/02/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 2317 | 94.064,71624674 cotas |  | 09/02/2026 | 24/02/2026 | 26/02/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista 2324 | 36.778,00619276 cotas |  | 20/02/2026 | 24/02/2026 | 26/02/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 2331 | 40.976,01373594 cotas (R$ 167.681,01) |  | 18/02/2026 | 23/02/2026 | 24/02/2026 | não | não | cotizado em 23/02/2026 pela cota de 4,09217474; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 2338 | 15.882,20138162 cotas (R$ 64.925,75) |  | 15/02/2026 | 23/02/2026 | 24/02/2026 | não | não | cotizado em 23/02/2026 pela cota de 4,08795667; liquidação financeira hoje |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 97.245.883,92 | 97.245.883,92 | 0,00 |
-| Caixa | 2.019.747,10 | 2.019.747,10 | 0,00 |
+| Total de ativos | 112.000.133,81 | 112.000.133,81 | 0,00 |
+| Caixa | 4.896.194,12 | 4.896.194,12 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 1.139.906,49 | 1.139.906,49 | 0,00 |
-| Provisões | 41.674,66 | 41.674,66 | 0,00 |
-| PL base da cota | 98.084.049,87 | 98.084.049,87 | 0,00 |
-| Cota (8 casas) | 4,09100910 | 4,09100910 | 0,00000000 |
-| Aplicações convertidas | 1.139.906,49 | 1.139.906,49 | 0,00 |
-| Cotas emitidas | 278.636,99692087 | 278.636,99692087 | 0,00000000 |
-| Cotas resgatadas | 130.842,72243950 | 130.842,72243950 | 0,00000000 |
-| Valor dos resgates cotizados | 535.278,77 | 535.278,77 | 0,00 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 182.105,87 | 182.105,87 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 116.718.991,50 | 116.718.991,50 | 0,00 |
+| PL base da cota | 116.714.222,06 | 116.714.222,06 | 0,00 |
+| Cota (8 casas) | 115,94824348 | 115,94824348 | 0,00000000 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 24.123.309,22266548 | 24.123.309,22266548 | 0,00000000 |
-| PL final | 98.688.677,55 | 98.688.677,55 | 0,00 |
+| Quantidade final de cotas | 1.006.606,21112047 | 1.006.606,21112047 | 0,00000000 |
+| PL final | 116.714.222,06 | 116.714.222,06 | 0,00 |
 
 ---
 
@@ -199,9 +179,18 @@ Nenhum item.
 
 **Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
 
-**Dificuldade:** facil · **Cenários:** tudo_bate
+**Dificuldade:** media · **Cenários:** tudo_bate_com_ruido
 
-Sem achados.
+### Achado 1: Comunicações do dia não afetam a cota de D
+
+- **Gravidade:** informativo · **Dimensões:** nenhuma
+- **Lado correto:** nenhum · **Quem ajusta:** ninguém
+- **Causa raiz:** Não há divergência; as mensagens recebidas tratam de eventos futuros, de ativos fora da carteira ou são lembretes.
+- **Onde olhar:** Comunicações recebidas; Carteira dos dois lados
+- **Raciocínio do analista:**
+  1. Li as comunicações do dia e conferi se alguma delas exigia reflexo em D: nenhuma se refere a operação ou evento com efeito na data-base (são eventos futuros, ativos que o fundo não tem, ou dúvidas/lembretes).
+  2. Como os dois lados batem linha a linha e as apropriações conferem com o regulamento, não há motivo para segurar a cota.
+- **Ação:** Nenhuma ação sobre a cota. Responder ao remetente, se for o caso.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -215,12 +204,12 @@ Sem achados.
 
 | Item | Valor |
 |---|---|
-| Cota | 4,09100910 |
-| Quantidade final de cotas | 24.123.309,22266548 |
-| PL final | R$ 98.688.677,55 |
-| Caixa | R$ 2.019.747,10 |
-| Total de provisões | R$ 41.674,66 |
+| Cota | 115,94824348 |
+| Quantidade final de cotas | 1.006.606,21112047 |
+| PL final | R$ 116.714.222,06 |
+| Caixa | R$ 4.896.194,12 |
+| Total de provisões | R$ 182.105,87 |
 
 ### Armadilhas deste caso
 
-- Não inventar problema: quando tudo bate e as apropriações conferem com o regulamento, a resposta certa é aprovar.
+- Comunicações alarmantes nem sempre afetam a data-base: separar o que tem efeito em D do que é evento futuro, ativo que o fundo não tem ou lembrete.

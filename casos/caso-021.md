@@ -1,20 +1,20 @@
-# Caso caso-021 — Sanhaço FIF RF Crédito Privado LP
+# Caso caso-021 — Carcará III FIP Multiestratégia
 
-> **Data-base (D):** 08/05/2026 (sexta-feira) · **D−1:** 07/05/2026 · **Fundo:** FND-0021
+> **Data-base (D):** 01/10/2026 (quinta-feira) · **D−1:** 30/09/2026 · **Fundo:** FND-0021
 
 ## 1. O fundo
 
-Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesouraria, cultura de mesa e muita boleta no fim do dia (São Paulo/SP), o Sanhaço FIF RF Crédito Privado LP é um dos fundos que mais exigem atenção na rotina de validação. Criado em 15/06/2018, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são family offices e alguns fundos de fundos de terceiros. Ao longo da vida, o fundo teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana e mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge. O gestor responsável é Henrique, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. No fechamento de ontem (07/05/2026) o fundo tinha PL de R$ 88.380.933,28, cota de 3,22960146 e 27.365.894,63779530 cotas. Hoje, sexta-feira, 08/05/2026, é a data-base da validação.
+O Carcará III FIP Multiestratégia é gerido pela Varanda Capital, gestora de private equity com participações em empresas familiares do interior, em Belo Horizonte/MG. Criado em 14/05/2015, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores qualificados. Hoje seus cotistas são 8 investidores profissionais (fundos de pensão e family offices) com capital comprometido. Ao longo da vida, o fundo passou por uma reestruturação societária em uma das investidas em 2023 e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Lívia, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. O cronograma de amortização do fundo é conhecido e comunicado com antecedência. No fechamento de ontem (30/09/2026) o fundo tinha PL de R$ 1.060.527.239,34, cota de 1.268,93506423 e 835.761,63133186 cotas. Hoje, quinta-feira, 01/10/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Renda Fixa Crédito Privado |
-| Classe | Classe de Renda Fixa — Crédito Privado |
-| Condomínio | aberto |
-| Gestora | Cumeeira Capital (São Paulo/SP) |
-| PL em D−1 | R$ 88.380.933,28 |
-| Cota em D−1 | 3,22960146 |
-| Quantidade de cotas em D−1 | 27.365.894,63779530 |
+| Tipo | FIP Multiestratégia |
+| Classe | Classe de FIP — Multiestratégia |
+| Condomínio | fechado |
+| Gestora | Varanda Capital (Belo Horizonte/MG) |
+| PL em D−1 | R$ 1.060.527.239,34 |
+| Cota em D−1 | 1.268,93506423 |
+| Quantidade de cotas em D−1 | 835.761,63133186 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,15 +22,15 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 
 **Taxas**
 
-- Taxa de administração: 0,150% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,850% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,260% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,550% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 45.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 1.900,00 (mensal)
+- Auditoria independente: R$ 75.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
+- Consultoria de avaliação (laudos): R$ 100.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 87.751.721,84. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 1.110.526.108,02. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,18 +60,21 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+30 corridos (liquidação D+1 útil).
+- Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).
-- CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual.
+- Participações em companhias fechadas: valor justo do laudo vigente aprovado pelo comitê de investimentos.
+
+**Regras específicas deste fundo**
+
+- Valor justo das companhias investidas: laudo independente, atualizado na data em que o comitê de investimentos aprova o novo laudo.
+- Chamadas de capital: os recursos integralizados são convertidos em cotas pela cota de fechamento do dia do crédito.
 
 ## 3. Informações de mercado do dia
 
@@ -81,16 +84,16 @@ Sob a gestão da Cumeeira Capital, boutique fundada por ex-operadores de tesoura
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.235,500915 |  |
-| VCLA12 | ANBIMA — PU pela taxa indicativa de D | 1.065,699030 |  |
-| PASU12 | ANBIMA — PU pela taxa indicativa de D | 1.048,764217 |  |
-| ATRI21 | ANBIMA — PU pela taxa indicativa de D | 1.040,869137 |  |
-| TFSU13 | ANBIMA — PU pela taxa indicativa de D | 1.047,828029 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.348,553096 |  |
+| VIDRARIA SUL | Laudo anterior (vigente até D−1) | 14,96 |  |
+| VIDRARIA SUL | Laudo novo — aprovado pelo comitê em 01/10/2026 | 15,86 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **08:10** — *Administrador — comunicado ao mercado* — **Amortização**: Comunicamos o pagamento, em 01/10/2026, de amortização de R$ 27,17 por cota, conforme deliberação do gestor após o desinvestimento parcial.
+- **09:31** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **12:47** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (02/10/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **16:30** — *Gestora — comitê de investimentos* — **Ata do comitê**: O comitê aprovou hoje o laudo de avaliação de Vidraria Sul Indústria S.A. (companhia fechada): novo valor justo de R$ 15,86 por ação (antes R$ 14,96). Ata assinada em anexo.
 
 ## 5. Batimento Alfa × Beta
 
@@ -100,35 +103,29 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 3,22949417 | 3,23171793 | 0,00222376 |
-| Quantidade final de cotas | 27.473.865,27400762 | 27.473.721,38264105 | -143,89136657 |
-| PL final | R$ 88.726.687,73 | R$ 88.787.318,00 | R$ 60.630,27 |
-| Caixa | R$ 1.596.019,69 | R$ 1.596.019,69 | R$ 0,00 |
-| Total de provisões | R$ 122.251,20 | R$ 61.396,07 | R$ -60.855,13 |
+| Cota de fechamento | 1.264,18010504 | 1.268,79887632 | 4,61877128 |
+| Quantidade final de cotas | 835.761,63133186 | 835.761,63133186 | 0,00000000 |
+| PL final | R$ 1.056.553.226,89 | R$ 1.060.413.418,71 | R$ 3.860.191,82 |
+| Caixa | R$ 17.868.488,32 | R$ 40.576.131,84 | R$ 22.707.643,52 |
+| Total de provisões | R$ 1.741.686,74 | R$ 1.741.686,74 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.305 | 1.305 | 18.235,500915 | 18.235,500915 | 23.797.328,69 | 23.797.328,69 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 9.590 | 9.590 | 794,127970 | 794,127970 | 7.615.687,23 | 7.615.687,23 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB PIRACE 2029 — CDB Banco Piracema S.A. — 110% do CDI — venc. 2029 | 7.098 | 7.098 | 1.341,112615 | 1.341,112615 | 9.519.217,34 | 9.519.217,34 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 10.720 | 10.720 | 1.065,699030 | 1.065,699030 | 11.424.293,60 | 11.424.293,60 | 0,00 | ANBIMA — taxa indicativa D |
-| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 13.616 | 13.616 | 1.048,764217 | 1.048,764217 | 14.279.973,58 | 14.279.973,58 | 0,00 | ANBIMA — taxa indicativa D |
-| ATRI21 — Debênture Agroindustrial Três Rios S.A. — CDI + 2,30% | 10.975 | 10.975 | 1.040,869137 | 1.040,869137 | 11.423.538,78 | 11.423.538,78 | 0,00 | ANBIMA — taxa indicativa D |
-| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 9.085 | 9.085 | 1.047,828029 | 1.047,828029 | 9.519.517,64 | 9.519.517,64 | 0,00 | ANBIMA — taxa indicativa D |
-| **Total** |  |  |  |  | 87.579.556,86 | 87.579.556,86 | 0,00 |  |
+| AGROFLORA PART — Ações da Agroflora Participações S.A. (companhia fechada) | 63.888.615 | 63.888.615 | 8,99 | 8,99 | 574.358.648,85 | 574.358.648,85 | 0,00 | Valor justo — laudo de avaliação vigente |
+| VIDRARIA SUL — Ações da Vidraria Sul Indústria S.A. (companhia fechada) | 20.941.613 | 20.941.613 | 15,86 | 14,96 | 332.133.982,18 | 313.286.530,48 | -18.847.451,70 | Valor justo — laudo aprovado em 01/10/2026 |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 5.592 | 5.592 | 18.348,553096 | 18.348,553096 | 102.605.108,91 | 102.605.108,91 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 38.667 | 38.667 | 810,217637 | 810,217637 | 31.328.685,37 | 31.328.685,37 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 1.040.426.425,31 | 1.021.578.973,61 | -18.847.451,70 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 981.546,79 | 981.546,79 |
-| TED recebida — aplicação Cotista 4606 (10:42) | 183.964,30 | 183.964,30 |
-| TED recebida — aplicação Cotista 4613 (13:41) | 350.616,75 | 350.616,75 |
-| TED recebida — aplicação Cotista 4620 (09:00) | 140.746,98 | 140.746,98 |
-| Pagamento da taxa de gestão do mês anterior | -60.855,13 | -60.855,13 |
-| **Saldo final** | 1.596.019,69 | 1.596.019,69 |
+| Saldo inicial (D−1) | 40.576.131,84 | 40.576.131,84 |
+| Pagamento de amortização de cotas — R$ 27,17 por cota | -22.707.643,52 | — |
+| **Saldo final** | 17.868.488,32 | 40.576.131,84 |
 
 ### 5.4 Valores a receber
 
@@ -136,54 +133,55 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 675.328,03 | 675.328,03 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 12.564,49 | 12.564,49 | 526,08 | 526,08 | 0,00 | 0,00 | 13.090,57 | 13.090,57 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 73.026,15 | 73.026,15 | 2.981,10 | 2.981,10 | 0,00 | 60.855,13 | 76.007,25 | 15.152,12 | -60.855,13 |
-| TXCUS — Taxa máxima de custódia a pagar | 2.531,48 | 2.531,48 | 105,22 | 105,22 | 0,00 | 0,00 | 2.636,70 | 2.636,70 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 27.500,00 | 27.500,00 | 178,57 | 178,57 | 0,00 | 0,00 | 27.678,57 | 27.678,57 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 120,00 | 120,00 | 30,00 | 30,00 | 0,00 | 0,00 | 150,00 | 150,00 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 380,00 | 380,00 | 95,00 | 95,00 | 0,00 | 0,00 | 475,00 | 475,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.124,59 | 2.124,59 | 88,52 | 88,52 | 0,00 | 0,00 | 2.213,11 | 2.213,11 | 0,00 |
-| **Total** |  |  |  |  |  |  | 122.251,20 | 61.396,07 | -60.855,13 |
+| TXADM — Taxa de administração a pagar | 224.761,49 | 224.761,49 | 10.941,95 | 10.941,95 | 0,00 | 0,00 | 235.703,44 | 235.703,44 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 1.334.352,10 | 1.334.352,10 | 65.230,84 | 65.230,84 | 0,00 | 0,00 | 1.399.582,94 | 1.399.582,94 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 18.180,37 | 18.180,37 | 841,69 | 841,69 | 0,00 | 0,00 | 19.022,06 | 19.022,06 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 33.630,95 | 33.630,95 | 297,62 | 297,62 | 0,00 | 0,00 | 33.928,57 | 33.928,57 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 0,00 | 0,00 | 42,86 | 42,86 | 0,00 | 0,00 | 42,86 | 42,86 | 0,00 |
+| LAUDO — Consultoria de avaliação (laudos) a pagar | 52.777,78 | 52.777,78 | 396,83 | 396,83 | 0,00 | 0,00 | 53.174,61 | 53.174,61 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 0,00 | 0,00 | 232,26 | 232,26 | 0,00 | 0,00 | 232,26 | 232,26 | 0,00 |
+| **Total** |  |  |  |  |  |  | 1.741.686,74 | 1.741.686,74 | 0,00 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,26% a.a. sobre R$ 1.060.527.239,34 ÷ 252 (linear, dias úteis) = R$ 10.941,95 · Beta: [base: PL do dia útil anterior] 0,26% a.a. sobre R$ 1.060.527.239,34 ÷ 252 (linear, dias úteis) = R$ 10.941,95
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,55% a.a. sobre R$ 1.060.527.239,34 ÷ 252 (linear, dias úteis) = R$ 65.230,84 · Beta: [base: PL do dia útil anterior] 1,55% a.a. sobre R$ 1.060.527.239,34 ÷ 252 (linear, dias úteis) = R$ 65.230,84
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 1.060.527.239,34 ÷ 252 (linear, dias úteis) = R$ 841,69 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 1.060.527.239,34 ÷ 252 (linear, dias úteis) = R$ 841,69
+- **AUDIT** — Alfa: R$ 75.000,00 (anual) ÷ 252 d.u. = R$ 297,62 · Beta: R$ 75.000,00 (anual) ÷ 252 d.u. = R$ 297,62
+- **ANBIMA** — Alfa: R$ 900,00 (mensal) ÷ 21 d.u. = R$ 42,86 · Beta: R$ 900,00 (mensal) ÷ 21 d.u. = R$ 42,86
+- **LAUDO** — Alfa: R$ 100.000,00 (anual) ÷ 252 d.u. = R$ 396,83 · Beta: R$ 100.000,00 (anual) ÷ 252 d.u. = R$ 396,83
+- **CVM** — Alfa: R$ 14.400,00 (trimestral) ÷ 62 d.u. = R$ 232,26 · Beta: R$ 14.400,00 (trimestral) ÷ 62 d.u. = R$ 232,26
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 4606 | R$ 183.964,30 | 10:42 | 08/05/2026 | 08/05/2026 | 08/05/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 4613 | R$ 350.616,75 | 13:41 | 08/05/2026 | 08/05/2026 | 08/05/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista 4620 | R$ 140.746,98 | 09:00 | 08/05/2026 | 08/05/2026 | 08/05/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 4627 | 44.757,59094505 cotas |  | 29/04/2026 | 08/05/2026 | 12/05/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista 4634 | 56.384,40610677 cotas |  | 11/04/2026 | 08/05/2026 | 12/05/2026 | sim | sim |  |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 87.579.556,86 | 87.579.556,86 | 0,00 |
-| Caixa | 1.596.019,69 | 1.596.019,69 | 0,00 |
+| Total de ativos | 1.040.426.425,31 | 1.021.578.973,61 | -18.847.451,70 |
+| Caixa | 17.868.488,32 | 40.576.131,84 | 22.707.643,52 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 675.328,03 | 675.328,03 | 0,00 |
-| Provisões | 122.251,20 | 61.396,07 | -60.855,13 |
-| PL base da cota | 88.377.997,32 | 88.438.852,45 | 60.855,13 |
-| Cota (8 casas) | 3,22949417 | 3,23171793 | 0,00222376 |
-| Aplicações convertidas | 675.328,03 | 675.328,03 | 0,00 |
-| Cotas emitidas | 209.112,63326413 | 208.968,74189756 | -143,89136657 |
-| Cotas resgatadas | 101.141,99705181 | 101.141,99705181 | 0,00000000 |
-| Valor dos resgates cotizados | 326.637,49 | 326.862,41 | 224,92 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 1.741.686,74 | 1.741.686,74 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 1.056.631.210,94 | 1.060.491.402,76 | 3.860.191,82 |
+| PL base da cota | 1.056.553.226,89 | 1.060.413.418,71 | 3.860.191,82 |
+| Cota (8 casas) | 1.264,18010504 | 1.268,79887632 | 4,61877128 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 27.473.865,27400762 | 27.473.721,38264105 | -143,89136657 |
-| PL final | 88.726.687,73 | 88.787.318,00 | 60.630,27 |
+| Quantidade final de cotas | 835.761,63133186 | 835.761,63133186 | 0,00000000 |
+| PL final | 1.056.553.226,89 | 1.060.413.418,71 | 3.860.191,82 |
 
 ---
 
@@ -191,35 +189,47 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Provisão de taxa de gestão não baixada após o pagamento.
+**Resumo:** Reprovar até o ajuste: Amortização não deduzida; Valor justo de VIDRARIA SUL desatualizado.
 
-**Dificuldade:** media · **Cenários:** provisao_nao_baixada_apos_pagamento
+**Dificuldade:** media · **Cenários:** amortizacao_nao_registrada, laudo_fip_nao_atualizado
 
-### Achado 1: Provisão de taxa de gestão não baixada após o pagamento
+### Achado 1: Amortização não deduzida
 
-- **Gravidade:** erro · **Dimensões:** provisoes, cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa registrou a saída de caixa do pagamento (R$ 60.855,13) mas não baixou a provisão. A despesa ficou contada duas vezes.
-- **Onde olhar:** Caixa (os dois lados têm o pagamento); Provisões — TXGES
+- **Gravidade:** erro · **Dimensões:** caixa, cota
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta não registrou o pagamento de amortização de R$ 27,17/cota (R$ 22.707.643,52).
+- **Onde olhar:** Caixa — lançamentos; Comunicações — aviso de amortização; Regulamento — amortizações
 - **Raciocínio do analista:**
-  1. Os caixas batem (os dois registraram o pagamento de R$ 60.855,13), mas a provisão de taxa de gestão do Alfa está R$ 60.855,13 maior.
-  2. Saldo anterior + apropriação − pagamento: o Alfa não subtraiu o pagamento. Com isso o PL dele cai R$ 60.855,13, uma despesa em dobro.
-- **Ação:** Alfa deve baixar a provisão pelo valor pago e reprocessar a cota.
+  1. Caixa do Beta R$ 22.707.643,52 maior. A diferença de cota é de aproximadamente R$ 27,17, exatamente o valor amortizado por cota.
+  2. Houve amortização hoje (comunicado ao mercado). O valor sai do PL na data do pagamento, então a cota de D tem que vir "ex-amortização".
+  3. A queda de cota em relação a D−1 no Alfa não é perda: é a amortização.
+- **Ação:** Beta deve registrar a saída de caixa da amortização e reprocessar a cota.
+
+### Achado 2: Valor justo de VIDRARIA SUL desatualizado
+
+- **Gravidade:** erro · **Dimensões:** cota
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta manteve o laudo anterior (R$ 14,96) mesmo com o novo aprovado pelo comitê hoje (R$ 15,86).
+- **Onde olhar:** Carteira — VIDRARIA SUL; Comunicações — ata do comitê; Regulamento — valor justo
+- **Raciocínio do analista:**
+  1. VIDRARIA SUL: R$ 15,86 (Alfa) contra R$ 14,96 (Beta), mesma quantidade. Impacto: R$ 18.847.451,70.
+  2. O regulamento manda atualizar o valor justo na data de aprovação do laudo pelo comitê. A ata é de hoje.
+- **Ação:** Beta deve aplicar o novo laudo e reprocessar. Arquivar a ata como suporte da variação da cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
-| caixa | ambos |
-| provisoes | Beta |
+| cota | Alfa |
+| caixa | Alfa |
+| provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 3,23171793 |
-| Quantidade final de cotas | 27.473.721,38264105 |
-| PL final | R$ 88.787.318,00 |
-| Caixa | R$ 1.596.019,69 |
-| Total de provisões | R$ 61.396,07 |
+| Cota | 1.264,18010504 |
+| Quantidade final de cotas | 835.761,63133186 |
+| PL final | R$ 1.056.553.226,89 |
+| Caixa | R$ 17.868.488,32 |
+| Total de provisões | R$ 1.741.686,74 |

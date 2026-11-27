@@ -5,12 +5,12 @@
 
 import type { Ctx, Achado } from './caso.ts';
 import { textoTaxa, TABELA_CVM, faixaCVM, atualizarPDD, duTrimestre } from './caso.ts';
-import type { Posicao, Ativo, Dimensao, LadoId, Provisao } from './modelo.ts';
+import type { Posicao, Ativo, Dimensao, LadoId, Provisao, ParamTaxa } from './modelo.ts';
 import { reprecificar, calcular, taxaDiaria } from './modelo.ts';
 import type { TipoFundo } from './catalogo.ts';
 import {
   r2, entre, inteiro, escolher, chance, fmtR, fmtN, fmtPct, fmtData, somaDias, somaDiasUteis, ehDiaUtil,
-  diasUteisNoMes, diaUtilAnterior,
+  diasUteisNoMes, diaUtilAnterior, proximoUtil, solicitacaoPara, diasUteisEntre,
 } from './util.ts';
 
 export interface Cenario {
@@ -80,28 +80,31 @@ function usarTaxa(c: Ctx, preferida?: 'TXADM' | 'TXGES'): 'TXADM' | 'TXGES' {
   return t;
 }
 function prazoCotizacao(c: Ctx): { n: number; corridos: boolean } | null {
-  const t = c.reg.cotizacao.find((x) => x.startsWith('Resgate')) ?? '';
-  const m = t.match(/D\+(\d+)\s*(corridos|útil|úteis)/);
-  if (!m || Number(m[1]) === 0) return null;
-  return { n: Number(m[1]), corridos: m[2] === 'corridos' };
+  const p = c.prazos;
+  if (!p || p.cot === 0) return null;
+  return { n: p.cot, corridos: p.corridos };
 }
-function proximoUtil(d: string): string {
-  let x = d;
-  while (!ehDiaUtil(x)) x = somaDias(x, 1);
-  return x;
+function novoCotista(c: Ctx): string {
+  return c.tipo === 'EXCLUSIVO' || c.tipo === 'PREV' ? 'Cotista único' : `Cotista ${String(inteiro(c.rng, 1000, 9999))}`;
+}
+/** Leva `v` para o caixa vendendo o equivalente de um título líquido, para o PL não mudar. */
+function reforcarCaixa(c: Ctx, v: number): void {
+  c.base.caixa.saldoInicial = r2(c.base.caixa.saldoInicial + v);
+  const lft = c.base.ativos.find((x) => x.codigo.startsWith('LFT') || x.codigo.startsWith('COMPROMISSADA'));
+  if (lft) { const k = Math.min(lft.quantidade - 1, Math.round(v / lft.preco)); lft.quantidade -= k; lft.valor = r2(lft.quantidade * lft.preco); }
 }
 function aplicacaoNova(c: Ctx, apos: boolean): { id: string; valor: number; h: string } {
   const corte = Number(c.reg.horarioCorte!.slice(0, 2));
   const h = apos ? `${String(corte).padStart(2, '0')}:${String(inteiro(c.rng, 5, 50)).padStart(2, '0')}` : hora(c, 9, corte - 1);
   const valor = r2(c.plAnterior * entre(c.rng, 0.002, 0.012));
-  const id = `APL-${c.base.movs.length + 1}`;
-  const cotista = `Cotista ${String(inteiro(c.rng, 1000, 9999))}`;
+  const id = `APL-${c.base.movs.filter((x) => x.tipo === 'aplicacao').length + 1}`;
+  const cotista = novoCotista(c);
   c.base.movs.push({
     id, tipo: 'aplicacao', cotista, valor, recebidoAs: h, solicitadoEm: c.data,
     cotizacao: apos ? proximoUtil(somaDias(c.data, 1)) : c.data, liquidacao: c.data, converterHoje: !apos,
     observacao: apos ? `recursos creditados às ${h}, após o horário de corte (${c.reg.horarioCorte})` : undefined,
   });
-  c.base.caixa.lancamentos.push({ historico: `TED recebida — aplicação ${cotista} (${h})`, valor });
+  c.base.caixa.lancamentos.push({ historico: `TED recebida — aplicação [${id}] ${cotista} (${h})`, valor });
   addItem(c.base.aPagar, 'APLIC A CONVERTER', 'Aplicações recebidas no dia, a converter em cotas', valor);
   return { id, valor, h };
 }
@@ -292,7 +295,7 @@ const C06: Cenario = {
     const { errado, ladoErrado, ladoCerto } = sortear(c);
     if (ladoErrado === 'Alfa') {
       errado.movs = errado.movs.filter((x) => x.id !== id);
-      errado.caixa.lancamentos = errado.caixa.lancamentos.filter((l) => !l.historico.includes(m.cotista));
+      errado.caixa.lancamentos = errado.caixa.lancamentos.filter((l) => !l.historico.includes(`[${m.id}]`));
       tirarItem(errado.aPagar, 'APLIC A CONVERTER', m.valor);
       return [{
         cenario: 'aplicacao_nao_convertida', dimensoes: ['cota', 'caixa'], titulo: `Aplicação de ${m.cotista} não capturada`, ladoCorreto: ladoCerto, ajustePor: ladoErrado,
@@ -351,7 +354,7 @@ const C07: Cenario = {
     const p = prazoCotizacao(c)!;
     const cz = p.corridos ? proximoUtil(somaDias(c.data, p.n)) : somaDiasUteis(c.data, p.n);
     const cotas = Number((c.qtdAnterior * entre(c.rng, 0.003, 0.02)).toFixed(8));
-    c.base.movs.push({ id: 'RSG-NOVO', tipo: 'resgate', cotista: `Cotista ${inteiro(c.rng, 1000, 9999)}`, cotas, solicitadoEm: c.data, cotizacao: cz, liquidacao: somaDiasUteis(cz, 1), converterHoje: false, observacao: 'pedido de resgate registrado hoje' });
+    c.base.movs.push({ id: 'RSG-NOVO', tipo: 'resgate', cotista: novoCotista(c), cotas, solicitadoEm: c.data, cotizacao: cz, liquidacao: somaDiasUteis(cz, c.prazos!.liq), converterHoje: false, observacao: 'pedido de resgate registrado hoje' });
   },
   aplicar: (c) => {
     const m = c.base.movs.find((x) => x.id === 'RSG-NOVO')!;
@@ -602,7 +605,6 @@ const C14: Cenario = {
         'O impacto financeiro é irrelevante, mas a cota oficial precisa seguir o regulamento e a parametrização tem que ser corrigida para não repetir.',
       ],
       acao: `${ladoErrado} deve ajustar a parametrização para truncamento e republicar a cota de D com 8 casas truncadas.`,
-      gravidade: 'ressalva',
     }];
   },
 };
@@ -734,8 +736,8 @@ const C18: Cenario = {
       causaRaiz: `${ladoErrado} não reconheceu os rendimentos anunciados hoje (R$ ${fmtN(Number(xs), 2)}/cota, ${fmtR(Number(ts))}).`,
       evidencias: ['Valores a pagar', 'Comunicações — aviso de rendimentos', 'Regulamento — política de distribuição'],
       raciocinio: [
-        `O ${ladoCerto} tem ${fmtR(Number(ts))} de "rendimentos a distribuir" que o ${ladoErrado} não tem. A cota do ${ladoErrado} fica R$ ${fmtN(Number(xs), 2)} maior, que é o valor anunciado por cota.`,
-        'O regulamento manda reconhecer o rendimento no passivo na data-com, que é hoje. O aviso saiu às 18h05; quem fechou antes disso não pegou.',
+        `O ${ladoCerto} tem ${fmtR(Number(ts))} de "rendimentos a distribuir" que o ${ladoErrado} não tem. O valor corresponde ao rendimento de R$ ${fmtN(Number(xs), 2)} por cota anunciado no aviso.`,
+        'O regulamento manda reconhecer o rendimento anunciado no passivo na data-com, que é hoje (aviso das 18:05). É fato de D e entra na cota de D.',
       ],
       acao: `${ladoErrado} deve registrar os rendimentos a distribuir e reprocessar a cota patrimonial.`,
     }];
@@ -779,7 +781,7 @@ const C21: Cenario = {
   preparar: (c) => {
     const v = r2(c.plAnterior * entre(c.rng, 0.02, 0.06));
     const k = inteiro(c.rng, 2, 6);
-    c.base.movs.push({ id: 'INT-1', tipo: 'integralizacao', cotista: 'Investidores (chamada de capital)', valor: v, recebidoAs: '11:20', solicitadoEm: somaDias(c.data, -10), cotizacao: c.data, liquidacao: c.data, converterHoje: true, observacao: `${k}ª chamada de capital — vencimento hoje` });
+    c.base.movs.push({ id: 'INT-1', tipo: 'integralizacao', cotista: 'Investidores (chamada de capital)', valor: v, recebidoAs: '11:20', solicitadoEm: somaDiasUteis(c.data, -8), cotizacao: c.data, liquidacao: c.data, converterHoje: true, observacao: `${k}ª chamada de capital — vencimento hoje` });
     c.base.caixa.lancamentos.push({ historico: `Integralizações recebidas — ${k}ª chamada de capital`, valor: v });
     addItem(c.base.aPagar, 'APLIC A CONVERTER', 'Integralizações recebidas no dia, a converter em cotas', v);
     com(c, '08:00', 'Administrador', `${k}ª chamada de capital`, `Lembrete: vence hoje a ${k}ª chamada de capital, no total de ${fmtR(v)}.`);
@@ -885,33 +887,35 @@ const C23: Cenario = {
 // ======================================================================================
 const K01: Cenario = {
   id: 'resgate_liquidado_nao_baixado', nome: 'Resgate liquidado e não baixado no controle', dim: 'caixa', tipos: ABERTOS,
+  aplicavel: (c) => !!c.prazos && c.prazos.liq >= 1 && (c.base.movs.some((m) => m.id.startsWith('LIQ-')) || solicitacaoPara(somaDiasUteis(c.data, -c.prazos.liq), c.prazos.cot, c.prazos.corridos) !== null),
   preparar: (c) => {
     if (!c.base.movs.some((m) => m.id.startsWith('LIQ-'))) {
-      const cz = somaDiasUteis(c.data, -1);
+      const pz = c.prazos!;
+      const cz = somaDiasUteis(c.data, -pz.liq);
+      const cotaC = c.cotaHist[cz];
       const cotas = Number((c.qtdAnterior * entre(c.rng, 0.002, 0.01)).toFixed(8));
-      const valor = r2(cotas * c.cotaAnterior);
-      c.base.movs.push({ id: 'LIQ-9', tipo: 'resgate', cotista: `Cotista ${inteiro(c.rng, 1000, 9999)}`, cotas, valor, solicitadoEm: somaDias(cz, -15), cotizacao: cz, liquidacao: c.data, converterHoje: false, observacao: `cotizado em ${fmtData(cz)} pela cota de ${fmtN(c.cotaAnterior, 8)}; liquidação financeira hoje` });
-      c.base.caixa.lancamentos.push({ historico: `Pagamento de resgate — ${c.base.movs[c.base.movs.length - 1].cotista} (cotizado em ${fmtData(cz)})`, valor: -valor });
-      c.base.caixa.saldoInicial = r2(c.base.caixa.saldoInicial + valor);
-      const lft = c.base.ativos.find((x) => x.codigo.startsWith('LFT') || x.codigo.startsWith('COMPROMISSADA'));
-      if (lft) { const k = Math.min(lft.quantidade - 1, Math.round(valor / lft.preco)); lft.quantidade -= k; lft.valor = r2(lft.quantidade * lft.preco); }
+      const valor = r2(cotas * cotaC);
+      const quem = novoCotista(c);
+      c.base.movs.push({ id: 'LIQ-9', tipo: 'resgate', cotista: quem, cotas, valor, solicitadoEm: solicitacaoPara(cz, pz.cot, pz.corridos)!, cotizacao: cz, liquidacao: c.data, converterHoje: false, observacao: `cotizado em ${fmtData(cz)} pela cota de ${fmtN(cotaC, 8)}; liquidação financeira hoje` });
+      c.base.caixa.lancamentos.push({ historico: `Pagamento de resgate [LIQ-9] — ${quem} (cotizado em ${fmtData(cz)})`, valor: -valor });
+      reforcarCaixa(c, valor);
     }
   },
   aplicar: (c) => {
     const m = c.base.movs.find((x) => x.id.startsWith('LIQ-'))!;
     const errado = c.alfa;
-    errado.caixa.lancamentos = errado.caixa.lancamentos.filter((l) => !(l.historico.startsWith('Pagamento de resgate') && l.historico.includes(m.cotista)));
-    addItem(errado.aPagar, 'RESGATES A PAGAR', 'Resgates cotizados em dias anteriores, a liquidar', m.valor!);
+    errado.caixa.lancamentos = errado.caixa.lancamentos.filter((l) => !(l.historico.startsWith('Pagamento de resgate') && l.historico.includes(`[${m.id}]`)));
+    addItem(errado.aPagar, 'RESGATES A PAGAR', 'Resgates já cotizados e ainda não liquidados', m.valor!);
     return [{
       cenario: 'resgate_liquidado_nao_baixado', dimensoes: ['caixa'], titulo: 'Pagamento de resgate não baixado no controle Alfa', ladoCorreto: 'Beta', ajustePor: 'Alfa',
-      causaRaiz: `O controle Alfa não registrou o pagamento do resgate de ${m.cotista} (${fmtR(m.valor!)}) e manteve o valor em "resgates a pagar".`,
+      causaRaiz: `O controle Alfa não registrou o pagamento do resgate ${m.id} (${m.cotista}, ${fmtR(m.valor!)}) e manteve o valor em "resgates a pagar".`,
       evidencias: ['Caixa — lançamentos', 'Valores a pagar — resgates', 'Movimentações de passivo (liquidações do dia)'],
       raciocinio: [
         `O caixa do Alfa está ${fmtR(m.valor!)} acima do Beta, e "resgates a pagar" do Alfa está ${fmtR(m.valor!)} acima também. PL e cota batem.`,
-        `O resgate de ${m.cotista}, cotizado em ${fmtData(m.cotizacao)}, liquida hoje e saiu da conta. O Alfa não deu baixa.`,
+        `O resgate ${m.id}, cotizado em ${fmtData(m.cotizacao)}, liquida hoje (${c.reg.cotizacao.find((x) => x.startsWith('Resgate'))}) e saiu da conta. O Alfa não deu baixa.`,
         'É descasamento de registro, sem efeito na cota de hoje. Se não for corrigido, o Alfa vai tentar pagar de novo ou projetar um caixa que não existe.',
       ],
-      acao: `Alfa deve baixar o pagamento do resgate de ${m.cotista} (caixa e passivo). Cota pode ser aprovada; acompanhar a regularização em D+1.`,
+      acao: `Alfa deve baixar o pagamento do resgate ${m.id} (caixa e passivo). Cota pode ser aprovada; acompanhar a regularização em D+1.`,
     }];
   },
 };
@@ -1083,11 +1087,17 @@ const K09: Cenario = {
   id: 'pagamento_taxa_nao_registrado', nome: 'Pagamento mensal de taxa não registrado no controle', dim: 'caixa', diaPagamento: true,
   preparar: (c) => {
     const cod = usarTaxa(c);
-    const p = provDe(c.base, cod);
     const duAnt = diasUteisNoMes(somaDias(`${c.data.slice(0, 8)}01`, -1));
     const duDec = duAntDec(c);
-    p.pagamento = r2((p.saldoAnterior * duAnt) / (duAnt + duDec - 1));
-    c.base.caixa.lancamentos.push({ historico: `Pagamento da ${nomeTaxa(cod)} do mês anterior`, valor: -p.pagamento });
+    // as três taxas vencem no 5º dia útil e são pagas juntas; o erro do cenário recai sobre uma delas
+    let total = 0;
+    for (const t of ['TXADM', 'TXGES', 'TXCUS']) {
+      const p = provDe(c.base, t);
+      p.pagamento = r2((p.saldoAnterior * duAnt) / (duAnt + duDec - 1));
+      total = r2(total + p.pagamento);
+      c.base.caixa.lancamentos.push({ historico: `Pagamento da ${nomeTaxa(t)} do mês anterior`, valor: -p.pagamento });
+    }
+    reforcarCaixa(c, total);
     c.usados.add(`pg:${cod}`);
   },
   aplicar: (c) => {
@@ -1197,38 +1207,38 @@ const K11: Cenario = {
 
 const K12: Cenario = {
   id: 'resgate_pago_com_cota_errada', nome: 'Resgate pago com valor diferente da cota de cotização', dim: 'caixa', tipos: ABERTOS,
+  aplicavel: (c) => !!c.prazos && c.prazos.liq >= 1 && c.prazos.cot >= 1 && solicitacaoPara(somaDiasUteis(c.data, -c.prazos.liq), c.prazos.cot, c.prazos.corridos) !== null,
   preparar: (c) => {
-    const cz = somaDiasUteis(c.data, -1);
-    const cotaC = c.cotaAnterior;
-    const sol = somaDiasUteis(cz, -inteiro(c.rng, 3, 20));
+    const pz = c.prazos!;
+    const cz = somaDiasUteis(c.data, -pz.liq);
+    const cotaC = c.cotaHist[cz];
+    const sol = solicitacaoPara(cz, pz.cot, pz.corridos)!;
     const cotaSol = Number((cotaC * (1 - entre(c.rng, 0.002, 0.012))).toFixed(8));
     const cotas = Number((c.qtdAnterior * entre(c.rng, 0.003, 0.015)).toFixed(8));
     const certo = r2(cotas * cotaC);
     const pago = r2(cotas * cotaSol);
-    c.base.movs.push({ id: 'LIQ-K12', tipo: 'resgate', cotista: `Cotista ${inteiro(c.rng, 1000, 9999)}`, cotas, valor: certo, solicitadoEm: sol, cotizacao: cz, liquidacao: c.data, converterHoje: false, observacao: `cotizado em ${fmtData(cz)} pela cota de ${fmtN(cotaC, 8)} (cota da data do pedido, ${fmtData(sol)}: ${fmtN(cotaSol, 8)}); liquidação hoje` });
-    const quem = c.base.movs[c.base.movs.length - 1].cotista;
-    c.base.caixa.saldoInicial = r2(c.base.caixa.saldoInicial + certo);
-    c.base.caixa.lancamentos.push({ historico: `Pagamento de resgate — ${quem} (cotizado em ${fmtData(cz)})`, valor: -pago });
+    const quem = novoCotista(c);
+    c.base.movs.push({ id: 'LIQ-K12', tipo: 'resgate', cotista: quem, cotas, valor: certo, solicitadoEm: sol, cotizacao: cz, liquidacao: c.data, converterHoje: false, observacao: `cotizado em ${fmtData(cz)} pela cota de ${fmtN(cotaC, 8)}; liquidação hoje` });
+    reforcarCaixa(c, certo);
+    c.base.caixa.lancamentos.push({ historico: `Pagamento de resgate [LIQ-K12] — ${quem} (cotizado em ${fmtData(cz)})`, valor: -pago });
     c.base.aPagar.push({ codigo: 'COMPLEMENTO RESGATE', descricao: `Complemento de resgate a pagar — ${quem}`, valor: r2(certo - pago) });
-    const lft = c.base.ativos.find((x) => x.codigo.startsWith('LFT') || x.codigo.startsWith('COMPROMISSADA'));
-    if (lft) { const k = Math.min(lft.quantidade - 1, Math.round(certo / lft.preco)); lft.quantidade -= k; lft.valor = r2(lft.quantidade * lft.preco); }
-    c.usados.add(`k12:${quem}:${certo}:${pago}:${cotaSol}`);
+    c.usados.add(`k12:${quem}:${certo}:${pago}:${cotaSol}:${cotaC}:${fmtData(sol)}`);
   },
   aplicar: (c) => {
-    const [, quem, cs, ps, cotaSol] = [...c.usados].find((u) => u.startsWith('k12:'))!.split(':');
-    const certo = Number(cs); const pago = Number(ps);
+    const [, quem, cs, ps, cotaSol, cotaCs, solTxt] = [...c.usados].find((u) => u.startsWith('k12:'))!.split(':');
+    const certo = Number(cs); const pago = Number(ps); const cotaC = Number(cotaCs);
     tirarItem(c.beta.aPagar, 'COMPLEMENTO RESGATE');
     tirarItem(c.alfa.aPagar, 'COMPLEMENTO RESGATE');
-    const l = c.alfa.caixa.lancamentos.find((x) => x.historico.startsWith(`Pagamento de resgate — ${quem}`))!;
+    const l = c.alfa.caixa.lancamentos.find((x) => x.historico.startsWith('Pagamento de resgate [LIQ-K12]'))!;
     l.valor = -certo;
     const m = c.base.movs.find((x) => x.id === 'LIQ-K12')!;
     return [{
       cenario: 'resgate_pago_com_cota_errada', dimensoes: ['caixa', 'cota'], titulo: `Resgate de ${quem} pago a menor`, ladoCorreto: 'nenhum', ajustePor: 'Beta (complemento ao cotista) e Alfa (caixa real)',
-      causaRaiz: `O resgate de ${quem} (${fmtN(m.cotas!, 8)} cotas) foi pago pela cota da data do pedido (${cotaSol}) e não pela cota de cotização (${fmtN(c.cotaAnterior, 8)}). O cotista recebeu ${fmtR(certo - pago)} a menos.`,
+      causaRaiz: `O resgate ${m.id} (${fmtN(m.cotas!, 8)} cotas) foi pago pela cota da data do pedido, ${solTxt} (${fmtN(Number(cotaSol), 8)}), e não pela cota da data de cotização, ${fmtData(m.cotizacao)} (${fmtN(cotaC, 8)}). O cotista recebeu ${fmtR(certo - pago)} a menos.`,
       evidencias: ['Caixa — pagamento de resgate', 'Movimentações de passivo (cota de cotização)', 'Regulamento — cotização de resgates'],
       raciocinio: [
         `O Alfa projetou o pagamento de ${fmtR(certo)} e o Beta mostra ${fmtR(pago)} pagos. Diferença: ${fmtR(certo - pago)}.`,
-        `Recalculei: ${fmtN(m.cotas!, 8)} cotas × cota de cotização ${fmtN(c.cotaAnterior, 8)} = ${fmtR(certo)}. O valor pago corresponde à cota da data do pedido, que o regulamento não usa.`,
+        `Recalculei: ${fmtN(m.cotas!, 8)} cotas × cota da data de cotização (${fmtData(m.cotizacao)}) ${fmtN(cotaC, 8)} = ${fmtR(certo)}. O valor pago corresponde a uma cota menor, a da data do pedido, que o regulamento não usa.`,
         'O dinheiro a menos ficou no fundo e o Beta zerou a obrigação, então o PL dele fica inflado. O cotista tem direito ao complemento.',
       ],
       acao: `Pagar o complemento de ${fmtR(certo - pago)} ao cotista. Até lá, os dois lados registram "complemento de resgate a pagar". O Alfa ajusta o caixa ao valor efetivamente pago. Apurar se outros resgates do dia tiveram o mesmo problema.`,
@@ -1268,10 +1278,10 @@ const K14: Cenario = {
 // ======================================================================================
 // PROVISÕES
 // ======================================================================================
-function ajustarSaldoAnterior(c: Ctx, cod: string): void {
+function ajustarSaldoAnterior(c: Ctx, cod: string, override: Partial<ParamTaxa> = {}): void {
   const p = provDe(c.base, cod);
   if (p.regra.tipo !== 'pct') return;
-  const t = taxaDiaria(p.regra.param, c.plAnterior, c.calc).valor;
+  const t = taxaDiaria({ ...p.regra.param, ...override }, c.plAnterior, c.calc).valor;
   const duDec = duAntDec(c);
   const duAnt = diasUteisNoMes(somaDias(`${c.data.slice(0, 8)}01`, -1));
   const dias = duDec <= 5 ? duAnt + duDec - 1 : duDec - 1;
@@ -1287,6 +1297,7 @@ const P01: Cenario = {
     const antigo = Number((novo * entre(c.rng, 1.2, 1.6)).toFixed(4));
     const assembleia = somaDiasUteis(c.data, -inteiro(c.rng, 8, 25));
     c.reg.alteracoes.push(`Assembleia de ${fmtData(assembleia)} aprovou a redução da ${tr.nome.toLowerCase()} de ${fmtPct(antigo, 3)} a.a. para ${fmtPct(novo, 3)} a.a., com vigência a partir de ${fmtData(c.data)} (inclusive).`);
+    ajustarSaldoAnterior(c, cod, { pct: antigo }); // até D−1 a taxa vigente era a antiga
     c.usados.add(`red:${cod}:${antigo}`);
   },
   aplicar: (c) => {
@@ -1332,7 +1343,7 @@ const P20: Cenario = {
 
 const P02: Cenario = {
   id: 'minimo_mensal_ignorado', nome: 'Valor mínimo mensal da taxa ignorado', dim: 'provisoes',
-  aplicavel: (c) => !c.usados.has('prov:TXADM'),
+  aplicavel: (c) => !c.usados.has('prov:TXADM') && !c.reg.taxas.find((t) => t.codigo === 'TXADM')!.param.minimoMensal,
   preparar: (c) => {
     c.usados.add('prov:TXADM');
     const tr = c.reg.taxas.find((t) => t.codigo === 'TXADM')!;
@@ -1340,7 +1351,8 @@ const P02: Cenario = {
     const min = Math.ceil((diaria * c.calc.duMes * entre(c.rng, 1.3, 2.4)) / 100) * 100;
     tr.param.minimoMensal = min;
     (provDe(c.base, 'TXADM').regra as { tipo: 'pct'; param: { minimoMensal?: number } }).param.minimoMensal = min;
-    ajustarSaldoAnterior(c, 'TXADM');
+    c.reg.alteracoes.push(`Aditivo ao contrato de administração, assinado em ${fmtData(somaDiasUteis(c.data, -inteiro(c.rng, 5, 20)))}: a partir de ${fmtData(c.data)} (inclusive) vale o mínimo mensal de ${fmtR(min)} para a taxa de administração.`);
+    ajustarSaldoAnterior(c, 'TXADM', { minimoMensal: undefined }); // até D−1 não havia mínimo
   },
   aplicar: (c) => {
     const { errado, ladoErrado, ladoCerto } = sortear(c);
@@ -1348,14 +1360,14 @@ const P02: Cenario = {
     delete (provDe(errado, 'TXADM').regra as { tipo: 'pct'; param: { minimoMensal?: number } }).param.minimoMensal;
     return [{
       cenario: 'minimo_mensal_ignorado', dimensoes: ['provisoes'], titulo: 'Taxa de administração sem o mínimo mensal', ladoCorreto: ladoCerto, ajustePor: ladoErrado,
-      causaRaiz: `${ladoErrado} apropriou só o percentual sobre o PL e ignorou o mínimo mensal de ${fmtR(min)}, que prevalece por causa do tamanho do fundo.`,
-      evidencias: ['Provisões — TXADM', 'Regulamento — taxa de administração (mínimo mensal)'],
+      causaRaiz: `${ladoErrado} apropriou só o percentual sobre o PL e ignorou o mínimo mensal de ${fmtR(min)}, que passou a valer hoje e prevalece porque o percentual rende menos que o mínimo diário.`,
+      evidencias: ['Provisões — TXADM', 'Regulamento — taxa de administração (mínimo mensal) e alterações recentes'],
       raciocinio: [
-        'A apropriação de taxa de administração difere entre os lados.',
+        'A apropriação de taxa de administração difere entre os lados; o saldo anterior bate (até D−1 não havia mínimo).',
         `Pelo percentual, a taxa diária fica abaixo de ${fmtR(min)} ÷ ${c.calc.duMes} dias úteis do mês = ${fmtR(min / c.calc.duMes)}. O regulamento manda cobrar o maior dos dois, então vale o mínimo.`,
-        `O ${ladoCerto} aplicou o mínimo; o ${ladoErrado} não.`,
+        `O aditivo vale a partir de hoje (inclusive). O ${ladoCerto} aplicou o mínimo; o ${ladoErrado} não.`,
       ],
-      acao: `${ladoErrado} deve parametrizar o mínimo mensal na taxa de administração e reprocessar.`,
+      acao: `${ladoErrado} deve parametrizar o mínimo mensal na taxa de administração a partir de hoje e reprocessar.`,
     }];
   },
 };
@@ -1393,7 +1405,7 @@ const P04: Cenario = {
       evidencias: [`Provisões — ${cod}`, 'Regulamento — método de apropriação', 'Data-base (dia da semana)'],
       raciocinio: [
         `A apropriação de ${nomeTaxa(cod)} do ${ladoErrado} é ${dc > 1 ? 'maior' : 'menor'} que a do ${ladoCerto}.`,
-        dc > 1 ? `Hoje é ${c.data && ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'][new Date(c.data + 'T12:00:00Z').getUTCDay()]} e desde o último dia útil passaram ${dc} dias corridos. A conta por corridos apropria ${dc}/365, enquanto a base 252 apropria 1/252.` : 'A razão entre os valores é 252/365, típica de quem usa a base de dias corridos.',
+        dc > 1 ? `Hoje é ${c.data && ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'][new Date(c.data + 'T12:00:00Z').getUTCDay()]} e desde o último dia útil passaram ${dc} dias corridos. A conta por corridos apropria ${dc}/365, enquanto a base 252 apropria 1/252.` : `O valor do ${ladoErrado} é compatível com 1/365 do percentual anual por dia corrido.`,
         'O regulamento é explícito: 1/252 por dia útil.',
       ],
       acao: `${ladoErrado} deve corrigir o método de apropriação para a base 252 e reprocessar.`,
@@ -1458,17 +1470,18 @@ const P07: Cenario = {
     c.usados.add('perf');
     const { errado, ladoErrado, ladoCerto } = sortear(c);
     const pb = c.base.perf!;
-    const dataErrada = `${Number(pb.dataBase.slice(0, 4)) - 1}${pb.dataBase.slice(4)}`;
-    const fatorErrado = Number((pb.fatorBenchmark * (1 + entre(c.rng, 0.004, 0.02))).toFixed(8));
+    const k = inteiro(c.rng, 1, 3);
+    const dataErrada = somaDiasUteis(pb.dataBase, k);
+    const fatorErrado = Number((pb.fatorBenchmark / Math.pow(1 + c.mercado.cdiAA, k / 252)).toFixed(8));
     errado.perf = { ...errado.perf!, fatorBenchmark: fatorErrado };
-    c.mercado.benchmarks.push(`Fator acumulado do ${pb.benchmark} de ${fmtData(dataErrada)} até ${fmtData(c.data)}: ${fmtN(pb.fatorBenchmark * (1 + (fatorErrado / pb.fatorBenchmark - 1) * 1), 8)} (data-base de um período anterior — informativo)`);
+    c.mercado.benchmarks.push(`Fator acumulado do ${pb.benchmark} de ${fmtData(dataErrada)} até ${fmtData(c.data)}: ${fmtN(fatorErrado, 8)}`);
     return [{
       cenario: 'performance_data_base_errada', dimensoes: ['provisoes'], titulo: 'Fator do benchmark de outra data-base', ladoCorreto: ladoCerto, ajustePor: ladoErrado,
       causaRaiz: `${ladoErrado} corrigiu a cota de referência com o fator acumulado desde ${fmtData(dataErrada)}, e não desde ${fmtData(pb.dataBase)} (data da última cobrança).`,
       evidencias: ['Provisões — PERF (memória)', 'Informações de mercado — fatores do benchmark', 'Regulamento — performance'],
       raciocinio: [
         'A provisão de performance diverge, enquanto as outras taxas batem.',
-        `A cota de referência vale desde ${fmtData(pb.dataBase)}, então o fator correto é o acumulado a partir dessa data (${fmtN(pb.fatorBenchmark, 8)}). O ${ladoErrado} usou ${fmtN(fatorErrado, 8)}, que corresponde ao período anterior.`,
+        `A cota de referência vale desde ${fmtData(pb.dataBase)}, então o fator correto é o acumulado a partir dessa data (${fmtN(pb.fatorBenchmark, 8)}). O ${ladoErrado} usou ${fmtN(fatorErrado, 8)}, que é o fator acumulado desde ${fmtData(dataErrada)}.`,
       ],
       acao: `${ladoErrado} deve corrigir a data-base do benchmark e recalcular a performance.`,
     }];
@@ -1485,7 +1498,7 @@ const P08: Cenario = {
     const bruta = r.cotaBrutaPerf!;
     const fimPeriodo = c.data === '2026-07-01' ? '2026-06-30' : '2025-12-31';
     const ultimaCobranca = c.data === '2026-07-01' ? '2025-06-30' : '2024-12-31';
-    const fator = Number((1 + entre(c.rng, 0.13, 0.17)).toFixed(8));
+    const fator = Number(Math.pow(1 + c.mercado.cdiAA, diasUteisEntre(ultimaCobranca, c.data) / 252).toFixed(8));
     const cotaBase = Number(((bruta * (1 + entre(c.rng, 0.02, 0.06))) / fator).toFixed(8));
     c.base.perf = { ...c.base.perf!, cotaBase, dataBase: ultimaCobranca, fatorBenchmark: fator };
     const p = provDe(c.base, 'PERF');

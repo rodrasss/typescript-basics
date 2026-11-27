@@ -100,6 +100,7 @@ export interface Resultado {
   totalReceber: number;
   totalPagar: number;
   totalProvisoes: number;
+  plAntesApropriacoes: number;
   plBase: number;
   cotaBrutaPerf?: number;
   cota: number;
@@ -225,9 +226,9 @@ export function calcular(p: Posicao, ctx: CtxCalculo): Resultado {
     if (!m.converterHoje) continue;
     if (m.tipo === 'aplicacao' || m.tipo === 'integralizacao') {
       aplicacoesConvertidas = r2(aplicacoesConvertidas + (m.valor ?? 0));
-      cotasEmitidas = truncar8(cotasEmitidas + truncar8((m.valor ?? 0) / cota));
+      cotasEmitidas = arredondar8(cotasEmitidas + truncar8((m.valor ?? 0) / cota));
     } else {
-      cotasResgatadas = truncar8(cotasResgatadas + (m.cotas ?? 0));
+      cotasResgatadas = arredondar8(cotasResgatadas + (m.cotas ?? 0));
       valorResgates = r2(valorResgates + r2((m.cotas ?? 0) * cota));
     }
   }
@@ -238,10 +239,11 @@ export function calcular(p: Posicao, ctx: CtxCalculo): Resultado {
     irComeCotas = r2(ganho * (p.qtdCotasBase - cotasResgatadas) * p.comeCotas.aliquota);
     cotasComeCotas = truncar8(irComeCotas / cota);
   }
-  const qtdFinal = truncar8(p.qtdCotasBase + cotasEmitidas - cotasResgatadas - cotasComeCotas);
+  // soma de quantidades que já têm 8 casas: arredonda (não trunca) para não gerar ruído de ponto flutuante
+  const qtdFinal = arredondar8(p.qtdCotasBase + cotasEmitidas - cotasResgatadas - cotasComeCotas);
   const plFinal = r2(qtdFinal * cota);
   return {
-    totalAtivos, caixa: p.caixa.saldoFinal, totalReceber, totalPagar, totalProvisoes, plBase, cotaBrutaPerf, cota,
+    totalAtivos, caixa: p.caixa.saldoFinal, totalReceber, totalPagar, totalProvisoes, plAntesApropriacoes: plSemApropriacao, plBase, cotaBrutaPerf, cota,
     aplicacoesConvertidas, cotasEmitidas, cotasResgatadas, valorResgates, irComeCotas, cotasComeCotas, qtdFinal, plFinal,
   };
 }

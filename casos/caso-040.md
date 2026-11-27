@@ -1,20 +1,20 @@
-# Caso caso-040 — Cumaru II FIF RF Referenciado DI
+# Caso caso-040 — Cumaru II FIDC Responsabilidade Limitada
 
-> **Data-base (D):** 01/06/2026 (segunda-feira) · **D−1:** 29/05/2026 · **Fundo:** FND-0040
+> **Data-base (D):** 06/07/2026 (segunda-feira) · **D−1:** 03/07/2026 · **Fundo:** FND-0040
 
 ## 1. O fundo
 
-O Cumaru II FIF RF Referenciado DI é gerido pela Alvorada Sul Gestão, gestora gaúcha conservadora, focada em crédito high grade, em Porto Alegre/RS. Criado em 11/07/2010, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são tesourarias de empresas médias que usam o fundo como caixa. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Isadora, e quem cuida da validação do fundo é Felipe. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo tem aplicações e resgates quase todos os dias. Vencimentos de títulos bancários dependem de baixa manual em alguns sistemas. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (29/05/2026) o fundo tinha PL de R$ 672.303.002,12, cota de 4,28477881 e 156.904.949,34135940 cotas. Hoje, segunda-feira, 01/06/2026, é a data-base da validação.
+Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Cumaru II FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 11/07/2010, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Isadora, e quem cuida da validação do fundo é Felipe. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A gestora costuma pedir que despesas dela sejam lançadas no fundo. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. No fechamento de ontem (03/07/2026) o fundo tinha PL de R$ 400.740.400,95, cota de 1.151,98545308 e 347.869,32410916 cotas. Hoje, segunda-feira, 06/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Renda Fixa Referenciado DI |
-| Classe | Classe de Renda Fixa — Referenciada DI |
-| Condomínio | aberto |
-| Gestora | Alvorada Sul Gestão (Porto Alegre/RS) |
-| PL em D−1 | R$ 672.303.002,12 |
-| Cota em D−1 | 4,28477881 |
-| Quantidade de cotas em D−1 | 156.904.949,34135940 |
+| Tipo | FIDC (direitos creditórios) |
+| Classe | Classe de FIDC — subclasse única (monocota) |
+| Condomínio | fechado |
+| Gestora | Quaresmeira Capital (São Paulo/SP) |
+| PL em D−1 | R$ 400.740.400,95 |
+| Cota em D−1 | 1.151,98545308 |
+| Quantidade de cotas em D−1 | 347.869,32410916 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,15 +22,16 @@ O Cumaru II FIF RF Referenciado DI é gerido pela Alvorada Sul Gestão, gestora 
 
 **Taxas**
 
-- Taxa de administração: 0,070% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,220% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,310% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 8.000,00 (apropriado por dia útil do mês).
+- Taxa de gestão: 1,120% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,040% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 74.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 2.500,00 (mensal)
+- Auditoria independente: R$ 91.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
+- Agente de cobrança: R$ 23.000,00 (mensal)
+- Agência de classificação de risco (rating): R$ 79.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +41,7 @@ O Cumaru II FIF RF Referenciado DI é gerido pela Alvorada Sul Gestão, gestora 
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 701.662.682,35. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 380.167.424,83. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,17 +61,21 @@ O Cumaru II FIF RF Referenciado DI é gerido pela Alvorada Sul Gestão, gestora 
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+0 (liquidação D+0).
+- Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- CDB: curva do papel ajustada por spread de crédito do emissor.
+- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
+
+**Regras específicas deste fundo**
+
+- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
+- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
 
 ## 3. Informações de mercado do dia
 
@@ -80,18 +85,11 @@ O Cumaru II FIF RF Referenciado DI é gerido pela Alvorada Sul Gestão, gestora 
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.305,274891 |  |
-| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.263,795774 |  |
-| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 783,515250 |  |
-
-**Eventos de ativos**
-
-- CDB ARANDU 2029: vencimento em 01/06/2026; valor de resgate 1.214,851496 por título; liquidação financeira em D.
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.389,730337 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **12:22** — *Gestora — jurídico* — **Honorários**: Precisamos provisionar honorários do escritório que está cuidando da cobrança de um emissor da carteira: R$ 25.562,87 (proposta anexa; a aprovação do administrador está em andamento).
 
 ## 5. Batimento Alfa × Beta
 
@@ -101,33 +99,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 4,28691791 | 4,28703925 | 0,00012134 |
-| Quantidade final de cotas | 157.236.421,31489200 | 157.236.411,93293703 | -9,38195497 |
-| PL final | R$ 674.059.630,64 | R$ 674.078.669,49 | R$ 19.038,85 |
-| Caixa | R$ 2.702.564,58 | R$ 36.282.274,78 | R$ 33.579.710,20 |
-| Total de provisões | R$ 213.399,79 | R$ 213.399,79 | R$ 0,00 |
+| Cota de fechamento | 1.152,36922328 | 1.152,29573917 | -0,07348411 |
+| Quantidade final de cotas | 347.869,32410916 | 347.869,32410916 | 0,00000000 |
+| PL final | R$ 400.873.902,83 | R$ 400.848.339,96 | R$ -25.562,87 |
+| Caixa | R$ 17.767.472,74 | R$ 17.767.472,74 | R$ 0,00 |
+| Total de provisões | R$ 658.034,10 | R$ 683.596,97 | R$ 25.562,87 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 16.510 | 16.510 | 18.305,274891 | 18.305,274891 | 302.220.088,45 | 302.220.088,45 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 7.354 | 7.354 | 18.263,795774 | 18.263,795774 | 134.311.954,12 | 134.311.954,12 | 0,00 | ANBIMA — taxa indicativa D |
-| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 42.858 | 42.858 | 783,515250 | 783,515250 | 33.579.896,58 | 33.579.896,58 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 209.175 | 209.175 | 802,666938 | 802,666938 | 167.897.856,76 | 167.897.856,76 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB ARANDU 2029 — CDB Banco Arandu S.A. — 118% do CDI — venc. 2029 | 27.641 | — | 1.214,162660 | — | 33.560.670,09 | — | -33.560.670,09 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| **Total** |  |  |  |  | 671.570.466,00 | 638.009.795,91 | -33.560.670,09 |  |
+| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 273.387.199,85 | 273.387.199,85 | 1,00 | 1,00 | 273.387.199,85 | 273.387.199,85 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
+| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 19.527.657,13 | 19.527.657,13 | 1,00 | 1,00 | 19.527.657,13 | 19.527.657,13 | 0,00 | Valor presente (custodiante) |
+| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 7.811.062,85 | 7.811.062,85 | 1,00 | 1,00 | 7.811.062,85 | 7.811.062,85 | 0,00 | Valor presente (custodiante) |
+| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 4.686.637,71 | 4.686.637,71 | 1,00 | 1,00 | 4.686.637,71 | 4.686.637,71 | 0,00 | Valor presente (custodiante) |
+| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 3.124.425,14 | 3.124.425,14 | 1,00 | 1,00 | 3.124.425,14 | 3.124.425,14 | 0,00 | Valor presente (custodiante) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 3.186 | 3.186 | 18.389,730337 | 18.389,730337 | 58.589.680,85 | 58.589.680,85 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 29.628 | 29.628 | 790,921606 | 790,921606 | 23.433.425,34 | 23.433.425,34 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -6.795.624,68 | -6.795.624,68 | -6.795.624,68 | -6.795.624,68 | 0,00 | Cálculo pelo aging do custodiante |
+| **Total** |  |  |  |  | 383.764.464,19 | 383.764.464,19 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 3.104.480,39 | 3.104.480,39 |
-| TED recebida — aplicação Cotista 1197 (10:45) | 1.420.993,14 | 1.420.993,14 |
-| Pagamento de resgate — Cotista 1204 (cotizado em 28/05/2026) | -1.533.364,86 | -1.533.364,86 |
-| Pagamento de resgate — Cotista 1211 (cotizado em 28/05/2026) | -289.544,09 | -289.544,09 |
-| Resgate no vencimento — CDB ARANDU 2029 (liquidação B3) | — | 33.579.710,20 |
-| **Saldo final** | 2.702.564,58 | 36.282.274,78 |
+| Saldo inicial (D−1) | 17.767.472,74 | 17.767.472,74 |
+| **Saldo final** | 17.767.472,74 | 17.767.472,74 |
 
 ### 5.4 Valores a receber
 
@@ -135,97 +132,94 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.420.993,14 | 1.420.993,14 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 37.560,25 | 37.560,25 | 1.867,51 | 1.867,51 | 0,00 | 0,00 | 39.427,76 | 39.427,76 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 118.973,37 | 118.973,37 | 5.869,31 | 5.869,31 | 0,00 | 0,00 | 124.842,68 | 124.842,68 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 10.924,06 | 10.924,06 | 533,57 | 533,57 | 0,00 | 0,00 | 11.457,63 | 11.457,63 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 29.952,38 | 29.952,38 | 293,65 | 293,65 | 0,00 | 0,00 | 30.246,03 | 30.246,03 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 0,00 | 0,00 | 47,62 | 47,62 | 0,00 | 0,00 | 47,62 | 47,62 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 0,00 | 0,00 | 119,05 | 119,05 | 0,00 | 0,00 | 119,05 | 119,05 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 7.081,97 | 7.081,97 | 177,05 | 177,05 | 0,00 | 0,00 | 7.259,02 | 7.259,02 | 0,00 |
-| **Total** |  |  |  |  |  |  | 213.399,79 | 213.399,79 | 0,00 |
+| TXADM — Taxa de administração a pagar | 116.558,52 | 116.558,52 | 4.929,74 | 4.929,74 | 0,00 | 0,00 | 121.488,26 | 121.488,26 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 424.186,95 | 424.186,95 | 17.810,68 | 17.810,68 | 0,00 | 0,00 | 441.997,63 | 441.997,63 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 15.004,26 | 15.004,26 | 636,10 | 636,10 | 0,00 | 0,00 | 15.640,36 | 15.640,36 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 65.000,00 | 65.000,00 | 361,11 | 361,11 | 0,00 | 0,00 | 65.361,11 | 65.361,11 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 78,26 | 78,26 | 26,09 | 26,09 | 0,00 | 0,00 | 104,35 | 104,35 | 0,00 |
+| COBRANCA — Agente de cobrança a pagar | 3.000,00 | 3.000,00 | 1.000,00 | 1.000,00 | 0,00 | 0,00 | 4.000,00 | 4.000,00 | 0,00 |
+| RATING — Agência de classificação de risco (rating) a pagar | 8.464,29 | 8.464,29 | 313,49 | 313,49 | 0,00 | 0,00 | 8.777,78 | 8.777,78 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 498,46 | 498,46 | 166,15 | 166,15 | 0,00 | 0,00 | 664,61 | 664,61 | 0,00 |
+| HONORARIOS — Honorários advocatícios — cobrança contra um emissor da carteira | — | 0,00 | — | 25.562,87 | — | 0,00 | — | 25.562,87 | 25.562,87 |
+| **Total** |  |  |  |  |  |  | 658.034,10 | 683.596,97 | 25.562,87 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 672.303.002,12 ÷ 252 (linear, dias úteis) = R$ 1.867,51 · Beta: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 672.303.002,12 ÷ 252 (linear, dias úteis) = R$ 1.867,51
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,22% a.a. sobre R$ 672.303.002,12 ÷ 252 (linear, dias úteis) = R$ 5.869,31 · Beta: [base: PL do dia útil anterior] 0,22% a.a. sobre R$ 672.303.002,12 ÷ 252 (linear, dias úteis) = R$ 5.869,31
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 672.303.002,12 ÷ 252 (linear, dias úteis) = R$ 533,57 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 672.303.002,12 ÷ 252 (linear, dias úteis) = R$ 533,57
-- **AUDIT** — Alfa: R$ 74.000,00 (anual) ÷ 252 d.u. = R$ 293,65 · Beta: R$ 74.000,00 (anual) ÷ 252 d.u. = R$ 293,65
-- **ANBIMA** — Alfa: R$ 1.000,00 (mensal) ÷ 21 d.u. = R$ 47,62 · Beta: R$ 1.000,00 (mensal) ÷ 21 d.u. = R$ 47,62
-- **SELIC** — Alfa: R$ 2.500,00 (mensal) ÷ 21 d.u. = R$ 119,05 · Beta: R$ 2.500,00 (mensal) ÷ 21 d.u. = R$ 119,05
-- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,31% a.a. sobre R$ 400.740.400,95 ÷ 252 (linear, dias úteis) = R$ 4.929,74; mínimo mensal R$ 8.000,00 ÷ 23 d.u. = R$ 347,83 (não se aplica) · Beta: [base: PL do dia útil anterior] 0,31% a.a. sobre R$ 400.740.400,95 ÷ 252 (linear, dias úteis) = R$ 4.929,74; mínimo mensal R$ 8.000,00 ÷ 23 d.u. = R$ 347,83 (não se aplica)
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,12% a.a. sobre R$ 400.740.400,95 ÷ 252 (linear, dias úteis) = R$ 17.810,68 · Beta: [base: PL do dia útil anterior] 1,12% a.a. sobre R$ 400.740.400,95 ÷ 252 (linear, dias úteis) = R$ 17.810,68
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 400.740.400,95 ÷ 252 (linear, dias úteis) = R$ 636,10 · Beta: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 400.740.400,95 ÷ 252 (linear, dias úteis) = R$ 636,10
+- **AUDIT** — Alfa: R$ 91.000,00 (anual) ÷ 252 d.u. = R$ 361,11 · Beta: R$ 91.000,00 (anual) ÷ 252 d.u. = R$ 361,11
+- **ANBIMA** — Alfa: R$ 600,00 (mensal) ÷ 23 d.u. = R$ 26,09 · Beta: R$ 600,00 (mensal) ÷ 23 d.u. = R$ 26,09
+- **COBRANCA** — Alfa: R$ 23.000,00 (mensal) ÷ 23 d.u. = R$ 1.000,00 · Beta: R$ 23.000,00 (mensal) ÷ 23 d.u. = R$ 1.000,00
+- **RATING** — Alfa: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49 · Beta: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 65 d.u. = R$ 166,15 · Beta: R$ 10.800,00 (trimestral) ÷ 65 d.u. = R$ 166,15
+- **HONORARIOS** — Alfa: — · Beta: Lançamento manual com base em e-mail da gestora
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 1197 | R$ 1.420.993,14 | 10:45 | 01/06/2026 | 01/06/2026 | 01/06/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 1204 | 358.252,78521653 cotas (R$ 1.533.364,86) |  | 27/05/2026 | 28/05/2026 | 01/06/2026 | não | não | cotizado em 28/05/2026 pela cota de 4,28011986; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 1211 | 67.525,62276240 cotas (R$ 289.544,09) |  | 28/05/2026 | 28/05/2026 | 01/06/2026 | não | não | cotizado em 28/05/2026 pela cota de 4,28791434; liquidação financeira hoje |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 671.570.466,00 | 638.009.795,91 | -33.560.670,09 |
-| Caixa | 2.702.564,58 | 36.282.274,78 | 33.579.710,20 |
+| Total de ativos | 383.764.464,19 | 383.764.464,19 | 0,00 |
+| Caixa | 17.767.472,74 | 17.767.472,74 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 1.420.993,14 | 1.420.993,14 | 0,00 |
-| Provisões | 213.399,79 | 213.399,79 | 0,00 |
-| PL base da cota | 672.638.637,65 | 672.657.677,76 | 19.040,11 |
-| Cota (8 casas) | 4,28691791 | 4,28703925 | 0,00012134 |
-| Aplicações convertidas | 1.420.993,14 | 1.420.993,14 | 0,00 |
-| Cotas emitidas | 331.471,97353260 | 331.462,59157762 | -9,38195498 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 658.034,10 | 683.596,97 | 25.562,87 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 400.899.146,19 | 400.899.146,19 | 0,00 |
+| PL base da cota | 400.873.902,83 | 400.848.339,96 | -25.562,87 |
+| Cota (8 casas) | 1.152,36922328 | 1.152,29573917 | -0,07348411 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 157.236.421,31489200 | 157.236.411,93293703 | -9,38195497 |
-| PL final | 674.059.630,64 | 674.078.669,49 | 19.038,85 |
+| Quantidade final de cotas | 347.869,32410916 | 347.869,32410916 | 0,00000000 |
+| PL final | 400.873.902,83 | 400.848.339,96 | -25.562,87 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO
+**Parecer:** PENDENTE
 
-**Resumo:** Reprovar até o ajuste: CDB ARANDU 2029 vencido não baixado.
+**Resumo:** Deixar pendente e escalar: Honorários provisionados sem aprovação documentada.
 
-**Dificuldade:** media · **Cenários:** ativo_vencido_nao_baixado
+**Dificuldade:** media · **Cenários:** despesa_nao_prevista
 
-### Achado 1: CDB ARANDU 2029 vencido não baixado
+### Achado 1: Honorários provisionados sem aprovação documentada
 
-- **Gravidade:** erro · **Dimensões:** caixa, cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa manteve CDB ARANDU 2029 na carteira pelo PU de D−1 e não registrou o crédito do vencimento.
-- **Onde olhar:** Carteira; Caixa — lançamentos; Informações de mercado — eventos
+- **Gravidade:** pendencia · **Dimensões:** provisoes
+- **Lado correto:** indeterminado · **Quem ajusta:** Administrador (aprovação) e depois o lado divergente
+- **Causa raiz:** Beta provisionou R$ 25.562,87 de honorários com base em e-mail da gestora. É um encargo possível pelo regulamento, mas só quando aprovado pelo administrador e documentado, e a aprovação ainda está "em andamento".
+- **Onde olhar:** Provisões — linha nova; Regulamento — encargos (honorários advocatícios com aprovação); Comunicações — e-mail da gestora
 - **Raciocínio do analista:**
-  1. O Alfa tem CDB ARANDU 2029 (R$ 33.560.670,09) que não aparece no Beta, e o caixa do Beta tem R$ 33.579.710,20 a mais. Parece só um problema de classificação, mas não é.
-  2. O título venceu hoje com resgate de 1.214,851496 por unidade. O Alfa manteve o PU de D−1 (1.214,162660), deixando de reconhecer o último dia de rendimento: R$ 19.040,11 no PL.
-  3. Além da cota, o caixa projetado do lado errado subestima a disponibilidade, o que pode atrapalhar a liquidação de resgates.
-- **Ação:** Alfa deve baixar CDB ARANDU 2029, registrar o crédito de R$ 33.579.710,20 e reprocessar a cota.
+  1. Só o Beta tem a provisão de honorários de R$ 25.562,87.
+  2. O regulamento permite honorários em defesa da classe, mas exige aprovação do administrador e documentação. Hoje só existe uma proposta e um e-mail dizendo que a aprovação está em andamento.
+  3. A despesa provavelmente é legítima, mas ainda não cumpre o requisito. Não dá para dizer qual lado está certo sem a aprovação.
+- **Ação:** Pedir a aprovação formal do administrador. Sem ela, a provisão sai (lado Beta); com ela, os dois lados provisionam.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
-| caixa | Beta |
-| provisoes | ambos |
+| cota | Alfa |
+| caixa | ambos |
+| provisoes | Alfa |
 
-### Valores corretos após os ajustes
+### Valores corretos
 
-| Item | Valor |
-|---|---|
-| Cota | 4,28703925 |
-| Quantidade final de cotas | 157.236.411,93293703 |
-| PL final | R$ 674.078.669,49 |
-| Caixa | R$ 36.282.274,78 |
-| Total de provisões | R$ 213.399,79 |
+Indefinidos: dependem de uma decisão externa (comitê, identificação do remetente ou aprovação formal).
+
+### Armadilhas deste caso
+
+- Pedido da gestora não muda o regulamento; despesa só é encargo se prevista (e, se exigido, aprovada e documentada).

@@ -1,37 +1,35 @@
-# Caso caso-114 — Tucano Plus FIDC Responsabilidade Limitada
+# Caso caso-114 — Tucano Plus FIC FIF Multimercado
 
-> **Data-base (D):** 22/05/2026 (sexta-feira) · **D−1:** 21/05/2026 · **Fundo:** FND-0114
+> **Data-base (D):** 24/06/2026 (quarta-feira) · **D−1:** 23/06/2026 · **Fundo:** FND-0114
 
 ## 1. O fundo
 
-Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Tucano Plus FIDC Responsabilidade Limitada: a casa é uma gestora gaúcha conservadora, focada em crédito high grade. Criado em 25/08/2015, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores profissionais e um family office (estrutura monocota). Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Murilo, e quem cuida da validação do fundo é Thiago. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. No fechamento de ontem (21/05/2026) o fundo tinha PL de R$ 194.445.886,02, cota de 1.008,66158656 e 192.776,13880664 cotas. Hoje, sexta-feira, 22/05/2026, é a data-base da validação.
+Sob a gestão da Garoa Investimentos, gestora de fundos de fundos (alocação) com comitê mensal de seleção (São Paulo/SP), o Tucano Plus FIC FIF Multimercado é um dos fundos que mais exigem atenção na rotina de validação. Criado em 25/08/2015, aloca em outros fundos multimercado e rebalanceia a carteira todo mês. Público-alvo: investidores qualificados. Hoje seus cotistas são cerca de 3 mil cotistas qualificados. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Thiago. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. No fechamento de ontem (23/06/2026) o fundo tinha PL de R$ 401.316.812,00, cota de 3,45938946 e 116.007.988,29838212 cotas. Hoje, quarta-feira, 24/06/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | FIDC (direitos creditórios) |
-| Classe | Classe de FIDC — subclasse única (monocota) |
-| Condomínio | fechado |
-| Gestora | Alvorada Sul Gestão (Porto Alegre/RS) |
-| PL em D−1 | R$ 194.445.886,02 |
-| Cota em D−1 | 1.008,66158656 |
-| Quantidade de cotas em D−1 | 192.776,13880664 |
+| Tipo | FIC Multimercado (fundo de fundos) |
+| Classe | Classe Multimercado — Investimento em Cotas |
+| Condomínio | aberto |
+| Gestora | Garoa Investimentos (São Paulo/SP) |
+| PL em D−1 | R$ 401.316.812,00 |
+| Cota em D−1 | 3,45938946 |
+| Quantidade de cotas em D−1 | 116.007.988,29838212 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/10/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,140% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,040% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,600% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 86.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
-- Agente de cobrança: R$ 12.000,00 (mensal)
-- Agência de classificação de risco (rating): R$ 57.000,00 (anual)
+- Auditoria independente: R$ 67.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -41,7 +39,7 @@ Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Tucano Plus FI
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 192.463.550,29. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 401.648.185,49. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +59,17 @@ Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Tucano Plus FI
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: amortizações conforme cronograma do suplemento
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
+- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
-
-**Regras específicas deste fundo**
-
-- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
-- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
+- Cotas de fundos investidos: cota de D divulgada pelo administrador do investido. Se não divulgada até 20h de D, usa-se a última cota disponível e a cota é reprocessada quando a de D for publicada.
 
 ## 3. Informações de mercado do dia
 
@@ -85,12 +79,16 @@ Quem acompanha a Alvorada Sul Gestão (Porto Alegre/RS) conhece o Tucano Plus FI
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.149,449896 |  |
+| COTA GAIVOTA | Cota de D divulgada pelo administrador do investido | 7,35349167 | divulgada às 18:55 |
+| COTA TIÊ | Cota de D divulgada pelo administrador do investido | 2,32418938 | divulgada às 17:22 |
+| COTA JURITI | Cota de D divulgada pelo administrador do investido | 6,30449276 | divulgada às 17:37 |
+| COTA POROROCA | Cota de D divulgada pelo administrador do investido | 3,72634780 | divulgada às 18:35 |
+| COTA CARAVELA | Cota de D divulgada pelo administrador do investido | 2,79295165 | divulgada às 19:21 |
 
 ## 4. Comunicações recebidas hoje
 
-- **17:09** — *Distribuidor* — **Cota atrasada?**: Bom dia! A cota do Tucano Plus FIDC Responsabilidade Limitada de ontem saiu mais tarde, está tudo certo? Temos clientes perguntando.
-- **18:07** — *Gestora — mesa* — **Operação para amanhã**: Pessoal, amanhã (25/05/2026) vamos zerar parte da posição em LFT. Hoje não tem boleta.
+- **09:30** — *Área de risco* — **Lembrete**: Lembrete: o fundo teve apontamento de auditoria em 2025 sobre conciliação de caixa. Atenção redobrada.
+- **17:39** — *Distribuidor* — **Cota atrasada?**: Bom dia! A cota do Tucano Plus FIC FIF Multimercado de ontem saiu mais tarde, está tudo certo? Temos clientes perguntando.
 
 ## 5. Batimento Alfa × Beta
 
@@ -100,32 +98,33 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1.008,98860265 | 1.008,98860265 | 0,00000000 |
-| Quantidade final de cotas | 192.776,13880663 | 192.776,13880663 | 0,00000000 |
-| PL final | R$ 194.508.926,92 | R$ 194.508.926,92 | R$ 0,00 |
-| Caixa | R$ 5.909.722,69 | R$ 5.909.722,69 | R$ 0,00 |
-| Total de provisões | R$ 244.832,44 | R$ 244.832,44 | R$ 0,00 |
+| Cota de fechamento | 3,45823281 | 3,45823281 | 0,00000000 |
+| Quantidade final de cotas | 116.751.974,15224370 | 116.751.974,15224370 | 0,00000000 |
+| PL final | R$ 403.755.507,65 | R$ 403.755.507,65 | R$ 0,00 |
+| Caixa | R$ 4.246.145,62 | R$ 4.246.145,62 | R$ 0,00 |
+| Total de provisões | R$ 248.617,71 | R$ 248.617,71 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 134.537.665,39 | 134.537.665,39 | 1,00 | 1,00 | 134.537.665,39 | 134.537.665,39 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
-| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 9.609.833,24 | 9.609.833,24 | 1,00 | 1,00 | 9.609.833,24 | 9.609.833,24 | 0,00 | Valor presente (custodiante) |
-| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 3.843.933,30 | 3.843.933,30 | 1,00 | 1,00 | 3.843.933,30 | 3.843.933,30 | 0,00 | Valor presente (custodiante) |
-| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 2.306.359,98 | 2.306.359,98 | 1,00 | 1,00 | 2.306.359,98 | 2.306.359,98 | 0,00 | Valor presente (custodiante) |
-| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 1.537.573,32 | 1.537.573,32 | 1,00 | 1,00 | 1.537.573,32 | 1.537.573,32 | 0,00 | Valor presente (custodiante) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.588 | 1.588 | 18.149,449896 | 18.149,449896 | 28.821.326,43 | 28.821.326,43 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 14.493 | 14.493 | 795,664595 | 795,664595 | 11.531.566,98 | 11.531.566,98 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -3.344.221,97 | -3.344.221,97 | -3.344.221,97 | -3.344.221,97 | 0,00 | Cálculo pelo aging do custodiante |
-| **Total** |  |  |  |  | 188.844.036,67 | 188.844.036,67 | 0,00 |  |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 22.283 | 22.283 | 815,473707 | 815,473707 | 18.171.200,61 | 18.171.200,61 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| COTA GAIVOTA — Cotas do Gaivota Juros FIF Multimercado | 8.648.652,84060582 | 8.648.652,84060582 | 7,35349167 | 7,35349167 | 63.597.796,62 | 63.597.796,62 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA TIÊ — Cotas do Tiê Crédito FIF RF CP | 23.454.369,75663197 | 23.454.369,75663197 | 2,32418938 | 2,32418938 | 54.512.397,10 | 54.512.397,10 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA JURITI — Cotas do Juriti Inflação FIF RF | 14.410.992,07029549 | 14.410.992,07029549 | 6,30449276 | 6,30449276 | 90.853.995,17 | 90.853.995,17 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA POROROCA — Cotas do Pororoca Ações FIF | 25.600.588,04231186 | 25.600.588,04231186 | 3,72634780 | 3,72634780 | 95.396.694,93 | 95.396.694,93 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA CARAVELA — Cotas do Caravela Long Short FIF Multimercado | 27.650.280,26742104 | 27.650.280,26742104 | 2,79295165 | 2,79295165 | 77.225.895,90 | 77.225.895,90 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| **Total** |  |  |  |  | 399.757.980,33 | 399.757.980,33 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 5.909.722,69 | 5.909.722,69 |
-| **Saldo final** | 5.909.722,69 | 5.909.722,69 |
+| Saldo inicial (D−1) | 1.673.269,33 | 1.673.269,33 |
+| TED recebida — aplicação [APL-1] Cotista 0840 (13:40) | 521.939,60 | 521.939,60 |
+| TED recebida — aplicação [APL-2] Cotista 0847 (10:05) | 817.779,76 | 817.779,76 |
+| TED recebida — aplicação [APL-3] Cotista 0854 (13:10) | 1.233.156,93 | 1.233.156,93 |
+| **Saldo final** | 4.246.145,62 | 4.246.145,62 |
 
 ### 5.4 Valores a receber
 
@@ -133,56 +132,52 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-Nenhum item.
+| Item | Alfa | Beta |
+|---|---|---|
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 2.572.876,29 | 2.572.876,29 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 17.154,15 | 17.154,15 | 1.234,58 | 1.234,58 | 0,00 | 0,00 | 18.388,73 | 18.388,73 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 123.619,25 | 123.619,25 | 8.796,36 | 8.796,36 | 0,00 | 0,00 | 132.415,61 | 132.415,61 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 4.280,55 | 4.280,55 | 308,64 | 308,64 | 0,00 | 0,00 | 4.589,19 | 4.589,19 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 52.555,56 | 52.555,56 | 341,27 | 341,27 | 0,00 | 0,00 | 52.896,83 | 52.896,83 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 840,00 | 840,00 | 60,00 | 60,00 | 0,00 | 0,00 | 900,00 | 900,00 | 0,00 |
-| COBRANCA — Agente de cobrança a pagar | 8.400,00 | 8.400,00 | 600,00 | 600,00 | 0,00 | 0,00 | 9.000,00 | 9.000,00 | 0,00 |
-| RATING — Agência de classificação de risco (rating) a pagar | 21.940,48 | 21.940,48 | 226,19 | 226,19 | 0,00 | 0,00 | 22.166,67 | 22.166,67 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 4.347,54 | 4.347,54 | 127,87 | 127,87 | 0,00 | 0,00 | 4.475,41 | 4.475,41 | 0,00 |
-| **Total** |  |  |  |  |  |  | 244.832,44 | 244.832,44 | 0,00 |
+| TXADM — Taxa de administração a pagar | 23.438,04 | 23.438,04 | 1.432,63 | 1.432,63 | 0,00 | 0,00 | 24.870,67 | 24.870,67 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 150.479,88 | 150.479,88 | 9.526,72 | 9.526,72 | 0,00 | 0,00 | 160.006,60 | 160.006,60 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 5.195,26 | 5.195,26 | 318,47 | 318,47 | 0,00 | 0,00 | 5.513,73 | 5.513,73 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 47.059,52 | 47.059,52 | 265,87 | 265,87 | 0,00 | 0,00 | 47.325,39 | 47.325,39 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 761,90 | 761,90 | 47,62 | 47,62 | 0,00 | 0,00 | 809,52 | 809,52 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 9.914,75 | 9.914,75 | 177,05 | 177,05 | 0,00 | 0,00 | 10.091,80 | 10.091,80 | 0,00 |
+| **Total** |  |  |  |  |  |  | 248.617,71 | 248.617,71 | 0,00 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 194.445.886,02 ÷ 252 (linear, dias úteis) = R$ 1.234,58 · Beta: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 194.445.886,02 ÷ 252 (linear, dias úteis) = R$ 1.234,58
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,14% a.a. sobre R$ 194.445.886,02 ÷ 252 (linear, dias úteis) = R$ 8.796,36 · Beta: [base: PL do dia útil anterior] 1,14% a.a. sobre R$ 194.445.886,02 ÷ 252 (linear, dias úteis) = R$ 8.796,36
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 194.445.886,02 ÷ 252 (linear, dias úteis) = R$ 308,64 · Beta: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 194.445.886,02 ÷ 252 (linear, dias úteis) = R$ 308,64
-- **AUDIT** — Alfa: R$ 86.000,00 (anual) ÷ 252 d.u. = R$ 341,27 · Beta: R$ 86.000,00 (anual) ÷ 252 d.u. = R$ 341,27
-- **ANBIMA** — Alfa: R$ 1.200,00 (mensal) ÷ 20 d.u. = R$ 60,00 · Beta: R$ 1.200,00 (mensal) ÷ 20 d.u. = R$ 60,00
-- **COBRANCA** — Alfa: R$ 12.000,00 (mensal) ÷ 20 d.u. = R$ 600,00 · Beta: R$ 12.000,00 (mensal) ÷ 20 d.u. = R$ 600,00
-- **RATING** — Alfa: R$ 57.000,00 (anual) ÷ 252 d.u. = R$ 226,19 · Beta: R$ 57.000,00 (anual) ÷ 252 d.u. = R$ 226,19
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-Nenhum movimento de passivo no dia.
+| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
+|---|---|---|---|---|---|---|---|---|---|---|
+| APL-1 | aplicacao | Cotista 0840 | R$ 521.939,60 | 13:40 | 24/06/2026 | 24/06/2026 | 24/06/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 0847 | R$ 817.779,76 | 10:05 | 24/06/2026 | 24/06/2026 | 24/06/2026 | sim | sim |  |
+| APL-3 | aplicacao | Cotista 0854 | R$ 1.233.156,93 | 13:10 | 24/06/2026 | 24/06/2026 | 24/06/2026 | sim | sim |  |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 188.844.036,67 | 188.844.036,67 | 0,00 |
-| Caixa | 5.909.722,69 | 5.909.722,69 | 0,00 |
+| Total de ativos | 399.757.980,33 | 399.757.980,33 | 0,00 |
+| Caixa | 4.246.145,62 | 4.246.145,62 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 244.832,44 | 244.832,44 | 0,00 |
-| PL base da cota | 194.508.926,92 | 194.508.926,92 | 0,00 |
-| Cota (8 casas) | 1.008,98860265 | 1.008,98860265 | 0,00000000 |
-| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
-| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valores a pagar | 2.572.876,29 | 2.572.876,29 | 0,00 |
+| Provisões | 248.617,71 | 248.617,71 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 401.194.400,31 | 401.194.400,31 | 0,00 |
+| PL base da cota | 401.182.631,95 | 401.182.631,95 | 0,00 |
+| Cota (8 casas) | 3,45823281 | 3,45823281 | 0,00000000 |
+| Aplicações convertidas | 2.572.876,29 | 2.572.876,29 | 0,00 |
+| Cotas emitidas | 743.985,85386158 | 743.985,85386158 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 192.776,13880663 | 192.776,13880663 | 0,00000000 |
-| PL final | 194.508.926,92 | 194.508.926,92 | 0,00 |
+| Quantidade final de cotas | 116.751.974,15224370 | 116.751.974,15224370 | 0,00000000 |
+| PL final | 403.755.507,65 | 403.755.507,65 | 0,00 |
 
 ---
 
@@ -217,11 +212,11 @@ Nenhum movimento de passivo no dia.
 
 | Item | Valor |
 |---|---|
-| Cota | 1.008,98860265 |
-| Quantidade final de cotas | 192.776,13880663 |
-| PL final | R$ 194.508.926,92 |
-| Caixa | R$ 5.909.722,69 |
-| Total de provisões | R$ 244.832,44 |
+| Cota | 3,45823281 |
+| Quantidade final de cotas | 116.751.974,15224370 |
+| PL final | R$ 403.755.507,65 |
+| Caixa | R$ 4.246.145,62 |
+| Total de provisões | R$ 248.617,71 |
 
 ### Armadilhas deste caso
 

@@ -1,36 +1,41 @@
-# Caso caso-022 — Corrupião Plus FIF Multimercado Crédito Privado — Classe Exclusiva
+# Caso caso-022 — Corrupião Plus FIF Ações
 
-> **Data-base (D):** 03/07/2026 (sexta-feira) · **D−1:** 02/07/2026 · **Fundo:** FND-0022
+> **Data-base (D):** 09/11/2026 (segunda-feira) · **D−1:** 06/11/2026 · **Fundo:** FND-0022
 
 ## 1. O fundo
 
-Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Corrupião Plus FIF Multimercado Crédito Privado — Classe Exclusiva: a casa é uma gestora de private equity com participações em empresas familiares do interior. Criado em 01/10/2015, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são a holding patrimonial de uma família de industriais do Vale do Itajaí (SC). Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Murilo, e quem cuida da validação do fundo é Camila. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. O PL do fundo está perto do limite entre duas faixas da taxa de fiscalização. A base de cálculo das taxas é um ponto sensível da parametrização. No fechamento de ontem (02/07/2026) o fundo tinha PL de R$ 56.428.184,33, cota de 14,47404220 e 3.898.578,12676677 cotas. Hoje, sexta-feira, 03/07/2026, é a data-base da validação.
+Sob a gestão da Marola Asset, gestora jovem de ações, muito ativa em eventos societários e small caps (Florianópolis/SC), o Corrupião Plus FIF Ações é um dos fundos que mais exigem atenção na rotina de validação. Criado em 01/10/2015, é um fundo de ações de gestão ativa, concentrado em poucas dezenas de papéis. Público-alvo: público geral. Hoje seus cotistas são cerca de 12 mil cotistas pessoa física. Ao longo da vida, o fundo aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano e foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo. O gestor responsável é Murilo, e quem cuida da validação do fundo é Camila. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. A carteira tem papéis de empresas que vêm anunciando desdobramentos e bonificações. No fechamento de ontem (06/11/2026) o fundo tinha PL de R$ 470.387.306,82, cota de 20,45359069 e 22.997.786,25399001 cotas. Hoje, segunda-feira, 09/11/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Fundo exclusivo (família/empresa) |
-| Classe | Classe Multimercado — Exclusiva para investidor profissional |
+| Tipo | Ações |
+| Classe | Classe de Ações |
 | Condomínio | aberto |
-| Gestora | Varanda Capital (Belo Horizonte/MG) |
-| PL em D−1 | R$ 56.428.184,33 |
-| Cota em D−1 | 14,47404220 |
-| Quantidade de cotas em D−1 | 3.898.578,12676677 |
+| Gestora | Marola Asset (Florianópolis/SC) |
+| PL em D−1 | R$ 470.387.306,82 |
+| Cota em D−1 | 20,45359069 |
+| Quantidade de cotas em D−1 | 22.997.786,25399001 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,500% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,200% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,570% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+
+**Taxa de performance**
+
+- 20% sobre o que exceder Ibovespa; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
+- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
+- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 75.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 4.100,00 (mensal)
+- Auditoria independente: R$ 49.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 500,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +45,7 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Corrupião Plus F
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 48.351.665,72. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 482.873.760,61. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +66,21 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Corrupião Plus F
 **Aplicação, resgate e cota**
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+1 útil (liquidação D+1 útil após a cotização).
+- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+2 dias úteis após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)
+- Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Títulos classificados como "mantidos até o vencimento": curva da taxa de aquisição.
-- Demais títulos e debêntures: taxa indicativa ANBIMA de D.
+- Ações: preço de fechamento da B3 em D.
+- Eventos societários (dividendos, JCP, desdobramentos, grupamentos) reconhecidos na data "ex".
 
 **Regras específicas deste fundo**
 
-- Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
+- Performance: cota de referência vigente = 19,12219516 (cota da última cobrança efetiva, em 30/06/2026).
 
 ## 3. Informações de mercado do dia
 
@@ -85,15 +90,28 @@ Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Corrupião Plus F
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.338,634443 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.306,179468 |  |
-| LINO11 | ANBIMA — PU pela taxa indicativa de D | 1.022,158269 |  |
-| LINO11 | PU par (curva da taxa de emissão) — informativo | 1.040,505750 |  |
+| KXOB3 | B3 — preço de fechamento de D | 34,95 |  |
+| HZTA3 | B3 — preço de fechamento de D | 92,83 |  |
+| WJMA4 | B3 — preço de fechamento de D | 76,39 |  |
+| UQPA4 | B3 — preço de fechamento de D | 16,06 |  |
+| XVRM3 | B3 — preço de fechamento de D | 23,57 |  |
+| KQSA3 | B3 — preço de fechamento de D | 51,61 |  |
+| JZEL3 | B3 — preço de fechamento de D | 34,37 |  |
+| YKAP4 | B3 — preço de fechamento de D | 64,39 |  |
+| KXOB3 | B3 — fechamento de D−1 (antes do desdobramento) | 139,50 |  |
+
+**Eventos de ativos**
+
+- KXOB3: desdobramento na proporção 1:4 — ações negociadas "ex-desdobramento" a partir de 09/11/2026 (cada ação vira 4).
+
+**Benchmark**
+
+- Fator acumulado do Ibovespa de 30/06/2026 até 09/11/2026: 1,07464903
 
 ## 4. Comunicações recebidas hoje
 
-- **08:20** — *Gestora — operacional* — **Previsão de resgates**: Para a semana que vem, esperamos resgates um pouco acima da média por causa de rebalanceamento de um FoF. Só aviso.
-- **15:53** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -103,33 +121,36 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 14,48610730 | 14,52501473 | 0,03890743 |
-| Quantidade final de cotas | 3.918.969,47786492 | 3.918.914,85657329 | -54,62129163 |
-| PL final | R$ 56.770.612,36 | R$ 56.922.296,02 | R$ 151.683,66 |
-| Caixa | R$ 521.938,42 | R$ 521.938,42 | R$ 0,00 |
-| Total de provisões | R$ 92.197,17 | R$ 92.228,84 | R$ 31,67 |
+| Cota de fechamento | 20,73879194 | 19,64626227 | -1,09252967 |
+| Quantidade final de cotas | 23.098.884,38789281 | 23.110.157,69984463 | 11.273,31195182 |
+| PL final | R$ 479.042.957,37 | R$ 454.028.219,27 | R$ -25.014.738,10 |
+| Caixa | R$ 6.603.552,47 | R$ 6.603.552,47 | R$ 0,00 |
+| Total de provisões | R$ 1.986.041,57 | R$ 898.571,34 | R$ -1.087.470,23 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 3.850 | 3.850 | 4.390,783771 | 4.390,783771 | 16.904.517,52 | 16.904.517,52 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 923 | 923 | 18.306,179468 | 18.306,179468 | 16.896.603,65 | 16.896.603,65 | 0,00 | ANBIMA — taxa indicativa D |
-| CDB YBYTU 2028 — CDB Banco Ybytu S.A. — 105% do CDI — venc. 2028 | 7.749 | 7.749 | 1.090,801392 | 1.090,801392 | 8.452.619,99 | 8.452.619,99 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 8.269 | 8.269 | 1.022,158269 | 1.040,505750 | 8.452.226,73 | 8.603.942,05 | 151.715,32 | Alfa: ANBIMA — taxa indicativa D / Beta: Curva — taxa de emissão |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 7.111 | 7.111 | 792,420648 | 792,420648 | 5.634.903,23 | 5.634.903,23 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 56.340.871,12 | 56.492.586,44 | 151.715,32 |  |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 35.909 | 35.909 | 811,091333 | 811,091333 | 29.125.478,68 | 29.125.478,68 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| KXOB3 — Kaxoeira Obras S.A. ON | 1.000.028 | 250.007 | 34,95 | 34,95 | 34.950.978,60 | 8.737.744,65 | -26.213.233,95 | B3 — preço de fechamento D |
+| HZTA3 — Hortaz Tecnologia S.A. ON | 753.011 | 753.011 | 92,83 | 92,83 | 69.902.011,13 | 69.902.011,13 | 0,00 | B3 — preço de fechamento D |
+| WJMA4 — Banco Wajumá S.A. PN | 457.534 | 457.534 | 76,39 | 76,39 | 34.951.022,26 | 34.951.022,26 | 0,00 | B3 — preço de fechamento D |
+| UQPA4 — Uquapé Petroquímica S.A. PN | 3.989.840 | 3.989.840 | 16,06 | 16,06 | 64.076.830,40 | 64.076.830,40 | 0,00 | B3 — preço de fechamento D |
+| XVRM3 — Xavantina Mineração S.A. ON | 2.224.289 | 2.224.289 | 23,57 | 23,57 | 52.426.491,73 | 52.426.491,73 | 0,00 | B3 — preço de fechamento D |
+| KQSA3 — Kaquissá Saneamento S.A. ON | 1.805.903 | 1.805.903 | 51,61 | 51,61 | 93.202.653,83 | 93.202.653,83 | 0,00 | B3 — preço de fechamento D |
+| JZEL3 — Jazê Elétrica S.A. ON | 1.694.840 | 1.694.840 | 34,37 | 34,37 | 58.251.650,80 | 58.251.650,80 | 0,00 | B3 — preço de fechamento D |
+| YKAP4 — Ykapé Papel e Celulose S.A. PN | 633.269 | 633.269 | 64,39 | 64,39 | 40.776.190,91 | 40.776.190,91 | 0,00 | B3 — preço de fechamento D |
+| **Total** |  |  |  |  | 477.663.308,34 | 451.450.074,39 | -26.213.233,95 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 534.608,89 | 534.608,89 |
-| TED recebida — aplicação Cotista 4144 (10:05) | 47.333,42 | 47.333,42 |
-| TED recebida — aplicação Cotista 4151 (10:34) | 248.057,88 | 248.057,88 |
-| Pagamento de resgate — Cotista 4158 (cotizado em 01/07/2026) | -167.495,01 | -167.495,01 |
-| Pagamento de resgate — Cotista 4165 (cotizado em 01/07/2026) | -140.566,76 | -140.566,76 |
-| **Saldo final** | 521.938,42 | 521.938,42 |
+| Saldo inicial (D−1) | 2.819.081,66 | 2.819.081,66 |
+| TED recebida — aplicação [APL-1] Cotista 1638 (15:53) | 2.262.260,35 | 2.262.260,35 |
+| TED recebida — aplicação [APL-2] Cotista 1645 (11:48) | 1.941.923,28 | 1.941.923,28 |
+| Pagamento de resgate [LIQ-1] — Cotista 1666 (cotizado em 05/11/2026) | -419.712,82 | -419.712,82 |
+| **Saldo final** | 6.603.552,47 | 6.603.552,47 |
 
 ### 5.4 Valores a receber
 
@@ -139,96 +160,85 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 295.391,30 | 295.391,30 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 4.204.183,63 | 4.204.183,63 |
+| RESGATES A PAGAR — Resgates já cotizados e ainda não liquidados | 1.130.331,34 | 1.130.331,34 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 3.075,66 | 3.075,66 | 134,31 | 134,31 | 0,00 | 0,00 | 3.209,97 | 3.209,97 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 25.217,78 | 25.217,78 | 1.116,83 | 1.120,80 | 0,00 | 0,00 | 26.334,61 | 26.338,58 | 3,97 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.036,07 | 1.036,07 | 44,78 | 44,78 | 0,00 | 0,00 | 1.080,85 | 1.080,85 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 60.416,67 | 60.416,67 | 297,62 | 297,62 | 0,00 | 0,00 | 60.714,29 | 60.714,29 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 104,35 | 104,35 | 52,17 | 52,17 | 0,00 | 0,00 | 156,52 | 156,52 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 356,52 | 356,52 | 178,26 | 178,26 | 0,00 | 0,00 | 534,78 | 534,78 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 110,77 | 110,77 | 55,38 | 83,08 | 0,00 | 0,00 | 166,15 | 193,85 | 27,70 |
-| **Total** |  |  |  |  |  |  | 92.197,17 | 92.228,84 | 31,67 |
+| TXADM — Taxa de administração a pagar | 94.389,99 | 94.389,99 | 3.729,52 | 3.729,52 | 0,00 | 0,00 | 98.119,51 | 98.119,51 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 727.651,35 | 727.651,35 | 29.079,10 | 29.079,10 | 0,00 | 0,00 | 756.730,45 | 756.730,45 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 14.389,76 | 14.389,76 | 559,90 | 559,90 | 0,00 | 0,00 | 14.949,66 | 14.949,66 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 23.916,67 | 23.916,67 | 194,44 | 194,44 | 0,00 | 0,00 | 24.111,11 | 24.111,11 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 105,26 | 105,26 | 26,32 | 26,32 | 0,00 | 0,00 | 131,58 | 131,58 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.354,84 | 4.354,84 | 174,19 | 174,19 | 0,00 | 0,00 | 4.529,03 | 4.529,03 | 0,00 |
+| PERF — Taxa de performance a pagar | 0,00 | 0,00 | 1.087.470,23 | 0,00 | 0,00 | 0,00 | 1.087.470,23 | 0,00 | -1.087.470,23 |
+| **Total** |  |  |  |  |  |  | 1.986.041,57 | 898.571,34 | -1.087.470,23 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 470.387.306,82 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.729,52 · Beta: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 470.387.306,82 fator exponencial (1+taxa)^(1/252) − 1 = R$ 3.729,52
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,57% a.a. sobre R$ 470.387.306,82 fator exponencial (1+taxa)^(1/252) − 1 = R$ 29.079,10 · Beta: [base: PL do dia útil anterior] 1,57% a.a. sobre R$ 470.387.306,82 fator exponencial (1+taxa)^(1/252) − 1 = R$ 29.079,10
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 470.387.306,82 fator exponencial (1+taxa)^(1/252) − 1 = R$ 559,90 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 470.387.306,82 fator exponencial (1+taxa)^(1/252) − 1 = R$ 559,90
+- **AUDIT** — Alfa: R$ 49.000,00 (anual) ÷ 252 d.u. = R$ 194,44 · Beta: R$ 49.000,00 (anual) ÷ 252 d.u. = R$ 194,44
+- **ANBIMA** — Alfa: R$ 500,00 (mensal) ÷ 19 d.u. = R$ 26,32 · Beta: R$ 500,00 (mensal) ÷ 19 d.u. = R$ 26,32
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 62 d.u. = R$ 174,19 · Beta: R$ 10.800,00 (trimestral) ÷ 62 d.u. = R$ 174,19
+- **PERF** — Alfa: 20% × max(0; cota bruta 20,78607781 − cota de referência 19,12219516 × fator Ibovespa 1,07464903 = 20,54964848) × 22.997.786,25399001 cotas = R$ 1.087.470,23 · Beta: 20% × max(0; cota bruta 19,64626228 − cota de referência 19,12219516 × fator Ibovespa 1,07464903 = 20,54964848) × 22.997.786,25399001 cotas = R$ 0,00
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 4144 | R$ 47.333,42 | 10:05 | 03/07/2026 | 03/07/2026 | 03/07/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 4151 | R$ 248.057,88 | 10:34 | 03/07/2026 | 03/07/2026 | 03/07/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 4158 | 11.615,67085759 cotas (R$ 167.495,01) |  | 06/06/2026 | 01/07/2026 | 03/07/2026 | não | não | cotizado em 01/07/2026 pela cota de 14,41974522; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 4165 | 9.709,46201053 cotas (R$ 140.566,76) |  | 27/06/2026 | 01/07/2026 | 03/07/2026 | não | não | cotizado em 01/07/2026 pela cota de 14,47729651; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista 1638 | R$ 2.262.260,35 | 15:53 | 09/11/2026 | 09/11/2026 | 09/11/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 1645 | R$ 1.941.923,28 | 11:48 | 09/11/2026 | 09/11/2026 | 09/11/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 1652 | 21.599,82373743 cotas |  | 09/10/2026 | 09/11/2026 | 11/11/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 1659 | 80.022,80074160 cotas |  | 09/10/2026 | 09/11/2026 | 11/11/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 1666 | 20.888,79327157 cotas (R$ 419.712,82) |  | 06/10/2026 | 05/11/2026 | 09/11/2026 | não | não | cotizado em 05/11/2026 pela cota de 20,09272681; liquidação financeira hoje |
+| PEN-1 | resgate | Cotista 1673 | 55.263,22291565 cotas (R$ 1.130.331,34) |  | 07/10/2026 | 06/11/2026 | 10/11/2026 | não | não | cotizado em 06/11/2026 pela cota de 20,45359069; liquidação em 10/11/2026 (ainda a pagar) |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 56.340.871,12 | 56.492.586,44 | 151.715,32 |
-| Caixa | 521.938,42 | 521.938,42 | 0,00 |
+| Total de ativos | 477.663.308,34 | 451.450.074,39 | -26.213.233,95 |
+| Caixa | 6.603.552,47 | 6.603.552,47 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 295.391,30 | 295.391,30 | 0,00 |
-| Provisões | 92.197,17 | 92.228,84 | 31,67 |
-| PL base da cota | 56.475.221,07 | 56.626.904,72 | 151.683,65 |
-| Cota (8 casas) | 14,48610730 | 14,52501473 | 0,03890743 |
-| Aplicações convertidas | 295.391,30 | 295.391,30 | 0,00 |
-| Cotas emitidas | 20.391,35109815 | 20.336,72980652 | -54,62129163 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 5.334.514,97 | 5.334.514,97 | 0,00 |
+| Provisões | 1.986.041,57 | 898.571,34 | -1.087.470,23 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 478.067.537,97 | 451.854.304,02 | -26.213.233,95 |
+| PL base da cota | 476.946.304,27 | 451.820.540,55 | -25.125.763,72 |
+| Cota (8 casas) | 20,73879194 | 19,64626227 | -1,09252967 |
+| Aplicações convertidas | 4.204.183,63 | 4.204.183,63 | 0,00 |
+| Cotas emitidas | 202.720,75838183 | 213.994,07033365 | 11.273,31195182 |
+| Cotas resgatadas | 101.622,62447903 | 101.622,62447903 | 0,00000000 |
+| Valor dos resgates cotizados | 2.107.530,47 | 1.996.504,73 | -111.025,74 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 3.918.969,47786492 | 3.918.914,85657329 | -54,62129163 |
-| PL final | 56.770.612,36 | 56.922.296,02 | 151.683,66 |
+| Quantidade final de cotas | 23.098.884,38789281 | 23.110.157,69984463 | 11.273,31195182 |
+| PL final | 479.042.957,37 | 454.028.219,27 | -25.014.738,10 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: PU de LINO11 divergente; Taxa CVM pela faixa do PL atual; Base de cálculo da taxa de gestão errada.
+**Resumo:** Reprovar até o ajuste: Desdobramento de KXOB3 não aplicado.
 
-**Dificuldade:** dificil · **Cenários:** preco_credito_fonte_errada, taxa_cvm_faixa_errada, taxa_sobre_pl_do_dia
+**Dificuldade:** media · **Cenários:** desdobramento_nao_refletido
 
-### Achado 1: PU de LINO11 divergente
+### Achado 1: Desdobramento de KXOB3 não aplicado
 
 - **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta precificou LINO11 pela curva de emissão (PU par), e não pela taxa indicativa ANBIMA de D.
-- **Onde olhar:** Carteira — linha LINO11; Informações de mercado — referências ANBIMA; Regulamento — precificação
+- **Causa raiz:** Beta usou o preço ex-desdobramento mas manteve a quantidade antiga de KXOB3.
+- **Onde olhar:** Carteira — KXOB3 (quantidade); Informações de mercado — eventos societários
 - **Raciocínio do analista:**
-  1. A diferença de ativos está concentrada em LINO11: mesma quantidade (8.269) nos dois lados, mas PU 1.022,158269 no Alfa contra 1.040,505750 no Beta, o que dá R$ 151.715,32 de diferença de valor.
-  2. A referência ANBIMA de D é 1.022,158269, igual ao Alfa. O PU do Beta coincide com o PU par (curva de emissão).
-  3. O regulamento manda precificar pela taxa indicativa ANBIMA do próprio dia, então o lado correto é o que usou a referência de D.
-- **Ação:** Pedir ao Beta que reprecifique LINO11 pela taxa indicativa ANBIMA de D (PU 1.022,158269) e recalcule a cota antes da divulgação.
-
-### Achado 2: Taxa CVM pela faixa do PL atual
-
-- **Gravidade:** ressalva · **Dimensões:** provisoes
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta enquadrou a taxa de fiscalização pelo PL atual (R$ 56.428.184,33), na faixa de R$ 5.400,00/trimestre. A regra usa o PL do último dia útil do trimestre anterior (R$ 48.351.665,72), faixa de R$ 3.600,00.
-- **Onde olhar:** Provisões — CVM; Regulamento — tabela da taxa de fiscalização e PL de referência
-- **Raciocínio do analista:**
-  1. A apropriação da taxa CVM difere entre os lados.
-  2. O PL de referência do trimestre é R$ 48.351.665,72 → R$ 3.600,00/trimestre. O PL atual cruzou o limite da faixa, mas isso só conta para o próximo trimestre.
-- **Ação:** Beta deve usar a faixa do PL de referência (R$ 3.600,00/trimestre).
-
-### Achado 3: Base de cálculo da taxa de gestão errada
-
-- **Gravidade:** ressalva · **Dimensões:** provisoes
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta calculou a taxa de gestão sobre o PL de D, e não sobre o PL do dia útil anterior, como manda o regulamento.
-- **Onde olhar:** Provisões — TXGES; Dia anterior (PL de D−1); Regulamento
-- **Raciocínio do analista:**
-  1. A diferença na apropriação de taxa de gestão é pequena e proporcional à variação do PL entre D−1 e D.
-  2. PL de D−1 (R$ 56.428.184,33) × taxa pelo método do regulamento dá exatamente o valor do Alfa. O do Beta só fecha usando o PL de hoje.
-  3. O valor é pequeno, mas é erro de parametrização: acumula todo dia e piora em dias de grande movimentação.
-- **Ação:** Beta deve corrigir a base de cálculo para o PL de D−1.
+  1. Em KXOB3 o preço é o mesmo nos dois lados (34,95), mas a quantidade é 1.000.028 (Alfa) contra 250.007 (Beta), exatamente 1/4.
+  2. Há evento de desdobramento 1:4 com data "ex" em D. O preço de D já é pós-desdobramento, então a quantidade tem que ser multiplicada por 4.
+  3. Sem o ajuste, o Beta subavalia o ativo em R$ 26.213.233,95.
+- **Ação:** Beta deve processar o evento de desdobramento (quantidade × 4) em KXOB3 e reprocessar a cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -242,13 +252,8 @@ _Memória de cálculo das provisões: não disponível neste caso. Recalcular a 
 
 | Item | Valor |
 |---|---|
-| Cota | 14,48610730 |
-| Quantidade final de cotas | 3.918.969,47786492 |
-| PL final | R$ 56.770.612,36 |
-| Caixa | R$ 521.938,42 |
-| Total de provisões | R$ 92.197,17 |
-
-### Armadilhas deste caso
-
-- Descobrir qual lado está certo comparando com a referência de D, não com o D−1 nem com a curva de emissão.
-- A faixa da taxa CVM segue o PL de referência do trimestre, não o PL de hoje.
+| Cota | 20,73879194 |
+| Quantidade final de cotas | 23.098.884,38789281 |
+| PL final | R$ 479.042.957,37 |
+| Caixa | R$ 6.603.552,47 |
+| Total de provisões | R$ 1.986.041,57 |

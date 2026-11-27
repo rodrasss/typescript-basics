@@ -6,7 +6,7 @@
 import { mkdirSync, writeFileSync, rmSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { criarRng, escolher, chance, embaralhar, inteiro, ehDiaUtil, somaDias, diasUteisDecorridosNoMes, diaDaSemana, iso, data as paraData } from './util.ts';
+import { criarRng, escolher, chance, embaralhar, inteiro, ehDiaUtil, somaDias, somaDiasUteis, fmtData, diasUteisDecorridosNoMes, diaDaSemana, iso } from './util.ts';
 import type { Rng } from './util.ts';
 import { PERFIS } from './catalogo.ts';
 import type { TipoFundo } from './catalogo.ts';
@@ -93,6 +93,10 @@ const SO_PRIMARIO = new Set([
   'performance_sem_reversao', 'performance_data_base_errada', 'performance_sem_linha_dagua', 'ativo_iliquido_sem_referencia',
 ]);
 const LIMPOS = new Set(['tudo_bate', 'tudo_bate_com_ruido']);
+// classe de gravidade do cenário primário: 0 = só ressalva, 1 = pendência, 2 = erro (reprova)
+const CLASSE_RESSALVA = new Set(['resgate_liquidado_nao_baixado', 'dividendo_recebido_nao_baixado', 'ajuste_liquidado_nao_baixado', 'compromissada_como_caixa', 'pagamento_taxa_nao_registrado', 'liquidacao_compra_antecipada']);
+const CLASSE_PENDENCIA = new Set(['ativo_iliquido_sem_referencia', 'tarifa_bancaria_indevida', 'debito_em_duplicidade', 'credito_nao_identificado']);
+const classe = (id: string): number => (CLASSE_RESSALVA.has(id) ? 0 : CLASSE_PENDENCIA.has(id) ? 1 : 2);
 const FOLGA_VARIACAO: Record<string, number> = {
   laudo_fip_nao_atualizado: 0.1, amortizacao_nao_registrada: 0.05, rendimento_nao_provisionado: 0.03, come_cotas_nao_aplicado: 0.04,
   desdobramento_nao_refletido: 0.0, pdd_aging_desatualizado: 0.01,
@@ -158,10 +162,12 @@ export function planejar(total: number, seed: number): Plano[] {
   const divergentes = CENARIOS.filter((c) => !LIMPOS.has(c.id));
   const lista: string[] = [];
   for (let i = 0; i < nLimpos; i++) lista.push(i % 2 === 0 ? 'tudo_bate' : 'tudo_bate_com_ruido');
-  const porCenario = Math.floor(nDiv / divergentes.length);
-  for (const c of divergentes) for (let i = 0; i < porCenario; i++) lista.push(c.id);
-  const resto = embaralhar(rng, divergentes).slice(0, nDiv - porCenario * divergentes.length);
-  for (const c of resto) lista.push(c.id);
+  // cenários "leves" (ressalva/pendência) aparecem mais, para o treino não ensinar a reprovar por reflexo
+  const leves = divergentes.filter((c) => classe(c.id) < 2);
+  const erros = divergentes.filter((c) => classe(c.id) === 2);
+  for (const c of [...leves, ...erros]) for (let i = 0; i < 3; i++) lista.push(c.id);
+  const extras = embaralhar(rng, leves); // as sobras reforçam os casos leves
+  for (let i = 0; lista.length < nLimpos + nDiv; i++) lista.push(extras[i % extras.length].id);
   const ordem = embaralhar(rng, lista);
 
   const usoTipo = new Map<TipoFundo, number>(TODOS_TIPOS.map((t) => [t, 0]));
@@ -188,10 +194,12 @@ function adicionarRuido(c: Ctx, rng: Rng): void {
     { hora: hh(15, 17), de: 'Distribuidor', assunto: 'Material de divulgação', texto: 'Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.' },
     { hora: hh(9, 12), de: 'Área de risco', assunto: 'Relatório mensal', texto: 'O relatório mensal de risco do fundo já está disponível na pasta compartilhada.' },
     { hora: hh(14, 18), de: 'Custodiante — eventos', assunto: 'Agenda da semana', texto: 'Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).' },
-    { hora: hh(10, 13), de: 'Gestora — mesa', assunto: 'Operação para amanhã', texto: `Amanhã (${paraData(somaDias(c.data, 1)).toISOString().slice(8, 10)}/${c.data.slice(5, 7)}) vamos reduzir um pouco a posição mais líquida da carteira. Hoje não há boleta.` },
+    { hora: hh(10, 13), de: 'Gestora — mesa', assunto: 'Operação para o próximo pregão', texto: `No próximo dia útil (${fmtData(somaDiasUteis(c.data, 1))}) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.` },
   ];
   const k = inteiro(rng, 1, 2);
-  for (const o of embaralhar(rng, opcoes).slice(0, k)) c.comunicacoes.push(o);
+  // fundo fechado não tem resgate: nada de aviso de resgates
+  const validas = opcoes.filter((o) => c.fundo.condominio === 'aberto' || o.assunto !== 'Previsão de resgates');
+  for (const o of embaralhar(rng, validas).slice(0, k)) c.comunicacoes.push(o);
 }
 
 // ------------------------------------------------------------------ construção de um caso
@@ -242,7 +250,7 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
 
   // escolhe os cenários (primário + secundários)
   const escolhidos: Cenario[] = [primario];
-  const sec = SO_PRIMARIO.has(primario.id) ? 0 : chance(rng, 0.45) ? (chance(rng, 0.25) ? 2 : 1) : 0;
+  const sec = SO_PRIMARIO.has(primario.id) ? 0 : chance(rng, 0.7) ? (chance(rng, 0.3) ? 2 : 1) : 0;
   const pool = embaralhar(rng, CENARIOS.filter((x) => !SO_PRIMARIO.has(x.id)));
   const preparaveis = [...escolhidos];
   primario.preparar?.(c);
@@ -250,6 +258,7 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
     if (escolhidos.length - 1 >= sec) break;
     if (!tipoCompativel(cand, plano.tipo) || !dataCompativel(cand, plano.data)) continue;
     if (escolhidos.some((e) => conflita(e.id, cand.id))) continue;
+    if (classe(primario.id) < 2 && classe(cand.id) > classe(primario.id)) continue; // mantém o caso leve leve
     if (cand.aplicavel && !cand.aplicavel(c)) continue;
     escolhidos.push(cand);
     preparaveis.push(cand);
@@ -284,6 +293,12 @@ function construirTentativa(plano: Plano, tentativa: number, nomesUsados: Set<st
   const folga = Math.max(0, ...escolhidos.map((e) => FOLGA_VARIACAO[e.id] ?? 0));
   const lim = Math.max(Math.abs(c.perfil.retornoDia[0]), Math.abs(c.perfil.retornoDia[1])) * 3 + 0.01 + folga;
   if (Math.abs(ret) > lim) throw new CasoInvalido(`variação diária implausível (${(ret * 100).toFixed(3)}%)`);
+
+  // a cota não pode estar colada numa fronteira de truncamento: um arredondamento de exibição mudaria a 8ª casa
+  for (const [pos, res] of [[b.pos, b.res], [x.pos, x.res], [s.pos, s.res]] as const) {
+    const f = ((res.plBase / pos.qtdCotasBase) * 1e8) % 1;
+    if (f < 0.02 || f > 0.98) throw new CasoInvalido('cota na fronteira do truncamento');
+  }
 
   const corretoPorDimensao = derivarCorreto(baseSaida, lados.Alfa, lados.Beta);
   validarGabarito(achados, corretoPorDimensao, lados, escolhidos.map((e) => e.id));

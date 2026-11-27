@@ -1,20 +1,20 @@
-# Caso caso-105 — Embaúba Plus FIF Multimercado
+# Caso caso-105 — Sabiá Família FIF Multimercado Crédito Privado — Classe Exclusiva
 
-> **Data-base (D):** 13/11/2026 (sexta-feira) · **D−1:** 12/11/2026 · **Fundo:** FND-0105
+> **Data-base (D):** 08/04/2026 (quarta-feira) · **D−1:** 07/04/2026 · **Fundo:** FND-0105
 
 ## 1. O fundo
 
-O Embaúba Plus FIF Multimercado é gerido pela Serra do Mar Asset, gestora cambial e de juros com operação muito sistematizada, em Santos/SP. Criado em 19/04/2017, toma posições direcionais em juros, câmbio e bolsa, e a equipe trata o caixa como ferramenta de trabalho. Público-alvo: público geral. Hoje seus cotistas são sócios da própria gestora e clientes private. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Aline. Sobre a rotina: o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A carteira de ações paga dividendos relevantes ao longo do ano. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (12/11/2026) o fundo tinha PL de R$ 54.580.467,39, cota de 5,48096398 e 9.958.187,57260082 cotas. Hoje, sexta-feira, 13/11/2026, é a data-base da validação.
+Sob a gestão da Varanda Capital, gestora de private equity com participações em empresas familiares do interior (Belo Horizonte/MG), o Sabiá Família FIF Multimercado Crédito Privado — Classe Exclusiva é um dos fundos que mais exigem atenção na rotina de validação. Criado em 20/12/2011, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são um empresário do setor de transportes de Ribeirão Preto (SP) e sua holding. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano. O gestor responsável é Otávio, e quem cuida da validação do fundo é Juliana. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o administrador revisa o manual de precificação uma vez por ano. Já entrou dinheiro na conta do fundo sem identificação do remetente. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (07/04/2026) o fundo tinha PL de R$ 337.079.383,18, cota de 4,65114904 e 72.472.281,48564980 cotas. Hoje, quarta-feira, 08/04/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Multimercado Macro |
-| Classe | Classe Multimercado |
+| Tipo | Fundo exclusivo (família/empresa) |
+| Classe | Classe Multimercado — Exclusiva para investidor profissional |
 | Condomínio | aberto |
-| Gestora | Serra do Mar Asset (Santos/SP) |
-| PL em D−1 | R$ 54.580.467,39 |
-| Cota em D−1 | 5,48096398 |
-| Quantidade de cotas em D−1 | 9.958.187,57260082 |
+| Gestora | Varanda Capital (Belo Horizonte/MG) |
+| PL em D−1 | R$ 337.079.383,18 |
+| Cota em D−1 | 4,65114904 |
+| Quantidade de cotas em D−1 | 72.472.281,48564980 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,21 +22,15 @@ O Embaúba Plus FIF Multimercado é gerido pela Serra do Mar Asset, gestora camb
 
 **Taxas**
 
-- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,870% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-
-**Taxa de performance**
-
-- 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
-- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Taxa de administração: 0,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,350% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 50.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 300,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 2.200,00 (mensal)
+- Auditoria independente: R$ 60.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 2.800,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -46,7 +40,7 @@ O Embaúba Plus FIF Multimercado é gerido pela Serra do Mar Asset, gestora camb
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 52.458.582,75. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 333.548.113,64. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -67,22 +61,21 @@ O Embaúba Plus FIF Multimercado é gerido pela Serra do Mar Asset, gestora camb
 **Aplicação, resgate e cota**
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+1 útil (liquidação D+1 útil após a cotização).
+- Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Tributação: Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Ações: preço de fechamento da B3 em D.
-- Futuros (DI1, DOL, IND): ajuste diário divulgado pela B3, reconhecido em D e liquidado em D+1.
-- Margem depositada em dinheiro na B3 é ativo da classe (valores dados em garantia).
+- Títulos classificados como "mantidos até o vencimento": curva da taxa de aquisição.
+- Demais títulos e debêntures: taxa indicativa ANBIMA de D.
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 5,11561627 (cota da última cobrança efetiva, em 30/06/2026).
+- Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
 
 ## 3. Informações de mercado do dia
 
@@ -92,33 +85,18 @@ O Embaúba Plus FIF Multimercado é gerido pela Serra do Mar Asset, gestora camb
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.276,394701 |  |
-| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.433,443759 |  |
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D | 4.459,421186 |  |
-| HZTA3 | B3 — preço de fechamento de D | 68,89 |  |
-| ZMBV3 | B3 — preço de fechamento de D | 74,85 |  |
-| ZFRT3 | B3 — preço de fechamento de D | 63,85 |  |
-
-**Futuros (posição de D e ajuste do dia por contrato)**
-
-| Contrato | Quantidade (+comprado / −vendido) | Ajuste de D por contrato (R$) |
-|---|---|---|
-| DI1F28 | -2.229 | -19,17 |
-| DOLZ26 | 214 | -604,55 |
-| INDZ26 | 113 | 488,04 |
+| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.372,675432 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.303,726407 |  |
+| HBVI12 | ANBIMA — PU pela taxa indicativa de D | 1.082,427964 |  |
 
 **Eventos de ativos**
 
-- ZFRT3: pagamento em 13/11/2026 de dividendos de R$ 1,97 por ação (data-com 21/10/2026).
-
-**Benchmark**
-
-- Fator acumulado do 100% do CDI de 30/06/2026 até 13/11/2026: 1,06348574
+- HBVI12: pagamento de juros em 08/04/2026 de R$ 61,040000 por título. O PU de referência de D já é "ex-juros".
 
 ## 4. Comunicações recebidas hoje
 
-- **08:45** — *Gestora — operacional* — **Previsão de resgates**: Para a semana que vem, esperamos resgates um pouco acima da média por causa de rebalanceamento de um FoF. Só aviso.
-- **13:38** — *Gestora — mesa* — **Operação para amanhã**: Amanhã (14/11) vamos reduzir um pouco a posição mais líquida da carteira. Hoje não há boleta.
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -128,139 +106,134 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 5,48094286 | 5,48094286 | 0,00000000 |
-| Quantidade final de cotas | 9.965.404,50972465 | 9.965.404,50972465 | 0,00000000 |
-| PL final | R$ 54.619.812,69 | R$ 54.619.812,69 | R$ 0,00 |
-| Caixa | R$ 258.236,22 | R$ 189.445,79 | R$ -68.790,43 |
-| Total de provisões | R$ 164.799,82 | R$ 164.799,82 | R$ 0,00 |
+| Cota de fechamento | 4,69039486 | 4,65114250 | -0,03925236 |
+| Quantidade final de cotas | 72.615.842,58886863 | 72.617.318,28622095 | 1.475,69735232 |
+| PL final | R$ 340.596.974,83 | R$ 337.753.495,32 | R$ -2.843.479,51 |
+| Caixa | R$ 4.647.263,29 | R$ 1.831.466,09 | R$ -2.815.797,20 |
+| Total de provisões | R$ 208.375,32 | R$ 208.375,32 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.372 | 1.372 | 18.276,394701 | 18.276,394701 | 25.075.213,53 | 25.075.213,53 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 605 | 605 | 18.433,443759 | 18.433,443759 | 11.152.233,47 | 11.152.233,47 | 0,00 | ANBIMA — taxa indicativa D |
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 750 | 750 | 4.459,421186 | 4.459,421186 | 3.344.565,89 | 3.344.565,89 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 10.332 | 10.332 | 809,181122 | 809,181122 | 8.360.459,35 | 8.360.459,35 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| HZTA3 — Hortaz Tecnologia S.A. ON | 32.364 | 32.364 | 68,89 | 68,89 | 2.229.555,96 | 2.229.555,96 | 0,00 | B3 — preço de fechamento D |
-| ZMBV3 — Zimbro Varejo S.A. ON | 29.787 | 29.787 | 74,85 | 74,85 | 2.229.556,95 | 2.229.556,95 | 0,00 | B3 — preço de fechamento D |
-| ZFRT3 — Zafira Frigoríficos S.A. ON | 34.919 | 34.919 | 63,85 | 63,85 | 2.229.578,15 | 2.229.578,15 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 54.621.163,30 | 54.621.163,30 | 0,00 |  |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 22.874 | 22.874 | 4.410,782866 | 4.410,782866 | 100.892.247,28 | 100.892.247,28 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 5.512 | 5.512 | 18.303,726407 | 18.303,726407 | 100.890.139,96 | 100.890.139,96 | 0,00 | ANBIMA — taxa indicativa D |
+| CDB TARUMÃ 2028 — CDB Banco Tarumã S.A. — 117% do CDI — venc. 2028 | 36.863 | 36.863 | 1.368,476787 | 1.368,476787 | 50.446.159,80 | 50.446.159,80 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| HBVI12 — Debênture Hospitalar Bem Viver S.A. — CDI + 1,95% | 46.604 | 46.604 | 1.082,427964 | 1.082,427964 | 50.445.472,83 | 50.445.472,83 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 41.732 | 41.732 | 805,877327 | 805,877327 | 33.630.872,61 | 33.630.872,61 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 336.304.892,48 | 336.304.892,48 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 353.866,77 | 353.866,77 |
-| TED recebida — aplicação Cotista 3052 (13:11) | 39.555,62 | 39.555,62 |
-| Pagamento de resgate — Cotista 3059 (cotizado em 11/11/2026) | -67.477,86 | -67.477,86 |
-| Pagamento de resgate — Cotista 3066 (cotizado em 11/11/2026) | -29.868,84 | -29.868,84 |
-| Liquidação B3 — ajuste de futuros de 12/11/2026 | -106.629,90 | -106.629,90 |
-| Crédito de dividendos — ZFRT3 | 68.790,43 | — |
-| **Saldo final** | 258.236,22 | 189.445,79 |
+| Saldo inicial (D−1) | 1.475.298,72 | 1.475.298,72 |
+| TED recebida — aplicação [APL-1] Cotista único (09:30) | 820.163,76 | 820.163,76 |
+| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 07/04/2026) | -492.907,35 | -492.907,35 |
+| Pagamento de juros — HBVI12 | 2.844.708,16 | — |
+| TED recebida — remetente não identificado (CPF/CNPJ sem cadastro de cotista) | — | 28.910,96 |
+| **Saldo final** | 4.647.263,29 | 1.831.466,09 |
 
 ### 5.4 Valores a receber
 
-| Item | Alfa | Beta |
-|---|---|---|
-| DIVIDENDOS A RECEBER ZFRT3 — Dividendos a receber — ZFRT3 | — | 68.790,43 |
+Nenhum item.
 
 ### 5.5 Valores a pagar
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 39.555,62 | 39.555,62 |
-| RESGATES A PAGAR — Resgates cotizados em dias anteriores, a liquidar | 63.291,73 | 63.291,73 |
-| AJUSTE FUTUROS D — Ajuste diário de futuros de D (liquidação em D+1) | 31.495,25 | 31.495,25 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 820.163,76 | 820.163,76 |
+| RECURSOS A IDENTIFICAR — Créditos recebidos sem identificação (a identificar/devolver) | — | 28.910,96 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 2.873,43 | 2.873,43 | 368,20 | 368,20 | 0,00 | 0,00 | 3.241,63 | 3.241,63 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 15.225,57 | 15.225,57 | 1.884,33 | 1.884,33 | 0,00 | 0,00 | 17.109,90 | 17.109,90 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 174,56 | 174,56 | 21,66 | 21,66 | 0,00 | 0,00 | 196,22 | 196,22 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 39.285,71 | 39.285,71 | 198,41 | 198,41 | 0,00 | 0,00 | 39.484,12 | 39.484,12 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 126,32 | 126,32 | 15,79 | 15,79 | 0,00 | 0,00 | 142,11 | 142,11 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 926,32 | 926,32 | 115,79 | 115,79 | 0,00 | 0,00 | 1.042,11 | 1.042,11 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.525,81 | 2.525,81 | 87,10 | 87,10 | 0,00 | 0,00 | 2.612,91 | 2.612,91 | 0,00 |
-| PERF — Taxa de performance a pagar | 86.515,43 | 86.515,43 | 14.455,39 | 14.455,39 | 0,00 | 0,00 | 100.970,82 | 100.970,82 | 0,00 |
-| **Total** |  |  |  |  |  |  | 164.799,82 | 164.799,82 | 0,00 |
+| TXADM — Taxa de administração a pagar | 31.095,51 | 31.095,51 | 1.203,85 | 1.203,85 | 0,00 | 0,00 | 32.299,36 | 32.299,36 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 124.036,44 | 124.036,44 | 4.681,66 | 4.681,66 | 0,00 | 0,00 | 128.718,10 | 128.718,10 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 7.159,85 | 7.159,85 | 267,52 | 267,52 | 0,00 | 0,00 | 7.427,37 | 7.427,37 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 37.857,14 | 37.857,14 | 238,10 | 238,10 | 0,00 | 0,00 | 38.095,24 | 38.095,24 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 200,00 | 200,00 | 50,00 | 50,00 | 0,00 | 0,00 | 250,00 | 250,00 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 560,00 | 560,00 | 140,00 | 140,00 | 0,00 | 0,00 | 700,00 | 700,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 708,20 | 708,20 | 177,05 | 177,05 | 0,00 | 0,00 | 885,25 | 885,25 | 0,00 |
+| **Total** |  |  |  |  |  |  | 208.375,32 | 208.375,32 | 0,00 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,17% a.a. sobre R$ 54.580.467,39 ÷ 252 (linear, dias úteis) = R$ 368,20 · Beta: [base: PL do dia útil anterior] 0,17% a.a. sobre R$ 54.580.467,39 ÷ 252 (linear, dias úteis) = R$ 368,20
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,87% a.a. sobre R$ 54.580.467,39 ÷ 252 (linear, dias úteis) = R$ 1.884,33 · Beta: [base: PL do dia útil anterior] 0,87% a.a. sobre R$ 54.580.467,39 ÷ 252 (linear, dias úteis) = R$ 1.884,33
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 54.580.467,39 ÷ 252 (linear, dias úteis) = R$ 21,66 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 54.580.467,39 ÷ 252 (linear, dias úteis) = R$ 21,66
-- **AUDIT** — Alfa: R$ 50.000,00 (anual) ÷ 252 d.u. = R$ 198,41 · Beta: R$ 50.000,00 (anual) ÷ 252 d.u. = R$ 198,41
-- **ANBIMA** — Alfa: R$ 300,00 (mensal) ÷ 19 d.u. = R$ 15,79 · Beta: R$ 300,00 (mensal) ÷ 19 d.u. = R$ 15,79
-- **SELIC** — Alfa: R$ 2.200,00 (mensal) ÷ 19 d.u. = R$ 115,79 · Beta: R$ 2.200,00 (mensal) ÷ 19 d.u. = R$ 115,79
-- **CVM** — Alfa: R$ 5.400,00 (trimestral) ÷ 62 d.u. = R$ 87,10 · Beta: R$ 5.400,00 (trimestral) ÷ 62 d.u. = R$ 87,10
-- **PERF** — Alfa: 20% × max(0; cota bruta 5,49108234 − cota de referência 5,11561627 × fator 100% do CDI 1,06348574 = 5,44038495) × 9.958.187,57260082 cotas = R$ 100.970,82 · Beta: 20% × max(0; cota bruta 5,49108234 − cota de referência 5,11561627 × fator 100% do CDI 1,06348574 = 5,44038495) × 9.958.187,57260082 cotas = R$ 100.970,82
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 3052 | R$ 39.555,62 | 13:11 | 13/11/2026 | 13/11/2026 | 13/11/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 3059 | 12.323,47857339 cotas (R$ 67.477,86) |  | 29/10/2026 | 11/11/2026 | 13/11/2026 | não | não | cotizado em 11/11/2026 pela cota de 5,47555303; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 3066 | 5.460,44015741 cotas (R$ 29.868,84) |  | 22/10/2026 | 11/11/2026 | 13/11/2026 | não | não | cotizado em 11/11/2026 pela cota de 5,47004240; liquidação financeira hoje |
+| APL-1 | aplicacao | Cotista único | R$ 820.163,76 | 09:30 | 08/04/2026 | 08/04/2026 | 08/04/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista único | 31.299,17709454 cotas |  | 07/04/2026 | 08/04/2026 | 09/04/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista único | 105.975,39420280 cotas (R$ 492.907,35) |  | 06/04/2026 | 07/04/2026 | 08/04/2026 | não | não | cotizado em 07/04/2026 pela cota de 4,65114904; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 54.621.163,30 | 54.621.163,30 | 0,00 |
-| Caixa | 258.236,22 | 189.445,79 | -68.790,43 |
-| Valores a receber | 0,00 | 68.790,43 | 68.790,43 |
-| Valores a pagar | 134.342,60 | 134.342,60 | 0,00 |
-| Provisões | 164.799,82 | 164.799,82 | 0,00 |
-| PL base da cota | 54.580.257,10 | 54.580.257,10 | 0,00 |
-| Cota (8 casas) | 5,48094286 | 5,48094286 | 0,00000000 |
-| Aplicações convertidas | 39.555,62 | 39.555,62 | 0,00 |
-| Cotas emitidas | 7.216,93712384 | 7.216,93712384 | 0,00000000 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Total de ativos | 336.304.892,48 | 336.304.892,48 | 0,00 |
+| Caixa | 4.647.263,29 | 1.831.466,09 | -2.815.797,20 |
+| Valores a receber | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 820.163,76 | 849.074,72 | 28.910,96 |
+| Provisões | 208.375,32 | 208.375,32 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 339.930.374,87 | 337.085.666,71 | -2.844.708,16 |
+| PL base da cota | 339.923.616,69 | 337.078.908,53 | -2.844.708,16 |
+| Cota (8 casas) | 4,69039486 | 4,65114250 | -0,03925236 |
+| Aplicações convertidas | 820.163,76 | 820.163,76 | 0,00 |
+| Cotas emitidas | 174.860,28031337 | 176.335,97766570 | 1.475,69735233 |
+| Cotas resgatadas | 31.299,17709454 | 31.299,17709454 | 0,00000000 |
+| Valor dos resgates cotizados | 146.805,50 | 145.576,93 | -1.228,57 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 9.965.404,50972465 | 9.965.404,50972465 | 0,00000000 |
-| PL final | 54.619.812,69 | 54.619.812,69 | 0,00 |
+| Quantidade final de cotas | 72.615.842,58886863 | 72.617.318,28622095 | 1.475,69735232 |
+| PL final | 340.596.974,83 | 337.753.495,32 | -2.843.479,51 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO (com ressalva)
+**Parecer:** REPROVADO
 
-**Resumo:** Aprovar com ressalva: Dividendos de ZFRT3 pagos e não baixados.
+**Resumo:** Reprovar até o ajuste: Juros de HBVI12 não registrados; TED sem identificação na conta do fundo.
 
-**Dificuldade:** facil · **Cenários:** dividendo_recebido_nao_baixado
+**Dificuldade:** dificil · **Cenários:** juros_credito_nao_registrados, credito_nao_identificado
 
-### Achado 1: Dividendos de ZFRT3 pagos e não baixados
+### Achado 1: Juros de HBVI12 não registrados
 
-- **Gravidade:** ressalva · **Dimensões:** caixa
+- **Gravidade:** erro · **Dimensões:** caixa, cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não registrou o crédito dos dividendos de ZFRT3 pagos hoje e manteve o valor como "a receber".
-- **Onde olhar:** Caixa; Valores a receber; Informações de mercado — eventos
+- **Causa raiz:** Beta usou o PU "ex-juros" de HBVI12 mas não registrou a entrada dos juros (R$ 61,040000 × quantidade = R$ 2.844.708,16).
+- **Onde olhar:** Caixa — lançamentos; Carteira — HBVI12; Informações de mercado — agenda de eventos
 - **Raciocínio do analista:**
-  1. Caixa do Beta R$ 68.790,43 menor e valores a receber R$ 68.790,43 maiores. PL e cota iguais.
-  2. Os dividendos de ZFRT3 foram pagos hoje. O recebível tem que virar caixa.
-- **Ação:** Beta deve baixar o recebível e registrar o crédito. Sem impacto na cota; acompanhar em D+1.
+  1. Ativos iguais (inclusive o PU de HBVI12), mas o caixa do Beta tem R$ 2.844.708,16 a menos, e isso vai direto para o PL.
+  2. Hoje é dia de pagamento de juros de HBVI12. O PU de D já caiu pelo evento; quem não registrou a entrada perde os juros duas vezes: no preço e no caixa.
+- **Ação:** Beta deve registrar o recebimento dos juros e reprocessar a cota.
+
+### Achado 2: TED sem identificação na conta do fundo
+
+- **Gravidade:** pendencia · **Dimensões:** caixa
+- **Lado correto:** indeterminado · **Quem ajusta:** Passivo/distribuidor (identificação) e Alfa (registro)
+- **Causa raiz:** Entrou uma TED de R$ 28.910,96 de remetente sem cadastro de cotista. O Beta registrou como "recursos a identificar"; o Alfa não registrou. A natureza do crédito é desconhecida.
+- **Onde olhar:** Caixa — lançamentos; Valores a pagar — recursos a identificar; Movimentações de passivo (nenhuma boleta correspondente)
+- **Raciocínio do analista:**
+  1. Caixa do Beta R$ 28.910,96 maior que o do Alfa; PL igual, porque o Beta pôs o valor em uma conta transitória do passivo.
+  2. Não há boleta de aplicação com esse valor nem cotista com esse documento. Pode ser aplicação sem boleta, devolução de algum prestador ou erro de terceiro.
+  3. O tratamento do Beta (transitória, sem efeito no PL) é prudente. Converter em cotas ou reconhecer como receita sem saber a origem seria erro.
+- **Ação:** Acionar passivo/distribuidor para identificar o remetente. Se ninguém reclamar no prazo, devolver ao remetente. O Alfa deve registrar a transitória. Cota pode sair; o caixa fica pendente até a identificação.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | ambos |
-| caixa | Alfa |
+| cota | Alfa |
+| caixa | nenhum |
 | provisoes | ambos |
 
-### Valores corretos após os ajustes
+### Valores corretos
 
-| Item | Valor |
-|---|---|
-| Cota | 5,48094286 |
-| Quantidade final de cotas | 9.965.404,50972465 |
-| PL final | R$ 54.619.812,69 |
-| Caixa | R$ 258.236,22 |
-| Total de provisões | R$ 164.799,82 |
+Indefinidos: dependem de uma decisão externa (comitê, identificação do remetente ou aprovação formal).
+
+### Armadilhas deste caso
+
+- Sem identificação do remetente não se converte em cotas nem se reconhece como receita.

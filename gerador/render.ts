@@ -190,7 +190,7 @@ function secaoBatimento(c: Caso): string {
   };
   const linhasF: [string, string[]][] = [
     ['Total de ativos', f('totalAtivos')], ['Caixa', f('caixa')], ['Valores a receber', f('totalReceber')], ['Valores a pagar', f('totalPagar')], ['Provisões', f('totalProvisoes')],
-    ['PL base da cota', f('plBase')], ['Cota (8 casas)', f('cota', 8)], ['Aplicações convertidas', f('aplicacoesConvertidas')], ['Cotas emitidas', f('cotasEmitidas', 8)],
+    ['PL antes das apropriações do dia (saldos anteriores das provisões)', f('plAntesApropriacoes')], ['PL base da cota', f('plBase')], ['Cota (8 casas)', f('cota', 8)], ['Aplicações convertidas', f('aplicacoesConvertidas')], ['Cotas emitidas', f('cotasEmitidas', 8)],
     ['Cotas resgatadas', f('cotasResgatadas', 8)], ['Valor dos resgates cotizados', f('valorResgates')], ['IR de come-cotas', f('irComeCotas')],
     ['Cotas retiradas (come-cotas)', f('cotasComeCotas', 8)], ['Quantidade final de cotas', f('qtdFinal', 8)], ['PL final', f('plFinal')],
   ];

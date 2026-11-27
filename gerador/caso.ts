@@ -3,12 +3,12 @@
 import type { Rng } from './util.ts';
 import {
   r2, entre, inteiro, escolher, chance, amostra, truncar8, fmtR, fmtPct, fmtN, fmtData,
-  somaDias, somaDiasUteis, diaUtilAnterior, diasUteisNoMes, diasUteisDecorridosNoMes, ehDiaUtil,
+  somaDias, somaDiasUteis, diaUtilAnterior, diasUteisNoMes, diasUteisDecorridosNoMes, ehDiaUtil, diasUteisEntre, solicitacaoPara,
 } from './util.ts';
 import {
   PERFIS, NOMES_FUNDO, COMPLEMENTOS, GESTORAS, ANALISTAS, GESTORES_PF, COTISTAS, MARCOS_HISTORIA, PARTICULARIDADES_GERAIS, fatosPara,
 } from './catalogo.ts';
-import type { TipoFundo, PerfilTipo, Gestora } from './catalogo.ts';
+import type { TipoFundo, PerfilTipo, Gestora, PrazoResgate } from './catalogo.ts';
 import type { Posicao, ParamTaxa, Provisao, MovPassivo, Item, LadoId, Dimensao, CtxCalculo, Resultado } from './modelo.ts';
 import { ativosDoTipo, materializarAtivos, calcular, ctxCalculo, taxaDiaria } from './modelo.ts';
 
@@ -102,10 +102,13 @@ export interface Ctx {
   achados: Achado[];
   memoriaDisponivel: boolean;
   revelarFonte: boolean;
+  prazos?: PrazoResgate;
+  cotaHist: Record<string, number>;
 }
 
 export function gravidadeEfetiva(a: Achado): Gravidade {
-  return a.gravidade ?? (a.dimensoes.includes('cota') ? 'erro' : 'ressalva');
+  // qualquer diferença que mude a cota (8 casas), a quantidade de cotas ou o PL é erro; provisão diferente muda o PL
+  return a.gravidade ?? (a.dimensoes.includes('cota') || a.dimensoes.includes('provisoes') ? 'erro' : 'ressalva');
 }
 
 export const TABELA_CVM = [
@@ -143,6 +146,7 @@ export function textoTaxa(t: TaxaReg): string {
     : p.metodo === 'exponencial_252' ? 'apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis'
     : 'apropriada diariamente à razão de 1/365 por dia corrido';
   let r = `${t.nome}: ${s}, calculada sobre o PL do dia útil anterior, ${met}; paga ${t.pagamento}.`;
+  if (p.faixas && p.faixas.length && p.metodo === 'exponencial_252') r += ' Com faixas, o percentual efetivo é a média ponderada das faixas sobre o PL, aplicada no fator exponencial.';
   if (p.minimoMensal) r += ` Valor mínimo mensal de ${fmtR(p.minimoMensal)} (apropriado por dia útil do mês).`;
   return r;
 }
@@ -167,23 +171,17 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
     if (!op.nomesUsados.has(nome)) break;
   }
   op.nomesUsados.add(nome);
-  const gestoraPreferida = GESTORAS.filter((g) => {
-    const p = g.perfil;
-    if (tipo === 'FIDC' || tipo === 'FIAGRO') return /crédito|FIDC|CRA|Fiagro/i.test(p);
-    if (tipo === 'FII') return /imobili/i.test(p);
-    if (tipo === 'FIP') return /private equity|multiestrat/i.test(p);
-    if (tipo === 'PREV') return /previd/i.test(p);
-    if (tipo === 'IE') return /globais|offshore/i.test(p);
-    if (tipo === 'EXCLUSIVO') return /exclusivos|family|familiar/i.test(p);
-    if (tipo === 'FIC_FIM') return /fundos de fundos/i.test(p);
-    if (tipo === 'INFRA') return /infraestrutura/i.test(p);
-    if (tipo === 'FIA' || tipo === 'FIM_LS') return /ações|long/i.test(p);
-    if (tipo === 'FIM_MACRO' || tipo === 'CAMBIAL') return /macro|cambial|derivativos|multiestrat/i.test(p);
-    return /renda fixa|crédito|tesouraria/i.test(p);
-  });
+  const AFINIDADE: Record<TipoFundo, RegExp> = {
+    RF_DI: /renda fixa líquida|tesouraria/i, RF_CP: /crédito privado/i, FIM_MACRO: /macro|derivativos|multiestrat|juros/i,
+    FIM_LS: /long & short|small caps/i, FIA: /small caps/i, FIC_FIM: /fundos de fundos/i, PREV: /previd/i, FIDC: /FIDC/i,
+    FII: /imobili/i, FIP: /private equity|multiestrat/i, CAMBIAL: /cambial/i, IE: /globais|offshore/i, EXCLUSIVO: /exclusivos|familiar/i,
+    FIAGRO: /Fiagro|CRA/i, INFRA: /infraestrutura/i,
+  };
+  const gestoraPreferida = GESTORAS.filter((g) => AFINIDADE[tipo].test(g.perfil));
   const gestora = escolher(rng, gestoraPreferida.length ? gestoraPreferida : GESTORAS);
   const anoInicio = inteiro(rng, 2009, 2023);
   const inicio = `${anoInicio}-${String(inteiro(rng, 1, 12)).padStart(2, '0')}-${String(inteiro(rng, 1, 28)).padStart(2, '0')}`;
+  const publico = escolher(rng, perfil.publico);
   const fundo: Fundo = {
     codigo: `FND-${String(op.indice + 1).padStart(4, '0')}`,
     nome,
@@ -191,23 +189,25 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
     rotulo: perfil.rotulo,
     classe: perfil.classe,
     condominio: perfil.condominio,
-    publico: escolher(rng, perfil.publico),
+    publico,
     gestora,
     gestorResponsavel: escolher(rng, GESTORES_PF),
     analistaResponsavel: escolher(rng, ANALISTAS),
     inicio,
     cotistas: escolher(rng, COTISTAS[tipo]),
-    marcos: amostra(rng, fatosPara(MARCOS_HISTORIA, tipo, perfil.condominio, anoInicio), 2).map((f) => f.texto),
-    particularidades: amostra(rng, fatosPara(PARTICULARIDADES_GERAIS, tipo, perfil.condominio, anoInicio), 2).map((f) => f.texto),
+    marcos: amostra(rng, fatosPara(MARCOS_HISTORIA, tipo, perfil.condominio, anoInicio, publico), 2).map((f) => f.texto),
+    particularidades: amostra(rng, fatosPara(PARTICULARIDADES_GERAIS, tipo, perfil.condominio, anoInicio, publico), 2).map((f) => f.texto),
     pistas: [],
     historia: '',
   };
 
   // ---------------- números de D-1 ----------------
   let plAnterior = plAleatorio(rng, perfil.pl);
-  const cotaAnterior = Number(entre(rng, perfil.cota[0], perfil.cota[1]).toFixed(8));
-  const qtdAnterior = truncar8(plAnterior / cotaAnterior);
-  plAnterior = r2(qtdAnterior * cotaAnterior);
+  const cotaSorteada = Number(entre(rng, perfil.cota[0], perfil.cota[1]).toFixed(8));
+  const qtdAnterior = truncar8(plAnterior / cotaSorteada);
+  plAnterior = r2(qtdAnterior * cotaSorteada);
+  // a cota publicada é exatamente PL ÷ quantidade, truncada (o cabeçalho tem que ser reproduzível pelo analista)
+  const cotaAnterior = truncar8(plAnterior / qtdAnterior);
   const calc = ctxCalculo(data, plAnterior);
 
   // ---------------- regulamento ----------------
@@ -271,15 +271,21 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
     especificos: [],
     alteracoes: [],
   };
+  let prazo: PrazoResgate | undefined;
   if (perfil.condominio === 'aberto') {
     reg.horarioCorte = escolher(rng, ['14:00', '15:00', '16:00']);
-    const resg = escolher(rng, perfil.cotizacaoResgate);
+    prazo = escolher(rng, perfil.cotizacaoResgate);
+    const unidade = (n: number, corridos: boolean): string => (corridos ? 'dias corridos' : n === 1 ? 'dia útil' : 'dias úteis');
+    const txtCot = prazo.cot === 0
+      ? 'cotização no próprio dia do pedido, pela cota de fechamento desse dia'
+      : `cotização em D+${prazo.cot} ${unidade(prazo.cot, prazo.corridos)} após o pedido${prazo.corridos ? ' (se não for dia útil, no primeiro dia útil seguinte)' : ''}, pela cota de fechamento da data de cotização`;
+    const txtLiq = prazo.liq === 0 ? 'liquidação financeira no mesmo dia da cotização' : `liquidação financeira em D+${prazo.liq} ${unidade(prazo.liq, false)} após a cotização`;
     reg.cotizacao = [
       `Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até ${reg.horarioCorte}; recursos creditados após o horário de corte são convertidos no dia útil seguinte.`,
-      `Resgate: cotização ${resg}.`,
+      `Resgate: ${txtCot}; ${txtLiq}.`,
     ];
   } else {
-    reg.cotizacao = [escolher(rng, perfil.cotizacaoResgate)];
+    reg.cotizacao = [perfil.saidaFechado!];
   }
   reg.precificacao = precificacaoDoTipo(tipo);
 
@@ -310,33 +316,75 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
   const aPagar: Item[] = [];
   const aReceber: Item[] = [];
   const lancs: { historico: string; valor: number }[] = [];
+  // série curta de cotas passadas: a de D−1 é a do cabeçalho; as anteriores seguem a variação diária típica do tipo
+  const cotaHist: Record<string, number> = { [dAnterior]: cotaAnterior };
+  {
+    let dh = dAnterior;
+    let ch = cotaAnterior;
+    for (let i = 0; i < 3; i++) {
+      ch = truncar8(ch / (1 + entre(rng, perfil.retornoDia[0], perfil.retornoDia[1])));
+      dh = diaUtilAnterior(dh);
+      cotaHist[dh] = ch;
+    }
+  }
+  const unico = tipo === 'EXCLUSIVO' || tipo === 'PREV';
   let seqCotista = inteiro(rng, 10, 900);
-  const cotista = (): string => `Cotista ${String(seqCotista++ * 7 % 9973).padStart(4, '0')}`;
+  const cotista = (): string => (unico ? 'Cotista único' : `Cotista ${String(seqCotista++ * 7 % 9973).padStart(4, '0')}`);
   if (perfil.condominio === 'aberto') {
+    const pz = prazo!;
+    const corte = Number(reg.horarioCorte!.slice(0, 2));
     const nAplic = inteiro(rng, 0, 3);
     for (let i = 0; i < nAplic; i++) {
+      const id = `APL-${i + 1}`;
       const v = r2(plAnterior * entre(rng, 0.0004, 0.005));
-      const h = `${String(inteiro(rng, 9, Number(reg.horarioCorte!.slice(0, 2)) - 1)).padStart(2, '0')}:${String(inteiro(rng, 0, 59)).padStart(2, '0')}`;
-      movs.push({ id: `APL-${i + 1}`, tipo: 'aplicacao', cotista: cotista(), valor: v, recebidoAs: h, solicitadoEm: data, cotizacao: data, liquidacao: data, converterHoje: true });
-      lancs.push({ historico: `TED recebida — aplicação ${cotista === undefined ? '' : movs[movs.length - 1].cotista} (${h})`, valor: v });
+      const h = `${String(inteiro(rng, 9, corte - 1)).padStart(2, '0')}:${String(inteiro(rng, 0, 59)).padStart(2, '0')}`;
+      const quem = cotista();
+      movs.push({ id, tipo: 'aplicacao', cotista: quem, valor: v, recebidoAs: h, solicitadoEm: data, cotizacao: data, liquidacao: data, converterHoje: true });
+      lancs.push({ historico: `TED recebida — aplicação [${id}] ${quem} (${h})`, valor: v });
     }
-    const nResg = inteiro(rng, 0, 2);
+    // resgates que cotizam hoje: a data do pedido decorre do prazo do regulamento
+    const solHoje = solicitacaoPara(data, pz.cot, pz.corridos);
+    const nResg = solHoje ? inteiro(rng, 0, 2) : 0; // sem data de pedido possível, não há resgate cotizando hoje
     for (let i = 0; i < nResg; i++) {
       const cotas = truncar8(qtdAnterior * entre(rng, 0.0004, 0.004));
-      movs.push({ id: `RSG-${i + 1}`, tipo: 'resgate', cotista: cotista(), cotas, solicitadoEm: somaDias(data, -inteiro(rng, 1, 30)), cotizacao: data, liquidacao: somaDiasUteis(data, inteiro(rng, 1, 2)), converterHoje: true });
+      movs.push({ id: `RSG-${i + 1}`, tipo: 'resgate', cotista: cotista(), cotas, solicitadoEm: solHoje!, cotizacao: data, liquidacao: somaDiasUteis(data, pz.liq), converterHoje: true });
     }
-    const nLiq = inteiro(rng, 0, 2);
-    for (let i = 0; i < nLiq; i++) {
-      const cotaC = Number((cotaAnterior * (1 - entre(rng, -0.002, 0.004))).toFixed(8));
-      const cotas = truncar8(qtdAnterior * entre(rng, 0.0004, 0.003));
-      const valor = r2(cotas * cotaC);
-      const cz = somaDiasUteis(data, -inteiro(rng, 1, 2));
-      movs.push({ id: `LIQ-${i + 1}`, tipo: 'resgate', cotista: cotista(), cotas, valor, solicitadoEm: somaDias(cz, -inteiro(rng, 0, 30)), cotizacao: cz, liquidacao: data, converterHoje: false, observacao: `cotizado em ${fmtData(cz)} pela cota de ${fmtN(cotaC, 8)}; liquidação financeira hoje` });
-      lancs.push({ historico: `Pagamento de resgate — ${movs[movs.length - 1].cotista} (cotizado em ${fmtData(cz)})`, valor: -valor });
+    // resgates cotizados antes que liquidam hoje: valor = cotas × cota da data de cotização (a cota do cabeçalho, se D−1)
+    const czLiq = somaDiasUteis(data, -Math.max(pz.liq, 1));
+    const solLiq = pz.liq >= 1 ? solicitacaoPara(czLiq, pz.cot, pz.corridos) : null;
+    if (solLiq) {
+      const nLiq = inteiro(rng, 0, 2);
+      for (let i = 0; i < nLiq; i++) {
+        const id = `LIQ-${i + 1}`;
+        const cz = czLiq;
+        const cotaC = cotaHist[cz];
+        const cotas = truncar8(qtdAnterior * entre(rng, 0.0004, 0.003));
+        const valor = r2(cotas * cotaC);
+        const quem = cotista();
+        movs.push({ id, tipo: 'resgate', cotista: quem, cotas, valor, solicitadoEm: solLiq, cotizacao: cz, liquidacao: data, converterHoje: false, observacao: `cotizado em ${fmtData(cz)} pela cota de ${fmtN(cotaC, 8)}; liquidação financeira hoje` });
+        lancs.push({ historico: `Pagamento de resgate [${id}] — ${quem} (cotizado em ${fmtData(cz)})`, valor: -valor });
+      }
+    }
+    // resgates já cotizados que só liquidam depois de hoje: compõem "resgates a pagar"
+    let pendente = 0;
+    if (pz.liq >= 2) {
+      const nPen = inteiro(rng, 0, 2);
+      for (let i = 0; i < nPen; i++) {
+        const k = inteiro(rng, 1, pz.liq - 1);
+        const cz = somaDiasUteis(data, -k);
+        const solPen = solicitacaoPara(cz, pz.cot, pz.corridos);
+        if (!solPen) continue;
+        const cotaC = cotaHist[cz];
+        const cotas = truncar8(qtdAnterior * entre(rng, 0.0004, 0.003));
+        const valor = r2(cotas * cotaC);
+        const liq = somaDiasUteis(cz, pz.liq);
+        movs.push({ id: `PEN-${i + 1}`, tipo: 'resgate', cotista: cotista(), cotas, valor, solicitadoEm: solPen, cotizacao: cz, liquidacao: liq, converterHoje: false, observacao: `cotizado em ${fmtData(cz)} pela cota de ${fmtN(cotaC, 8)}; liquidação em ${fmtData(liq)} (ainda a pagar)` });
+        pendente = r2(pendente + valor);
+      }
     }
     const totalAplic = r2(movs.filter((m) => m.tipo === 'aplicacao').reduce((a, m) => a + (m.valor ?? 0), 0));
     if (totalAplic > 0) aPagar.push({ codigo: 'APLIC A CONVERTER', descricao: 'Aplicações recebidas no dia, a converter em cotas', valor: totalAplic });
-    if (chance(rng, 0.5)) aPagar.push({ codigo: 'RESGATES A PAGAR', descricao: 'Resgates cotizados em dias anteriores, a liquidar', valor: r2(plAnterior * entre(rng, 0.0005, 0.004)) });
+    if (pendente > 0) aPagar.push({ codigo: 'RESGATES A PAGAR', descricao: 'Resgates já cotizados e ainda não liquidados', valor: pendente });
   }
 
   // ---------------- futuros ----------------
@@ -450,13 +498,19 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
     // configuração provisória só para obter a cota bruta (antes da performance) do dia
     base.perf = { pct: 0.2, cotaBase: 0.0001, dataBase: dataBasePerf, fatorBenchmark: 1, benchmark: perfCfg.benchmark };
     const cotaBruta = calcular(base, calc).cotaBrutaPerf!;
-    const fator = Number((1 + entre(rng, 0.004, 0.075)).toFixed(8));
+    const duPerf = diasUteisEntre(dataBasePerf, data);
+    const fatorCdi = Math.pow(1 + CDI_AA, duPerf / 252);
+    const ehCdi = perfCfg.benchmark === '100% do CDI';
+    const fator = Number((ehCdi ? fatorCdi : fatorCdi * (1 + entre(rng, -0.08, 0.12))).toFixed(8));
     const excesso = entre(rng, 0.003, 0.03);
     const ref = cotaBruta * (1 - excesso);
     base.perf = { pct: 0.2, cotaBase: Number((ref / fator).toFixed(8)), dataBase: dataBasePerf, fatorBenchmark: fator, benchmark: perfCfg.benchmark };
     const rP2 = calcular(base, calc);
     const prov = base.provisoes.find((p) => p.codigo === 'PERF')!;
-    prov.saldoAnterior = r2(prov.saldoAtual * (1 - ret * 8 + entre(rng, -0.04, 0.04)));
+    // provisão de D−1 pela mesma fórmula: P = pct/(1−pct) × max(0; PL(D−1) − referência(D−1) × quantidade)
+    const fatorD1 = ehCdi ? fator / Math.pow(1 + CDI_AA, 1 / 252) : fator / (1 + entre(rng, -0.012, 0.012));
+    const refD1 = base.perf!.cotaBase * fatorD1;
+    prov.saldoAnterior = r2((0.2 / 0.8) * Math.max(0, plAnterior - refD1 * qtdAnterior));
     void rP2;
     mercado.benchmarks.push(`Fator acumulado do ${perfCfg.benchmark} de ${fmtData(dataBasePerf)} até ${fmtData(data)}: ${fmtN(fator, 8)}`);
     reg.especificos.push(`Performance: cota de referência vigente = ${fmtN(base.perf.cotaBase, 8)} (cota da última cobrança efetiva, em ${fmtData(dataBasePerf)}).`);
@@ -486,7 +540,7 @@ export function montarContexto(rng: Rng, id: string, tipo: TipoFundo, op: Opcoes
   const ctx: Ctx = {
     id, rng, tipo, perfil, data, dAnterior, fundo, reg, base, alfa: base, beta: base, mercado, comunicacoes: [], calc,
     plAnterior, cotaAnterior, qtdAnterior, usados: new Set(), achados: [],
-    memoriaDisponivel: chance(rng, 0.6), revelarFonte: chance(rng, 0.5),
+    memoriaDisponivel: chance(rng, 0.6), revelarFonte: chance(rng, 0.5), prazos: prazo, cotaHist,
   };
   return ctx;
 }

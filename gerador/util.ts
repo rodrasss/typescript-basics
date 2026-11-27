@@ -35,10 +35,8 @@ export const r2 = (v: number): number => Math.round((v + Number.EPSILON * Math.s
 export const r6 = (v: number): number => Math.round(v * 1e6) / 1e6;
 export const r8 = (v: number): number => Math.round(v * 1e8) / 1e8;
 export function truncar8(v: number): number {
-  // evita erro de ponto flutuante (ex.: 1.23456789999999 vira 1.23456789)
-  const s = (v + 1e-12).toFixed(12);
-  const [i, d] = s.split('.');
-  return Number(`${i}.${d.slice(0, 8)}`);
+  // trunca (em direção a zero) na 8ª casa; use só em quocientes/produtos "livres", nunca em somas de valores já com 8 casas
+  return Math.trunc(v * 1e8) / 1e8;
 }
 export function arredondar8(v: number): number {
   return Number(v.toFixed(8));
@@ -119,3 +117,30 @@ export function ultimoDiaUtilDoMes(s: string): string {
 export const fmtData = (s: string): string => `${s.slice(8, 10)}/${s.slice(5, 7)}/${s.slice(0, 4)}`;
 const DIAS = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
 export const diaDaSemana = (s: string): string => DIAS[data(s).getUTCDay()];
+
+// ---------- datas auxiliares ----------
+export function proximoUtil(s: string): string {
+  let d = s;
+  while (!ehDiaUtil(d)) d = somaDias(d, 1);
+  return d;
+}
+export function diasUteisEntre(de: string, ate: string): number {
+  // dias úteis em (de, ate]
+  let n = 0;
+  for (let d = somaDias(de, 1); d <= ate; d = somaDias(d, 1)) if (ehDiaUtil(d)) n++;
+  return n;
+}
+/**
+ * Dia útil em que o pedido deve ser feito para cotizar em `cotizacao`, segundo o prazo do regulamento.
+ * Devolve null quando a data é inalcançável (ex.: prazo em dias corridos e o pedido cairia num fim de semana).
+ */
+export function solicitacaoPara(cotizacao: string, cot: number, corridos: boolean): string | null {
+  if (cot === 0) return cotizacao;
+  if (!corridos) return somaDiasUteis(cotizacao, -cot);
+  // corridos: o pedido é feito num dia útil s tal que proximoUtil(s + cot dias) = cotizacao
+  for (let k = 0; k < 6; k++) {
+    const s = somaDias(cotizacao, -cot - k);
+    if (ehDiaUtil(s) && proximoUtil(somaDias(s, cot)) === cotizacao) return s;
+  }
+  return null;
+}

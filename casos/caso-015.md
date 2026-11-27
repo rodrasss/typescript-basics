@@ -1,36 +1,36 @@
-# Caso caso-015 — Pequi Prime FIF RF Crédito Privado LP
+# Caso caso-015 — Pequi Prime FIF Incentivado em Infraestrutura RF
 
-> **Data-base (D):** 06/11/2026 (sexta-feira) · **D−1:** 05/11/2026 · **Fundo:** FND-0015
+> **Data-base (D):** 05/11/2026 (quinta-feira) · **D−1:** 04/11/2026 · **Fundo:** FND-0015
 
 ## 1. O fundo
 
-O Pequi Prime FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional, em Salvador/BA. Criado em 08/11/2022, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: público geral. Hoje seus cotistas são cerca de 6 mil cotistas qualificados via assessorias. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano. O gestor responsável é Isadora, e quem cuida da validação do fundo é Rafael. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; o fundo tem aplicações e resgates quase todos os dias. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. No fechamento de ontem (05/11/2026) o fundo tinha PL de R$ 81.794.018,39, cota de 1,92448146 e 42.501.847,94556049 cotas. Hoje, sexta-feira, 06/11/2026, é a data-base da validação.
+O Pequi Prime FIF Incentivado em Infraestrutura RF é gerido pela Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional, em Salvador/BA. Criado em 08/11/2022, compra debêntures de infraestrutura e entrega rendimento isento de IR ao cotista pessoa física. Público-alvo: público geral. Hoje seus cotistas são cerca de 9 mil cotistas pessoa física buscando isenção de IR. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Isadora, e quem cuida da validação do fundo é Rafael. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; o fundo tem aplicações e resgates quase todos os dias. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (04/11/2026) o fundo tinha PL de R$ 89.469.823,25, cota de 2,55303736 e 35.044.462,97854629 cotas. Hoje, quinta-feira, 05/11/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Renda Fixa Crédito Privado |
-| Classe | Classe de Renda Fixa — Crédito Privado |
+| Tipo | Infraestrutura (debêntures incentivadas) |
+| Classe | Classe de Renda Fixa — Infraestrutura (Lei 12.431) |
 | Condomínio | aberto |
 | Gestora | Itapuã Gestão (Salvador/BA) |
-| PL em D−1 | R$ 81.794.018,39 |
-| Cota em D−1 | 1,92448146 |
-| Quantidade de cotas em D−1 | 42.501.847,94556049 |
+| PL em D−1 | R$ 89.469.823,25 |
+| Cota em D−1 | 2,55303736 |
+| Quantidade de cotas em D−1 | 35.044.462,97854629 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,090% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,860% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,070% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,810% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 47.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 1.300,00 (mensal)
+- Auditoria independente: R$ 76.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 700,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 2.900,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ O Pequi Prime FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, gestora
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 83.711.434,86. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 85.485.518,64. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,18 +60,17 @@ O Pequi Prime FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, gestora
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+60 corridos (liquidação D+1 útil).
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Tributação: Incentivado (Lei 12.431): isento para PF, sem come-cotas
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).
-- CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual.
+- Debêntures incentivadas: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
 
 ## 3. Informações de mercado do dia
 
@@ -81,16 +80,17 @@ O Pequi Prime FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, gestora
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.382,041873 |  |
-| LINO11 | ANBIMA — PU pela taxa indicativa de D | 982,948986 |  |
-| PASU12 | ANBIMA — PU pela taxa indicativa de D | 995,400429 |  |
-| ATRI21 | ANBIMA — PU pela taxa indicativa de D | 1.013,591665 |  |
-| VCLA12 | ANBIMA — PU pela taxa indicativa de D | 963,231756 |  |
+| TSGE14 | ANBIMA — PU pela taxa indicativa de D | 1.102,863789 |  |
+| GASM13 | ANBIMA — PU pela taxa indicativa de D | 1.053,391189 |  |
+| SLNO11 | ANBIMA — PU pela taxa indicativa de D | 961,872220 |  |
+| RDCE13 | ANBIMA — PU pela taxa indicativa de D | 1.109,416261 |  |
+| EVSE11 | ANBIMA — PU pela taxa indicativa de D | 1.076,399032 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.373,397100 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **13:04** — *Gestora — mesa* — **Operação para amanhã**: Amanhã (07/11) vamos reduzir um pouco a posição mais líquida da carteira. Hoje não há boleta.
-- **18:15** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+- **10:59** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (06/11/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **11:41** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
 
 ## 5. Batimento Alfa × Beta
 
@@ -100,32 +100,35 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1,92517719 | 1,92517719 | 0,00000000 |
-| Quantidade final de cotas | 42.336.527,90000127 | 42.336.527,90000127 | 0,00000000 |
-| PL final | R$ 81.505.317,82 | R$ 81.505.317,82 | R$ 0,00 |
-| Caixa | R$ 696.755,82 | R$ 690.493,67 | R$ -6.262,15 |
-| Total de provisões | R$ 112.439,91 | R$ 106.177,76 | R$ -6.262,15 |
+| Cota de fechamento | 2,55620555 | 2,55620555 | 0,00000000 |
+| Quantidade final de cotas | 34.908.150,02990385 | 34.908.150,02990385 | 0,00000000 |
+| PL final | R$ 89.232.406,85 | R$ 89.232.406,85 | R$ 0,00 |
+| Caixa | R$ 358.992,63 | R$ 298.258,41 | R$ -60.734,22 |
+| Total de provisões | R$ 82.651,05 | R$ 21.916,83 | R$ -60.734,22 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.042 | 1.042 | 18.382,041873 | 18.382,041873 | 19.154.087,63 | 19.154.087,63 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 7.740 | 7.740 | 792,201601 | 792,201601 | 6.131.640,39 | 6.131.640,39 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| CDB PIRACE 2030 — CDB Banco Piracema S.A. — 100% do CDI — venc. 2030 | 5.808 | 5.808 | 1.319,701897 | 1.319,701897 | 7.664.828,62 | 7.664.828,62 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 12.477 | 12.477 | 982,948986 | 982,948986 | 12.264.254,50 | 12.264.254,50 | 0,00 | ANBIMA — taxa indicativa D |
-| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 10.780 | 10.780 | 995,400429 | 995,400429 | 10.730.416,62 | 10.730.416,62 | 0,00 | ANBIMA — taxa indicativa D |
-| ATRI21 — Debênture Agroindustrial Três Rios S.A. — CDI + 2,30% | 12.099 | 12.099 | 1.013,591665 | 1.013,591665 | 12.263.445,55 | 12.263.445,55 | 0,00 | ANBIMA — taxa indicativa D |
-| VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 13.528 | 13.528 | 963,231756 | 963,231756 | 13.030.599,20 | 13.030.599,20 | 0,00 | ANBIMA — taxa indicativa D |
-| **Total** |  |  |  |  | 81.239.272,51 | 81.239.272,51 | 0,00 |  |
+| TSGE14 — Debênture Transmissora Serra Geral S.A. — IPCA + 6,55% (incentivada Lei 12.431) | 17.060 | 17.060 | 1.102,863789 | 1.102,863789 | 18.814.856,24 | 18.814.856,24 | 0,00 | ANBIMA — taxa indicativa D |
+| GASM13 — Debênture Gasodutos do Médio Norte S.A. — IPCA + 6,80% (incentivada Lei 12.431) | 10.717 | 10.717 | 1.053,391189 | 1.053,391189 | 11.289.193,37 | 11.289.193,37 | 0,00 | ANBIMA — taxa indicativa D |
+| SLNO11 — Debênture Saneamento Litoral Norte S.A. — IPCA + 7,10% (incentivada Lei 12.431) | 19.561 | 19.561 | 961,872220 | 961,872220 | 18.815.182,50 | 18.815.182,50 | 0,00 | ANBIMA — taxa indicativa D |
+| RDCE13 — Debênture Rodovias do Cerrado S.A. — IPCA + 6,90% (incentivada Lei 12.431) | 15.263 | 15.263 | 1.109,416261 | 1.109,416261 | 16.933.020,39 | 16.933.020,39 | 0,00 | ANBIMA — taxa indicativa D |
+| EVSE11 — Debênture Eólica Ventos do Sertão S.A. — IPCA + 7,35% (incentivada Lei 12.431) | 11.362 | 11.362 | 1.076,399032 | 1.076,399032 | 12.230.045,80 | 12.230.045,80 | 0,00 | ANBIMA — taxa indicativa D |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 406 | 406 | 18.373,397100 | 18.373,397100 | 7.459.599,22 | 7.459.599,22 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 4.731 | 4.731 | 795,310064 | 795,310064 | 3.762.611,91 | 3.762.611,91 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 89.304.509,43 | 89.304.509,43 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 696.755,82 | 696.755,82 |
-| Pagamento da taxa de administração do mês anterior | — | -6.262,15 |
-| **Saldo final** | 696.755,82 | 690.493,67 |
+| Saldo inicial (D−1) | 434.841,42 | 434.841,42 |
+| Pagamento de resgate [LIQ-1] — Cotista 1624 (cotizado em 04/11/2026) | -69.257,67 | -69.257,67 |
+| Pagamento da taxa de administração do mês anterior | -5.068,88 | -5.068,88 |
+| Pagamento da taxa de custódia do mês anterior | -1.522,24 | -1.522,24 |
+| Pagamento da taxa de gestão do mês anterior | — | -60.734,22 |
+| **Saldo final** | 358.992,63 | 298.258,41 |
 
 ### 5.4 Valores a receber
 
@@ -139,50 +142,44 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 7.156,74 | 7.156,74 | 292,12 | 292,12 | 0,00 | 6.262,15 | 7.448,86 | 1.186,71 | -6.262,15 |
-| TXGES — Taxa de gestão a pagar | 65.194,18 | 65.194,18 | 2.791,38 | 2.791,38 | 0,00 | 0,00 | 67.985,56 | 67.985,56 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.537,75 | 1.537,75 | 64,92 | 64,92 | 0,00 | 0,00 | 1.602,67 | 1.602,67 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 32.638,89 | 32.638,89 | 186,51 | 186,51 | 0,00 | 0,00 | 32.825,40 | 32.825,40 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 94,74 | 94,74 | 31,58 | 31,58 | 0,00 | 0,00 | 126,32 | 126,32 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 205,26 | 205,26 | 68,42 | 68,42 | 0,00 | 0,00 | 273,68 | 273,68 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.090,32 | 2.090,32 | 87,10 | 87,10 | 0,00 | 0,00 | 2.177,42 | 2.177,42 | 0,00 |
-| **Total** |  |  |  |  |  |  | 112.439,91 | 106.177,76 | -6.262,15 |
+| TXADM — Taxa de administração a pagar | 5.551,63 | 5.551,63 | 248,53 | 248,53 | 5.068,88 | 5.068,88 | 731,28 | 731,28 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 66.518,43 | 66.518,43 | 2.875,82 | 2.875,82 | 0,00 | 60.734,22 | 69.394,25 | 8.660,03 | -60.734,22 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.667,21 | 1.667,21 | 71,01 | 71,01 | 1.522,24 | 1.522,24 | 215,98 | 215,98 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 9.349,21 | 9.349,21 | 301,59 | 301,59 | 0,00 | 0,00 | 9.650,80 | 9.650,80 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 73,68 | 73,68 | 36,84 | 36,84 | 0,00 | 0,00 | 110,52 | 110,52 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 305,26 | 305,26 | 152,63 | 152,63 | 0,00 | 0,00 | 457,89 | 457,89 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 2.003,23 | 2.003,23 | 87,10 | 87,10 | 0,00 | 0,00 | 2.090,33 | 2.090,33 | 0,00 |
+| **Total** |  |  |  |  |  |  | 82.651,05 | 21.916,83 | -60.734,22 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,09% a.a. sobre R$ 81.794.018,39 ÷ 252 (linear, dias úteis) = R$ 292,12 · Beta: [base: PL do dia útil anterior] 0,09% a.a. sobre R$ 81.794.018,39 ÷ 252 (linear, dias úteis) = R$ 292,12
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,86% a.a. sobre R$ 81.794.018,39 ÷ 252 (linear, dias úteis) = R$ 2.791,38 · Beta: [base: PL do dia útil anterior] 0,86% a.a. sobre R$ 81.794.018,39 ÷ 252 (linear, dias úteis) = R$ 2.791,38
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 81.794.018,39 ÷ 252 (linear, dias úteis) = R$ 64,92 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 81.794.018,39 ÷ 252 (linear, dias úteis) = R$ 64,92
-- **AUDIT** — Alfa: R$ 47.000,00 (anual) ÷ 252 d.u. = R$ 186,51 · Beta: R$ 47.000,00 (anual) ÷ 252 d.u. = R$ 186,51
-- **ANBIMA** — Alfa: R$ 600,00 (mensal) ÷ 19 d.u. = R$ 31,58 · Beta: R$ 600,00 (mensal) ÷ 19 d.u. = R$ 31,58
-- **SELIC** — Alfa: R$ 1.300,00 (mensal) ÷ 19 d.u. = R$ 68,42 · Beta: R$ 1.300,00 (mensal) ÷ 19 d.u. = R$ 68,42
-- **CVM** — Alfa: R$ 5.400,00 (trimestral) ÷ 62 d.u. = R$ 87,10 · Beta: R$ 5.400,00 (trimestral) ÷ 62 d.u. = R$ 87,10
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| RSG-1 | resgate | Cotista 1617 | 165.320,04555923 cotas |  | 23/10/2026 | 06/11/2026 | 09/11/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 1617 | 136.312,94864244 cotas |  | 06/10/2026 | 05/11/2026 | 06/11/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 1624 | 27.127,55650153 cotas (R$ 69.257,67) |  | 05/10/2026 | 04/11/2026 | 05/11/2026 | não | não | cotizado em 04/11/2026 pela cota de 2,55303736; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 81.239.272,51 | 81.239.272,51 | 0,00 |
-| Caixa | 696.755,82 | 690.493,67 | -6.262,15 |
+| Total de ativos | 89.304.509,43 | 89.304.509,43 | 0,00 |
+| Caixa | 358.992,63 | 298.258,41 | -60.734,22 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 112.439,91 | 106.177,76 | -6.262,15 |
-| PL base da cota | 81.823.588,42 | 81.823.588,42 | 0,00 |
-| Cota (8 casas) | 1,92517719 | 1,92517719 | 0,00000000 |
+| Provisões | 82.651,05 | 21.916,83 | -60.734,22 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 89.584.624,53 | 89.584.624,53 | 0,00 |
+| PL base da cota | 89.580.851,01 | 89.580.851,01 | 0,00 |
+| Cota (8 casas) | 2,55620555 | 2,55620555 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Cotas resgatadas | 165.320,04555922 | 165.320,04555922 | 0,00000000 |
-| Valor dos resgates cotizados | 318.270,38 | 318.270,38 | 0,00 |
+| Cotas resgatadas | 136.312,94864244 | 136.312,94864244 | 0,00000000 |
+| Valor dos resgates cotizados | 348.443,92 | 348.443,92 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 42.336.527,90000127 | 42.336.527,90000127 | 0,00000000 |
-| PL final | 81.505.317,82 | 81.505.317,82 | 0,00 |
+| Quantidade final de cotas | 34.908.150,02990385 | 34.908.150,02990385 | 0,00000000 |
+| PL final | 89.232.406,85 | 89.232.406,85 | 0,00 |
 
 ---
 
@@ -190,18 +187,18 @@ Nenhum item.
 
 **Parecer:** APROVADO (com ressalva)
 
-**Resumo:** Aprovar com ressalva: Pagamento da taxa de administração sem baixa no controle Alfa.
+**Resumo:** Aprovar com ressalva: Pagamento da taxa de gestão sem baixa no controle Alfa.
 
-**Dificuldade:** facil · **Cenários:** pagamento_taxa_nao_registrado
+**Dificuldade:** media · **Cenários:** pagamento_taxa_nao_registrado
 
-### Achado 1: Pagamento da taxa de administração sem baixa no controle Alfa
+### Achado 1: Pagamento da taxa de gestão sem baixa no controle Alfa
 
 - **Gravidade:** ressalva · **Dimensões:** caixa, provisoes
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** A taxa de administração do mês anterior (R$ 6.262,15) foi paga hoje; o Alfa não registrou nem a saída de caixa nem a baixa da provisão.
-- **Onde olhar:** Caixa; Provisões — TXADM (coluna pagamento); Regulamento — forma de pagamento das taxas
+- **Causa raiz:** A taxa de gestão do mês anterior (R$ 60.734,22) foi paga hoje; o Alfa não registrou nem a saída de caixa nem a baixa da provisão.
+- **Onde olhar:** Caixa; Provisões — TXGES (coluna pagamento); Regulamento — forma de pagamento das taxas
 - **Raciocínio do analista:**
-  1. Caixa do Alfa R$ 6.262,15 maior; provisão de taxa de administração do Alfa R$ 6.262,15 maior. As duas diferenças se anulam no PL.
+  1. Caixa do Alfa R$ 60.734,22 maior; provisão de taxa de gestão do Alfa R$ 60.734,22 maior. As duas diferenças se anulam no PL.
   2. Hoje está dentro do prazo de pagamento do regulamento (até o 5º dia útil) e o Beta mostra a saída. A apropriação do dia confere nos dois lados.
 - **Ação:** Alfa deve registrar o pagamento (caixa) e baixar a provisão. Cota aprovada com ressalva.
 
@@ -217,8 +214,8 @@ Nenhum item.
 
 | Item | Valor |
 |---|---|
-| Cota | 1,92517719 |
-| Quantidade final de cotas | 42.336.527,90000127 |
-| PL final | R$ 81.505.317,82 |
-| Caixa | R$ 690.493,67 |
-| Total de provisões | R$ 106.177,76 |
+| Cota | 2,55620555 |
+| Quantidade final de cotas | 34.908.150,02990385 |
+| PL final | R$ 89.232.406,85 |
+| Caixa | R$ 298.258,41 |
+| Total de provisões | R$ 21.916,83 |

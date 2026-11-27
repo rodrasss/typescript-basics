@@ -64,10 +64,10 @@ const PISTAS: Record<string, string[]> = {
   margem_lancada_como_despesa: ['O fundo deposita margem na B3 com frequência.'],
   taxa_reduzida_nao_aplicada: ['As taxas do fundo foram alteradas recentemente em assembleia.'],
   ambos_com_taxa_antiga: ['As taxas do fundo foram alteradas recentemente em assembleia.'],
-  minimo_mensal_ignorado: ['O contrato de administração prevê remuneração mínima.'],
+  minimo_mensal_ignorado: ['O contrato de administração foi aditado recentemente.'],
   taxa_sobre_pl_do_dia: ['A base de cálculo das taxas é um ponto sensível da parametrização.'],
-  taxa_por_dias_corridos: ['Segundas-feiras e vésperas de feriado costumam expor erros de contagem de dias.'],
-  taxa_gestao_sem_apropriacao: ['Rotinas de apropriação já deixaram de rodar em alguns fundos.'],
+  taxa_por_dias_corridos: ['O método de apropriação das taxas já foi questionado em auditoria.'],
+  taxa_gestao_sem_apropriacao: ['As rotinas diárias do administrador exigem acompanhamento próximo.'],
   performance_sem_reversao: ['A performance oscila bastante e o fundo vive perto da linha d’água.'],
   performance_data_base_errada: ['A performance depende de data-base e de fator de benchmark, e as pontas já divergiram nisso.'],
   performance_sem_linha_dagua: ['A virada de semestre costuma ser delicada para a performance.'],
@@ -109,7 +109,12 @@ export function compor(c: Ctx, cenarioIds: string[]): { historia: string; pistas
   const pistas: string[] = [];
   for (const id of cenarioIds) {
     const opcoes = PISTAS[id];
-    if (opcoes && chance(rng, 0.55)) pistas.push(escolher(rng, opcoes));
+    if (opcoes && chance(rng, 0.4)) pistas.push(escolher(rng, opcoes));
+  }
+  // isca: uma pista de outra categoria, para que as pistas não sejam diagnósticas
+  if (chance(rng, 0.4)) {
+    const outros = Object.keys(PISTAS).filter((k) => !cenarioIds.includes(k));
+    pistas.push(escolher(rng, PISTAS[escolher(rng, outros)]));
   }
   if (pistas.length) partes.push(pistas.join(' '));
   const clean = cenarioIds.every((id) => id === 'tudo_bate' || id === 'tudo_bate_com_ruido');

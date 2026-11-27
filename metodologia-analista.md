@@ -59,6 +59,8 @@ Impacto em R$ no PL, em fração de cota e para o cotista (quem entra/sai pela c
 
 Com mais de um achado, vale o mais grave (erro > pendência > ressalva > informativo).
 
+**Sem tolerância de materialidade nesta versão:** qualquer diferença que mude a cota (8 casas), o PL, a quantidade de cotas ou o saldo de uma provisão é erro, por menor que seja. Provisão diferente muda o PL, então reprova. Só vira ressalva o que não mexe em cota, PL nem passivo (por exemplo, um item de caixa classificado errado).
+
 ### 8. Formular a ação
 Quem ajusta, o que ajustar, com qual valor/fonte, e o que o analista do fundo deve saber (inclusive o que **não** precisa fazer). Se for um problema recorrente, sugerir a correção na origem (parametrização, cadastro, rotina).
 

@@ -1,41 +1,37 @@
-# Caso caso-046 — Jabuticaba Prime FIF Ações
+# Caso caso-046 — Arara Azul Institucional FIDC Responsabilidade Limitada
 
-> **Data-base (D):** 11/03/2026 (quarta-feira) · **D−1:** 10/03/2026 · **Fundo:** FND-0046
+> **Data-base (D):** 24/02/2026 (terça-feira) · **D−1:** 23/02/2026 · **Fundo:** FND-0046
 
 ## 1. O fundo
 
-O Jabuticaba Prime FIF Ações é gerido pela Varanda Capital, gestora de private equity com participações em empresas familiares do interior, em Belo Horizonte/MG. Criado em 02/12/2009, é um fundo de ações de gestão ativa, concentrado em poucas dezenas de papéis. Público-alvo: público geral. Hoje seus cotistas são um FoF de ações de terceiros com 22% do PL. Ao longo da vida, o fundo mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge e foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Juliana. Sobre a rotina: o fundo tem aplicações e resgates quase todos os dias; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. A carteira de ações tem pagadoras de dividendos relevantes. No fechamento de ontem (10/03/2026) o fundo tinha PL de R$ 1.161.636.635,11, cota de 19,08602538 e 60.863.202,89207080 cotas. Hoje, quarta-feira, 11/03/2026, é a data-base da validação.
+O Arara Azul Institucional FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA), em São Paulo/SP. Criado em 28/05/2010, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são dois fundos de crédito e uma seguradora. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Rafael. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. A classificação do saldo em compromissada já gerou ressalva de auditoria. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (23/02/2026) o fundo tinha PL de R$ 82.818.613,88, cota de 1.073,03437019 e 77.181,69723216 cotas. Hoje, terça-feira, 24/02/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Ações |
-| Classe | Classe de Ações |
-| Condomínio | aberto |
-| Gestora | Varanda Capital (Belo Horizonte/MG) |
-| PL em D−1 | R$ 1.161.636.635,11 |
-| Cota em D−1 | 19,08602538 |
-| Quantidade de cotas em D−1 | 60.863.202,89207080 |
+| Tipo | FIDC (direitos creditórios) |
+| Classe | Classe de FIDC — subclasse única (monocota) |
+| Condomínio | fechado |
+| Gestora | Quaresmeira Capital (São Paulo/SP) |
+| PL em D−1 | R$ 82.818.613,88 |
+| Cota em D−1 | 1.073,03437019 |
+| Quantidade de cotas em D−1 | 77.181,69723216 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,700% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-
-**Taxa de performance**
-
-- 20% sobre o que exceder SMLL; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
-- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Taxa de administração: 0,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,430% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,040% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 53.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 500,00 (mensal)
+- Auditoria independente: R$ 122.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
+- Agente de cobrança: R$ 10.000,00 (mensal)
+- Agência de classificação de risco (rating): R$ 54.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +41,7 @@ O Jabuticaba Prime FIF Ações é gerido pela Varanda Capital, gestora de privat
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 1.208.232.380,02. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 77.366.973,66. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,22 +61,21 @@ O Jabuticaba Prime FIF Ações é gerido pela Varanda Capital, gestora de privat
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+30 corridos (liquidação D+2 úteis).
+- Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
+- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Ações: preço de fechamento da B3 em D.
-- Eventos societários (dividendos, JCP, desdobramentos, grupamentos) reconhecidos na data "ex".
+- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 18,08931836 (cota da última cobrança efetiva, em 31/12/2025).
+- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
+- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
 
 ## 3. Informações de mercado do dia
 
@@ -90,22 +85,7 @@ O Jabuticaba Prime FIF Ações é gerido pela Varanda Capital, gestora de privat
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| QXTR3 | B3 — preço de fechamento de D | 17,89 |  |
-| QPLN3 | B3 — preço de fechamento de D | 18,73 |  |
-| KQSA3 | B3 — preço de fechamento de D | 56,29 |  |
-| YRBQ3 | B3 — preço de fechamento de D | 51,40 |  |
-| JZEL3 | B3 — preço de fechamento de D | 36,89 |  |
-| VJNR3 | B3 — preço de fechamento de D | 58,69 |  |
-| WQLA3 | B3 — preço de fechamento de D | 80,13 |  |
-| UQPA4 | B3 — preço de fechamento de D | 25,80 |  |
-
-**Eventos de ativos**
-
-- YRBQ3: dividendos de R$ 1,78 por ação; data-com 10/03/2026; negociação "ex" a partir de 11/03/2026; pagamento em 09/04/2026.
-
-**Benchmark**
-
-- Fator acumulado do SMLL de 31/12/2025 até 11/03/2026: 1,04232960
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.104,514175 |  |
 
 ## 4. Comunicações recebidas hoje
 
@@ -120,151 +100,118 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 19,26331307 | 19,35236284 | 0,08904977 |
-| Quantidade final de cotas | 61.184.782,02019063 | 61.182.489,26065146 | -2.292,75953916 |
-| PL final | R$ 1.178.621.611,17 | R$ 1.184.025.731,63 | R$ 5.404.120,46 |
-| Caixa | R$ 15.210.376,29 | R$ 15.210.376,29 | R$ 0,00 |
-| Total de provisões | R$ 6.938.503,02 | R$ 8.293.230,59 | R$ 1.354.727,57 |
+| Cota de fechamento | 1.073,66049402 | 1.073,66049402 | 0,00000000 |
+| Quantidade final de cotas | 77.181,69723216 | 77.181,69723216 | 0,00000000 |
+| PL final | R$ 82.866.939,18 | R$ 82.866.939,18 | R$ 0,00 |
+| Caixa | R$ 7.470.846,78 | R$ 2.556.897,27 | R$ -4.913.949,51 |
+| Total de provisões | R$ 176.351,23 | R$ 176.351,23 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 76.512 | 76.512 | 798,997155 | 798,997155 | 61.132.870,32 | 61.132.870,32 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| QXTR3 — Quixadá Transportes S.A. ON | 10.251.480 | 10.251.480 | 17,89 | 17,89 | 183.398.977,20 | 183.398.977,20 | 0,00 | B3 — preço de fechamento D |
-| QPLN3 — Quiplan Saúde S.A. ON | 5.875.034 | 5.875.034 | 18,73 | 18,73 | 110.039.386,82 | 110.039.386,82 | 0,00 | B3 — preço de fechamento D |
-| KQSA3 — Kaquissá Saneamento S.A. ON | 1.737.658 | 1.737.658 | 56,29 | 56,29 | 97.812.768,82 | 97.812.768,82 | 0,00 | B3 — preço de fechamento D |
-| YRBQ3 — Yrubá Químicos S.A. ON | 3.805.945 | 3.805.945 | 51,40 | 51,40 | 195.625.573,00 | 195.625.573,00 | 0,00 | B3 — preço de fechamento D |
-| JZEL3 — Jazê Elétrica S.A. ON | 2.651.472 | 2.651.472 | 36,89 | 36,89 | 97.812.802,08 | 97.812.802,08 | 0,00 | B3 — preço de fechamento D |
-| VJNR3 — Vajanra Energia S.A. ON | 3.333.201 | 3.333.201 | 58,69 | 58,69 | 195.625.566,69 | 195.625.566,69 | 0,00 | B3 — preço de fechamento D |
-| WQLA3 — Waqlá Alimentos S.A. ON | 1.525.845 | 1.525.845 | 80,13 | 80,13 | 122.265.959,85 | 122.265.959,85 | 0,00 | B3 — preço de fechamento D |
-| UQPA4 — Uquapé Petroquímica S.A. PN | 4.265.092 | 4.265.092 | 25,80 | 25,80 | 110.039.373,60 | 110.039.373,60 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 1.173.753.278,38 | 1.173.753.278,38 | 0,00 |  |
+| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 57.333.206,00 | 57.333.206,00 | 1,00 | 1,00 | 57.333.206,00 | 57.333.206,00 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
+| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 4.095.229,00 | 4.095.229,00 | 1,00 | 1,00 | 4.095.229,00 | 4.095.229,00 | 0,00 | Valor presente (custodiante) |
+| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 1.638.091,60 | 1.638.091,60 | 1,00 | 1,00 | 1.638.091,60 | 1.638.091,60 | 0,00 | Valor presente (custodiante) |
+| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 982.854,96 | 982.854,96 | 1,00 | 1,00 | 982.854,96 | 982.854,96 | 0,00 | Valor presente (custodiante) |
+| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 655.236,64 | 655.236,64 | 1,00 | 1,00 | 655.236,64 | 655.236,64 | 0,00 | Valor presente (custodiante) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 679 | 679 | 18.104,514175 | 18.104,514175 | 12.292.965,12 | 12.292.965,12 | 0,00 | ANBIMA — taxa indicativa D |
+| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -1.425.139,69 | -1.425.139,69 | -1.425.139,69 | -1.425.139,69 | 0,00 | Cálculo pelo aging do custodiante |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | — | 5.995 | — | 819,674648 | — | 4.913.949,51 | 4.913.949,51 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 75.572.443,63 | 80.486.393,14 | 4.913.949,51 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 6.840.165,86 | 6.840.165,86 |
-| TED recebida — aplicação Cotista 2793 (10:53) | 5.080.716,27 | 5.080.716,27 |
-| TED recebida — aplicação Cotista 2800 (11:32) | 4.517.503,46 | 4.517.503,46 |
-| Pagamento de resgate — Cotista 2821 (cotizado em 09/03/2026) | -1.228.009,30 | -1.228.009,30 |
-| **Saldo final** | 15.210.376,29 | 15.210.376,29 |
+| Saldo inicial (D−1) | 2.556.897,27 | 2.556.897,27 |
+| Saldo aplicado em compromissada over (classificado em disponibilidades) | 4.913.949,51 | — |
+| **Saldo final** | 7.470.846,78 | 2.556.897,27 |
 
 ### 5.4 Valores a receber
 
-| Item | Alfa | Beta |
-|---|---|---|
-| DIVIDENDOS A RECEBER YRBQ3 — Dividendos a receber — YRBQ3 (R$ 1,78/ação) | — | 6.774.582,10 |
+Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 9.598.219,73 | 9.598.219,73 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 52.653,18 | 52.653,18 | 7.375,47 | 7.375,47 | 0,00 | 0,00 | 60.028,65 | 60.028,65 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 551.503,28 | 551.503,28 | 78.364,38 | 78.364,38 | 0,00 | 0,00 | 629.867,66 | 629.867,66 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 6.391,56 | 6.391,56 | 921,93 | 921,93 | 0,00 | 0,00 | 7.313,49 | 7.313,49 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 17.246,03 | 17.246,03 | 210,32 | 210,32 | 0,00 | 0,00 | 17.456,35 | 17.456,35 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 159,09 | 159,09 | 22,73 | 22,73 | 0,00 | 0,00 | 181,82 | 181,82 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 10.859,02 | 10.859,02 | 236,07 | 236,07 | 0,00 | 0,00 | 11.095,09 | 11.095,09 | 0,00 |
-| PERF — Taxa de performance a pagar | 5.380.172,14 | 5.380.172,14 | 832.151,75 | 2.187.115,39 | 0,00 | 0,00 | 6.212.323,89 | 7.567.287,53 | 1.354.963,64 |
-| CVM (2) — Taxa de fiscalização CVM a pagar | 0,00 | — | 236,07 | — | 0,00 | — | 236,07 | — | -236,07 |
-| **Total** |  |  |  |  |  |  | 6.938.503,02 | 8.293.230,59 | 1.354.727,57 |
+| TXADM — Taxa de administração a pagar | 7.332,62 | 7.332,62 | 525,41 | 525,41 | 0,00 | 0,00 | 7.858,03 | 7.858,03 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 64.167,14 | 64.167,14 | 4.666,47 | 4.666,47 | 0,00 | 0,00 | 68.833,61 | 68.833,61 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.837,30 | 1.837,30 | 131,43 | 131,43 | 0,00 | 0,00 | 1.968,73 | 1.968,73 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 71.650,79 | 71.650,79 | 484,13 | 484,13 | 0,00 | 0,00 | 72.134,92 | 72.134,92 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 700,00 | 700,00 | 50,00 | 50,00 | 0,00 | 0,00 | 750,00 | 750,00 | 0,00 |
+| COBRANCA — Agente de cobrança a pagar | 7.777,78 | 7.777,78 | 555,56 | 555,56 | 0,00 | 0,00 | 8.333,34 | 8.333,34 | 0,00 |
+| RATING — Agência de classificação de risco (rating) a pagar | 13.071,43 | 13.071,43 | 214,29 | 214,29 | 0,00 | 0,00 | 13.285,72 | 13.285,72 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 3.098,36 | 3.098,36 | 88,52 | 88,52 | 0,00 | 0,00 | 3.186,88 | 3.186,88 | 0,00 |
+| **Total** |  |  |  |  |  |  | 176.351,23 | 176.351,23 | 0,00 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 1.161.636.635,11 ÷ 252 (linear, dias úteis) = R$ 7.375,47 · Beta: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 1.161.636.635,11 ÷ 252 (linear, dias úteis) = R$ 7.375,47
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,70% a.a. sobre R$ 1.161.636.635,11 ÷ 252 (linear, dias úteis) = R$ 78.364,38 · Beta: [base: PL do dia útil anterior] 1,70% a.a. sobre R$ 1.161.636.635,11 ÷ 252 (linear, dias úteis) = R$ 78.364,38
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 1.161.636.635,11 ÷ 252 (linear, dias úteis) = R$ 921,93 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 1.161.636.635,11 ÷ 252 (linear, dias úteis) = R$ 921,93
-- **AUDIT** — Alfa: R$ 53.000,00 (anual) ÷ 252 d.u. = R$ 210,32 · Beta: R$ 53.000,00 (anual) ÷ 252 d.u. = R$ 210,32
-- **ANBIMA** — Alfa: R$ 500,00 (mensal) ÷ 22 d.u. = R$ 22,73 · Beta: R$ 500,00 (mensal) ÷ 22 d.u. = R$ 22,73
-- **CVM** — Alfa: R$ 14.400,00 (trimestral) ÷ 61 d.u. = R$ 236,07 · Beta: R$ 14.400,00 (trimestral) ÷ 61 d.u. = R$ 236,07
-- **PERF** — Alfa: 20% × max(0; cota bruta 19,36538335 − cota de referência 18,08931836 × fator SMLL 1,04232960 = 18,85503197) × 60.863.202,89207080 cotas = R$ 6.212.323,89 · Beta: 20% × max(0; cota bruta 19,47669557 − cota de referência 18,08931836 × fator SMLL 1,04232960 = 18,85503197) × 60.863.202,89207080 cotas = R$ 7.567.287,53
-- **CVM (2)** — Alfa: R$ 14.400,00 (trimestral) ÷ 61 d.u. = R$ 236,07
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 2793 | R$ 5.080.716,27 | 10:53 | 11/03/2026 | 11/03/2026 | 11/03/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 2800 | R$ 4.517.503,46 | 11:32 | 11/03/2026 | 11/03/2026 | 11/03/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 2807 | 76.456,90247745 cotas |  | 23/02/2026 | 11/03/2026 | 13/03/2026 | sim | sim |  |
-| RSG-2 | resgate | Cotista 2814 | 100.228,19296185 cotas |  | 08/03/2026 | 11/03/2026 | 12/03/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 2821 | 64.283,63394472 cotas (R$ 1.228.009,30) |  | 07/02/2026 | 09/03/2026 | 11/03/2026 | não | não | cotizado em 09/03/2026 pela cota de 19,10298511; liquidação financeira hoje |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 1.173.753.278,38 | 1.173.753.278,38 | 0,00 |
-| Caixa | 15.210.376,29 | 15.210.376,29 | 0,00 |
-| Valores a receber | 0,00 | 6.774.582,10 | 6.774.582,10 |
-| Valores a pagar | 9.598.219,73 | 9.598.219,73 | 0,00 |
-| Provisões | 6.938.503,02 | 8.293.230,59 | 1.354.727,57 |
-| PL base da cota | 1.172.426.931,92 | 1.177.846.786,45 | 5.419.854,53 |
-| Cota (8 casas) | 19,26331307 | 19,35236284 | 0,08904977 |
-| Aplicações convertidas | 9.598.219,73 | 9.598.219,73 | 0,00 |
-| Cotas emitidas | 498.264,22355911 | 495.971,46401994 | -2.292,75953917 |
-| Cotas resgatadas | 176.685,09543928 | 176.685,09543928 | 0,00000000 |
-| Valor dos resgates cotizados | 3.403.540,31 | 3.419.274,08 | 15.733,77 |
+| Total de ativos | 75.572.443,63 | 80.486.393,14 | 4.913.949,51 |
+| Caixa | 7.470.846,78 | 2.556.897,27 | -4.913.949,51 |
+| Valores a receber | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 176.351,23 | 176.351,23 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 82.873.654,99 | 82.873.654,99 | 0,00 |
+| PL base da cota | 82.866.939,18 | 82.866.939,18 | 0,00 |
+| Cota (8 casas) | 1.073,66049402 | 1.073,66049402 | 0,00000000 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 61.184.782,02019063 | 61.182.489,26065146 | -2.292,75953916 |
-| PL final | 1.178.621.611,17 | 1.184.025.731,63 | 5.404.120,46 |
+| Quantidade final de cotas | 77.181,69723216 | 77.181,69723216 | 0,00000000 |
+| PL final | 82.866.939,18 | 82.866.939,18 | 0,00 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** APROVADO (com ressalva)
 
-**Resumo:** Reprovar até o ajuste: Provisão de Taxa de fiscalização CVM duplicada; Dividendos de YRBQ3 não provisionados.
+**Resumo:** Aprovar com ressalva: Compromissada over dentro do caixa.
 
-**Dificuldade:** media · **Cenários:** provisao_duplicada, dividendo_ex_nao_provisionado
+**Dificuldade:** media · **Cenários:** compromissada_como_caixa
 
-### Achado 1: Provisão de Taxa de fiscalização CVM duplicada
+### Achado 1: Compromissada over dentro do caixa
 
-- **Gravidade:** ressalva · **Dimensões:** provisoes
+- **Gravidade:** ressalva · **Dimensões:** caixa
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa criou hoje uma segunda linha de provisão para Taxa de fiscalização CVM, com a mesma apropriação diária. A despesa está contada duas vezes.
-- **Onde olhar:** Provisões — linhas com mesmo código/descrição
+- **Causa raiz:** Alfa classificou a compromissada over (R$ 4.913.949,51) como disponibilidade em vez de ativo.
+- **Onde olhar:** Caixa; Carteira — compromissada
 - **Raciocínio do analista:**
-  1. O Alfa tem uma linha a mais, "CVM (2)", com saldo anterior zero e a mesma apropriação da linha original.
-  2. O regulamento/contrato prevê uma única despesa. A segunda linha parece um cadastro duplicado.
-- **Ação:** Alfa deve excluir a linha duplicada e reprocessar.
-
-### Achado 2: Dividendos de YRBQ3 não provisionados
-
-- **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa precificou YRBQ3 "ex" mas não registrou os dividendos a receber.
-- **Onde olhar:** Valores a receber; Informações de mercado — eventos societários; Carteira — YRBQ3
-- **Raciocínio do analista:**
-  1. Os ativos batem, mas o Beta tem R$ 6.774.582,10 de dividendos a receber de YRBQ3 que o Alfa não tem.
-  2. YRBQ3 ficou "ex" em D: o preço de fechamento já não carrega o dividendo. Se o direito não entra como valor a receber, o fundo perde esse valor no PL.
-  3. O regulamento manda reconhecer o evento na data "ex", então o lado correto é o que provisionou.
-- **Ação:** Alfa deve registrar R$ 6.774.582,10 de dividendos a receber de YRBQ3 e reprocessar a cota.
+  1. O caixa do Alfa está R$ 4.913.949,51 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.
+  2. Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.
+- **Ação:** Alfa deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
-| caixa | ambos |
-| provisoes | Beta |
+| cota | ambos |
+| caixa | Beta |
+| provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 19,35236284 |
-| Quantidade final de cotas | 61.182.489,26065146 |
-| PL final | R$ 1.184.025.731,63 |
-| Caixa | R$ 15.210.376,29 |
-| Total de provisões | R$ 8.293.230,59 |
+| Cota | 1.073,66049402 |
+| Quantidade final de cotas | 77.181,69723216 |
+| PL final | R$ 82.866.939,18 |
+| Caixa | R$ 2.556.897,27 |
+| Total de provisões | R$ 176.351,23 |

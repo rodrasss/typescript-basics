@@ -1,37 +1,36 @@
-# Caso caso-034 — Cumaru II FIDC Responsabilidade Limitada
+# Caso caso-034 — Cumaru II Fiagro — Direitos Creditórios
 
-> **Data-base (D):** 30/06/2026 (terça-feira) · **D−1:** 29/06/2026 · **Fundo:** FND-0034
+> **Data-base (D):** 10/11/2026 (terça-feira) · **D−1:** 09/11/2026 · **Fundo:** FND-0034
 
 ## 1. O fundo
 
-Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Cumaru II FIDC Responsabilidade Limitada: a casa é uma gestora baiana de crédito privado e infraestrutura regional. Criado em 24/11/2013, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são dois fundos de crédito e uma seguradora (estrutura monocota, com coobrigação do cedente). Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas. O gestor responsável é Murilo, e quem cuida da validação do fundo é Renata. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. No fechamento de ontem (29/06/2026) o fundo tinha PL de R$ 124.406.259,46, cota de 1.152,35573868 e 107.958,20707776 cotas. Hoje, terça-feira, 30/06/2026, é a data-base da validação.
+Sob a gestão da Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas (Cuiabá/MT), o Cumaru II Fiagro — Direitos Creditórios é um dos fundos que mais exigem atenção na rotina de validação. Criado em 24/11/2013, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e fez uma nova emissão de cotas em 2024 para comprar mais um ativo. O gestor responsável é Murilo, e quem cuida da validação do fundo é Renata. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. Parte dos papéis de crédito do fundo não tem taxa indicativa ANBIMA divulgada. Já houve um dia em que dois erros se anularam e só foram descobertos dias depois. No fechamento de ontem (09/11/2026) o fundo tinha PL de R$ 182.582.223,67, cota de 53,78655070 e 3.394.570,22736050 cotas. Hoje, terça-feira, 10/11/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | FIDC (direitos creditórios) |
-| Classe | Classe de FIDC — subclasse única (monocota) |
+| Tipo | Fiagro (cadeias agroindustriais) |
+| Classe | Classe de Fiagro |
 | Condomínio | fechado |
-| Gestora | Itapuã Gestão (Salvador/BA) |
-| PL em D−1 | R$ 124.406.259,46 |
-| Cota em D−1 | 1.152,35573868 |
-| Quantidade de cotas em D−1 | 107.958,20707776 |
+| Gestora | Cerrado Vivo Gestão (Cuiabá/MT) |
+| PL em D−1 | R$ 182.582.223,67 |
+| Cota em D−1 | 53,78655070 |
+| Quantidade de cotas em D−1 | 3.394.570,22736050 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/11/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,320% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,460% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,200% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,820% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 83.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Auditoria independente: R$ 40.000,00 (anual) — contrato anual; provisão diária por 1/252
 - Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
-- Agente de cobrança: R$ 15.000,00 (mensal)
-- Agência de classificação de risco (rating): R$ 82.000,00 (anual)
+- Escrituração de cotas: R$ 9.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -41,7 +40,7 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Cumaru II FIDC Responsa
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 125.837.511,63. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 186.907.969,66. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +60,21 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Cumaru II FIDC Responsa
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: amortizações conforme cronograma do suplemento
+- Condomínio fechado: sem resgate; liquidez via B3.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
+- Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
+- CRA: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação do administrador (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
+- LCA: curva do papel.
 
 **Regras específicas deste fundo**
 
-- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
-- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
+- Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como "rendimentos a distribuir" (passivo) na data do anúncio (data-com), reduzindo o PL.
 
 ## 3. Informações de mercado do dia
 
@@ -85,12 +84,16 @@ Quem acompanha a Itapuã Gestão (Salvador/BA) conhece o Cumaru II FIDC Responsa
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
+| CRA0260C3D4 | ANBIMA — PU pela taxa indicativa de D | 1.064,418921 |  |
 | LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.408,951591 |  |
+| CRA0260A1B2 | ANBIMA | sem taxa indicativa divulgada para o ativo |  |
+| CRA0260A1B2 | Comitê de precificação (ata de 19/09/2026) | 998,278504 |  |
+| CRA0260A1B2 | B3 — último negócio no secundário (06/11/2026) | 987,939547 | volume de R$ 2.900.000,00 |
 
 ## 4. Comunicações recebidas hoje
 
-- **08:10** — *Administrador — comunicado ao mercado* — **Amortização**: Comunicamos o pagamento, em 30/06/2026, de amortização de R$ 10,64 por cota, conforme cronograma do suplemento.
-- **09:00** — *Gestora — operacional* — **Previsão de resgates**: Para a semana que vem, esperamos resgates um pouco acima da média por causa de rebalanceamento de um FoF. Só aviso.
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -100,33 +103,29 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1.142,13313584 | 1.152,77313581 | 10,63999997 |
-| Quantidade final de cotas | 107.958,20707776 | 107.958,20707776 | 0,00000000 |
-| PL final | R$ 123.302.645,59 | R$ 124.451.320,91 | R$ 1.148.675,32 |
-| Caixa | R$ 4.342.466,04 | R$ 5.491.141,36 | R$ 1.148.675,32 |
-| Total de provisões | R$ 279.232,76 | R$ 279.232,76 | R$ 0,00 |
+| Cota de fechamento | 53,82055621 | 53,65909273 | -0,16146348 |
+| Quantidade final de cotas | 3.394.570,22736050 | 3.394.570,22736050 | 0,00000000 |
+| PL final | R$ 182.697.657,73 | R$ 182.149.558,61 | R$ -548.099,12 |
+| Caixa | R$ 6.373.128,72 | R$ 6.373.128,72 | R$ 0,00 |
+| Total de provisões | R$ 77.043,61 | R$ 77.043,61 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 85.762.559,44 | 85.762.559,44 | 1,00 | 1,00 | 85.762.559,44 | 85.762.559,44 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
-| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 6.125.897,10 | 6.125.897,10 | 1,00 | 1,00 | 6.125.897,10 | 6.125.897,10 | 0,00 | Valor presente (custodiante) |
-| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 2.450.358,84 | 2.450.358,84 | 1,00 | 1,00 | 2.450.358,84 | 2.450.358,84 | 0,00 | Valor presente (custodiante) |
-| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 1.470.215,30 | 1.470.215,30 | 1,00 | 1,00 | 1.470.215,30 | 1.470.215,30 | 0,00 | Valor presente (custodiante) |
-| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 980.143,54 | 980.143,54 | 1,00 | 1,00 | 980.143,54 | 980.143,54 | 0,00 | Valor presente (custodiante) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 936 | 936 | 18.408,951591 | 18.408,951591 | 17.230.778,69 | 17.230.778,69 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 9.176 | 9.176 | 801,141193 | 801,141193 | 7.351.271,59 | 7.351.271,59 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -2.131.812,19 | -2.131.812,19 | -2.131.812,19 | -2.131.812,19 | 0,00 | Cálculo pelo aging do custodiante |
-| **Total** |  |  |  |  | 119.239.412,31 | 119.239.412,31 | 0,00 |  |
+| CRA0260A1B2 — CRA Securitizadora Piracema — série 45 (lastro: CPR de soja) — CDI + 3,10% | 53.013 | 53.013 | 998,278504 | 987,939547 | 52.921.738,33 | 52.373.639,21 | -548.099,12 | Alfa: Comitê de precificação (ata de 19/09/2026) / Beta: Último negócio B3 |
+| CRA0260C3D4 — CRA Securitizadora Piracema — série 51 (lastro: cédulas de cooperativa) — IPCA + 8,20% | 41.433 | 41.433 | 1.064,418921 | 1.064,418921 | 44.102.069,15 | 44.102.069,15 | 0,00 | ANBIMA — taxa indicativa D |
+| CRA0260E5F6 — CRA Securitizadora Araçá — série 12 (lastro: duplicatas de insumos) — CDI + 4,00% | 45.070 | 45.070 | 978,513746 | 978,513746 | 44.101.614,53 | 44.101.614,53 | 0,00 | Preço do comitê de precificação do administrador |
+| LCA ARANDU 2027 — LCA Banco Arandu S.A. — 93% do CDI | 14.889 | 14.889 | 1.184,792465 | 1.184,792465 | 17.640.375,01 | 17.640.375,01 | 0,00 | Curva do papel |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 958 | 958 | 18.408,951591 | 18.408,951591 | 17.635.775,62 | 17.635.775,62 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 176.401.572,64 | 175.853.473,52 | -548.099,12 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 5.491.141,36 | 5.491.141,36 |
-| Pagamento de amortização de cotas — R$ 10,64 por cota | -1.148.675,32 | — |
-| **Saldo final** | 4.342.466,04 | 5.491.141,36 |
+| Saldo inicial (D−1) | 6.373.128,72 | 6.373.128,72 |
+| **Saldo final** | 6.373.128,72 | 6.373.128,72 |
 
 ### 5.4 Valores a receber
 
@@ -140,17 +139,24 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 32.291,29 | 32.291,29 | 1.579,76 | 1.579,76 | 0,00 | 0,00 | 33.871,05 | 33.871,05 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 144.902,67 | 144.902,67 | 7.207,66 | 7.207,66 | 0,00 | 0,00 | 152.110,33 | 152.110,33 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 2.965,18 | 2.965,18 | 148,10 | 148,10 | 0,00 | 0,00 | 3.113,28 | 3.113,28 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 14.821,43 | 14.821,43 | 329,37 | 329,37 | 0,00 | 0,00 | 15.150,80 | 15.150,80 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 1.047,62 | 1.047,62 | 52,38 | 52,38 | 0,00 | 0,00 | 1.100,00 | 1.100,00 | 0,00 |
-| COBRANCA — Agente de cobrança a pagar | 14.285,71 | 14.285,71 | 714,29 | 714,29 | 0,00 | 0,00 | 15.000,00 | 15.000,00 | 0,00 |
-| RATING — Agência de classificação de risco (rating) a pagar | 50.761,90 | 50.761,90 | 325,40 | 325,40 | 0,00 | 0,00 | 51.087,30 | 51.087,30 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 7.672,13 | 7.672,13 | 127,87 | 127,87 | 0,00 | 0,00 | 7.800,00 | 7.800,00 | 0,00 |
-| **Total** |  |  |  |  |  |  | 279.232,76 | 279.232,76 | 0,00 |
+| TXADM — Taxa de administração a pagar | 7.275,73 | 7.275,73 | 1.447,62 | 1.447,62 | 0,00 | 0,00 | 8.723,35 | 8.723,35 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 29.617,01 | 29.617,01 | 5.917,04 | 5.917,04 | 0,00 | 0,00 | 35.534,05 | 35.534,05 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.062,01 | 1.062,01 | 217,33 | 217,33 | 0,00 | 0,00 | 1.279,34 | 1.279,34 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 24.761,90 | 24.761,90 | 158,73 | 158,73 | 0,00 | 0,00 | 24.920,63 | 24.920,63 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 289,47 | 289,47 | 57,89 | 57,89 | 0,00 | 0,00 | 347,36 | 347,36 | 0,00 |
+| ESCRIT — Escrituração de cotas a pagar | 2.368,42 | 2.368,42 | 473,68 | 473,68 | 0,00 | 0,00 | 2.842,10 | 2.842,10 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 3.270,97 | 3.270,97 | 125,81 | 125,81 | 0,00 | 0,00 | 3.396,78 | 3.396,78 | 0,00 |
+| **Total** |  |  |  |  |  |  | 77.043,61 | 77.043,61 | 0,00 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 182.582.223,67 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.447,62 · Beta: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 182.582.223,67 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.447,62
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,82% a.a. sobre R$ 182.582.223,67 fator exponencial (1+taxa)^(1/252) − 1 = R$ 5.917,04 · Beta: [base: PL do dia útil anterior] 0,82% a.a. sobre R$ 182.582.223,67 fator exponencial (1+taxa)^(1/252) − 1 = R$ 5.917,04
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 182.582.223,67 fator exponencial (1+taxa)^(1/252) − 1 = R$ 217,33 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 182.582.223,67 fator exponencial (1+taxa)^(1/252) − 1 = R$ 217,33
+- **AUDIT** — Alfa: R$ 40.000,00 (anual) ÷ 252 d.u. = R$ 158,73 · Beta: R$ 40.000,00 (anual) ÷ 252 d.u. = R$ 158,73
+- **ANBIMA** — Alfa: R$ 1.100,00 (mensal) ÷ 19 d.u. = R$ 57,89 · Beta: R$ 1.100,00 (mensal) ÷ 19 d.u. = R$ 57,89
+- **ESCRIT** — Alfa: R$ 9.000,00 (mensal) ÷ 19 d.u. = R$ 473,68 · Beta: R$ 9.000,00 (mensal) ÷ 19 d.u. = R$ 473,68
+- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 62 d.u. = R$ 125,81 · Beta: R$ 7.800,00 (trimestral) ÷ 62 d.u. = R$ 125,81
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
@@ -160,58 +166,57 @@ Nenhum movimento de passivo no dia.
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 119.239.412,31 | 119.239.412,31 | 0,00 |
-| Caixa | 4.342.466,04 | 5.491.141,36 | 1.148.675,32 |
+| Total de ativos | 176.401.572,64 | 175.853.473,52 | -548.099,12 |
+| Caixa | 6.373.128,72 | 6.373.128,72 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 279.232,76 | 279.232,76 | 0,00 |
-| PL base da cota | 123.302.645,59 | 124.451.320,91 | 1.148.675,32 |
-| Cota (8 casas) | 1.142,13313584 | 1.152,77313581 | 10,63999997 |
+| Provisões | 77.043,61 | 77.043,61 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 182.706.055,85 | 182.157.956,73 | -548.099,12 |
+| PL base da cota | 182.697.657,75 | 182.149.558,63 | -548.099,12 |
+| Cota (8 casas) | 53,82055621 | 53,65909273 | -0,16146348 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 107.958,20707776 | 107.958,20707776 | 0,00000000 |
-| PL final | 123.302.645,59 | 124.451.320,91 | 1.148.675,32 |
+| Quantidade final de cotas | 3.394.570,22736050 | 3.394.570,22736050 | 0,00000000 |
+| PL final | 182.697.657,73 | 182.149.558,61 | -548.099,12 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO
+**Parecer:** PENDENTE
 
-**Resumo:** Reprovar até o ajuste: Amortização não deduzida.
+**Resumo:** Deixar pendente e escalar: CRA0260A1B2 sem referência confiável de preço.
 
-**Dificuldade:** media · **Cenários:** amortizacao_nao_registrada
+**Dificuldade:** media · **Cenários:** ativo_iliquido_sem_referencia
 
-### Achado 1: Amortização não deduzida
+### Achado 1: CRA0260A1B2 sem referência confiável de preço
 
-- **Gravidade:** erro · **Dimensões:** caixa, cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não registrou o pagamento de amortização de R$ 10,64/cota (R$ 1.148.675,32).
-- **Onde olhar:** Caixa — lançamentos; Comunicações — aviso de amortização; Regulamento — amortizações
+- **Gravidade:** pendencia · **Dimensões:** cota
+- **Lado correto:** indeterminado · **Quem ajusta:** Comitê de precificação (Alfa) com apoio do Beta
+- **Causa raiz:** Sem taxa ANBIMA para CRA0260A1B2: o Alfa usa o preço do comitê de 19/09/2026 (vencido, com mais de 30 dias) e o Beta usa o último negócio no secundário. Nenhum dos dois segue o manual de forma limpa.
+- **Onde olhar:** Carteira — CRA0260A1B2; Informações de mercado — comitê e negócio B3; Regulamento — precificação na ausência de ANBIMA
 - **Raciocínio do analista:**
-  1. Caixa do Beta R$ 1.148.675,32 maior. A diferença de cota é de aproximadamente R$ 10,64, exatamente o valor amortizado por cota.
-  2. Houve amortização hoje (comunicado ao mercado). O valor sai do PL na data do pagamento, então a cota de D tem que vir "ex-amortização".
-  3. A queda de cota em relação a D−1 no Alfa não é perda: é a amortização.
-- **Ação:** Beta deve registrar a saída de caixa da amortização e reprocessar a cota.
+  1. CRA0260A1B2: PU 998,278504 (Alfa, comitê) contra 987,939547 (Beta, negócio B3). Impacto de R$ -548.099,13 no PL.
+  2. O manual manda usar o preço do comitê na falta de ANBIMA, mas exige revisão ao menos mensal e manda levar ao comitê os negócios relevantes. A ata é de 19/09/2026, ou seja, vencida, e houve negócio recente.
+  3. Não dá para afirmar qual preço está certo só com o que recebi: é decisão do comitê de precificação. Não é o caso de escolher um lado.
+- **Ação:** Escalar para o comitê de precificação hoje: revisão extraordinária do PU de CRA0260A1B2 com base no negócio de B3. Segurar a divulgação até a definição, ou divulgar com o preço vigente do comitê e registrar formalmente o risco de reprocessamento, conforme a política da área.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | Alfa |
-| caixa | Alfa |
+| caixa | ambos |
 | provisoes | ambos |
 
-### Valores corretos após os ajustes
+### Valores corretos
 
-| Item | Valor |
-|---|---|
-| Cota | 1.142,13313584 |
-| Quantidade final de cotas | 107.958,20707776 |
-| PL final | R$ 123.302.645,59 |
-| Caixa | R$ 4.342.466,04 |
-| Total de provisões | R$ 279.232,76 |
+Indefinidos: dependem de uma decisão externa (comitê, identificação do remetente ou aprovação formal).
+
+### Armadilhas deste caso
+
+- Quando não há referência confiável, não escolher um lado: escalar para o comitê de precificação.

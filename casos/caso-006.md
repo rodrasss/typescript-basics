@@ -1,20 +1,20 @@
-# Caso caso-006 — Embaúba Total FIDC Responsabilidade Limitada
+# Caso caso-006 — Embaúba Total FIF RF Crédito Privado LP
 
-> **Data-base (D):** 02/10/2026 (sexta-feira) · **D−1:** 01/10/2026 · **Fundo:** FND-0006
+> **Data-base (D):** 02/09/2026 (quarta-feira) · **D−1:** 01/09/2026 · **Fundo:** FND-0006
 
 ## 1. O fundo
 
-Sob a gestão da Taquara Asset, gestora de crédito agro com originação própria (Londrina/PR), o Embaúba Total FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 18/10/2015, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são dois fundos de crédito e uma seguradora (estrutura monocota, com coobrigação do cedente). Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Isadora, e quem cuida da validação do fundo é Marina. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. No fechamento de ontem (01/10/2026) o fundo tinha PL de R$ 79.389.426,91, cota de 1.165,76394986 e 68.100,77367523 cotas. Hoje, sexta-feira, 02/10/2026, é a data-base da validação.
+Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional (Salvador/BA), o Embaúba Total FIF RF Crédito Privado LP é um dos fundos que mais exigem atenção na rotina de validação. Criado em 18/10/2015, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: investidores qualificados. Hoje seus cotistas são family offices e alguns fundos de fundos de terceiros. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e reduziu o prazo de cotização em 2024 para competir em plataformas. O gestor responsável é Isadora, e quem cuida da validação do fundo é Marina. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. Em dias de feed de preços instável, já houve ações com o fechamento do dia anterior. No fechamento de ontem (01/09/2026) o fundo tinha PL de R$ 588.920.496,88, cota de 4,13483053 e 142.429.173,62306590 cotas. Hoje, quarta-feira, 02/09/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | FIDC (direitos creditórios) |
-| Classe | Classe de FIDC — subclasse única (monocota) |
-| Condomínio | fechado |
-| Gestora | Taquara Asset (Londrina/PR) |
-| PL em D−1 | R$ 79.389.426,91 |
-| Cota em D−1 | 1.165,76394986 |
-| Quantidade de cotas em D−1 | 68.100,77367523 |
+| Tipo | Renda Fixa Crédito Privado |
+| Classe | Classe de Renda Fixa — Crédito Privado |
+| Condomínio | aberto |
+| Gestora | Itapuã Gestão (Salvador/BA) |
+| PL em D−1 | R$ 588.920.496,88 |
+| Cota em D−1 | 4,13483053 |
+| Quantidade de cotas em D−1 | 142.429.173,62306590 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,16 +22,15 @@ Sob a gestão da Taquara Asset, gestora de crédito agro com originação própr
 
 **Taxas**
 
-- Taxa de administração: 0,190% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 14.000,00 (apropriado por dia útil do mês).
-- Taxa de gestão: 0,530% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,140% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,610% a.a. sobre a parcela do PL até R$ 250.000.000,00; 0,400% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 126.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 900,00 (mensal)
-- Agente de cobrança: R$ 23.000,00 (mensal)
-- Agência de classificação de risco (rating): R$ 61.000,00 (anual)
+- Auditoria independente: R$ 58.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 500,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 3.800,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -41,7 +40,7 @@ Sob a gestão da Taquara Asset, gestora de crédito agro com originação própr
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 74.470.727,16. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 572.899.926,83. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +60,18 @@ Sob a gestão da Taquara Asset, gestora de crédito agro com originação própr
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: amortizações conforme cronograma do suplemento
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+60 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
+- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
-
-**Regras específicas deste fundo**
-
-- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
-- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
+- Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).
+- CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual.
 
 ## 3. Informações de mercado do dia
 
@@ -85,7 +81,11 @@ Sob a gestão da Taquara Asset, gestora de crédito agro com originação própr
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.179,826393 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.397,520395 |  |
+| TFSU13 | ANBIMA — PU pela taxa indicativa de D | 988,217048 |  |
+| EVSA12 | ANBIMA — PU pela taxa indicativa de D | 1.100,030711 |  |
+| PASU12 | ANBIMA — PU pela taxa indicativa de D | 1.032,783297 |  |
+| LINO11 | ANBIMA — PU pela taxa indicativa de D | 979,763725 |  |
 
 ## 4. Comunicações recebidas hoje
 
@@ -100,32 +100,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1.166,17535108 | 1.166,17535108 | 0,00000000 |
-| Quantidade final de cotas | 68.100,77367522 | 68.100,77367522 | 0,00000000 |
-| PL final | R$ 79.417.443,65 | R$ 79.417.443,65 | R$ 0,00 |
-| Caixa | R$ 3.508.041,04 | R$ 3.508.041,04 | R$ 0,00 |
-| Total de provisões | R$ 209.988,24 | R$ 209.988,24 | R$ 0,00 |
+| Cota de fechamento | 4,13699371 | 4,13697388 | -0,00001983 |
+| Quantidade final de cotas | 142.429.173,62306590 | 142.429.173,62306590 | 0,00000000 |
+| PL final | R$ 589.228.595,40 | R$ 589.225.771,03 | R$ -2.824,37 |
+| Caixa | R$ 2.558.497,54 | R$ 48.156.771,67 | R$ 45.598.274,13 |
+| Total de provisões | R$ 400.083,09 | R$ 402.907,43 | R$ 2.824,34 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 54.229.844,73 | 54.229.844,73 | 1,00 | 1,00 | 54.229.844,73 | 54.229.844,73 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
-| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 3.873.560,34 | 3.873.560,34 | 1,00 | 1,00 | 3.873.560,34 | 3.873.560,34 | 0,00 | Valor presente (custodiante) |
-| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 1.549.424,14 | 1.549.424,14 | 1,00 | 1,00 | 1.549.424,14 | 1.549.424,14 | 0,00 | Valor presente (custodiante) |
-| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 929.654,48 | 929.654,48 | 1,00 | 1,00 | 929.654,48 | 929.654,48 | 0,00 | Valor presente (custodiante) |
-| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 619.769,65 | 619.769,65 | 1,00 | 1,00 | 619.769,65 | 619.769,65 | 0,00 | Valor presente (custodiante) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 639 | 639 | 18.179,826393 | 18.179,826393 | 11.616.909,07 | 11.616.909,07 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 5.872 | 5.872 | 791,591867 | 791,591867 | 4.648.227,44 | 4.648.227,44 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -1.347.999,00 | -1.347.999,00 | -1.347.999,00 | -1.347.999,00 | 0,00 | Cálculo pelo aging do custodiante |
-| **Total** |  |  |  |  | 76.119.390,85 | 76.119.390,85 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 7.745 | 7.745 | 18.397,520395 | 18.397,520395 | 142.488.795,46 | 142.488.795,46 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 55.933 | — | 815,230260 | — | 45.598.274,13 | — | -45.598.274,13 | PU de ida + remuneração pactuada (taxa over) |
+| CDB TARUMÃ 2027 — CDB Banco Tarumã S.A. — 102% do CDI — venc. 2027 | 54.169 | 54.169 | 1.052,219387 | 1.052,219387 | 56.997.671,97 | 56.997.671,97 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 63.445 | 63.445 | 988,217048 | 988,217048 | 62.697.430,61 | 62.697.430,61 | 0,00 | ANBIMA — taxa indicativa D |
+| EVSA12 — Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45% | 77.722 | 77.722 | 1.100,030711 | 1.100,030711 | 85.496.586,92 | 85.496.586,92 | 0,00 | ANBIMA — taxa indicativa D |
+| PASU12 — Debênture Portos do Atlântico Sul S.A. — CDI + 1,80% | 93.820 | 93.820 | 1.032,783297 | 1.032,783297 | 96.895.728,92 | 96.895.728,92 | 0,00 | ANBIMA — taxa indicativa D |
+| LINO11 — Debênture Logística Integrada Norte S.A. — CDI + 2,10% | 98.897 | 98.897 | 979,763725 | 979,763725 | 96.895.693,11 | 96.895.693,11 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 587.070.181,12 | 541.471.906,99 | -45.598.274,13 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 3.508.041,04 | 3.508.041,04 |
-| **Saldo final** | 3.508.041,04 | 3.508.041,04 |
+| Saldo inicial (D−1) | 2.558.497,54 | 2.558.497,54 |
+| Saldo aplicado em compromissada over (classificado em disponibilidades) | — | 45.598.274,13 |
+| **Saldo final** | 2.558.497,54 | 48.156.771,67 |
 
 ### 5.4 Valores a receber
 
@@ -139,15 +139,14 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 14.559,80 | 14.559,80 | 666,67 | 666,67 | 0,00 | 0,00 | 15.226,47 | 15.226,47 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 36.136,23 | 36.136,23 | 1.669,70 | 1.669,70 | 0,00 | 0,00 | 37.805,93 | 37.805,93 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 2.045,85 | 2.045,85 | 94,51 | 94,51 | 0,00 | 0,00 | 2.140,36 | 2.140,36 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 102.000,00 | 102.000,00 | 500,00 | 500,00 | 0,00 | 0,00 | 102.500,00 | 102.500,00 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 42,86 | 42,86 | 42,86 | 42,86 | 0,00 | 0,00 | 85,72 | 85,72 | 0,00 |
-| COBRANCA — Agente de cobrança a pagar | 1.095,24 | 1.095,24 | 1.095,24 | 1.095,24 | 0,00 | 0,00 | 2.190,48 | 2.190,48 | 0,00 |
-| RATING — Agência de classificação de risco (rating) a pagar | 49.623,02 | 49.623,02 | 242,06 | 242,06 | 0,00 | 0,00 | 49.865,08 | 49.865,08 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 87,10 | 87,10 | 87,10 | 87,10 | 0,00 | 0,00 | 174,20 | 174,20 | 0,00 |
-| **Total** |  |  |  |  |  |  | 209.988,24 | 209.988,24 | 0,00 |
+| TXADM — Taxa de administração a pagar | 73.227,89 | 73.227,89 | 3.271,78 | 3.271,78 | 0,00 | 0,00 | 76.499,67 | 76.499,67 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 249.204,46 | 249.204,46 | 11.431,28 | 14.255,62 | 0,00 | 0,00 | 260.635,74 | 263.460,08 | 2.824,34 |
+| TXCUS — Taxa máxima de custódia a pagar | 10.007,05 | 10.007,05 | 467,40 | 467,40 | 0,00 | 0,00 | 10.474,45 | 10.474,45 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 44.190,48 | 44.190,48 | 230,16 | 230,16 | 0,00 | 0,00 | 44.420,64 | 44.420,64 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 23,81 | 23,81 | 23,81 | 23,81 | 0,00 | 0,00 | 47,62 | 47,62 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 180,95 | 180,95 | 180,95 | 180,95 | 0,00 | 0,00 | 361,90 | 361,90 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 7.476,92 | 7.476,92 | 166,15 | 166,15 | 0,00 | 0,00 | 7.643,07 | 7.643,07 | 0,00 |
+| **Total** |  |  |  |  |  |  | 400.083,09 | 402.907,43 | 2.824,34 |
 
 _Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
@@ -159,52 +158,70 @@ Nenhum movimento de passivo no dia.
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 76.119.390,85 | 76.119.390,85 | 0,00 |
-| Caixa | 3.508.041,04 | 3.508.041,04 | 0,00 |
+| Total de ativos | 587.070.181,12 | 541.471.906,99 | -45.598.274,13 |
+| Caixa | 2.558.497,54 | 48.156.771,67 | 45.598.274,13 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 209.988,24 | 209.988,24 | 0,00 |
-| PL base da cota | 79.417.443,65 | 79.417.443,65 | 0,00 |
-| Cota (8 casas) | 1.166,17535108 | 1.166,17535108 | 0,00000000 |
+| Provisões | 400.083,09 | 402.907,43 | 2.824,34 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 589.244.367,10 | 589.244.367,10 | 0,00 |
+| PL base da cota | 589.228.595,57 | 589.225.771,23 | -2.824,34 |
+| Cota (8 casas) | 4,13699371 | 4,13697388 | -0,00001983 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 68.100,77367522 | 68.100,77367522 | 0,00000000 |
-| PL final | 79.417.443,65 | 79.417.443,65 | 0,00 |
+| Quantidade final de cotas | 142.429.173,62306590 | 142.429.173,62306590 | 0,00000000 |
+| PL final | 589.228.595,40 | 589.225.771,03 | -2.824,37 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO
+**Parecer:** REPROVADO (com ressalva)
 
-**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
+**Resumo:** Reprovar até o ajuste: Taxa de gestão escalonada aplicada como taxa cheia; Compromissada over dentro do caixa.
 
-**Dificuldade:** facil · **Cenários:** tudo_bate
+**Dificuldade:** media · **Cenários:** taxa_escalonada_ignorada, compromissada_como_caixa
 
-Sem achados.
+### Achado 1: Taxa de gestão escalonada aplicada como taxa cheia
+
+- **Gravidade:** erro · **Dimensões:** provisoes
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta aplicou 0,610% sobre todo o PL, ignorando a taxa menor (0,400%) sobre a parcela acima de R$ 250.000.000,00.
+- **Onde olhar:** Provisões — TXGES; Regulamento — taxa de gestão escalonada
+- **Raciocínio do analista:**
+  1. A apropriação de taxa de gestão do Beta é maior.
+  2. O regulamento escalona a taxa: Taxa de gestão: 0,610% a.a. sobre a parcela do PL até R$ 250.000.000,00; 0,400% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Com PL de D−1 de R$ 588.920.496,88, parte do PL está na segunda faixa.
+  3. O Alfa fez a conta por faixas; o Beta aplicou a taxa cheia em tudo.
+- **Ação:** Beta deve parametrizar as faixas da taxa de gestão e reprocessar.
+
+### Achado 2: Compromissada over dentro do caixa
+
+- **Gravidade:** ressalva · **Dimensões:** caixa
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta classificou a compromissada over (R$ 45.598.274,13) como disponibilidade em vez de ativo.
+- **Onde olhar:** Caixa; Carteira — compromissada
+- **Raciocínio do analista:**
+  1. O caixa do Beta está R$ 45.598.274,13 maior e falta a linha de compromissada na carteira dele. O valor é idêntico; PL e cota batem.
+  2. Compromissada é aplicação financeira (ativo), não disponibilidade. A classificação errada distorce os relatórios de caixa e liquidez e o batimento diário.
+- **Ação:** Beta deve reclassificar a compromissada para a carteira. Aprovação da cota com ressalva.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | ambos |
-| caixa | ambos |
-| provisoes | ambos |
+| cota | Alfa |
+| caixa | Alfa |
+| provisoes | Alfa |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 1.166,17535108 |
-| Quantidade final de cotas | 68.100,77367522 |
-| PL final | R$ 79.417.443,65 |
-| Caixa | R$ 3.508.041,04 |
-| Total de provisões | R$ 209.988,24 |
-
-### Armadilhas deste caso
-
-- Não inventar problema: quando tudo bate e as apropriações conferem com o regulamento, a resposta certa é aprovar.
+| Cota | 4,13699371 |
+| Quantidade final de cotas | 142.429.173,62306590 |
+| PL final | R$ 589.228.595,40 |
+| Caixa | R$ 2.558.497,54 |
+| Total de provisões | R$ 400.083,09 |

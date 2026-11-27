@@ -1,36 +1,36 @@
-# Caso caso-118 — Juazeiro III FIF Multimercado Crédito Privado — Classe Exclusiva
+# Caso caso-118 — Juazeiro III FIF RF Referenciado DI
 
-> **Data-base (D):** 27/08/2026 (quinta-feira) · **D−1:** 26/08/2026 · **Fundo:** FND-0118
+> **Data-base (D):** 29/05/2026 (sexta-feira) · **D−1:** 28/05/2026 · **Fundo:** FND-0118
 
 ## 1. O fundo
 
-O Juazeiro III FIF Multimercado Crédito Privado — Classe Exclusiva é gerido pela Bromélia Investimentos, gestora familiar com processos manuais e planilhas próprias, em Campinas/SP. Criado em 02/06/2019, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são a holding patrimonial de uma família de industriais do Vale do Itajaí (SC). Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (26/08/2026) o fundo tinha PL de R$ 164.863.094,04, cota de 6,38401989 e 25.824.339,03357615 cotas. Hoje, quinta-feira, 27/08/2026, é a data-base da validação.
+Sob a gestão da Farol do Norte Capital, gestora de renda fixa líquida para plataformas digitais (São Paulo/SP), o Juazeiro III FIF RF Referenciado DI é um dos fundos que mais exigem atenção na rotina de validação. Criado em 02/06/2019, nasceu para ser o "caixa" de quem quer rendimento diário colado no CDI, com liquidez imediata. Público-alvo: público geral (plataformas digitais). Hoje seus cotistas são tesourarias de empresas médias que usam o fundo como caixa. Ao longo da vida, o fundo adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Beatriz. Sobre a rotina: a gestora costuma mandar boletas depois das 17h, especialmente às sextas-feiras; o fundo tem aplicações e resgates quase todos os dias. O contrato de administração foi aditado recentemente. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (28/05/2026) o fundo tinha PL de R$ 291.498.149,33, cota de 4,41990128 e 65.951.280,40361612 cotas. Hoje, sexta-feira, 29/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Fundo exclusivo (família/empresa) |
-| Classe | Classe Multimercado — Exclusiva para investidor profissional |
+| Tipo | Renda Fixa Referenciado DI |
+| Classe | Classe de Renda Fixa — Referenciada DI |
 | Condomínio | aberto |
-| Gestora | Bromélia Investimentos (Campinas/SP) |
-| PL em D−1 | R$ 164.863.094,04 |
-| Cota em D−1 | 6,38401989 |
-| Quantidade de cotas em D−1 | 25.824.339,03357615 |
+| Gestora | Farol do Norte Capital (São Paulo/SP) |
+| PL em D−1 | R$ 291.498.149,33 |
+| Cota em D−1 | 4,41990128 |
+| Quantidade de cotas em D−1 | 65.951.280,40361612 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,070% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,430% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Valor mínimo mensal de R$ 38.600,00 (apropriado por dia útil do mês).
+- Taxa de gestão: 0,280% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 - Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 41.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 3.200,00 (mensal)
+- Auditoria independente: R$ 67.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 700,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 5.100,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ O Juazeiro III FIF Multimercado Crédito Privado — Classe Exclusiva é gerido 
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 168.663.826,22. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 293.980.689,10. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +61,24 @@ O Juazeiro III FIF Multimercado Crédito Privado — Classe Exclusiva é gerido 
 **Aplicação, resgate e cota**
 
 - Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+1 útil (liquidação D+1 útil após a cotização).
+- Resgate: cotização no próprio dia do pedido, pela cota de fechamento desse dia; liquidação financeira no mesmo dia da cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)
+- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Títulos classificados como "mantidos até o vencimento": curva da taxa de aquisição.
-- Demais títulos e debêntures: taxa indicativa ANBIMA de D.
+- CDB: curva do papel ajustada por spread de crédito do emissor.
 
 **Regras específicas deste fundo**
 
-- Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
+- Come-cotas: no último dia útil de maio e de novembro, retém 15% do rendimento desde o último come-cotas, por redução da quantidade de cotas. (Simplificação do caso: cota de referência única de 4,13797002, de 28/11/2025, para todos os cotistas.)
+
+**Alterações recentes**
+
+- Aditivo ao contrato de administração, assinado em 11/05/2026: a partir de 29/05/2026 (inclusive) vale o mínimo mensal de R$ 38.600,00 para a taxa de administração.
 
 ## 3. Informações de mercado do dia
 
@@ -85,14 +88,15 @@ O Juazeiro III FIF Multimercado Crédito Privado — Classe Exclusiva é gerido 
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.375,065292 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.291,813779 |  |
-| VCLA12 | ANBIMA — PU pela taxa indicativa de D | 1.113,096995 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.286,132995 |  |
+| LFT 01/09/2031 | ANBIMA — PU pela taxa indicativa de D | 18.243,120908 |  |
+| LTN 01/01/2028 | ANBIMA — PU pela taxa indicativa de D | 804,793892 |  |
 
 ## 4. Comunicações recebidas hoje
 
-Nenhuma comunicação relevante recebida.
-
+- **08:40** — *Passivo/escrituração* — **Come-cotas de hoje**: Hoje (29/05/2026) é dia de come-cotas. Base: cota de referência 4,13797002 (28/11/2025), alíquota 15%.
+- **10:53** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **12:36** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (01/06/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
 
 ## 5. Batimento Alfa × Beta
 
@@ -102,32 +106,29 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 6,37686561 | 6,37686561 | 0,00000000 |
-| Quantidade final de cotas | 25.907.260,91908219 | 25.907.260,91908219 | 0,00000000 |
-| PL final | R$ 165.207.121,20 | R$ 165.207.121,20 | R$ 0,00 |
-| Caixa | R$ 2.024.560,19 | R$ 2.024.560,19 | R$ 0,00 |
-| Total de provisões | R$ 101.024,71 | R$ 101.024,71 | R$ 0,00 |
+| Cota de fechamento | 4,42208182 | 4,42207184 | -0,00000998 |
+| Quantidade final de cotas | 65.951.280,40361612 | 65.315.711,39395481 | -635.569,00966131 |
+| PL final | R$ 291.641.958,08 | R$ 288.830.768,06 | R$ -2.811.190,02 |
+| Caixa | R$ 1.112.669,12 | R$ 1.112.669,12 | R$ 0,00 |
+| Total de provisões | R$ 122.526,80 | R$ 123.184,39 | R$ 657,59 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 11.072 | 11.072 | 4.434,058976 | 4.434,058976 | 49.093.900,98 | 49.093.900,98 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.684 | 2.684 | 18.291,813779 | 18.291,813779 | 49.095.228,18 | 49.095.228,18 | 0,00 | ANBIMA — taxa indicativa D |
-| CDB ARANDU 2029 — CDB Banco Arandu S.A. — 107% do CDI — venc. 2029 | 20.966 | 20.966 | 1.170,720987 | 1.170,720987 | 24.545.336,21 | 24.545.336,21 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
-| VCLA12 — Debênture Varejo Casa & Lar S.A. — CDI + 2,75% | 22.052 | 22.052 | 1.113,096995 | 1.113,096995 | 24.546.014,93 | 24.546.014,93 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 20.262 | 20.262 | 807,626299 | 807,626299 | 16.364.124,07 | 16.364.124,07 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 163.644.604,37 | 163.644.604,37 | 0,00 |  |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 7.153 | 7.153 | 18.286,132995 | 18.286,132995 | 130.800.709,31 | 130.800.709,31 | 0,00 | ANBIMA — taxa indicativa D |
+| LFT 01/09/2031 — Letra Financeira do Tesouro — venc. 01/09/2031 | 3.186 | 3.186 | 18.243,120908 | 18.243,120908 | 58.122.583,21 | 58.122.583,21 | 0,00 | ANBIMA — taxa indicativa D |
+| LTN 01/01/2028 — Letra do Tesouro Nacional — venc. 01/01/2028 | 18.058 | 18.058 | 804,793892 | 804,793892 | 14.532.968,10 | 14.532.968,10 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 89.485 | 89.485 | 812,016869 | 812,016869 | 72.663.329,52 | 72.663.329,52 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| CDB ARANDU 2028 — CDB Banco Arandu S.A. — 100% do CDI — venc. 2028 | 11.502 | 11.502 | 1.263,452065 | 1.263,452065 | 14.532.225,65 | 14.532.225,65 | 0,00 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| **Total** |  |  |  |  | 290.651.815,79 | 290.651.815,79 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 1.495.778,47 | 1.495.778,47 |
-| TED recebida — aplicação Cotista 5656 (12:09) | 216.258,86 | 216.258,86 |
-| TED recebida — aplicação Cotista 5663 (10:44) | 153.386,82 | 153.386,82 |
-| TED recebida — aplicação Cotista 5670 (10:13) | 159.136,04 | 159.136,04 |
-| **Saldo final** | 2.024.560,19 | 2.024.560,19 |
+| Saldo inicial (D−1) | 1.112.669,12 | 1.112.669,12 |
+| **Saldo final** | 1.112.669,12 | 1.112.669,12 |
 
 ### 5.4 Valores a receber
 
@@ -135,92 +136,96 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 528.781,72 | 528.781,72 |
-| RESGATES A PAGAR — Resgates cotizados em dias anteriores, a liquidar | 361.018,51 | 361.018,51 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 8.241,06 | 8.241,06 | 457,95 | 457,95 | 0,00 | 0,00 | 8.699,01 | 8.699,01 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 51.363,56 | 51.363,56 | 2.813,14 | 2.813,14 | 0,00 | 0,00 | 54.176,70 | 54.176,70 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 2.332,92 | 2.332,92 | 130,84 | 130,84 | 0,00 | 0,00 | 2.463,76 | 2.463,76 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 26.682,54 | 26.682,54 | 162,70 | 162,70 | 0,00 | 0,00 | 26.845,24 | 26.845,24 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 857,14 | 857,14 | 47,62 | 47,62 | 0,00 | 0,00 | 904,76 | 904,76 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 2.742,86 | 2.742,86 | 152,38 | 152,38 | 0,00 | 0,00 | 2.895,24 | 2.895,24 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 4.920,00 | 4.920,00 | 120,00 | 120,00 | 0,00 | 0,00 | 5.040,00 | 5.040,00 | 0,00 |
-| **Total** |  |  |  |  |  |  | 101.024,71 | 101.024,71 | 0,00 |
+| TXADM — Taxa de administração a pagar | 24.591,01 | 24.591,01 | 1.272,41 | 1.930,00 | 0,00 | 0,00 | 25.863,42 | 26.521,01 | 657,59 |
+| TXGES — Taxa de gestão a pagar | 60.146,10 | 60.146,10 | 3.238,87 | 3.238,87 | 0,00 | 0,00 | 63.384,97 | 63.384,97 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 4.318,81 | 4.318,81 | 231,35 | 231,35 | 0,00 | 0,00 | 4.550,16 | 4.550,16 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 17.547,62 | 17.547,62 | 265,87 | 265,87 | 0,00 | 0,00 | 17.813,49 | 17.813,49 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 665,00 | 665,00 | 35,00 | 35,00 | 0,00 | 0,00 | 700,00 | 700,00 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 4.845,00 | 4.845,00 | 255,00 | 255,00 | 0,00 | 0,00 | 5.100,00 | 5.100,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.986,89 | 4.986,89 | 127,87 | 127,87 | 0,00 | 0,00 | 5.114,76 | 5.114,76 | 0,00 |
+| **Total** |  |  |  |  |  |  | 122.526,80 | 123.184,39 | 657,59 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 164.863.094,04 ÷ 252 (linear, dias úteis) = R$ 457,95 · Beta: [base: PL do dia útil anterior] 0,07% a.a. sobre R$ 164.863.094,04 ÷ 252 (linear, dias úteis) = R$ 457,95
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,43% a.a. sobre R$ 164.863.094,04 ÷ 252 (linear, dias úteis) = R$ 2.813,14 · Beta: [base: PL do dia útil anterior] 0,43% a.a. sobre R$ 164.863.094,04 ÷ 252 (linear, dias úteis) = R$ 2.813,14
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 164.863.094,04 ÷ 252 (linear, dias úteis) = R$ 130,84 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 164.863.094,04 ÷ 252 (linear, dias úteis) = R$ 130,84
-- **AUDIT** — Alfa: R$ 41.000,00 (anual) ÷ 252 d.u. = R$ 162,70 · Beta: R$ 41.000,00 (anual) ÷ 252 d.u. = R$ 162,70
-- **ANBIMA** — Alfa: R$ 1.000,00 (mensal) ÷ 21 d.u. = R$ 47,62 · Beta: R$ 1.000,00 (mensal) ÷ 21 d.u. = R$ 47,62
-- **SELIC** — Alfa: R$ 3.200,00 (mensal) ÷ 21 d.u. = R$ 152,38 · Beta: R$ 3.200,00 (mensal) ÷ 21 d.u. = R$ 152,38
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00 · Beta: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 5656 | R$ 216.258,86 | 12:09 | 27/08/2026 | 27/08/2026 | 27/08/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 5663 | R$ 153.386,82 | 10:44 | 27/08/2026 | 27/08/2026 | 27/08/2026 | sim | sim |  |
-| APL-3 | aplicacao | Cotista 5670 | R$ 159.136,04 | 10:13 | 27/08/2026 | 27/08/2026 | 27/08/2026 | sim | sim |  |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 163.644.604,37 | 163.644.604,37 | 0,00 |
-| Caixa | 2.024.560,19 | 2.024.560,19 | 0,00 |
+| Total de ativos | 290.651.815,79 | 290.651.815,79 | 0,00 |
+| Caixa | 1.112.669,12 | 1.112.669,12 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 889.800,23 | 889.800,23 | 0,00 |
-| Provisões | 101.024,71 | 101.024,71 | 0,00 |
-| PL base da cota | 164.678.339,62 | 164.678.339,62 | 0,00 |
-| Cota (8 casas) | 6,37686561 | 6,37686561 | 0,00000000 |
-| Aplicações convertidas | 528.781,72 | 528.781,72 | 0,00 |
-| Cotas emitidas | 82.921,88550605 | 82.921,88550605 | 0,00000000 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 122.526,80 | 123.184,39 | 657,59 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 291.647.384,48 | 291.647.384,48 | 0,00 |
+| PL base da cota | 291.641.958,11 | 291.641.300,52 | -657,59 |
+| Cota (8 casas) | 4,42208182 | 4,42207184 | -0,00000998 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
-| IR de come-cotas | 0,00 | 0,00 | 0,00 |
-| Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 25.907.260,91908219 | 25.907.260,91908219 | 0,00000000 |
-| PL final | 165.207.121,20 | 165.207.121,20 | 0,00 |
+| IR de come-cotas | 0,00 | 2.810.531,82 | 2.810.531,82 |
+| Cotas retiradas (come-cotas) | 0,00000000 | 635.569,00966131 | 635.569,00966131 |
+| Quantidade final de cotas | 65.951.280,40361612 | 65.315.711,39395481 | -635.569,00966131 |
+| PL final | 291.641.958,08 | 288.830.768,06 | -2.811.190,02 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO
+**Parecer:** REPROVADO
 
-**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
+**Resumo:** Reprovar até o ajuste: Come-cotas não processado; Taxa de administração sem o mínimo mensal.
 
-**Dificuldade:** facil · **Cenários:** tudo_bate
+**Dificuldade:** dificil · **Cenários:** come_cotas_nao_aplicado, minimo_mensal_ignorado
 
-Sem achados.
+### Achado 1: Come-cotas não processado
+
+- **Gravidade:** erro · **Dimensões:** cota
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa não processou o come-cotas de 29/05/2026.
+- **Onde olhar:** Movimentações do dia — come-cotas; Quantidade final de cotas; Regulamento — tributação; Comunicações — passivo
+- **Raciocínio do analista:**
+  1. A cota é igual, mas a quantidade final do Alfa é maior e ele não tem IR de come-cotas a recolher.
+  2. Hoje é o último dia útil de maio, dia de come-cotas para este fundo. Recalculei: (cota de D − cota de referência) × cotas × 15% bate com o Beta.
+  3. Se o come-cotas não é processado, o IR não é recolhido no prazo e as posições dos cotistas ficam erradas.
+- **Ação:** Alfa deve processar o come-cotas (redução de cotas + IR a recolher) antes de fechar o passivo.
+
+### Achado 2: Taxa de administração sem o mínimo mensal
+
+- **Gravidade:** erro · **Dimensões:** provisoes
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa apropriou só o percentual sobre o PL e ignorou o mínimo mensal de R$ 38.600,00, que passou a valer hoje e prevalece porque o percentual rende menos que o mínimo diário.
+- **Onde olhar:** Provisões — TXADM; Regulamento — taxa de administração (mínimo mensal) e alterações recentes
+- **Raciocínio do analista:**
+  1. A apropriação de taxa de administração difere entre os lados; o saldo anterior bate (até D−1 não havia mínimo).
+  2. Pelo percentual, a taxa diária fica abaixo de R$ 38.600,00 ÷ 20 dias úteis do mês = R$ 1.930,00. O regulamento manda cobrar o maior dos dois, então vale o mínimo.
+  3. O aditivo vale a partir de hoje (inclusive). O Beta aplicou o mínimo; o Alfa não.
+- **Ação:** Alfa deve parametrizar o mínimo mensal na taxa de administração a partir de hoje e reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | ambos |
+| cota | Beta |
 | caixa | ambos |
-| provisoes | ambos |
+| provisoes | Beta |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 6,37686561 |
-| Quantidade final de cotas | 25.907.260,91908219 |
-| PL final | R$ 165.207.121,20 |
-| Caixa | R$ 2.024.560,19 |
-| Total de provisões | R$ 101.024,71 |
-
-### Armadilhas deste caso
-
-- Não inventar problema: quando tudo bate e as apropriações conferem com o regulamento, a resposta certa é aprovar.
+| Cota | 4,42207184 |
+| Quantidade final de cotas | 65.315.711,39395481 |
+| PL final | R$ 288.830.768,06 |
+| Caixa | R$ 1.112.669,12 |
+| Total de provisões | R$ 123.184,39 |

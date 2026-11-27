@@ -1,20 +1,20 @@
-# Caso caso-009 — Angico Plus Fiagro — Direitos Creditórios
+# Caso caso-009 — Angico Plus FIP Multiestratégia
 
-> **Data-base (D):** 19/03/2026 (quinta-feira) · **D−1:** 18/03/2026 · **Fundo:** FND-0009
+> **Data-base (D):** 31/08/2026 (segunda-feira) · **D−1:** 28/08/2026 · **Fundo:** FND-0009
 
 ## 1. O fundo
 
-Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em crédito high grade (Porto Alegre/RS), o Angico Plus Fiagro — Direitos Creditórios é um dos fundos que mais exigem atenção na rotina de validação. Criado em 23/08/2020, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 40 mil cotistas pessoa física via B3. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de custodiante em 2024, com migração de carteira e de cadastros. O gestor responsável é Isadora, e quem cuida da validação do fundo é Diego. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. No fechamento de ontem (18/03/2026) o fundo tinha PL de R$ 925.152.419,33, cota de 46,18652406 e 20.030.786,86167120 cotas. Hoje, quinta-feira, 19/03/2026, é a data-base da validação.
+O Angico Plus FIP Multiestratégia é gerido pela Varanda Capital, gestora de private equity com participações em empresas familiares do interior, em Belo Horizonte/MG. Criado em 23/08/2020, investe em empresas fechadas e precisa de laudo de avaliação para marcar a carteira. Público-alvo: investidores profissionais. Hoje seus cotistas são 8 investidores profissionais (fundos de pensão e family offices) com capital comprometido. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Isadora, e quem cuida da validação do fundo é Diego. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. O comitê de investimentos aprova laudos fora de ciclo, às vezes no meio do mês. A mesa da gestora mexe nas posições de futuros várias vezes ao dia. O analista anterior deixou anotado que "esse fundo costuma bater de primeira, é só passar o olho". No fechamento de ontem (28/08/2026) o fundo tinha PL de R$ 241.628.770,76, cota de 2.065,52477217 e 116.981,78303895 cotas. Hoje, segunda-feira, 31/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Fiagro (cadeias agroindustriais) |
-| Classe | Classe de Fiagro |
+| Tipo | FIP Multiestratégia |
+| Classe | Classe de FIP — Multiestratégia |
 | Condomínio | fechado |
-| Gestora | Alvorada Sul Gestão (Porto Alegre/RS) |
-| PL em D−1 | R$ 925.152.419,33 |
-| Cota em D−1 | 46,18652406 |
-| Quantidade de cotas em D−1 | 20.030.786,86167120 |
+| Gestora | Varanda Capital (Belo Horizonte/MG) |
+| PL em D−1 | R$ 241.628.770,76 |
+| Cota em D−1 | 2.065,52477217 |
+| Quantidade de cotas em D−1 | 116.981,78303895 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,15 +22,15 @@ Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em c
 
 **Taxas**
 
-- Taxa de administração: 0,170% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,260% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,760% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 40.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Auditoria independente: R$ 129.000,00 (anual) — contrato anual; provisão diária por 1/252
 - Taxa ANBIMA (convênio de autorregulação): R$ 500,00 (mensal)
-- Escrituração de cotas: R$ 15.000,00 (mensal)
+- Consultoria de avaliação (laudos): R$ 79.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em c
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 835.637.290,89. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 252.652.201,68. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,21 +60,21 @@ Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em c
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: sem resgate; liquidez via B3
+- Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Fiagro: rendimentos isentos para PF nas condições legais
+- Tributação: FIP: regime específico (entidade de investimento)
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- CRA: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação do administrador (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
-- LCA: curva do papel.
+- Participações em companhias fechadas: valor justo do laudo vigente aprovado pelo comitê de investimentos.
 
 **Regras específicas deste fundo**
 
-- Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como "rendimentos a distribuir" (passivo) na data do anúncio (data-com), reduzindo o PL.
+- Valor justo das companhias investidas: laudo independente, atualizado na data em que o comitê de investimentos aprova o novo laudo.
+- Chamadas de capital: os recursos integralizados são convertidos em cotas pela cota de fechamento do dia do crédito.
 
 ## 3. Informações de mercado do dia
 
@@ -84,14 +84,13 @@ Sob a gestão da Alvorada Sul Gestão, gestora gaúcha conservadora, focada em c
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| CRA0260A1B2 | ANBIMA — PU pela taxa indicativa de D | 956,367158 |  |
-| CRA0260C3D4 | ANBIMA — PU pela taxa indicativa de D | 951,457572 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.375,558590 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.488,144285 |  |
+| AGROFLORA PART | Laudo anterior (vigente até D−1) | 16,30 |  |
+| AGROFLORA PART | Laudo novo — aprovado pelo comitê em 31/08/2026 | 14,11 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **14:15** — *Gestora — operacional* — **Dúvida sobre taxa**: Vocês conseguem confirmar se a taxa de gestão está sendo apropriada pelo PL do dia anterior? Só para checar.
-- **17:12** — *Distribuidor* — **Cota atrasada?**: Bom dia! A cota do Angico Plus Fiagro — Direitos Creditórios de ontem saiu mais tarde, está tudo certo? Temos clientes perguntando.
+- **16:30** — *Gestora — comitê de investimentos* — **Ata do comitê**: O comitê aprovou hoje o laudo de avaliação de Agroflora Participações S.A. (companhia fechada): novo valor justo de R$ 14,11 por ação (antes R$ 16,30). Ata assinada em anexo.
 
 ## 5. Batimento Alfa × Beta
 
@@ -101,29 +100,28 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 46,21801761 | 46,21801761 | 0,00000000 |
-| Quantidade final de cotas | 20.030.786,86167119 | 20.030.786,86167119 | 0,00000000 |
-| PL final | R$ 925.783.259,91 | R$ 925.783.259,91 | R$ 0,00 |
-| Caixa | R$ 30.072.154,14 | R$ 30.072.154,14 | R$ 0,00 |
-| Total de provisões | R$ 659.282,70 | R$ 659.282,70 | R$ 0,00 |
+| Cota de fechamento | 1.918,41594648 | 2.065,41703462 | 147,00108814 |
+| Quantidade final de cotas | 116.981,78303895 | 116.981,78303895 | 0,00000000 |
+| PL final | R$ 224.419.718,03 | R$ 241.616.167,43 | R$ 17.196.449,40 |
+| Caixa | R$ 9.450.433,86 | R$ 9.450.433,86 | R$ 0,00 |
+| Total de provisões | R$ 538.594,12 | R$ 538.594,12 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| CRA0260A1B2 — CRA Securitizadora Piracema — série 45 (lastro: CPR de soja) — CDI + 3,10% | 281.180 | 281.180 | 956,367158 | 956,367158 | 268.911.317,49 | 268.911.317,49 | 0,00 | ANBIMA — taxa indicativa D |
-| CRA0260C3D4 — CRA Securitizadora Piracema — série 51 (lastro: cédulas de cooperativa) — IPCA + 8,20% | 235.526 | 235.526 | 951,457572 | 951,457572 | 224.092.996,10 | 224.092.996,10 | 0,00 | ANBIMA — taxa indicativa D |
-| CRA0260E5F6 — CRA Securitizadora Araçá — série 12 (lastro: duplicatas de insumos) — CDI + 4,00% | 227.798 | 227.798 | 983,735698 | 983,735698 | 224.093.024,53 | 224.093.024,53 | 0,00 | Preço do comitê de precificação do administrador |
-| LCA ARANDU 2027 — LCA Banco Arandu S.A. — 93% do CDI | 77.338 | 77.338 | 1.159,030176 | 1.159,030176 | 89.637.075,75 | 89.637.075,75 | 0,00 | Curva do papel |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.878 | 4.878 | 18.375,558590 | 18.375,558590 | 89.635.974,80 | 89.635.974,80 | 0,00 | ANBIMA — taxa indicativa D |
-| **Total** |  |  |  |  | 896.370.388,67 | 896.370.388,67 | 0,00 |  |
+| AGROFLORA PART — Ações da Agroflora Participações S.A. (companhia fechada) | 7.852.260 | 7.852.260 | 14,11 | 16,30 | 110.795.388,60 | 127.991.838,00 | 17.196.449,40 | Valor justo — laudo aprovado em 31/08/2026 |
+| VIDRARIA SUL — Ações da Vidraria Sul Indústria S.A. (companhia fechada) | 5.798.483 | 5.798.483 | 12,04 | 12,04 | 69.813.735,32 | 69.813.735,32 | 0,00 | Valor justo — laudo de avaliação vigente |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.510 | 1.510 | 18.488,144285 | 18.488,144285 | 27.917.097,87 | 27.917.097,87 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 8.787 | 8.787 | 794,543815 | 794,543815 | 6.981.656,50 | 6.981.656,50 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 215.507.878,29 | 232.704.327,69 | 17.196.449,40 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 30.072.154,14 | 30.072.154,14 |
-| **Saldo final** | 30.072.154,14 | 30.072.154,14 |
+| Saldo inicial (D−1) | 9.450.433,86 | 9.450.433,86 |
+| **Saldo final** | 9.450.433,86 | 9.450.433,86 |
 
 ### 5.4 Valores a receber
 
@@ -137,24 +135,24 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 82.501,12 | 82.501,12 | 6.235,83 | 6.235,83 | 0,00 | 0,00 | 88.736,95 | 88.736,95 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 477.121,07 | 477.121,07 | 37.621,12 | 37.621,12 | 0,00 | 0,00 | 514.742,19 | 514.742,19 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 14.661,45 | 14.661,45 | 1.101,21 | 1.101,21 | 0,00 | 0,00 | 15.762,66 | 15.762,66 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 20.634,92 | 20.634,92 | 158,73 | 158,73 | 0,00 | 0,00 | 20.793,65 | 20.793,65 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 295,45 | 295,45 | 22,73 | 22,73 | 0,00 | 0,00 | 318,18 | 318,18 | 0,00 |
-| ESCRIT — Escrituração de cotas a pagar | 8.863,64 | 8.863,64 | 681,82 | 681,82 | 0,00 | 0,00 | 9.545,46 | 9.545,46 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 9.206,56 | 9.206,56 | 177,05 | 177,05 | 0,00 | 0,00 | 9.383,61 | 9.383,61 | 0,00 |
-| **Total** |  |  |  |  |  |  | 659.282,70 | 659.282,70 | 0,00 |
+| TXADM — Taxa de administração a pagar | 48.641,37 | 48.641,37 | 2.493,00 | 2.493,00 | 0,00 | 0,00 | 51.134,37 | 51.134,37 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 345.664,07 | 345.664,07 | 16.875,66 | 16.875,66 | 0,00 | 0,00 | 362.539,73 | 362.539,73 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 5.761,10 | 5.761,10 | 287,65 | 287,65 | 0,00 | 0,00 | 6.048,75 | 6.048,75 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 63.988,10 | 63.988,10 | 511,90 | 511,90 | 0,00 | 0,00 | 64.500,00 | 64.500,00 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 476,19 | 476,19 | 23,81 | 23,81 | 0,00 | 0,00 | 500,00 | 500,00 | 0,00 |
+| LAUDO — Consultoria de avaliação (laudos) a pagar | 48.277,78 | 48.277,78 | 313,49 | 313,49 | 0,00 | 0,00 | 48.591,27 | 48.591,27 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 5.160,00 | 5.160,00 | 120,00 | 120,00 | 0,00 | 0,00 | 5.280,00 | 5.280,00 | 0,00 |
+| **Total** |  |  |  |  |  |  | 538.594,12 | 538.594,12 | 0,00 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,17% a.a. sobre R$ 925.152.419,33 fator exponencial (1+taxa)^(1/252) − 1 = R$ 6.235,83 · Beta: [base: PL do dia útil anterior] 0,17% a.a. sobre R$ 925.152.419,33 fator exponencial (1+taxa)^(1/252) − 1 = R$ 6.235,83
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,03% a.a. sobre R$ 925.152.419,33 fator exponencial (1+taxa)^(1/252) − 1 = R$ 37.621,12 · Beta: [base: PL do dia útil anterior] 1,03% a.a. sobre R$ 925.152.419,33 fator exponencial (1+taxa)^(1/252) − 1 = R$ 37.621,12
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 925.152.419,33 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.101,21 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 925.152.419,33 fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.101,21
-- **AUDIT** — Alfa: R$ 40.000,00 (anual) ÷ 252 d.u. = R$ 158,73 · Beta: R$ 40.000,00 (anual) ÷ 252 d.u. = R$ 158,73
-- **ANBIMA** — Alfa: R$ 500,00 (mensal) ÷ 22 d.u. = R$ 22,73 · Beta: R$ 500,00 (mensal) ÷ 22 d.u. = R$ 22,73
-- **ESCRIT** — Alfa: R$ 15.000,00 (mensal) ÷ 22 d.u. = R$ 681,82 · Beta: R$ 15.000,00 (mensal) ÷ 22 d.u. = R$ 681,82
-- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,26% a.a. sobre R$ 241.628.770,76 ÷ 252 (linear, dias úteis) = R$ 2.493,00 · Beta: [base: PL do dia útil anterior] 0,26% a.a. sobre R$ 241.628.770,76 ÷ 252 (linear, dias úteis) = R$ 2.493,00
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,76% a.a. sobre R$ 241.628.770,76 ÷ 252 (linear, dias úteis) = R$ 16.875,66 · Beta: [base: PL do dia útil anterior] 1,76% a.a. sobre R$ 241.628.770,76 ÷ 252 (linear, dias úteis) = R$ 16.875,66
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 241.628.770,76 ÷ 252 (linear, dias úteis) = R$ 287,65 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 241.628.770,76 ÷ 252 (linear, dias úteis) = R$ 287,65
+- **AUDIT** — Alfa: R$ 129.000,00 (anual) ÷ 252 d.u. = R$ 511,90 · Beta: R$ 129.000,00 (anual) ÷ 252 d.u. = R$ 511,90
+- **ANBIMA** — Alfa: R$ 500,00 (mensal) ÷ 21 d.u. = R$ 23,81 · Beta: R$ 500,00 (mensal) ÷ 21 d.u. = R$ 23,81
+- **LAUDO** — Alfa: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49 · Beta: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49
+- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00 · Beta: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
@@ -164,48 +162,49 @@ Nenhum movimento de passivo no dia.
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 896.370.388,67 | 896.370.388,67 | 0,00 |
-| Caixa | 30.072.154,14 | 30.072.154,14 | 0,00 |
+| Total de ativos | 215.507.878,29 | 232.704.327,69 | 17.196.449,40 |
+| Caixa | 9.450.433,86 | 9.450.433,86 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 659.282,70 | 659.282,70 | 0,00 |
-| PL base da cota | 925.783.260,11 | 925.783.260,11 | 0,00 |
-| Cota (8 casas) | 46,21801761 | 46,21801761 | 0,00000000 |
+| Provisões | 538.594,12 | 538.594,12 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 224.440.343,54 | 241.636.792,94 | 17.196.449,40 |
+| PL base da cota | 224.419.718,03 | 241.616.167,43 | 17.196.449,40 |
+| Cota (8 casas) | 1.918,41594648 | 2.065,41703462 | 147,00108814 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 20.030.786,86167119 | 20.030.786,86167119 | 0,00000000 |
-| PL final | 925.783.259,91 | 925.783.259,91 | 0,00 |
+| Quantidade final de cotas | 116.981,78303895 | 116.981,78303895 | 0,00000000 |
+| PL final | 224.419.718,03 | 241.616.167,43 | 17.196.449,40 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO
+**Parecer:** REPROVADO
 
-**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
+**Resumo:** Reprovar até o ajuste: Valor justo de AGROFLORA PART desatualizado.
 
-**Dificuldade:** media · **Cenários:** tudo_bate_com_ruido
+**Dificuldade:** media · **Cenários:** laudo_fip_nao_atualizado
 
-### Achado 1: Comunicações do dia não afetam a cota de D
+### Achado 1: Valor justo de AGROFLORA PART desatualizado
 
-- **Gravidade:** informativo · **Dimensões:** nenhuma
-- **Lado correto:** nenhum · **Quem ajusta:** ninguém
-- **Causa raiz:** Não há divergência; as mensagens recebidas tratam de eventos futuros, de ativos fora da carteira ou são lembretes.
-- **Onde olhar:** Comunicações recebidas; Carteira dos dois lados
+- **Gravidade:** erro · **Dimensões:** cota
+- **Lado correto:** Alfa · **Quem ajusta:** Beta
+- **Causa raiz:** Beta manteve o laudo anterior (R$ 16,30) mesmo com o novo aprovado pelo comitê hoje (R$ 14,11).
+- **Onde olhar:** Carteira — AGROFLORA PART; Comunicações — ata do comitê; Regulamento — valor justo
 - **Raciocínio do analista:**
-  1. Li as comunicações do dia e conferi se alguma delas exigia reflexo em D: nenhuma se refere a operação ou evento com efeito na data-base (são eventos futuros, ativos que o fundo não tem, ou dúvidas/lembretes).
-  2. Como os dois lados batem linha a linha e as apropriações conferem com o regulamento, não há motivo para segurar a cota.
-- **Ação:** Nenhuma ação sobre a cota. Responder ao remetente, se for o caso.
+  1. AGROFLORA PART: R$ 14,11 (Alfa) contra R$ 16,30 (Beta), mesma quantidade. Impacto: R$ -17.196.449,40.
+  2. O regulamento manda atualizar o valor justo na data de aprovação do laudo pelo comitê. A ata é de hoje.
+- **Ação:** Beta deve aplicar o novo laudo e reprocessar. Arquivar a ata como suporte da variação da cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | ambos |
+| cota | Alfa |
 | caixa | ambos |
 | provisoes | ambos |
 
@@ -213,12 +212,8 @@ Nenhum movimento de passivo no dia.
 
 | Item | Valor |
 |---|---|
-| Cota | 46,21801761 |
-| Quantidade final de cotas | 20.030.786,86167119 |
-| PL final | R$ 925.783.259,91 |
-| Caixa | R$ 30.072.154,14 |
-| Total de provisões | R$ 659.282,70 |
-
-### Armadilhas deste caso
-
-- Comunicações alarmantes nem sempre afetam a data-base: separar o que tem efeito em D do que é evento futuro, ativo que o fundo não tem ou lembrete.
+| Cota | 1.918,41594648 |
+| Quantidade final de cotas | 116.981,78303895 |
+| PL final | R$ 224.419.718,03 |
+| Caixa | R$ 9.450.433,86 |
+| Total de provisões | R$ 538.594,12 |

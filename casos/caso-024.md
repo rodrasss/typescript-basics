@@ -1,36 +1,36 @@
-# Caso caso-024 — Baobá Advisory FIF Incentivado em Infraestrutura RF
+# Caso caso-024 — Baobá Advisory Fiagro — Direitos Creditórios
 
-> **Data-base (D):** 11/05/2026 (segunda-feira) · **D−1:** 08/05/2026 · **Fundo:** FND-0024
+> **Data-base (D):** 17/08/2026 (segunda-feira) · **D−1:** 14/08/2026 · **Fundo:** FND-0024
 
 ## 1. O fundo
 
-O Baobá Advisory FIF Incentivado em Infraestrutura RF é gerido pela Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional, em Salvador/BA. Criado em 03/02/2012, compra debêntures de infraestrutura e entrega rendimento isento de IR ao cotista pessoa física. Público-alvo: público geral. Hoje seus cotistas são clientes de varejo alta renda e um FoF incentivado. Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e reduziu o prazo de cotização em 2024 para competir em plataformas. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Felipe. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. Os papéis de crédito do fundo têm taxa indicativa ANBIMA todo dia, mas o histórico mostra que, de vez em quando, alguém usa o preço de curva em vez do de mercado. A taxa de gestão é escalonada por faixa de patrimônio. No fechamento de ontem (08/05/2026) o fundo tinha PL de R$ 64.307.570,19, cota de 1,54437038 e 41.639.991,95171146 cotas. Hoje, segunda-feira, 11/05/2026, é a data-base da validação.
+O Baobá Advisory Fiagro — Direitos Creditórios é gerido pela Cerrado Vivo Gestão, gestora de Fiagro e CRA, muito próxima de cooperativas, em Cuiabá/MT. Criado em 03/02/2012, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo trocou de custodiante em 2024, com migração de carteira e de cadastros e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Felipe. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. O prazo de cotização do fundo mudou no passado e alguns sistemas guardam parametrizações antigas. No fechamento de ontem (14/08/2026) o fundo tinha PL de R$ 220.158.915,10, cota de 34,85928362 e 6.315.646,57196447 cotas. Hoje, segunda-feira, 17/08/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Infraestrutura (debêntures incentivadas) |
-| Classe | Classe de Renda Fixa — Infraestrutura (Lei 12.431) |
-| Condomínio | aberto |
-| Gestora | Itapuã Gestão (Salvador/BA) |
-| PL em D−1 | R$ 64.307.570,19 |
-| Cota em D−1 | 1,54437038 |
-| Quantidade de cotas em D−1 | 41.639.991,95171146 |
+| Tipo | Fiagro (cadeias agroindustriais) |
+| Classe | Classe de Fiagro |
+| Condomínio | fechado |
+| Gestora | Cerrado Vivo Gestão (Cuiabá/MT) |
+| PL em D−1 | R$ 220.158.915,10 |
+| Cota em D−1 | 34,85928362 |
+| Quantidade de cotas em D−1 | 6.315.646,57196447 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/03/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/05/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,120% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,820% a.a. sobre a parcela do PL até R$ 30.000.000,00; 0,530% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,070% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 58.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
-- Custódia SELIC/B3 (estimativa mensal): R$ 5.800,00 (mensal)
+- Auditoria independente: R$ 25.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 400,00 (mensal)
+- Escrituração de cotas: R$ 14.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -40,7 +40,7 @@ O Baobá Advisory FIF Incentivado em Infraestrutura RF é gerido pela Itapuã Ge
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 64.122.246,62. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 220.435.827,32. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -60,17 +60,21 @@ O Baobá Advisory FIF Incentivado em Infraestrutura RF é gerido pela Itapuã Ge
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+30 corridos (liquidação D+1 útil).
+- Condomínio fechado: sem resgate; liquidez via B3.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Incentivado (Lei 12.431): isento para PF, sem come-cotas
+- Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Debêntures incentivadas: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
+- CRA: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação do administrador (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
+- LCA: curva do papel.
+
+**Regras específicas deste fundo**
+
+- Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como "rendimentos a distribuir" (passivo) na data do anúncio (data-com), reduzindo o PL.
 
 ## 3. Informações de mercado do dia
 
@@ -80,17 +84,15 @@ O Baobá Advisory FIF Incentivado em Infraestrutura RF é gerido pela Itapuã Ge
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| TSGE14 | ANBIMA — PU pela taxa indicativa de D | 1.040,298291 |  |
-| GASM13 | ANBIMA — PU pela taxa indicativa de D | 1.097,069688 |  |
-| EVSE11 | ANBIMA — PU pela taxa indicativa de D | 1.094,556887 |  |
-| SOLC12 | ANBIMA — PU pela taxa indicativa de D | 1.145,176589 |  |
-| FERR21 | ANBIMA — PU pela taxa indicativa de D | 1.126,557328 |  |
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.305,072031 |  |
-| EVSE11 | PU par (curva da taxa de emissão) — informativo | 1.101,107520 |  |
+| CRA0260C3D4 | ANBIMA — PU pela taxa indicativa de D | 1.064,526685 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.139,804663 |  |
+| CRA0260A1B2 | ANBIMA | sem taxa indicativa divulgada para o ativo |  |
+| CRA0260A1B2 | Comitê de precificação (ata de 27/06/2026) | 988,952657 |  |
+| CRA0260A1B2 | B3 — último negócio no secundário (14/08/2026) | 968,248636 | volume de R$ 1.700.000,00 |
 
 ## 4. Comunicações recebidas hoje
 
-- **10:12** — *Gestora — mesa* — **Operação para amanhã**: Amanhã (12/05) vamos reduzir um pouco a posição mais líquida da carteira. Hoje não há boleta.
+- **14:32** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
 
 ## 5. Batimento Alfa × Beta
 
@@ -100,33 +102,29 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1,54430390 | 1,54558464 | 0,00128074 |
-| Quantidade final de cotas | 41.675.710,34237276 | 41.675.680,74452969 | -29,59784307 |
-| PL final | R$ 64.359.962,02 | R$ 64.413.292,02 | R$ 53.330,00 |
-| Caixa | R$ 176.084,05 | R$ 176.084,05 | R$ 0,00 |
-| Total de provisões | R$ 57.754,83 | R$ 58.146,74 | R$ 391,91 |
+| Cota de fechamento | 34,87988857 | 34,66504446 | -0,21484411 |
+| Quantidade final de cotas | 6.315.646,57196447 | 6.315.646,57196447 | 0,00000000 |
+| PL final | R$ 220.289.048,68 | R$ 218.932.169,21 | R$ -1.356.879,47 |
+| Caixa | R$ 4.390.552,53 | R$ 4.390.552,53 | R$ 0,00 |
+| Total de provisões | R$ 144.696,75 | R$ 144.696,75 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| TSGE14 — Debênture Transmissora Serra Geral S.A. — IPCA + 6,55% (incentivada Lei 12.431) | 11.505 | 11.505 | 1.040,298291 | 1.040,298291 | 11.968.631,84 | 11.968.631,84 | 0,00 | ANBIMA — taxa indicativa D |
-| GASM13 — Debênture Gasodutos do Médio Norte S.A. — IPCA + 6,80% (incentivada Lei 12.431) | 11.591 | 11.591 | 1.097,069688 | 1.097,069688 | 12.716.134,75 | 12.716.134,75 | 0,00 | ANBIMA — taxa indicativa D |
-| EVSE11 — Debênture Eólica Ventos do Sertão S.A. — IPCA + 7,35% (incentivada Lei 12.431) | 8.201 | 8.201 | 1.094,556887 | 1.101,107520 | 8.976.461,03 | 9.030.182,77 | 53.721,74 | Alfa: ANBIMA — taxa indicativa D / Beta: Curva — taxa de emissão |
-| SOLC12 — Debênture Solar Chapada S.A. — IPCA + 7,60% (incentivada Lei 12.431) | 7.838 | 7.838 | 1.145,176589 | 1.145,176589 | 8.975.894,10 | 8.975.894,10 | 0,00 | ANBIMA — taxa indicativa D |
-| FERR21 — Debênture Ferrovia Planalto Central S.A. — IPCA + 7,20% (incentivada Lei 12.431) | 11.288 | 11.288 | 1.126,557328 | 1.126,557328 | 12.716.579,12 | 12.716.579,12 | 0,00 | ANBIMA — taxa indicativa D |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 327 | 327 | 18.305,072031 | 18.305,072031 | 5.985.758,55 | 5.985.758,55 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 3.696 | 3.696 | 809,519805 | 809,519805 | 2.991.985,20 | 2.991.985,20 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 64.331.444,59 | 64.385.166,33 | 53.721,74 |  |
+| CRA0260A1B2 — CRA Securitizadora Piracema — série 45 (lastro: CPR de soja) — CDI + 3,10% | 65.537 | 65.537 | 988,952657 | 968,248636 | 64.812.990,28 | 63.456.110,86 | -1.356.879,42 | Alfa: Comitê de precificação (ata de 27/06/2026) / Beta: Último negócio B3 |
+| CRA0260C3D4 — CRA Securitizadora Piracema — série 51 (lastro: cédulas de cooperativa) — IPCA + 8,20% | 50.737 | 50.737 | 1.064,526685 | 1.064,526685 | 54.010.890,42 | 54.010.890,42 | 0,00 | ANBIMA — taxa indicativa D |
+| CRA0260E5F6 — CRA Securitizadora Araçá — série 12 (lastro: duplicatas de insumos) — CDI + 4,00% | 52.471 | 52.471 | 1.029,342457 | 1.029,342457 | 54.010.628,06 | 54.010.628,06 | 0,00 | Preço do comitê de precificação do administrador |
+| LCA ARANDU 2027 — LCA Banco Arandu S.A. — 93% do CDI | 20.828 | 20.828 | 1.037,266026 | 1.037,266026 | 21.604.176,79 | 21.604.176,79 | 0,00 | Curva do papel |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.191 | 1.191 | 18.139,804663 | 18.139,804663 | 21.604.507,35 | 21.604.507,35 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 216.043.192,90 | 214.686.313,48 | -1.356.879,42 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 196.860,42 | 196.860,42 |
-| TED recebida — aplicação Cotista 0945 (13:16) | 55.160,05 | 55.160,05 |
-| Pagamento de resgate — Cotista 0952 (cotizado em 07/05/2026) | -75.936,42 | -75.936,42 |
-| **Saldo final** | 176.084,05 | 176.084,05 |
+| Saldo inicial (D−1) | 4.390.552,53 | 4.390.552,53 |
+| **Saldo final** | 4.390.552,53 | 4.390.552,53 |
 
 ### 5.4 Valores a receber
 
@@ -134,94 +132,77 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 55.160,05 | 55.160,05 |
-| RESGATES A PAGAR — Resgates cotizados em dias anteriores, a liquidar | 89.811,41 | 89.811,41 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 1.512,13 | 1.512,13 | 306,04 | 306,04 | 0,00 | 0,00 | 1.818,17 | 1.818,17 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 8.404,98 | 8.404,98 | 1.692,14 | 2.084,05 | 0,00 | 0,00 | 10.097,12 | 10.489,03 | 391,91 |
-| TXCUS — Taxa máxima de custódia a pagar | 248,47 | 248,47 | 51,03 | 51,03 | 0,00 | 0,00 | 299,50 | 299,50 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 40.968,25 | 40.968,25 | 230,16 | 230,16 | 0,00 | 0,00 | 41.198,41 | 41.198,41 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 250,00 | 250,00 | 50,00 | 50,00 | 0,00 | 0,00 | 300,00 | 300,00 | 0,00 |
-| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.450,00 | 1.450,00 | 290,00 | 290,00 | 0,00 | 0,00 | 1.740,00 | 1.740,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.213,11 | 2.213,11 | 88,52 | 88,52 | 0,00 | 0,00 | 2.301,63 | 2.301,63 | 0,00 |
-| **Total** |  |  |  |  |  |  | 57.754,83 | 58.146,74 | 391,91 |
+| TXADM — Taxa de administração a pagar | 9.580,90 | 9.580,90 | 961,01 | 961,01 | 0,00 | 0,00 | 10.541,91 | 10.541,91 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 90.908,90 | 90.908,90 | 9.348,02 | 9.348,02 | 0,00 | 0,00 | 100.256,92 | 100.256,92 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 858,32 | 858,32 | 87,36 | 87,36 | 0,00 | 0,00 | 945,68 | 945,68 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 21.230,16 | 21.230,16 | 99,21 | 99,21 | 0,00 | 0,00 | 21.329,37 | 21.329,37 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 190,48 | 190,48 | 19,05 | 19,05 | 0,00 | 0,00 | 209,53 | 209,53 | 0,00 |
+| ESCRIT — Escrituração de cotas a pagar | 6.666,67 | 6.666,67 | 666,67 | 666,67 | 0,00 | 0,00 | 7.333,34 | 7.333,34 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 3.960,00 | 3.960,00 | 120,00 | 120,00 | 0,00 | 0,00 | 4.080,00 | 4.080,00 | 0,00 |
+| **Total** |  |  |  |  |  |  | 144.696,75 | 144.696,75 | 0,00 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,12% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 306,04 · Beta: [base: PL do dia útil anterior] 0,12% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 306,04
-- **TXGES** — Alfa: [base: PL do dia útil anterior] escalonada (0,82% sobre R$ 30.000.000,00 + 0,53% sobre R$ 34.307.570,19) fator exponencial (1+taxa)^(1/252) − 1 = R$ 1.692,14 · Beta: [base: PL do dia útil anterior] 0,82% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.084,05
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 51,03 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 64.307.570,19 fator exponencial (1+taxa)^(1/252) − 1 = R$ 51,03
-- **AUDIT** — Alfa: R$ 58.000,00 (anual) ÷ 252 d.u. = R$ 230,16 · Beta: R$ 58.000,00 (anual) ÷ 252 d.u. = R$ 230,16
-- **ANBIMA** — Alfa: R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00 · Beta: R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00
-- **SELIC** — Alfa: R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00 · Beta: R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00
-- **CVM** — Alfa: R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52 · Beta: R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 220.158.915,10 ÷ 252 (linear, dias úteis) = R$ 961,01 · Beta: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 220.158.915,10 ÷ 252 (linear, dias úteis) = R$ 961,01
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,07% a.a. sobre R$ 220.158.915,10 ÷ 252 (linear, dias úteis) = R$ 9.348,02 · Beta: [base: PL do dia útil anterior] 1,07% a.a. sobre R$ 220.158.915,10 ÷ 252 (linear, dias úteis) = R$ 9.348,02
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 220.158.915,10 ÷ 252 (linear, dias úteis) = R$ 87,36 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 220.158.915,10 ÷ 252 (linear, dias úteis) = R$ 87,36
+- **AUDIT** — Alfa: R$ 25.000,00 (anual) ÷ 252 d.u. = R$ 99,21 · Beta: R$ 25.000,00 (anual) ÷ 252 d.u. = R$ 99,21
+- **ANBIMA** — Alfa: R$ 400,00 (mensal) ÷ 21 d.u. = R$ 19,05 · Beta: R$ 400,00 (mensal) ÷ 21 d.u. = R$ 19,05
+- **ESCRIT** — Alfa: R$ 14.000,00 (mensal) ÷ 21 d.u. = R$ 666,67 · Beta: R$ 14.000,00 (mensal) ÷ 21 d.u. = R$ 666,67
+- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00 · Beta: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 0945 | R$ 55.160,05 | 13:16 | 11/05/2026 | 11/05/2026 | 11/05/2026 | sim | sim |  |
-| LIQ-1 | resgate | Cotista 0952 | 49.095,76351671 cotas (R$ 75.936,42) |  | 19/04/2026 | 07/05/2026 | 11/05/2026 | não | não | cotizado em 07/05/2026 pela cota de 1,54670000; liquidação financeira hoje |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 64.331.444,59 | 64.385.166,33 | 53.721,74 |
-| Caixa | 176.084,05 | 176.084,05 | 0,00 |
+| Total de ativos | 216.043.192,90 | 214.686.313,48 | -1.356.879,42 |
+| Caixa | 4.390.552,53 | 4.390.552,53 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 144.971,46 | 144.971,46 | 0,00 |
-| Provisões | 57.754,83 | 58.146,74 | 391,91 |
-| PL base da cota | 64.304.802,35 | 64.358.132,18 | 53.329,83 |
-| Cota (8 casas) | 1,54430390 | 1,54558464 | 0,00128074 |
-| Aplicações convertidas | 55.160,05 | 55.160,05 | 0,00 |
-| Cotas emitidas | 35.718,39066130 | 35.688,79281823 | -29,59784307 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 144.696,75 | 144.696,75 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 220.300.350,00 | 218.943.470,58 | -1.356.879,42 |
+| PL base da cota | 220.289.048,68 | 218.932.169,26 | -1.356.879,42 |
+| Cota (8 casas) | 34,87988857 | 34,66504446 | -0,21484411 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 41.675.710,34237276 | 41.675.680,74452969 | -29,59784307 |
-| PL final | 64.359.962,02 | 64.413.292,02 | 53.330,00 |
+| Quantidade final de cotas | 6.315.646,57196447 | 6.315.646,57196447 | 0,00000000 |
+| PL final | 220.289.048,68 | 218.932.169,21 | -1.356.879,47 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO (com ressalva)
+**Parecer:** PENDENTE
 
-**Resumo:** Reprovar até o ajuste: PU de EVSE11 divergente; Taxa de gestão escalonada aplicada como taxa cheia.
+**Resumo:** Deixar pendente e escalar: CRA0260A1B2 sem referência confiável de preço.
 
-**Dificuldade:** media · **Cenários:** preco_credito_fonte_errada, taxa_escalonada_ignorada
+**Dificuldade:** media · **Cenários:** ativo_iliquido_sem_referencia
 
-### Achado 1: PU de EVSE11 divergente
+### Achado 1: CRA0260A1B2 sem referência confiável de preço
 
-- **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta precificou EVSE11 pela curva de emissão (PU par), e não pela taxa indicativa ANBIMA de D.
-- **Onde olhar:** Carteira — linha EVSE11; Informações de mercado — referências ANBIMA; Regulamento — precificação
+- **Gravidade:** pendencia · **Dimensões:** cota
+- **Lado correto:** indeterminado · **Quem ajusta:** Comitê de precificação (Alfa) com apoio do Beta
+- **Causa raiz:** Sem taxa ANBIMA para CRA0260A1B2: o Alfa usa o preço do comitê de 27/06/2026 (vencido, com mais de 30 dias) e o Beta usa o último negócio no secundário. Nenhum dos dois segue o manual de forma limpa.
+- **Onde olhar:** Carteira — CRA0260A1B2; Informações de mercado — comitê e negócio B3; Regulamento — precificação na ausência de ANBIMA
 - **Raciocínio do analista:**
-  1. A diferença de ativos está concentrada em EVSE11: mesma quantidade (8.201) nos dois lados, mas PU 1.094,556887 no Alfa contra 1.101,107520 no Beta, o que dá R$ 53.721,74 de diferença de valor.
-  2. A referência ANBIMA de D é 1.094,556887, igual ao Alfa. O PU do Beta coincide com o PU par (curva de emissão).
-  3. O regulamento manda precificar pela taxa indicativa ANBIMA do próprio dia, então o lado correto é o que usou a referência de D.
-- **Ação:** Pedir ao Beta que reprecifique EVSE11 pela taxa indicativa ANBIMA de D (PU 1.094,556887) e recalcule a cota antes da divulgação.
-
-### Achado 2: Taxa de gestão escalonada aplicada como taxa cheia
-
-- **Gravidade:** ressalva · **Dimensões:** provisoes
-- **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta aplicou 0,820% sobre todo o PL, ignorando a taxa menor (0,530%) sobre a parcela acima de R$ 30.000.000,00.
-- **Onde olhar:** Provisões — TXGES; Regulamento — taxa de gestão escalonada
-- **Raciocínio do analista:**
-  1. A apropriação de taxa de gestão do Beta é maior.
-  2. O regulamento escalona a taxa: Taxa de gestão: 0,820% a.a. sobre a parcela do PL até R$ 30.000.000,00; 0,530% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Com PL de D−1 de R$ 64.307.570,19, parte do PL está na segunda faixa.
-  3. O Alfa fez a conta por faixas; o Beta aplicou a taxa cheia em tudo.
-- **Ação:** Beta deve parametrizar as faixas da taxa de gestão e reprocessar.
+  1. CRA0260A1B2: PU 988,952657 (Alfa, comitê) contra 968,248636 (Beta, negócio B3). Impacto de R$ -1.356.879,42 no PL.
+  2. O manual manda usar o preço do comitê na falta de ANBIMA, mas exige revisão ao menos mensal e manda levar ao comitê os negócios relevantes. A ata é de 27/06/2026, ou seja, vencida, e houve negócio recente.
+  3. Não dá para afirmar qual preço está certo só com o que recebi: é decisão do comitê de precificação. Não é o caso de escolher um lado.
+- **Ação:** Escalar para o comitê de precificação hoje: revisão extraordinária do PU de CRA0260A1B2 com base no negócio de B3. Segurar a divulgação até a definição, ou divulgar com o preço vigente do comitê e registrar formalmente o risco de reprocessamento, conforme a política da área.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -229,18 +210,12 @@ Nenhum item.
 |---|---|
 | cota | Alfa |
 | caixa | ambos |
-| provisoes | Alfa |
+| provisoes | ambos |
 
-### Valores corretos após os ajustes
+### Valores corretos
 
-| Item | Valor |
-|---|---|
-| Cota | 1,54430390 |
-| Quantidade final de cotas | 41.675.710,34237276 |
-| PL final | R$ 64.359.962,02 |
-| Caixa | R$ 176.084,05 |
-| Total de provisões | R$ 57.754,83 |
+Indefinidos: dependem de uma decisão externa (comitê, identificação do remetente ou aprovação formal).
 
 ### Armadilhas deste caso
 
-- Descobrir qual lado está certo comparando com a referência de D, não com o D−1 nem com a curva de emissão.
+- Quando não há referência confiável, não escolher um lado: escalar para o comitê de precificação.

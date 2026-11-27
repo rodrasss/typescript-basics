@@ -1,41 +1,37 @@
-# Caso caso-092 — Imbuia Prime FIC FIF Ações Investimento no Exterior
+# Caso caso-092 — Imbuia Prime FIDC Responsabilidade Limitada
 
-> **Data-base (D):** 22/06/2026 (segunda-feira) · **D−1:** 19/06/2026 · **Fundo:** FND-0092
+> **Data-base (D):** 23/06/2026 (terça-feira) · **D−1:** 22/06/2026 · **Fundo:** FND-0092
 
 ## 1. O fundo
 
-Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que investe via fundos offshore (São Paulo/SP), o Imbuia Prime FIC FIF Ações Investimento no Exterior é um dos fundos que mais exigem atenção na rotina de validação. Criado em 03/06/2018, investe em fundos no exterior e converte tudo para reais todo dia. Público-alvo: investidores qualificados. Hoje seus cotistas são investidores qualificados buscando diversificação global. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano. O gestor responsável é Murilo, e quem cuida da validação do fundo é Larissa. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A gestora costuma mandar NAV "estimado" quando o mercado americano está fechado. Uma vez, em 2024, o fundo ficou três dias com a cota segurada por causa de uma divergência de caixa que acabou sendo só de classificação. No fechamento de ontem (19/06/2026) o fundo tinha PL de R$ 374.205.337,77, cota de 4,49062096 e 83.330.421,58311845 cotas. Hoje, segunda-feira, 22/06/2026, é a data-base da validação.
+O Imbuia Prime FIDC Responsabilidade Limitada é gerido pela Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA), em São Paulo/SP. Criado em 03/06/2018, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são dois fundos de crédito e uma seguradora. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Murilo, e quem cuida da validação do fundo é Larissa. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o administrador revisa o manual de precificação uma vez por ano. O gestor tem fama de mandar informação por e-mail antes da confirmação formal. No fechamento de ontem (22/06/2026) o fundo tinha PL de R$ 136.123.296,84, cota de 1.173,67575769 e 115.980,32586768 cotas. Hoje, terça-feira, 23/06/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Investimento no Exterior (ações globais) |
-| Classe | Classe de Ações — Investimento no Exterior |
-| Condomínio | aberto |
-| Gestora | Lume Gestão de Recursos (São Paulo/SP) |
-| PL em D−1 | R$ 374.205.337,77 |
-| Cota em D−1 | 4,49062096 |
-| Quantidade de cotas em D−1 | 83.330.421,58311845 |
+| Tipo | FIDC (direitos creditórios) |
+| Classe | Classe de FIDC — subclasse única (monocota) |
+| Condomínio | fechado |
+| Gestora | Quaresmeira Capital (São Paulo/SP) |
+| PL em D−1 | R$ 136.123.296,84 |
+| Cota em D−1 | 1.173,67575769 |
+| Quantidade de cotas em D−1 | 115.980,32586768 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/09/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/12/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,190% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,570% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-
-**Taxa de performance**
-
-- 20% sobre o que exceder MSCI ACWI em reais; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
-- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Taxa de administração: 0,340% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 1,140% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,060% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 48.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 1.200,00 (mensal)
+- Auditoria independente: R$ 116.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 400,00 (mensal)
+- Agente de cobrança: R$ 24.000,00 (mensal)
+- Agência de classificação de risco (rating): R$ 44.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +41,7 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 357.176.372,13. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 133.103.797,76. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,47 +61,36 @@ Sob a gestão da Lume Gestão de Recursos, gestora de ações globais que invest
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+5 úteis (liquidação D+7 úteis).
+- Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
+- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Cotas de fundos no exterior: NAV oficial mais recente disponível até 18h de D, convertido pela PTAX de venda de D.
+- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 4,26421680 (cota da última cobrança efetiva, em 31/12/2025).
-- Ativos no exterior: NAV oficial mais recente disponível até 18h de D (em regra, o NAV de D−1), convertido pela PTAX de VENDA de D. NAV estimado ou indicativo não é aceito.
+- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
+- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
 
 ## 3. Informações de mercado do dia
 
 - CDI: 14,15% a.a.
-- PTAX de 22/06/2026: compra 5,4630 / venda 5,4636; PTAX de venda de 19/06/2026: 5,4529
 
 **Referências de preço**
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.304,197040 |  |
-| PTAX | BCB — PTAX de 22/06/2026 | compra 5,4630 / venda 5,4636 |  |
-| PTAX | BCB — PTAX de 19/06/2026 | venda 5,4529 |  |
-| OFFSHORE MERIDIAN | NAV oficial de 18/06/2026 (último disponível) | USD 212,6081 |  |
-| OFFSHORE MERIDIAN | NAV de 19/06/2026 | não divulgado | mercado americano fechado (Juneteenth) |
-| OFFSHORE AUSTRAL | NAV oficial de 18/06/2026 (último disponível) | USD 242,9382 |  |
-| OFFSHORE AUSTRAL | NAV de 19/06/2026 | não divulgado | mercado americano fechado (Juneteenth) |
-
-**Benchmark**
-
-- Fator acumulado do MSCI ACWI em reais de 31/12/2025 até 22/06/2026: 1,03121875
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.474,943909 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **17:12** — *Gestora — operações* — **NAV estimado**: Como ontem foi feriado nos EUA (Juneteenth), segue o NAV ESTIMADO de 19/06/2026 do Meridian Tech Leaders Fund — Inst. (USD): USD 215,7704. Valor indicativo, o oficial sai só no próximo dia útil americano.
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -115,29 +100,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 4,53502493 | 4,50562789 | -0,02939704 |
-| Quantidade final de cotas | 83.538.089,38178220 | 83.540.626,08986704 | 2.536,70808484 |
-| PL final | R$ 378.847.317,95 | R$ 376.402.974,86 | R$ -2.444.343,09 |
-| Caixa | R$ 5.400.056,92 | R$ 5.400.056,92 | R$ 0,00 |
-| Total de provisões | R$ 3.094.997,08 | R$ 2.482.580,03 | R$ -612.417,05 |
+| Cota de fechamento | 1.173,91382539 | 1.173,91382539 | 0,00000000 |
+| Quantidade final de cotas | 115.980,32586768 | 115.980,32586768 | 0,00000000 |
+| PL final | R$ 136.150.908,01 | R$ 136.150.908,01 | R$ 0,00 |
+| Caixa | R$ 3.487.480,85 | R$ 3.487.480,85 | R$ 0,00 |
+| Total de provisões | R$ 235.920,72 | R$ 235.920,72 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| OFFSHORE MERIDIAN — Cotas do Meridian Tech Leaders Fund — Inst. (USD) | 177.229,215026 | 177.229,215026 | USD 215,7704 × 5,4636 | USD 212,6081 × 5,4636 | 208.932.536,60 | 205.870.451,34 | -3.062.085,26 | NAV oficial de 18/06/2026 × PTAX venda D |
-| OFFSHORE AUSTRAL — Cotas do Austral World Quality Fund — Class A (USD) | 98.701,707489 | 98.701,707489 | USD 242,9382 × 5,4636 | USD 242,9382 × 5,4636 | 131.008.469,04 | 131.008.469,04 | 0,00 | NAV oficial de 18/06/2026 × PTAX venda D |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.431 | 1.431 | 18.304,197040 | 18.304,197040 | 26.193.305,96 | 26.193.305,96 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 13.714 | 13.714 | 818,825268 | 818,825268 | 11.229.369,73 | 11.229.369,73 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| **Total** |  |  |  |  | 377.363.681,33 | 374.301.596,07 | -3.062.085,26 |  |
+| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 94.678.956,57 | 94.678.956,57 | 1,00 | 1,00 | 94.678.956,57 | 94.678.956,57 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
+| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 6.762.782,61 | 6.762.782,61 | 1,00 | 1,00 | 6.762.782,61 | 6.762.782,61 | 0,00 | Valor presente (custodiante) |
+| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 2.705.113,04 | 2.705.113,04 | 1,00 | 1,00 | 2.705.113,04 | 2.705.113,04 | 0,00 | Valor presente (custodiante) |
+| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 1.623.067,83 | 1.623.067,83 | 1,00 | 1,00 | 1.623.067,83 | 1.623.067,83 | 0,00 | Valor presente (custodiante) |
+| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 1.082.045,22 | 1.082.045,22 | 1,00 | 1,00 | 1.082.045,22 | 1.082.045,22 | 0,00 | Valor presente (custodiante) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.098 | 1.098 | 18.474,943909 | 18.474,943909 | 20.285.488,41 | 20.285.488,41 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 9.952 | 9.952 | 815,448407 | 815,448407 | 8.115.342,55 | 8.115.342,55 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -2.353.448,35 | -2.353.448,35 | -2.353.448,35 | -2.353.448,35 | 0,00 | Cálculo pelo aging do custodiante |
+| **Total** |  |  |  |  | 132.899.347,88 | 132.899.347,88 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 3.636.855,65 | 3.636.855,65 |
-| TED recebida — aplicação Cotista 1960 (15:01) | 1.763.201,27 | 1.763.201,27 |
-| **Saldo final** | 5.400.056,92 | 5.400.056,92 |
+| Saldo inicial (D−1) | 3.487.480,85 | 3.487.480,85 |
+| **Saldo final** | 3.487.480,85 | 3.487.480,85 |
 
 ### 5.4 Valores a receber
 
@@ -145,100 +133,88 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.763.201,27 | 1.763.201,27 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 39.669,51 | 39.669,51 | 2.821,39 | 2.821,39 | 0,00 | 0,00 | 42.490,90 | 42.490,90 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 119.461,02 | 119.461,02 | 8.464,17 | 8.464,17 | 0,00 | 0,00 | 127.925,19 | 127.925,19 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 4.216,96 | 4.216,96 | 296,99 | 296,99 | 0,00 | 0,00 | 4.513,95 | 4.513,95 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 40.952,38 | 40.952,38 | 190,48 | 190,48 | 0,00 | 0,00 | 41.142,86 | 41.142,86 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 800,00 | 800,00 | 57,14 | 57,14 | 0,00 | 0,00 | 857,14 | 857,14 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 9.560,66 | 9.560,66 | 177,05 | 177,05 | 0,00 | 0,00 | 9.737,71 | 9.737,71 | 0,00 |
-| PERF — Taxa de performance a pagar | 2.077.330,81 | 2.077.330,81 | 790.998,52 | 178.581,47 | 0,00 | 0,00 | 2.868.329,33 | 2.255.912,28 | -612.417,05 |
-| **Total** |  |  |  |  |  |  | 3.094.997,08 | 2.482.580,03 | -612.417,05 |
+| TXADM — Taxa de administração a pagar | 28.364,48 | 28.364,48 | 1.836,58 | 1.836,58 | 0,00 | 0,00 | 30.201,06 | 30.201,06 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 89.817,28 | 89.817,28 | 6.157,96 | 6.157,96 | 0,00 | 0,00 | 95.975,24 | 95.975,24 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 4.796,17 | 4.796,17 | 324,10 | 324,10 | 0,00 | 0,00 | 5.120,27 | 5.120,27 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 59.380,95 | 59.380,95 | 460,32 | 460,32 | 0,00 | 0,00 | 59.841,27 | 59.841,27 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 285,71 | 285,71 | 19,05 | 19,05 | 0,00 | 0,00 | 304,76 | 304,76 | 0,00 |
+| COBRANCA — Agente de cobrança a pagar | 17.142,86 | 17.142,86 | 1.142,86 | 1.142,86 | 0,00 | 0,00 | 18.285,72 | 18.285,72 | 0,00 |
+| RATING — Agência de classificação de risco (rating) a pagar | 18.857,14 | 18.857,14 | 174,60 | 174,60 | 0,00 | 0,00 | 19.031,74 | 19.031,74 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 7.032,79 | 7.032,79 | 127,87 | 127,87 | 0,00 | 0,00 | 7.160,66 | 7.160,66 | 0,00 |
+| **Total** |  |  |  |  |  |  | 235.920,72 | 235.920,72 | 0,00 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,19% a.a. sobre R$ 374.205.337,77 ÷ 252 (linear, dias úteis) = R$ 2.821,39 · Beta: [base: PL do dia útil anterior] 0,19% a.a. sobre R$ 374.205.337,77 ÷ 252 (linear, dias úteis) = R$ 2.821,39
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,57% a.a. sobre R$ 374.205.337,77 ÷ 252 (linear, dias úteis) = R$ 8.464,17 · Beta: [base: PL do dia útil anterior] 0,57% a.a. sobre R$ 374.205.337,77 ÷ 252 (linear, dias úteis) = R$ 8.464,17
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 374.205.337,77 ÷ 252 (linear, dias úteis) = R$ 296,99 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 374.205.337,77 ÷ 252 (linear, dias úteis) = R$ 296,99
-- **AUDIT** — Alfa: R$ 48.000,00 (anual) ÷ 252 d.u. = R$ 190,48 · Beta: R$ 48.000,00 (anual) ÷ 252 d.u. = R$ 190,48
-- **ANBIMA** — Alfa: R$ 1.200,00 (mensal) ÷ 21 d.u. = R$ 57,14 · Beta: R$ 1.200,00 (mensal) ÷ 21 d.u. = R$ 57,14
-- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
-- **PERF** — Alfa: 20% × max(0; cota bruta 4,56944609 − cota de referência 4,26421680 × fator MSCI ACWI em reais 1,03121875 = 4,39734032) × 83.330.421,58311845 cotas = R$ 2.868.329,33 · Beta: 20% × max(0; cota bruta 4,53269978 − cota de referência 4,26421680 × fator MSCI ACWI em reais 1,03121875 = 4,39734032) × 83.330.421,58311845 cotas = R$ 2.255.912,28
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,34% a.a. sobre R$ 136.123.296,84 ÷ 252 (linear, dias úteis) = R$ 1.836,58 · Beta: [base: PL do dia útil anterior] 0,34% a.a. sobre R$ 136.123.296,84 ÷ 252 (linear, dias úteis) = R$ 1.836,58
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,14% a.a. sobre R$ 136.123.296,84 ÷ 252 (linear, dias úteis) = R$ 6.157,96 · Beta: [base: PL do dia útil anterior] 1,14% a.a. sobre R$ 136.123.296,84 ÷ 252 (linear, dias úteis) = R$ 6.157,96
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,06% a.a. sobre R$ 136.123.296,84 ÷ 252 (linear, dias úteis) = R$ 324,10 · Beta: [base: PL do dia útil anterior] 0,06% a.a. sobre R$ 136.123.296,84 ÷ 252 (linear, dias úteis) = R$ 324,10
+- **AUDIT** — Alfa: R$ 116.000,00 (anual) ÷ 252 d.u. = R$ 460,32 · Beta: R$ 116.000,00 (anual) ÷ 252 d.u. = R$ 460,32
+- **ANBIMA** — Alfa: R$ 400,00 (mensal) ÷ 21 d.u. = R$ 19,05 · Beta: R$ 400,00 (mensal) ÷ 21 d.u. = R$ 19,05
+- **COBRANCA** — Alfa: R$ 24.000,00 (mensal) ÷ 21 d.u. = R$ 1.142,86 · Beta: R$ 24.000,00 (mensal) ÷ 21 d.u. = R$ 1.142,86
+- **RATING** — Alfa: R$ 44.000,00 (anual) ÷ 252 d.u. = R$ 174,60 · Beta: R$ 44.000,00 (anual) ÷ 252 d.u. = R$ 174,60
+- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 1960 | R$ 1.763.201,27 | 15:01 | 22/06/2026 | 22/06/2026 | 22/06/2026 | sim | sim |  |
-| RSG-1 | resgate | Cotista 1967 | 181.128,58001459 cotas |  | 31/05/2026 | 22/06/2026 | 24/06/2026 | sim | sim |  |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 377.363.681,33 | 374.301.596,07 | -3.062.085,26 |
-| Caixa | 5.400.056,92 | 5.400.056,92 | 0,00 |
+| Total de ativos | 132.899.347,88 | 132.899.347,88 | 0,00 |
+| Caixa | 3.487.480,85 | 3.487.480,85 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 1.763.201,27 | 1.763.201,27 | 0,00 |
-| Provisões | 3.094.997,08 | 2.482.580,03 | -612.417,05 |
-| PL base da cota | 377.905.539,90 | 375.455.871,69 | -2.449.668,21 |
-| Cota (8 casas) | 4,53502493 | 4,50562789 | -0,02939704 |
-| Aplicações convertidas | 1.763.201,27 | 1.763.201,27 | 0,00 |
-| Cotas emitidas | 388.796,37867833 | 391.333,08676317 | 2.536,70808484 |
-| Cotas resgatadas | 181.128,58001458 | 181.128,58001458 | 0,00000000 |
-| Valor dos resgates cotizados | 821.422,63 | 816.097,98 | -5.324,65 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 235.920,72 | 235.920,72 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 136.161.151,35 | 136.161.151,35 | 0,00 |
+| PL base da cota | 136.150.908,01 | 136.150.908,01 | 0,00 |
+| Cota (8 casas) | 1.173,91382539 | 1.173,91382539 | 0,00000000 |
+| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
+| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 83.538.089,38178220 | 83.540.626,08986704 | 2.536,70808484 |
-| PL final | 378.847.317,95 | 376.402.974,86 | -2.444.343,09 |
+| Quantidade final de cotas | 115.980,32586768 | 115.980,32586768 | 0,00000000 |
+| PL final | 136.150.908,01 | 136.150.908,01 | 0,00 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO
+**Parecer:** APROVADO
 
-**Resumo:** Reprovar até o ajuste: NAV estimado em OFFSHORE MERIDIAN.
+**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
 
-**Dificuldade:** media · **Cenários:** nav_estimado_feriado_eua
+**Dificuldade:** facil · **Cenários:** tudo_bate
 
-### Achado 1: NAV estimado em OFFSHORE MERIDIAN
-
-- **Gravidade:** erro · **Dimensões:** cota
-- **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa usou o NAV estimado enviado pela gestora para 19/06/2026 (feriado nos EUA), e não o último NAV oficial (18/06/2026).
-- **Onde olhar:** Carteira — OFFSHORE MERIDIAN; Informações de mercado — NAV; Comunicações — e-mail da gestora; Regulamento — NAV oficial
-- **Raciocínio do analista:**
-  1. A diferença está em OFFSHORE MERIDIAN: NAV USD 212,6081 (Beta) contra USD 215,7704 (Alfa). Câmbio e quantidade iguais.
-  2. 19/06/2026 foi feriado nos EUA (Juneteenth) e não houve NAV oficial. O valor do Alfa é o estimado do e-mail da gestora, chamado por ela mesma de "indicativo".
-  3. O regulamento exige o NAV oficial mais recente e veda NAV estimado. O correto é o NAV de 18/06/2026.
-- **Ação:** Alfa deve voltar para o NAV oficial de 18/06/2026 e reprocessar. Responder à gestora que valor indicativo não é usado na cota.
+Sem achados.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Beta |
+| cota | ambos |
 | caixa | ambos |
-| provisoes | Beta |
+| provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 4,50562789 |
-| Quantidade final de cotas | 83.540.626,08986704 |
-| PL final | R$ 376.402.974,86 |
-| Caixa | R$ 5.400.056,92 |
-| Total de provisões | R$ 2.482.580,03 |
+| Cota | 1.173,91382539 |
+| Quantidade final de cotas | 115.980,32586768 |
+| PL final | R$ 136.150.908,01 |
+| Caixa | R$ 3.487.480,85 |
+| Total de provisões | R$ 235.920,72 |
 
 ### Armadilhas deste caso
 
-- NAV estimado/indicativo não é aceito; usar o último NAV oficial.
+- Não inventar problema: quando tudo bate e as apropriações conferem com o regulamento, a resposta certa é aprovar.

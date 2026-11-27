@@ -3,51 +3,52 @@
   "seed": 3071308,
   "fundo": {
     "codigo": "FND-0133",
-    "nome": "Tiriba III FIF RF Crédito Privado LP",
-    "tipo": "RF_CP",
-    "rotulo": "Renda Fixa Crédito Privado",
-    "classe": "Classe de Renda Fixa — Crédito Privado",
-    "condominio": "aberto",
-    "publico": "Público geral",
+    "nome": "Tiriba III FIDC Responsabilidade Limitada",
+    "tipo": "FIDC",
+    "rotulo": "FIDC (direitos creditórios)",
+    "classe": "Classe de FIDC — subclasse única (monocota)",
+    "condominio": "fechado",
+    "publico": "Investidores profissionais",
     "gestora": {
-      "nome": "Itapuã Gestão",
-      "perfil": "gestora baiana de crédito privado e infraestrutura regional",
-      "cidade": "Salvador/BA"
+      "nome": "Quaresmeira Capital",
+      "perfil": "especialista em crédito estruturado (FIDC e CRA)",
+      "cidade": "São Paulo/SP"
     },
     "gestorResponsavel": "Vinícius",
     "analistaResponsavel": "Gustavo",
     "inicio": "2010-02-24",
-    "cotistas": "clientes private que buscam CDI+ com prazo de resgate longo",
+    "cotistas": "investidores profissionais e um family office",
     "marcos": [
-      "teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025",
-      "teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana"
+      "migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização",
+      "adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão"
     ],
     "particularidades": [
-      "a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal",
-      "as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês"
+      "as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês",
+      "o administrador revisa o manual de precificação uma vez por ano"
     ],
     "pistas": [
-      "A gestora costuma pedir que despesas dela sejam lançadas no fundo."
+      "A taxa de gestão é escalonada por faixa de patrimônio."
     ],
-    "historia": "O Tiriba III FIF RF Crédito Privado LP é gerido pela Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional, em Salvador/BA. Criado em 24/02/2010, busca retorno acima do CDI com crédito privado de boa qualidade, aceitando prazo de resgate mais longo. Público-alvo: público geral. Hoje seus cotistas são clientes private que buscam CDI+ com prazo de resgate longo. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A gestora costuma pedir que despesas dela sejam lançadas no fundo. No fechamento de ontem (29/07/2026) o fundo tinha PL de R$ 184.874.276,31, cota de 3,67043107 e 50.368.546,03359825 cotas. Hoje, quinta-feira, 30/07/2026, é a data-base da validação."
+    "historia": "Sob a gestão da Quaresmeira Capital, especialista em crédito estruturado (FIDC e CRA) (São Paulo/SP), o Tiriba III FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 24/02/2010, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o administrador revisa o manual de precificação uma vez por ano. A taxa de gestão é escalonada por faixa de patrimônio. No fechamento de ontem (09/06/2026) o fundo tinha PL de R$ 353.067.758,99, cota de 1.107,66477277 e 318.749,65031781 cotas. Hoje, quarta-feira, 10/06/2026, é a data-base da validação."
   },
-  "data": "2026-07-30",
-  "dAnterior": "2026-07-29",
-  "diaSemana": "quinta-feira",
+  "data": "2026-06-10",
+  "dAnterior": "2026-06-09",
+  "diaSemana": "quarta-feira",
   "anterior": {
-    "pl": 184874276.31,
-    "cota": 3.67043107,
-    "qtdCotas": 50368546.03359825
+    "pl": 353067758.99,
+    "cota": 1107.66477277,
+    "qtdCotas": 318749.65031781
   },
   "regulamento": {
-    "vigencia": "01/04/2025 (adaptado à Resolução CVM 175)",
+    "vigencia": "01/08/2025 (adaptado à Resolução CVM 175)",
     "taxas": [
       {
         "codigo": "TXADM",
         "nome": "Taxa de administração",
         "param": {
-          "pct": 0.0012,
-          "metodo": "linear_252"
+          "pct": 0.003,
+          "metodo": "exponencial_252",
+          "minimoMensal": 17000
         },
         "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
       },
@@ -55,16 +56,16 @@
         "codigo": "TXGES",
         "nome": "Taxa de gestão",
         "param": {
-          "pct": 0.0081,
-          "metodo": "linear_252",
+          "pct": 0.0115,
+          "metodo": "exponencial_252",
           "faixas": [
             {
-              "ate": 90000000,
-              "pct": 0.0081
+              "ate": 150000000,
+              "pct": 0.0115
             },
             {
               "ate": null,
-              "pct": 0.0058
+              "pct": 0.0088
             }
           ]
         },
@@ -74,8 +75,8 @@
         "codigo": "TXCUS",
         "nome": "Taxa máxima de custódia",
         "param": {
-          "pct": 0.0004,
-          "metodo": "linear_252"
+          "pct": 0.0005,
+          "metodo": "exponencial_252"
         },
         "pagamento": "mensalmente, até o 5º dia útil do mês subsequente"
       }
@@ -84,21 +85,27 @@
       {
         "codigo": "AUDIT",
         "nome": "Auditoria independente",
-        "valor": 55000,
+        "valor": 86000,
         "periodo": "anual",
         "observacao": "contrato anual; provisão diária por 1/252"
       },
       {
         "codigo": "ANBIMA",
         "nome": "Taxa ANBIMA (convênio de autorregulação)",
-        "valor": 1100,
+        "valor": 900,
         "periodo": "mensal"
       },
       {
-        "codigo": "SELIC",
-        "nome": "Custódia SELIC/B3 (estimativa mensal)",
-        "valor": 5600,
+        "codigo": "COBRANCA",
+        "nome": "Agente de cobrança",
+        "valor": 21000,
         "periodo": "mensal"
+      },
+      {
+        "codigo": "RATING",
+        "nome": "Agência de classificação de risco (rating)",
+        "valor": 76000,
+        "periodo": "anual"
       }
     ],
     "tabelaCVM": [
@@ -127,7 +134,7 @@
         "valor": 14400
       }
     ],
-    "plReferenciaCVM": 183642620.38,
+    "plReferenciaCVM": 361168704.03,
     "encargos": [
       "taxas de administração, gestão, custódia e performance previstas neste regulamento",
       "taxa de fiscalização da CVM",
@@ -143,21 +150,21 @@
       "despesas não previstas expressamente como encargo"
     ],
     "cotizacao": [
-      "Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.",
-      "Resgate: cotização D+30 corridos (liquidação D+1 útil)."
+      "Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento."
     ],
     "cota": "Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.",
     "precificacao": [
       "Manual de marcação a mercado do administrador (versão simulada vigente).",
       "Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.",
       "Operações compromissadas: PU de ida acrescido da remuneração pactuada.",
-      "Debêntures: PU pela taxa indicativa ANBIMA de D; na ausência de taxa ANBIMA, preço do comitê de precificação do administrador, revisado no mínimo mensalmente (negócios relevantes no secundário devem ser levados ao comitê).",
-      "CDB: curva do papel ajustada por spread de crédito do emissor, conforme manual."
+      "Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento."
     ],
-    "tributacao": "Longo prazo; come-cotas semestral (maio/novembro) a 15%",
-    "especificos": [],
-    "alteracoes": [],
-    "horarioCorte": "16:00"
+    "tributacao": "Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento",
+    "especificos": [
+      "Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.",
+      "Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento."
+    ],
+    "alteracoes": []
   },
   "mercado": {
     "cdiAA": 0.1415,
@@ -165,27 +172,7 @@
       {
         "ativo": "LFT 01/03/2029",
         "fonte": "ANBIMA — PU pela taxa indicativa de D",
-        "valor": "18.369,774746"
-      },
-      {
-        "ativo": "LINO11",
-        "fonte": "ANBIMA — PU pela taxa indicativa de D",
-        "valor": "1.003,548164"
-      },
-      {
-        "ativo": "EVSA12",
-        "fonte": "ANBIMA — PU pela taxa indicativa de D",
-        "valor": "1.145,083930"
-      },
-      {
-        "ativo": "PASU12",
-        "fonte": "ANBIMA — PU pela taxa indicativa de D",
-        "valor": "1.150,864106"
-      },
-      {
-        "ativo": "VCLA12",
-        "fonte": "ANBIMA — PU pela taxa indicativa de D",
-        "valor": "1.103,070880"
+        "valor": "18.141,022575"
       }
     ],
     "futuros": [],
@@ -194,10 +181,16 @@
   },
   "comunicacoes": [
     {
-      "hora": "11:01",
-      "de": "Gestora — relações com investidores",
-      "assunto": "Evento com cotistas",
-      "texto": "Favor provisionar no fundo a despesa do evento anual com cotistas, R$ 21.967,58 (NF do buffet em anexo)."
+      "hora": "07:55",
+      "de": "Custodiante — relatório de aging",
+      "assunto": "Aging de 10/06/2026",
+      "texto": "Mudanças de faixa hoje: sacado Comercial Boa Safra Ltda. — R$ 2.068.946,37 passaram de 90 para 91 dias de atraso (faixa 61–90 → 91–180)."
+    },
+    {
+      "hora": "16:33",
+      "de": "Distribuidor",
+      "assunto": "Material de divulgação",
+      "texto": "Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa."
     }
   ],
   "memoriaDisponivel": true,
@@ -206,73 +199,82 @@
       "posicao": {
         "ativos": [
           {
+            "codigo": "DC A VENCER",
+            "descricao": "Direitos creditórios a vencer — duplicatas mercantis",
+            "classe": "Direito creditório",
+            "quantidade": 247103800.65,
+            "preco": 1,
+            "valor": 247103800.65,
+            "fonte": "Valor presente pela taxa de cessão (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 1-30",
+            "descricao": "Direitos creditórios vencidos de 1 a 30 dias",
+            "classe": "Direito creditório",
+            "quantidade": 17650271.48,
+            "preco": 1,
+            "valor": 17650271.48,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 31-60",
+            "descricao": "Direitos creditórios vencidos de 31 a 60 dias",
+            "classe": "Direito creditório",
+            "quantidade": 7060108.59,
+            "preco": 1,
+            "valor": 7060108.59,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 61-90",
+            "descricao": "Direitos creditórios vencidos de 61 a 90 dias",
+            "classe": "Direito creditório",
+            "quantidade": 4236065.15,
+            "preco": 1,
+            "valor": 4236065.15,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 91-180",
+            "descricao": "Direitos creditórios vencidos de 91 a 180 dias",
+            "classe": "Direito creditório",
+            "quantidade": 2824043.44,
+            "preco": 1,
+            "valor": 2824043.44,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
             "codigo": "LFT 01/03/2029",
             "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
             "classe": "Título público",
-            "quantidade": 2479,
-            "preco": 18369.774746,
-            "valor": 45538671.6,
+            "quantidade": 2919,
+            "preco": 18141.022575,
+            "valor": 52953644.9,
             "fonte": "ANBIMA — taxa indicativa D"
           },
           {
             "codigo": "COMPROMISSADA OVER",
             "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
             "classe": "Compromissada",
-            "quantidade": 18137,
-            "preco": 803.336915,
-            "valor": 14570121.63,
+            "quantidade": 26302,
+            "preco": 805.261574,
+            "valor": 21179989.92,
             "fonte": "PU de ida + remuneração pactuada (taxa over)"
           },
           {
-            "codigo": "CDB ARANDU 2030",
-            "descricao": "CDB Banco Arandu S.A. — 111% do CDI — venc. 2030",
-            "classe": "CDB",
-            "quantidade": 14099,
-            "preco": 1291.77597,
-            "valor": 18212749.4,
-            "fonte": "Curva do papel (MaM por spread de crédito — manual do administrador)"
-          },
-          {
-            "codigo": "LINO11",
-            "descricao": "Debênture Logística Integrada Norte S.A. — CDI + 2,10%",
-            "classe": "Debênture",
-            "quantidade": 30852,
-            "preco": 1003.548164,
-            "valor": 30961467.96,
-            "fonte": "ANBIMA — taxa indicativa D"
-          },
-          {
-            "codigo": "EVSA12",
-            "descricao": "Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45%",
-            "classe": "Debênture",
-            "quantidade": 22267,
-            "preco": 1145.08393,
-            "valor": 25497583.87,
-            "fonte": "ANBIMA — taxa indicativa D"
-          },
-          {
-            "codigo": "PASU12",
-            "descricao": "Debênture Portos do Atlântico Sul S.A. — CDI + 1,80%",
-            "classe": "Debênture",
-            "quantidade": 25321,
-            "preco": 1150.864106,
-            "valor": 29141030.03,
-            "fonte": "ANBIMA — taxa indicativa D"
-          },
-          {
-            "codigo": "VCLA12",
-            "descricao": "Debênture Varejo Casa & Lar S.A. — CDI + 2,75%",
-            "classe": "Debênture",
-            "quantidade": 18162,
-            "preco": 1103.07088,
-            "valor": 20033973.32,
-            "fonte": "ANBIMA — taxa indicativa D"
+            "codigo": "(-) PDD",
+            "descricao": "(−) Provisão para perdas esperadas (PDD) — política do regulamento",
+            "classe": "Redutora",
+            "quantidade": 1,
+            "preco": -6142294.47,
+            "valor": -6142294.47,
+            "fonte": "Cálculo pelo aging do custodiante"
           }
         ],
         "caixa": {
-          "saldoInicial": 1219414.18,
+          "saldoInicial": 6578993.64,
           "lancamentos": [],
-          "saldoFinal": 1219414.18
+          "saldoFinal": 6578993.64
         },
         "aReceber": [],
         "aPagar": [],
@@ -280,62 +282,63 @@
           {
             "codigo": "TXADM",
             "descricao": "Taxa de administração a pagar",
-            "saldoAnterior": 18987.69,
-            "apropriacao": 880.35,
+            "saldoAnterior": 24704.91,
+            "apropriacao": 4196.92,
             "pagamento": 0,
-            "saldoAtual": 19868.04,
-            "memoria": "[base: PL do dia útil anterior] 0,12% a.a. sobre R$ 184.874.276,31 ÷ 252 (linear, dias úteis) = R$ 880,35",
+            "saldoAtual": 28901.83,
+            "memoria": "[base: PL do dia útil anterior] 0,30% a.a. sobre R$ 353.067.758,99 fator exponencial (1+taxa)^(1/252) − 1 = R$ 4.196,92; mínimo mensal R$ 17.000,00 ÷ 21 d.u. = R$ 809,52 (não se aplica)",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0012,
-                "metodo": "linear_252"
+                "pct": 0.003,
+                "metodo": "exponencial_252",
+                "minimoMensal": 17000
               }
             }
           },
           {
             "codigo": "TXGES",
             "descricao": "Taxa de gestão a pagar",
-            "saldoAnterior": 105498.85,
-            "apropriacao": 5942.39,
+            "saldoAnterior": 82489.41,
+            "apropriacao": 16020.64,
             "pagamento": 0,
-            "saldoAtual": 111441.24,
-            "memoria": "[base: PL do dia útil anterior] 0,81% a.a. sobre R$ 184.874.276,31 ÷ 252 (linear, dias úteis) = R$ 5.942,39",
+            "saldoAtual": 98510.05,
+            "memoria": "[base: PL do dia útil anterior] 1,15% a.a. sobre R$ 353.067.758,99 fator exponencial (1+taxa)^(1/252) − 1 = R$ 16.020,64",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0081,
-                "metodo": "linear_252"
+                "pct": 0.0115,
+                "metodo": "exponencial_252"
               }
             }
           },
           {
             "codigo": "TXCUS",
             "descricao": "Taxa máxima de custódia a pagar",
-            "saldoAnterior": 5992.53,
-            "apropriacao": 293.45,
+            "saldoAnterior": 4099.01,
+            "apropriacao": 700.36,
             "pagamento": 0,
-            "saldoAtual": 6285.98,
-            "memoria": "[base: PL do dia útil anterior] 0,04% a.a. sobre R$ 184.874.276,31 ÷ 252 (linear, dias úteis) = R$ 293,45",
+            "saldoAtual": 4799.37,
+            "memoria": "[base: PL do dia útil anterior] 0,05% a.a. sobre R$ 353.067.758,99 fator exponencial (1+taxa)^(1/252) − 1 = R$ 700,36",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0004,
-                "metodo": "linear_252"
+                "pct": 0.0005,
+                "metodo": "exponencial_252"
               }
             }
           },
           {
             "codigo": "AUDIT",
             "descricao": "Auditoria independente a pagar",
-            "saldoAnterior": 46488.1,
-            "apropriacao": 218.25,
+            "saldoAnterior": 74738.1,
+            "apropriacao": 341.27,
             "pagamento": 0,
-            "saldoAtual": 46706.35,
-            "memoria": "R$ 55.000,00 (anual) ÷ 252 d.u. = R$ 218,25",
+            "saldoAtual": 75079.37,
+            "memoria": "R$ 86.000,00 (anual) ÷ 252 d.u. = R$ 341,27",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 55000,
+              "valorPeriodo": 86000,
               "periodo": "anual",
               "diasPeriodo": 252
             }
@@ -343,142 +346,167 @@
           {
             "codigo": "ANBIMA",
             "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
-            "saldoAnterior": 1004.35,
-            "apropriacao": 47.83,
+            "saldoAnterior": 257.14,
+            "apropriacao": 42.86,
             "pagamento": 0,
-            "saldoAtual": 1052.18,
-            "memoria": "R$ 1.100,00 (mensal) ÷ 23 d.u. = R$ 47,83",
+            "saldoAtual": 300,
+            "memoria": "R$ 900,00 (mensal) ÷ 21 d.u. = R$ 42,86",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 1100,
+              "valorPeriodo": 900,
               "periodo": "mensal",
-              "diasPeriodo": 23
+              "diasPeriodo": 21
             }
           },
           {
-            "codigo": "SELIC",
-            "descricao": "Custódia SELIC/B3 (estimativa mensal) a pagar",
-            "saldoAnterior": 5113.04,
-            "apropriacao": 243.48,
+            "codigo": "COBRANCA",
+            "descricao": "Agente de cobrança a pagar",
+            "saldoAnterior": 6000,
+            "apropriacao": 1000,
             "pagamento": 0,
-            "saldoAtual": 5356.52,
-            "memoria": "R$ 5.600,00 (mensal) ÷ 23 d.u. = R$ 243,48",
+            "saldoAtual": 7000,
+            "memoria": "R$ 21.000,00 (mensal) ÷ 21 d.u. = R$ 1.000,00",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 5600,
+              "valorPeriodo": 21000,
               "periodo": "mensal",
-              "diasPeriodo": 23
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "RATING",
+            "descricao": "Agência de classificação de risco (rating) a pagar",
+            "saldoAnterior": 62730.16,
+            "apropriacao": 301.59,
+            "pagamento": 0,
+            "saldoAtual": 63031.75,
+            "memoria": "R$ 76.000,00 (anual) ÷ 252 d.u. = R$ 301,59",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 76000,
+              "periodo": "anual",
+              "diasPeriodo": 252
             }
           },
           {
             "codigo": "CVM",
             "descricao": "Taxa de fiscalização CVM a pagar",
-            "saldoAnterior": 2520,
-            "apropriacao": 120,
+            "saldoAnterior": 8144.26,
+            "apropriacao": 177.05,
             "pagamento": 0,
-            "saldoAtual": 2640,
-            "memoria": "R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00",
+            "saldoAtual": 8321.31,
+            "memoria": "R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 7800,
+              "valorPeriodo": 10800,
               "periodo": "trimestral",
-              "diasPeriodo": 65
+              "diasPeriodo": 61
             }
           }
         ],
-        "qtdCotasBase": 50368546.03359825,
+        "qtdCotasBase": 318749.65031781,
         "arredondamento": "truncamento",
         "movs": []
       },
       "resultado": {
-        "totalAtivos": 183955597.81,
-        "caixa": 1219414.18,
+        "totalAtivos": 346865629.66,
+        "caixa": 6578993.64,
         "totalReceber": 0,
         "totalPagar": 0,
-        "totalProvisoes": 193350.31,
-        "plBase": 184981661.68,
-        "cota": 3.67256306,
+        "totalProvisoes": 285943.68,
+        "plAntesApropriacoes": 353181460.31,
+        "plBase": 353158679.62,
+        "cota": 1107.95001427,
         "aplicacoesConvertidas": 0,
         "cotasEmitidas": 0,
         "cotasResgatadas": 0,
         "valorResgates": 0,
         "irComeCotas": 0,
         "cotasComeCotas": 0,
-        "qtdFinal": 50368546.03359825,
-        "plFinal": 184981661.55
+        "qtdFinal": 318749.65031781,
+        "plFinal": 353158679.62
       }
     },
     "Beta": {
       "posicao": {
         "ativos": [
           {
+            "codigo": "DC A VENCER",
+            "descricao": "Direitos creditórios a vencer — duplicatas mercantis",
+            "classe": "Direito creditório",
+            "quantidade": 247103800.65,
+            "preco": 1,
+            "valor": 247103800.65,
+            "fonte": "Valor presente pela taxa de cessão (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 1-30",
+            "descricao": "Direitos creditórios vencidos de 1 a 30 dias",
+            "classe": "Direito creditório",
+            "quantidade": 17650271.48,
+            "preco": 1,
+            "valor": 17650271.48,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 31-60",
+            "descricao": "Direitos creditórios vencidos de 31 a 60 dias",
+            "classe": "Direito creditório",
+            "quantidade": 7060108.59,
+            "preco": 1,
+            "valor": 7060108.59,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 61-90",
+            "descricao": "Direitos creditórios vencidos de 61 a 90 dias",
+            "classe": "Direito creditório",
+            "quantidade": 2167118.78,
+            "preco": 1,
+            "valor": 2167118.78,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
+            "codigo": "DC VENC 91-180",
+            "descricao": "Direitos creditórios vencidos de 91 a 180 dias",
+            "classe": "Direito creditório",
+            "quantidade": 4892989.81,
+            "preco": 1,
+            "valor": 4892989.81,
+            "fonte": "Valor presente (custodiante)"
+          },
+          {
             "codigo": "LFT 01/03/2029",
             "descricao": "Letra Financeira do Tesouro — venc. 01/03/2029",
             "classe": "Título público",
-            "quantidade": 2479,
-            "preco": 18369.774746,
-            "valor": 45538671.6,
+            "quantidade": 2919,
+            "preco": 18141.022575,
+            "valor": 52953644.9,
             "fonte": "ANBIMA — taxa indicativa D"
           },
           {
             "codigo": "COMPROMISSADA OVER",
             "descricao": "Operação compromissada over — lastro LTN 01/01/2028 (volta D+1)",
             "classe": "Compromissada",
-            "quantidade": 18137,
-            "preco": 803.336915,
-            "valor": 14570121.63,
+            "quantidade": 26302,
+            "preco": 805.261574,
+            "valor": 21179989.92,
             "fonte": "PU de ida + remuneração pactuada (taxa over)"
           },
           {
-            "codigo": "CDB ARANDU 2030",
-            "descricao": "CDB Banco Arandu S.A. — 111% do CDI — venc. 2030",
-            "classe": "CDB",
-            "quantidade": 14099,
-            "preco": 1291.77597,
-            "valor": 18212749.4,
-            "fonte": "Curva do papel (MaM por spread de crédito — manual do administrador)"
-          },
-          {
-            "codigo": "LINO11",
-            "descricao": "Debênture Logística Integrada Norte S.A. — CDI + 2,10%",
-            "classe": "Debênture",
-            "quantidade": 30852,
-            "preco": 1003.548164,
-            "valor": 30961467.96,
-            "fonte": "ANBIMA — taxa indicativa D"
-          },
-          {
-            "codigo": "EVSA12",
-            "descricao": "Debênture Energética Vale do Sapucaí S.A. — CDI + 1,45%",
-            "classe": "Debênture",
-            "quantidade": 22267,
-            "preco": 1145.08393,
-            "valor": 25497583.87,
-            "fonte": "ANBIMA — taxa indicativa D"
-          },
-          {
-            "codigo": "PASU12",
-            "descricao": "Debênture Portos do Atlântico Sul S.A. — CDI + 1,80%",
-            "classe": "Debênture",
-            "quantidade": 25321,
-            "preco": 1150.864106,
-            "valor": 29141030.03,
-            "fonte": "ANBIMA — taxa indicativa D"
-          },
-          {
-            "codigo": "VCLA12",
-            "descricao": "Debênture Varejo Casa & Lar S.A. — CDI + 2,75%",
-            "classe": "Debênture",
-            "quantidade": 18162,
-            "preco": 1103.07088,
-            "valor": 20033973.32,
-            "fonte": "ANBIMA — taxa indicativa D"
+            "codigo": "(-) PDD",
+            "descricao": "(−) Provisão para perdas esperadas (PDD) — política do regulamento",
+            "classe": "Redutora",
+            "quantidade": 1,
+            "preco": -6762978.39,
+            "valor": -6762978.39,
+            "fonte": "Cálculo pelo aging do custodiante"
           }
         ],
         "caixa": {
-          "saldoInicial": 1219414.18,
+          "saldoInicial": 6578993.64,
           "lancamentos": [],
-          "saldoFinal": 1219414.18
+          "saldoFinal": 6578993.64
         },
         "aReceber": [],
         "aPagar": [],
@@ -486,40 +514,41 @@
           {
             "codigo": "TXADM",
             "descricao": "Taxa de administração a pagar",
-            "saldoAnterior": 18987.69,
-            "apropriacao": 880.35,
+            "saldoAnterior": 24704.91,
+            "apropriacao": 4196.92,
             "pagamento": 0,
-            "saldoAtual": 19868.04,
-            "memoria": "[base: PL do dia útil anterior] 0,12% a.a. sobre R$ 184.874.276,31 ÷ 252 (linear, dias úteis) = R$ 880,35",
+            "saldoAtual": 28901.83,
+            "memoria": "[base: PL do dia útil anterior] 0,30% a.a. sobre R$ 353.067.758,99 fator exponencial (1+taxa)^(1/252) − 1 = R$ 4.196,92; mínimo mensal R$ 17.000,00 ÷ 21 d.u. = R$ 809,52 (não se aplica)",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0012,
-                "metodo": "linear_252"
+                "pct": 0.003,
+                "metodo": "exponencial_252",
+                "minimoMensal": 17000
               }
             }
           },
           {
             "codigo": "TXGES",
             "descricao": "Taxa de gestão a pagar",
-            "saldoAnterior": 105498.85,
-            "apropriacao": 5076.47,
+            "saldoAnterior": 82489.41,
+            "apropriacao": 13867.91,
             "pagamento": 0,
-            "saldoAtual": 110575.32,
-            "memoria": "[base: PL do dia útil anterior] escalonada (0,81% sobre R$ 90.000.000,00 + 0,58% sobre R$ 94.874.276,31) ÷ 252 (linear, dias úteis) = R$ 5.076,47",
+            "saldoAtual": 96357.32,
+            "memoria": "[base: PL do dia útil anterior] escalonada (1,15% sobre R$ 150.000.000,00 + 0,88% sobre R$ 203.067.758,99) fator exponencial (1+taxa)^(1/252) − 1 = R$ 13.867,91",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0081,
-                "metodo": "linear_252",
+                "pct": 0.0115,
+                "metodo": "exponencial_252",
                 "faixas": [
                   {
-                    "ate": 90000000,
-                    "pct": 0.0081
+                    "ate": 150000000,
+                    "pct": 0.0115
                   },
                   {
                     "ate": null,
-                    "pct": 0.0058
+                    "pct": 0.0088
                   }
                 ]
               }
@@ -528,30 +557,30 @@
           {
             "codigo": "TXCUS",
             "descricao": "Taxa máxima de custódia a pagar",
-            "saldoAnterior": 5992.53,
-            "apropriacao": 293.45,
+            "saldoAnterior": 4099.01,
+            "apropriacao": 700.36,
             "pagamento": 0,
-            "saldoAtual": 6285.98,
-            "memoria": "[base: PL do dia útil anterior] 0,04% a.a. sobre R$ 184.874.276,31 ÷ 252 (linear, dias úteis) = R$ 293,45",
+            "saldoAtual": 4799.37,
+            "memoria": "[base: PL do dia útil anterior] 0,05% a.a. sobre R$ 353.067.758,99 fator exponencial (1+taxa)^(1/252) − 1 = R$ 700,36",
             "regra": {
               "tipo": "pct",
               "param": {
-                "pct": 0.0004,
-                "metodo": "linear_252"
+                "pct": 0.0005,
+                "metodo": "exponencial_252"
               }
             }
           },
           {
             "codigo": "AUDIT",
             "descricao": "Auditoria independente a pagar",
-            "saldoAnterior": 46488.1,
-            "apropriacao": 218.25,
+            "saldoAnterior": 74738.1,
+            "apropriacao": 341.27,
             "pagamento": 0,
-            "saldoAtual": 46706.35,
-            "memoria": "R$ 55.000,00 (anual) ÷ 252 d.u. = R$ 218,25",
+            "saldoAtual": 75079.37,
+            "memoria": "R$ 86.000,00 (anual) ÷ 252 d.u. = R$ 341,27",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 55000,
+              "valorPeriodo": 86000,
               "periodo": "anual",
               "diasPeriodo": 252
             }
@@ -559,110 +588,119 @@
           {
             "codigo": "ANBIMA",
             "descricao": "Taxa ANBIMA (convênio de autorregulação) a pagar",
-            "saldoAnterior": 1004.35,
-            "apropriacao": 47.83,
+            "saldoAnterior": 257.14,
+            "apropriacao": 42.86,
             "pagamento": 0,
-            "saldoAtual": 1052.18,
-            "memoria": "R$ 1.100,00 (mensal) ÷ 23 d.u. = R$ 47,83",
+            "saldoAtual": 300,
+            "memoria": "R$ 900,00 (mensal) ÷ 21 d.u. = R$ 42,86",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 1100,
+              "valorPeriodo": 900,
               "periodo": "mensal",
-              "diasPeriodo": 23
+              "diasPeriodo": 21
             }
           },
           {
-            "codigo": "SELIC",
-            "descricao": "Custódia SELIC/B3 (estimativa mensal) a pagar",
-            "saldoAnterior": 5113.04,
-            "apropriacao": 243.48,
+            "codigo": "COBRANCA",
+            "descricao": "Agente de cobrança a pagar",
+            "saldoAnterior": 6000,
+            "apropriacao": 1000,
             "pagamento": 0,
-            "saldoAtual": 5356.52,
-            "memoria": "R$ 5.600,00 (mensal) ÷ 23 d.u. = R$ 243,48",
+            "saldoAtual": 7000,
+            "memoria": "R$ 21.000,00 (mensal) ÷ 21 d.u. = R$ 1.000,00",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 5600,
+              "valorPeriodo": 21000,
               "periodo": "mensal",
-              "diasPeriodo": 23
+              "diasPeriodo": 21
+            }
+          },
+          {
+            "codigo": "RATING",
+            "descricao": "Agência de classificação de risco (rating) a pagar",
+            "saldoAnterior": 62730.16,
+            "apropriacao": 301.59,
+            "pagamento": 0,
+            "saldoAtual": 63031.75,
+            "memoria": "R$ 76.000,00 (anual) ÷ 252 d.u. = R$ 301,59",
+            "regra": {
+              "tipo": "fixo",
+              "valorPeriodo": 76000,
+              "periodo": "anual",
+              "diasPeriodo": 252
             }
           },
           {
             "codigo": "CVM",
             "descricao": "Taxa de fiscalização CVM a pagar",
-            "saldoAnterior": 2520,
-            "apropriacao": 120,
+            "saldoAnterior": 8144.26,
+            "apropriacao": 177.05,
             "pagamento": 0,
-            "saldoAtual": 2640,
-            "memoria": "R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00",
+            "saldoAtual": 8321.31,
+            "memoria": "R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05",
             "regra": {
               "tipo": "fixo",
-              "valorPeriodo": 7800,
+              "valorPeriodo": 10800,
               "periodo": "trimestral",
-              "diasPeriodo": 65
-            }
-          },
-          {
-            "codigo": "DESP EVENTO",
-            "descricao": "Despesa — evento de relacionamento com cotistas (gestora)",
-            "saldoAnterior": 0,
-            "apropriacao": 21967.58,
-            "pagamento": 0,
-            "saldoAtual": 21967.58,
-            "memoria": "Lançamento manual a pedido da gestora",
-            "regra": {
-              "tipo": "manual"
-            }
-          },
-          {
-            "codigo": "AUDIT (2)",
-            "descricao": "Auditoria independente a pagar",
-            "saldoAnterior": 0,
-            "apropriacao": 218.25,
-            "pagamento": 0,
-            "saldoAtual": 218.25,
-            "memoria": "R$ 55.000,00 (anual) ÷ 252 d.u. = R$ 218,25",
-            "regra": {
-              "tipo": "fixo",
-              "valorPeriodo": 55000,
-              "periodo": "anual",
-              "diasPeriodo": 252
+              "diasPeriodo": 61
             }
           }
         ],
-        "qtdCotasBase": 50368546.03359825,
+        "qtdCotasBase": 318749.65031781,
         "arredondamento": "truncamento",
         "movs": []
       },
       "resultado": {
-        "totalAtivos": 183955597.81,
-        "caixa": 1219414.18,
+        "totalAtivos": 346244945.74,
+        "caixa": 6578993.64,
         "totalReceber": 0,
         "totalPagar": 0,
-        "totalProvisoes": 214670.22,
-        "plBase": 184960341.77,
-        "cota": 3.67213978,
+        "totalProvisoes": 283790.95,
+        "plAntesApropriacoes": 352560776.39,
+        "plBase": 352540148.43,
+        "cota": 1106.00952213,
         "aplicacoesConvertidas": 0,
         "cotasEmitidas": 0,
         "cotasResgatadas": 0,
         "valorResgates": 0,
         "irComeCotas": 0,
         "cotasComeCotas": 0,
-        "qtdFinal": 50368546.03359825,
-        "plFinal": 184960341.55
+        "qtdFinal": 318749.65031781,
+        "plFinal": 352540148.43
       }
     }
   },
   "gabarito": {
     "cenarios": [
-      "taxa_escalonada_ignorada",
-      "despesa_nao_prevista",
-      "provisao_duplicada"
+      "pdd_aging_desatualizado",
+      "taxa_escalonada_ignorada"
     ],
-    "parecer": "APROVADO",
-    "ressalva": true,
-    "resumo": "Aprovar com ressalva: Taxa de gestão escalonada aplicada como taxa cheia; Despesa de evento da gestora lançada no fundo; Provisão de Auditoria independente duplicada.",
-    "dificuldade": "dificil",
+    "parecer": "REPROVADO",
+    "ressalva": false,
+    "resumo": "Reprovar até o ajuste: PDD calculada com aging de D−1; Taxa de gestão escalonada aplicada como taxa cheia.",
+    "dificuldade": "media",
     "achados": [
+      {
+        "cenario": "pdd_aging_desatualizado",
+        "dimensoes": [
+          "cota"
+        ],
+        "titulo": "PDD calculada com aging de D−1",
+        "ladoCorreto": "Beta",
+        "ajustePor": "Alfa",
+        "causaRaiz": "Alfa não migrou R$ 2.068.946,37 da faixa 61–90 para 91–180 dias, como mostra o aging de D, e calculou a PDD com 30% em vez de 60% sobre esse valor.",
+        "evidencias": [
+          "Carteira — faixas de direitos creditórios e linha de PDD",
+          "Comunicações — relatório de aging",
+          "Regulamento — política de perdas"
+        ],
+        "raciocinio": [
+          "O total de direitos creditórios é igual nos dois lados, mas a distribuição por faixa não: o Alfa tem R$ 2.068.946,37 a mais em 61–90 e a menos em 91–180.",
+          "O aging do custodiante de D mostra que esse valor passou para 91 dias hoje. Pela política, a PDD sobe de 30% para 60% sobre ele: R$ 620.683,91 a mais de provisão.",
+          "O Alfa está com PL maior do que deveria. Num FIDC, PDD a menor é o erro mais sensível, porque superavalia a classe."
+        ],
+        "acao": "Alfa deve reprocessar com o aging de D e recalcular a PDD antes da divulgação."
+      },
       {
         "cenario": "taxa_escalonada_ignorada",
         "dimensoes": [
@@ -671,89 +709,50 @@
         "titulo": "Taxa de gestão escalonada aplicada como taxa cheia",
         "ladoCorreto": "Beta",
         "ajustePor": "Alfa",
-        "causaRaiz": "Alfa aplicou 0,810% sobre todo o PL, ignorando a taxa menor (0,580%) sobre a parcela acima de R$ 90.000.000,00.",
+        "causaRaiz": "Alfa aplicou 1,150% sobre todo o PL, ignorando a taxa menor (0,880%) sobre a parcela acima de R$ 150.000.000,00.",
         "evidencias": [
           "Provisões — TXGES",
           "Regulamento — taxa de gestão escalonada"
         ],
         "raciocinio": [
           "A apropriação de taxa de gestão do Alfa é maior.",
-          "O regulamento escalona a taxa: Taxa de gestão: 0,810% a.a. sobre a parcela do PL até R$ 90.000.000,00; 0,580% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente. Com PL de D−1 de R$ 184.874.276,31, parte do PL está na segunda faixa.",
+          "O regulamento escalona a taxa: Taxa de gestão: 1,150% a.a. sobre a parcela do PL até R$ 150.000.000,00; 0,880% a.a. sobre o excedente, calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente. Com faixas, o percentual efetivo é a média ponderada das faixas sobre o PL, aplicada no fator exponencial. Com PL de D−1 de R$ 353.067.758,99, parte do PL está na segunda faixa.",
           "O Beta fez a conta por faixas; o Alfa aplicou a taxa cheia em tudo."
         ],
         "acao": "Alfa deve parametrizar as faixas da taxa de gestão e reprocessar."
-      },
-      {
-        "cenario": "despesa_nao_prevista",
-        "dimensoes": [
-          "provisoes"
-        ],
-        "titulo": "Despesa de evento da gestora lançada no fundo",
-        "ladoCorreto": "Alfa",
-        "ajustePor": "Beta",
-        "causaRaiz": "Beta provisionou R$ 21.967,58 de despesa de evento de relacionamento a pedido da gestora. O regulamento diz que esse tipo de gasto não é encargo da classe.",
-        "evidencias": [
-          "Provisões — linha nova",
-          "Regulamento — encargos / não encargos",
-          "Comunicações — pedido da gestora"
-        ],
-        "raciocinio": [
-          "O Beta tem uma provisão que o Alfa não tem: \"evento de relacionamento\" de R$ 21.967,58.",
-          "O regulamento classifica despesas de marketing, eventos e relacionamento da gestora como NÃO encargo. O pedido da gestora não muda o regulamento."
-        ],
-        "acao": "Beta deve estornar a provisão e reprocessar. Responder à gestora que a despesa é dela."
-      },
-      {
-        "cenario": "provisao_duplicada",
-        "dimensoes": [
-          "provisoes"
-        ],
-        "titulo": "Provisão de Auditoria independente duplicada",
-        "ladoCorreto": "Alfa",
-        "ajustePor": "Beta",
-        "causaRaiz": "Beta criou hoje uma segunda linha de provisão para Auditoria independente, com a mesma apropriação diária. A despesa está contada duas vezes.",
-        "evidencias": [
-          "Provisões — linhas com mesmo código/descrição"
-        ],
-        "raciocinio": [
-          "O Beta tem uma linha a mais, \"AUDIT (2)\", com saldo anterior zero e a mesma apropriação da linha original.",
-          "O regulamento/contrato prevê uma única despesa. A segunda linha parece um cadastro duplicado."
-        ],
-        "acao": "Beta deve excluir a linha duplicada e reprocessar."
       }
     ],
     "valoresCorretos": {
-      "totalAtivos": 183955597.81,
-      "caixa": 1219414.18,
+      "totalAtivos": 346244945.74,
+      "caixa": 6578993.64,
       "totalReceber": 0,
       "totalPagar": 0,
-      "totalProvisoes": 192484.39,
-      "plBase": 184982527.6,
-      "cota": 3.67258025,
+      "totalProvisoes": 283790.95,
+      "plAntesApropriacoes": 352560776.39,
+      "plBase": 352540148.43,
+      "cota": 1106.00952213,
       "aplicacoesConvertidas": 0,
       "cotasEmitidas": 0,
       "cotasResgatadas": 0,
       "valorResgates": 0,
       "irComeCotas": 0,
       "cotasComeCotas": 0,
-      "qtdFinal": 50368546.03359825,
-      "plFinal": 184982527.38
+      "qtdFinal": 318749.65031781,
+      "plFinal": 352540148.43
     },
     "corretoPorDimensao": {
-      "cota": "nenhum",
+      "cota": "Beta",
       "caixa": "ambos",
-      "provisoes": "nenhum"
+      "provisoes": "Beta"
     },
     "diferencas": {
-      "cota": -0.00042328,
+      "cota": -1.94049214,
       "qtdFinal": 0,
-      "plFinal": -21320,
-      "plBase": -21319.91,
+      "plFinal": -618531.19,
+      "plBase": -618531.19,
       "caixa": 0,
-      "provisoes": 21319.91
+      "provisoes": -2152.73
     },
-    "armadilhas": [
-      "Pedido da gestora não muda o regulamento; despesa só é encargo se prevista (e, se exigido, aprovada e documentada)."
-    ]
+    "armadilhas": []
   }
 }

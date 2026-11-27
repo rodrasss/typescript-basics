@@ -18,6 +18,8 @@ export type TipoFundo =
   | 'FIAGRO'
   | 'INFRA';
 
+export interface PrazoResgate { cot: number; corridos: boolean; liq: number; }
+
 export interface PerfilTipo {
   tipo: TipoFundo;
   rotulo: string;
@@ -33,7 +35,10 @@ export interface PerfilTipo {
   perf: { chance: number; benchmarks: string[] };
   comeCotas: boolean;
   condominio: 'aberto' | 'fechado';
-  cotizacaoResgate: string[];
+  /** prazos de resgate (condomínio aberto): cotização em D+cot após o pedido; liquidação D+liq (úteis) após a cotização */
+  cotizacaoResgate: PrazoResgate[];
+  /** texto de regras de saída para condomínio fechado */
+  saidaFechado?: string;
   tributacao: string;
 }
 
@@ -43,14 +48,14 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de Renda Fixa — Referenciada DI', publico: ['Público geral', 'Público geral (plataformas digitais)'],
     pl: [80e6, 2.5e9], cota: [1.2, 6.5], retornoDia: [0.00049, 0.00054], taxaAdm: [0.0005, 0.0015], taxaGes: [0.0010, 0.0040],
     custodia: [0.0001, 0.0003], perf: { chance: 0, benchmarks: [] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: ['D+0 (liquidação D+0)'], tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
+    cotizacaoResgate: [{ cot: 0, corridos: false, liq: 0 }], tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
   },
   RF_CP: {
     tipo: 'RF_CP', rotulo: 'Renda Fixa Crédito Privado', sufixo: 'FIF RF Crédito Privado LP',
     classe: 'Classe de Renda Fixa — Crédito Privado', publico: ['Investidores qualificados', 'Público geral'],
     pl: [60e6, 1.8e9], cota: [1.1, 4.8], retornoDia: [0.00040, 0.00070], taxaAdm: [0.0005, 0.0015], taxaGes: [0.0040, 0.0090],
     custodia: [0.0001, 0.0004], perf: { chance: 0.25, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: ['D+30 corridos (liquidação D+1 útil)', 'D+15 corridos (liquidação D+1 útil)', 'D+60 corridos (liquidação D+1 útil)'],
+    cotizacaoResgate: [{ cot: 30, corridos: true, liq: 1 }, { cot: 15, corridos: true, liq: 1 }, { cot: 60, corridos: true, liq: 1 }],
     tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
   },
   FIM_MACRO: {
@@ -58,7 +63,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe Multimercado', publico: ['Investidores qualificados', 'Público geral'],
     pl: [50e6, 1.5e9], cota: [1.5, 12], retornoDia: [-0.006, 0.007], taxaAdm: [0.0005, 0.002], taxaGes: [0.008, 0.019],
     custodia: [0.0001, 0.0004], perf: { chance: 0.9, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: ['D+30 corridos (liquidação D+1 útil)', 'D+1 útil (liquidação D+1 útil após a cotização)'],
+    cotizacaoResgate: [{ cot: 30, corridos: true, liq: 1 }, { cot: 1, corridos: false, liq: 1 }],
     tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
   },
   FIM_LS: {
@@ -66,7 +71,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe Multimercado', publico: ['Investidores qualificados'],
     pl: [40e6, 900e6], cota: [1.3, 9], retornoDia: [-0.008, 0.009], taxaAdm: [0.0005, 0.002], taxaGes: [0.01, 0.019],
     custodia: [0.0001, 0.0004], perf: { chance: 0.95, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: ['D+30 corridos (liquidação D+2 úteis)', 'D+15 corridos (liquidação D+2 úteis)'],
+    cotizacaoResgate: [{ cot: 30, corridos: true, liq: 2 }, { cot: 15, corridos: true, liq: 2 }],
     tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
   },
   FIA: {
@@ -74,7 +79,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de Ações', publico: ['Público geral', 'Investidores qualificados'],
     pl: [30e6, 1.2e9], cota: [1.1, 25], retornoDia: [-0.022, 0.024], taxaAdm: [0.0005, 0.002], taxaGes: [0.01, 0.019],
     custodia: [0.0001, 0.0005], perf: { chance: 0.7, benchmarks: ['Ibovespa', 'SMLL'] }, comeCotas: false, condominio: 'aberto',
-    cotizacaoResgate: ['D+30 corridos (liquidação D+2 úteis)', 'D+1 útil (liquidação D+2 úteis)'],
+    cotizacaoResgate: [{ cot: 30, corridos: true, liq: 2 }, { cot: 1, corridos: false, liq: 2 }],
     tributacao: 'Classe de ações: sem come-cotas; IR de 15% no resgate',
   },
   FIC_FIM: {
@@ -82,7 +87,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe Multimercado — Investimento em Cotas', publico: ['Investidores qualificados', 'Público geral'],
     pl: [40e6, 1e9], cota: [1.2, 8], retornoDia: [-0.004, 0.005], taxaAdm: [0.0005, 0.002], taxaGes: [0.004, 0.01],
     custodia: [0.0001, 0.0003], perf: { chance: 0.3, benchmarks: ['CDI'] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: ['D+30 corridos (liquidação D+1 útil)', 'D+45 corridos (liquidação D+1 útil)'],
+    cotizacaoResgate: [{ cot: 30, corridos: true, liq: 1 }, { cot: 45, corridos: true, liq: 1 }],
     tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
   },
   PREV: {
@@ -90,7 +95,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe Previdenciária', publico: ['Exclusivo para planos PGBL/VGBL de seguradora'],
     pl: [100e6, 3e9], cota: [1.5, 7], retornoDia: [-0.003, 0.004], taxaAdm: [0.0005, 0.002], taxaGes: [0.006, 0.014],
     custodia: [0.0001, 0.0003], perf: { chance: 0.2, benchmarks: ['CDI'] }, comeCotas: false, condominio: 'aberto',
-    cotizacaoResgate: ['D+1 útil (liquidação D+1 útil após a cotização)'],
+    cotizacaoResgate: [{ cot: 1, corridos: false, liq: 1 }],
     tributacao: 'Previdência: tributação no plano (seguradora); sem come-cotas',
   },
   FIDC: {
@@ -98,7 +103,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de FIDC — subclasse única (monocota)', publico: ['Investidores qualificados', 'Investidores profissionais'],
     pl: [50e6, 800e6], cota: [1000, 1500], retornoDia: [0.0004, 0.0008], taxaAdm: [0.0015, 0.0035], taxaGes: [0.005, 0.015],
     custodia: [0.0002, 0.0006], perf: { chance: 0, benchmarks: [] }, comeCotas: false, condominio: 'fechado',
-    cotizacaoResgate: ['Condomínio fechado: amortizações conforme cronograma do suplemento'],
+    cotizacaoResgate: [], saidaFechado: 'Condomínio fechado: sem resgate; amortizações conforme cronograma do suplemento.',
     tributacao: 'Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento',
   },
   FII: {
@@ -106,7 +111,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de FII — Tijolo', publico: ['Público geral (cotas negociadas na B3)'],
     pl: [100e6, 2e9], cota: [80, 120], retornoDia: [-0.0003, 0.0006], taxaAdm: [0.001, 0.002], taxaGes: [0.006, 0.01],
     custodia: [0.0001, 0.0002], perf: { chance: 0, benchmarks: [] }, comeCotas: false, condominio: 'fechado',
-    cotizacaoResgate: ['Condomínio fechado: sem resgate; liquidez via B3'],
+    cotizacaoResgate: [], saidaFechado: 'Condomínio fechado: sem resgate; liquidez via B3.',
     tributacao: 'FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%',
   },
   FIP: {
@@ -114,7 +119,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de FIP — Multiestratégia', publico: ['Investidores qualificados', 'Investidores profissionais'],
     pl: [80e6, 1.5e9], cota: [800, 2200], retornoDia: [-0.0002, 0.0004], taxaAdm: [0.001, 0.003], taxaGes: [0.012, 0.02],
     custodia: [0.0001, 0.0003], perf: { chance: 0, benchmarks: [] }, comeCotas: false, condominio: 'fechado',
-    cotizacaoResgate: ['Condomínio fechado: chamadas de capital e amortizações'],
+    cotizacaoResgate: [], saidaFechado: 'Condomínio fechado: sem resgate; chamadas de capital e amortizações conforme deliberação.',
     tributacao: 'FIP: regime específico (entidade de investimento)',
   },
   CAMBIAL: {
@@ -122,7 +127,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe Cambial', publico: ['Público geral'],
     pl: [40e6, 700e6], cota: [2, 9], retornoDia: [-0.012, 0.012], taxaAdm: [0.0005, 0.002], taxaGes: [0.003, 0.008],
     custodia: [0.0001, 0.0003], perf: { chance: 0, benchmarks: [] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: ['D+0 (liquidação D+1 útil)'],
+    cotizacaoResgate: [{ cot: 0, corridos: false, liq: 1 }],
     tributacao: 'Longo prazo; come-cotas semestral (maio/novembro) a 15%',
   },
   IE: {
@@ -130,7 +135,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de Ações — Investimento no Exterior', publico: ['Investidores qualificados', 'Público geral'],
     pl: [40e6, 900e6], cota: [1.1, 6], retornoDia: [-0.018, 0.018], taxaAdm: [0.0005, 0.002], taxaGes: [0.005, 0.012],
     custodia: [0.0001, 0.0003], perf: { chance: 0.35, benchmarks: ['MSCI ACWI em reais'] }, comeCotas: false, condominio: 'aberto',
-    cotizacaoResgate: ['D+3 úteis (liquidação D+5 úteis)', 'D+5 úteis (liquidação D+7 úteis)'],
+    cotizacaoResgate: [{ cot: 3, corridos: false, liq: 2 }, { cot: 5, corridos: false, liq: 2 }],
     tributacao: 'Classe de ações: sem come-cotas; IR de 15% no resgate',
   },
   EXCLUSIVO: {
@@ -138,7 +143,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe Multimercado — Exclusiva para investidor profissional', publico: ['Cotista único (classe exclusiva)'],
     pl: [30e6, 600e6], cota: [1.2, 15], retornoDia: [-0.0015, 0.002], taxaAdm: [0.0004, 0.0012], taxaGes: [0.002, 0.006],
     custodia: [0.0001, 0.0002], perf: { chance: 0, benchmarks: [] }, comeCotas: true, condominio: 'aberto',
-    cotizacaoResgate: ['D+1 útil (liquidação D+1 útil após a cotização)'],
+    cotizacaoResgate: [{ cot: 1, corridos: false, liq: 1 }],
     tributacao: 'Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)',
   },
   FIAGRO: {
@@ -146,7 +151,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de Fiagro', publico: ['Público geral (cotas negociadas na B3)'],
     pl: [80e6, 1.2e9], cota: [9, 110], retornoDia: [0.0003, 0.0009], taxaAdm: [0.001, 0.002], taxaGes: [0.007, 0.011],
     custodia: [0.0001, 0.0003], perf: { chance: 0, benchmarks: [] }, comeCotas: false, condominio: 'fechado',
-    cotizacaoResgate: ['Condomínio fechado: sem resgate; liquidez via B3'],
+    cotizacaoResgate: [], saidaFechado: 'Condomínio fechado: sem resgate; liquidez via B3.',
     tributacao: 'Fiagro: rendimentos isentos para PF nas condições legais',
   },
   INFRA: {
@@ -154,7 +159,7 @@ export const PERFIS: Record<TipoFundo, PerfilTipo> = {
     classe: 'Classe de Renda Fixa — Infraestrutura (Lei 12.431)', publico: ['Público geral'],
     pl: [60e6, 1.4e9], cota: [1.1, 3.5], retornoDia: [-0.0015, 0.0022], taxaAdm: [0.0005, 0.0015], taxaGes: [0.005, 0.009],
     custodia: [0.0001, 0.0003], perf: { chance: 0, benchmarks: [] }, comeCotas: false, condominio: 'aberto',
-    cotizacaoResgate: ['D+30 corridos (liquidação D+1 útil)'],
+    cotizacaoResgate: [{ cot: 30, corridos: true, liq: 1 }],
     tributacao: 'Incentivado (Lei 12.431): isento para PF, sem come-cotas',
   },
 };
@@ -174,7 +179,7 @@ export interface Gestora { nome: string; perfil: string; cidade: string; }
 export const GESTORAS: Gestora[] = [
   { nome: 'Cumeeira Capital', perfil: 'boutique fundada por ex-operadores de tesouraria, cultura de mesa e muita boleta no fim do dia', cidade: 'São Paulo/SP' },
   { nome: 'Barlavento Investimentos', perfil: 'gestora macro com equipe enxuta e forte uso de derivativos', cidade: 'Rio de Janeiro/RJ' },
-  { nome: 'Alvorada Sul Gestão', perfil: 'gestora gaúcha conservadora, focada em crédito high grade', cidade: 'Porto Alegre/RS' },
+  { nome: 'Alvorada Sul Gestão', perfil: 'gestora gaúcha conservadora, focada em crédito privado de emissores de primeira linha', cidade: 'Porto Alegre/RS' },
   { nome: 'Marola Asset', perfil: 'gestora jovem de ações, muito ativa em eventos societários e small caps', cidade: 'Florianópolis/SC' },
   { nome: 'Pedra Branca Gestão', perfil: 'multi-family office que estrutura fundos exclusivos para famílias do agro', cidade: 'Goiânia/GO' },
   { nome: 'Quaresmeira Capital', perfil: 'especialista em crédito estruturado (FIDC e CRA)', cidade: 'São Paulo/SP' },
@@ -205,7 +210,7 @@ export const COTISTAS: Record<TipoFundo, string[]> = {
   FIA: ['cerca de 12 mil cotistas pessoa física', 'um FoF de ações de terceiros com 22% do PL', 'clientes de varejo que entraram na alta de 2024'],
   FIC_FIM: ['carteiras administradas e clientes private com perfil moderado', 'cerca de 3 mil cotistas qualificados', 'clientes de um escritório de assessoria do interior paulista'],
   PREV: ['planos PGBL/VGBL de uma seguradora (cotista único: a seguradora, representando ~35 mil participantes)', 'planos VGBL de uma seguradora regional (cotista único)'],
-  FIDC: ['dois fundos de crédito e uma seguradora (estrutura monocota, com coobrigação do cedente)', 'investidores profissionais e um family office (estrutura monocota)'],
+  FIDC: ['dois fundos de crédito e uma seguradora', 'investidores profissionais e um family office'],
   FII: ['cerca de 85 mil cotistas pessoa física negociando na B3', 'cerca de 30 mil cotistas, com 12% em um FoF imobiliário'],
   FIP: ['8 investidores profissionais (fundos de pensão e family offices) com capital comprometido', 'family offices e um endowment universitário'],
   CAMBIAL: ['pessoas físicas que usam o fundo como proteção cambial para viagens e importações', 'pequenas empresas importadoras'],
@@ -223,6 +228,8 @@ export interface Fato {
   tipos?: TipoFundo[];
   /** não vale para esses tipos */
   exceto?: TipoFundo[];
+  /** só vale se o fundo é aberto ao público geral */
+  publicoGeral?: boolean;
 }
 
 const TIPOS_CREDITO: TipoFundo[] = ['RF_CP', 'INFRA', 'FIDC', 'FIAGRO', 'EXCLUSIVO', 'PREV'];
@@ -236,7 +243,7 @@ export const MARCOS_HISTORIA: Fato[] = [
   { texto: 'aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano', aberto: true },
   { texto: 'teve um forte resgate em 2021, quando perdeu quase 30% do PL em uma semana', aberto: true, exceto: ['PREV', 'EXCLUSIVO'] },
   { texto: 'migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização' },
-  { texto: 'foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo', tipos: TIPOS_VAREJO },
+  { texto: 'foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo', tipos: TIPOS_VAREJO, publicoGeral: true },
   { texto: 'teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025', tipos: TIPOS_CREDITO },
   { texto: 'mudou a política de investimento em 2025 para permitir derivativos com finalidade de hedge', tipos: ['FIA', 'PREV', 'IE', 'INFRA', 'RF_CP', 'FIC_FIM'] },
   { texto: 'reduziu o prazo de cotização em 2024 para competir em plataformas', tipos: ['RF_CP', 'FIM_MACRO', 'FIM_LS', 'FIA', 'FIC_FIM', 'IE', 'INFRA'] },
@@ -258,12 +265,13 @@ export const PARTICULARIDADES_GERAIS: Fato[] = [
   { texto: 'o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes', aberto: true, tipos: ['FIM_MACRO', 'FIM_LS', 'FIA', 'RF_CP', 'FIC_FIM'] },
 ];
 
-export function fatosPara(lista: Fato[], tipo: TipoFundo, condominio: 'aberto' | 'fechado', anoInicio: number): Fato[] {
+export function fatosPara(lista: Fato[], tipo: TipoFundo, condominio: 'aberto' | 'fechado', anoInicio: number, publico = ''): Fato[] {
   return lista.filter((f) => {
+    if (f.publicoGeral && !/geral/i.test(publico)) return false;
     if (f.aberto && condominio !== 'aberto') return false;
     if (f.tipos && !f.tipos.includes(tipo)) return false;
     if (f.exceto && f.exceto.includes(tipo)) return false;
     const ano = f.texto.match(/\b(20\d\d)\b/);
-    return !ano || Number(ano[1]) >= anoInicio;
+    return !ano || Number(ano[1]) > anoInicio;
   });
 }

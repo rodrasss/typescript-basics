@@ -43,7 +43,7 @@ Tudo é determinístico (semente 2026): rodar de novo gera os mesmos 200 casos.
 
 ## O que os casos cobrem
 
-53 tipos de situação, em 15 tipos de fundo (renda fixa DI e crédito privado, multimercado macro e long & short, ações, FIC, previdência, FIDC, FII, FIP, cambial, investimento no exterior, exclusivo, Fiagro e infraestrutura). Cerca de 20% dos casos estão limpos (para o agente aprender a **não inventar problema**), e cerca de 45% têm mais de um achado.
+53 tipos de situação, em 15 tipos de fundo (renda fixa DI e crédito privado, multimercado macro e long & short, ações, FIC, previdência, FIDC, FII, FIP, cambial, investimento no exterior, exclusivo, Fiagro e infraestrutura). Dos 200 casos, 40 (20%) estão limpos, para o agente aprender a **não inventar problema**; 82 (41%) têm mais de um achado. O parecer esperado é aprovado em 62, reprovado em 122 e pendente em 16. A dificuldade vai de 41 casos fáceis a 33 difíceis.
 
 - **Cota, carteira e passivo:** preço de crédito com fonte errada, ação com fechamento de D−1, cota de fundo investido de D−1, desdobramento não refletido, dividendo com data "ex" não provisionado, aplicação não convertida ou convertida após o corte, resgate cotizado antes do prazo, PTAX errada, NAV estimado em feriado nos EUA, ajuste de futuros errado, título vencido não baixado, título mantido até o vencimento marcado a mercado, come-cotas não aplicado, arredondamento × truncamento, PDD com aging desatualizado, amortização, rendimento anunciado, laudo de FIP, integralização, ativo ilíquido sem referência, boleta tardia.
 - **Caixa:** resgate liquidado e não baixado, tarifa bancária indevida, débito em duplicidade, dividendo/juros recebidos, ajuste liquidado, compromissada como caixa, pagamento de taxa, crédito não identificado, liquidação antecipada de compra, resgate pago com cota errada, margem tratada como despesa.
@@ -72,6 +72,7 @@ Para o agente:
 Os casos usam regras **plausíveis**, mas simuladas. Alinhe com o processo real antes de treinar de verdade:
 
 1. **Parecer:** `APROVADO` / `REPROVADO` / `PENDENTE`, mais uma marca de `ressalva`. Se o seu processo tem outros estados ou critérios, ajuste `metodologia-analista.md` e `prompt-agente.md`.
+   **Sem tolerância de materialidade:** qualquer diferença na cota (8 casas), no PL, na quantidade de cotas ou numa provisão reprova, por menor que seja. Se o seu processo aceita uma tolerância (por exemplo, abaixo de X bps), defina-a e ajuste a regra em `gerador/caso.ts` (`gravidadeEfetiva`) e nos dois documentos.
 2. **Dimensão "cota"** inclui cota, quantidade final de cotas e PL (o passivo). Caixa e provisões são validados à parte.
 3. **Regulamento:** taxas calculadas sobre o PL do dia útil anterior; base 252; cota truncada em 8 casas; come-cotas simplificado (cota de referência única). Taxa CVM, tributação e calendário de feriados são simplificações.
 4. **Hierarquia de evidência** (regulamento > manual de precificação > referência oficial de D > comunicação formal > informal) é uma proposta.
@@ -79,4 +80,10 @@ Os casos usam regras **plausíveis**, mas simuladas. Alinhe com o processo real 
 
 ## Resultado da avaliação com agentes
 
-_(preenchido após a avaliação: ver `avaliacao/`)_
+**Rodada 1** (detalhes em [`avaliacao/rodada-1.md`](avaliacao/rodada-1.md)): 8 agentes resolveram casos **às cegas**, só com a entrada, seguindo `prompt-agente.md` e `metodologia-analista.md`. Um limite de uso da conta interrompeu a maioria antes do fim, então **36 de 60 casos** foram respondidos.
+
+- Encontraram **55 de 55** achados do gabarito (lado correto e dimensão), com **zero falsos positivos**, e aprovaram corretamente os casos limpos.
+- O parecer divergiu em 11 casos por um **defeito do gabarito**, não do agente: erro de provisão que muda a cota estava rotulado "aprovado com ressalva", contra a regra do próprio prompt. Com a regra corrigida, o parecer concorda em 36 de 36.
+- Os agentes também apontaram, de forma independente, defeitos de coerência nas entradas (datas de resgate fora do prazo do regulamento, cota de cotização diferente da do cabeçalho, fator de CDI incompatível, ruído de ponto flutuante, persona contraditória). Todos foram corrigidos no gerador e **viraram testes automáticos**.
+
+**Pendente:** uma segunda rodada às cegas sobre o dataset já corrigido. Os identificadores dos casos mudaram entre as versões, então os resultados da rodada 1 valem para o método (prompt + metodologia), não para os casos atuais.

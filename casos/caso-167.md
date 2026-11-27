@@ -1,20 +1,20 @@
-# Caso caso-167 — Uirapuru Família FIDC Responsabilidade Limitada
+# Caso caso-167 — Uirapuru Família FIF Multimercado Crédito Privado — Classe Exclusiva
 
-> **Data-base (D):** 20/05/2026 (quarta-feira) · **D−1:** 19/05/2026 · **Fundo:** FND-0167
+> **Data-base (D):** 06/04/2026 (segunda-feira) · **D−1:** 02/04/2026 · **Fundo:** FND-0167
 
 ## 1. O fundo
 
-Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Uirapuru Família FIDC Responsabilidade Limitada: a casa é uma especialista em crédito estruturado (FIDC e CRA). Criado em 17/10/2015, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores qualificados. Hoje seus cotistas são dois fundos de crédito e uma seguradora (estrutura monocota, com coobrigação do cedente). Ao longo da vida, o fundo trocou de gestor responsável em 2023 depois da saída do fundador e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Aline. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. O cronograma de amortização do fundo é conhecido e comunicado com antecedência. No fechamento de ontem (19/05/2026) o fundo tinha PL de R$ 74.093.239,52, cota de 1.007,10081309 e 73.570,82683398 cotas. Hoje, quarta-feira, 20/05/2026, é a data-base da validação.
+Quem acompanha a Varanda Capital (Belo Horizonte/MG) conhece o Uirapuru Família FIF Multimercado Crédito Privado — Classe Exclusiva: a casa é uma gestora de private equity com participações em empresas familiares do interior. Criado em 17/10/2015, foi desenhado sob medida para um único cotista, com regras próprias de marcação e tributação. Público-alvo: cotista único (classe exclusiva). Hoje seus cotistas são uma família de produtores de soja de Sorriso (MT). Ao longo da vida, o fundo aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Vinícius, e quem cuida da validação do fundo é Aline. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota. Vencimentos de títulos bancários dependem de baixa manual em alguns sistemas. No fechamento de ontem (02/04/2026) o fundo tinha PL de R$ 77.952.433,01, cota de 1,76334680 e 44.207.091,31565992 cotas. Hoje, segunda-feira, 06/04/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | FIDC (direitos creditórios) |
-| Classe | Classe de FIDC — subclasse única (monocota) |
-| Condomínio | fechado |
-| Gestora | Quaresmeira Capital (São Paulo/SP) |
-| PL em D−1 | R$ 74.093.239,52 |
-| Cota em D−1 | 1.007,10081309 |
-| Quantidade de cotas em D−1 | 73.570,82683398 |
+| Tipo | Fundo exclusivo (família/empresa) |
+| Classe | Classe Multimercado — Exclusiva para investidor profissional |
+| Condomínio | aberto |
+| Gestora | Varanda Capital (Belo Horizonte/MG) |
+| PL em D−1 | R$ 77.952.433,01 |
+| Cota em D−1 | 1,76334680 |
+| Quantidade de cotas em D−1 | 44.207.091,31565992 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,16 +22,15 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Uirapuru Família
 
 **Taxas**
 
-- Taxa de administração: 0,210% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 0,540% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,050% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,110% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,320% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,010% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 85.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 400,00 (mensal)
-- Agente de cobrança: R$ 9.000,00 (mensal)
-- Agência de classificação de risco (rating): R$ 76.000,00 (anual)
+- Auditoria independente: R$ 29.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 5.800,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -41,7 +40,7 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Uirapuru Família
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 77.257.934,06. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 77.682.644,86. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +60,22 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Uirapuru Família
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: amortizações conforme cronograma do suplemento
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+1 dia útil após o pedido, pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
+- Tributação: Fundo fechado/exclusivo: tributação periódica conforme Lei 14.754/2023 (simplificado neste caso como come-cotas semestral)
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
+- Títulos classificados como "mantidos até o vencimento": curva da taxa de aquisição.
+- Demais títulos e debêntures: taxa indicativa ANBIMA de D.
 
 **Regras específicas deste fundo**
 
-- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
-- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
+- Classe exclusiva de investidor profissional que declarou, por escrito, intenção e capacidade financeira de manter os títulos classificados como "mantidos até o vencimento" — esses títulos são marcados pela curva da taxa de aquisição, e não a mercado.
 
 ## 3. Informações de mercado do dia
 
@@ -85,11 +85,18 @@ Quem acompanha a Quaresmeira Capital (São Paulo/SP) conhece o Uirapuru Família
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.148,408141 |  |
+| NTN-B 15/08/2030 | ANBIMA — PU pela taxa indicativa de D (apenas referência de mercado) | 4.294,492951 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.171,611901 |  |
+| TFSU13 | ANBIMA — PU pela taxa indicativa de D | 1.059,602432 |  |
+
+**Eventos de ativos**
+
+- CDB TARUMÃ 2030: vencimento em 06/04/2026; valor de resgate 1.304,882873 por título; liquidação financeira em D.
 
 ## 4. Comunicações recebidas hoje
 
-- **08:10** — *Administrador — comunicado ao mercado* — **Amortização**: Comunicamos o pagamento, em 20/05/2026, de amortização de R$ 7,39 por cota, conforme cronograma do suplemento.
+- **10:14** — *Gestora — operacional* — **Previsão de resgates**: Para a semana que vem, esperamos resgates um pouco acima da média por causa de rebalanceamento de um FoF. Só aviso.
+- **13:18** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (07/04/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
 
 ## 5. Batimento Alfa × Beta
 
@@ -99,33 +106,33 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 999,82144031 | 1.007,21144030 | 7,38999999 |
-| Quantidade final de cotas | 73.570,82683397 | 73.570,82683397 | 0,00000000 |
-| PL final | R$ 73.557.690,05 | R$ 74.101.378,46 | R$ 543.688,41 |
-| Caixa | R$ 2.508.961,44 | R$ 3.052.649,85 | R$ 543.688,41 |
-| Total de provisões | R$ 91.246,66 | R$ 91.246,66 | R$ 0,00 |
+| Cota de fechamento | 1,76202873 | 1,76187952 | -0,00014921 |
+| Quantidade final de cotas | 44.339.119,43531491 | 44.339.130,61650836 | 11,18119345 |
+| PL final | R$ 78.126.802,31 | R$ 78.120.206,17 | R$ -6.596,14 |
+| Caixa | R$ 12.265.146,11 | R$ 632.115,30 | R$ -11.633.030,81 |
+| Total de provisões | R$ 54.570,66 | R$ 54.570,66 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 51.067.332,86 | 51.067.332,86 | 1,00 | 1,00 | 51.067.332,86 | 51.067.332,86 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
-| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 3.647.666,63 | 3.647.666,63 | 1,00 | 1,00 | 3.647.666,63 | 3.647.666,63 | 0,00 | Valor presente (custodiante) |
-| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 1.459.066,65 | 1.459.066,65 | 1,00 | 1,00 | 1.459.066,65 | 1.459.066,65 | 0,00 | Valor presente (custodiante) |
-| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 875.439,99 | 875.439,99 | 1,00 | 1,00 | 875.439,99 | 875.439,99 | 0,00 | Valor presente (custodiante) |
-| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 583.626,66 | 583.626,66 | 1,00 | 1,00 | 583.626,66 | 583.626,66 | 0,00 | Valor presente (custodiante) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 573 | 573 | 18.148,408141 | 18.148,408141 | 10.399.037,86 | 10.399.037,86 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 5.428 | 5.428 | 806,409839 | 806,409839 | 4.377.192,61 | 4.377.192,61 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -1.269.387,99 | -1.269.387,99 | -1.269.387,99 | -1.269.387,99 | 0,00 | Cálculo pelo aging do custodiante |
-| **Total** |  |  |  |  | 71.139.975,27 | 71.139.975,27 | 0,00 |  |
+| NTN-B 15/08/2030 — Nota do Tesouro Nacional série B — venc. 15/08/2030 | 5.346 | 5.346 | 4.352,303653 | 4.352,303653 | 23.267.415,33 | 23.267.415,33 | 0,00 | Curva — taxa de aquisição (título classificado como mantido até o vencimento) |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.280 | 1.280 | 18.171,611901 | 18.171,611901 | 23.259.663,23 | 23.259.663,23 | 0,00 | ANBIMA — taxa indicativa D |
+| TFSU13 — Debênture Telecom Fibra Sul S.A. — CDI + 1,60% | 10.979 | 10.979 | 1.059,602432 | 1.059,602432 | 11.633.375,10 | 11.633.375,10 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 9.466 | 9.466 | 819,329525 | 819,329525 | 7.755.773,28 | 7.755.773,28 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| CDB TARUMÃ 2030 — CDB Banco Tarumã S.A. — 103% do CDI — venc. 2030 | — | 8.915 | — | 1.304,142988 | — | 11.626.434,74 | 11.626.434,74 | Curva do papel (MaM por spread de crédito — manual do administrador) |
+| **Total** |  |  |  |  | 65.916.226,94 | 77.542.661,68 | 11.626.434,74 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 3.052.649,85 | 3.052.649,85 |
-| Pagamento de amortização de cotas — R$ 7,39 por cota | -543.688,41 | — |
-| **Saldo final** | 2.508.961,44 | 3.052.649,85 |
+| Saldo inicial (D−1) | 595.472,17 | 595.472,17 |
+| TED recebida — aplicação [APL-1] Cotista único (09:19) | 37.136,55 | 37.136,55 |
+| TED recebida — aplicação [APL-2] Cotista único (12:04) | 195.500,79 | 195.500,79 |
+| Pagamento de resgate [LIQ-1] — Cotista único (cotizado em 02/04/2026) | -195.994,21 | -195.994,21 |
+| Resgate no vencimento — CDB TARUMÃ 2030 (liquidação B3) | 11.633.030,81 | — |
+| **Saldo final** | 12.265.146,11 | 632.115,30 |
 
 ### 5.4 Valores a receber
 
@@ -133,47 +140,61 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-Nenhum item.
+| Item | Alfa | Beta |
+|---|---|---|
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 232.637,34 | 232.637,34 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 7.256,19 | 7.256,19 | 617,44 | 617,44 | 0,00 | 0,00 | 7.873,63 | 7.873,63 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 19.028,50 | 19.028,50 | 1.587,71 | 1.587,71 | 0,00 | 0,00 | 20.616,21 | 20.616,21 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 1.772,95 | 1.772,95 | 147,01 | 147,01 | 0,00 | 0,00 | 1.919,96 | 1.919,96 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 30.357,14 | 30.357,14 | 337,30 | 337,30 | 0,00 | 0,00 | 30.694,44 | 30.694,44 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 240,00 | 240,00 | 20,00 | 20,00 | 0,00 | 0,00 | 260,00 | 260,00 | 0,00 |
-| COBRANCA — Agente de cobrança a pagar | 5.400,00 | 5.400,00 | 450,00 | 450,00 | 0,00 | 0,00 | 5.850,00 | 5.850,00 | 0,00 |
-| RATING — Agência de classificação de risco (rating) a pagar | 20.809,52 | 20.809,52 | 301,59 | 301,59 | 0,00 | 0,00 | 21.111,11 | 21.111,11 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.832,79 | 2.832,79 | 88,52 | 88,52 | 0,00 | 0,00 | 2.921,31 | 2.921,31 | 0,00 |
-| **Total** |  |  |  |  |  |  | 91.246,66 | 91.246,66 | 0,00 |
+| TXADM — Taxa de administração a pagar | 8.155,80 | 8.155,80 | 340,27 | 340,27 | 0,00 | 0,00 | 8.496,07 | 8.496,07 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 23.803,64 | 23.803,64 | 989,87 | 989,87 | 0,00 | 0,00 | 24.793,51 | 24.793,51 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 746,33 | 746,33 | 30,93 | 30,93 | 0,00 | 0,00 | 777,26 | 777,26 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 19.103,17 | 19.103,17 | 115,08 | 115,08 | 0,00 | 0,00 | 19.218,25 | 19.218,25 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 100,00 | 100,00 | 50,00 | 50,00 | 0,00 | 0,00 | 150,00 | 150,00 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 580,00 | 580,00 | 290,00 | 290,00 | 0,00 | 0,00 | 870,00 | 870,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 177,05 | 177,05 | 88,52 | 88,52 | 0,00 | 0,00 | 265,57 | 265,57 | 0,00 |
+| **Total** |  |  |  |  |  |  | 54.570,66 | 54.570,66 | 0,00 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 77.952.433,01 ÷ 252 (linear, dias úteis) = R$ 340,27 · Beta: [base: PL do dia útil anterior] 0,11% a.a. sobre R$ 77.952.433,01 ÷ 252 (linear, dias úteis) = R$ 340,27
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,32% a.a. sobre R$ 77.952.433,01 ÷ 252 (linear, dias úteis) = R$ 989,87 · Beta: [base: PL do dia útil anterior] 0,32% a.a. sobre R$ 77.952.433,01 ÷ 252 (linear, dias úteis) = R$ 989,87
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 77.952.433,01 ÷ 252 (linear, dias úteis) = R$ 30,93 · Beta: [base: PL do dia útil anterior] 0,01% a.a. sobre R$ 77.952.433,01 ÷ 252 (linear, dias úteis) = R$ 30,93
+- **AUDIT** — Alfa: R$ 29.000,00 (anual) ÷ 252 d.u. = R$ 115,08 · Beta: R$ 29.000,00 (anual) ÷ 252 d.u. = R$ 115,08
+- **ANBIMA** — Alfa: R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00 · Beta: R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00
+- **SELIC** — Alfa: R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00 · Beta: R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00
+- **CVM** — Alfa: R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52 · Beta: R$ 5.400,00 (trimestral) ÷ 61 d.u. = R$ 88,52
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-Nenhum movimento de passivo no dia.
+| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
+|---|---|---|---|---|---|---|---|---|---|---|
+| APL-1 | aplicacao | Cotista único | R$ 37.136,55 | 09:19 | 06/04/2026 | 06/04/2026 | 06/04/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista único | R$ 195.500,79 | 12:04 | 06/04/2026 | 06/04/2026 | 06/04/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista único | 111.148,98776531 cotas (R$ 195.994,21) |  | 01/04/2026 | 02/04/2026 | 06/04/2026 | não | não | cotizado em 02/04/2026 pela cota de 1,76334680; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 71.139.975,27 | 71.139.975,27 | 0,00 |
-| Caixa | 2.508.961,44 | 3.052.649,85 | 543.688,41 |
+| Total de ativos | 65.916.226,94 | 77.542.661,68 | 11.626.434,74 |
+| Caixa | 12.265.146,11 | 632.115,30 | -11.633.030,81 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 91.246,66 | 91.246,66 | 0,00 |
-| PL base da cota | 73.557.690,05 | 74.101.378,46 | 543.688,41 |
-| Cota (8 casas) | 999,82144031 | 1.007,21144030 | 7,38999999 |
-| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
-| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valores a pagar | 232.637,34 | 232.637,34 | 0,00 |
+| Provisões | 54.570,66 | 54.570,66 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 77.896.069,72 | 77.889.473,65 | -6.596,07 |
+| PL base da cota | 77.894.165,05 | 77.887.568,98 | -6.596,07 |
+| Cota (8 casas) | 1,76202873 | 1,76187952 | -0,00014921 |
+| Aplicações convertidas | 232.637,34 | 232.637,34 | 0,00 |
+| Cotas emitidas | 132.028,11965499 | 132.039,30084844 | 11,18119345 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 73.570,82683397 | 73.570,82683397 | 0,00000000 |
-| PL final | 73.557.690,05 | 74.101.378,46 | 543.688,41 |
+| Quantidade final de cotas | 44.339.119,43531491 | 44.339.130,61650836 | 11,18119345 |
+| PL final | 78.126.802,31 | 78.120.206,17 | -6.596,14 |
 
 ---
 
@@ -181,21 +202,21 @@ Nenhum movimento de passivo no dia.
 
 **Parecer:** REPROVADO
 
-**Resumo:** Reprovar até o ajuste: Amortização não deduzida.
+**Resumo:** Reprovar até o ajuste: CDB TARUMÃ 2030 vencido não baixado.
 
-**Dificuldade:** media · **Cenários:** amortizacao_nao_registrada
+**Dificuldade:** media · **Cenários:** ativo_vencido_nao_baixado
 
-### Achado 1: Amortização não deduzida
+### Achado 1: CDB TARUMÃ 2030 vencido não baixado
 
 - **Gravidade:** erro · **Dimensões:** caixa, cota
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta não registrou o pagamento de amortização de R$ 7,39/cota (R$ 543.688,41).
-- **Onde olhar:** Caixa — lançamentos; Comunicações — aviso de amortização; Regulamento — amortizações
+- **Causa raiz:** Beta manteve CDB TARUMÃ 2030 na carteira pelo PU de D−1 e não registrou o crédito do vencimento.
+- **Onde olhar:** Carteira; Caixa — lançamentos; Informações de mercado — eventos
 - **Raciocínio do analista:**
-  1. Caixa do Beta R$ 543.688,41 maior. A diferença de cota é de aproximadamente R$ 7,39, exatamente o valor amortizado por cota.
-  2. Houve amortização hoje (comunicado ao mercado). O valor sai do PL na data do pagamento, então a cota de D tem que vir "ex-amortização".
-  3. A queda de cota em relação a D−1 no Alfa não é perda: é a amortização.
-- **Ação:** Beta deve registrar a saída de caixa da amortização e reprocessar a cota.
+  1. O Beta tem CDB TARUMÃ 2030 (R$ 11.626.434,74) que não aparece no Alfa, e o caixa do Alfa tem R$ 11.633.030,81 a mais. Parece só um problema de classificação, mas não é.
+  2. O título venceu hoje com resgate de 1.304,882873 por unidade. O Beta manteve o PU de D−1 (1.304,142988), deixando de reconhecer o último dia de rendimento: R$ 6.596,07 no PL.
+  3. Além da cota, o caixa projetado do lado errado subestima a disponibilidade, o que pode atrapalhar a liquidação de resgates.
+- **Ação:** Beta deve baixar CDB TARUMÃ 2030, registrar o crédito de R$ 11.633.030,81 e reprocessar a cota.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
@@ -209,8 +230,8 @@ Nenhum movimento de passivo no dia.
 
 | Item | Valor |
 |---|---|
-| Cota | 999,82144031 |
-| Quantidade final de cotas | 73.570,82683397 |
-| PL final | R$ 73.557.690,05 |
-| Caixa | R$ 2.508.961,44 |
-| Total de provisões | R$ 91.246,66 |
+| Cota | 1,76202873 |
+| Quantidade final de cotas | 44.339.119,43531491 |
+| PL final | R$ 78.126.802,31 |
+| Caixa | R$ 12.265.146,11 |
+| Total de provisões | R$ 54.570,66 |

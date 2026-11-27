@@ -1,41 +1,36 @@
-# Caso caso-111 — Capivara Estratégia FIF Multimercado Long Short
+# Caso caso-111 — Capivara Estratégia Fiagro — Direitos Creditórios
 
-> **Data-base (D):** 02/04/2026 (quinta-feira) · **D−1:** 01/04/2026 · **Fundo:** FND-0111
+> **Data-base (D):** 03/07/2026 (sexta-feira) · **D−1:** 02/07/2026 · **Fundo:** FND-0111
 
 ## 1. O fundo
 
-O Capivara Estratégia FIF Multimercado Long Short é gerido pela Lume Gestão de Recursos, gestora de ações globais que investe via fundos offshore, em São Paulo/SP. Criado em 15/05/2009, monta posições compradas e vendidas em ações e usa o índice futuro para ajustar a exposição. Público-alvo: investidores qualificados. Hoje seus cotistas são clientes private de dois bancos de varejo. Ao longo da vida, o fundo aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano e migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização. O gestor responsável é Cecília, e quem cuida da validação do fundo é Juliana. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; o fundo está fechado para novas aplicações de varejo e só aceita aportes de cotistas existentes. Nos últimos meses o fundo não teve nenhuma divergência relevante. No fechamento de ontem (01/04/2026) o fundo tinha PL de R$ 172.527.452,53, cota de 3,23587696 e 53.317.062,00906921 cotas. Hoje, quinta-feira, 02/04/2026, é a data-base da validação.
+Quem acompanha a Cerrado Vivo Gestão (Cuiabá/MT) conhece o Capivara Estratégia Fiagro — Direitos Creditórios: a casa é uma gestora de Fiagro e CRA, muito próxima de cooperativas. Criado em 15/05/2009, compra recebíveis do agronegócio (CRA) e distribui rendimento mensal. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 22 mil cotistas, muitos produtores rurais do Centro-Oeste. Ao longo da vida, o fundo teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025 e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Cecília, e quem cuida da validação do fundo é Juliana. Sobre a rotina: as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês; o administrador revisa o manual de precificação uma vez por ano. As taxas são pagas até o 5º dia útil e a conciliação depende de baixa manual. A liquidação dos ajustes de futuros exige conciliação diária. No fechamento de ontem (02/07/2026) o fundo tinha PL de R$ 963.036.177,05, cota de 57,94840574 e 16.618.855,42127184 cotas. Hoje, sexta-feira, 03/07/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Multimercado Long & Short |
-| Classe | Classe Multimercado |
-| Condomínio | aberto |
-| Gestora | Lume Gestão de Recursos (São Paulo/SP) |
-| PL em D−1 | R$ 172.527.452,53 |
-| Cota em D−1 | 3,23587696 |
-| Quantidade de cotas em D−1 | 53.317.062,00906921 |
+| Tipo | Fiagro (cadeias agroindustriais) |
+| Classe | Classe de Fiagro |
+| Condomínio | fechado |
+| Gestora | Cerrado Vivo Gestão (Cuiabá/MT) |
+| PL em D−1 | R$ 963.036.177,05 |
+| Cota em D−1 | 57,94840574 |
+| Quantidade de cotas em D−1 | 16.618.855,42127184 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/06/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,130% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,320% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-
-**Taxa de performance**
-
-- 20% sobre o que exceder 100% do CDI; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
-- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Taxa de administração: 0,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,750% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 56.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 700,00 (mensal)
+- Auditoria independente: R$ 38.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 600,00 (mensal)
+- Escrituração de cotas: R$ 11.000,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +40,7 @@ O Capivara Estratégia FIF Multimercado Long Short é gerido pela Lume Gestão d
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 163.555.548,98. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 917.738.601,38. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,23 +60,21 @@ O Capivara Estratégia FIF Multimercado Long Short é gerido pela Lume Gestão d
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+15 corridos (liquidação D+2 úteis).
+- Condomínio fechado: sem resgate; liquidez via B3.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
+- Tributação: Fiagro: rendimentos isentos para PF nas condições legais
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Ações: preço de fechamento da B3 em D.
-- Eventos societários reconhecidos na data "ex".
-- Futuros: ajuste diário divulgado pela B3, liquidado em D+1.
+- CRA: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação do administrador (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
+- LCA: curva do papel.
 
 **Regras específicas deste fundo**
 
-- Performance: cota de referência vigente = 3,13384726 (cota da última cobrança efetiva, em 31/12/2025).
+- Rendimentos: distribuição mensal de no mínimo 95% do resultado caixa semestral. O rendimento anunciado é reconhecido como "rendimentos a distribuir" (passivo) na data do anúncio (data-com), reduzindo o PL.
 
 ## 3. Informações de mercado do dia
 
@@ -91,27 +84,14 @@ O Capivara Estratégia FIF Multimercado Long Short é gerido pela Lume Gestão d
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.315,085571 |  |
-| WJMA4 | B3 — preço de fechamento de D | 28,16 |  |
-| YKAP4 | B3 — preço de fechamento de D | 17,35 |  |
-| YRBQ3 | B3 — preço de fechamento de D | 62,67 |  |
-| JZEL3 | B3 — preço de fechamento de D | 67,40 |  |
-| QXTR3 | B3 — preço de fechamento de D | 92,54 |  |
-| VJNR3 | B3 — preço de fechamento de D | 47,09 |  |
-
-**Futuros (posição de D e ajuste do dia por contrato)**
-
-| Contrato | Quantidade (+comprado / −vendido) | Ajuste de D por contrato (R$) |
-|---|---|---|
-| INDM26 | -114 | 201,92 |
-
-**Benchmark**
-
-- Fator acumulado do 100% do CDI de 31/12/2025 até 02/04/2026: 1,03715472
+| CRA0260A1B2 | ANBIMA — PU pela taxa indicativa de D | 954,549670 |  |
+| CRA0260C3D4 | ANBIMA — PU pela taxa indicativa de D | 1.022,815963 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.100,194330 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **13:16** — *Gestora — mesa* — **Operação para amanhã**: Amanhã (03/04) vamos reduzir um pouco a posição mais líquida da carteira. Hoje não há boleta.
+Nenhuma comunicação relevante recebida.
+
 
 ## 5. Batimento Alfa × Beta
 
@@ -121,37 +101,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 3,26085234 | 3,26079059 | -0,00006175 |
-| Quantidade final de cotas | 53.317.062,00906921 | 53.317.062,00906921 | 0,00000000 |
-| PL final | R$ 173.859.066,41 | R$ 173.855.774,09 | R$ -3.292,32 |
-| Caixa | R$ 996.881,75 | R$ 992.766,01 | R$ -4.115,74 |
-| Total de provisões | R$ 425.591,49 | R$ 424.768,34 | R$ -823,15 |
+| Cota de fechamento | 57,97107897 | 57,97107897 | 0,00000000 |
+| Quantidade final de cotas | 16.618.855,42127184 | 16.618.855,42127184 | 0,00000000 |
+| PL final | R$ 963.412.980,02 | R$ 963.412.980,02 | R$ 0,00 |
+| Caixa | R$ 20.610.676,77 | R$ 20.480.234,66 | R$ -130.442,11 |
+| Total de provisões | R$ 255.574,74 | R$ 125.132,63 | R$ -130.442,11 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 2.783 | 2.783 | 18.315,085571 | 18.315,085571 | 50.970.883,14 | 50.970.883,14 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 21.434 | 21.434 | 792,748986 | 792,748986 | 16.991.781,77 | 16.991.781,77 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| WJMA4 — Banco Wajumá S.A. PN | 422.377 | 422.377 | 28,16 | 28,16 | 11.894.136,32 | 11.894.136,32 | 0,00 | B3 — preço de fechamento D |
-| YKAP4 — Ykapé Papel e Celulose S.A. PN | 685.541 | 685.541 | 17,35 | 17,35 | 11.894.136,35 | 11.894.136,35 | 0,00 | B3 — preço de fechamento D |
-| YRBQ3 — Yrubá Químicos S.A. ON | 162.677 | 162.677 | 62,67 | 62,67 | 10.194.967,59 | 10.194.967,59 | 0,00 | B3 — preço de fechamento D |
-| JZEL3 — Jazê Elétrica S.A. ON | 352.942 | 352.942 | 67,40 | 67,40 | 23.788.290,80 | 23.788.290,80 | 0,00 | B3 — preço de fechamento D |
-| QXTR3 — Quixadá Transportes S.A. ON | 257.060 | 257.060 | 92,54 | 92,54 | 23.788.332,40 | 23.788.332,40 | 0,00 | B3 — preço de fechamento D |
-| VJNR3 — Vajanra Energia S.A. ON | 505.166 | 505.166 | 47,09 | 47,09 | 23.788.266,94 | 23.788.266,94 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 173.310.795,31 | 173.310.795,31 | 0,00 |  |
+| CRA0260A1B2 — CRA Securitizadora Piracema — série 45 (lastro: CPR de soja) — CDI + 3,10% | 296.630 | 296.630 | 954,549670 | 954,549670 | 283.148.068,61 | 283.148.068,61 | 0,00 | ANBIMA — taxa indicativa D |
+| CRA0260C3D4 — CRA Securitizadora Piracema — série 51 (lastro: cédulas de cooperativa) — IPCA + 8,20% | 230.693 | 230.693 | 1.022,815963 | 1.022,815963 | 235.956.482,95 | 235.956.482,95 | 0,00 | ANBIMA — taxa indicativa D |
+| CRA0260E5F6 — CRA Securitizadora Araçá — série 12 (lastro: duplicatas de insumos) — CDI + 4,00% | 229.520 | 229.520 | 1.028,042934 | 1.028,042934 | 235.956.414,21 | 235.956.414,21 | 0,00 | Preço do comitê de precificação do administrador |
+| LCA ARANDU 2027 — LCA Banco Arandu S.A. — 93% do CDI | 86.569 | 86.569 | 1.090,259876 | 1.090,259876 | 94.382.707,21 | 94.382.707,21 | 0,00 | Curva do papel |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 5.172 | 5.172 | 18.100,194330 | 18.100,194330 | 93.614.205,07 | 93.614.205,07 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 943.057.878,05 | 943.057.878,05 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 1.494.246,04 | 1.494.246,04 |
-| Pagamento de resgate — Cotista 1183 (cotizado em 01/04/2026) | -372.865,24 | -372.865,24 |
-| Pagamento de resgate — Cotista 1190 (cotizado em 31/03/2026) | -320.839,31 | -320.839,31 |
-| Liquidação B3 — ajuste de futuros de 01/04/2026 | 200.456,00 | 200.456,00 |
-| Pagamento — despesa de registro/cartório (NF 5380) | -4.115,74 | -4.115,74 |
-| Pagamento — despesa de registro/cartório (NF 5380) | — | -4.115,74 |
-| **Saldo final** | 996.881,75 | 992.766,01 |
+| Saldo inicial (D−1) | 21.233.579,97 | 21.233.579,97 |
+| Pagamento da taxa de gestão do mês anterior | -607.121,43 | -607.121,43 |
+| Pagamento da taxa de custódia do mês anterior | -15.781,77 | -15.781,77 |
+| Pagamento da taxa de administração do mês anterior | — | -130.442,11 |
+| **Saldo final** | 20.610.676,77 | 20.480.234,66 |
 
 ### 5.4 Valores a receber
 
@@ -159,92 +134,91 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-| Item | Alfa | Beta |
-|---|---|---|
-| AJUSTE FUTUROS D — Ajuste diário de futuros de D (liquidação em D+1) | 23.018,88 | 23.018,88 |
+Nenhum item.
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 20.374,51 | 20.374,51 | 890,02 | 890,02 | 0,00 | 0,00 | 21.264,53 | 21.264,53 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 203.167,76 | 203.167,76 | 9.037,15 | 9.037,15 | 0,00 | 0,00 | 212.204,91 | 212.204,91 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 4.729,00 | 4.729,00 | 205,39 | 205,39 | 0,00 | 0,00 | 4.934,39 | 4.934,39 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 45.777,78 | 45.777,78 | 222,22 | 222,22 | 0,00 | 0,00 | 46.000,00 | 46.000,00 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 35,00 | 35,00 | 35,00 | 35,00 | 0,00 | 0,00 | 70,00 | 70,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 127,87 | 127,87 | 127,87 | 127,87 | 0,00 | 0,00 | 255,74 | 255,74 | 0,00 |
-| PERF — Taxa de performance a pagar | 130.943,51 | 130.943,51 | 9.918,41 | 9.095,26 | 0,00 | 0,00 | 140.861,92 | 140.038,77 | -823,15 |
-| **Total** |  |  |  |  |  |  | 425.591,49 | 424.768,34 | -823,15 |
+| TXADM — Taxa de administração a pagar | 142.865,17 | 142.865,17 | 6.114,52 | 6.114,52 | 0,00 | 130.442,11 | 148.979,69 | 18.537,58 | -130.442,11 |
+| TXGES — Taxa de gestão a pagar | 664.942,52 | 664.942,52 | 28.661,79 | 28.661,79 | 607.121,43 | 607.121,43 | 86.482,88 | 86.482,88 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 17.284,80 | 17.284,80 | 764,31 | 764,31 | 15.781,77 | 15.781,77 | 2.267,34 | 2.267,34 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 15.682,54 | 15.682,54 | 150,79 | 150,79 | 0,00 | 0,00 | 15.833,33 | 15.833,33 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 52,17 | 52,17 | 26,09 | 26,09 | 0,00 | 0,00 | 78,26 | 78,26 | 0,00 |
+| ESCRIT — Escrituração de cotas a pagar | 956,52 | 956,52 | 478,26 | 478,26 | 0,00 | 0,00 | 1.434,78 | 1.434,78 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 332,31 | 332,31 | 166,15 | 166,15 | 0,00 | 0,00 | 498,46 | 498,46 | 0,00 |
+| **Total** |  |  |  |  |  |  | 255.574,74 | 125.132,63 | -130.442,11 |
 
-_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
+**Memória de cálculo informada por cada lado**
+
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 963.036.177,05 ÷ 252 (linear, dias úteis) = R$ 6.114,52 · Beta: [base: PL do dia útil anterior] 0,16% a.a. sobre R$ 963.036.177,05 ÷ 252 (linear, dias úteis) = R$ 6.114,52
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,75% a.a. sobre R$ 963.036.177,05 ÷ 252 (linear, dias úteis) = R$ 28.661,79 · Beta: [base: PL do dia útil anterior] 0,75% a.a. sobre R$ 963.036.177,05 ÷ 252 (linear, dias úteis) = R$ 28.661,79
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 963.036.177,05 ÷ 252 (linear, dias úteis) = R$ 764,31 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 963.036.177,05 ÷ 252 (linear, dias úteis) = R$ 764,31
+- **AUDIT** — Alfa: R$ 38.000,00 (anual) ÷ 252 d.u. = R$ 150,79 · Beta: R$ 38.000,00 (anual) ÷ 252 d.u. = R$ 150,79
+- **ANBIMA** — Alfa: R$ 600,00 (mensal) ÷ 23 d.u. = R$ 26,09 · Beta: R$ 600,00 (mensal) ÷ 23 d.u. = R$ 26,09
+- **ESCRIT** — Alfa: R$ 11.000,00 (mensal) ÷ 23 d.u. = R$ 478,26 · Beta: R$ 11.000,00 (mensal) ÷ 23 d.u. = R$ 478,26
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 65 d.u. = R$ 166,15 · Beta: R$ 10.800,00 (trimestral) ÷ 65 d.u. = R$ 166,15
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| LIQ-1 | resgate | Cotista 1183 | 115.272,61390567 cotas (R$ 372.865,24) |  | 07/03/2026 | 01/04/2026 | 02/04/2026 | não | não | cotizado em 01/04/2026 pela cota de 3,23463851; liquidação financeira hoje |
-| LIQ-2 | resgate | Cotista 1190 | 98.973,48923265 cotas (R$ 320.839,31) |  | 19/03/2026 | 31/03/2026 | 02/04/2026 | não | não | cotizado em 31/03/2026 pela cota de 3,24166923; liquidação financeira hoje |
+Nenhum movimento de passivo no dia.
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 173.310.795,31 | 173.310.795,31 | 0,00 |
-| Caixa | 996.881,75 | 992.766,01 | -4.115,74 |
+| Total de ativos | 943.057.878,05 | 943.057.878,05 | 0,00 |
+| Caixa | 20.610.676,77 | 20.480.234,66 | -130.442,11 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 23.018,88 | 23.018,88 | 0,00 |
-| Provisões | 425.591,49 | 424.768,34 | -823,15 |
-| PL base da cota | 173.859.066,69 | 173.855.774,10 | -3.292,59 |
-| Cota (8 casas) | 3,26085234 | 3,26079059 | -0,00006175 |
+| Valores a pagar | 0,00 | 0,00 | 0,00 |
+| Provisões | 255.574,74 | 125.132,63 | -130.442,11 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 963.449.341,99 | 963.449.341,99 | 0,00 |
+| PL base da cota | 963.412.980,08 | 963.412.980,08 | 0,00 |
+| Cota (8 casas) | 57,97107897 | 57,97107897 | 0,00000000 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 53.317.062,00906921 | 53.317.062,00906921 | 0,00000000 |
-| PL final | 173.859.066,41 | 173.855.774,09 | -3.292,32 |
+| Quantidade final de cotas | 16.618.855,42127184 | 16.618.855,42127184 | 0,00000000 |
+| PL final | 963.412.980,02 | 963.412.980,02 | 0,00 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** PENDENTE
+**Parecer:** APROVADO (com ressalva)
 
-**Resumo:** Deixar pendente e escalar: Pagamento da NF 5380 debitado duas vezes.
+**Resumo:** Aprovar com ressalva: Pagamento da taxa de administração sem baixa no controle Alfa.
 
-**Dificuldade:** dificil · **Cenários:** debito_em_duplicidade
+**Dificuldade:** facil · **Cenários:** pagamento_taxa_nao_registrado
 
-### Achado 1: Pagamento da NF 5380 debitado duas vezes
+### Achado 1: Pagamento da taxa de administração sem baixa no controle Alfa
 
-- **Gravidade:** pendencia · **Dimensões:** caixa
-- **Lado correto:** nenhum · **Quem ajusta:** Beta (estorno) e Alfa (registro)
-- **Causa raiz:** A despesa da NF 5380 (R$ 4.115,74) foi debitada duas vezes na conta do fundo. O Beta registrou os dois débitos como despesa; o Alfa registrou um só.
-- **Onde olhar:** Caixa — lançamentos (dois débitos idênticos); Comparação com o controle Alfa
+- **Gravidade:** ressalva · **Dimensões:** caixa, provisoes
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** A taxa de administração do mês anterior (R$ 130.442,11) foi paga hoje; o Alfa não registrou nem a saída de caixa nem a baixa da provisão.
+- **Onde olhar:** Caixa; Provisões — TXADM (coluna pagamento); Regulamento — forma de pagamento das taxas
 - **Raciocínio do analista:**
-  1. O caixa do Beta está R$ 4.115,74 abaixo do do Alfa. A diferença é um segundo lançamento com histórico idêntico (mesma NF, mesmo valor).
-  2. A mesma nota fiscal não se paga duas vezes. O segundo débito é erro operacional, mas o dinheiro saiu de fato.
-  3. O Alfa está economicamente certa (uma despesa), mas o caixa dela não reflete o que aconteceu na conta. O Beta reflete a conta, mas jogou a duplicidade no resultado e reduziu o PL.
-- **Ação:** Solicitar ao Beta o estorno imediato do débito duplicado. Até lá, registrar R$ 4.115,74 como "estorno a receber" (sem efeito no PL) e alinhar o caixa do Alfa ao real.
+  1. Caixa do Alfa R$ 130.442,11 maior; provisão de taxa de administração do Alfa R$ 130.442,11 maior. As duas diferenças se anulam no PL.
+  2. Hoje está dentro do prazo de pagamento do regulamento (até o 5º dia útil) e o Beta mostra a saída. A apropriação do dia confere nos dois lados.
+- **Ação:** Alfa deve registrar o pagamento (caixa) e baixar a provisão. Cota aprovada com ressalva.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Alfa |
+| cota | ambos |
 | caixa | Beta |
-| provisoes | Alfa |
+| provisoes | Beta |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 3,26085234 |
-| Quantidade final de cotas | 53.317.062,00906921 |
-| PL final | R$ 173.859.066,41 |
-| Caixa | R$ 992.766,01 |
-| Total de provisões | R$ 425.591,49 |
-
-### Armadilhas deste caso
-
-- O dinheiro saiu duas vezes: registrar o fato e cobrar estorno, sem jogar a duplicidade no resultado.
+| Cota | 57,97107897 |
+| Quantidade final de cotas | 16.618.855,42127184 |
+| PL final | R$ 963.412.980,02 |
+| Caixa | R$ 20.480.234,66 |
+| Total de provisões | R$ 125.132,63 |

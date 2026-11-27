@@ -1,10 +1,10 @@
 # Caso caso-113 — Cerejeira do Mato FII Responsabilidade Limitada
 
-> **Data-base (D):** 29/04/2026 (quarta-feira) · **D−1:** 28/04/2026 · **Fundo:** FND-0113
+> **Data-base (D):** 19/10/2026 (segunda-feira) · **D−1:** 16/10/2026 · **Fundo:** FND-0113
 
 ## 1. O fundo
 
-Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Cerejeira do Mato FII Responsabilidade Limitada: a casa é uma gestora de fundos imobiliários com portfólio de galpões e lajes. Criado em 27/08/2012, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. No fechamento de ontem (28/04/2026) o fundo tinha PL de R$ 212.242.674,63, cota de 82,27990390 e 2.579.520,20565696 cotas. Hoje, quarta-feira, 29/04/2026, é a data-base da validação.
+Sob a gestão da Siriema Investimentos, gestora de fundos imobiliários com portfólio de galpões e lajes (São Paulo/SP), o Cerejeira do Mato FII Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 27/08/2012, é dono de galpões e lajes corporativas e distribui aluguel todo mês. Público-alvo: público geral (cotas negociadas na b3). Hoje seus cotistas são cerca de 85 mil cotistas pessoa física negociando na B3. Ao longo da vida, o fundo migrou de controladoria em 2024, e os primeiros meses tiveram divergências de parametrização e adaptou o regulamento à Resolução CVM 175 em 2025, separando taxa de administração e taxa de gestão. O gestor responsável é Rodrigo, e quem cuida da validação do fundo é Patrícia. Sobre a rotina: o administrador revisa o manual de precificação uma vez por ano; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. A equipe da gestora é considerada muito organizada. No fechamento de ontem (16/10/2026) o fundo tinha PL de R$ 212.242.674,63, cota de 82,27990390 e 2.579.520,20565696 cotas. Hoje, segunda-feira, 19/10/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
@@ -28,7 +28,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Cerejeira do Ma
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 97.000,00 (anual) — aditivo assinado em 20/04/2026, novo valor vigente a partir de 29/04/2026; provisão diária por 1/252
+- Auditoria independente: R$ 112.000,00 (anual) — aditivo assinado em 07/10/2026, novo valor vigente a partir de 19/10/2026; provisão diária por 1/252
 - Taxa ANBIMA (convênio de autorregulação): R$ 1.000,00 (mensal)
 - Escrituração de cotas: R$ 10.000,00 (mensal)
 
@@ -60,7 +60,7 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Cerejeira do Ma
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: sem resgate; liquidez via B3
+- Condomínio fechado: sem resgate; liquidez via B3.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
 - Tributação: FII: rendimentos isentos para PF nas condições legais; ganho de capital 20%
 
@@ -84,11 +84,12 @@ Quem acompanha a Siriema Investimentos (São Paulo/SP) conhece o Cerejeira do Ma
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.194,408265 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.140,889127 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **11:42** — *Jurídico/contratos* — **Aditivo — auditoria**: Aditivo ao contrato de auditoria assinado: novo honorário anual de R$ 97.000,00 a partir de 29/04/2026 (antes R$ 78.000,00).
+- **11:52** — *Jurídico/contratos* — **Aditivo — auditoria**: Aditivo ao contrato de auditoria assinado: novo honorário anual de R$ 112.000,00 a partir de 19/10/2026 (antes R$ 78.000,00).
+- **17:26** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
 
 ## 5. Batimento Alfa × Beta
 
@@ -98,29 +99,31 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 82,27960373 | 82,27963296 | 0,00002923 |
+| Cota de fechamento | 82,31818710 | 82,31146441 | -0,00672269 |
 | Quantidade final de cotas | 2.579.520,20565696 | 2.579.520,20565696 | 0,00000000 |
-| PL final | R$ 212.241.900,33 | R$ 212.241.975,73 | R$ 75,40 |
-| Caixa | R$ 6.514.989,58 | R$ 6.514.989,58 | R$ 0,00 |
-| Total de provisões | R$ 205.756,74 | R$ 205.681,34 | R$ -75,40 |
+| PL final | R$ 212.341.426,92 | R$ 212.324.085,60 | R$ -17.341,32 |
+| Caixa | R$ 4.926.027,30 | R$ 4.915.136,49 | R$ -10.890,81 |
+| Total de provisões | R$ 130.170,77 | R$ 136.621,28 | R$ 6.450,51 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| IMOVEL GLP-CAJAMAR — Galpão logístico em Cajamar (SP) — módulos A a D | 82.374.120,06 | 82.374.120,06 | 1,00 | 1,00 | 82.374.120,06 | 82.374.120,06 | 0,00 | Laudo de avaliação anual (valor justo) |
-| IMOVEL LAJES-JQB — Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP) | 61.780.590,04 | 61.780.590,04 | 1,00 | 1,00 | 61.780.590,04 | 61.780.590,04 | 0,00 | Laudo de avaliação anual (valor justo) |
-| IMOVEL GLP-EXTREMA — Galpão logístico em Extrema (MG) | 37.068.354,03 | 37.068.354,03 | 1,00 | 1,00 | 37.068.354,03 | 37.068.354,03 | 0,00 | Laudo de avaliação anual (valor justo) |
-| LCI TARUMA 2027 — LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027 | 11.912 | 11.912 | 1.037,239773 | 1.037,239773 | 12.355.600,18 | 12.355.600,18 | 0,00 | Curva do papel |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 679 | 679 | 18.194,408265 | 18.194,408265 | 12.354.003,21 | 12.354.003,21 | 0,00 | ANBIMA — taxa indicativa D |
-| **Total** |  |  |  |  | 205.932.667,52 | 205.932.667,52 | 0,00 |  |
+| IMOVEL GLP-CAJAMAR — Galpão logístico em Cajamar (SP) — módulos A a D | 83.021.859,37 | 83.021.859,37 | 1,00 | 1,00 | 83.021.859,37 | 83.021.859,37 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL LAJES-JQB — Lajes corporativas Ed. Jequitibá (andares 5 a 9) — São Paulo (SP) | 62.266.394,53 | 62.266.394,53 | 1,00 | 1,00 | 62.266.394,53 | 62.266.394,53 | 0,00 | Laudo de avaliação anual (valor justo) |
+| IMOVEL GLP-EXTREMA — Galpão logístico em Extrema (MG) | 37.359.836,72 | 37.359.836,72 | 1,00 | 1,00 | 37.359.836,72 | 37.359.836,72 | 0,00 | Laudo de avaliação anual (valor justo) |
+| LCI TARUMA 2027 — LCI Banco Tarumã S.A. — 94% do CDI — venc. 2027 | 10.546 | 10.546 | 1.180,810719 | 1.180,810719 | 12.452.829,84 | 12.452.829,84 | 0,00 | Curva do papel |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 686 | 686 | 18.140,889127 | 18.140,889127 | 12.444.649,94 | 12.444.649,94 | 0,00 | ANBIMA — taxa indicativa D |
+| **Total** |  |  |  |  | 207.545.570,40 | 207.545.570,40 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 6.514.989,58 | 6.514.989,58 |
-| **Saldo final** | 6.514.989,58 | 6.514.989,58 |
+| Saldo inicial (D−1) | 4.936.918,11 | 4.936.918,11 |
+| Pagamento — despesa de registro/cartório (NF 9747) | -10.890,81 | -10.890,81 |
+| Pagamento — despesa de registro/cartório (NF 9747) | — | -10.890,81 |
+| **Saldo final** | 4.926.027,30 | 4.915.136,49 |
 
 ### 5.4 Valores a receber
 
@@ -134,24 +137,16 @@ Nenhum item.
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 29.889,69 | 29.889,69 | 1.684,47 | 1.684,47 | 0,00 | 0,00 | 31.574,16 | 31.574,16 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 103.529,75 | 103.529,75 | 5.895,63 | 5.895,63 | 0,00 | 0,00 | 109.425,38 | 109.425,38 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 3.038,61 | 3.038,61 | 168,45 | 168,45 | 0,00 | 0,00 | 3.207,06 | 3.207,06 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 48.285,71 | 48.285,71 | 384,92 | 309,52 | 0,00 | 0,00 | 48.670,63 | 48.595,23 | -75,40 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 900,00 | 900,00 | 50,00 | 50,00 | 0,00 | 0,00 | 950,00 | 950,00 | 0,00 |
-| ESCRIT — Escrituração de cotas a pagar | 9.000,00 | 9.000,00 | 500,00 | 500,00 | 0,00 | 0,00 | 9.500,00 | 9.500,00 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.301,64 | 2.301,64 | 127,87 | 127,87 | 0,00 | 0,00 | 2.429,51 | 2.429,51 | 0,00 |
-| **Total** |  |  |  |  |  |  | 205.756,74 | 205.681,34 | -75,40 |
+| TXADM — Taxa de administração a pagar | 18.568,96 | 18.568,96 | 1.684,47 | 1.684,47 | 0,00 | 0,00 | 20.253,43 | 20.253,43 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 65.424,93 | 65.424,93 | 5.895,63 | 12.211,22 | 0,00 | 0,00 | 71.320,56 | 77.636,15 | 6.315,59 |
+| TXCUS — Taxa máxima de custódia a pagar | 1.847,22 | 1.847,22 | 168,45 | 168,45 | 0,00 | 0,00 | 2.015,67 | 2.015,67 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 28.476,19 | 28.476,19 | 309,52 | 444,44 | 0,00 | 0,00 | 28.785,71 | 28.920,63 | 134,92 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 523,81 | 523,81 | 47,62 | 47,62 | 0,00 | 0,00 | 571,43 | 571,43 | 0,00 |
+| ESCRIT — Escrituração de cotas a pagar | 5.238,10 | 5.238,10 | 476,19 | 476,19 | 0,00 | 0,00 | 5.714,29 | 5.714,29 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 1.383,87 | 1.383,87 | 125,81 | 125,81 | 0,00 | 0,00 | 1.509,68 | 1.509,68 | 0,00 |
+| **Total** |  |  |  |  |  |  | 130.170,77 | 136.621,28 | 6.450,51 |
 
-**Memória de cálculo informada por cada lado**
-
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 212.242.674,63 ÷ 252 (linear, dias úteis) = R$ 1.684,47 · Beta: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 212.242.674,63 ÷ 252 (linear, dias úteis) = R$ 1.684,47
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,70% a.a. sobre R$ 212.242.674,63 ÷ 252 (linear, dias úteis) = R$ 5.895,63 · Beta: [base: PL do dia útil anterior] 0,70% a.a. sobre R$ 212.242.674,63 ÷ 252 (linear, dias úteis) = R$ 5.895,63
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 212.242.674,63 ÷ 252 (linear, dias úteis) = R$ 168,45 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 212.242.674,63 ÷ 252 (linear, dias úteis) = R$ 168,45
-- **AUDIT** — Alfa: R$ 97.000,00 (anual) ÷ 252 d.u. = R$ 384,92 · Beta: R$ 78.000,00 (anual) ÷ 252 d.u. = R$ 309,52
-- **ANBIMA** — Alfa: R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00 · Beta: R$ 1.000,00 (mensal) ÷ 20 d.u. = R$ 50,00
-- **ESCRIT** — Alfa: R$ 10.000,00 (mensal) ÷ 20 d.u. = R$ 500,00 · Beta: R$ 10.000,00 (mensal) ÷ 20 d.u. = R$ 500,00
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87 · Beta: R$ 7.800,00 (trimestral) ÷ 61 d.u. = R$ 127,87
+_Memória de cálculo das provisões: não disponível neste caso. Recalcular a partir do regulamento._
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
@@ -161,13 +156,14 @@ Nenhum movimento de passivo no dia.
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 205.932.667,52 | 205.932.667,52 | 0,00 |
-| Caixa | 6.514.989,58 | 6.514.989,58 | 0,00 |
+| Total de ativos | 207.545.570,40 | 207.545.570,40 | 0,00 |
+| Caixa | 4.926.027,30 | 4.915.136,49 | -10.890,81 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
 | Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 205.756,74 | 205.681,34 | -75,40 |
-| PL base da cota | 212.241.900,36 | 212.241.975,76 | 75,40 |
-| Cota (8 casas) | 82,27960373 | 82,27963296 | 0,00002923 |
+| Provisões | 130.170,77 | 136.621,28 | 6.450,51 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 212.350.134,62 | 212.339.243,81 | -10.890,81 |
+| PL base da cota | 212.341.426,93 | 212.324.085,61 | -17.341,32 |
+| Cota (8 casas) | 82,31818710 | 82,31146441 | -0,00672269 |
 | Aplicações convertidas | 0,00 | 0,00 | 0,00 |
 | Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
@@ -175,43 +171,71 @@ Nenhum movimento de passivo no dia.
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
 | Quantidade final de cotas | 2.579.520,20565696 | 2.579.520,20565696 | 0,00000000 |
-| PL final | 212.241.900,33 | 212.241.975,73 | 75,40 |
+| PL final | 212.341.426,92 | 212.324.085,60 | -17.341,32 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO (com ressalva)
+**Parecer:** REPROVADO
 
-**Resumo:** Aprovar com ressalva: Auditoria provisionada com o valor antigo.
+**Resumo:** Reprovar até o ajuste: taxa de gestão na base 365 corridos; Pagamento da NF 9747 debitado duas vezes; Auditoria provisionada com o valor antigo.
 
-**Dificuldade:** media · **Cenários:** auditoria_contrato_novo
+**Dificuldade:** dificil · **Cenários:** taxa_por_dias_corridos, debito_em_duplicidade, auditoria_contrato_novo
 
-### Achado 1: Auditoria provisionada com o valor antigo
+### Achado 1: taxa de gestão na base 365 corridos
 
-- **Gravidade:** ressalva · **Dimensões:** provisoes
+- **Gravidade:** erro · **Dimensões:** provisoes
 - **Lado correto:** Alfa · **Quem ajusta:** Beta
-- **Causa raiz:** Beta continua provisionando R$ 78.000,00/ano. O aditivo assinado fixa R$ 97.000,00/ano a partir de hoje.
+- **Causa raiz:** Beta apropriou a taxa de gestão por 1/365 × 3 dia(s) corrido(s); o regulamento manda 1/252 por dia útil.
+- **Onde olhar:** Provisões — TXGES; Regulamento — método de apropriação; Data-base (dia da semana)
+- **Raciocínio do analista:**
+  1. A apropriação de taxa de gestão do Beta é maior que a do Alfa.
+  2. Hoje é segunda-feira e desde o último dia útil passaram 3 dias corridos. A conta por corridos apropria 3/365, enquanto a base 252 apropria 1/252.
+  3. O regulamento é explícito: 1/252 por dia útil.
+- **Ação:** Beta deve corrigir o método de apropriação para a base 252 e reprocessar.
+
+### Achado 2: Pagamento da NF 9747 debitado duas vezes
+
+- **Gravidade:** pendencia · **Dimensões:** caixa
+- **Lado correto:** nenhum · **Quem ajusta:** Beta (estorno) e Alfa (registro)
+- **Causa raiz:** A despesa da NF 9747 (R$ 10.890,81) foi debitada duas vezes na conta do fundo. O Beta registrou os dois débitos como despesa; o Alfa registrou um só.
+- **Onde olhar:** Caixa — lançamentos (dois débitos idênticos); Comparação com o controle Alfa
+- **Raciocínio do analista:**
+  1. O caixa do Beta está R$ 10.890,81 abaixo do do Alfa. A diferença é um segundo lançamento com histórico idêntico (mesma NF, mesmo valor).
+  2. A mesma nota fiscal não se paga duas vezes. O segundo débito é erro operacional, mas o dinheiro saiu de fato.
+  3. O Alfa está economicamente certa (uma despesa), mas o caixa dela não reflete o que aconteceu na conta. O Beta reflete a conta, mas jogou a duplicidade no resultado e reduziu o PL.
+- **Ação:** Solicitar ao Beta o estorno imediato do débito duplicado. Até lá, registrar R$ 10.890,81 como "estorno a receber" (sem efeito no PL) e alinhar o caixa do Alfa ao real.
+
+### Achado 3: Auditoria provisionada com o valor antigo
+
+- **Gravidade:** erro · **Dimensões:** provisoes
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa continua provisionando R$ 78.000,00/ano. O aditivo assinado fixa R$ 112.000,00/ano a partir de hoje.
 - **Onde olhar:** Provisões — AUDIT; Regulamento/contratos — despesas fixas; Comunicações — aditivo
 - **Raciocínio do analista:**
-  1. A apropriação de auditoria difere: R$ 384,92 (Alfa) contra R$ 309,52 (Beta).
+  1. A apropriação de auditoria difere: R$ 444,44 (Beta) contra R$ 309,52 (Alfa).
   2. Existe aditivo assinado com vigência a partir de hoje. Diferente de uma proposta, aditivo assinado vale.
-- **Ação:** Beta deve atualizar o valor anual de auditoria e reprocessar.
+- **Ação:** Alfa deve atualizar o valor anual de auditoria e reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | Alfa |
-| caixa | ambos |
-| provisoes | Alfa |
+| cota | nenhum |
+| caixa | Beta |
+| provisoes | nenhum |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 82,27960373 |
+| Cota | 82,31813480 |
 | Quantidade final de cotas | 2.579.520,20565696 |
-| PL final | R$ 212.241.900,33 |
-| Caixa | R$ 6.514.989,58 |
-| Total de provisões | R$ 205.756,74 |
+| PL final | R$ 212.341.292,01 |
+| Caixa | R$ 4.915.136,49 |
+| Total de provisões | R$ 130.305,69 |
+
+### Armadilhas deste caso
+
+- O dinheiro saiu duas vezes: registrar o fato e cobrar estorno, sem jogar a duplicidade no resultado.

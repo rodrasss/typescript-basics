@@ -5,6 +5,8 @@ import type { Caso } from '../gerador/gerar.ts';
 import { renderEntrada, renderGabarito } from '../gerador/render.ts';
 import { CENARIOS } from '../gerador/cenarios.ts';
 import { PERFIS } from '../gerador/catalogo.ts';
+import { ehDiaUtil, somaDias, somaDiasUteis, proximoUtil, diasUteisEntre } from '../gerador/util.ts';
+import { gravidadeEfetiva } from '../gerador/caso.ts';
 
 let cache: Caso[] | null = null;
 const casos = (): Caso[] => (cache ??= gerarTodos(200, 2026));
@@ -41,7 +43,8 @@ test('mistura de resultados: aprova, reprova e deixa pendente; há casos limpos 
   const limpos = cont((c) => c.gabarito.cenarios.every((i) => i.startsWith('tudo_bate')));
   assert.ok(limpos >= 30 && limpos <= 50, `casos limpos: ${limpos}`);
   assert.ok(cont((c) => c.gabarito.parecer === 'REPROVADO') >= 50);
-  assert.ok(cont((c) => c.gabarito.parecer === 'PENDENTE') >= 8);
+  assert.ok(cont((c) => c.gabarito.parecer === 'PENDENTE') >= 12);
+  assert.ok(cont((c) => c.gabarito.parecer === 'APROVADO' && c.gabarito.ressalva) >= 15, 'poucas aprovações com ressalva');
   assert.ok(cont((c) => c.gabarito.dificuldade === 'dificil') >= 20, 'poucos casos difíceis');
   assert.ok(cont((c) => c.gabarito.achados.length >= 2) >= 40, 'poucos casos com mais de um achado');
 });
@@ -129,4 +132,95 @@ test('persona coerente: marcos da história não são anteriores à criação do
 
 test('datas-base são dias úteis', () => {
   for (const c of casos()) assert.ok(!['sábado', 'domingo'].includes(c.diaSemana), `${c.id}: ${c.diaSemana}`);
+});
+
+// ---------------------------------------------------------------------------------------------
+// Regressões dos defeitos apontados pelos agentes na primeira rodada de avaliação
+// ---------------------------------------------------------------------------------------------
+
+function prazoDoRegulamento(c: Caso): { cot: number; corridos: boolean; liq: number } | null {
+  const txt = c.regulamento.cotizacao.find((x) => x.startsWith('Resgate'));
+  if (!txt) return null;
+  const mc = txt.match(/cotização em D\+(\d+) (dias corridos|dia útil|dias úteis)/);
+  const ml = txt.match(/liquidação financeira em D\+(\d+) /);
+  return { cot: mc ? Number(mc[1]) : 0, corridos: mc ? mc[2] === 'dias corridos' : false, liq: ml ? Number(ml[1]) : 0 };
+}
+
+test('passivo: pedido, cotização e liquidação seguem o prazo do regulamento e caem em dias úteis', () => {
+  for (const c of casos()) {
+    const pz = prazoDoRegulamento(c);
+    if (!pz) continue;
+    for (const lado of [c.lados.Alfa, c.lados.Beta]) {
+      for (const m of lado.posicao.movs.filter((x) => x.tipo === 'resgate')) {
+        for (const d of [m.solicitadoEm, m.cotizacao, m.liquidacao]) assert.ok(ehDiaUtil(d), `${c.id} ${m.id}: ${d} não é dia útil`);
+        const cotEsperada: string = pz.corridos ? proximoUtil(somaDias(m.solicitadoEm, pz.cot)) : somaDiasUteis(m.solicitadoEm, pz.cot);
+        assert.equal(m.cotizacao, cotEsperada, `${c.id} ${m.id}: cotização fora do prazo do regulamento`);
+        assert.equal(m.liquidacao, somaDiasUteis(m.cotizacao, pz.liq), `${c.id} ${m.id}: liquidação fora do prazo do regulamento`);
+      }
+    }
+  }
+});
+
+test('passivo: resgate cotizado em D−1 usa exatamente a cota de D−1 do cabeçalho', () => {
+  let conferidos = 0;
+  for (const c of casos()) {
+    for (const m of c.lados.Alfa.posicao.movs.filter((x) => x.tipo === 'resgate' && x.valor !== undefined && x.cotizacao === c.dAnterior)) {
+      const esperado = Math.round(m.cotas! * c.anterior.cota * 100) / 100;
+      assert.ok(Math.abs(m.valor! - esperado) <= 0.011, `${c.id} ${m.id}: valor ${m.valor} ≠ cotas × cota de D−1 (${esperado})`);
+      conferidos++;
+    }
+  }
+  assert.ok(conferidos > 20, `poucos resgates conferidos (${conferidos})`);
+});
+
+test('passivo: "resgates a pagar" é a soma dos resgates já cotizados que ainda não liquidaram', () => {
+  for (const c of casos()) {
+    const base = c.lados.Beta.posicao;
+    const item = base.aPagar.find((i) => i.codigo === 'RESGATES A PAGAR');
+    const pend = base.movs.filter((m) => m.id.startsWith('PEN-')).reduce((a, m) => a + (m.valor ?? 0), 0);
+    if (item && c.gabarito.cenarios.every((i) => i !== 'resgate_liquidado_nao_baixado')) {
+      assert.ok(Math.abs(item.valor - pend) <= 0.011, `${c.id}: resgates a pagar ${item.valor} ≠ pendências ${pend}`);
+    }
+  }
+});
+
+test('a quantidade de cotas não muda sem movimento de passivo', () => {
+  for (const c of casos()) {
+    for (const lado of [c.lados.Alfa, c.lados.Beta]) {
+      const semMov = lado.posicao.movs.every((m) => !m.converterHoje) && !(lado.posicao.comeCotas?.aplicar);
+      if (semMov) assert.equal(lado.resultado.qtdFinal, lado.posicao.qtdCotasBase, `${c.id}: quantidade mudou sem movimento`);
+    }
+  }
+});
+
+test('cabeçalho: a cota de D−1 é exatamente PL ÷ quantidade, truncada em 8 casas', () => {
+  for (const c of casos()) {
+    assert.equal(c.anterior.cota, Math.trunc((c.anterior.pl / c.anterior.qtdCotas) * 1e8) / 1e8, `${c.id}`);
+  }
+});
+
+test('benchmark: o fator do CDI é compatível com o CDI do dia e o número de dias úteis', () => {
+  let conferidos = 0;
+  for (const c of casos()) {
+    const perfs = [c.lados.Alfa.posicao.perf, c.lados.Beta.posicao.perf].filter((p) => p && p.benchmark === '100% do CDI');
+    if (!perfs.length) continue;
+    const algumCorreto = perfs.some((p) => {
+      const esperado = Math.pow(1 + c.mercado.cdiAA, diasUteisEntre(p!.dataBase, c.data) / 252);
+      return Math.abs(p!.fatorBenchmark - esperado) < 1e-6;
+    });
+    assert.ok(algumCorreto, `${c.id}: fator do CDI incompatível com ${(c.mercado.cdiAA * 100).toFixed(2)}% a.a.`);
+    conferidos++;
+  }
+  assert.ok(conferidos >= 10, `poucos casos conferidos (${conferidos})`);
+});
+
+test('parecer: segue a regra do prompt (diferença de cota/PL/provisão é erro; só registro é ressalva)', () => {
+  for (const c of casos()) {
+    if (c.gabarito.parecer !== 'APROVADO') continue;
+    for (const a of c.gabarito.achados) {
+      const g = gravidadeEfetiva(a);
+      assert.ok(g === 'informativo' || g === 'ressalva', `${c.id}: APROVADO com achado de gravidade ${g}`);
+      if (a.dimensoes.includes('cota')) assert.ok(a.gravidade !== undefined, `${c.id}: achado de cota aprovado sem gravidade explícita`);
+    }
+  }
 });

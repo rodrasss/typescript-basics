@@ -1,20 +1,20 @@
-# Caso caso-193 — Pintassilgo Estratégia FIDC Responsabilidade Limitada
+# Caso caso-193 — Jatobá Advisory FIC FIF Multimercado
 
-> **Data-base (D):** 21/07/2026 (terça-feira) · **D−1:** 20/07/2026 · **Fundo:** FND-0193
+> **Data-base (D):** 12/05/2026 (terça-feira) · **D−1:** 11/05/2026 · **Fundo:** FND-0193
 
 ## 1. O fundo
 
-Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestrutura regional (Salvador/BA), o Pintassilgo Estratégia FIDC Responsabilidade Limitada é um dos fundos que mais exigem atenção na rotina de validação. Criado em 28/07/2019, compra recebíveis de empresas e distribui o carrego aos cotistas, com custodiante e agente de cobrança próprios. Público-alvo: investidores profissionais. Hoje seus cotistas são investidores profissionais e um family office (estrutura monocota). Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e teve um evento de crédito em 2023 em um dos emissores da carteira, recuperado em 2025. O gestor responsável é Cecília, e quem cuida da validação do fundo é Aline. Sobre a rotina: a gestora publica uma carta mensal aos cotistas até o 5º dia útil; a equipe da gestora trabalha com planilhas próprias e às vezes manda informação por e-mail antes da confirmação formal. No fechamento de ontem (20/07/2026) o fundo tinha PL de R$ 158.982.247,77, cota de 1.367,71811137 e 116.239,04549283 cotas. Hoje, terça-feira, 21/07/2026, é a data-base da validação.
+Quem acompanha a Garoa Investimentos (São Paulo/SP) conhece o Jatobá Advisory FIC FIF Multimercado: a casa é uma gestora de fundos de fundos (alocação) com comitê mensal de seleção. Criado em 27/10/2018, aloca em outros fundos multimercado e rebalanceia a carteira todo mês. Público-alvo: investidores qualificados. Hoje seus cotistas são cerca de 3 mil cotistas qualificados. Ao longo da vida, o fundo incorporou um fundo irmão menor em 2022, o que gerou um longo período de conciliação de cotistas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Cecília, e quem cuida da validação do fundo é Gustavo. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; a gestora publica uma carta mensal aos cotistas até o 5º dia útil. As cotas dos fundos investidos costumam ser publicadas à noite, e o processamento às vezes fecha antes. No fechamento de ontem (11/05/2026) o fundo tinha PL de R$ 502.484.840,35, cota de 5,81720632 e 86.379.064,42481712 cotas. Hoje, terça-feira, 12/05/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | FIDC (direitos creditórios) |
-| Classe | Classe de FIDC — subclasse única (monocota) |
-| Condomínio | fechado |
-| Gestora | Itapuã Gestão (Salvador/BA) |
-| PL em D−1 | R$ 158.982.247,77 |
-| Cota em D−1 | 1.367,71811137 |
-| Quantidade de cotas em D−1 | 116.239,04549283 |
+| Tipo | FIC Multimercado (fundo de fundos) |
+| Classe | Classe Multimercado — Investimento em Cotas |
+| Condomínio | aberto |
+| Gestora | Garoa Investimentos (São Paulo/SP) |
+| PL em D−1 | R$ 502.484.840,35 |
+| Cota em D−1 | 5,81720632 |
+| Quantidade de cotas em D−1 | 86.379.064,42481712 |
 
 ## 2. Regulamento (extrato simulado)
 
@@ -22,16 +22,14 @@ Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestr
 
 **Taxas**
 
-- Taxa de administração: 0,290% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,340% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,040% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de administração: 0,120% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,860% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,020% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente por fator exponencial ((1 + taxa)^(1/252) − 1), base 252 dias úteis; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 105.000,00 (anual) — contrato anual; provisão diária por 1/252
+- Auditoria independente: R$ 58.000,00 (anual) — contrato anual; provisão diária por 1/252
 - Taxa ANBIMA (convênio de autorregulação): R$ 1.100,00 (mensal)
-- Agente de cobrança: R$ 21.000,00 (mensal)
-- Agência de classificação de risco (rating): R$ 56.000,00 (anual)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -41,7 +39,7 @@ Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestr
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 152.504.234,64. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 496.430.037,75. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -61,21 +59,17 @@ Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestr
 
 **Aplicação, resgate e cota**
 
-- Condomínio fechado: amortizações conforme cronograma do suplemento
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 14:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+45 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Regime específico de FIDC (Lei 14.754/2023), sem come-cotas na classe fechada com enquadramento
+- Tributação: Longo prazo; come-cotas semestral (maio/novembro) a 15%
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Direitos creditórios: valor presente pela taxa de cessão, conforme relatório do custodiante de D, deduzida a PDD calculada pela política do regulamento.
-
-**Regras específicas deste fundo**
-
-- Política de perdas esperadas (PDD) sobre o valor presente dos direitos creditórios: a vencer 0,5%; vencidos 1–30 dias 5%; 31–60 dias 15%; 61–90 dias 30%; 91–180 dias 60%; acima de 180 dias 100%. O enquadramento por faixa segue o relatório de aging do custodiante de D.
-- Amortizações conforme cronograma do suplemento; o valor amortizado por cota é deduzido do PL na data do pagamento.
+- Cotas de fundos investidos: cota de D divulgada pelo administrador do investido. Se não divulgada até 20h de D, usa-se a última cota disponível e a cota é reprocessada quando a de D for publicada.
 
 ## 3. Informações de mercado do dia
 
@@ -85,13 +79,18 @@ Sob a gestão da Itapuã Gestão, gestora baiana de crédito privado e infraestr
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.167,790594 |  |
+| COTA CARAVELA | Cota de D divulgada pelo administrador do investido | 2,12257605 | divulgada às 19:15 |
+| COTA CARDEAL | Cota de D divulgada pelo administrador do investido | 1,28058433 | divulgada às 18:33 |
+| COTA SABIÁ | Cota de D divulgada pelo administrador do investido | 2,14494773 | divulgada às 17:18 |
+| COTA TIÊ | Cota de D divulgada pelo administrador do investido | 3,21466581 | divulgada às 19:49 |
+| COTA JURITI | Cota de D divulgada pelo administrador do investido | 3,70399030 | divulgada às 17:26 |
+| COTA CARAVELA | Cota de D−1 do investido | 2,13154405 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **07:55** — *Custodiante — relatório de aging* — **Aging de 21/07/2026**: Mudanças de faixa hoje: sacado Comercial Boa Safra Ltda. — R$ 1.399.436,71 passaram de 90 para 91 dias de atraso (faixa 61–90 → 91–180).
-- **17:33** — *Distribuidor* — **Material de divulgação**: Enviamos a nova lâmina do fundo para validação de compliance. Sem pressa.
-- **18:45** — *Custodiante — eventos* — **Agenda da semana**: Agenda de eventos corporativos da semana (nenhum dos papéis desta carteira está na lista de hoje).
+- **10:50** — *Área de risco* — **Relatório mensal**: O relatório mensal de risco do fundo já está disponível na pasta compartilhada.
+- **13:43** — *Gestora — mesa* — **Operação para o próximo pregão**: No próximo dia útil (13/05/2026) vamos reduzir um pouco a posição mais líquida da carteira. Até agora hoje não há boleta.
+- **19:15** — *Administrador do fundo investido* — **Cota de 12/05/2026 publicada**: A cota de 12/05/2026 do Caravela Long Short FIF Multimercado foi publicada às 19:15: 2,12257605.
 
 ## 5. Batimento Alfa × Beta
 
@@ -101,32 +100,32 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 1.368,07455666 | 1.364,46276668 | -3,61178998 |
-| Quantidade final de cotas | 116.239,04549283 | 116.239,04549283 | 0,00000000 |
-| PL final | R$ 159.023.680,63 | R$ 158.603.849,61 | R$ -419.831,02 |
-| Caixa | R$ 4.534.842,67 | R$ 4.534.842,67 | R$ 0,00 |
-| Total de provisões | R$ 243.504,11 | R$ 243.504,11 | R$ 0,00 |
+| Cota de fechamento | 5,83085664 | 5,82450131 | -0,00635533 |
+| Quantidade final de cotas | 86.449.817,83644618 | 86.449.895,03812501 | 77,20167883 |
+| PL final | R$ 504.076.494,36 | R$ 503.527.526,90 | R$ -548.967,46 |
+| Caixa | R$ 1.770.547,99 | R$ 912.174,80 | R$ -858.373,19 |
+| Total de provisões | R$ 163.073,20 | R$ 163.073,20 | R$ 0,00 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| DC A VENCER — Direitos creditórios a vencer — duplicatas mercantis | 110.232.768,18 | 110.232.768,18 | 1,00 | 1,00 | 110.232.768,18 | 110.232.768,18 | 0,00 | Valor presente pela taxa de cessão (custodiante) |
-| DC VENC 1-30 — Direitos creditórios vencidos de 1 a 30 dias | 7.873.769,16 | 7.873.769,16 | 1,00 | 1,00 | 7.873.769,16 | 7.873.769,16 | 0,00 | Valor presente (custodiante) |
-| DC VENC 31-60 — Direitos creditórios vencidos de 31 a 60 dias | 3.149.507,66 | 3.149.507,66 | 1,00 | 1,00 | 3.149.507,66 | 3.149.507,66 | 0,00 | Valor presente (custodiante) |
-| DC VENC 61-90 — Direitos creditórios vencidos de 61 a 90 dias | 1.889.704,60 | 490.267,89 | 1,00 | 1,00 | 1.889.704,60 | 490.267,89 | -1.399.436,71 | Valor presente (custodiante) |
-| DC VENC 91-180 — Direitos creditórios vencidos de 91 a 180 dias | 1.259.803,06 | 2.659.239,77 | 1,00 | 1,00 | 1.259.803,06 | 2.659.239,77 | 1.399.436,71 | Valor presente (custodiante) |
-| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 1.300 | 1.300 | 18.167,790594 | 18.167,790594 | 23.618.127,77 | 23.618.127,77 | 0,00 | ANBIMA — taxa indicativa D |
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 11.805 | 11.805 | 800,400957 | 800,400957 | 9.448.733,30 | 9.448.733,30 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| (-) PDD — (−) Provisão para perdas esperadas (PDD) — política do regulamento | 1 | 1 | -2.740.071,66 | -3.159.902,68 | -2.740.071,66 | -3.159.902,68 | -419.831,02 | Cálculo pelo aging do custodiante |
-| **Total** |  |  |  |  | 154.732.342,07 | 154.312.511,05 | -419.831,02 |  |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 27.626 | 27.626 | 817,961901 | 817,961901 | 22.597.015,48 | 22.597.015,48 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| COTA CARAVELA — Cotas do Caravela Long Short FIF Multimercado | 61.214.033,05861676 | 61.214.033,05861676 | 2,13154405 | 2,12257605 | 130.480.407,94 | 129.931.440,49 | -548.967,45 | Alfa: Última cota disponível no fechamento do processamento / Beta: Cota divulgada pelo administrador do fundo investido (D) |
+| COTA CARDEAL — Cotas do Cardeal Global FIC FIF IE | 70.582.691,76180965 | 70.582.691,76180965 | 1,28058433 | 1,28058433 | 90.387.089,04 | 90.387.089,04 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA SABIÁ — Cotas do Sabiá Macro FIF Multimercado | 34.238.368,05781148 | 34.238.368,05781148 | 2,14494773 | 2,14494773 | 73.439.509,84 | 73.439.509,84 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA TIÊ — Cotas do Tiê Crédito FIF RF CP | 24.602.464,94781656 | 24.602.464,94781656 | 3,21466581 | 3,21466581 | 79.088.702,91 | 79.088.702,91 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| COTA JURITI — Cotas do Juriti Inflação FIF RF | 28.978.118,06750137 | 28.978.118,06750137 | 3,70399030 | 3,70399030 | 107.334.668,23 | 107.334.668,23 | 0,00 | Cota divulgada pelo administrador do fundo investido (D) |
+| **Total** |  |  |  |  | 503.327.393,44 | 502.778.425,99 | -548.967,45 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 4.534.842,67 | 4.534.842,67 |
-| **Saldo final** | 4.534.842,67 | 4.534.842,67 |
+| Saldo inicial (D−1) | 1.357.994,99 | 1.357.994,99 |
+| TED recebida — aplicação [APL-1] Cotista 4998 (13:27) | 412.553,00 | 412.553,00 |
+| Pagamento de resgate [LIQ-1] — Cotista 5005 (cotizado em 11/05/2026) | — | -858.373,19 |
+| **Saldo final** | 1.770.547,99 | 912.174,80 |
 
 ### 5.4 Valores a receber
 
@@ -134,93 +133,107 @@ Nenhum item.
 
 ### 5.5 Valores a pagar
 
-Nenhum item.
+| Item | Alfa | Beta |
+|---|---|---|
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 412.553,00 | 412.553,00 |
+| RESGATES A PAGAR — Resgates já cotizados e ainda não liquidados | 858.373,19 | — |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 25.127,52 | 25.127,52 | 1.829,56 | 1.829,56 | 0,00 | 0,00 | 26.957,08 | 26.957,08 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 121.813,23 | 121.813,23 | 8.453,82 | 8.453,82 | 0,00 | 0,00 | 130.267,05 | 130.267,05 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 3.620,14 | 3.620,14 | 252,35 | 252,35 | 0,00 | 0,00 | 3.872,49 | 3.872,49 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 23.333,33 | 23.333,33 | 416,67 | 416,67 | 0,00 | 0,00 | 23.750,00 | 23.750,00 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 669,57 | 669,57 | 47,83 | 47,83 | 0,00 | 0,00 | 717,40 | 717,40 | 0,00 |
-| COBRANCA — Agente de cobrança a pagar | 12.782,61 | 12.782,61 | 913,04 | 913,04 | 0,00 | 0,00 | 13.695,65 | 13.695,65 | 0,00 |
-| RATING — Agência de classificação de risco (rating) a pagar | 42.222,22 | 42.222,22 | 222,22 | 222,22 | 0,00 | 0,00 | 42.444,44 | 42.444,44 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 1.680,00 | 1.680,00 | 120,00 | 120,00 | 0,00 | 0,00 | 1.800,00 | 1.800,00 | 0,00 |
-| **Total** |  |  |  |  |  |  | 243.504,11 | 243.504,11 | 0,00 |
+| TXADM — Taxa de administração a pagar | 14.583,09 | 14.583,09 | 2.391,36 | 2.391,36 | 0,00 | 0,00 | 16.974,45 | 16.974,45 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 101.072,62 | 101.072,62 | 17.075,26 | 17.075,26 | 0,00 | 0,00 | 118.147,88 | 118.147,88 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 2.362,97 | 2.362,97 | 398,76 | 398,76 | 0,00 | 0,00 | 2.761,73 | 2.761,73 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 19.793,65 | 19.793,65 | 230,16 | 230,16 | 0,00 | 0,00 | 20.023,81 | 20.023,81 | 0,00 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 330,00 | 330,00 | 55,00 | 55,00 | 0,00 | 0,00 | 385,00 | 385,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 4.603,28 | 4.603,28 | 177,05 | 177,05 | 0,00 | 0,00 | 4.780,33 | 4.780,33 | 0,00 |
+| **Total** |  |  |  |  |  |  | 163.073,20 | 163.073,20 | 0,00 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,29% a.a. sobre R$ 158.982.247,77 ÷ 252 (linear, dias úteis) = R$ 1.829,56 · Beta: [base: PL do dia útil anterior] 0,29% a.a. sobre R$ 158.982.247,77 ÷ 252 (linear, dias úteis) = R$ 1.829,56
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,34% a.a. sobre R$ 158.982.247,77 ÷ 252 (linear, dias úteis) = R$ 8.453,82 · Beta: [base: PL do dia útil anterior] 1,34% a.a. sobre R$ 158.982.247,77 ÷ 252 (linear, dias úteis) = R$ 8.453,82
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 158.982.247,77 ÷ 252 (linear, dias úteis) = R$ 252,35 · Beta: [base: PL do dia útil anterior] 0,04% a.a. sobre R$ 158.982.247,77 ÷ 252 (linear, dias úteis) = R$ 252,35
-- **AUDIT** — Alfa: R$ 105.000,00 (anual) ÷ 252 d.u. = R$ 416,67 · Beta: R$ 105.000,00 (anual) ÷ 252 d.u. = R$ 416,67
-- **ANBIMA** — Alfa: R$ 1.100,00 (mensal) ÷ 23 d.u. = R$ 47,83 · Beta: R$ 1.100,00 (mensal) ÷ 23 d.u. = R$ 47,83
-- **COBRANCA** — Alfa: R$ 21.000,00 (mensal) ÷ 23 d.u. = R$ 913,04 · Beta: R$ 21.000,00 (mensal) ÷ 23 d.u. = R$ 913,04
-- **RATING** — Alfa: R$ 56.000,00 (anual) ÷ 252 d.u. = R$ 222,22 · Beta: R$ 56.000,00 (anual) ÷ 252 d.u. = R$ 222,22
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00 · Beta: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,12% a.a. sobre R$ 502.484.840,35 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.391,36 · Beta: [base: PL do dia útil anterior] 0,12% a.a. sobre R$ 502.484.840,35 fator exponencial (1+taxa)^(1/252) − 1 = R$ 2.391,36
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,86% a.a. sobre R$ 502.484.840,35 fator exponencial (1+taxa)^(1/252) − 1 = R$ 17.075,26 · Beta: [base: PL do dia útil anterior] 0,86% a.a. sobre R$ 502.484.840,35 fator exponencial (1+taxa)^(1/252) − 1 = R$ 17.075,26
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 502.484.840,35 fator exponencial (1+taxa)^(1/252) − 1 = R$ 398,76 · Beta: [base: PL do dia útil anterior] 0,02% a.a. sobre R$ 502.484.840,35 fator exponencial (1+taxa)^(1/252) − 1 = R$ 398,76
+- **AUDIT** — Alfa: R$ 58.000,00 (anual) ÷ 252 d.u. = R$ 230,16 · Beta: R$ 58.000,00 (anual) ÷ 252 d.u. = R$ 230,16
+- **ANBIMA** — Alfa: R$ 1.100,00 (mensal) ÷ 20 d.u. = R$ 55,00 · Beta: R$ 1.100,00 (mensal) ÷ 20 d.u. = R$ 55,00
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
-Nenhum movimento de passivo no dia.
+| ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
+|---|---|---|---|---|---|---|---|---|---|---|
+| APL-1 | aplicacao | Cotista 4998 | R$ 412.553,00 | 13:27 | 12/05/2026 | 12/05/2026 | 12/05/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 5005 | 147.557,63204561 cotas (R$ 858.373,19) |  | 27/03/2026 | 11/05/2026 | 12/05/2026 | não | não | cotizado em 11/05/2026 pela cota de 5,81720632; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 154.732.342,07 | 154.312.511,05 | -419.831,02 |
-| Caixa | 4.534.842,67 | 4.534.842,67 | 0,00 |
+| Total de ativos | 503.327.393,44 | 502.778.425,99 | -548.967,45 |
+| Caixa | 1.770.547,99 | 912.174,80 | -858.373,19 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 0,00 | 0,00 | 0,00 |
-| Provisões | 243.504,11 | 243.504,11 | 0,00 |
-| PL base da cota | 159.023.680,63 | 158.603.849,61 | -419.831,02 |
-| Cota (8 casas) | 1.368,07455666 | 1.364,46276668 | -3,61178998 |
-| Aplicações convertidas | 0,00 | 0,00 | 0,00 |
-| Cotas emitidas | 0,00000000 | 0,00000000 | 0,00000000 |
+| Valores a pagar | 1.270.926,19 | 412.553,00 | -858.373,19 |
+| Provisões | 163.073,20 | 163.073,20 | 0,00 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 503.684.269,63 | 503.135.302,18 | -548.967,45 |
+| PL base da cota | 503.663.942,04 | 503.114.974,59 | -548.967,45 |
+| Cota (8 casas) | 5,83085664 | 5,82450131 | -0,00635533 |
+| Aplicações convertidas | 412.553,00 | 412.553,00 | 0,00 |
+| Cotas emitidas | 70.753,41162906 | 70.830,61330790 | 77,20167884 |
 | Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
 | Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 116.239,04549283 | 116.239,04549283 | 0,00000000 |
-| PL final | 159.023.680,63 | 158.603.849,61 | -419.831,02 |
+| Quantidade final de cotas | 86.449.817,83644618 | 86.449.895,03812501 | 77,20167883 |
+| PL final | 504.076.494,36 | 503.527.526,90 | -548.967,46 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** REPROVADO
+**Parecer:** REPROVADO (com ressalva)
 
-**Resumo:** Reprovar até o ajuste: PDD calculada com aging de D−1.
+**Resumo:** Reprovar até o ajuste: Cota do investido COTA CARAVELA de D−1; Pagamento de resgate não baixado no controle Alfa.
 
-**Dificuldade:** facil · **Cenários:** pdd_aging_desatualizado
+**Dificuldade:** media · **Cenários:** cota_investido_d1, resgate_liquidado_nao_baixado
 
-### Achado 1: PDD calculada com aging de D−1
+### Achado 1: Cota do investido COTA CARAVELA de D−1
 
 - **Gravidade:** erro · **Dimensões:** cota
 - **Lado correto:** Beta · **Quem ajusta:** Alfa
-- **Causa raiz:** Alfa não migrou R$ 1.399.436,71 da faixa 61–90 para 91–180 dias, como mostra o aging de D, e calculou a PDD com 30% em vez de 60% sobre esse valor.
-- **Onde olhar:** Carteira — faixas de direitos creditórios e linha de PDD; Comunicações — relatório de aging; Regulamento — política de perdas
+- **Causa raiz:** Alfa fechou o processamento antes da publicação da cota de D do investido (19:15) e usou a cota de D−1.
+- **Onde olhar:** Carteira — linha COTA CARAVELA; Informações de mercado — cotas do investido; Comunicações — publicação da cota; Regulamento — precificação de cotas de fundos
 - **Raciocínio do analista:**
-  1. O total de direitos creditórios é igual nos dois lados, mas a distribuição por faixa não: o Alfa tem R$ 1.399.436,71 a mais em 61–90 e a menos em 91–180.
-  2. O aging do custodiante de D mostra que esse valor passou para 91 dias hoje. Pela política, a PDD sobe de 30% para 60% sobre ele: R$ 419.831,01 a mais de provisão.
-  3. O Alfa está com PL maior do que deveria. Num FIDC, PDD a menor é o erro mais sensível, porque superavalia a classe.
-- **Ação:** Alfa deve reprocessar com o aging de D e recalcular a PDD antes da divulgação.
+  1. A divergência está em COTA CARAVELA: 2,12257605 (Beta) contra 2,13154405 (Alfa). 2,13154405 é a cota de D−1 do investido.
+  2. O regulamento só aceita a última cota disponível se a de D não sair até 20h. Ela saiu às 19:15, então tem que ser usada a cota de D.
+- **Ação:** Alfa deve atualizar a cota de COTA CARAVELA para 2,12257605 e reprocessar a cota do FIC.
+
+### Achado 2: Pagamento de resgate não baixado no controle Alfa
+
+- **Gravidade:** ressalva · **Dimensões:** caixa
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** O controle Alfa não registrou o pagamento do resgate LIQ-1 (Cotista 5005, R$ 858.373,19) e manteve o valor em "resgates a pagar".
+- **Onde olhar:** Caixa — lançamentos; Valores a pagar — resgates; Movimentações de passivo (liquidações do dia)
+- **Raciocínio do analista:**
+  1. O caixa do Alfa está R$ 858.373,19 acima do Beta, e "resgates a pagar" do Alfa está R$ 858.373,19 acima também. PL e cota batem.
+  2. O resgate LIQ-1, cotizado em 11/05/2026, liquida hoje (Resgate: cotização em D+45 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.) e saiu da conta. O Alfa não deu baixa.
+  3. É descasamento de registro, sem efeito na cota de hoje. Se não for corrigido, o Alfa vai tentar pagar de novo ou projetar um caixa que não existe.
+- **Ação:** Alfa deve baixar o pagamento do resgate LIQ-1 (caixa e passivo). Cota pode ser aprovada; acompanhar a regularização em D+1.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
 | cota | Beta |
-| caixa | ambos |
+| caixa | Beta |
 | provisoes | ambos |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 1.364,46276668 |
-| Quantidade final de cotas | 116.239,04549283 |
-| PL final | R$ 158.603.849,61 |
-| Caixa | R$ 4.534.842,67 |
-| Total de provisões | R$ 243.504,11 |
+| Cota | 5,82450131 |
+| Quantidade final de cotas | 86.449.895,03812501 |
+| PL final | R$ 503.527.526,90 |
+| Caixa | R$ 912.174,80 |
+| Total de provisões | R$ 163.073,20 |

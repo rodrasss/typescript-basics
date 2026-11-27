@@ -1,41 +1,36 @@
-# Caso caso-131 — Tangará III FIF Ações
+# Caso caso-131 — Maritaca Plus FIF Incentivado em Infraestrutura RF
 
-> **Data-base (D):** 27/07/2026 (segunda-feira) · **D−1:** 24/07/2026 · **Fundo:** FND-0131
+> **Data-base (D):** 10/04/2026 (sexta-feira) · **D−1:** 09/04/2026 · **Fundo:** FND-0131
 
 ## 1. O fundo
 
-Quem acompanha a Marola Asset (Florianópolis/SC) conhece o Tangará III FIF Ações: a casa é uma gestora jovem de ações, muito ativa em eventos societários e small caps. Criado em 09/02/2022, é um fundo de ações de gestão ativa, concentrado em poucas dezenas de papéis. Público-alvo: público geral. Hoje seus cotistas são clientes de varejo que entraram na alta de 2024. Ao longo da vida, o fundo foi destaque em rankings de 2023, o que trouxe uma onda de aplicações de varejo e aprovou em assembleia, em 2024, a redução das taxas, já em vigor desde aquele ano. O gestor responsável é Fernanda, e quem cuida da validação do fundo é Bruno. Sobre a rotina: o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa; as reuniões do comitê de investimentos acontecem na primeira terça-feira de cada mês. No fechamento de ontem (24/07/2026) o fundo tinha PL de R$ 225.754.709,58, cota de 16,18727108 e 13.946.434,11239646 cotas. Hoje, segunda-feira, 27/07/2026, é a data-base da validação.
+Sob a gestão da Ancoradouro Capital, gestora com foco em infraestrutura e debêntures incentivadas (Recife/PE), o Maritaca Plus FIF Incentivado em Infraestrutura RF é um dos fundos que mais exigem atenção na rotina de validação. Criado em 28/04/2018, compra debêntures de infraestrutura e entrega rendimento isento de IR ao cotista pessoa física. Público-alvo: público geral. Hoje seus cotistas são clientes de varejo alta renda e um FoF incentivado. Ao longo da vida, o fundo reduziu o prazo de cotização em 2024 para competir em plataformas e trocou de gestor responsável em 2023 depois da saída do fundador. O gestor responsável é Cecília, e quem cuida da validação do fundo é Pedro. Sobre a rotina: o fundo tem histórico de divergências pequenas de arredondamento que nunca chegaram a impactar a cota; o fundo é acompanhado de perto pelo distribuidor, que liga quando a cota atrasa. No fechamento de ontem (09/04/2026) o fundo tinha PL de R$ 850.395.889,68, cota de 2,97435520 e 285.909.325,71827173 cotas. Hoje, sexta-feira, 10/04/2026, é a data-base da validação.
 
 | Campo | Valor |
 |---|---|
-| Tipo | Ações |
-| Classe | Classe de Ações |
+| Tipo | Infraestrutura (debêntures incentivadas) |
+| Classe | Classe de Renda Fixa — Infraestrutura (Lei 12.431) |
 | Condomínio | aberto |
-| Gestora | Marola Asset (Florianópolis/SC) |
-| PL em D−1 | R$ 225.754.709,58 |
-| Cota em D−1 | 16,18727108 |
-| Quantidade de cotas em D−1 | 13.946.434,11239646 |
+| Gestora | Ancoradouro Capital (Recife/PE) |
+| PL em D−1 | R$ 850.395.889,68 |
+| Cota em D−1 | 2,97435520 |
+| Quantidade de cotas em D−1 | 285.909.325,71827173 |
 
 ## 2. Regulamento (extrato simulado)
 
-**Vigência:** 01/08/2025 (adaptado à Resolução CVM 175)
+**Vigência:** 01/04/2025 (adaptado à Resolução CVM 175)
 
 **Taxas**
 
-- Taxa de administração: 0,200% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa de gestão: 1,160% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-- Taxa máxima de custódia: 0,050% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
-
-**Taxa de performance**
-
-- 20% sobre o que exceder Ibovespa; semestral (apuração em junho e dezembro; pagamento até o 5º dia útil seguinte).
-- Há linha d’água: a cota de referência é a cota da última cobrança efetiva de performance (ou a cota inicial), corrigida pelo benchmark.
-- Provisão diária = 20% × max(0; cota bruta de performance − cota de referência corrigida pelo benchmark) × quantidade de cotas. A provisão é revertida quando o excesso diminui.
+- Taxa de administração: 0,100% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa de gestão: 0,890% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
+- Taxa máxima de custódia: 0,030% a.a., calculada sobre o PL do dia útil anterior, apropriada diariamente à razão de 1/252 (dias úteis), de forma linear; paga mensalmente, até o 5º dia útil do mês subsequente.
 
 **Despesas fixas (provisionadas diariamente por 1/252 do valor anual; mensais por 1/dias úteis do mês)**
 
-- Auditoria independente: R$ 30.000,00 (anual) — contrato anual; provisão diária por 1/252
-- Taxa ANBIMA (convênio de autorregulação): R$ 700,00 (mensal)
+- Auditoria independente: R$ 117.000,00 (anual) — aditivo assinado em 01/04/2026, novo valor vigente a partir de 10/04/2026; provisão diária por 1/252
+- Taxa ANBIMA (convênio de autorregulação): R$ 300,00 (mensal)
+- Custódia SELIC/B3 (estimativa mensal): R$ 5.800,00 (mensal)
 
 **Taxa de fiscalização da CVM (trimestral; faixa pelo PL de referência = PL do último dia útil do trimestre anterior)**
 
@@ -45,7 +40,7 @@ Quem acompanha a Marola Asset (Florianópolis/SC) conhece o Tangará III FIF Aç
 - até R$ 300.000.000,00: R$ 7.800,00 por trimestre
 - até R$ 1.000.000.000,00: R$ 10.800,00 por trimestre
 - acima de R$ 1.000.000.000,00: R$ 14.400,00 por trimestre
-- PL de referência deste fundo no trimestre: R$ 230.661.310,12. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
+- PL de referência deste fundo no trimestre: R$ 820.703.608,89. Provisão diária = valor do trimestre ÷ dias úteis do trimestre.
 
 **Encargos do fundo**
 
@@ -65,22 +60,17 @@ Quem acompanha a Marola Asset (Florianópolis/SC) conhece o Tangará III FIF Aç
 
 **Aplicação, resgate e cota**
 
-- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 16:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
-- Resgate: cotização D+1 útil (liquidação D+2 úteis).
+- Aplicação: conversão em D+0 (cota de fechamento do dia do crédito dos recursos), para recursos disponíveis até 15:00; recursos creditados após o horário de corte são convertidos no dia útil seguinte.
+- Resgate: cotização em D+30 dias corridos após o pedido (se não for dia útil, no primeiro dia útil seguinte), pela cota de fechamento da data de cotização; liquidação financeira em D+1 dia útil após a cotização.
 - Cota de fechamento, calculada com 8 casas decimais, por TRUNCAMENTO.
-- Tributação: Classe de ações: sem come-cotas; IR de 15% no resgate
+- Tributação: Incentivado (Lei 12.431): isento para PF, sem come-cotas
 
 **Precificação dos ativos**
 
 - Manual de marcação a mercado do administrador (versão simulada vigente).
 - Títulos públicos federais: PU pela taxa indicativa ANBIMA de D.
 - Operações compromissadas: PU de ida acrescido da remuneração pactuada.
-- Ações: preço de fechamento da B3 em D.
-- Eventos societários (dividendos, JCP, desdobramentos, grupamentos) reconhecidos na data "ex".
-
-**Regras específicas deste fundo**
-
-- Performance: cota de referência vigente = 14,46269530 (cota da última cobrança efetiva, em 30/06/2026).
+- Debêntures incentivadas: PU pela taxa indicativa ANBIMA de D; na ausência, comitê de precificação (revisão mínima mensal; negócios relevantes no secundário devem ser levados ao comitê).
 
 ## 3. Informações de mercado do dia
 
@@ -90,23 +80,16 @@ Quem acompanha a Marola Asset (Florianópolis/SC) conhece o Tangará III FIF Aç
 
 | Ativo | Fonte | Valor | Observação |
 |---|---|---|---|
-| ZMBV3 | B3 — preço de fechamento de D | 30,65 |  |
-| YKAP4 | B3 — preço de fechamento de D | 87,91 |  |
-| QXTR3 | B3 — preço de fechamento de D | 68,07 |  |
-| KQSA3 | B3 — preço de fechamento de D | 39,87 |  |
-| UQPA4 | B3 — preço de fechamento de D | 22,99 |  |
-| QPLN3 | B3 — preço de fechamento de D | 41,63 |  |
-| VJNR3 | B3 — preço de fechamento de D | 21,05 |  |
-| ZFRT3 | B3 — preço de fechamento de D | 50,21 |  |
-
-**Benchmark**
-
-- Fator acumulado do Ibovespa de 30/06/2026 até 27/07/2026: 1,06886312
+| GASM13 | ANBIMA — PU pela taxa indicativa de D | 1.112,114883 |  |
+| SLNO11 | ANBIMA — PU pela taxa indicativa de D | 1.136,840059 |  |
+| SOLC12 | ANBIMA — PU pela taxa indicativa de D | 1.089,159184 |  |
+| RDCE13 | ANBIMA — PU pela taxa indicativa de D | 1.118,179841 |  |
+| FERR21 | ANBIMA — PU pela taxa indicativa de D | 1.028,523023 |  |
+| LFT 01/03/2029 | ANBIMA — PU pela taxa indicativa de D | 18.360,273342 |  |
 
 ## 4. Comunicações recebidas hoje
 
-- **10:04** — *Área de risco* — **Lembrete**: Lembrete: o fundo teve apontamento de auditoria em 2025 sobre conciliação de caixa. Atenção redobrada.
-- **10:58** — *Custodiante — eventos* — **Aviso de desdobramento**: Aviso: desdobramento 1:2 de JZEL3 com data "ex" na próxima semana. (Informativo a todos os clientes de custódia.)
+- **09:50** — *Jurídico/contratos* — **Aditivo — auditoria**: Aditivo ao contrato de auditoria assinado: novo honorário anual de R$ 117.000,00 a partir de 10/04/2026 (antes R$ 79.000,00).
 
 ## 5. Batimento Alfa × Beta
 
@@ -116,35 +99,35 @@ _Alfa = posição do controle interno da casa. Beta = posição recebida do admi
 
 | Validação | Alfa | Beta | Diferença (Beta − Alfa) |
 |---|---|---|---|
-| Cota de fechamento | 15,81046681 | 15,81046681 | 0,00000000 |
-| Quantidade final de cotas | 14.049.016,19738423 | 14.049.016,19738423 | 0,00000000 |
-| PL final | R$ 222.121.504,30 | R$ 222.121.504,30 | R$ 0,00 |
-| Caixa | R$ 3.088.280,96 | R$ 3.088.280,96 | R$ 0,00 |
-| Total de provisões | R$ 1.477.613,99 | R$ 1.477.613,99 | R$ 0,00 |
+| Cota de fechamento | 2,97470394 | 2,97470342 | -0,00000052 |
+| Quantidade final de cotas | 287.153.543,47845680 | 287.153.543,90431523 | 0,42585844 |
+| PL final | R$ 854.196.777,17 | R$ 854.196.629,12 | R$ -148,05 |
+| Caixa | R$ 11.160.567,90 | R$ 11.160.567,90 | R$ 0,00 |
+| Total de provisões | R$ 304.847,92 | R$ 304.998,72 | R$ 150,80 |
 
 ### 5.2 Carteira
 
 | Ativo | Qtd Alfa | Qtd Beta | PU Alfa | PU Beta | Valor Alfa | Valor Beta | Δ valor | Fonte do preço |
 |---|---|---|---|---|---|---|---|---|
-| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 16.290 | 16.290 | 805,740214 | 805,740214 | 13.125.508,09 | 13.125.508,09 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
-| ZMBV3 — Zimbro Varejo S.A. ON | 1.027.784 | 1.027.784 | 30,65 | 30,65 | 31.501.579,60 | 31.501.579,60 | 0,00 | B3 — preço de fechamento D |
-| YKAP4 — Ykapé Papel e Celulose S.A. PN | 477.785 | 477.785 | 87,91 | 87,91 | 42.002.079,35 | 42.002.079,35 | 0,00 | B3 — preço de fechamento D |
-| QXTR3 — Quixadá Transportes S.A. ON | 347.086 | 347.086 | 68,07 | 68,07 | 23.626.144,02 | 23.626.144,02 | 0,00 | B3 — preço de fechamento D |
-| KQSA3 — Kaquissá Saneamento S.A. ON | 921.792 | 921.792 | 39,87 | 39,87 | 36.751.847,04 | 36.751.847,04 | 0,00 | B3 — preço de fechamento D |
-| UQPA4 — Uquapé Petroquímica S.A. PN | 685.115 | 685.115 | 22,99 | 22,99 | 15.750.793,85 | 15.750.793,85 | 0,00 | B3 — preço de fechamento D |
-| QPLN3 — Quiplan Saúde S.A. ON | 567.528 | 567.528 | 41,63 | 41,63 | 23.626.190,64 | 23.626.190,64 | 0,00 | B3 — preço de fechamento D |
-| VJNR3 — Vajanra Energia S.A. ON | 748.256 | 748.256 | 21,05 | 21,05 | 15.750.788,80 | 15.750.788,80 | 0,00 | B3 — preço de fechamento D |
-| ZFRT3 — Zafira Frigoríficos S.A. ON | 365.981 | 365.981 | 50,21 | 50,21 | 18.375.906,01 | 18.375.906,01 | 0,00 | B3 — preço de fechamento D |
-| **Total** |  |  |  |  | 220.510.837,40 | 220.510.837,40 | 0,00 |  |
+| GASM13 — Debênture Gasodutos do Médio Norte S.A. — IPCA + 6,80% (incentivada Lei 12.431) | 126.918 | 126.918 | 1.112,114883 | 1.112,114883 | 141.147.396,72 | 141.147.396,72 | 0,00 | ANBIMA — taxa indicativa D |
+| SLNO11 — Debênture Saneamento Litoral Norte S.A. — IPCA + 7,10% (incentivada Lei 12.431) | 168.500 | 168.500 | 1.136,840059 | 1.136,840059 | 191.557.549,94 | 191.557.549,94 | 0,00 | ANBIMA — taxa indicativa D |
+| SOLC12 — Debênture Solar Chapada S.A. — IPCA + 7,60% (incentivada Lei 12.431) | 138.850 | 138.850 | 1.089,159184 | 1.089,159184 | 151.229.752,70 | 151.229.752,70 | 0,00 | ANBIMA — taxa indicativa D |
+| RDCE13 — Debênture Rodovias do Cerrado S.A. — IPCA + 6,90% (incentivada Lei 12.431) | 108.197 | 108.197 | 1.118,179841 | 1.118,179841 | 120.983.704,26 | 120.983.704,26 | 0,00 | ANBIMA — taxa indicativa D |
+| FERR21 — Debênture Ferrovia Planalto Central S.A. — IPCA + 7,20% (incentivada Lei 12.431) | 117.629 | 117.629 | 1.028,523023 | 1.028,523023 | 120.984.134,67 | 120.984.134,67 | 0,00 | ANBIMA — taxa indicativa D |
+| LFT 01/03/2029 — Letra Financeira do Tesouro — venc. 01/03/2029 | 4.393 | 4.393 | 18.360,273342 | 18.360,273342 | 80.656.680,79 | 80.656.680,79 | 0,00 | ANBIMA — taxa indicativa D |
+| COMPROMISSADA OVER — Operação compromissada over — lastro LTN 01/01/2028 (volta D+1) | 50.939 | 50.939 | 791,682438 | 791,682438 | 40.327.511,71 | 40.327.511,71 | 0,00 | PU de ida + remuneração pactuada (taxa over) |
+| **Total** |  |  |  |  | 846.886.730,79 | 846.886.730,79 | 0,00 |  |
 
 ### 5.3 Caixa
 
 | Lançamento | Alfa | Beta |
 |---|---|---|
-| Saldo inicial (D−1) | 1.466.410,31 | 1.466.410,31 |
-| TED recebida — aplicação Cotista 3759 (12:52) | 1.048.383,24 | 1.048.383,24 |
-| TED recebida — aplicação Cotista 3766 (14:53) | 573.487,41 | 573.487,41 |
-| **Saldo final** | 3.088.280,96 | 3.088.280,96 |
+| Saldo inicial (D−1) | 6.784.905,12 | 6.784.905,12 |
+| TED recebida — aplicação [APL-1] Cotista 4004 (14:11) | 3.117.564,01 | 3.117.564,01 |
+| TED recebida — aplicação [APL-2] Cotista 4011 (12:09) | 4.129.286,48 | 4.129.286,48 |
+| Pagamento de resgate [LIQ-1] — Cotista 4032 (cotizado em 09/04/2026) | -2.529.970,90 | -2.529.970,90 |
+| Pagamento de resgate [LIQ-2] — Cotista 4039 (cotizado em 09/04/2026) | -341.216,81 | -341.216,81 |
+| **Saldo final** | 11.160.567,90 | 11.160.567,90 |
 
 ### 5.4 Valores a receber
 
@@ -154,97 +137,98 @@ Nenhum item.
 
 | Item | Alfa | Beta |
 |---|---|---|
-| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 1.621.870,65 | 1.621.870,65 |
+| APLIC A CONVERTER — Aplicações recebidas no dia, a converter em cotas | 7.246.850,49 | 7.246.850,49 |
 
 ### 5.6 Provisões
 
 | Provisão | Saldo anterior Alfa | Saldo anterior Beta | Apropriação Alfa | Apropriação Beta | Pagamento Alfa | Pagamento Beta | Saldo atual Alfa | Saldo atual Beta | Δ saldo |
 |---|---|---|---|---|---|---|---|---|---|
-| TXADM — Taxa de administração a pagar | 32.572,56 | 32.572,56 | 1.791,70 | 1.791,70 | 0,00 | 0,00 | 34.364,26 | 34.364,26 | 0,00 |
-| TXGES — Taxa de gestão a pagar | 191.228,60 | 191.228,60 | 10.391,88 | 10.391,88 | 0,00 | 0,00 | 201.620,48 | 201.620,48 | 0,00 |
-| TXCUS — Taxa máxima de custódia a pagar | 7.836,81 | 7.836,81 | 447,93 | 447,93 | 0,00 | 0,00 | 8.284,74 | 8.284,74 | 0,00 |
-| AUDIT — Auditoria independente a pagar | 3.690,48 | 3.690,48 | 119,05 | 119,05 | 0,00 | 0,00 | 3.809,53 | 3.809,53 | 0,00 |
-| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 547,83 | 547,83 | 30,43 | 30,43 | 0,00 | 0,00 | 578,26 | 578,26 | 0,00 |
-| CVM — Taxa de fiscalização CVM a pagar | 2.160,00 | 2.160,00 | 120,00 | 120,00 | 0,00 | 0,00 | 2.280,00 | 2.280,00 | 0,00 |
-| PERF — Taxa de performance a pagar | 1.396.724,52 | 1.396.724,52 | -170.047,80 | -170.047,80 | 0,00 | 0,00 | 1.226.676,72 | 1.226.676,72 | 0,00 |
-| **Total** |  |  |  |  |  |  | 1.477.613,99 | 1.477.613,99 | 0,00 |
+| TXADM — Taxa de administração a pagar | 20.828,39 | 20.828,39 | 3.374,59 | 3.374,59 | 0,00 | 0,00 | 24.202,98 | 24.202,98 | 0,00 |
+| TXGES — Taxa de gestão a pagar | 175.826,77 | 175.826,77 | 30.033,82 | 30.033,82 | 0,00 | 0,00 | 205.860,59 | 205.860,59 | 0,00 |
+| TXCUS — Taxa máxima de custódia a pagar | 6.131,75 | 6.131,75 | 1.012,38 | 1.012,38 | 0,00 | 0,00 | 7.144,13 | 7.144,13 | 0,00 |
+| AUDIT — Auditoria independente a pagar | 63.952,38 | 63.952,38 | 313,49 | 464,29 | 0,00 | 0,00 | 64.265,87 | 64.416,67 | 150,80 |
+| ANBIMA — Taxa ANBIMA (convênio de autorregulação) a pagar | 90,00 | 90,00 | 15,00 | 15,00 | 0,00 | 0,00 | 105,00 | 105,00 | 0,00 |
+| SELIC — Custódia SELIC/B3 (estimativa mensal) a pagar | 1.740,00 | 1.740,00 | 290,00 | 290,00 | 0,00 | 0,00 | 2.030,00 | 2.030,00 | 0,00 |
+| CVM — Taxa de fiscalização CVM a pagar | 1.062,30 | 1.062,30 | 177,05 | 177,05 | 0,00 | 0,00 | 1.239,35 | 1.239,35 | 0,00 |
+| **Total** |  |  |  |  |  |  | 304.847,92 | 304.998,72 | 150,80 |
 
 **Memória de cálculo informada por cada lado**
 
-- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 225.754.709,58 ÷ 252 (linear, dias úteis) = R$ 1.791,70 · Beta: [base: PL do dia útil anterior] 0,20% a.a. sobre R$ 225.754.709,58 ÷ 252 (linear, dias úteis) = R$ 1.791,70
-- **TXGES** — Alfa: [base: PL do dia útil anterior] 1,16% a.a. sobre R$ 225.754.709,58 ÷ 252 (linear, dias úteis) = R$ 10.391,88 · Beta: [base: PL do dia útil anterior] 1,16% a.a. sobre R$ 225.754.709,58 ÷ 252 (linear, dias úteis) = R$ 10.391,88
-- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,05% a.a. sobre R$ 225.754.709,58 ÷ 252 (linear, dias úteis) = R$ 447,93 · Beta: [base: PL do dia útil anterior] 0,05% a.a. sobre R$ 225.754.709,58 ÷ 252 (linear, dias úteis) = R$ 447,93
-- **AUDIT** — Alfa: R$ 30.000,00 (anual) ÷ 252 d.u. = R$ 119,05 · Beta: R$ 30.000,00 (anual) ÷ 252 d.u. = R$ 119,05
-- **ANBIMA** — Alfa: R$ 700,00 (mensal) ÷ 23 d.u. = R$ 30,43 · Beta: R$ 700,00 (mensal) ÷ 23 d.u. = R$ 30,43
-- **CVM** — Alfa: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00 · Beta: R$ 7.800,00 (trimestral) ÷ 65 d.u. = R$ 120,00
-- **PERF** — Alfa: 20% × max(0; cota bruta 15,89842311 − cota de referência 14,46269530 × fator Ibovespa 1,06886312 = 15,45864162) × 13.946.434,11239646 cotas = R$ 1.226.676,72 · Beta: 20% × max(0; cota bruta 15,89842311 − cota de referência 14,46269530 × fator Ibovespa 1,06886312 = 15,45864162) × 13.946.434,11239646 cotas = R$ 1.226.676,72
+- **TXADM** — Alfa: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 850.395.889,68 ÷ 252 (linear, dias úteis) = R$ 3.374,59 · Beta: [base: PL do dia útil anterior] 0,10% a.a. sobre R$ 850.395.889,68 ÷ 252 (linear, dias úteis) = R$ 3.374,59
+- **TXGES** — Alfa: [base: PL do dia útil anterior] 0,89% a.a. sobre R$ 850.395.889,68 ÷ 252 (linear, dias úteis) = R$ 30.033,82 · Beta: [base: PL do dia útil anterior] 0,89% a.a. sobre R$ 850.395.889,68 ÷ 252 (linear, dias úteis) = R$ 30.033,82
+- **TXCUS** — Alfa: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 850.395.889,68 ÷ 252 (linear, dias úteis) = R$ 1.012,38 · Beta: [base: PL do dia útil anterior] 0,03% a.a. sobre R$ 850.395.889,68 ÷ 252 (linear, dias úteis) = R$ 1.012,38
+- **AUDIT** — Alfa: R$ 79.000,00 (anual) ÷ 252 d.u. = R$ 313,49 · Beta: R$ 117.000,00 (anual) ÷ 252 d.u. = R$ 464,29
+- **ANBIMA** — Alfa: R$ 300,00 (mensal) ÷ 20 d.u. = R$ 15,00 · Beta: R$ 300,00 (mensal) ÷ 20 d.u. = R$ 15,00
+- **SELIC** — Alfa: R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00 · Beta: R$ 5.800,00 (mensal) ÷ 20 d.u. = R$ 290,00
+- **CVM** — Alfa: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05 · Beta: R$ 10.800,00 (trimestral) ÷ 61 d.u. = R$ 177,05
 
 ### 5.7 Passivo (aplicações, resgates e demais movimentos)
 
 | ID | Tipo | Cotista | Valor / cotas | Crédito às | Solicitado em | Cotização | Liquidação | Converte/cotiza hoje? Alfa | Converte/cotiza hoje? Beta | Observação |
 |---|---|---|---|---|---|---|---|---|---|---|
-| APL-1 | aplicacao | Cotista 3759 | R$ 1.048.383,24 | 12:52 | 27/07/2026 | 27/07/2026 | 27/07/2026 | sim | sim |  |
-| APL-2 | aplicacao | Cotista 3766 | R$ 573.487,41 | 14:53 | 27/07/2026 | 27/07/2026 | 27/07/2026 | sim | sim |  |
+| APL-1 | aplicacao | Cotista 4004 | R$ 3.117.564,01 | 14:11 | 10/04/2026 | 10/04/2026 | 10/04/2026 | sim | sim |  |
+| APL-2 | aplicacao | Cotista 4011 | R$ 4.129.286,48 | 12:09 | 10/04/2026 | 10/04/2026 | 10/04/2026 | sim | sim |  |
+| RSG-1 | resgate | Cotista 4018 | 604.630,38000091 cotas |  | 11/03/2026 | 10/04/2026 | 13/04/2026 | sim | sim |  |
+| RSG-2 | resgate | Cotista 4025 | 587.310,42758057 cotas |  | 11/03/2026 | 10/04/2026 | 13/04/2026 | sim | sim |  |
+| LIQ-1 | resgate | Cotista 4032 | 850.594,74352610 cotas (R$ 2.529.970,90) |  | 10/03/2026 | 09/04/2026 | 10/04/2026 | não | não | cotizado em 09/04/2026 pela cota de 2,97435520; liquidação financeira hoje |
+| LIQ-2 | resgate | Cotista 4039 | 114.719,58899078 cotas (R$ 341.216,81) |  | 10/03/2026 | 09/04/2026 | 10/04/2026 | não | não | cotizado em 09/04/2026 pela cota de 2,97435520; liquidação financeira hoje |
 
 ### 5.8 Fechamento do dia
 
 | Item | Alfa | Beta | Δ |
 |---|---|---|---|
-| Total de ativos | 220.510.837,40 | 220.510.837,40 | 0,00 |
-| Caixa | 3.088.280,96 | 3.088.280,96 | 0,00 |
+| Total de ativos | 846.886.730,79 | 846.886.730,79 | 0,00 |
+| Caixa | 11.160.567,90 | 11.160.567,90 | 0,00 |
 | Valores a receber | 0,00 | 0,00 | 0,00 |
-| Valores a pagar | 1.621.870,65 | 1.621.870,65 | 0,00 |
-| Provisões | 1.477.613,99 | 1.477.613,99 | 0,00 |
-| PL base da cota | 220.499.633,72 | 220.499.633,72 | 0,00 |
-| Cota (8 casas) | 15,81046681 | 15,81046681 | 0,00000000 |
-| Aplicações convertidas | 1.621.870,65 | 1.621.870,65 | 0,00 |
-| Cotas emitidas | 102.582,08498777 | 102.582,08498777 | 0,00000000 |
-| Cotas resgatadas | 0,00000000 | 0,00000000 | 0,00000000 |
-| Valor dos resgates cotizados | 0,00 | 0,00 | 0,00 |
+| Valores a pagar | 7.246.850,49 | 7.246.850,49 | 0,00 |
+| Provisões | 304.847,92 | 304.998,72 | 150,80 |
+| PL antes das apropriações do dia (saldos anteriores das provisões) | 850.530.816,61 | 850.530.816,61 | 0,00 |
+| PL base da cota | 850.495.600,28 | 850.495.449,48 | -150,80 |
+| Cota (8 casas) | 2,97470394 | 2,97470342 | -0,00000052 |
+| Aplicações convertidas | 7.246.850,49 | 7.246.850,49 | 0,00 |
+| Cotas emitidas | 2.436.158,56776657 | 2.436.158,99362498 | 0,42585841 |
+| Cotas resgatadas | 1.191.940,80758148 | 1.191.940,80758148 | 0,00000000 |
+| Valor dos resgates cotizados | 3.545.671,01 | 3.545.670,40 | -0,61 |
 | IR de come-cotas | 0,00 | 0,00 | 0,00 |
 | Cotas retiradas (come-cotas) | 0,00000000 | 0,00000000 | 0,00000000 |
-| Quantidade final de cotas | 14.049.016,19738423 | 14.049.016,19738423 | 0,00000000 |
-| PL final | 222.121.504,30 | 222.121.504,30 | 0,00 |
+| Quantidade final de cotas | 287.153.543,47845680 | 287.153.543,90431523 | 0,42585844 |
+| PL final | 854.196.777,17 | 854.196.629,12 | -148,05 |
 
 ---
 
 ## GABARITO (não faz parte da entrada)
 
-**Parecer:** APROVADO
+**Parecer:** REPROVADO
 
-**Resumo:** Aprovar: Alfa e Beta batem e as provisões conferem com o regulamento.
+**Resumo:** Reprovar até o ajuste: Auditoria provisionada com o valor antigo.
 
-**Dificuldade:** media · **Cenários:** tudo_bate_com_ruido
+**Dificuldade:** media · **Cenários:** auditoria_contrato_novo
 
-### Achado 1: Comunicações do dia não afetam a cota de D
+### Achado 1: Auditoria provisionada com o valor antigo
 
-- **Gravidade:** informativo · **Dimensões:** nenhuma
-- **Lado correto:** nenhum · **Quem ajusta:** ninguém
-- **Causa raiz:** Não há divergência; as mensagens recebidas tratam de eventos futuros, de ativos fora da carteira ou são lembretes.
-- **Onde olhar:** Comunicações recebidas; Carteira dos dois lados
+- **Gravidade:** erro · **Dimensões:** provisoes
+- **Lado correto:** Beta · **Quem ajusta:** Alfa
+- **Causa raiz:** Alfa continua provisionando R$ 79.000,00/ano. O aditivo assinado fixa R$ 117.000,00/ano a partir de hoje.
+- **Onde olhar:** Provisões — AUDIT; Regulamento/contratos — despesas fixas; Comunicações — aditivo
 - **Raciocínio do analista:**
-  1. Li as comunicações do dia e conferi se alguma delas exigia reflexo em D: nenhuma se refere a operação ou evento com efeito na data-base (são eventos futuros, ativos que o fundo não tem, ou dúvidas/lembretes).
-  2. Como os dois lados batem linha a linha e as apropriações conferem com o regulamento, não há motivo para segurar a cota.
-- **Ação:** Nenhuma ação sobre a cota. Responder ao remetente, se for o caso.
+  1. A apropriação de auditoria difere: R$ 464,29 (Beta) contra R$ 313,49 (Alfa).
+  2. Existe aditivo assinado com vigência a partir de hoje. Diferente de uma proposta, aditivo assinado vale.
+- **Ação:** Alfa deve atualizar o valor anual de auditoria e reprocessar.
 
 ### Quem está correto em cada dimensão (derivado dos números)
 
 | Dimensão | Lado cujo valor coincide com a posição correta |
 |---|---|
-| cota | ambos |
+| cota | Beta |
 | caixa | ambos |
-| provisoes | ambos |
+| provisoes | Beta |
 
 ### Valores corretos após os ajustes
 
 | Item | Valor |
 |---|---|
-| Cota | 15,81046681 |
-| Quantidade final de cotas | 14.049.016,19738423 |
-| PL final | R$ 222.121.504,30 |
-| Caixa | R$ 3.088.280,96 |
-| Total de provisões | R$ 1.477.613,99 |
-
-### Armadilhas deste caso
-
-- Comunicações alarmantes nem sempre afetam a data-base: separar o que tem efeito em D do que é evento futuro, ativo que o fundo não tem ou lembrete.
+| Cota | 2,97470342 |
+| Quantidade final de cotas | 287.153.543,90431523 |
+| PL final | R$ 854.196.629,12 |
+| Caixa | R$ 11.160.567,90 |
+| Total de provisões | R$ 304.998,72 |
