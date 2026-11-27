@@ -22,11 +22,11 @@ const casos = sessao === 'come-cotas' ? gerarSessaoComeCotas(33, 2026) : gerarTo
 const max = Number(arg('max', '0'));
 // amostra enxuta: prioriza os mecanismos mais sensíveis (passivo, vigência de regras, performance, ambiguidade)
 const PRIORIDADE = [
-  'tudo_bate', 'tudo_bate_com_ruido', 'resgate_cotizado_antecipadamente', 'resgate_liquidado_nao_baixado', 'resgate_pago_com_cota_errada',
-  'aplicacao_nao_convertida', 'aplicacao_apos_corte_convertida', 'pagamento_taxa_nao_registrado', 'provisao_nao_baixada_apos_pagamento',
-  'taxa_reduzida_nao_aplicada', 'ambos_com_taxa_antiga', 'minimo_mensal_ignorado', 'performance_sem_reversao', 'performance_data_base_errada',
-  'performance_sem_linha_dagua', 'taxa_cvm_faixa_errada', 'erros_que_se_compensam', 'ativo_iliquido_sem_referencia', 'despesa_nao_prevista',
-  'come_cotas_nao_aplicado', 'arredondamento_vs_truncamento', 'curva_vs_mercado_exclusivo',
+  'reg_cota_dentro', 'reg_cota_acima', 'reg_provisao_dentro', 'reg_provisao_acima', 'reg_caixa_baixo', 'reg_caixa_sem_causa',
+  'tudo_bate', 'tudo_bate_com_ruido', 'arredondamento_vs_truncamento', 'resgate_liquidado_nao_baixado', 'compromissada_como_caixa',
+  'pagamento_taxa_nao_registrado', 'tarifa_bancaria_indevida', 'credito_nao_identificado', 'taxa_reduzida_nao_aplicada', 'ambos_com_taxa_antiga',
+  'minimo_mensal_ignorado', 'performance_sem_reversao', 'erros_que_se_compensam', 'auditoria_contrato_novo', 'aplicacao_nao_convertida',
+  'curva_vs_mercado_exclusivo', 'ativo_iliquido_sem_referencia', 'pdd_aging_desatualizado',
 ];
 const escolhidos = new Map<string, (typeof casos)[number]>();
 if (max > 0) {
