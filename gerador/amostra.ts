@@ -17,13 +17,31 @@ const dir = resolve(arg('dir', 'avaliacao/trabalho'));
 const nGrupos = Number(arg('grupos', '8'));
 const casos = gerarTodos(200, 2026);
 
+const max = Number(arg('max', '0'));
+// amostra enxuta: prioriza os mecanismos mais sensíveis (passivo, vigência de regras, performance, ambiguidade)
+const PRIORIDADE = [
+  'tudo_bate', 'tudo_bate_com_ruido', 'resgate_cotizado_antecipadamente', 'resgate_liquidado_nao_baixado', 'resgate_pago_com_cota_errada',
+  'aplicacao_nao_convertida', 'aplicacao_apos_corte_convertida', 'pagamento_taxa_nao_registrado', 'provisao_nao_baixada_apos_pagamento',
+  'taxa_reduzida_nao_aplicada', 'ambos_com_taxa_antiga', 'minimo_mensal_ignorado', 'performance_sem_reversao', 'performance_data_base_errada',
+  'performance_sem_linha_dagua', 'taxa_cvm_faixa_errada', 'erros_que_se_compensam', 'ativo_iliquido_sem_referencia', 'despesa_nao_prevista',
+  'come_cotas_nao_aplicado', 'arredondamento_vs_truncamento', 'curva_vs_mercado_exclusivo',
+];
 const escolhidos = new Map<string, (typeof casos)[number]>();
-for (const cen of CENARIOS) {
+if (max > 0) {
+  for (const id of PRIORIDADE) {
+    const c = casos.find((x) => x.gabarito.cenarios[0] === id && !escolhidos.has(x.id));
+    if (c && escolhidos.size < max) escolhidos.set(c.id, c);
+  }
+  for (const c of casos.filter((x) => x.gabarito.achados.length >= 3)) if (escolhidos.size < max) escolhidos.set(c.id, c);
+}
+for (const cen of max > 0 ? [] : CENARIOS) {
   const c = casos.find((x) => x.gabarito.cenarios[0] === cen.id && !escolhidos.has(x.id));
   if (c) escolhidos.set(c.id, c);
 }
-for (const c of casos.filter((x) => x.gabarito.achados.length >= 3).slice(0, 7)) escolhidos.set(c.id, c);
-for (const c of casos.filter((x) => x.gabarito.cenarios[0] === 'tudo_bate' && !escolhidos.has(x.id)).slice(0, 3)) escolhidos.set(c.id, c);
+if (max === 0) {
+  for (const c of casos.filter((x) => x.gabarito.achados.length >= 3).slice(0, 7)) escolhidos.set(c.id, c);
+  for (const c of casos.filter((x) => x.gabarito.cenarios[0] === 'tudo_bate' && !escolhidos.has(x.id)).slice(0, 3)) escolhidos.set(c.id, c);
+}
 
 if (existsSync(dir)) rmSync(dir, { recursive: true, force: true });
 mkdirSync(join(dir, 'cegos'), { recursive: true });
